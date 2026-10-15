@@ -1,0 +1,24 @@
+{
+  "build": "p7",
+  "sdroot_count": 1241,
+  "output_file_set_matches_staging": true,
+  "output_content_matches_staging": true,
+  "copied_donor_count": 1149,
+  "still_missing_sound_files": 18,
+  "motion_lists_audited": 15,
+  "motion_lists_missing_clips": 0,
+  "article_declarations": [
+    "mgw_mythra/esword -> elight/esword",
+    "mgw_mythra/bunshin -> elight/bunshin"
+  ],
+  "pack_lint_exit": 0,
+  "pack_lint_warnings": 1,
+  "zip_count": 0,
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "probe_sha256": "9b73d0c059136bb45c79a53e4af1ec8b93e9cea6a23317ac25f7b35b4f51e862",
+  "output_hashes_match_build_and_manifest": true,
+  "p7_smashline_marker": true,
+  "p7_probe_marker": true,
+  "switch_tested": false,
+  "mythra_crash_fix_confirmed": false
+}

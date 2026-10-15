@@ -1,0 +1,42 @@
+[
+  {
+    "fighter": "lucas",
+    "file": "AttackLw4.txt",
+    "local": "donor_acmd/lucas__AttackLw4.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_lucas/lucas/AttackLw4.txt",
+    "bytes": 7087,
+    "sha256": "d81005ebdb39ffae395866c528d7851c3b306b2a9ff97cf7257bd3a01d729e48"
+  },
+  {
+    "fighter": "lucas",
+    "file": "AttackLw4Charge.txt",
+    "local": "donor_acmd/lucas__AttackLw4Charge.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_lucas/lucas/AttackLw4Charge.txt",
+    "bytes": 1618,
+    "sha256": "040c5c7183577cea7e825dde30b6f1cc576b27345b7753a13eab51ebba8cec51"
+  },
+  {
+    "fighter": "elight",
+    "file": "AttackLw4.txt",
+    "local": "donor_acmd/elight__AttackLw4.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/AttackLw4.txt",
+    "bytes": 10470,
+    "sha256": "13b12026c761b7001019fab4eafd6672da5c7ca602176a3a513dc0297252f619"
+  },
+  {
+    "fighter": "elight",
+    "file": "AttackLw4Charge.txt",
+    "local": "donor_acmd/elight__AttackLw4Charge.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/AttackLw4Charge.txt",
+    "bytes": 1278,
+    "sha256": "dde4ee8229cee276477140b2a8241a55a3f92cd3526e9a40d0c6ad4b2a770dd8"
+  },
+  {
+    "fighter": "robot",
+    "file": "AttackLw3.txt",
+    "local": "donor_acmd/robot__AttackLw3.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_robot/robot/AttackLw3.txt",
+    "bytes": 6629,
+    "sha256": "65b13e7c00a04a1da900de4dc1d82540176d2a1c8d292f520b22c34029e3fa25"
+  }
+]

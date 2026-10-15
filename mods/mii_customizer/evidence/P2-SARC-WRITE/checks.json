@@ -1,0 +1,447 @@
+{
+ "checks": 87,
+ "passed": 87,
+ "failed": [],
+ "all_pass": true,
+ "input_sha256": {
+  "make_mii_edit": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+  "make_mii_special": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945"
+ },
+ "results": [
+  {
+   "check": "exists: make_mii_edit",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc"
+  },
+  {
+   "check": "parse: make_mii_edit",
+   "pass": true,
+   "detail": "111 members"
+  },
+  {
+   "check": "rebuild byte-identical: make_mii_edit",
+   "pass": true,
+   "detail": "sha256 f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212"
+  },
+  {
+   "check": "rebuild via CLI: make_mii_edit",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "rebuild CLI exit 0: make_mii_edit",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "rebuild CLI output matches input hash: make_mii_edit",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\rebuilt\\make_mii_edit\\layout.arc"
+  },
+  {
+   "check": "verify CLI exit 0: make_mii_edit",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "exists: make_mii_special",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc"
+  },
+  {
+   "check": "parse: make_mii_special",
+   "pass": true,
+   "detail": "76 members"
+  },
+  {
+   "check": "rebuild byte-identical: make_mii_special",
+   "pass": true,
+   "detail": "sha256 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945"
+  },
+  {
+   "check": "rebuild via CLI: make_mii_special",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "rebuild CLI exit 0: make_mii_special",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "rebuild CLI output matches input hash: make_mii_special",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\rebuilt\\make_mii_special\\layout.arc"
+  },
+  {
+   "check": "verify CLI exit 0: make_mii_special",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "prior manifest present",
+   "pass": true,
+   "detail": "mods/mii_customizer/evidence/P1-LAYOUT/manifest.json"
+  },
+  {
+   "check": "prior manifest has make_mii_edit",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc"
+  },
+  {
+   "check": "prior header agrees: make_mii_edit",
+   "pass": true,
+   "detail": "data_offset=0x2000 members=111"
+  },
+  {
+   "check": "membership identical: make_mii_edit",
+   "pass": true,
+   "detail": "111 members"
+  },
+  {
+   "check": "all member sha256 identical: make_mii_edit",
+   "pass": true,
+   "detail": "111/111"
+  },
+  {
+   "check": "all member offsets identical: make_mii_edit",
+   "pass": true,
+   "detail": "111/111"
+  },
+  {
+   "check": "prior manifest has blyt/make_mii_edit.bflyt",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "extract CLI exit 0: make_mii_edit/blyt/make_mii_edit.bflyt",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "extracted sha256 matches prior manifest: blyt/make_mii_edit.bflyt",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\rebuilt\\make_mii_edit\\make_mii_edit.bflyt"
+  },
+  {
+   "check": "prior manifest has make_mii_special",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc"
+  },
+  {
+   "check": "prior header agrees: make_mii_special",
+   "pass": true,
+   "detail": "data_offset=0x2000 members=76"
+  },
+  {
+   "check": "membership identical: make_mii_special",
+   "pass": true,
+   "detail": "76 members"
+  },
+  {
+   "check": "all member sha256 identical: make_mii_special",
+   "pass": true,
+   "detail": "76/76"
+  },
+  {
+   "check": "all member offsets identical: make_mii_special",
+   "pass": true,
+   "detail": "76/76"
+  },
+  {
+   "check": "prior manifest has blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "extract CLI exit 0: make_mii_special/blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "extracted sha256 matches prior manifest: blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\rebuilt\\make_mii_special\\make_mii_special.bflyt"
+  },
+  {
+   "check": "synthetic built",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc"
+  },
+  {
+   "check": "synthetic rebuild byte-identical",
+   "pass": true,
+   "detail": "5 members"
+  },
+  {
+   "check": "synthetic has non-zero gap bytes",
+   "pass": true,
+   "detail": "5 gap runs"
+  },
+  {
+   "check": "synthetic member order is hash-sorted",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "mutation payload is same length",
+   "pass": true,
+   "detail": "512 vs 512"
+  },
+  {
+   "check": "replace CLI exit 0",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "input synthetic not overwritten",
+   "pass": true,
+   "detail": "gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc"
+  },
+  {
+   "check": "mutation kept the archive size",
+   "pass": true,
+   "detail": "2233 bytes"
+  },
+  {
+   "check": "mutation changed the container hash",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "mutated archive reparses",
+   "pass": true,
+   "detail": "5 members"
+  },
+  {
+   "check": "exactly one member changed",
+   "pass": true,
+   "detail": "['dir/beta.bin']"
+  },
+  {
+   "check": "target member now holds the payload",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "membership unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "all other member hashes unchanged",
+   "pass": true,
+   "detail": "4 members"
+  },
+  {
+   "check": "header metadata identical",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "SFAT name-offset fields identical",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "name table identical",
+   "pass": true,
+   "detail": "80 bytes"
+  },
+  {
+   "check": "member order identical",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "data offsets identical",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "gap spans identical",
+   "pass": true,
+   "detail": "5 runs"
+  },
+  {
+   "check": "gap bytes identical",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "mutated archive rebuilds byte-identically",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "every differing byte lies inside the target member",
+   "pass": true,
+   "detail": "509 differing bytes, range [1721,2233)"
+  },
+  {
+   "check": "verify CLI exit 0 on mutated archive",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "second replace on the mutated archive exit 0",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "second replacement also changed only the target",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no-op replace exit 0: make_mii_edit",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no-op replace reproduces the original exactly: make_mii_edit",
+   "pass": true,
+   "detail": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212"
+  },
+  {
+   "check": "no-op replace reports zero changed members: make_mii_edit",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no-op replace exit 0: make_mii_special",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no-op replace reproduces the original exactly: make_mii_special",
+   "pass": true,
+   "detail": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945"
+  },
+  {
+   "check": "no-op replace reports zero changed members: make_mii_special",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "refusing to overwrite the input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'blyt/make_mii_special.bflyt' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "refuse: extract gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'blyt/make_mii_special.bflyt' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members)"
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'blyt/make_mii_special.bflyt' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'blyt/make_mii_special.bflyt' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc no/such/member.bin",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'no/such/member.bin' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "refuse: extract gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc ../../etc/passwd",
+   "pass": true,
+   "detail": "exit 2: refused: member name '../../etc/passwd' contains a '..' path component"
+  },
+  {
+   "check": "refuse: extract gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc /absolute/name.bin",
+   "pass": true,
+   "detail": "exit 2: refused: member name '/absolute/name.bin' is an absolute path"
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc ../escape.bin",
+   "pass": true,
+   "detail": "exit 2: refused: member name '../escape.bin' contains a '..' path component"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\out_of_bounds.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\out_of_bounds.arc member 4 ('dir/beta.bin') ends at 0x18b9, past the 1721-byte data section"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\overlap.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\overlap.arc members 'dir/gamma.bin' and 'zeta.bin' overlap"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\duplicate_names.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\duplicate_names.arc has duplicate member name 'dir/gamma.bin' (indices 0 and 1)"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\traversal_name.arc",
+   "pass": true,
+   "detail": "exit 2: refused: member name '../../../ab' contains a '..' path component"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\compressed_yaz0.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\compressed_yaz0.arc is a Yaz0 compressed SARC; only uncompressed SARC is supported"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\big_endian.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\big_endian.arc is big-endian (BOM 0xfffe); only little-endian SARC is supported"
+  },
+  {
+   "check": "refuse: list gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\truncated.arc",
+   "pass": true,
+   "detail": "exit 2: refused: gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\truncated.arc header size field is 2249 but the file is 2233 bytes"
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc missing.bin",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'missing.bin' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "bad name hash fails verify without crashing",
+   "pass": true,
+   "detail": "exit 1"
+  },
+  {
+   "check": "no output written for refused grow",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no output written for refused missing member",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "refuse: replace gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc blyt/make_mii_special.bflyt",
+   "pass": true,
+   "detail": "exit 2: refused: no member named 'blyt/make_mii_special.bflyt' in gamedata/mii_customizer/P2-SARC-WRITE\\synthetic\\synthetic.arc (5 members); this tool only replaces existing members"
+  },
+  {
+   "check": "no output outside the workspace",
+   "pass": true,
+   "detail": "%USERPROFILE%\\AppData\\Local\\Temp\\sarc-layout-outside.arc"
+  },
+  {
+   "check": "input unchanged: make_mii_edit",
+   "pass": true,
+   "detail": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212"
+  },
+  {
+   "check": "input unchanged: make_mii_special",
+   "pass": true,
+   "detail": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945"
+  }
+ ]
+}

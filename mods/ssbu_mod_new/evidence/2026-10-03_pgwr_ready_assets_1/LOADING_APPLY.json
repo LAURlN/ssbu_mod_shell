@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "eflame_first/c06",
+    "eflame_first/c07",
+    "eflame_only/c06",
+    "eflame_only/c07"
+  ],
+  "loading_fields_per_row": 57,
+  "files": {
+    "ui/param/database/ui_chara_db.prc": "2c256f3398173acb6eab32320a22373aa8af19cb96468ad19742fb92cb7f1414",
+    "ui/param/database/ui_layout_db.prc": "71b03f6dfb503fc9c2c3c8a409ef48a58f1946ad19c2c68c5f94672102c9d2ee",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx": "bb0def2d8c68cf620146351532de67b31f75179a3394f02628a32958ddac2630",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx": "55ed0574aa4da5e333e058b3aefb260328a99914e08452b1c3fee4689865774d"
+  },
+  "preserved_files": 5095,
+  "added_files": [
+    "ui/param/database/ui_layout_db.prc"
+  ]
+}

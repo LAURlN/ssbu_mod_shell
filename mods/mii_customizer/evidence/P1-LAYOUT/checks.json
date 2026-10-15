@@ -1,0 +1,131 @@
+{
+ "task": "P1-LAYOUT",
+ "date": "2026-10-04",
+ "tier": "B (offline measurement on extracted local files)",
+ "original_archives": {
+  "make_mii_edit": {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+   "bytes": 927100,
+   "sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "members": 111
+  },
+  "make_mii_special": {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+   "bytes": 723436,
+   "sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "members": 76
+  }
+ },
+ "evidence_files": {
+  "manifest.json": {
+   "sha256": "ecf0cb795d9b3ffc935bf6e72c152b6756ce371422c7b194423fafba77536e94",
+   "bytes": 65834
+  },
+  "roundtrip.json": {
+   "sha256": "74f211e44ca45a2dcc841c62cb66ad01583e4fc362c21afa7ca9a1f268aaf7ad",
+   "bytes": 950
+  },
+  "sarc_writer_simulation.json": {
+   "sha256": "8d3efecf66533052d4781c3d36bb0b0752ff88b1c4319a9da4cce05658912389",
+   "bytes": 1835
+  },
+  "repack_4byte.json": {
+   "sha256": "de4ce684d6c46b9f0cc3741edc7a9ef09b69044802e969e86838bc3412cac950",
+   "bytes": 951
+  }
+ },
+ "roundtrip": [
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+   "container_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "data_sha256": "2abbd359bd940b65a67144fa6d032fb545f48bc4f43647a9b92554f37e7a1774",
+   "rebuilt_data_sha256": "2abbd359bd940b65a67144fa6d032fb545f48bc4f43647a9b92554f37e7a1774",
+   "data_equal": true,
+   "container_equal": true,
+   "members": 111,
+   "data_offset": 8192
+  },
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+   "container_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "data_sha256": "06c6287152823f041cb9b639294159b7d4e9389488151e3d1cca8af7759c0367",
+   "rebuilt_data_sha256": "06c6287152823f041cb9b639294159b7d4e9389488151e3d1cca8af7759c0367",
+   "data_equal": true,
+   "container_equal": true,
+   "members": 76,
+   "data_offset": 8192
+  }
+ ],
+ "repack_4byte": [
+  {
+   "tag": "make_mii_edit",
+   "member_align": 4,
+   "original_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "repacked_sha256": "9dce536ee3a4f205ffe857493ea74d439691a0f25bbd295faf79dea2f8dc7eff",
+   "original_size": 927100,
+   "repacked_size": 921812,
+   "byte_equal": false,
+   "membership_equal": true,
+   "member_hashes_equal": true,
+   "repacked_path": "gamedata/mii_customizer/P1-LAYOUT/repacked\\make_mii_edit\\layout.arc"
+  },
+  {
+   "tag": "make_mii_special",
+   "member_align": 4,
+   "original_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "repacked_sha256": "03d528aa9c69662cca6210ef94c54b58a310b36c11bcc371773701e4a3a6b728",
+   "original_size": 723436,
+   "repacked_size": 716700,
+   "byte_equal": false,
+   "membership_equal": true,
+   "member_hashes_equal": true,
+   "repacked_path": "gamedata/mii_customizer/P1-LAYOUT/repacked\\make_mii_special\\layout.arc"
+  }
+ ],
+ "sarc_writer_simulation": [
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+   "member_align": 8192,
+   "original_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "simulated_sha256": "867e454c608fb79a7699e1e4d68751845e4c9b7ba8f2b8f73838b834e52dbf27",
+   "byte_equal": false,
+   "original_size": 927100,
+   "simulated_size": 1737580,
+   "members_preserved": true,
+   "membership_preserved": true
+  },
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+   "member_align": 8192,
+   "original_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "simulated_sha256": "a1947269d6805935a4f5a144b0c6d2802681a44af32cbdc3dcd171e46dfe1354",
+   "byte_equal": false,
+   "original_size": 723436,
+   "simulated_size": 1278220,
+   "members_preserved": true,
+   "membership_preserved": true
+  },
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+   "member_align": 4,
+   "original_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "simulated_sha256": "9dce536ee3a4f205ffe857493ea74d439691a0f25bbd295faf79dea2f8dc7eff",
+   "byte_equal": false,
+   "original_size": 927100,
+   "simulated_size": 921812,
+   "members_preserved": true,
+   "membership_preserved": true
+  },
+  {
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+   "member_align": 4,
+   "original_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "simulated_sha256": "03d528aa9c69662cca6210ef94c54b58a310b36c11bcc371773701e4a3a6b728",
+   "byte_equal": false,
+   "original_size": 723436,
+   "simulated_size": 716700,
+   "members_preserved": true,
+   "membership_preserved": true
+  }
+ ]
+}

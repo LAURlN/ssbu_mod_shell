@@ -1,0 +1,1911 @@
+{
+ "task": "P10-PRESET-WIDE",
+ "part": 2,
+ "max_fields": 48,
+ "chosen_count": 41,
+ "chosen": [
+  "weight",
+  "walk_speed_max",
+  "run_speed_max",
+  "dash_speed",
+  "air_speed_x_stable",
+  "air_speed_y_stable",
+  "air_accel_y",
+  "air_accel_x_mul",
+  "jump_y",
+  "jump_speed_x",
+  "run_accel_add",
+  "guard_speed_limit",
+  "shoot_dash_speed_b",
+  "air_brake_x",
+  "air_brake_y",
+  "air_ground_speed_brake",
+  "damage_fly_top_air_accel_y",
+  "jump_initial_y",
+  "jump_aerial_y",
+  "jump_speed_x_max",
+  "mini_jump_y",
+  "cliff_jump_y",
+  "cliff_jump_x_speed",
+  "passive_wall_jump_y_speed",
+  "passive_wall_jump_x_speed",
+  "passive_wall_x_speed",
+  "passive_ceil_x_speed",
+  "dive_speed_y",
+  "ground_brake",
+  "item_lift_speed_max",
+  "wind_resistance",
+  "shield_break_y",
+  "charge_final_attack_mul",
+  "charge_final_attack_reaction_mul",
+  "throw_item_speed_mul",
+  "throw_item_power_mul",
+  "tread_range_h",
+  "tread_range_add_h",
+  "tread_range_w",
+  "ladder_range_w",
+  "ladder_range_offset_y"
+ ],
+ "existing_ten": [
+  "weight",
+  "walk_speed_max",
+  "run_speed_max",
+  "dash_speed",
+  "air_speed_x_stable",
+  "air_speed_y_stable",
+  "air_accel_y",
+  "air_accel_x_mul",
+  "jump_y",
+  "jump_speed_x"
+ ],
+ "note": "Every decision below is about the DATA choice. Nothing here is runtime evidence: a +0x270 site proves the engine can ask for a field through the hook, not that it does during play.",
+ "decisions": {
+  "weight": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "walk_speed_max": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "run_speed_max": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "dash_speed": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "air_speed_x_stable": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "air_speed_y_stable": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "air_accel_y": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "air_accel_x_mul": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "jump_y": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "jump_speed_x": {
+   "decision": "included",
+   "group": "existing_ten",
+   "reason": "already in stat_fields.txt; kept first and in the same order"
+  },
+  "walk_accel_mul": {
+   "decision": "flagged_for_review",
+   "group": "ground_movement",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "walk_accel_add": {
+   "decision": "flagged_for_review",
+   "group": "ground_movement",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "run_accel_add": {
+   "decision": "included",
+   "group": "ground_movement",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 16 distinct values over the 94 fighters"
+  },
+  "guard_speed_limit": {
+   "decision": "included",
+   "group": "ground_movement",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 3 distinct values over the 94 fighters"
+  },
+  "shoot_dash_speed_b": {
+   "decision": "included",
+   "group": "ground_movement",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 41 distinct values over the 94 fighters"
+  },
+  "air_brake_x": {
+   "decision": "included",
+   "group": "air_movement",
+   "reason": "qualifies and shapes movement/landing: 8 +0x270 sites with x2 == 0, 20 distinct values over the 94 fighters"
+  },
+  "air_brake_y": {
+   "decision": "included",
+   "group": "air_movement",
+   "reason": "qualifies and shapes movement/landing: 3 +0x270 sites with x2 == 0, 17 distinct values over the 94 fighters"
+  },
+  "air_ground_speed_brake": {
+   "decision": "included",
+   "group": "air_movement",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 20 distinct values over the 94 fighters"
+  },
+  "damage_fly_top_air_accel_y": {
+   "decision": "included",
+   "group": "air_movement",
+   "reason": "qualifies and shapes movement/landing: 3 +0x270 sites with x2 == 0, 39 distinct values over the 94 fighters"
+  },
+  "jump_initial_y": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 67 distinct values over the 94 fighters"
+  },
+  "jump_aerial_y": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 3 +0x270 sites with x2 == 0, 59 distinct values over the 94 fighters"
+  },
+  "jump_speed_x_max": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 6 +0x270 sites with x2 == 0, 12 distinct values over the 94 fighters"
+  },
+  "jump_speed_x_mul": {
+   "decision": "flagged_for_review",
+   "group": "jumps",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "jump_aerial_speed_x_mul": {
+   "decision": "flagged_for_review",
+   "group": "jumps",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "mini_jump_y": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 65 distinct values over the 94 fighters"
+  },
+  "cliff_jump_y": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 66 distinct values over the 94 fighters"
+  },
+  "cliff_jump_x_speed": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 4 distinct values over the 94 fighters"
+  },
+  "passive_wall_jump_y_speed": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 12 distinct values over the 94 fighters"
+  },
+  "passive_wall_jump_x_speed": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 3 distinct values over the 94 fighters"
+  },
+  "passive_wall_x_speed": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 2 distinct values over the 94 fighters"
+  },
+  "passive_ceil_x_speed": {
+   "decision": "included",
+   "group": "jumps",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 7 distinct values over the 94 fighters"
+  },
+  "final_end_jump_y": {
+   "decision": "flagged_for_review",
+   "group": "jumps",
+   "reason": "looks like a frame count or a timing multiplier tied to animation length, stored as a float"
+  },
+  "ice_jump_speed_y_mul": {
+   "decision": "flagged_for_review",
+   "group": "jumps",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "dive_speed_y": {
+   "decision": "included",
+   "group": "gravity_and_fall",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 49 distinct values over the 94 fighters"
+  },
+  "ground_brake": {
+   "decision": "included",
+   "group": "gravity_and_fall",
+   "reason": "qualifies and shapes movement/landing: 21 +0x270 sites with x2 == 0, 41 distinct values over the 94 fighters"
+  },
+  "air_accel_x_add": {
+   "decision": "flagged_for_review",
+   "group": "gravity_and_fall",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "attack_100_rebound_distance": {
+   "decision": "flagged_for_review",
+   "group": "landing",
+   "reason": "looks like a frame count or a timing multiplier tied to animation length, stored as a float"
+  },
+  "item_lift_speed_max": {
+   "decision": "included",
+   "group": "landing",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 83 distinct values over the 94 fighters"
+  },
+  "jostle_front": {
+   "decision": "flagged_for_review",
+   "group": "friction",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "jostle_back": {
+   "decision": "flagged_for_review",
+   "group": "friction",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "wind_resistance": {
+   "decision": "included",
+   "group": "friction",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 2 distinct values over the 94 fighters"
+  },
+  "shield_break_y": {
+   "decision": "included",
+   "group": "friction",
+   "reason": "qualifies and shapes movement/landing: 2 +0x270 sites with x2 == 0, 43 distinct values over the 94 fighters"
+  },
+  "charge_final_attack_mul": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 4 +0x270 sites with x2 == 0, 11 distinct values over the 94 fighters"
+  },
+  "charge_final_attack_reaction_mul": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 4 +0x270 sites with x2 == 0, 57 distinct values over the 94 fighters"
+  },
+  "throw_item_speed_mul": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 6 +0x270 sites with x2 == 0, 39 distinct values over the 94 fighters"
+  },
+  "throw_item_power_mul": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 9 +0x270 sites with x2 == 0, 2 distinct values over the 94 fighters"
+  },
+  "item_lift_accel_add": {
+   "decision": "flagged_for_review",
+   "group": "rest",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "tread_range_h": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 8 distinct values over the 94 fighters"
+  },
+  "tread_range_add_h": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 7 distinct values over the 94 fighters"
+  },
+  "tread_range_w": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 10 distinct values over the 94 fighters"
+  },
+  "ladder_range_w": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 2 distinct values over the 94 fighters"
+  },
+  "ladder_range_offset_y": {
+   "decision": "included",
+   "group": "rest",
+   "reason": "qualifies and shapes movement/landing: 1 +0x270 sites with x2 == 0, 4 distinct values over the 94 fighters"
+  },
+  "attack_s4_smash_hold_attack_up": {
+   "decision": "flagged_for_review",
+   "group": "rest",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; looks like a frame count or a timing multiplier tied to animation length, stored as a float"
+  },
+  "size": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "height": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "ice_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "skin_kind": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "egg_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "ice_radius": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "star_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "badge_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "scroll_rate": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; looks like a frame count or a timing multiplier tied to animation length, stored as a float; at least one fighter has a 0 or a negative value"
+  },
+  "aerial_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "effect_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "fighter_kind": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "ice_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "driver_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_range_h": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "ice_offset_z": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "s4_combo_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "s3_combo_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "se_pitch_big": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; looks like a frame count or a timing multiplier tied to animation length, stored as a float"
+  },
+  "landing_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site with x2 == 0 (0 nonzero, 1 unknown)"
+  },
+  "lw4_combo_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "run_accel_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site with x2 == 0 (0 nonzero, 3 unknown)"
+  },
+  "shield_radius": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "expand_height": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "jostle_weight": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "fire_hit_size": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "pose_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "ladder_range_h": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "water_not_good": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "attack100_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "jump_count_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "dead_end_final": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "wall_jump_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "attack_s4_turn": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "se_pitch_small": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; looks like a frame count or a timing multiplier tied to animation length, stored as a float"
+  },
+  "air_lasso_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "bury_r_y_offset": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "squat_walk_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "walk_fast_ratio": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "cursor_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement"
+  },
+  "edge_flare_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "driver_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "special_s_brake": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "item_range_back": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "bury_r_x_offset": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "fly_speed_y_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "camera_range_up": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "bury_r_rot_angle": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_range_front": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attach_wall_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "result_scale_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "jump_squat_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "attack_combo_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "item_range_air_h": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "ice_jump_speed_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "clip_sphere_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "entry_stand_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "star_attack_power": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "walk_middle_ratio": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tread_range_add_w": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "dead_rare_se_rate": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "metal_sound_level": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "barrel_shoot_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "slope_back_up_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "common_effect_0_b": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "camera_range_down": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_combo_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "bury_r_depth_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "common_effect_0_r": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "common_effect_0_g": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "camera_range_back": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "edge_flare_radius": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "slope_loose_angle": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "photo_camera_depth": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "hash:0x12326f1f2a": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "ladder_hand_node_2": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "shoot_dash_speed_f": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "barrel_attack_size": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "barrel_attack_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "slope_front_up_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_attack_size": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_grip_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "camera_range_front": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "egg_collision_size": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "item_grip_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "se_pitch_big_mushd": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "ladder_hand_node_1": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "item_grip_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "bury_motion_height": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "clip_sphere_radius": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x13042acb2d": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "attack_4_hold_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "baitocrane_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "combo_attack_33_end": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "landing_frame_light": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "edge_flare_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "slope_top_angle_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "combo_attack_42_end": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "walk_slow_speed_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "combo_attack_32_end": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "item_lift_accel_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site with x2 == 0 (0 nonzero, 1 unknown)"
+  },
+  "combo_attack_13_end": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "combo_attack_12_end": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "edge_flare_offset_x": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "item_range_air_back": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "edge_flare_offset_z": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "landing_heavy_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "hash:0x13cf982a55": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "bossgalaga_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "ridley_stabbed_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "hash:0x13e3bcfb18": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "item_range_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "camera_range_2nd_up": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "backshield_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "superleaftail_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "hash:0x1408832504": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "shoot_walk_accel_add": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "se_pitch_small_mushd": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "item_range_air_front": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "damage_model_scale_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "shoot_walk_speed_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "clip_sphere_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x145620fd97": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "bury_r_motion_height": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "shoot_walk_accel_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_range_front_max": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "tread_range_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "psychobreak_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "clip_sphere_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_model_scale_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "zoom_camera_range_up": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "se_pitch_big_thunder": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "attack_s4_hold_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "clip_sphere_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_model_scale_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "zelda_triforce_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "attack_100_enable_cnt": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "damage_fly_smoke_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "barrel_smoke_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "demon_fist_down_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "camera_range_2nd_back": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "camera_range_2nd_down": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "bury_r_x_offset_robot": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_lw4_hold_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "ladder_attack_lw_fall": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "camera_range_center_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_hi4_hold_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "se_pitch_big_mushroom": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "edge_flare_variable_y1": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "item_grip_offset_rot_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "edge_flare_variable_x1": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "final_start_turn_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "barrel_attack_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "se_pitch_small_thunder": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "edge_flare_variable_x2": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "zoom_camera_range_back": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tread_jump_speed_y_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "item_grip_offset_rot_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "camera_range_2nd_front": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "edge_flare_variable_y2": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "finish_camera_zoom_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "barrel_attack_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "barrel_attack_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_grip_offset_rot_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "zoom_camera_range_down": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "zelda_triforce_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "se_pitch_small_mushroom": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "ridley_stabbed_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "zoom_camera_range_front": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "ridley_stabbed_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "jack_final_target_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "ridley_stabbed_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "item_range_air_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "at least one fighter has a 0 or a negative value"
+  },
+  "hash:0x17e10662a4": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "jack_final_target_rot_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves; at least one fighter has a 0 or a negative value"
+  },
+  "attack_lw3_rebound_count": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "egg_collision_offset_1_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "egg_collision_offset_2_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "wall_jump_enable_x_speed": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "escape_air_landing_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "egg_collision_offset_2_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "egg_collision_offset_1_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "trail_special_s_joint_id": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "photo_camera_depth_ortho": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "hash:0x187608007b": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "attack_100_rebound_count": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "buddy_final_target_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "scroll_rate_change_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "hash:0x18f0607a99": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  },
+  "egg_collision_offset_2_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "egg_collision_offset_1_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "dead_up_camera_hit_offset": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "tread_fall_recovery_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "gamewatch_stockicon_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "camera_range_2nd_center_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_s4_hold_keep_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "pickel_capture_fence_type": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "pickel_final_target_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_fly_smoke_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "damage_model_no_hit_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "damage_fly_smoke_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x19f190006a": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "zoom_camera_range_center_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "demon_fist_down_base_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "demon_fist_down_stop_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "landing_attack_air_frame_b": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "landing_attack_air_frame_f": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "landing_attack_air_frame_n": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_capture_fence_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "damage_fly_roll_smoke_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "demon_fist_down_comp_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x1a786b5238": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "attack_lw4_hold_keep_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "dead_up_camera_hit_rot_min": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_hi4_hold_keep_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type i32, not float; no +0x270 site"
+  },
+  "dead_up_camera_hit_rot_max": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "packun_final_capture_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_fall_center_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_lw3_rebound_distance": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "buddy_final_target_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "trail_final_target_rotate_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "trail_final_target_rotate_x": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dead_up_camera_hit_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "demon_fist_down_start_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "buddy_final_target_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "landing_attack_air_frame_lw": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tread_mini_jump_speed_y_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "trail_final_target_rotate_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "buddy_final_target_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "demon_fist_down_motion_kind": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "dead_up_camera_hit_distance": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "landing_attack_air_frame_hi": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "trail_special_lw_rebound_air": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "demon_fist_down_motion_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "master_final_target_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "pickel_trolley_catched_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "master_final_target_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "master_final_target_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "critical_hit_camera_zoom_mul": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "dolly_super_special2_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attach_wall_ignore_cliff_dist": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "damage_fly_top_speed_y_stable": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "pickel_capture_fence_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_super_special2_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "finish_camera_zoom_mul_thrown": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement"
+  },
+  "packun_final_capture_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_super_special2_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_capture_fence_offset_x": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "bitten_wario_adjust_scale_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "damage_fly_roll_smoke_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "tantan_dragon_beam_target_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "damage_fly_roll_smoke_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site; same value for every fighter"
+  },
+  "ridley_stabbed_rhombus_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_hi4_smash_hold_attack_up": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "high_speed_dash_attack_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "same value for every fighter"
+  },
+  "high_speed_dash_attack_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "pickel_trolley_catched_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_stage_wall_fly_n_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "attack_lw4_smash_hold_attack_up": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "trail_special_lw_rebound_ground": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "bitten_wario_adjust_scale_value": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "high_speed_dash_attack_offset_z": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_stage_wall_fly_n_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x204850f761": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "hash:0x2080da265f": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "jack_final_target_effect_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "jack_final_target_effect_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "jack_final_target_effect_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_dragon_beam_target_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_motion_kind": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "tantan_dragon_beam_target_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_stage_wall_fly_roll_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_dragon_beam_target_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "palutena_autoaimbullet_target_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "dolly_stage_wall_fly_roll_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_final_target_scene05_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_final_target_scene05_offset_x": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_final_target_scene02_offset_z": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_final_target_scene02_offset_x": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_final_target_scene05_offset_z": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "dolly_final_target_scene02_offset_y": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "values look like indexes or scene offsets rather than a measurement of movement; at least one fighter has a 0 or a negative value"
+  },
+  "pickel_trolley_catched_scaling_node": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type hash, not float; no +0x270 site"
+  },
+  "pickel_trolley_catched_motion_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_stage_wall_check_dead_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene02_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_super_special2_offset_z_ground": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene02_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene03_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_super_special2_offset_x_ground": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene02_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene03_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_super_special2_offset_y_ground": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "tantan_final_target_scene03_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_trolley_scale": {
+   "decision": "flagged_for_review",
+   "group": "unranked",
+   "reason": "size/scale-like: the name and the value range describe how big something is drawn or how far a hitbox reaches, not how the fighter moves"
+  },
+  "dolly_stage_wall_wall_damage_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "dolly_stage_wall_wall_damage_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "palutena_autoaimbullet_target_offset_z": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "palutena_autoaimbullet_target_offset_y": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "palutena_autoaimbullet_target_offset_x": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x271984ee09": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "trail_special_lw_rebound_fall_comp_frame": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x293cf74337": {
+   "decision": "excluded",
+   "group": null,
+   "reason": "no hash-verified field name, so it cannot be listed in a field-name list the generator resolves"
+  },
+  "hash:0x294bf073a1": {
+   "decision": "excluded",
+   "group": null,
+   "reason": "no hash-verified field name, so it cannot be listed in a field-name list the generator resolves"
+  },
+  "pickel_trolley_catched_scaling_node_scale": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x29a5fe128d": {
+   "decision": "excluded",
+   "group": null,
+   "reason": "no hash-verified field name, so it cannot be listed in a field-name list the generator resolves"
+  },
+  "hash:0x2a23dea6e7": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x2a3504f64e": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x2ab2a23d0d": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_speed_y_on_catch_cut": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "pickel_trolley_catched_speed_x_on_catch_cut": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x2bf4bef265": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "no +0x270 site"
+  },
+  "hash:0x2c816b267a": {
+   "decision": "excluded",
+   "group": null,
+   "reason": "no hash-verified field name, so it cannot be listed in a field-name list the generator resolves"
+  },
+  "hash:0x2ea659cf56": {
+   "decision": "not_qualifying",
+   "group": null,
+   "reason": "type bool, not float; no +0x270 site"
+  }
+ },
+ "cut_or_unavailable": [],
+ "listed_names_absent_from_the_table": []
+}

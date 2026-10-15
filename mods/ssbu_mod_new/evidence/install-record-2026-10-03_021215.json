@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-03",
+  "time": "02:12:15",
+  "project": "pgwr",
+  "task": "collective install of the only READY queue section (gaogaen_throw_b 0.3.0)",
+  "installed_by": "Freebuff agent, acting as designated installer for this run at the user's request: 'install the current changes to the switch' (AGENTS.md rule 23)",
+  "card": "E: (detected as /e by install-to-card.sh, which identifies the volume by contents: atmosphere + ultimate/mods + the skyline plugin dir)",
+  "package": "builds/pgwr/gaogaen_throw_b-0.3.0",
+  "package_nature": "Single READY section on top of the installed collective 0.20.20. New Rust binary, so NOT an asset-only variant and NOT installed with --reused-nro. Shared plugin/info version deliberately NOT bumped (0.20.20 stays); task package identity is 0.3.0, per the user's earlier no-shared-bump instruction.",
+  "baseline_on_card_before": "0.20.20, verified by independent re-hash before writing: mod tree 10cd7a07a629897aa24c775173cffbfa13f071c5308f19fe0b483995a9f78abc, 1990 files, NRO 7242d2f5af32bcc5304aa0e94930fe22ac689bd21db9b213f2ecfdac5fbf2098. tools/verify_installed_card.py reported 1990/1990 equal, 0 differing, and 0 card-vs-MANIFEST mismatches.",
+  "reskin_nro_sha256": "5d7d9b8e565d9b38d6a73d804a36f4028e6fcd80ff92f15739ed96f3b783689b",
+  "reskin_nro_bytes": 487424,
+  "reskin_nro_changed_this_run": true,
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "one_slot_eff_changed_this_run": false,
+  "mod_tree_files": 1992,
+  "mod_tree_sha256": "7a33ab21e5a6c313b20c7c6160d4b7cf92914bf759a45be11a5c4364e50bae2c",
+  "mod_tree_all_byte_identical_to_package": true,
+  "mod_tree_matches_package_manifest": "1992/1992 card files equal the manifest's own mod_files hashes; 0 only-card, 0 only-manifest; independently recomputed card tree sha256 = 7a33ab21... which equals the manifest's mod_tree_sha256",
+  "features": ["snake-neutral-b", "hero-side-b"],
+  "cargo_target": "gaogaen_throw_b/runtime-target (read from the package MANIFEST.json, the task's own isolated cache; no shared cache was used)",
+  "changed_files_vs_installed_baseline": [
+    "config.json",
+    "fighter/eflame/motion/body/c06/motion_list.bin",
+    "fighter/eflame/motion/body/c06/pgwrgaogaenthrowb.nuanmb (added)",
+    "fighter/eflame/motion/body/c07/motion_list.bin",
+    "fighter/eflame/motion/body/c07/pgwrgaogaenthrowb.nuanmb (added)",
+    "sound/bank/fighter/se_eflame_c06.nus3audio",
+    "sound/bank/fighter/se_eflame_c06.nus3bank",
+    "sound/bank/fighter/se_eflame_c06.tonelabel",
+    "sound/bank/fighter/se_eflame_c07.nus3audio",
+    "sound/bank/fighter/se_eflame_c07.nus3bank",
+    "sound/bank/fighter/se_eflame_c07.tonelabel",
+    "sound/bank/fighter_voice/vc_eflame_c06.nus3audio",
+    "sound/bank/fighter_voice/vc_eflame_c06.nus3bank",
+    "sound/bank/fighter_voice/vc_eflame_c06.tonelabel",
+    "sound/bank/fighter_voice/vc_eflame_c07.nus3audio",
+    "sound/bank/fighter_voice/vc_eflame_c07.nus3bank",
+    "sound/bank/fighter_voice/vc_eflame_c07.tonelabel"
+  ],
+  "delta_summary": "15 changed files + 2 added owned clips = 17. Nothing else in the 1990-file baseline differs. 0 files removed.",
+  "excluded_pending_work": [
+    "dk_cargo (DK cargo throw): section says INCOMPLETE / NOT READY - no runtime Rust, no integration NRO, no registration patch exists. Not installed.",
+    "T-0054 eflame c06/c07 trail resource ownership: PENDING / candidate staged, not READY. Not installed.",
+    "Hero mana reserved parts: NOT built and NOT installed (the playable mana system was already in 0.20.19).",
+    "Little Mac fsmash handler fix and other open items: no READY section requested them."
+  ],
+  "protected_plugins": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "framework_installation": "OFF (--no-smashline). All four protected plugins re-hashed after the write and byte-unchanged; smashline still 5f4091ee..., the known-good 13.0.4 patched build.",
+  "automatic_backup": "evidence/sd-backups/sd-backup-20261003-021215 (holds the previous 0.20.20 tree, 1990 files)",
+  "installer_checks_run": [
+    "python -B src/pgwr/tools/gaogaen_throw_b/enabled_package.py check -> PASS (enabled NRO equality/registrations/status allocation; 1990 baseline files preserved except 15 declared changes + 2 owned clips; full tree/source hashes)",
+    "pre-install card read against builds/pgwr/0.20.20: 1990/1990 equal, manifest cross-check clean",
+    "built NRO == staged NRO: 5d7d9b8e... in both (enforced by install-to-card.sh, cache read from the package MANIFEST)",
+    "post-install tools/verify_installed_card.py: 1992/1992 equal, 0 differing, 0 only-card, 0 only-package",
+    "post-install manifest cross-check against the manifest's own mod_files table: 0 mismatches; recomputed card tree sha256 == manifest mod_tree_sha256"
+  ],
+  "independent_measurements_made_by_this_installer": [
+    "motion_list.bin c06 and c07 parsed with the project entry decoder (tools/audit_snake_uptilt_delta.py layout): 841 -> 842 entries. Exactly one key added (0x14efb93f11), appended at index 841, zero keys removed, zero existing entries changed bytes, relative order of all shared keys preserved.",
+    "sound banks decoded with tools/merge_hero_neutral_b_sound.py codec: se_eflame_c06/c07 548 -> 553 tones (+5 each), vc_eflame_c06/c07 244 -> 245 tones (+1 each). For every bank the full prior tone-record array and the full prior audio-blob array are byte-equal as prefixes, so no existing sound was lost, reordered or rebased.",
+    "config.json compared as parsed JSON: new-dir-infos, new-dir-infos-base, share-to-vanilla, share-to-added identical; no key added or removed; the only per-costume change is one added file entry per slot (fighter/eflame/motion/body/c06|c07/pgwrgaogaenthrowb.nuanmb). NOTE the file's line endings changed LF -> CRLF, which is cosmetic for arcropolis but is why the raw bytes differ.",
+    "NRO marker scan: pgwr_gaogaen_throw_b_log.txt, 'REGISTERED status=', 'VICTIM_INIT kind=' and pgwrgaogaenthrowb are present in the new binary. Markers for the previously shipped moves are unchanged from the 0.20.20 binary (PGWR-NESSTHB 1, snake_grenade 2, pgwrsnake 69, lucas 8, Mythra 12, game_throwb 1, 'v0.20.20' 5)."
+  ],
+  "installer_decisions": [
+    "Only the gaogaen_throw_b section was installed. It is the sole READY section; the two PENDING/INCOMPLETE sections (dk_cargo, T-0054) were deliberately left out rather than silently folded in, per AGENTS rule 23.",
+    "No combined rebuild was needed: this package is already a complete 1992-file tree based on the installed 0.20.20 and carries its own enabled NRO, so copying it is the merge, not an approximation of one. No other agent's live build input was touched.",
+    "logging feature stays OFF, as in every collective install since 0.20.10. Consequence: there are no [PGWR-*] global log lines. The gaogaen move writes its own file sd:/ultimate/pgwr_gaogaen_throw_b_log.txt independently of that feature, which is what the test reads.",
+    "tools/verify_installed_card.py cross-checks a manifest key named mod_file_hashes, which this task's MANIFEST.json does not use (it uses mod_files). Its file-by-file card-vs-package comparison is still valid and passed; its manifest line reported '0 entries' and is therefore vacuous for this package. The real manifest cross-check was done directly against mod_files and passed 1992/1992. This tool/manifest key mismatch is worth fixing; it is recorded rather than hidden."
+  ],
+  "hardware_validated": false,
+  "runtime_claims": "NONE. Offline compilation, hash equality and asset-preservation checks prove nothing about gameplay. The gaogaen back throw is tier D until the user runs the console test. The compiler still warns that the binding's SIMD Vector3 return is not FFI-safe; the hook ABI is unverified. Snake down throw, Lucas down smash and Ness back throw from 0.20.20 also remain unverified on hardware.",
+  "next_test": "evidence/2026-10-03_pgwr_0.20.20+gaogaen_throw_b/RESULT.md (numbered test with vanilla controls, pass/fail markers, log location sd:/ultimate/pgwr_gaogaen_throw_b_log.txt, crash reports under sd:/atmosphere/crash_reports/). Running the game is the user's job.",
+  "rollback": "evidence/sd-backups/sd-backup-20261003-021215 restores the 0.20.20 card state. install-to-card.sh also rolls back automatically if its own post-write verification fails (it did not fire)."
+}

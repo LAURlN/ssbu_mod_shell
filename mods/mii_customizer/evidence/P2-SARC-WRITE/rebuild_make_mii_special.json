@@ -1,0 +1,9 @@
+{
+ "archive": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+ "byte_identical": true,
+ "input_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+ "input_size": 723436,
+ "rebuilt_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+ "rebuilt_size": 723436,
+ "written": "gamedata/mii_customizer/P2-SARC-WRITE/rebuilt/make_mii_special/layout.arc"
+}

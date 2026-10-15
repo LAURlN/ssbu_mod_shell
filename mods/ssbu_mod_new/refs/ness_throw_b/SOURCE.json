@@ -1,0 +1,205 @@
+{
+  "move": "vanilla Ness back throw (throw_b) on Mythra (elight) c06/c07",
+  "task": "ness-throw-b",
+  "date": "2026-10-02",
+  "agent": "Freebuff (buffy)",
+  "donor": "ness",
+  "recipient": "elight c06/c07",
+  "tier_legend": "A console / B measured offline by a script in tools/ that still exists / C read from pinned third-party source / D hypothesis",
+  "sources": {
+    "acmd_text": {
+      "repo": "WuBoytH/SSBU-Dumped-Scripts",
+      "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+      "layout": "smashline/lua2cpp_ness/ness/<Script>.txt (one file holds game+effect+sound+expression)",
+      "local": "refs/ness_throw_b/donor_acmd/",
+      "manifest": "refs/ness_throw_b/donor_acmd/manifest.json",
+      "tier": "C",
+      "why_re_fetched": "dumps/scripts/SSBU-Dumped-Scripts-main is no longer in this workspace (it holds only ParamLabels.csv and gamewatch_motion_list.yml), and paths.toml [dumps] arc points at an almost-empty external export. Same pinned commit refs/brave_special_n/acmd_pin.json and tools/fetch_donor_acmd.py already use, so the donor text is re-pinned rather than approximated (AGENTS.md rule 2)."
+    },
+    "arc_assets": {
+      "method": "workspace tool tools/arc-extract, read-only, against the local 13.0.4 data.arc",
+      "archive_sha256": "ef615e671e1d4907f0a707f2eb13e3cb0c8539c4e67ac51c89ef547c22b82995",
+      "archive_bytes": 17600869448,
+      "out": "gamedata/ssbu-13.0.4/files/ (workspace rule: extract into gamedata/, never into a mod source tree)",
+      "tier": "B (bytes read straight out of the shipped 13.0.4 archive)",
+      "fetched": {
+        "fighter/ness/motion/body/c00/e01throwb.nuanmb": "376d65d66708585911a91cc8132c8354fd5ce754e2b079752972ecfae1c52d52 50488 B",
+        "fighter/ness/motion/body/c00/motion_list.bin": "7a6b50663683e12b6192b77133bc4c7a2169986a2f8b015f238321f3a887a514 43008 B",
+        "fighter/ness/model/body/c00/model.nusktb": "014ab4fd5cc35058d64a0577852aa4ca6e064af5847dc4f6beff626e7701dcbc 22976 B",
+        "effect/fighter/ness/ef_ness.eff": "5aab79ed940d085398b45f6b1b39cd593237572998d64b4ef14f4ff817929595 12497408 B",
+        "sound/bank/fighter/se_ness_c00.*": "13a14aac.. / 3f8d4ef9.. / 68828c6d..",
+        "sound/bank/fighter_voice/vc_ness_c00.*": "7b84a3f3.. / 69cc8944.. / 7dee6aae..",
+        "sound/sequence/fighter/ness.sqb": "8fc0ee194941d8029eb20eeb658c00f5ab7be48c82751374b07100976557e30a 392 B",
+        "fighter/elight/** (recipient side)": "motion_list c00/c06/c07, model.nusktb c06/c07, a00wait1, e01throwb, ef_elight.eff, se/vc_elight_c06/c07, elight.sqb, vl.prc"
+      }
+    }
+  },
+  "controls": {
+    "purpose": "A dump is evidence, not code, and its conversion errors have to be judged against a file whose port already ships. Nothing in the donor text is believed until a control agrees.",
+    "pinned_alongside_the_donor": {
+      "robot__AttackLw3.txt_CONTROL": "sha256 65b13e7c00a04a1da900de4dc1d82540176d2a1c8d292f520b22c34029e3fa25 - byte-identical to refs/snake_attack_hi3/donor_acmd/robot__AttackLw3.txt, whose hash was recorded there on 2026-10-02. The commit is therefore provably the same one, not merely claimed to be.",
+      "elight__ThrowB.txt_RECIPIENT_CONTROL": "the recipient's own vanilla back throw, read to enumerate what the donor omits",
+      "elight__ThrowLw.txt_RECIPIENT_CONTROL": "the down throw already shipped on these costumes, used as the local example of a faithfully-ported throw",
+      "luigi__ThrowLw.txt_CONTROL": "the donor of that already-shipped port, so 'donor text vs shipped Rust' could be compared line by line"
+    },
+    "throwb_convention_sweep": {
+      "why": "Ness's ThrowB has no REVERSE_LR and Mythra's own does. Is that the back-throw convention, or the dump losing a line?",
+      "method": "ten other fighters' ThrowB.txt fetched at the same pinned commit",
+      "with_reverse_lr": [
+        "mario",
+        "luigi",
+        "robot",
+        "cloud",
+        "gaogaen",
+        "gamewatch"
+      ],
+      "without_reverse_lr": [
+        "kirby",
+        "pikachu",
+        "snake",
+        "younglink",
+        "ness"
+      ],
+      "reading": "Six of ten omit it, so REVERSE_LR is per-fighter, not a property of the back throw. The omission is Ness's own arrangement and is preserved rather than 'corrected'. Placement where present is also per-fighter (release frame, pre-camera or post-camera), which is further evidence it is authored per character.",
+      "location": "scratch/2026-10-02_buffy/ness_throw_b/throwb_control/ (scratch: disposable, re-fetchable by URL+commit above)"
+    },
+    "negative_controls": {
+      "where": "tools/audit_ness_throw_b.py::negative_controls",
+      "asserts": [
+        "a motion list with throw_hi's cancel byte altered is rejected",
+        "a candidate that ships effect/fighter/ness/ef_ness.eff is rejected",
+        "a sound bank missing se_ness_throw_pk01 is rejected"
+      ],
+      "result": "all three fire"
+    }
+  },
+  "measurements": {
+    "tier": "B",
+    "motion_entry": {
+      "finding": "Ness's and Mythra's throw_b entries are byte-identical except offset 62, the cancel frame.",
+      "kind": "0x74e9acdb1 (hash40('throw_b'), identical in both)",
+      "game_script": "0xbb479747f = hash40('game_throwb') in both",
+      "flags": "0x0081 in both",
+      "blend": "0 in both",
+      "cancel": "Ness 53 (0x35) -> Mythra 36 (0x24)",
+      "animation": "0x10af128ea0 = hash40('e01throwb.nuanmb') in both",
+      "consequence": "no alias, no spare clip name, no new declared file, and the motion-list delta is one byte per slot"
+    },
+    "clip_name_shared": "Both fighters' lists name e01throwb.nuanmb, so the port is an in-place override of a file the base game already has in that costume group. This is why NO config.json entry is required - contrast Snake's up tilt (T-0043), where the donor clip name did not exist on the recipient and had to be aliased.",
+    "recipient_skeleton": {
+      "bones": 169,
+      "has_Throw": true,
+      "Throw_parent": "Rot (same parent Ness gives it)",
+      "has_top": false,
+      "top_note": "`top` is not a bone on either fighter; it is the engine-side anchor sv_animcmd resolves to the fighter origin (handbook/15, measured on G&W). Mythra's own throw_b, the shipped Luigi down throw and the donor all write it the same way.",
+      "not_overridden_by_pgwr": "Measured: the 0.20.19 package ships no fighter/elight/model/body/c06/model.nusktb. pgwr replaces Pyra's skeleton with G&W's but leaves Mythra's vanilla, so this retarget filters against the ARC skeleton and that is what the game loads. Distinct from every eflame move in this project."
+    },
+    "retarget": {
+      "donor_transform_nodes": 68,
+      "kept": 66,
+      "dropped": [
+        "Bat",
+        "BatL"
+      ],
+      "dropped_reason": "Ness's baseball bat. Mythra has no such bone; dropped rather than remapped.",
+      "case_only_matches": 0,
+      "material_groups_dropped": 2,
+      "visibility_nodes": 19,
+      "visibility_source": "the recipient's own idle, because the donor's Visibility group names Ness's face/hat meshes which do not exist here",
+      "frames": [
+        1,
+        68
+      ],
+      "sha256_both_slots": "0b7da3fdab095231891808682d9c9795fba5d05c369f89ac77bb87b98e5de6ee",
+      "identical_across_slots": "measured - Mythra c06 and c07 skeletons are byte-identical (5b6fbbe6...)",
+      "limb_motion_measured": "ArmL 109.95 / ArmR 57.97, LegL 112.59 / LegR 100.72, HandL 89.85 / HandR 53.60, ShoulderL 103.94 / ShoulderR 121.10 deg; Throw 179.32 deg and 30.80 units of translation. 'Moved' means rotation OR translation, per the Snake up-tilt finding."
+    },
+    "dependencies": {
+      "donor_owned": {
+        "effect": "ness_psi_rush -> merged into ef_elight_c06.eff / ef_elight_c07.eff",
+        "sound": "se_ness_throw_pk01, se_ness_throw_pk02, se_ness_pk_s -> merged into se_elight_c06/c07",
+        "sequence": "seq_ness_rnd_attack -> appended to sound/sequence/fighter/elight.sqb",
+        "voice": "vc_ness_attack01..04, MEASURED out of the sequence record by CRC32 -> merged into vc_elight_c06/c07"
+      },
+      "common_not_merged": {
+        "effects": [
+          "sys_run_smoke",
+          "sys_smash_flash_s"
+        ],
+        "sounds": [
+          "se_common_throw_01",
+          "se_common_throw_02"
+        ],
+        "rumble": [
+          "rbkind_elecattack",
+          "rbkind_attackm"
+        ],
+        "asserted": "merge_ness_throw_sound.py refuses to run if a `common` name turns out to live in the donor bank"
+      },
+      "work_ids": "Only the three common FIGHTER_STATUS_THROW_WORK_INT_TARGET_* reads. No Ness fighter work id is written or read, so nothing needed re-basing and no status allocation was required.",
+      "articles": "none",
+      "params": "none - the absolute throw damage/angle/knockback/timing are inline in ATTACK_ABS, not read from a .prc"
+    },
+    "victim_side": {
+      "finding": "The victim plays its OWN fighter's `thrown_b` clip. Both fighters ship e01thrownb.nuanmb in their own folders, and Mythra keeps hers.",
+      "consequence": "No victim asset is ported. Ness's e01thrownb / e01throwndxb / e01throwngirlb are Ness reacting to being thrown, which Mythra never needs, and importing them would change how Mythra behaves when someone else throws her - out of scope and a regression risk."
+    },
+    "effect_bank_merge": {
+      "c06": {
+        "baseline": "c7a2b4b0dff6a523a1b311eea52ca29a1c437b600edc9b445aaf810f2461e0e3",
+        "merged": "41d416d6b89ee8a303f801abe50652a6ab6ecdc26aac75be24b963f0cbebb3cf"
+      },
+      "c07": {
+        "baseline": "d4f06243582516dae66099f24a6a777a1f61cf0d326100dd3c8d59353f3d97bb",
+        "merged": "2c0a8af5a64de42d7ee70f7bae60b30c861446eed6dae1d4da7ab9fe45123983"
+      },
+      "emitters": "127 vanilla -> 128 merged, 0 lost, 1 added (NESS_PSI_RUSH) in each bank",
+      "id_relocations": "0 texture, 0 model - NESS_PSI_RUSH's payload shares no texture or model id with a different payload in the recipient bank, so nothing needed moving. The merge reports the table either way, because T-0050 found a duplicate id that merged 'successfully' and drew the wrong mesh.",
+      "converter": "EffectLibrary d5491138d645221ec92189eeff3ded8c43fd0a1a, rebuilt from pinned source into builds/.cache/hero_effect_converter"
+    },
+    "sound_merge": {
+      "baseline_tones": {
+        "se_elight_c0{6,7}": 389,
+        "vc_elight_c0{6,7}": 233
+      },
+      "preservation": "every pre-existing sample byte, tone record and tone label is compared before and after; a negative control truncates a written bank and the check fires",
+      "sqb": "seq_ness_rnd_attack appended once, idempotent on re-run"
+    },
+    "status_allocations_required": "NONE. throw_b is a vanilla status kind already present in Mythra's own motion list and status table. No custom status id is requested from the shared Mythra range, so this task does not compete with any other agent for one. (For reference, the Mythra allocation table in src/pgwr/plugin/src/mythra/mod.rs holds 0x1F1-0x1F4 for Hero's Spin and T-0057 reserves more; nothing here is taken from it.)"
+  },
+  "not_established": [
+    "ANY runtime behaviour. No console run, no emulator, no automated gameplay test. Tier D until the user tests.",
+    "Whether the back throw reads correctly with or without facing reversal. Ness omits REVERSE_LR and this port preserves that; console step 3 decides.",
+    "The throw-finish cut-in does NOT use the donor's zoom rate 2.0 / offset (0,5,0) - see limitations.",
+    "Nothing about how the PSI effect looks, since no effect playback has been observed."
+  ],
+  "limitations": {
+    "fighter_cut_in_manager": {
+      "what_is_missing": "The donor sets the throw-finish cut-in zoom rate (2.0) and offset ((0,5,0)). Those two calls are dropped.",
+      "why": "The pinned skyline-smash 315e4e8 declares FighterCutInManager's two methods but exposes no accessor returning the manager instance, and the crate has no `singletons` module at all. Building it fails with E0433.",
+      "verified_three_ways": [
+        "cargo build in this crate: E0433 'use of unresolved module or unlinked crate `singletons`', name: not found anywhere in the pinned skyline-smash checkout",
+        "src/pgwr/plugin/src/acmd/monkey_flip.rs (shipped) dropped the same two calls for Diddy's cling attack and says so in place",
+        "src/pmclone/moveset/src/acmd/cflame.rs excluded Mythra's OWN vanilla throw_b over the same two calls"
+      ],
+      "what_was_NOT_done": "no hand-built instance pointer and no raw-offset hook. AGENTS.md rule 17 forbids both without the user's decision on reserved work.",
+      "consequence": "CHECK_FINISH_CAMERA(-5, 18) - the throw finish camera the move actually uses - is the donor's. Only the cut-in framing differs, falling back to the default zoom rate and offset."
+    },
+    "donor_loop_rendering": "effect_throwb's `for _ in 0..7 { ... wait(3.0) }` is how WuBoytH renders the donor's own counted loop; ThrowF and ThrowHi render the same loop as `0..4`. It is reproduced as a `for` so the file compiles and runs. Rewriting it as an explicit frame ladder would be a second reading of the same source."
+  },
+  "integration": {
+    "baseline": "builds/pgwr/0.20.19/ultimate/mods/pyra_gamewatch_reskin (what the card holds)",
+    "delta": "builds/pgwr/ness-throw-b-candidate/ult_mod - 19 files, apply over the baseline",
+    "files": "evidence/2026-10-02_pgwr_T-0060_ness_throw_b/DELTA.json",
+    "rust": "src/pgwr/plugin/src/mythra/ness_throw_b.rs, registered in mythra/mod.rs. A rebuild is required: this is not an asset-only delta.",
+    "config_json": "NO CHANGE. See measurements.clip_name_shared.",
+    "reproduce": [
+      "python -B src/pgwr/tools/build_ness_throw_b.py --check",
+      "python -B tools/merge_ness_throw_effects.py --recipient <baseline ef_elight_c06.eff> --output <out>/effect/fighter/elight/ef_elight_c06.eff   (repeat for c07)",
+      "python -B tools/merge_ness_throw_sound.py --output <out>",
+      "python -B src/pgwr/tools/build_ness_throw_b.py --model-body <gamedata>/fighter/elight/model/body/c06 --out <out>/fighter/elight/motion/body/c06 --idle <gamedata>/fighter/elight/motion/body/c06/a00wait1.nuanmb --motion-list <copy of the baseline motion_list.bin>   (repeat for c07)",
+      "python -B tools/audit_ness_throw_b.py --check"
+    ]
+  },
+  "task_id_note": "Labelled by move, not by task number: a concurrent agent claimed T-0060 for Lucas's down smash on the same Mythra costumes, so that id is ambiguous in projects/pgwr/STATUS.md. The evidence directory name keeps its original T-0060 string because it is already referenced from several files."
+}

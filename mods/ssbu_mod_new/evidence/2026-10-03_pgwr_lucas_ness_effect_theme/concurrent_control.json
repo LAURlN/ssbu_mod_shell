@@ -1,0 +1,39 @@
+{
+  "stand_in_resource": "NESS_PSI_CATCH",
+  "stand_in_set": "P_NessPsiCatch",
+  "extended_recipient_sha256": "dbea9ed63102f7ef3a260c087bd929eb872101418625aabee56cc8d88d161b3d",
+  "is_recorded_input": false,
+  "themed_output_sha256": "0fe2d4adc3e617211cc3ec8d2056a543553ec46cb7779965864992576529244f",
+  "emitter_sets_total": 131,
+  "unrelated_decoded_entries_identical": 3552,
+  "byte_scope": {
+    "bank_bytes": 14718544,
+    "changed_bytes": 122719,
+    "changed_bytes_outside_owned_ranges": 0,
+    "emitter_blocks_total": 829,
+    "emitter_blocks_owned": 20,
+    "textures_total": 111,
+    "textures_owned": [
+      "ef_lucas_flash00",
+      "ef_ness_flash00"
+    ]
+  },
+  "stand_in_present_after_theme": true,
+  "resources": {
+    "LUCAS_PSI_HOLD": {
+      "emitter_set": "P_LucasPsiHold",
+      "emitter_set_id": 128,
+      "kind": 256
+    },
+    "LUCAS_PSI_ATK_LW": {
+      "emitter_set": "P_LucasPsiAttackLw",
+      "emitter_set_id": 129,
+      "kind": 256
+    },
+    "NESS_PSI_RUSH": {
+      "emitter_set": "P_NessPsiRush",
+      "emitter_set_id": 130,
+      "kind": 256
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "set": "snake_throw_lw",
+  "date": "2026-10-02",
+  "by": "Freebuff slot 4 (Snake down throw)",
+  "what": "Vanilla Snake's DOWN THROW (ThrowLw) on the live pgwr G&W body, eflame c06/c07, replacing G&W's own down throw on those costumes only",
+  "move_identity": {
+    "is": "throw_lw",
+    "is_not": "attack_lw4",
+    "why": "Snake's own motion_list.bin gives throw_lw the game script game_throwlw and the clip e01throwlw.nuanmb (cancel 48), while attack_lw4 gets game_attacklw4 and c04attacklw4.nuanmb (cancel 56). attack_data_param.prc lists an attack_lw4 AI record at cancel_frame 56 and NO throw_lw record, and game_attacklw4 opens with START_SMASH_HOLD, se_common_smash_start_02, rbkind_smashhold1 and PHYSICS_START_CHARGE with an AttackLw4Charge follow-up clip. Those are down-SMASH marks. Measured by tools/audit_snake_throw_lw_donor.py, recorded in inventory.json, with a negative control asserting the two kinds' game scripts differ."
+  },
+  "source": {
+    "acmd_text": {
+      "kind": "third-party decompiled text at a pinned commit",
+      "repo": "WuBoytH/SSBU-Dumped-Scripts",
+      "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+      "manifest": "refs/snake_throw_lw/donor_acmd/manifest.json",
+      "tier": "C",
+      "why_this_commit": "the commit refs/brave_special_n/acmd_pin.json and tools/fetch_donor_acmd.py already pin, and the one refs/snake_attack_hi3/donor_acmd used on 2026-10-02; dumps/scripts/SSBU-Dumped-Scripts-main is no longer in this workspace"
+    },
+    "arc": {
+      "kind": "offline extraction from the local base game, read-only",
+      "tool": "tools/arc-extract (workspace root) on gamedata/ssbu-13.0.4/data.arc",
+      "data_arc_sha256_prefix": "ef615e671e1d",
+      "data_arc_bytes": 17600869448,
+      "version": "13.0.4",
+      "index": "mods/ssbu_mod_new/dumps/decoded/arc_files.tsv",
+      "note": "Base-game files only. Extracted into gamedata/ and pinned into refs/; nothing was written into dump/ or a source tree."
+    }
+  },
+  "fetched": [
+    "fighter/snake/motion/body/c00/e01throwlw.nuanmb",
+    "fighter/snake/motion/body/c00/e01thrownlw.nuanmb",
+    "fighter/snake/motion/body/c00/e01throwndxlw.nuanmb",
+    "fighter/snake/motion/body/c00/c04attacklw4.nuanmb",
+    "fighter/snake/motion/body/c00/motion_list.bin",
+    "fighter/snake/model/body/c00/model.nusktb",
+    "fighter/snake/param/vl.prc",
+    "fighter/snake/param/expression_vl.prc",
+    "fighter/snake/ai/param/attack_data_param.prc",
+    "fighter/snake/ai/param/attack_list_param.prc"
+  ],
+  "per_file_sha256": "inventory.json -> pins",
+  "victim_anatomy": {
+    "files_whose_names_look_related": {
+      "e01throwlw.nuanmb": "the ATTACKER's own down-throw clip - the one this port retargets",
+      "e01thrownlw.nuanmb": "a SNAKE being thrown by a down throw - i.e. Snake as the VICTIM",
+      "e01throwndxlw.nuanmb": "the same victim, the down-throw variant"
+    },
+    "why_the_victim_clips_are_not_ported": "They live under the VICTIM's own fighter folder in the base game. Whoever is grabbed plays their own e01thrownlw from their own files, so the victim-side animation is already vanilla-correct for every opponent and is not this mod's to ship. Copying Snake's would only change what a Snake victim looks like, and Snake is not a roster member of this mod.",
+    "progression": "throw (capture) -> throw (held) -> released at the donor's frame 35 -> the victim's own THROWN/DAMAGE state -> LAY_DOWN -> the victim's own get-up."
+  },
+  "dependencies": {
+    "bones": {
+      "script_names": ["throw"],
+      "measured_on_built_recipient": "absent (165-bone c06/c07 skeleton). 'throw' is an engine fighter anchor of the same family as 'top', not a skeleton bone, and G&W's own down throw - what runs on c06/c07 today - names the same anchor. Left exactly as the donor wrote it, measured rather than assumed."
+    },
+    "articles": "none - the donor's game_throwlw writes no work id and generates no article",
+    "work_ids": ["FIGHTER_STATUS_THROW_WORK_INT_TARGET_OBJECT", "FIGHTER_STATUS_THROW_WORK_INT_TARGET_HIT_GROUP", "FIGHTER_STATUS_THROW_WORK_INT_TARGET_HIT_NO"],
+    "motion_kinds": ["throw_lw (replaced)", "attack_lw4 (down smash, deliberately untouched)"],
+    "effects": "NONE. Snake's ThrowLw defines no effect script, so no effect bank is merged and no config.json entry is needed. G&W's four down-throw effects are superseded by a deliberately empty effect_throwlw at High priority - see the module docs.",
+    "sounds": {
+      "named_by_acmd": ["se_snake_catch_tight", "se_snake_catch_tight_02"],
+      "also_appended": ["se_snake_catch_tight_01", "se_snake_catch_tight_01_layer"],
+      "why": "se_snake_catch_tight is the only KIND-1 (sequence) tone among the 111 tones of se_snake_c00 and references its two children by bank-relative index 92/93. Appending it without them, or without rebasing the indices, would point at two unrelated tones in Pyra's 544-tone bank while every byte-level check still passed.",
+      "sequences": "none - the donor plays no PLAY_SEQUENCE, so eflame.sqb is deliberately not written"
+    },
+    "params": "Snake's vl.prc was decoded and carries no throw_lw entry (hit_data is 11 limb capsules, hit_target is [0,1]); attack_data_param.prc carries no throw_lw record. The move is inline ACMD plus its motion-list entry. attack_list_param.prc is pinned for completeness and is not used.",
+    "statuses": "NONE. ThrowLw is a vanilla status kind entered from the grab, so this move allocates NO custom status id and requests none from the collective pool. Next free Pyra id remains 0x208."
+  },
+  "victim_outcome_analysis": {
+    "question": "is this a damage number plus a downward launch?",
+    "answer": "No, and the donor's numbers are the evidence.",
+    "measured": "The throw's ATTACK_ABS is damage 9.0, angle 270, and kbg / fkb / bkb ALL ZERO. There is no knockback to copy, so the numbers alone cannot produce the move's behaviour.",
+    "actual_mechanism": "collision_attr_lay on the throw box is what routes the victim into the engine's generic prone state FIGHTER_STATUS_KIND_LAY_DOWN (0x56 in the pinned lua_const.rs) rather than the DAMAGE_FLY* family. The victim lying down and standing back up is then run by the victim's own fighter.",
+    "why_this_matters_for_the_port": "Replacing the two ATTACK_ABS calls with a plain downward launch, or dropping the lay attribute, would keep the damage number and still be a different move. All three pieces are carried verbatim: the CATCH box (damage 2.0, angle 361, kbg 100, fkb 60, ATTACK_LR_CHECK_B), the release (ATK_HIT_ABS on bone 'throw' at frame 35, reading the three THROW work ids), and the lay attribute.",
+    "tier": "B for the numbers and the attribute (read from pinned vanilla text and the pinned const table); D for the observed victim animation and get-up timing, which only the console can show."
+  },
+  "not_established": [
+    "how the move looks on G&W's body",
+    "whether the victim is actually released (the 'throw' anchor is not on the built skeleton)",
+    "whether the victim visibly lies prone and how long the get-up takes",
+    "whether the two Snake tones play, and whether the sequence tone resolves",
+    "whether the four G&W down-throw effects are indeed silent"
+  ],
+  "verification": {
+    "tier": "B offline",
+    "tools": [
+      "tools/audit_snake_throw_lw_donor.py -> refs/snake_throw_lw/inventory.json",
+      "src/pgwr/tools/build_snake_throw_lw.py -> builds/pgwr/snake-throw-lw-delta/",
+      "tools/merge_snake_throw_lw_sound.py --check",
+      "tools/audit_snake_throw_lw_delta.py -> snake_throw_lw_audit.json",
+      "cargo skyline build --release --features snake-neutral-b,hero-side-b -- --offline"
+    ],
+    "hardware": "none. No console, no emulator, no card access, no automated gameplay test."
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "skins": {
+    "black_and_pink_mythra": {
+      "source_directory": "skins_to_use/black_and_pink_mythra/mythra skin",
+      "source_costume": "c06",
+      "destination_character": "mgw_mythra",
+      "destination_costume": "c00",
+      "model_files": 23,
+      "effect_files": 6,
+      "portraits": "elight_only variants present in source, rewritten by build_probe_ui.py"
+    }
+  },
+  "copied": [
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_001_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_001_col.nutexb",
+      "bytes": 1050800,
+      "source_sha256": "afc0da93270f03c55d4701fae8a101b322ce27533304b5ec1e811e6e0d62c0b5",
+      "output_sha256": "afc0da93270f03c55d4701fae8a101b322ce27533304b5ec1e811e6e0d62c0b5",
+      "replaced_existing_file": true,
+      "previous_sha256": "9a0ae4f822d59b22daea78baef0c1a24bf32bd5ca272f3d96aeb2cddac40b522",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_001_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_001_emi.nutexb",
+      "bytes": 177328,
+      "source_sha256": "3f06acbc19b99c01d5c9073f59ce40cbfcb94b2bdeebbddc849cc23a49ece899",
+      "output_sha256": "3f06acbc19b99c01d5c9073f59ce40cbfcb94b2bdeebbddc849cc23a49ece899",
+      "replaced_existing_file": true,
+      "previous_sha256": "3f818b07f8bed1d84cfe5757124a90e55b22745311f4b2b7234d9ba3fbaf9bb7",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_002_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_002_col.nutexb",
+      "bytes": 351920,
+      "source_sha256": "d930d5e0a0caf34f51a52f8ba2d80c006775cca55414a30655ff5c4c1c405b93",
+      "output_sha256": "d930d5e0a0caf34f51a52f8ba2d80c006775cca55414a30655ff5c4c1c405b93",
+      "replaced_existing_file": true,
+      "previous_sha256": "8c13a375c19cb836e23ed604c323c06835bb4577bcb02c06284fcdd5e39dcecf",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_003_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_003_col.nutexb",
+      "bytes": 176816,
+      "source_sha256": "2e9e85115cfee8964a78b40bd3ef7f911d4e10aed81b094dba5abaa539ae10ec",
+      "output_sha256": "2e9e85115cfee8964a78b40bd3ef7f911d4e10aed81b094dba5abaa539ae10ec",
+      "replaced_existing_file": true,
+      "previous_sha256": "0ba80febcb21cccaa843a42fcec823e78d47c1448cbe0be4b6d0c65d3d901e9d",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_003_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_003_emi.nutexb",
+      "bytes": 89776,
+      "source_sha256": "2818348c8fba547b861439ee7f4771dd5e3ec664f71afef7bae031234bb41483",
+      "output_sha256": "2818348c8fba547b861439ee7f4771dd5e3ec664f71afef7bae031234bb41483",
+      "replaced_existing_file": true,
+      "previous_sha256": "b9689062e9164c9f8565da93757234b9020a409d94da4ec934db482d3c5fa47f",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_004_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_004_col.nutexb",
+      "bytes": 7856,
+      "source_sha256": "2ab0ab7072388c855ab7b436f7b04a8e87da7fb07d040a77545f400bc4c08ea6",
+      "output_sha256": "2ab0ab7072388c855ab7b436f7b04a8e87da7fb07d040a77545f400bc4c08ea6",
+      "replaced_existing_file": true,
+      "previous_sha256": "0d10ba1c019609372a458e1f1944806845d1db1cbc9cc0700f9cdac347956065",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_004_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_004_emi.nutexb",
+      "bytes": 5296,
+      "source_sha256": "ce1da98967687008240f8777c5c60b83930f5f94da53c6ba4fa15e8ec974ff36",
+      "output_sha256": "ce1da98967687008240f8777c5c60b83930f5f94da53c6ba4fa15e8ec974ff36",
+      "replaced_existing_file": true,
+      "previous_sha256": "67b5cde32e43223d9001c4811a6f02e08d627190a3d5f1fa5cff19cf21ad4945",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/def_light_004_nor.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/def_light_004_nor.nutexb",
+      "bytes": 3760,
+      "source_sha256": "9a0058450ac354942bf76ac295e98047377a3c63eb9950fa138fca4107530188",
+      "output_sha256": "9a0058450ac354942bf76ac295e98047377a3c63eb9950fa138fca4107530188",
+      "replaced_existing_file": true,
+      "previous_sha256": "24eac2f8dc699987c8554877f4ee1dff90be34b6399453c7611289160ba77f94",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_002_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_002_col.nutexb",
+      "bytes": 7856,
+      "source_sha256": "7e6a48174907e1c3f6e06829a66991e2871d57ed2b3138c9cc6030228c88a366",
+      "output_sha256": "7e6a48174907e1c3f6e06829a66991e2871d57ed2b3138c9cc6030228c88a366",
+      "replaced_existing_file": true,
+      "previous_sha256": "7e6a48174907e1c3f6e06829a66991e2871d57ed2b3138c9cc6030228c88a366",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_002_nor.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_002_nor.nutexb",
+      "bytes": 3760,
+      "source_sha256": "0979a3d70b3fb2957a5496b7086b8b7fb283e058f148b75e0930bbcb65202033",
+      "output_sha256": "0979a3d70b3fb2957a5496b7086b8b7fb283e058f148b75e0930bbcb65202033",
+      "replaced_existing_file": true,
+      "previous_sha256": "0979a3d70b3fb2957a5496b7086b8b7fb283e058f148b75e0930bbcb65202033",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_002_prm.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_002_prm.nutexb",
+      "bytes": 7856,
+      "source_sha256": "dd3095d9e3f05bb6c25ef8bdc2a326c1cfa8d48497c5f7add48f943813a45b4a",
+      "output_sha256": "dd3095d9e3f05bb6c25ef8bdc2a326c1cfa8d48497c5f7add48f943813a45b4a",
+      "replaced_existing_file": true,
+      "previous_sha256": "dd3095d9e3f05bb6c25ef8bdc2a326c1cfa8d48497c5f7add48f943813a45b4a",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_003_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_003_col.nutexb",
+      "bytes": 3760,
+      "source_sha256": "eba25ecb1f9af8e18aeb0c46cdd6fcbaf9e4c095cd23a048dc255a2082e33300",
+      "output_sha256": "eba25ecb1f9af8e18aeb0c46cdd6fcbaf9e4c095cd23a048dc255a2082e33300",
+      "replaced_existing_file": true,
+      "previous_sha256": "eba25ecb1f9af8e18aeb0c46cdd6fcbaf9e4c095cd23a048dc255a2082e33300",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_003_nor.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_003_nor.nutexb",
+      "bytes": 3760,
+      "source_sha256": "1ff1436adf682e2d37ba76b3528fb57778902211f0a0567707fae2d1e3f7ec97",
+      "output_sha256": "1ff1436adf682e2d37ba76b3528fb57778902211f0a0567707fae2d1e3f7ec97",
+      "replaced_existing_file": true,
+      "previous_sha256": "1ff1436adf682e2d37ba76b3528fb57778902211f0a0567707fae2d1e3f7ec97",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_flame_003_prm.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_flame_003_prm.nutexb",
+      "bytes": 3760,
+      "source_sha256": "b48891715256bac924964d83e604e89e2f6230c706fb7f7e1210814d50e40582",
+      "output_sha256": "b48891715256bac924964d83e604e89e2f6230c706fb7f7e1210814d50e40582",
+      "replaced_existing_file": true,
+      "previous_sha256": "b48891715256bac924964d83e604e89e2f6230c706fb7f7e1210814d50e40582",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_light_001_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_light_001_col.nutexb",
+      "bytes": 221360,
+      "source_sha256": "e034c6324866dddd9ee3bcc0ceba67598342d5ff9fd306a9889e597d25ad6e7f",
+      "output_sha256": "e034c6324866dddd9ee3bcc0ceba67598342d5ff9fd306a9889e597d25ad6e7f",
+      "replaced_existing_file": true,
+      "previous_sha256": "e034c6324866dddd9ee3bcc0ceba67598342d5ff9fd306a9889e597d25ad6e7f",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_light_001_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_light_001_emi.nutexb",
+      "bytes": 113328,
+      "source_sha256": "3f4a80e5522e5ba128d8c904d9e5d434d3ec40acc0ff88dfc8e6c4fa1a65b09e",
+      "output_sha256": "3f4a80e5522e5ba128d8c904d9e5d434d3ec40acc0ff88dfc8e6c4fa1a65b09e",
+      "replaced_existing_file": true,
+      "previous_sha256": "2ee95e70c126adc0cdc73ea6138baed58f97633f10ba03f135bcf85e39b9e3a7",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_light_001_nor.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_light_001_nor.nutexb",
+      "bytes": 221360,
+      "source_sha256": "c64f8492cc625bd360eaebefe5aa91cd0992d4348f9ed148f59108ed0458e3a3",
+      "output_sha256": "c64f8492cc625bd360eaebefe5aa91cd0992d4348f9ed148f59108ed0458e3a3",
+      "replaced_existing_file": true,
+      "previous_sha256": "c64f8492cc625bd360eaebefe5aa91cd0992d4348f9ed148f59108ed0458e3a3",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/body/c06/skin_light_001_prm.nutexb",
+      "destination": "fighter/mgw_mythra/model/body/c00/skin_light_001_prm.nutexb",
+      "bytes": 221360,
+      "source_sha256": "5f52c7d56c702cda4c04430b592965be064292b170510adae29f8aa51d4783bd",
+      "output_sha256": "5f52c7d56c702cda4c04430b592965be064292b170510adae29f8aa51d4783bd",
+      "replaced_existing_file": true,
+      "previous_sha256": "5f52c7d56c702cda4c04430b592965be064292b170510adae29f8aa51d4783bd",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/esword/c06/def_light_004_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/esword/c00/def_light_004_col.nutexb",
+      "bytes": 7856,
+      "source_sha256": "2ab0ab7072388c855ab7b436f7b04a8e87da7fb07d040a77545f400bc4c08ea6",
+      "output_sha256": "2ab0ab7072388c855ab7b436f7b04a8e87da7fb07d040a77545f400bc4c08ea6",
+      "replaced_existing_file": true,
+      "previous_sha256": "0d10ba1c019609372a458e1f1944806845d1db1cbc9cc0700f9cdac347956065",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/esword/c06/def_light_004_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/esword/c00/def_light_004_emi.nutexb",
+      "bytes": 5296,
+      "source_sha256": "ce1da98967687008240f8777c5c60b83930f5f94da53c6ba4fa15e8ec974ff36",
+      "output_sha256": "ce1da98967687008240f8777c5c60b83930f5f94da53c6ba4fa15e8ec974ff36",
+      "replaced_existing_file": true,
+      "previous_sha256": "67b5cde32e43223d9001c4811a6f02e08d627190a3d5f1fa5cff19cf21ad4945",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/esword/c06/def_light_004_nor.nutexb",
+      "destination": "fighter/mgw_mythra/model/esword/c00/def_light_004_nor.nutexb",
+      "bytes": 3760,
+      "source_sha256": "9a0058450ac354942bf76ac295e98047377a3c63eb9950fa138fca4107530188",
+      "output_sha256": "9a0058450ac354942bf76ac295e98047377a3c63eb9950fa138fca4107530188",
+      "replaced_existing_file": true,
+      "previous_sha256": "24eac2f8dc699987c8554877f4ee1dff90be34b6399453c7611289160ba77f94",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/esword/c06/def_light_005_col.nutexb",
+      "destination": "fighter/mgw_mythra/model/esword/c00/def_light_005_col.nutexb",
+      "bytes": 264368,
+      "source_sha256": "e6b527c2b22293ae5b93db992e6ac32d18a2170c8df9353d5ea35d995821677d",
+      "output_sha256": "e6b527c2b22293ae5b93db992e6ac32d18a2170c8df9353d5ea35d995821677d",
+      "replaced_existing_file": true,
+      "previous_sha256": "425fac382f17ab6ac8b5c4befaee8b7e40997201605e1ad51cab4f97fe3c1835",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/fighter/elight/model/esword/c06/def_light_005_emi.nutexb",
+      "destination": "fighter/mgw_mythra/model/esword/c00/def_light_005_emi.nutexb",
+      "bytes": 46256,
+      "source_sha256": "864c7d118509cba7a7809c5ec26ce4eda7eb3ee6f7be682b1bc10f15e0c6456d",
+      "output_sha256": "864c7d118509cba7a7809c5ec26ce4eda7eb3ee6f7be682b1bc10f15e0c6456d",
+      "replaced_existing_file": true,
+      "previous_sha256": "7c71bce0506ab8622491709d28b9bbfa9f51dc93fe40bc12d05730b9c404e487",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/ef_elight.eff",
+      "destination": "effect/fighter/mgw_mythra/ef_mgw_mythra.eff",
+      "bytes": 8872760,
+      "source_sha256": "e15f8380f0c330c81e65010fc081ecc9b02245d720e82ebe7ad3588f75a70d13",
+      "output_sha256": "e15f8380f0c330c81e65010fc081ecc9b02245d720e82ebe7ad3588f75a70d13",
+      "replaced_existing_file": true,
+      "previous_sha256": "cfa4f67cfaa3d577e372a7eb0ff7f71db6a2f636ec3793e2186749b72aecddc5",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/trail/tex_elight_sword1.nutexb",
+      "destination": "effect/fighter/mgw_mythra/trail/tex_elight_sword1.nutexb",
+      "bytes": 89264,
+      "source_sha256": "2e171e4ded6cbd660678dbe43c89b71e714665e6861e562046c6e05956b24878",
+      "output_sha256": "2e171e4ded6cbd660678dbe43c89b71e714665e6861e562046c6e05956b24878",
+      "replaced_existing_file": true,
+      "previous_sha256": "4023aecc30dec525cf3421012e98c054d07967ee7db19a29579e3d0eb36b28cd",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/trail/tex_elight_sword2.nutexb",
+      "destination": "effect/fighter/mgw_mythra/trail/tex_elight_sword2.nutexb",
+      "bytes": 89264,
+      "source_sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+      "output_sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+      "replaced_existing_file": true,
+      "previous_sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+      "byte_identical_to_previous": true
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/trail/tex_elight_sword3.nutexb",
+      "destination": "effect/fighter/mgw_mythra/trail/tex_elight_sword3.nutexb",
+      "bytes": 89264,
+      "source_sha256": "b17f6088ea2ced4b96f764082c77f243052caa65b8d8e64dee9680ee5dbb84e4",
+      "output_sha256": "b17f6088ea2ced4b96f764082c77f243052caa65b8d8e64dee9680ee5dbb84e4",
+      "replaced_existing_file": true,
+      "previous_sha256": "69df1a534958fdfdd0f5da5f280cd99aa3613a6e52d801ea567b59da5a3f046c",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/trail/tex_elight_sword4.nutexb",
+      "destination": "effect/fighter/mgw_mythra/trail/tex_elight_sword4.nutexb",
+      "bytes": 89264,
+      "source_sha256": "344ba4c9d0f63afd7b50354b602179c8eec978dcd647c84ded617b0da9f8340d",
+      "output_sha256": "344ba4c9d0f63afd7b50354b602179c8eec978dcd647c84ded617b0da9f8340d",
+      "replaced_existing_file": true,
+      "previous_sha256": "d5ac805617cb3af5b4617539c881e18fef1a8cf51d128497dd101dd1199eb42f",
+      "byte_identical_to_previous": false
+    },
+    {
+      "skin": "black_and_pink_mythra",
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/effect/fighter/elight/trail/tex_elight_sword5.nutexb",
+      "destination": "effect/fighter/mgw_mythra/trail/tex_elight_sword5.nutexb",
+      "bytes": 89264,
+      "source_sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+      "output_sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+      "replaced_existing_file": true,
+      "previous_sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+      "byte_identical_to_previous": true
+    }
+  ],
+  "portraits": [
+    {
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/ui/replace_patch/chara/chara_1/chara_1_elight_only_06.bntx",
+      "destination": "ui/replace/chara/chara_1/chara_1_mgw_mythra_00.bntx",
+      "source_sha256": "a21dc3e493bd7016c9b9154097120df460af7435e5294139660638cadeb86192",
+      "output_sha256": "e18c0d7d29c08de007eff720a7b9e1703f52399d2841d6e342fb2ec879181a2b",
+      "bytes": 266344,
+      "embedded_source_name": "chara_1_elight_only_06",
+      "embedded_clone_name": "chara_1_mgw_mythra_00",
+      "dictionary_leaf_bit_updated": true,
+      "pixels_and_relocations_unchanged": true
+    },
+    {
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/ui/replace_patch/chara/chara_2/chara_2_elight_only_06.bntx",
+      "destination": "ui/replace/chara/chara_2/chara_2_mgw_mythra_00.bntx",
+      "source_sha256": "931e8c09f4f7bf5fc601f2f05606331583eaaf728e1b8d28386433e19e671a74",
+      "output_sha256": "ce7b0a477d7ceda70738dc571dd53e38d6140a9e3607ce1e51017fc95eaa6110",
+      "bytes": 8296,
+      "embedded_source_name": "chara_2_elight_only_06",
+      "embedded_clone_name": "chara_2_mgw_mythra_00",
+      "dictionary_leaf_bit_updated": true,
+      "pixels_and_relocations_unchanged": true
+    },
+    {
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/ui/replace_patch/chara/chara_3/chara_3_elight_only_06.bntx",
+      "destination": "ui/replace/chara/chara_3/chara_3_mgw_mythra_00.bntx",
+      "source_sha256": "cf63b5a3c370c7b1e2b39d714f670eb8d20c45334f376664c0f9c7db5e9d095c",
+      "output_sha256": "9d69317a2a3816ca107502b9a29c8109aeeb79c186be9cb1f1bf04cd3808bd17",
+      "bytes": 5509224,
+      "embedded_source_name": "chara_3_elight_only_06",
+      "embedded_clone_name": "chara_3_mgw_mythra_00",
+      "dictionary_leaf_bit_updated": true,
+      "pixels_and_relocations_unchanged": true
+    },
+    {
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/ui/replace_patch/chara/chara_4/chara_4_elight_only_06.bntx",
+      "destination": "ui/replace/chara/chara_4/chara_4_mgw_mythra_00.bntx",
+      "source_sha256": "f5dcf763c84225545ff4b3023856464d1f869172b5ee14b2cdbcc2c330dceaa0",
+      "output_sha256": "00a4de6d6c778e1d8e515836d2819d70a158a276c97d2b2aa07da7bd90c84896",
+      "bytes": 49256,
+      "embedded_source_name": "chara_4_elight_only_06",
+      "embedded_clone_name": "chara_4_mgw_mythra_00",
+      "dictionary_leaf_bit_updated": true,
+      "pixels_and_relocations_unchanged": true
+    },
+    {
+      "source": "skins_to_use/black_and_pink_mythra/mythra skin/ui/replace_patch/chara/chara_6/chara_6_elight_only_06.bntx",
+      "destination": "ui/replace/chara/chara_6/chara_6_mgw_mythra_00.bntx",
+      "source_sha256": "4554210cebf21f82383917b658e77c410afd6dcca185003806e17c36050bc945",
+      "output_sha256": "6e79e29b4720a3925f189612001aea0cf2f88a418d10ce0add4da745dec8a251",
+      "bytes": 135272,
+      "embedded_source_name": "chara_6_elight_only_06",
+      "embedded_clone_name": "chara_6_mgw_mythra_00",
+      "dictionary_leaf_bit_updated": true,
+      "pixels_and_relocations_unchanged": true
+    }
+  ]
+}

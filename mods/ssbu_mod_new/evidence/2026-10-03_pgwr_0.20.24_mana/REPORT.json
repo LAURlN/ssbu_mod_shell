@@ -1,0 +1,145 @@
+{
+ "task": "0.20.24 Hero mana spend + attack recovery",
+ "date": "2026-10-03",
+ "tier": "B offline; runtime tier D (no emulator, no console, no SD card)",
+ "narrative": "evidence/2026-10-03_pgwr_0.20.24_mana/BUILD.md",
+ "root_cause": {
+  "claim": "hero_mana::slot refused the BattleObjectModuleAccessor, so side-B level-1/level-2 spells were never charged.",
+  "check_that_failed": "address_ok required 0x100000000 <= address < 0x8000000000",
+  "why_silent": "slot() is the only gate behind side-B spending, the meter, the HUD and recovery. On refusal begin_cast returns token 0, try_spend returns true without debiting, cast_ok returns true, and the meter is never seeded - which is exactly the mana-off build's behaviour, so a false negative reads as a free spell rather than as a bug.",
+  "how_established": "elimination plus code. No BattleObjectModuleAccessor address on this title has ever been measured here, so the window was an unverified guess. hero_side_b::state::get makes the same category/kind/colour/entry reads as slot(), makes no window check, and is measured working on c06/c07 Mythra hardware (evidence/2026-10-02_pgwr_T-0052, hardware 2026-10-02). The window was the only remaining way slot() could refuse.",
+  "fix": "address_ok is now address != 0 && address % alignment == 0. Removing the window can only admit more pointers, never fewer, so it cannot introduce a new false positive.",
+  "same_fix_applied_to": "hero_neutral_b::mod::address_ok (target/entry/target_weapon)",
+  "tier": "B by elimination and code reading; runtime effect tier D until hardware"
+ },
+ "recovery_interpretation_correction": {
+  "was": "hero_mana/damage.rs claimed the donor recovers MP when this fighter was hit or blocked.",
+  "now": "The award is keyed on damage this fighter DEALS and shield damage this fighter TAKES.",
+  "corrected_in_place": [
+   "src/mythra/hero_mana/damage.rs",
+   "src/mythra/hero_mana/params.rs",
+   "evidence BUILD.md"
+  ],
+  "evidence": [
+   "the pinned vl.prc sha256 dafa43c6... names them sp_recover_damage_mul and sp_recover_shield_mul; a received-damage rule has no shield half to pair with",
+   "the donor csel at main+0x854a4c selects +0xc0 (damage_mul) or +0xbc (shield_mul) on one event bit; main+0x854a60 fmul s0,s8,s0 scales a damage-derived value s8 built at main+0x8549a0..0x854a3c with fighter-percentage damage scaling; main+0x854a68 bl 0x853890 passes the product to the same add_sp",
+   "main+0x854610 has zero BL callers; it is address-taken from a vtable at about main+0x3a9fc00, so its caller and its attacker/victim ABI are NOT recovered"
+  ],
+  "rule_tier": "B",
+  "abi_tier": "unrecovered"
+ },
+ "attack_recovery": {
+  "rule": "one award per opponent this pair's own non-mana-costing move connects with; amount = AttackModule::get_power(hit_no) * RECOVER_DAMAGE_MUL through the owned add()",
+  "trigger": "fighter-attached CheckAttack line callback on both halves behind the c06/c07 costume gate; same collision table hero_side_b::fighter::store_target already reads",
+  "exclusions": {
+   "mana-costing casts": "they already had their price debited",
+   "own partner and teammates": "TeamModule::team_no; a friendly body must not farm the meter",
+   "non-fighter targets": "boss items and gimmicks are hit repeatedly and would stream awards",
+   "dead/respawning": "stock_spent; a stock boundary must not cross entries or matches"
+  },
+  "fidelity": "proportional, not the engine's final damage number, because that number is not in the collision table. A non-positive or implausible get_power read falls back to one passive-recovery unit.",
+  "get_power_args": "read from the locked binding, NOT measured",
+  "shield_half": "not built; needs the victim-side collision event, whose only site is the reserved main+0x854610 (mod rule 17, not approved)",
+  "tier": "D"
+ },
+ "checks": {
+  "build": {
+   "command": "CARGO_TARGET_DIR=target cargo --offline skyline build --release --features snake-neutral-b,hero-side-b,hero-mana-hud",
+   "cwd": "builds/.cache/mana-0.20.24/plugin",
+   "exit": 0,
+   "errors": 0,
+   "note": "isolated snapshot, never the shared live tree"
+  },
+  "determinism_after_line_ending_normalisation": "byte-identical NRO",
+  "baseline_rebuild": {
+   "snapshot": "silent-0.20.23",
+   "result": "byte-identical 424914c18e740aea67c37ed399ffe5a22208b76f10dec81e279a8285198b777e",
+   "why": "proves the build is deterministic, so byte comparison is meaningful"
+  },
+  "comment_only_edit": "byte-identical NRO, so a hash change implies a code change",
+  "diagnostic_build": {
+   "command": "same features plus logging",
+   "exit": 0,
+   "nro_bytes": 593920,
+   "markers": [
+    "CAST entry=",
+    "SPEND entry=",
+    "REFUSE entry=",
+    "RECOVER +",
+    "GATE-MISS",
+    "HIT-RECOVER",
+    "DEBIT-SUPPRESSED",
+    "power=unreadable",
+    "attack recovery: on"
+   ],
+   "why": "the silent NRO compiles crate::diagnostic! to nothing and so cannot prove the new code is linked"
+  },
+  "silent_nro_has_no_markers": "pgwr_mana_log.txt, HIT-RECOVER, GATE-MISS and SPEND entry= are all 0 occurrences",
+  "packaged_equals_built": true,
+  "assets_preserved": "all 5099 mod files byte-identical to 0.20.23 except info.toml version",
+  "source_delta": {
+   "added": ["src/mythra/hero_mana/attack_recovery.rs"],
+   "changed": [
+    "Cargo.lock",
+    "Cargo.toml",
+    "src/mythra/hero_mana/damage.rs",
+    "src/mythra/hero_mana/mod.rs",
+    "src/mythra/hero_mana/params.rs",
+    "src/mythra/hero_neutral_b/mod.rs"
+   ],
+   "removed": [],
+   "note": "Cargo.lock and Cargo.toml differ only in the version line"
+  },
+  "manifest_self_check": "8/8 pass",
+  "native_sites": "all nine pinned 13.0.4 Hero mana sites byte-exact in main.bin sha256 f70c97d2..., verified directly against refs/brave_special_n/T-0057/reserved_sites.json"
+ },
+ "binary_delta_explained": {
+  "observation": "0.20.23 -> 0.20.24 changes 318843 bytes in 35001 runs spanning the text section",
+  "measured_cause": "flipping the single address_ok boolean alone changes 220731 bytes in 30726 runs; adding the CheckAttack registration adds roughly 77k more",
+  "controls": [
+   "comment-only edit -> byte-identical",
+   "unchanged rebuild -> byte-identical",
+   "address_ok boolean flip alone -> 220731 bytes"
+  ],
+  "conclusion": "code-layout cascade, not scope creep. Byte count is not a scope measure for this binary; the source delta and the 5099-file asset comparison are."
+ },
+ "could_not_run": [
+  "tools/audit_hero_mana_hud.py, tools/audit_hero_side_b.py and the other tools importing main_image/capstone: no capstone wheel in this workspace and nothing may be installed",
+  "tools/audit_hero_mana_native.py in full: the donor NRO lua2cpp_brave.nro is not in this workspace; the nine main.bin sites were re-verified directly instead"
+ ],
+ "artifacts": {
+  "package": "builds/pgwr/0.20.24",
+  "nro_sha256": "f365c49c91be2b0a2660fc6a60b60e28ec9a3dc1d64fb43fa4dedc86478ef381",
+  "nro_bytes": 524288,
+  "mod_tree_sha256": "caa466c992f5696472dfc532120bf6e49345ce8cf099f9224a672167541bdc63",
+  "file_count": 5099,
+  "patches": [
+   "Cargo.lock.patch",
+   "Cargo.toml.patch",
+   "src_mythra_hero_mana_attack_recovery.rs.patch",
+   "src_mythra_hero_mana_damage.rs.patch",
+   "src_mythra_hero_mana_mod.rs.patch",
+   "src_mythra_hero_mana_params.rs.patch",
+   "src_mythra_hero_neutral_b_mod.rs.patch"
+  ]
+ },
+ "hardware_tests_required": [
+  "1. Mythra c06, do not attack: gauge starts full and does not drift (meter seeding).",
+  "2. Side-B level 1 release on an opponent: gauge drops about 8. Level 2 (Zapple): about 18. THIS IS THE BUG.",
+  "3. Side-B from the air, levels 1 and 2: same expected drop (air release path).",
+  "4. Empty meter, hold side-B through the hold: no refill while casting; the move refuses (motion plays, no sparks or bolts).",
+  "5. Jab at about 50 MP: the gauge rises. Stand still 5 seconds: it rises by only the passive amount. Separates attack recovery from passive.",
+  "6. Land a connecting Zap: net about -8 plus a small rise, not a full refund (mana-costing casts excluded).",
+  "7. Hit a boss item or a shield without touching a fighter: the gauge does NOT rise (non-fighter exclusion).",
+  "8. Take a stock: the gauge returns to full exactly once, then holds through the respawn animation.",
+  "9. Down-B swap: the same gauge number on both halves (one meter for the pair).",
+  "10. Spot-check unchanged: Zapple angle, up-B gravity 0.70/0.70, DK cargo, Incineroar back throw, Chrom jab sword."
+ ],
+ "unverified": [
+  "all runtime mana behaviour (tier D)",
+  "whether removing the address window is sufficient to make slot() accept on hardware",
+  "the magnitude of the attack-recovery award (get_power read from the binding, not measured)",
+  "the donor attacker/victim ABI at main+0x854610",
+  "the shield-damage half: still unbuilt and still reserved"
+ ]
+}

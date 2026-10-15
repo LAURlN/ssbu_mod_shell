@@ -1,0 +1,18 @@
+# One CSS entry expands into the Mythra and Pyra clone kinds.
+# Kind numbers are allocated by Clone Engine at boot; never hardcode them.
+[[fighter]]
+name = "mgw_mythra"
+base = "elight"
+display_name = "mgw_mythra"
+costumes = 1
+series = "xenoblade"
+disp_order = 110
+
+[[fighter]]
+name = "mgw_pyra"
+base = "eflame"
+display_name = "mgw_pyra"
+costumes = 1
+series = "xenoblade"
+disp_order = 111
+css = false

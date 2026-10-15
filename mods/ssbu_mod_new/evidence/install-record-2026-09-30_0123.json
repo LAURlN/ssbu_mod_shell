@@ -1,0 +1,42 @@
+{
+  "version": "0.15.1",
+  "installed_on": "2026-09-30T01:23+02:00",
+  "installed_by": "buff thread, on user instruction ('you can build and install')",
+  "card": "<drive>:/ (mounted /f)",
+  "source": "one full build.py run at 01:21, plus the plugin binary the other session built at 01:16 and this thread staged at 01:22. Nothing was installed from scratch/.",
+  "reskin_nro_sha256": "8cbbab40f6c038bbad8f7e9b8e226167d77457b783ff6af7d03baf857795df5d",
+  "reskin_nro_bytes": 225280,
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "smashline_note": "untouched, as required by AGENTS rule 22; libarcropolis/libarc_network/libnro_hook also untouched",
+  "mod_file_count": 1233,
+  "mod_tree_sha256": "8fae6780a5b4e44ca9d80a51f7d3abe3caba77a35f39d883f11b11d4f5ac4725",
+  "previous_card": {
+    "version": "0.15.0",
+    "reskin_nro_sha256": "b924fd0f9e7e60bb1e99d7b23e9a7e59689f126e03312346663def24bbf0c2db",
+    "mod_file_count": 1259,
+    "note": "this is the card the user tested: Monkey Flip confirmed working, the fair sword fix confirmed inert"
+  },
+  "backup": "evidence/sd-backups/sd-backup-20260930-012319",
+  "verification": "install-to-card.sh passed (cmp both NROs, diff -r on the tree) and was re-checked by hand on the card: 1233 files, `diff -r -q` clean, NRO hashes as above.",
+  "diff_vs_previous_card": {
+    "method": "untarred the pre-install backup and ran `diff -rq` against the 0.15.1 mod tree",
+    "modified": [
+      "fighter/eflame/motion/body/c06/c05attackairf.nuanmb (the `Sword1` track removed; back to 36 transform nodes)",
+      "fighter/eflame/motion/body/c07/c05attackairf.nuanmb",
+      "info.toml (0.15.0 -> 0.15.1)"
+    ],
+    "added": [
+      "fighter/eflame/motion/esword/c06|07/ - 20 files: the eight sword clips the article plays, plus motion_list.bin and update.prc"
+    ],
+    "removed": [
+      "fighter/eflame/model/esword/c06|07/ - 46 files: the model override is retired, so the skeleton is the game's own again"
+    ],
+    "notably_unchanged": [
+      "config.json (the sword clips use names Pyra already has, so no new file name is declared)",
+      "every Monkey Flip clip and motion record (the 0.15.0 pass is untouched)"
+    ]
+  },
+  "bundle_note": "The card carries two sessions' work again, but the plugin half is logging only ('diagnostics only; no behaviour change', CHANGELOG 0.15.1) - it adds no state-changing call, so for behaviour the only variable in this build is the sword. Attribution is therefore intact in practice, unlike the 0.15.0 bundle.",
+  "console_test": "pending"
+}

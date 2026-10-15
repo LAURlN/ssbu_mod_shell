@@ -1,0 +1,33 @@
+{
+  "build": "p4",
+  "game_version": "13.0.4",
+  "hardware_tested": false,
+  "input_crash": "evidence/p3-costume-lookup-crash.txt",
+  "skyline_log": "evidence/p3-costume-lookup-skyline.txt",
+  "diagnosis": {
+    "pc": "smashline+0x2f874",
+    "fault_address": "0xe8",
+    "old_global": "main+0x5324680",
+    "cause": "null table pointer dereferenced at entry record offset 0xe8 during fighter initialization",
+    "fix": "FighterManager::instance -> get_fighter_information(entry_id) -> FighterInformation::fighter_color"
+  },
+  "source_validation": {
+    "overlay_generator": "success: 32 references at 31 sites",
+    "runtime_build_exit_code": 0,
+    "probe_build_exit_code": 0,
+    "native_color_symbol_in_runtime": true,
+    "p4_startup_marker": true,
+    "opaque_pointer_ffi_warning": false
+  },
+  "package": {
+    "clone_pack_lint_exit": 0,
+    "errors": 0,
+    "warnings": 0,
+    "sdroot_files": 92,
+    "zip_files_in_mod_output": 0,
+    "runtime_sha256": "442a19f43c39be046c7284dce30b915f59391362d7f13873a108a0be92a104e0",
+    "runtime_matches_manifest": true,
+    "probe_sha256": "de27875cfa306aeab30d29fdee8ebf399baef0ab1cdba492dfe39eccf7c67897",
+    "probe_matches_manifest": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "build": "p11",
+  "purpose": "survive the log's lost tail: mirror every motion probe line into an SD-card breadcrumb file, so the call the thread dies in can be read even though Skyline's TCP log stops a few lines short",
+  "game_version": "13.0.4",
+  "why_breadcrumbs": {
+    "evidence": "latest_logs/atmosphere.txt, p8/p9/p10 runs",
+    "reading": "each report ended mid-sequence, a few lines before the fault: the crashing call's own '[motionbind] BEFORE' line (p8), the '[articlescope] STATE' line plus 'FORCE restored' (p10). The game kills the thread inside call_original, and Skyline's log is a TCP stream (skyline::logging::log -> skyline_tcp_send_raw) with no flush before the thread dies.",
+    "sink": "std::fs writes to the SD card already work in this engine (kind_ledger writes sd:/ultimate/clone_engine/kinds.txt), so the same lines are written as they are produced; the file's last line is the call that died"
+  },
+  "p10_result": {
+    "guard": "engaged",
+    "evidence": "the p9 fault at cross2 + 0x49748c (the patch site, a plain store the game rejected) is gone; the report then shows four weapon motion setups finishing with holders created",
+    "new_fault": "main + 0x4984d4: 'ldr x8, [x19, #0x10]' (holder) -> 'ldr x0, [x8, #0x10]' (holder+0x10) -> vtable+0x38 called with x1=0 -> returned 0 -> 'ldr x8, [x0]' dereferences the null. X08 = holder, X20 = 0.",
+    "still_unknown": "which module/bind that call belonged to, because its own log lines were the ones lost"
+  },
+  "breadcrumb_file": "sd:/ultimate/clone_engine/p11-breadcrumbs.txt",
+  "breadcrumb_lines": [
+    "[bind] enter module=... kind=... lr=@... res=... count=... holder=... head=[+0x8,+0x10,+0x18,+0x50] state_obj=... vt=... +0x256=... first=... [FORCE-CANDIDATE]",
+    "[bind] exit lr=@... res ...->... holder ...->... head=[...] - written only when the call returned",
+    "[force] refused | applied | nop verified | failed | restored module=...",
+    "[setup] enter object=... kind=... boma=... module=... mkind=... holder=... res=... count=... state_obj=... vt=... method=@... +0x38=... +0x256=... flags=[...] [CRASH-PRECONDITION]",
+    "[setup] exit object=... kind=... module=... holder ...->... - a setup whose enter has no exit is the weapon the thread died inside"
+  ],
+  "diagnostics_added": [
+    "every [bind] call is breadcrumbed, not just first sight, so a repeat call cannot hide",
+    "holder head words at bind entry and exit, so a forced holder can be compared with a naturally created one",
+    "weapon motion setup enter/exit pair, so the dying weapon kind is identifiable without the TCP tail",
+    "[setup] enter carries the STATE fields behind a 48-line gate instead of 24",
+    "install_article_motion_diagnostics writes a header breadcrumb and reports 'write ok' or 'WRITE FAILED' in the armed marker, so a dead file sink cannot masquerade as an absent crash"
+  ],
+  "sdroot_count": 1244,
+  "pack_lint_exit": 0,
+  "pack_lint_warnings": 1,
+  "zip_count": 0,
+  "clone_engine_sha256": "26b6b024ccfad082e736e3dde3fd69ff7cd61ee9e56ba10963eeafdaf5f74f56",
+  "clone_engine_size": 1736704,
+  "clone_engine_features": "default (beta) + diag_article_motion",
+  "engine_markers": [
+    "[motionbind] p11 diagnostics armed: motion bind BEFORE trace plus CRASH BREADCRUMBS at sd:/ultimate/clone_engine/p11-breadcrumbs.txt (write ok), articlescope STATE dump, motion rate guard and change motion trace at 0x497350/0x49dc50/0x6defa0, forced holder path at 0x49748c applied with skyline::patching",
+    "[crumb] p11 breadcrumb log opened; ...",
+    "[bind] enter ... / [bind] exit ...",
+    "[setup] enter ... / [setup] exit ...",
+    "[force] applied / refused / nop verified / failed / restored",
+    "[articlescope] STATE ... - CRASH PRECONDITION: holder null with a bound resource, p11 forces the holder path"
+  ],
+  "fix": {
+    "site": "main + 0x49748c (b.eq 0x497e50, state-5 skip of the 0xa0-byte holder allocation at 0x49749c)",
+    "gate": "motion_bind_probe sees holder == 0 with a bound resource and a nonzero count at [module+0x148]+0x98",
+    "write": "skyline::patching::Patch::in_text(0x49748c).nop(), then read the word back and require 0xd503201f",
+    "restore": "skyline::patching::Patch::in_text(0x49748c).data(0x54004e20) as soon as the call returns",
+    "cache": "dc cvau / ic ivau / dsb ish / isb on the patched line after each write",
+    "refusal": "nothing is written unless 0x49748c already reads 0x54004e20; refusals, failed writes and read-back mismatches are logged and breadcrumbed"
+  },
+  "engine_overlay": {
+    "vendor": "vendor/ssbu_clone_engine",
+    "patch_file": "engine-local-changes.patch",
+    "patch_sha256": "ba6fc95cf88028c9c11bfaaed92f903580c1538b6984c727a56f56738a47a7f3",
+    "manifest_vendor_overlays": "ba6fc95cf88028c9c11bfaaed92f903580c1538b6984c727a56f56738a47a7f3"
+  },
+  "probe_sha256": "44a5c0802819579e866946365f97d802093589e2d7ee2179de4a644df2df948f",
+  "probe_marker": "[MGW-CLONE] build p11: independent clones, clone-owned Mythra articles, motion-holder guard, SD-card crash breadcrumbs, ...",
+  "mod_display_name": "MGW Standalone - Clone Probe",
+  "mod_version": "0.7.0",
+  "motion_diagnostics_enabled": true,
+  "post_package_checks": {
+    "method": "fresh checks run after tools/package_probe.py against staging/p8-woh7x31c and ../mod_output, 2026-09-27",
+    "engine_markers_in_packaged_nro": "sha256 of mod_output/atmosphere/.../skyline/plugins/libssbu_clone_engine.nro is 26b6b024..., 1736704 bytes, and it contains 'p11 diagnostics armed', 'CRASH BREADCRUMBS', 'p11-breadcrumbs.txt', 'write ok', 'WRITE FAILED', '[bind] enter', '[setup] exit', 'nop verified at', 'p11 forces the holder path'",
+    "probe_marker_in_packaged_nro": "mod_output/ultimate/mods/MGW_Standalone_Probe/plugin.nro is 44a5c080... and contains 'build p11'",
+    "output_hashes_match_build_and_manifest": "independent sha256 recheck of every manifest entry against ../mod_output: 1244 files, 0 missing, 0 mismatched, 0 extra; manifest build field now 'p11' (p8..p10 shipped 'p8')",
+    "vendor_overlay_gate": "manifest vendor_overlays sha256 ba6fc95c... equals engine-local-changes.patch, and package_probe.py refuses to package a vendor tree whose diff drifts from it",
+    "display_name_in_packaged_mod": "info.toml reads 'MGW Standalone - Clone Probe', version 0.7.0",
+    "staged_evidence": "staging/p8-woh7x31c now also carries engine-local-changes.patch and p11-validation.json"
+  },
+  "switch_tested": false,
+  "mythra_crash_fix_confirmed": false,
+  "log_note": "p10's skyline log was again cut at the head (it starts mid-session) and lost its last lines (the TCP tail), which is what the breadcrumb file exists to fix; a capture from boot is still more useful than a longer one"
+}

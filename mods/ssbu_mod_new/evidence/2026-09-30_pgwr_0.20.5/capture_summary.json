@@ -1,0 +1,29 @@
+{
+  "boot_version": "0.20.5",
+  "boot_line": 1834,
+  "run_lines": 770,
+  "markers": {
+    "CAPTURE READY": 1,
+    "CAPTURE REFUSED": 276,
+    "CAPTURE EVENT": 0,
+    "CAPTURE ACCEPT": 0,
+    "CAPTURE SETUP": 0,
+    "CATCH HANDOFF": 0,
+    "CLING entry": 0,
+    "VICTIMSTATUS": 0
+  },
+  "port_attempts": 5,
+  "port_victim_samples": 96,
+  "port_catch_true_samples": 0,
+  "port_clung_victim_samples": 0,
+  "nearest_opponent_available_samples": 0,
+  "donor_catch_true_samples": 98,
+  "donor_statuses": {
+    "0x1e5": 2,
+    "0x1e8": 2,
+    "0x1e9": 1,
+    "0x1ea": 1,
+    "0x1ee": 1
+  },
+  "limitations": "No inference of contact, visual animation, vanilla controls or cause from absent telemetry."
+}

@@ -1,0 +1,243 @@
+{
+  "tool": "audit_snake_uptilt_delta.py 1.0.0",
+  "baseline": "0.20.17",
+  "version": "builds/.cache/fb-2-snake-up-tilt/0.20.18+snake-uptilt.1",
+  "combined_with": null,
+  "files_baseline": 1983,
+  "files_new": 1983,
+  "added": [],
+  "removed": [],
+  "changed": [
+    "fighter/eflame/motion/body/c06/c02attackhi3.nuanmb",
+    "fighter/eflame/motion/body/c06/motion_list.bin",
+    "fighter/eflame/motion/body/c07/c02attackhi3.nuanmb",
+    "fighter/eflame/motion/body/c07/motion_list.bin",
+    "info.toml",
+    "sound/bank/fighter/se_eflame_c06.nus3audio",
+    "sound/bank/fighter/se_eflame_c06.nus3bank",
+    "sound/bank/fighter/se_eflame_c06.tonelabel",
+    "sound/bank/fighter/se_eflame_c07.nus3audio",
+    "sound/bank/fighter/se_eflame_c07.nus3bank",
+    "sound/bank/fighter/se_eflame_c07.tonelabel",
+    "sound/bank/fighter_voice/vc_eflame_c06.nus3audio",
+    "sound/bank/fighter_voice/vc_eflame_c06.nus3bank",
+    "sound/bank/fighter_voice/vc_eflame_c06.tonelabel",
+    "sound/bank/fighter_voice/vc_eflame_c07.nus3audio",
+    "sound/bank/fighter_voice/vc_eflame_c07.nus3bank",
+    "sound/bank/fighter_voice/vc_eflame_c07.tonelabel",
+    "sound/sequence/fighter/eflame.sqb"
+  ],
+  "changed_outside_up_tilt": [],
+  "motion_lists": {
+    "c06": {
+      "entries": 841,
+      "changed_kinds": [
+        "0xacbfc42e6"
+      ],
+      "clip_sha256": "47133f4fb017c0fdc0416e9f169cdf7d3e710c10a724b14489041c13d52d4839",
+      "transform_nodes": 77,
+      "visibility_nodes": 98,
+      "frames": [
+        1,
+        48
+      ],
+      "leg_motion": {
+        "LegL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 92.62,
+          "max_translation": 0.779,
+          "moved": true
+        },
+        "LegR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 78.01,
+          "max_translation": 0.779,
+          "moved": true
+        },
+        "KneeL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 97.79,
+          "max_translation": 2.6354,
+          "moved": true
+        },
+        "KneeR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 80.55,
+          "max_translation": 2.6354,
+          "moved": true
+        },
+        "FootL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 102.57,
+          "max_translation": 2.9167,
+          "moved": true
+        },
+        "FootR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 54.4,
+          "max_translation": 2.9165,
+          "moved": true
+        },
+        "ToeL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 0.0,
+          "max_translation": 0.5895,
+          "moved": true
+        },
+        "ToeR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 7.06,
+          "max_translation": 0.5885,
+          "moved": true
+        }
+      }
+    },
+    "c07": {
+      "entries": 841,
+      "changed_kinds": [
+        "0xacbfc42e6"
+      ],
+      "clip_sha256": "47133f4fb017c0fdc0416e9f169cdf7d3e710c10a724b14489041c13d52d4839",
+      "transform_nodes": 77,
+      "visibility_nodes": 98,
+      "frames": [
+        1,
+        48
+      ],
+      "leg_motion": {
+        "LegL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 92.62,
+          "max_translation": 0.779,
+          "moved": true
+        },
+        "LegR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 78.01,
+          "max_translation": 0.779,
+          "moved": true
+        },
+        "KneeL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 97.79,
+          "max_translation": 2.6354,
+          "moved": true
+        },
+        "KneeR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 80.55,
+          "max_translation": 2.6354,
+          "moved": true
+        },
+        "FootL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 102.57,
+          "max_translation": 2.9167,
+          "moved": true
+        },
+        "FootR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 54.4,
+          "max_translation": 2.9165,
+          "moved": true
+        },
+        "ToeL": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 0.0,
+          "max_translation": 0.5895,
+          "moved": true
+        },
+        "ToeR": {
+          "present": true,
+          "idle_base": true,
+          "max_rotation_deg": 7.06,
+          "max_translation": 0.5885,
+          "moved": true
+        }
+      }
+    }
+  },
+  "sound": {
+    "fighter/c06": {
+      "retained": 543,
+      "appended": [
+        "se_snake_attackhard_h01"
+      ]
+    },
+    "fighter_voice/c06": {
+      "retained": 240,
+      "appended": [
+        "vc_snake_attack01",
+        "vc_snake_attack02",
+        "vc_snake_attack03",
+        "vc_snake_attack04"
+      ]
+    },
+    "fighter/c07": {
+      "retained": 543,
+      "appended": [
+        "se_snake_attackhard_h01"
+      ]
+    },
+    "fighter_voice/c07": {
+      "retained": 240,
+      "appended": [
+        "vc_snake_attack01",
+        "vc_snake_attack02",
+        "vc_snake_attack03",
+        "vc_snake_attack04"
+      ]
+    }
+  },
+  "sqb": {
+    "baseline_records": 13,
+    "new_records": 14,
+    "appended": "seq_snake_rnd_attack"
+  },
+  "nro": {
+    "path": "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libpyra_gamewatch_reskin.nro",
+    "sha256": "75deff8de447f8f4d171539d8791f046e5c190a60901b05b5ec9ddef809dc313",
+    "bytes": 466944,
+    "names_present": [
+      "game_attackhi3",
+      "effect_attackhi3",
+      "sound_attackhi3",
+      "expression_attackhi3",
+      "se_snake_attackhard_h01",
+      "seq_snake_rnd_attack",
+      "sys_attack_arc_b",
+      "sys_turn_smoke",
+      "rbkind_attackm"
+    ]
+  },
+  "motion_entry": {
+    "kind": 46371980006,
+    "game_script": 64218767641,
+    "flags": 132,
+    "blend": 0,
+    "n_anims": 1,
+    "anims": [
+      83964673577
+    ],
+    "size": 28,
+    "cancel": 38
+  },
+  "motion_entry_raw_sha256": "3c1cd8b9e4094a1e2a9569bfb5371522b5a98b6d1534dfbcf52200c698bede21",
+  "evidence_tier": "B",
+  "hardware_validated": false
+}

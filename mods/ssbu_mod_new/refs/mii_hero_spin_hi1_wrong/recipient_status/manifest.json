@@ -1,0 +1,156 @@
+[
+  {
+    "file": "SpecialHi__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHi/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 647,
+    "sha256": "7e18c5df3f77b33e85eb624814172a07cb62b0bd3ab910b0f7cef9e3cf1e005f"
+  },
+  {
+    "file": "SpecialHi__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHi/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 556,
+    "sha256": "546754ab3d97b9565ef13f8849fbde94bd734c17555172a130da71ea528d5294"
+  },
+  {
+    "file": "SpecialHi__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHi/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1743,
+    "sha256": "902c3d900fb893c4e142ea9e1dbdfe45d5652137d4fd018b1f9a28fc102c09bf"
+  },
+  {
+    "file": "SpecialHi__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHi/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1690,
+    "sha256": "083fdaf3c1e2193a7cf6ddc232af3c06767c75abbea6c68ed9693cdf47fe8173"
+  },
+  {
+    "file": "SpecialHi__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHi/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 4015,
+    "sha256": "813b6c6e797e7ae736f27433c762f2f330534c6ee11b525eed7f4bf339c57264"
+  },
+  {
+    "file": "SpecialHiAttack1__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack1/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 182,
+    "sha256": "8c407dc3a0a8abd74fee29e57a01fdb1f7aac1c4aacf0d9dc00b44d983a84c25"
+  },
+  {
+    "file": "SpecialHiAttack1__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack1/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1154,
+    "sha256": "df25a1761fccd8c0eb7a9bb681552e67cc226820a437d72695519ab8aeb661cf"
+  },
+  {
+    "file": "SpecialHiAttack1__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack1/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1196,
+    "sha256": "d1e4aaf8b3a8819e92b899b50ad201716d9a14b025264b8654c54cda47afe9b3"
+  },
+  {
+    "file": "SpecialHiAttack1__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack1/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3970,
+    "sha256": "d3c20056fedbc883c9aadb2743a037b24ac04e6b8da730d09798f8c14f8cde02"
+  },
+  {
+    "file": "SpecialHiAttack2__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack2/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 182,
+    "sha256": "b5de3941e3afa48a85479a97fac3bace8d5d61426c074ef10179a8df7f75f905"
+  },
+  {
+    "file": "SpecialHiAttack2__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack2/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1154,
+    "sha256": "f385b353f8f590152ca796e25f97a11d3743d9953090e467accb7a782b21ff03"
+  },
+  {
+    "file": "SpecialHiAttack2__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack2/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1196,
+    "sha256": "e091b9e997bd1b3c3574f4194fc1094570066b7a3b6e100c33c36dddd1c79bfc"
+  },
+  {
+    "file": "SpecialHiAttack2__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiAttack2/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3970,
+    "sha256": "2bca2d2b8432e9de09f45cc255f0db1a6d3854558fe9c765aa735b522322b7f2"
+  },
+  {
+    "file": "SpecialHiFinish__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiFinish/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 181,
+    "sha256": "c467e3621ad8a2c8a60b9b055d23f29076169983b0ba0fd3d96330eb1665de54"
+  },
+  {
+    "file": "SpecialHiFinish__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiFinish/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 6343,
+    "sha256": "306b0abedfef3fb5b0e3d169fd026f52abe64a97b312efed864d081fce2ff47c"
+  },
+  {
+    "file": "SpecialHiFinish__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiFinish/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 12794,
+    "sha256": "a9e1e27f7216a94a5ab34bb8bae56f52224c5e81aa70b6a9489922a3f60bd3a6"
+  },
+  {
+    "file": "SpecialHiFinish__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiFinish/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3932,
+    "sha256": "8d9209d7a684fdee600f9057f10499be7d01f850bf7fa17bcca71bec57a151fd"
+  },
+  {
+    "file": "SpecialHiJump__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiJump/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 960,
+    "sha256": "f15402220f5e3a785667fbbceac81d68091b29e076a5112cee54e1d4b1742728"
+  },
+  {
+    "file": "SpecialHiJump__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiJump/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 560,
+    "sha256": "2d08d631cfd388289bd381d5896d46024a96191d614a8907f67252689255879c"
+  },
+  {
+    "file": "SpecialHiJump__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiJump/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 8821,
+    "sha256": "2c68c9c4db6e6393af1cfe769750570f48fa75b8cc114b8c7597536bf350d481"
+  },
+  {
+    "file": "SpecialHiJump__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiJump/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3287,
+    "sha256": "c9fca172f84503a0f23372423a4735f36aef210f1451108335b9201ee1c3a0f1"
+  },
+  {
+    "file": "SpecialHiJump__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_elight.nro/elight/elight/status/SpecialHiJump/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3935,
+    "sha256": "c7658c23726918ac25608e4d18740eff40f5bc4e51d325b21815443823d88875"
+  }
+]

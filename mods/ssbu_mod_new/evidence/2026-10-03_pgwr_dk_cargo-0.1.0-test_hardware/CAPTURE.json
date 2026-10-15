@@ -1,0 +1,47 @@
+{
+  "tier": "A hardware crashes/log; B instruction interpretation; D proposed cause until controlled retest",
+  "nro_sha256": "270bc6723393767b7ae0dd639faae821fe0ffde6357938a552bed41a7faa7795",
+  "files": [
+    {
+      "file": "pgwr_dk_cargo_log.txt",
+      "sha256": "faf2ef4c097ee85d5cbddf7013674e8c985a6d6653e956fa1364a5dfe4e9d314"
+    },
+    {
+      "file": "01791012191_01006a800016e000.log",
+      "sha256": "922efbea3da2095a9fdc4753b1b0f9cab54b3455d71807e21fdd94a4043c4752",
+      "fault": "main+0x483130, stock common victim Thrown Main+0x270, capture-parent pointer X21=0",
+      "motion_hash": "00000027821424bb"
+    },
+    {
+      "file": "01791012352_01006a800016e000.log",
+      "sha256": "307545697287fd69769071dc5f6720311030030c55c54a510ca34c79cb63a980",
+      "fault": "main+0x483130, stock common victim Thrown Main+0x270, capture-parent pointer X21=0",
+      "motion_hash": "00000027821424bb"
+    },
+    {
+      "file": "01791012515_01006a800016e000.log",
+      "sha256": "6748b47fbc5df2a938c23d16b128e17441fa570a386f5630f5872298e63e295c",
+      "fault": "main+0x483130, stock common victim Thrown Main+0x270, capture-parent pointer X21=0",
+      "motion_hash": "000000271c77dcdc"
+    }
+  ],
+  "native_windows": {
+    "main_4830c0.asm": "cce9bb46837c5c196eb455b423869b01a18b4fb59f9233b4b0701ff7e1a89647",
+    "main_49a540.asm": "9a08666a23a0e3093eefb8a955516c71e34b3d121c650f498f28568cb2cfa1db"
+  },
+  "motions": {
+    "thrown_f_donkey_f": "0x26f36fe319",
+    "thrown_f_donkey_b": "0x26f4022700",
+    "thrown_f_donkey_hi": "0x271c77dcdc",
+    "thrown_f_donkey_lw": "0x27821424bb"
+  },
+  "user_observed_pass": [
+    "pickup",
+    "walking with captive",
+    "jumping with captive",
+    "grab release"
+  ],
+  "user_observed_failure": "Cargo directional throws crash.",
+  "log_observations": "Owned START/CARRY, walk/squat/jump/fall/landing and clatter expiry release; no c7 -> owned411 route logged before the three crashes.",
+  "hypothesis": "Owned Carry End/Exit recognize only relocated owned next-state IDs; native shoulder_throw queues stock c7 before Pre bridge, so cleanup cuts capture before bridge can recognize parent."
+}

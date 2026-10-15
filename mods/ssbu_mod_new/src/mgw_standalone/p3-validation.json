@@ -1,0 +1,11 @@
+{
+  "build": "p3",
+  "game_version": "13.0.4",
+  "hardware_tested": false,
+  "output_directory": "legacy-output",
+  "sdroot_files": 92,
+  "pack_lint_exit": 0,
+  "smashline_nro_sha256": "36a9329976f08dc762664873b0c94757fc1f3c1841d9ad1420622dcad12742e1",
+  "probe_nro_sha256": "64551e40fe4840cd7b43b0165beac6c1b37be3fab8c6883023330710e14c9ad2",
+  "development_hot_reload_installed": false
+}

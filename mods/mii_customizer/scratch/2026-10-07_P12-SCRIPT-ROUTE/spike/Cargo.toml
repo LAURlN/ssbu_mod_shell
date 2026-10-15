@@ -1,0 +1,37 @@
+[package]
+name = "p12_spike"
+version = "0.0.1"
+authors = ["Space Bunny Alpha"]
+edition = "2018"
+
+# Metadata only; cargo-skyline reads the title id to name the build target.
+[package.metadata.skyline]
+titleid = "01006A800016E000"
+
+[lib]
+name = "p12_spike"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Same four git dependencies, deliberately WITHOUT a `rev`, exactly as
+# mods/mii_customizer/plugin/Cargo.toml and mods/ssbu_mod_new/src/pgwr/plugin/Cargo.toml:
+# skyline_smash/smashline/smash_script reach skyline through the bare git URL, and a `rev`
+# would put two copies of skyline in the graph. The exact revisions come from the copied
+# Cargo.lock (derived from the reference plugin's lock). Do not run `cargo update`:
+#   skyline 0.6.0        skyline-rs    6b52d321275639f26c2371d8142550ba0013a5e4
+#   skyline_smash 0.1.0  skyline-smash 315e4e8bebb460ebb9f02f30f07b0f13883ba3d6
+#   smash_script 0.1.0   smash-script  fdc6144a0a429ce37b304733531edcb76c8f2578
+#   smashline 0.1.0      smashline     be3ef308ed8e479922da192a391e0684184af2af
+skyline = { git = "https://github.com/ultimate-research/skyline-rs" }
+skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash", features = ["weak_l2cvalue"] }
+smash_script = { git = "https://github.com/WuBoytH/smash-script" }
+smashline = { git = "https://github.com/hdr-development/smashline" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 'z'
+panic = "abort"
+lto = true
+codegen-units = 1

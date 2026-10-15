@@ -1,0 +1,47 @@
+{
+  "nro": "builds\\.cache\\mana_hud_codex\\nro\\combined.nro",
+  "sha256": "48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65",
+  "values": {
+    "16.3": {
+      "bits": "0x41826666",
+      "literal": 1,
+      "movz": 0
+    },
+    "18.2": {
+      "bits": "0x4191999a",
+      "literal": 1,
+      "movz": 0
+    },
+    "-83.5": {
+      "bits": "0xc2a70000",
+      "literal": 0,
+      "movz": 1
+    }
+  },
+  "baseline": {
+    "nro": "builds\\.cache\\mana_hud_codex\\nro\\hud-only.nro",
+    "sha256": "8af1619d2ab2f0c4e335dd8375b9709be3b0d76836d139bd42965fd58479e241",
+    "values": {
+      "16.3": {
+        "bits": "0x41826666",
+        "literal": 0,
+        "movz": 0
+      },
+      "18.2": {
+        "bits": "0x4191999a",
+        "literal": 0,
+        "movz": 0
+      },
+      "-83.5": {
+        "bits": "0xc2a70000",
+        "literal": 0,
+        "movz": 0
+      }
+    }
+  },
+  "absent_from_baseline": [
+    "16.3",
+    "18.2",
+    "-83.5"
+  ]
+}

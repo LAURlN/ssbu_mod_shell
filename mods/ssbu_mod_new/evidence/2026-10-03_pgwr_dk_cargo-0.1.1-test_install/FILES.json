@@ -1,0 +1,24 @@
+{
+  "created_or_updated_workspace_files": {
+    "CURRENT_INSTALL.md": "7288c22559222fe6775f38914d17e0a46624b5cfa4b135e810980dcc044464b6",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.1-test_install/INSTALL.json": "18090d0fea13405d231fe6697c57a5c7f935eb8042b6f812e66db5b70300de23",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.1-test_install/INSTALL.md": "e879a8853e89e69ec45be1869382b03d817ae676dc84e542951d767a37b0aa0d",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.1-test_install/INSTALLER.txt": "853a47388e597e1b32f66badeb828bcfd863e87c5c3906ce6ca2929dce825c05",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.1-test_install/PRE_INSTALL.json": "fc5e9b80cecc10a715844778788f1f7d5499f0f5a2f2d1258145a6eac7aec7cb",
+    "evidence/sd-backups/sd-backup-20261003-095401/card-mod-folder.tar": "512eada42fc45c7039f1d4f0f7303bbdcb6f205fd6c00b1055c2b6b86bb85dc0",
+    "evidence/sd-backups/sd-backup-20261003-095401/plugins/libone_slot_eff.nro": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+    "evidence/sd-backups/sd-backup-20261003-095401/plugins/libpyra_gamewatch_reskin.nro": "270bc6723393767b7ae0dd639faae821fe0ffde6357938a552bed41a7faa7795",
+    "evidence/sd-backups/sd-backup-20261003-095401/plugins/libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "handbook/15_grabs_catch.md": "97d0b78322c3d27dec2666c0413cb0f907a0faa51b43f259c61d02cb8ae1b75c",
+    "handbook/graveyard.md": "366442442f93c85888cfcf9ebd6c0ea84b6dea02f1fedce9982c58e6b2f44232",
+    "projects/pgwr/CHANGELOG.md": "df6b0384da9db422e024a3c5f3ffbd88f974ad3f90ab40958eddc88260d410de",
+    "projects/pgwr/STATUS.md": "e67e1b716040b8dd8f16b8b9a56129bb1c313e52c04be2cb69eac11a21ff26eb",
+    "src/pgwr/.last-sd-backup": "a2ebaadfcbd681823f055e9ff175aab6fbcc4e46717c67a810b6ee4b84fac7ca",
+    "src/pgwr/tools/dk_cargo/crash_audit.py": "e9ef54b59bea678a2ce42550ae5b6f0cb37fd583529e608b1c326cecdaad904e",
+    "src/pgwr/tools/dk_cargo/install_record.py": "6ee06891fb90088a554cb5379b0b066d8ec8a058e7480739e465c4a836828340",
+    "src/pgwr/tools/dk_cargo/README.md": "47314aa826b01f409ba1066225aee76bba981e9d3520f2182d8cb8d210cf0e14"
+  },
+  "card_payload_inventory": "INSTALL.json mod_files plus package payload_files",
+  "framework_changes": false,
+  "runtime_verified": false
+}

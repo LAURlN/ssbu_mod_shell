@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-30",
+  "evidence_tier": "B",
+  "hardware_validated": false,
+  "source": "dumps/arc/prebuilt/nro/release/lua2cpp_snake.nro",
+  "source_sha256": "fca3ed01368e0fb7ce1d2f5a9b9813af61515bc13ceb4e6377c48b85126a400f",
+  "flattened_sha256": "5d8a74b6a652d2f1a921a19afa1cfe4846d073021b6815dc0f715724ca375f80",
+  "tool": "tools/nro_decomp/run_ghidra.sh; Ghidra 11.1.2; annotate_c.py",
+  "promoted_by": "tools/audit_snake_grenade_common.py --pin-decompile",
+  "note": "Earlier scratch decompilation; input matches current NRO. Confirm dropped Lua operands in assembly.",
+  "output_sha256": {
+    "special_n.c": "c8d2d093ee588d06e868f3e9872859eca54db02fe7408375af4619749e465f62",
+    "special_n_helpers.c": "8bc4db120709e7ba8d0da42e2478a1f1f8501ee735dd39a226954109c4492950",
+    "special_n_helpers2.c": "0e0db519e35d46aa8b1868c031d2e0edfa611928d5326913ca9539f02eef1c89",
+    "special_n_helpers3.c": "47fa7ebc2920bd072790309fe2f1f5bbcd553b2c550aba24bfa9e5096134c46a",
+    "status_table.txt": "4a0257c4a4e02e9b956aa09563cc5bca5433c4700ed865ee5c1b30059be5c17f"
+  }
+}

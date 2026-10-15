@@ -1,0 +1,4 @@
+display_name = "MGW Pyra/Mythra Pair Probe"
+authors = "MGW project"
+version = "0.7.3"
+description = "One Pyra/Mythra CSS entry with two clone forms and native transformation. Experimental build for Smash 13.0.4."

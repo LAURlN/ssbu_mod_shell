@@ -1,0 +1,13 @@
+{
+  "new-dir-infos": [],
+  "new-dir-infos-base": {},
+  "new-dir-files": {
+    "fighter/miigunner/c00": [
+      "fighter/miigunner/motion/body/c00/c01mcattacks3hi.nuanmb",
+      "fighter/miigunner/motion/body/c00/c01mcattacks3lw.nuanmb",
+      "fighter/miigunner/motion/body/c00/c01mcattacks3s.nuanmb"
+    ]
+  },
+  "share-to-vanilla": {},
+  "share-to-added": {}
+}

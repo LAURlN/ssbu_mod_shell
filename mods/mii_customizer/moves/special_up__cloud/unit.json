@@ -1,0 +1,53 @@
+{
+  "unit": "special_up__cloud",
+  "task_id": "MV-special_up__cloud",
+  "entry": "special_up",
+  "donor": "cloud",
+  "donor_menu_name": "Cloud",
+  "recipient": "miigunner",
+  "display_name": "Climhazzard (Cloud's Up Special)",
+  "status": "BUILT_OFFLINE",
+  "status_note": "Status logic decoded from lua2cpp_cloud.nro and re-implemented; six clips retargeted; shared sword, effects, trails and sounds from MV-aerial_forward__cloud. Plugin copy builds (0 errors), stack check OK, evidence check exit 0. Nothing has run in game.",
+  "code": {
+    "unit": "moves/special_up__cloud/unit.rs -> plugin src/unit_special_up_cloud.rs",
+    "shared": "moves/aerial_forward__cloud/mccloud.rs -> plugin src/mccloud.rs",
+    "plugin_diff": "scratch/2026-10-08_MV-aerial_forward__cloud/integration.diff"
+  },
+  "owned_motions": {
+    "mc_cloud_special_hi": {"clip": "c01mccloudspecialhi1.nuanmb", "donor": "special_hi / d02specialhi1.nuanmb", "frames": 66},
+    "mc_cloud_special_air_hi": {"clip": "c01mccloudspecialairhi1.nuanmb", "donor": "special_air_hi / d02specialairhi1.nuanmb", "frames": 66},
+    "mc_cloud_special_hi2": {"clip": "c01mccloudspecialhi2.nuanmb", "donor": "special_hi2 / d02specialhi2.nuanmb", "frames": 12},
+    "mc_cloud_special_hi2_fall": {"clip": "c01mccloudspecialhifall.nuanmb", "donor": "special_hi2_fall / d02specialhifall.nuanmb", "frames": 2, "flags": "0x0002 (loop)"},
+    "mc_cloud_special_hi2_end": {"clip": "c01mccloudspecialhifallend.nuanmb", "donor": "special_hi2_end / d02specialhifallend.nuanmb", "frames": 20},
+    "mc_cloud_special_hi2_landing": {"clip": "c01mccloudspecialhilanding.nuanmb", "donor": "special_hi2_landing / d02specialhilanding.nuanmb", "frames": 36, "cancel_field": 23}
+  },
+  "root_motion_scale": "Trans x 0.98/1.15 (Cloud's model scale over the Gunner's) so the rise keeps Cloud's world distance",
+  "scripts": "game/effect/sound/expression for mccloudspecialhi, mccloudspecialairhi, mccloudspecialhi2, mccloudspecialhi2fall, mccloudspecialhi2end, mccloudspecialhi2landing (24 registrations)",
+  "statuses_wrapped": [
+    {"kind": "FIGHTER_STATUS_KIND_SPECIAL_HI", "lines": ["Pre", "Init", "Exec", "Main", "End"], "rule": "Pre decides (Mii chose special_up, sword registered, six motions loaded); the other lines follow mccloud::State.upb; otherwise the Gunner's own function, or 0 where it has none (Init/Exec exist only for two of its three up specials)"}
+  ],
+  "statuses_created": [
+    {"id": "0x220", "name": "STATUS_HI2", "donor": "FIGHTER_CLOUD_STATUS_KIND_SPECIAL_HI2 (0x1e3)", "lines": ["Pre", "Main", "End", "CheckAttack"]},
+    {"id": "0x221", "name": "STATUS_HI2_FALL", "donor": "FIGHTER_CLOUD_STATUS_KIND_SPECIAL_HI2_FALL (0x1e4)", "lines": ["Pre", "Main", "End", "CheckAttack"]},
+    {"id": "0x222", "name": "STATUS_HI2_LANDING", "donor": "FIGHTER_CLOUD_STATUS_KIND_SPECIAL_HI2_LANDING (0x1e5)", "lines": ["Pre", "Init", "Exec", "Exit", "Main", "End"]}
+  ],
+  "status_id_note": "FIGHTER_MIIGUNNER_STATUS_KIND_NUM is 0x1FA; 0x220-0x222 chosen to stay clear of units that start at 0x1FA. The coordinator owns the final allocation (three consts at the top of unit.rs).",
+  "work_variables": "mccloud::State per entry id: upb, hi_flags (Cloud's SPECIAL_HI_FLAG_IS_2_SHIFT_INPUT / IS_ENABLE_CONTROL / FALL / SHIFT / SHIFT_RESERVE), fall_frame, hit_num, hit_ids[15]",
+  "params_from_cloud_vl_prc": {"special_hi_lr_stick_x": 0.25, "special_hi_dir_stick_x": 0.625, "special_hi_dir_mul": 3.0, "special_hi_pass_mul": 1.0, "special_air_hi_accel_y": 0.5, "special_air_hi_start_x_mul": 0.67, "special_air_hi_pass_mul": 1.1, "special_hi_fall_x_mul": 0.6, "special_hi_landing_frame": 20, "hi2_hit_accel_y": 0.07, "hi2_hit_speed_max_y": 4.2, "hi2_hit_fall_speed_y": -4.2, "hi2_hit_fall_frame": 50, "hi2_hit_landing_frame": 40},
+  "effects_added_to_shared_bank": ["MC_CLOUD_SPEEDLINE", "MC_CLOUD_CLIMHAZZARD_SWORD", "MC_CLOUD_CLIMHAZZARD_STING", "MC_CLOUD_CLIMHAZZARD_SLASH", "MC_CLOUD_CLIMHAZZARD_SLASH2", "MC_CLOUD_CLIMHAZZARD_SLASH3"],
+  "trails": ["tex_mc_cloud_sword1_red", "tex_mc_cloud_sword2 (effect/fighter/miigunner/trail/, footer name = file name)"],
+  "sounds_added_to_shared_bank": ["se_cloud_special_H01", "se_cloud_special_H02", "se_cloud_special_H03", "se_cloud_special_H04"],
+  "shared_file_additions": {
+    "fighter/miigunner/motion/body/c00/motion_list.bin": "6 entries; reference gamedata/mii_customizer/moves/special_up__cloud/reference/motion_list_vanilla_plus_owned.bin",
+    "config.json new-dir-files fighter/miigunner/c00": "the 6 clips (this manifest) plus the forward-air unit's sword article and trail files",
+    "menu": "allow special_up cloud; IMPLEMENTED_MOVES row (b\"special_up\", b\"cloud\")"
+  },
+  "known_differences": [
+    "Limit Break versions (special_hi_lb, lb_landing_frame, LIMIT_BREAK flags) not ported: the Gunner has no Limit gauge; every branch takes the normal side.",
+    "Cloud's two battle-log notifications in SPECIAL_HI main (FIGHTER_LOG_ATTACK_KIND_ADDITIONS_ATTACK_05) and in its end callback's log path are left out; the end callback itself (common super_jump_punch_reset_common_condition) is called.",
+    "Voice: the Mii's seq_miigunner_rnd_attack03 (rise) and _attack02 (dive) at Cloud's frames instead of seq_cloud_rnd_special_h01/h02.",
+    "Effect handles renamed mc_cloud_*; the sword-glow effect Cloud reads from his work id EFFECT_KIND_CLIMHAZZARD_SWORD is cloud_climhazzard_sword (Buster Sword), named directly.",
+    "The sword changes hands (right -> left for the dive, back at end frame 10 / landing frame 23) by re-tying the article; Cloud switches body meshes.",
+    "Clips retargeted (same method as forward air); root motion scaled by 0.98/1.15."
+  ]
+}

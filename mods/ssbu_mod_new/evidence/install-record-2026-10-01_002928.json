@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-01",
+  "version": "0.20.14",
+  "project": "pgwr",
+  "installed_by": "root agent, on explicit user instruction (\"then install what you have right now\")",
+  "card": "F:",
+  "package": "builds/pgwr/0.20.14",
+  "reskin_nro_sha256": "e8bf3f0713489bad278e937c8a22baa8498ce393761dee94940d35734303165c",
+  "built_equals_packaged_equals_card": true,
+  "mod_tree_files": 1933,
+  "mod_tree_all_byte_identical": true,
+  "protected_plugins": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "framework_installation": "OFF (--no-smashline)",
+  "automatic_backup": "evidence/sd-backups/sd-backup-20261001-002928 (holds 0.20.13)",
+  "baseline": "installed 0.20.13",
+  "scope": "Little Mac forward smash + charge hold on c06/c07 only",
+  "hardware_tested": false,
+  "note": "Offline and byte-level verification only. Nothing here says the punch plays, looks right or is audible."
+}

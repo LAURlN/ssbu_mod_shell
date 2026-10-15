@@ -1,0 +1,66 @@
+{
+  "build": "p10",
+  "purpose": "make the p9 guard actually write: patch 0x49748c through skyline::patching instead of a plain store, read the word back, and log every way the guard can decline",
+  "game_version": "13.0.4",
+  "why_p9_failed": {
+    "evidence": "latest_logs/atmosphere.txt (p9 run)",
+    "fault": "Data Abort at cross2_Release.nss + 0x49748c - the patch site itself",
+    "registers": "X[08] = cross2 + 0x49748c, X[09] = 0x00000000d503201f (the nop being written); LR/PC inside ssbu_clone_engine (motion_bind_probe + 0x490 / + 0x4c0)",
+    "reading": "the guard engaged and its encoding check passed; a plugin cannot store into the game's text with a plain store. Skyline's own hooks write through the runtime helper behind skyline::patching::Patch, which handles section permissions."
+  },
+  "sdroot_count": 1244,
+  "copied_donor_count": 1149,
+  "still_missing_sound_files": 18,
+  "motion_lists_audited": 15,
+  "motion_lists_missing_clips": 0,
+  "article_declarations": [
+    "mgw_mythra/esword -> elight/esword",
+    "mgw_mythra/bunshin -> elight/bunshin"
+  ],
+  "pack_lint_exit": 0,
+  "pack_lint_warnings": 1,
+  "zip_count": 0,
+  "clone_engine_sha256": "ddb6442a3abedde4c19565def8aa2a70191a0bcd0c38d564b701de84462345f1",
+  "clone_engine_size": 1736704,
+  "clone_engine_features": "default (beta) + diag_article_motion",
+  "engine_markers": [
+    "[motionbind] p10 diagnostics armed: motion bind BEFORE trace, articlescope STATE dump, motion rate guard and change motion trace at 0x497350/0x49dc50/0x6defa0, forced holder path at 0x49748c applied with skyline::patching",
+    "[articlescope] STATE n=... object=... kind=... module=... mkind=... holder=... res=... count=... state_obj=... vt=... method=@... +0x38=... +0x256=... flags=[...]",
+    "[motionbind] FORCE holder path module=...: nop state-5 skip at ... for this call",
+    "[motionbind] FORCE refused module=...: ... holds ..., expected 0x54004e20",
+    "[motionbind] FORCE failed module=...: nop at ... rejected / still reads ...",
+    "[motionbind] FORCE restored 0x54004e20 at ...",
+    "[articlescope] ... - CRASH PRECONDITION: holder null with a bound resource, p10 forces the holder path"
+  ],
+  "fix": {
+    "site": "main + 0x49748c (b.eq 0x497e50, state-5 skip of the 0xa0-byte holder allocation at 0x49749c)",
+    "gate": "motion_bind_probe sees holder == 0 with a bound resource and a nonzero count at [module+0x148]+0x98",
+    "write": "skyline::patching::Patch::in_text(0x49748c).nop(), then read the word back and require 0xd503201f",
+    "restore": "skyline::patching::Patch::in_text(0x49748c).data(0x54004e20) as soon as the call returns",
+    "cache": "dc cvau / ic ivau / dsb ish / isb on the patched line after each write",
+    "refusal": "nothing is written unless 0x49748c already reads 0x54004e20; refusals, failed writes and read-back mismatches are logged"
+  },
+  "engine_overlay": {
+    "vendor": "vendor/ssbu_clone_engine",
+    "patch_file": "engine-local-changes.patch",
+    "patch_sha256": "64433f4b5245bb233807745e44e72cc5c3906dda1cfa3aee96e53e884158f0ed",
+    "manifest_vendor_overlays": "64433f4b5245bb233807745e44e72cc5c3906dda1cfa3aee96e53e884158f0ed"
+  },
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "probe_sha256": "1e56d952f42c90179a2eba966c4f2a465f9893755e67bd15e1f8e4ad0e8472fe",
+  "probe_marker": "[MGW-CLONE] build p10: independent clones, clone-owned Mythra articles, motion-holder guard, ...",
+  "mod_display_name": "MGW Standalone - Clone Probe",
+  "mod_version": "0.6.0",
+  "motion_diagnostics_enabled": true,
+  "post_package_checks": {
+    "method": "run after tools/package_probe.py, against staging/p8-bln9dtdj and ../mod_output, 2026-09-27",
+    "engine_markers_in_packaged_nro": "grep -a on mod_output/.../libssbu_clone_engine.nro found 'p10 diagnostics armed', 'p10 forces the holder path', 'FORCE failed' (2), 'FORCE restored', 'nop state-5 skip', 'skyline::patching'",
+    "probe_marker_in_packaged_nro": "'build p10: independent clones' present in mod_output/ultimate/mods/MGW_Standalone_Probe/plugin.nro",
+    "output_hashes_match_build_and_manifest": "independent sha256 recheck of every manifest entry against ../mod_output: 1244 files, 0 missing, 0 mismatched, 0 extra",
+    "display_name_in_packaged_mod": "info.toml reads 'MGW Standalone - Clone Probe', version 0.6.0",
+    "pack_lint": "lint_clone_pack.py exit 0, 1 inheritance warning (bunshin has no own model folder)"
+  },
+  "switch_tested": false,
+  "mythra_crash_fix_confirmed": false,
+  "log_note": "the p9 skyline log was copied from mid-session (it starts at [stagepanel]), so no startup marker or STATE line was visible; a capture from boot is more useful than a longer one"
+}

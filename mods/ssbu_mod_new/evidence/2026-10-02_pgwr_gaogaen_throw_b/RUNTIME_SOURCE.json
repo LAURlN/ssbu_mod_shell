@@ -1,0 +1,414 @@
+{
+  "state": "READY_SOURCE_ALLOCATION_REQUIRED",
+  "status_allocation": null,
+  "table_rows_checked": 94,
+  "donor_offset_float_bits": 282,
+  "private_snapshot": "builds/.cache/gaogaen_throw_b/runtime-plugin",
+  "snapshot_files": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "b011856b8cf7d62f8469bdfaeb51db2e99841f00f500d7742315998c800b8078",
+      "bytes": 16141
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "04a3ffdac92a6fd385b2fb8d38a36957348de2dbea89867907aa01c9618e29f1",
+      "bytes": 2863
+    },
+    {
+      "path": "src/acmd/attack_air_f.rs",
+      "sha256": "5cbc7e17b930c34c2f3c7bb8966c147491f5bbe079d41fc27413a9b447538fc0",
+      "bytes": 15298
+    },
+    {
+      "path": "src/acmd/chrom_jab.rs",
+      "sha256": "d6e4ad6e19c2edb6c8b1cb89deefc83be0a06ce2e5084daf5859750ff5e4a296",
+      "bytes": 17772
+    },
+    {
+      "path": "src/acmd/compat.rs",
+      "sha256": "32d4c2eda8b0c1fae085a7c831bea1e80291427a39fc1ec4f86e7d01ca030e1e",
+      "bytes": 3781
+    },
+    {
+      "path": "src/acmd/gaogaen_throw_b.rs",
+      "sha256": "38eae4a76b1b203a849aa75c96060be7a2a4dabbc758b4e357ad2a4456be4803",
+      "bytes": 5291
+    },
+    {
+      "path": "src/acmd/generated/aerial.rs",
+      "sha256": "c0698fb2d0b067c23041f17bb7e4405ec352106270613c2ef42bdb47d3935faf",
+      "bytes": 26821
+    },
+    {
+      "path": "src/acmd/generated/common.rs",
+      "sha256": "1db6f4cf5074655f4e87c5718fc4ea9f3417740b28e610a5595eec1a6bfe4327",
+      "bytes": 215246
+    },
+    {
+      "path": "src/acmd/generated/grab.rs",
+      "sha256": "d5bdfb1644d38b6d5dec3f9e91521f391c12888019108bc8876c9c2559ddafe4",
+      "bytes": 30411
+    },
+    {
+      "path": "src/acmd/generated/ground.rs",
+      "sha256": "47d91667c4bef0f85bab59757867a21de8edd71ef58b73963dea85fece266f8c",
+      "bytes": 72226
+    },
+    {
+      "path": "src/acmd/generated/mod.rs",
+      "sha256": "a5a8a25160766e9411ec2d3ed484872bedc0a1cc647f1a60331a84fa6373478e",
+      "bytes": 153
+    },
+    {
+      "path": "src/acmd/generated/rapid.rs",
+      "sha256": "2ed2a9fed75c2242db9b2a38bf479330caa7b5f9c7c046a747430f3551beecd2",
+      "bytes": 11734
+    },
+    {
+      "path": "src/acmd/generated/special.rs",
+      "sha256": "4876cd803a96d968c0d652586eb9ebb1ffbc6a811e98acc6343c51d9cc2b59c7",
+      "bytes": 18627
+    },
+    {
+      "path": "src/acmd/littlemac_attack_s4.rs",
+      "sha256": "3ef09d8ddab86c9d43e4a4b6d0a749ca840c3c79c18701120fc6beac75967fd6",
+      "bytes": 27698
+    },
+    {
+      "path": "src/acmd/mod.rs",
+      "sha256": "1b8d8470cd833a54ef686416413e65823225916997cb0468fa6966b08b0a6c72",
+      "bytes": 13965
+    },
+    {
+      "path": "src/acmd/monkey_flip.rs",
+      "sha256": "34ad043b0fb927342b1a9a7b2087ea7205f8eca9cc90c79c09c05223daf4ff74",
+      "bytes": 37015
+    },
+    {
+      "path": "src/acmd/robot_attack_lw3.rs",
+      "sha256": "0e91f1deeddd711a3c026406e5ae4f746ef1061985e67f948069229c87ba4732",
+      "bytes": 6522
+    },
+    {
+      "path": "src/acmd/snake_attack_hi3.rs",
+      "sha256": "19432c2ce1cc8598eddc219d2d272c3bd288c021ebd8c7a95e8ec186f8003b7e",
+      "bytes": 10797
+    },
+    {
+      "path": "src/acmd/snake_throw_lw.rs",
+      "sha256": "89ab5378616d7dd6d7e567384d8d4138f6e9c04683be00645960547d80a817ac",
+      "bytes": 12136
+    },
+    {
+      "path": "src/article.rs",
+      "sha256": "a35ab2f2984ceb4e5dc98f093da4143f91a6022daa1c619dad12e06452ce6b52",
+      "bytes": 19477
+    },
+    {
+      "path": "src/breath.rs",
+      "sha256": "331e037d64cfaabb29449b2a61721a4baca90fc92e49416d8f0658f60468cffd",
+      "bytes": 5008
+    },
+    {
+      "path": "src/breath_init_1304.bin",
+      "sha256": "6268ffa67c2ede2c4a76d049468042808b3e7f594c8686b720e96bab274f74ba",
+      "bytes": 388
+    },
+    {
+      "path": "src/diddy_probe.rs",
+      "sha256": "ad6b57157d7d03b70e5ed3e74228b65895353be0125c4161ccfa9ad297791fdd",
+      "bytes": 7205
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "a05436262864db17a74e3f3e798a59c3c29bc590b08a84e32beee1aae1b9969b",
+      "bytes": 4688
+    },
+    {
+      "path": "src/mythra/attack_air_hi.rs",
+      "sha256": "15ce4e07c7223c736b20995b5c57366c1a2ffa0ecfe12ee69a39c80b46d35d16",
+      "bytes": 7892
+    },
+    {
+      "path": "src/mythra/hero_mana/damage.rs",
+      "sha256": "80c6edf95b0e6709ce1810f08e3b9492d1e2ef9a104267e0c18d7788aac99e6d",
+      "bytes": 2492
+    },
+    {
+      "path": "src/mythra/hero_mana/hud.rs",
+      "sha256": "960fe7703bf487334af9dd362ad5ae2ee1817aba362723ad04f3d3cf4adf7c0e",
+      "bytes": 3612
+    },
+    {
+      "path": "src/mythra/hero_mana/logging.rs",
+      "sha256": "ff66775abe411661a4783c8ab5a0c783ed34775b98dfa28119d7371ae119f74a",
+      "bytes": 1762
+    },
+    {
+      "path": "src/mythra/hero_mana/mod.rs",
+      "sha256": "05ce8f0f086c2cfd4838d7bb1eecd346c0ebddf9133948986d446fe2a6d28831",
+      "bytes": 19502
+    },
+    {
+      "path": "src/mythra/hero_mana/params.rs",
+      "sha256": "8bec8131dde666bea63f4eb0481fb27dc8efd8042ee1253f7092d33ef0b7f3f3",
+      "bytes": 4380
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/acmd.rs",
+      "sha256": "bfa71cfa138a5af3cbc511d9b739a168f5f2cfbf67922de476b2741453483a2f",
+      "bytes": 38612
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/donor_params.rs",
+      "sha256": "a7ffa3b13f388a6f58c059d7ac5cc555af5520564a314388060144270f23e4c6",
+      "bytes": 5469
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/fighter.rs",
+      "sha256": "51d1f672be4213f30c5f3ad0bbe6c645bc456146581e201e8bbf2b55aa47edae",
+      "bytes": 21197
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/initializer_1304.s",
+      "sha256": "1ea46fcff81fc7e631d225ce68f795545e22d619233885967e2a367c2f3f00e8",
+      "bytes": 40170
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/mod.rs",
+      "sha256": "9002915c085b02fc7fdb93683e4da85c958d2daaf62a67f6c1292573cf3a1790",
+      "bytes": 7184
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/native.rs",
+      "sha256": "1e855c963efda39ace49b645548fe89bf4b781c48c06a84a39e303fdc799213f",
+      "bytes": 5069
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/projectile.rs",
+      "sha256": "4acc33cf56d1bbed75ba22b5fe7b23f4c133765d39982754b13f30680cc04e4a",
+      "bytes": 9045
+    },
+    {
+      "path": "src/mythra/hero_neutral_b/signatures.rs",
+      "sha256": "290de6607171c15c320b87ca88d53cef27c00fc468c89890f9d0baffc1dfd129",
+      "bytes": 22279
+    },
+    {
+      "path": "src/mythra/hero_side_b/articles.rs",
+      "sha256": "b8c0696f0d6e2340af8a412046ba290ff0c225ae4a6a1c7ff1de5aeaa9a87507",
+      "bytes": 2102
+    },
+    {
+      "path": "src/mythra/hero_side_b/attack3_acmd.rs",
+      "sha256": "f50ac38f4cfaf1ecf67c6554911a503eeb0944ec7a14d732a74a360ab9c8d06a",
+      "bytes": 1047
+    },
+    {
+      "path": "src/mythra/hero_side_b/exec.rs",
+      "sha256": "886972a100173b1475f7e1c34a99707245a04b2fc4c5ccfdb867fabf758573e7",
+      "bytes": 1257
+    },
+    {
+      "path": "src/mythra/hero_side_b/fighter.rs",
+      "sha256": "23c2544d25054b0d800b8a9f2e208ba47872965b1fbe46ac8bf527182da5d7bd",
+      "bytes": 16978
+    },
+    {
+      "path": "src/mythra/hero_side_b/fighter_loops.rs",
+      "sha256": "e17d92015367ce741e99cd02a53749d42685a5aa736280dea82b556978b79770",
+      "bytes": 3208
+    },
+    {
+      "path": "src/mythra/hero_side_b/game_acmd.rs",
+      "sha256": "c60a40aa42283b584747d80edc3c912fa0fae32d299c5e1d78ce991f7e779d67",
+      "bytes": 10843
+    },
+    {
+      "path": "src/mythra/hero_side_b/logging.rs",
+      "sha256": "b891688fa69962b217e445be74b7ba650ba084a16f258c2ed7bc3b8405afacde",
+      "bytes": 453
+    },
+    {
+      "path": "src/mythra/hero_side_b/mod.rs",
+      "sha256": "c3cbf2037110aa69bf5e20a07916a01dbd81a47badaafcde1fe875b22d9920f9",
+      "bytes": 3736
+    },
+    {
+      "path": "src/mythra/hero_side_b/native.rs",
+      "sha256": "8fdde7796afebb16a2f132f0784225dd5ea035af0e23c71353dbe803d9ad03b2",
+      "bytes": 6748
+    },
+    {
+      "path": "src/mythra/hero_side_b/native_1304.s",
+      "sha256": "5e57caf00ea998af54d2b1cdb6f043583988ef7c63b7a3b7e8ef692bf413c9dc",
+      "bytes": 73584
+    },
+    {
+      "path": "src/mythra/hero_side_b/native_context.rs",
+      "sha256": "681b5595a1431a7bae5e0180d8f5343b66decb57c369489e2f61a52ee25bf06b",
+      "bytes": 4363
+    },
+    {
+      "path": "src/mythra/hero_side_b/native_params.rs",
+      "sha256": "b086499f20351e79ec8bb10ec09c4f7fff175ed4505b84f48105e3330273ba4f",
+      "bytes": 1846
+    },
+    {
+      "path": "src/mythra/hero_side_b/native_signatures.rs",
+      "sha256": "eb02572a57852e30f3119bb66e51b8ed2ee1cf57b6f4965ef1f692c287f89e4c",
+      "bytes": 39135
+    },
+    {
+      "path": "src/mythra/hero_side_b/params.rs",
+      "sha256": "ad5b296377421b68e4658f0e3075635ddf5262e4fdb6d497a74b2b5158b2d72d",
+      "bytes": 2260
+    },
+    {
+      "path": "src/mythra/hero_side_b/receiver.rs",
+      "sha256": "d30a1114db8792e7b5edaa448a5220bff5930a5ab40f16be3214737c25aecb35",
+      "bytes": 5431
+    },
+    {
+      "path": "src/mythra/hero_side_b/registration.rs",
+      "sha256": "e2a282d1c618ff9c950e4ada5e3679f0f16e4420350a29b92a4bcaa9cf642e46",
+      "bytes": 2740
+    },
+    {
+      "path": "src/mythra/hero_side_b/script_acmd.rs",
+      "sha256": "c129e7ccc9d61f3462fb245f26fe4ad9ca43b52569eed8fa1cdcdb8eec29e90d",
+      "bytes": 16633
+    },
+    {
+      "path": "src/mythra/hero_side_b/state.rs",
+      "sha256": "8024f410f4528f6563a355313f809fba264f9daa0c4251e5c6c679b4fd049114",
+      "bytes": 4735
+    },
+    {
+      "path": "src/mythra/hero_side_b/weapon.rs",
+      "sha256": "5d8382b9be08e2e0ab0cc3fe0ab749309c0b5cd8dc31ae698d3a2a496bfe02c9",
+      "bytes": 17596
+    },
+    {
+      "path": "src/mythra/hero_spin.rs",
+      "sha256": "adb63c8ba41ecbecf5f1001f13be4db39323e8f370afc8ee06fa4175e43341ae",
+      "bytes": 17715
+    },
+    {
+      "path": "src/mythra/hero_spin_acmd.rs",
+      "sha256": "bb72b97edd4658070b6012413d3f6841e150cd2a9c548e119d12670d0e412ac3",
+      "bytes": 15371
+    },
+    {
+      "path": "src/mythra/hero_spin_params.rs",
+      "sha256": "b435184703e98fe5bc6342adc47f9c35fe4cd83518af7949bc1e70d3ced8f62d",
+      "bytes": 1848
+    },
+    {
+      "path": "src/mythra/lucas_attack_lw4.rs",
+      "sha256": "bab5360b35cc27ca110631933abfbfa98e752d3e47647f9bef616e902a550228",
+      "bytes": 17465
+    },
+    {
+      "path": "src/mythra/mod.rs",
+      "sha256": "8c3fdaefcbe3e420ad8d491d29087c3dcc9786e57584f4603b5c38ee2ea2ec24",
+      "bytes": 7812
+    },
+    {
+      "path": "src/mythra/ness_throw_b.rs",
+      "sha256": "e5afdf8af5a68e3a63e49a98b3d4d2231dafd572a4ce0f864591a79d4a9c3512",
+      "bytes": 14704
+    },
+    {
+      "path": "src/mythra/throw_lw.rs",
+      "sha256": "56019206ce4cfb1048339e1e01db40c42f7af1eee1adced5d5982a0dd9c0013e",
+      "bytes": 6866
+    },
+    {
+      "path": "src/params.rs",
+      "sha256": "77f4941cb69ae70fd386d6446fd7bd00f1f5d745e873e6966668e81103ccfea9",
+      "bytes": 20190
+    },
+    {
+      "path": "src/status/gaogaen_throw_b.rs",
+      "sha256": "08a2c29c74d537bb03dfd3fe2061f47b0c2ad56260671b81c56c56ba5abdb9b8",
+      "bytes": 7978
+    },
+    {
+      "path": "src/status/gaogaen_throw_b_data.rs",
+      "sha256": "52685f6c0419e71f833ccddc1a150c38b09abcda20daf58a81dc767160722c06",
+      "bytes": 8739
+    },
+    {
+      "path": "src/status/mod.rs",
+      "sha256": "1e4ae2aefe02553864b761c5cbeab4c004f1bfe22782513ada7e3aaa77b170ae",
+      "bytes": 5584
+    },
+    {
+      "path": "src/status/monkey_flip.rs",
+      "sha256": "f8eaa924bd23da779339242b35f6579f1057acd4c31a057e461e0c9cffbe9625",
+      "bytes": 72555
+    },
+    {
+      "path": "src/status/monkey_flip_capture.rs",
+      "sha256": "f7113e62cc8a99225ff44b78ed8dd9568d90ec147e3d378de77fc87cab0ca6c2",
+      "bytes": 10198
+    },
+    {
+      "path": "src/status/monkey_flip_capture_data.rs",
+      "sha256": "7eb31aea68e29e52b4e2dbbb86aaa57a410615b2c8f50e63f22a0c6bb8082256",
+      "bytes": 19384
+    },
+    {
+      "path": "src/status/monkey_flip_params.rs",
+      "sha256": "1ebd395c8e203ba7804949f429dbb2dd72ca40787cdbc9a67460ad4cc16cb5c3",
+      "bytes": 3183
+    },
+    {
+      "path": "src/status/snake_grenade/acmd.rs",
+      "sha256": "ba1b93e6af36f7781eea7e65f0545c5e7bad1331a6d3ee37b1882b2f5b6d3644",
+      "bytes": 42236
+    },
+    {
+      "path": "src/status/snake_grenade/lower.rs",
+      "sha256": "81ee2ec388b76ffaef082b54e3a7513e7c76fa37936097445a369dbe25c12497",
+      "bytes": 9042
+    },
+    {
+      "path": "src/status/snake_grenade/mod.rs",
+      "sha256": "e838549ec6c0cbb143d8c5774276f015d54b3b6d90fde07c0cdd50d84eff076f",
+      "bytes": 40067
+    },
+    {
+      "path": "src/status/snake_grenade/native.rs",
+      "sha256": "521a438c947a8c0528d88d4e79e3b3b0035e895201a8cf46ccc01d73caf8924c",
+      "bytes": 3246
+    },
+    {
+      "path": "src/status/snake_grenade/native_signatures.rs",
+      "sha256": "caede5a9d0ac4afb5019973a3b2a5813393abd817baa7927d97ae0a64c11ed05",
+      "bytes": 4954
+    },
+    {
+      "path": "src/status/snake_grenade/params.rs",
+      "sha256": "4fd0034cb9dc146705ea984ff99ddb16b352c7a6b1d3cca217d1d05dd6672ce7",
+      "bytes": 846
+    },
+    {
+      "path": "src/status/snake_grenade/pin.rs",
+      "sha256": "3a33279c1aa6b875adcf26fa4df84cddba20385edc657585ca0a1240342d6e45",
+      "bytes": 1981
+    },
+    {
+      "path": "src/status/special_hi.rs",
+      "sha256": "61057643d53e11b8c2454c1e2c2171b3accaef55d4050728d8eab791f12b4b42",
+      "bytes": 33424
+    },
+    {
+      "path": "src/swap_effects.rs",
+      "sha256": "17bcd6c62f4d56e79af17bed90c78596897d93cf69221987791c724eacf9d77e",
+      "bytes": 2799
+    }
+  ]
+}

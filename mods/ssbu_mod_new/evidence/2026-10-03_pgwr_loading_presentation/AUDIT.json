@@ -1,0 +1,152 @@
+{
+  "tier": "B verified offline; runtime unverified",
+  "baseline_files_verified": 5098,
+  "baseline_tree_sha256": "dae0bff00e20cbe3b5da37215fe82f745ac27c7d8776d180fd08644fc3be6f5e",
+  "union_files": 5099,
+  "union_tree_sha256": "0f768dec7d0992903022406c4df368f65c0a0808e21427c389e5318b45f64c95",
+  "changed": [
+    "ui/param/database/ui_chara_db.prc",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx"
+  ],
+  "added": [
+    "ui/param/database/ui_layout_db.prc"
+  ],
+  "preserved_existing_files": 5095,
+  "main_sha256": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613",
+  "category_3_table_pointer": "0x441fa1e",
+  "inherited_nro_sha256": "214dc3126430598fb5e71093f6d5d584e17e662a593b67acf0eb0b777eb66058",
+  "source_game_files": {
+    "ui/layout/system/loading/loading/layout.arc": "04ca374bd32c1e1e52d07fa5f106354eba1ada0eac7651cef82bc8de058d6484",
+    "ui/layout/system/matchup/matchup/layout.arc": "7270ed6781b04c5d6526ce3d4bf44c8ec2388628f8d5aeeca9e5675dfc954f1b",
+    "ui/param/database/ui_chara_db.prc": "c65a0da57a20fe790c2f0948d017a54c4885341885d9a30866c590ccf380f380",
+    "ui/param/database/ui_layout_db.prc": "c4207de23ba9912d87e475a78c152e98efb52869955551640159c35743340cd4",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx": "e60452212f0e637e8e1b6c19ffda08f7f03253d503587df8ca628e387584bbc6",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx": "5da22e2a22d5c299e5cb44e797025bcafcde3f679cda56493074272cc092173d",
+    "ui/replace_patch/chara/chara_3/chara_3_elight_first_06.bntx": "cb634b487167cee45fd4f0f90c6c69c21f6f3c803c5d1ebc9f85b20c576e6e84"
+  },
+  "negative_layout_control": "PASS",
+  "concurrent_name_and_css_union_control": "PASS",
+  "matrix": [
+    {
+      "fighters": 2,
+      "costume": 6,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx",
+      "layout_color": 6
+    },
+    {
+      "fighters": 2,
+      "costume": 6,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_first_06.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 2,
+      "costume": 7,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx",
+      "layout_color": 7
+    },
+    {
+      "fighters": 2,
+      "costume": 7,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_first_07.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 4,
+      "costume": 6,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx",
+      "layout_color": 6
+    },
+    {
+      "fighters": 4,
+      "costume": 6,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_first_06.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 4,
+      "costume": 7,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx",
+      "layout_color": 7
+    },
+    {
+      "fighters": 4,
+      "costume": 7,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_first_07.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 5,
+      "costume": 6,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_only_06.bntx",
+      "layout_color": 6
+    },
+    {
+      "fighters": 5,
+      "costume": 6,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_only_06.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 5,
+      "costume": 7,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_only_07.bntx",
+      "layout_color": 7
+    },
+    {
+      "fighters": 5,
+      "costume": 7,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_only_07.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 8,
+      "costume": 6,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_only_06.bntx",
+      "layout_color": 6
+    },
+    {
+      "fighters": 8,
+      "costume": 6,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_only_06.bntx",
+      "layout_color": 0
+    },
+    {
+      "fighters": 8,
+      "costume": 7,
+      "starter": "eflame",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_eflame_only_07.bntx",
+      "layout_color": 7
+    },
+    {
+      "fighters": 8,
+      "costume": 7,
+      "starter": "elight",
+      "asset": "ui/replace_patch/chara/chara_3/chara_3_elight_only_07.bntx",
+      "layout_color": 0
+    }
+  ],
+  "delta": {
+    "ui/param/database/ui_chara_db.prc": "2c256f3398173acb6eab32320a22373aa8af19cb96468ad19742fb92cb7f1414",
+    "ui/param/database/ui_layout_db.prc": "71b03f6dfb503fc9c2c3c8a409ef48a58f1946ad19c2c68c5f94672102c9d2ee",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_06.bntx": "bb0def2d8c68cf620146351532de67b31f75179a3394f02628a32958ddac2630",
+    "ui/replace_patch/chara/chara_3/chara_3_eflame_first_07.bntx": "55ed0574aa4da5e333e058b3aefb260328a99914e08452b1c3fee4689865774d"
+  },
+  "matchup_player_panes_verified": 8,
+  "reproduction_four_file_hashes": "PASS"
+}

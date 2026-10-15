@@ -1,0 +1,13 @@
+﻿{
+    "source":  "modpack_test_1 sources as of 23:24 merged into src/pgwr; assets byte-identical to the agents theme_revision package; NRO hash identical to the agents rebuilt plugin",
+    "one_slot_eff_sha256":  "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+    "note":  "Card held the PATCHED smashline b906669d (installed by the old installer default at 21:55 and 22:54). Restored the good 5f4091ee; patched copy kept in evidence/card_smashline/.",
+    "console_test":  "pending",
+    "version":  "0.14.0+themes+name-routing+stool+upsmash",
+    "backup":  "evidence/sd-backups/sd-backup-20260929-233021",
+    "mod_file_count":  1215,
+    "installed_on":  "2026-09-29T23:30+02:00",
+    "reskin_nro_sha256":  "2a5b62ed8f288730289a4b79d61349a225f4dbd11ffafb94a21bfb6cb10755fd",
+    "card":  "<drive>:/",
+    "smashline_sha256":  "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7"
+}

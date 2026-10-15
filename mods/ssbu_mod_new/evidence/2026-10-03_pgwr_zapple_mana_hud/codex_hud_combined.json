@@ -1,0 +1,1164 @@
+{
+  "tool": "tools/audit_hero_mana_hud.py v1.0.0",
+  "tier": "B",
+  "main_sha256": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613",
+  "hud_rs": "builds\\.cache\\mana_hud_codex\\combined\\src\\mythra\\hero_mana\\hud.rs",
+  "hud_rs_sha256": "ed84b5f548da061109198b1932d64449344842c75d2570fc48726843440fb959",
+  "constants": [
+    {
+      "constant": "FIGHTER_MANAGER_REF",
+      "value": "0x52b84f8",
+      "at": "0x852a98",
+      "want": "adrp x8, #0x52b8000",
+      "got": "adrp x8, #0x52b8000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "FIGHTER_MANAGER_REF",
+      "value": "0x52b84f8",
+      "at": "0x852a9c",
+      "want": "ldr x8, [x8, #0x4f8]",
+      "got": "ldr x8, [x8, #0x4f8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "FIGHTER_MANAGER_REF",
+      "value": "0x52b84f8",
+      "at": "0x852aa0",
+      "want": "ldr x9, [x8]",
+      "got": "ldr x9, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "FM_ENTRIES",
+      "value": "0x20",
+      "at": "0x852aa4",
+      "want": "add x9, x9, w0, sxtw #3",
+      "got": "add x9, x9, w0, sxtw #3",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "FM_ENTRIES",
+      "value": "0x20",
+      "at": "0x852aa8",
+      "want": "ldr x10, [x9, #0x20]",
+      "got": "ldr x10, [x9, #0x20]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ENTRY_HUD_PLAYER",
+      "value": "0x41e4",
+      "at": "0x852aac",
+      "want": "mov w9, #0x41e4",
+      "got": "mov w9, #0x41e4",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ENTRY_HUD_PLAYER",
+      "value": "0x41e4",
+      "at": "0x852ac4",
+      "want": "ldr w9, [x9]",
+      "got": "ldr w9, [x9]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ENTRY_HUD_FLAG",
+      "value": "0x41e8",
+      "at": "0x852ab0",
+      "want": "mov w11, #0x41e8",
+      "got": "mov w11, #0x41e8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ENTRY_HUD_FLAG",
+      "value": "0x41e8",
+      "at": "0x852ab8",
+      "want": "ldrb w10, [x10, x11]",
+      "got": "ldrb w10, [x10, x11]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_SP_SET",
+      "value": "0x5c",
+      "at": "0x852ac8",
+      "want": "mov w10, #0x5c",
+      "got": "mov w10, #0x5c",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_SP_SET",
+      "value": "0x5c",
+      "at": "0x852b00",
+      "want": "ldr x21, [x9, #0x8a8]",
+      "got": "ldr x21, [x9, #0x8a8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_SP_SET",
+      "value": "0x5c",
+      "at": "0x1374e8c",
+      "want": "mov w8, #0x5c",
+      "got": "mov w8, #0x5c",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_SP_SET",
+      "value": "0x5c",
+      "at": "0x1374dc4",
+      "want": "add x27, x22, #0x8a8",
+      "got": "add x27, x22, #0x8a8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_KINDS_MIN",
+      "value": "0x5f",
+      "at": "0x85bbfc",
+      "want": "mov w10, #0x5e",
+      "got": "mov w10, #0x5e",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "EVENT_KINDS_MIN",
+      "value": "0x5f",
+      "at": "0x85bc18",
+      "want": "cmp w8, #0x5f",
+      "got": "cmp w8, #0x5f",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "FM_LISTS",
+      "value": "0x8",
+      "at": "0x852af4",
+      "want": "ldr x9, [x19, #8]",
+      "got": "ldr x9, [x19, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1374da4",
+      "want": "adrp x8, #0x1378000",
+      "got": "adrp x8, #0x1378000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1374da8",
+      "want": "add x8, x8, #0x650",
+      "got": "add x8, x8, #0x650",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1374db4",
+      "want": "stp x19, x8, [x20, #0x10]",
+      "got": "stp x19, x8, [x20, #0x10]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1374db0",
+      "want": "str xzr, [x20, #0x20]",
+      "got": "str xzr, [x20, #0x20]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1374e0c",
+      "want": "str x20, [x21, #0x10]",
+      "got": "str x20, [x21, #0x10]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1378650",
+      "want": "ldr x0, [x0, #0x20]",
+      "got": "ldr x0, [x0, #0x20]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1378668",
+      "want": "ldr x2, [x9, #0x2e0]",
+      "got": "ldr x2, [x9, #0x2e0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1378698",
+      "want": "ldr x2, [x9, #0x2e8]",
+      "got": "ldr x2, [x9, #0x2e8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x13786c0",
+      "want": "ldr x2, [x8, #0x2f0]",
+      "got": "ldr x2, [x8, #0x2f0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x137865c",
+      "want": "ldr w8, [x1, #0xc]",
+      "got": "ldr w8, [x1, #0xc]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1378660",
+      "want": "ldr s0, [x1, #0x10]",
+      "got": "ldr s0, [x1, #0x10]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "DELEGATE_SP_SET",
+      "value": "0x1378650",
+      "at": "0x1378664",
+      "want": "mov x1, x8",
+      "got": "mov x1, x8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_ROOT",
+      "value": "0x52c2420",
+      "at": "0x13689d0",
+      "want": "adrp x8, #0x52c2000",
+      "got": "adrp x8, #0x52c2000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_ROOT",
+      "value": "0x52c2420",
+      "at": "0x13689d4",
+      "want": "ldr x8, [x8, #0x420]",
+      "got": "ldr x8, [x8, #0x420]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_ROOT",
+      "value": "0x52c2420",
+      "at": "0x13689e8",
+      "want": "ldr x8, [x8, #8]",
+      "got": "ldr x8, [x8, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_ROOT",
+      "value": "0x52c2420",
+      "at": "0x13689ec",
+      "want": "ldr x8, [x8]",
+      "got": "ldr x8, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_PLAYER_TABLE",
+      "value": "0x18",
+      "at": "0x13689dc",
+      "want": "ldr x9, [x0, #0x18]",
+      "got": "ldr x9, [x0, #0x18]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_PLAYER_TABLE",
+      "value": "0x18",
+      "at": "0x13689f0",
+      "want": "ldrsw x9, [x9, #0xc]",
+      "got": "ldrsw x9, [x9, #0xc]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_PLAYER_STRIDE",
+      "value": "0x260",
+      "at": "0x13689e0",
+      "want": "mov w10, #0x260",
+      "got": "mov w10, #0x260",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_PLAYER_STRIDE",
+      "value": "0x260",
+      "at": "0x13689e4",
+      "want": "smaddl x9, w1, w10, x9",
+      "got": "smaddl x9, w1, w10, x9",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_VIEW_ARRAY",
+      "value": "0xc68",
+      "at": "0x1368a00",
+      "want": "add x8, x8, x9, lsl #3",
+      "got": "add x8, x8, x9, lsl #3",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_VIEW_ARRAY",
+      "value": "0xc68",
+      "at": "0x1368a04",
+      "want": "ldr x8, [x8, #0xc68]",
+      "got": "ldr x8, [x8, #0xc68]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_DEFAULT_VIEW",
+      "value": "0xc50",
+      "at": "0x13689f8",
+      "want": "cmn w9, #1",
+      "got": "cmn w9, #1",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "HUD_DEFAULT_VIEW",
+      "value": "0xc50",
+      "at": "0x1368a0c",
+      "want": "add x8, x8, #0xc50",
+      "got": "add x8, x8, #0xc50",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a40",
+      "want": "adrp x8, #0x532e000",
+      "got": "adrp x8, #0x532e000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a44",
+      "want": "ldr x8, [x8, #0x8b0]",
+      "got": "ldr x8, [x8, #0x8b0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a4c",
+      "want": "ldr x8, [x8, #8]",
+      "got": "ldr x8, [x8, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a50",
+      "want": "ldr w9, [x8, #0x138]",
+      "got": "ldr w9, [x8, #0x138]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a58",
+      "want": "ldrb w8, [x8, #0x2b8]",
+      "got": "ldrb w8, [x8, #0x2b8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "MODE_ROOT",
+      "value": "0x532e8b0",
+      "at": "0x1368a5c",
+      "want": "cmp w8, #0xb",
+      "got": "cmp w8, #0xb",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x1368a14",
+      "want": "ldr x9, [x8, #8]",
+      "got": "ldr x9, [x8, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x1368a28",
+      "want": "ldr w8, [x8, #0x14]",
+      "got": "ldr w8, [x8, #0x14]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x1368a68",
+      "want": "ldr x8, [x8]",
+      "got": "ldr x8, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x1368a6c",
+      "want": "ldrb w9, [x8, #0x70]",
+      "got": "ldrb w9, [x8, #0x70]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x138b1cc",
+      "want": "ldrb w8, [x8, #0x70]",
+      "got": "ldrb w8, [x8, #0x70]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x138b1d4",
+      "want": "ldr w8, [x0, #0x14]",
+      "got": "ldr w8, [x0, #0x14]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_ACTIVE",
+      "value": "0x70",
+      "at": "0x138b1d8",
+      "want": "cmn w8, #1",
+      "got": "cmn w8, #1",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANELS",
+      "value": "0x8",
+      "at": "0x1368a78",
+      "want": "cmp w9, #8",
+      "got": "cmp w9, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANELS",
+      "value": "0x8",
+      "at": "0x1b7f8c0",
+      "want": "cmp w1, #8",
+      "got": "cmp w1, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "VIEW_INNER",
+      "value": "0xb0",
+      "at": "0x1368a80",
+      "want": "ldr x8, [x8, #0xb0]",
+      "got": "ldr x8, [x8, #0xb0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "INNER_PANELS",
+      "value": "0x1910",
+      "at": "0x1368a84",
+      "want": "ldr x8, [x8, #0x1910]",
+      "got": "ldr x8, [x8, #0x1910]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_STRIDE",
+      "value": "0x3e0",
+      "at": "0x1368a88",
+      "want": "mov w10, #0x3e0",
+      "got": "mov w10, #0x3e0",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_STRIDE",
+      "value": "0x3e0",
+      "at": "0x1368a8c",
+      "want": "madd x8, x9, x10, x8",
+      "got": "madd x8, x9, x10, x8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_GAUGE",
+      "value": "0x8",
+      "at": "0x1367690",
+      "want": "add x0, x9, #8",
+      "got": "add x0, x9, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_GAUGE",
+      "value": "0x8",
+      "at": "0x1367694",
+      "want": "bl #0x1426fb0",
+      "got": "bl #0x1426fb0",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_GAUGE",
+      "value": "0x8",
+      "at": "0x141a998",
+      "want": "add x0, x8, #8",
+      "got": "add x0, x8, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_GAUGE",
+      "value": "0x8",
+      "at": "0x141a99c",
+      "want": "bl #0x1426fb0",
+      "got": "bl #0x1426fb0",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_SELECT_PART",
+      "value": "0x1426fb0",
+      "at": "0x1367694",
+      "want": "bl #0x1426fb0",
+      "got": "bl #0x1426fb0",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_SELECT_PART",
+      "value": "0x1426fb0",
+      "at": "0x1367674",
+      "want": "ldr x2, [x8, #0x3d0]",
+      "got": "ldr x2, [x8, #0x3d0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "PANEL_SELECT_PART",
+      "value": "0x1426fb0",
+      "at": "0x1367654",
+      "want": "ldr x1, [x11, #0x3c8]",
+      "got": "ldr x1, [x11, #0x3c8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_PART",
+      "value": "0x8",
+      "at": "0x1426fe0",
+      "want": "ldr x20, [x19, #8]",
+      "got": "ldr x20, [x19, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_PART",
+      "value": "0x8",
+      "at": "0x1427130",
+      "want": "str x8, [x19, #8]",
+      "got": "str x8, [x19, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_PART",
+      "value": "0x300",
+      "at": "0x14270f4",
+      "want": "add x8, x19, #0x300",
+      "got": "add x8, x19, #0x300",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_PART",
+      "value": "0x300",
+      "at": "0x14270f8",
+      "want": "mov w21, #8",
+      "got": "mov w21, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_PART",
+      "value": "0x300",
+      "at": "0x1426640",
+      "want": "str x8, [x19, #0x300]",
+      "got": "str x8, [x19, #0x300]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_PART",
+      "value": "0x300",
+      "at": "0x142663c",
+      "want": "str x19, [x19, #0x308]",
+      "got": "str x19, [x19, #0x308]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "BRAVE_PART_VTABLE",
+      "value": "0x5065d58",
+      "at": "0x142661c",
+      "want": "adrp x8, #0x5065000",
+      "got": "adrp x8, #0x5065000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "BRAVE_PART_VTABLE",
+      "value": "0x5065d58",
+      "at": "0x1426620",
+      "want": "add x8, x8, #0xd58",
+      "got": "add x8, x8, #0xd58",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_UI",
+      "value": "0x310",
+      "at": "0x14265e0",
+      "want": "add x0, x19, #0x310",
+      "got": "add x0, x19, #0x310",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_UI",
+      "value": "0x310",
+      "at": "0x1426644",
+      "want": "bl #0x1405be0",
+      "got": "bl #0x1405be0",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_UI",
+      "value": "0x310",
+      "at": "0x14060e4",
+      "want": "str x20, [x19]",
+      "got": "str x20, [x19]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_BRAVE_UI",
+      "value": "0x310",
+      "at": "0x1368a90",
+      "want": "ldr x8, [x8, #0x318]",
+      "got": "ldr x8, [x8, #0x318]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_PANEL_INDEX",
+      "value": "0x390",
+      "at": "0x1427154",
+      "want": "ldr w1, [x19, #0x390]",
+      "got": "ldr w1, [x19, #0x390]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_PANEL_INDEX",
+      "value": "0x390",
+      "at": "0x1427270",
+      "want": "ldrsw x8, [x0, #0x390]",
+      "got": "ldrsw x8, [x0, #0x390]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_PANEL_INDEX",
+      "value": "0x390",
+      "at": "0x1427274",
+      "want": "cmp w8, #8",
+      "got": "cmp w8, #8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_LAYOUT",
+      "value": "0x398",
+      "at": "0x1427150",
+      "want": "ldr x0, [x19, #0x398]",
+      "got": "ldr x0, [x19, #0x398]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "GAUGE_LAYOUT",
+      "value": "0x398",
+      "at": "0x142715c",
+      "want": "bl #0x1b7d460",
+      "got": "bl #0x1b7d460",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "LAYOUT_ROWS",
+      "value": "0x80",
+      "at": "0x1424b34",
+      "want": "ldr x8, [x20, #0x80]",
+      "got": "ldr x8, [x20, #0x80]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "LAYOUT_ROWS",
+      "value": "0x80",
+      "at": "0x1b7f8c8",
+      "want": "ldr x19, [x0, #0x80]",
+      "got": "ldr x19, [x0, #0x80]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_STRIDE",
+      "value": "0xd90",
+      "at": "0x1424b38",
+      "want": "mov w9, #0xd90",
+      "got": "mov w9, #0xd90",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_STRIDE",
+      "value": "0xd90",
+      "at": "0x1424b3c",
+      "want": "smaddl x8, w0, w9, x8",
+      "got": "smaddl x8, w0, w9, x8",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_BRAVE_BINDING",
+      "value": "0xf78",
+      "at": "0x1424b40",
+      "want": "add x8, x8, #0xf78",
+      "got": "add x8, x8, #0xf78",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_BRAVE_BINDING",
+      "value": "0xf78",
+      "at": "0x1424b44",
+      "want": "str x8, [sp, #8]",
+      "got": "str x8, [sp, #8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_BRAVE_BINDING",
+      "value": "0xf78",
+      "at": "0x1424b94",
+      "want": "bl #0x1406350",
+      "got": "bl #0x1406350",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_BRAVE_BINDING",
+      "value": "0xf78",
+      "at": "0x1406484",
+      "want": "ldr x20, [x8]",
+      "got": "ldr x20, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "ROW_BRAVE_BINDING",
+      "value": "0xf78",
+      "at": "0x1406494",
+      "want": "add x0, x20, #0x180",
+      "got": "add x0, x20, #0x180",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "BRAVE_UI_STATE",
+      "value": "0x28",
+      "at": "0x1405c58",
+      "want": "add x0, x20, #0x28",
+      "got": "add x0, x20, #0x28",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "BRAVE_UI_STATE",
+      "value": "0x28",
+      "at": "0x1405c68",
+      "want": "bl #0x1407360",
+      "got": "bl #0x1407360",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "BRAVE_UI_STATE",
+      "value": "0x28",
+      "at": "0x1368a94",
+      "want": "ldr x8, [x8, #0x28]",
+      "got": "ldr x8, [x8, #0x28]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "SP_QUEUE_DESCRIPTOR",
+      "value": "0x5064f78",
+      "at": "0x14073d8",
+      "want": "adrp x9, #0x5064000",
+      "got": "adrp x9, #0x5064000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "SP_QUEUE_DESCRIPTOR",
+      "value": "0x5064f78",
+      "at": "0x14073dc",
+      "want": "add x9, x9, #0xf78",
+      "got": "add x9, x9, #0xf78",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_DESCRIPTOR",
+      "value": "0xd0",
+      "at": "0x14073ec",
+      "want": "mov w10, #0xc",
+      "got": "mov w10, #0xc",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_DESCRIPTOR",
+      "value": "0xd0",
+      "at": "0x14074bc",
+      "want": "stp x9, x10, [x0, #0xd0]",
+      "got": "stp x9, x10, [x0, #0xd0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_CAPACITY",
+      "value": "0xd8",
+      "at": "0x1368a98",
+      "want": "ldr x9, [x8, #0xd8]",
+      "got": "ldr x9, [x8, #0xd8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_CAPACITY",
+      "value": "0xd8",
+      "at": "0x1406d38",
+      "want": "ldr x10, [x0, #0xd8]",
+      "got": "ldr x10, [x0, #0xd8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_BUFFER",
+      "value": "0xf8",
+      "at": "0x14073c8",
+      "want": "add x8, x0, #0x100",
+      "got": "add x8, x0, #0x100",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_BUFFER",
+      "value": "0xf8",
+      "at": "0x14073cc",
+      "want": "stp xzr, x8, [x0, #0xf0]",
+      "got": "stp xzr, x8, [x0, #0xf0]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_QUEUE_BUFFER",
+      "value": "0xf8",
+      "at": "0x1368ab0",
+      "want": "ldr x8, [x8, #0xf8]",
+      "got": "ldr x8, [x8, #0xf8]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_TARGET",
+      "value": "0x258",
+      "at": "0x1406d8c",
+      "want": "str w8, [x19, #0x258]",
+      "got": "str w8, [x19, #0x258]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_TARGET",
+      "value": "0x258",
+      "at": "0x1406da0",
+      "want": "ldr s1, [x19, #0x258]",
+      "got": "ldr s1, [x19, #0x258]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_TARGET",
+      "value": "0x258",
+      "at": "0x14063c0",
+      "want": "str x8, [x0, #0x258]",
+      "got": "str x8, [x0, #0x258]",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "STATE_SIZE",
+      "value": "0x280",
+      "at": "0x1407374",
+      "want": "mov w1, #0x280",
+      "got": "mov w1, #0x280",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x1426f68",
+      "want": "mov x2, #0xff0000000000",
+      "got": "mov x2, #0xff0000000000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x1426f6c",
+      "want": "movk x2, #0xc1ff, lsl #48",
+      "got": "movk x2, #0xc1ff, lsl #48",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x3262148",
+      "want": "and x8, x1, #0xff00000000000000",
+      "got": "and x8, x1, #0xff00000000000000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x326214c",
+      "want": "mov x9, #-0x3f00000000000000",
+      "got": "mov x9, #-0x3f00000000000000",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x326215c",
+      "want": "and x22, x1, #0xffffffffff",
+      "got": "and x22, x1, #0xffffffffff",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x3262220",
+      "want": "ubfx x20, x21, #0x28, #0x10",
+      "got": "ubfx x20, x21, #0x28, #0x10",
+      "verdict": "MATCH"
+    },
+    {
+      "constant": "CHARA_TAG",
+      "value": "0xc1ffff0000000000",
+      "at": "0x3262228",
+      "want": "b.ls #0x3262244",
+      "got": "b.ls #0x3262244",
+      "verdict": "MATCH"
+    }
+  ],
+  "structure": [
+    {
+      "check": "hud class 0x5061780 slot 0x2e0",
+      "want": "0x13689c0",
+      "got": "0x13689c0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud class 0x5061780 slot 0x2e8",
+      "want": "0x1368ae0",
+      "got": "0x1368ae0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud class 0x5061780 slot 0x2f0",
+      "want": "0x1368bb0",
+      "got": "0x1368bb0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud class 0x5061ba0 slot 0x2e0",
+      "want": "0x13689c0",
+      "got": "0x13689c0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud class 0x5061ba0 slot 0x2e8",
+      "want": "0x1368ae0",
+      "got": "0x1368ae0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud class 0x5061ba0 slot 0x2f0",
+      "want": "0x1368bb0",
+      "got": "0x1368bb0",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "queue command at 0x1368ab4",
+      "want": "str wzr, [x8]",
+      "got": "str wzr, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "queue command at 0x1368ab8",
+      "want": "str s8, [x8, #4]",
+      "got": "str s8, [x8, #4]",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "queue command at 0x139ffc4",
+      "want": "mov w10, #1",
+      "got": "mov w10, #1",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "queue command at 0x139ffc8",
+      "want": "stp w10, w9, [x8]",
+      "got": "stp w10, w9, [x8]",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "queue command at 0x1368c80",
+      "want": "strb w9, [x8, #0x38]",
+      "got": "strb w9, [x8, #0x38]",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: fighter kind 0x53 -> gauge+0x300 (part 8)",
+      "want": "0x14270f4",
+      "got": "0x14270f4",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: Kirby copying 0x53 -> gauge+0x300 (the non-Hero precedent)",
+      "want": "0x14271e4",
+      "got": "0x14271e4",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: no other fighter kind selects the MP gauge",
+      "want": "[]",
+      "got": "[]",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: eflame (kind 0x5a) owns no panel part",
+      "want": "0x142707c",
+      "got": "0x142707c",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: elight (kind 0x5b) owns no panel part",
+      "want": "0x142707c",
+      "got": "0x142707c",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "selector: fighter kinds that own a panel part",
+      "want": "(recorded)",
+      "got": "['0x30', '0x34', '0x38', '0x39', '0x3e', '0x41', '0x46', '0x52', '0x53', '0x55', '0x58', '0x5c', '0x5d', '0x6']",
+      "verdict": "RECORDED"
+    }
+  ],
+  "source": [
+    {
+      "check": "Cargo.toml declares hero-mana-hud",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "Cargo.toml still declares hero-mana-reserved",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "neither mana feature is a default feature",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "hud module is gated by hero-mana-hud",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "damage module is still gated by hero-mana-reserved",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "nothing but `damage` is behind hero-mana-reserved",
+      "got": "['pub mod damage;']",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "recovery-on-hit is not called from the meter",
+      "got": "",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "CHARA_BRAVE is hash40(\"ui_chara_brave\")",
+      "got": "0xe29e05d6a vs 0xe29e05d6a",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "ui_chara_brave is a key of the package's ui_chara_db.prc",
+      "got": "ui_chara_db.prc sha256 2c256f339817",
+      "verdict": "MATCH"
+    }
+  ],
+  "nro_with_feature": [
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD READY route=game-part-selector' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD REFUSED signature' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'REBIND' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD SELECT-FAILED entry=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD LOST entry=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD OFF entry=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD REFUSED entry=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): 'HUD absent' line absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): meter marker 'REGISTERED max=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "combined.nro (with, sha256 48291984dfc2ae4e5c0b92ab19c15312807170f643f68bc992a792f98b3c2b65): meter marker '[PGWR-MANA]' present",
+      "verdict": "MATCH"
+    }
+  ],
+  "nro_without_feature": [
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD READY route=game-part-selector' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD REFUSED signature' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'REBIND' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD SELECT-FAILED entry=' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD LOST entry=' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD OFF entry=' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD REFUSED entry=' absent",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): 'HUD absent' line present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): meter marker 'REGISTERED max=' present",
+      "verdict": "MATCH"
+    },
+    {
+      "check": "angle-only.nro (without, sha256 5c9007035b87fc2f79c1dc6e9b2de352d29f2797ab9f3e2115f27b9aa5179ec6): meter marker '[PGWR-MANA]' present",
+      "verdict": "MATCH"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "file": "SpecialAirHi1.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialAirHi1.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 3930,
+    "sha256": "5dc963d6dd95b3a9b3bb9f364e2f87407ae94ca1ce3fb3cefa9cf9cc7320af91"
+  },
+  {
+    "file": "SpecialAirHi2.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialAirHi2.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 4758,
+    "sha256": "483d4c1f3dcbb0edc59b6b7b46047e850bda3c64af07c6fc85c2ae8bf7725ba4"
+  },
+  {
+    "file": "SpecialAirHiEnd.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialAirHiEnd.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 1930,
+    "sha256": "92c76ed714b2d7d585dadfb726bb919237e222ac0bce39146da27fbda65609b9"
+  },
+  {
+    "file": "SpecialAirHiJump.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialAirHiJump.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 9573,
+    "sha256": "3faa95606d0f13cdfb759c4c8291e158976d44969c2f269cc88f7049e7bf0ab4"
+  },
+  {
+    "file": "SpecialAirHiStart.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialAirHiStart.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 2565,
+    "sha256": "83a5926709086a179b29702a3ec7fc0aec97dc749f89f2bc1a88bea0511c5ac2"
+  },
+  {
+    "file": "SpecialHiInterrupt.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialHiInterrupt.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 159,
+    "sha256": "841ef27cdd53565325b42cced2cd32f0941feb49cd816268872958ea8564241e"
+  },
+  {
+    "file": "SpecialHiStart.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/SpecialHiStart.txt",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "bytes": 2918,
+    "sha256": "b65ba6b4df4d993beb9543e7da270cf7a244c66ece249c23a4b9f9a863d007c7"
+  }
+]

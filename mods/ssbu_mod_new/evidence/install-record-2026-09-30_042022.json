@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-30",
+  "version": "0.18.1",
+  "method": "src/pgwr/install-to-card.sh; autodetected card, automatic backup, .new staging, cmp/diff verification",
+  "manifest": "builds/pgwr/0.18.1/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-042022",
+  "reskin_nro_sha256": "fa61a0fc2616951f99949d3826f1c695a18d4436d88d8122abd87ccfe9e0be05",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1362,
+  "mod_tree_sha256": "1147e4dee3ada306e92f912f9dcd32669adc5968a4d622ea4d2901b021d0db85",
+  "protected_plugin_sha256_unchanged": {
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6",
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.18.0": "NRO only (info.toml version); Hero fireball constructor map-collision bridge + Cloud fair landing lag 11.0 restored in params.rs by the G&W up-B session"
+}

@@ -1,0 +1,13 @@
+{
+  "tier": "B",
+  "runtime_verified": false,
+  "elf_sha256": "6da83a9c6b432e99a4e53d2b65d72562fcb834962f1c8282400d9463f16a68d2",
+  "cases": 8448,
+  "controls": [
+    "native queued carry -> owned carry retains capture",
+    "native queued thrown -> owned thrown retains capture",
+    "same-state comparisons unchanged",
+    "unrelated next states remain false and retain donor cleanup"
+  ],
+  "scope": "Evaluates exact compiled cmp/ccmp/cset/branch block after native integer extraction; not capture simulation."
+}

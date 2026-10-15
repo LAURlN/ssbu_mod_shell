@@ -1,0 +1,17 @@
+{
+  "set": "robot_attack_lw3",
+  "what": "R.O.B. down tilt (AttackLw3) donor material for Pyra c06/c07 (G&W)",
+  "source": {
+    "kind": "live console extraction, read-only",
+    "method": "tools/fetch_arc_files.py --set robot_attack_lw3 (arc_extract_file_regional)",
+    "plugin": "libarc_network.nro on the SD, Smash running, port 43022",
+    "ip": "192.168.2.166",
+    "region": 2,
+    "game_version": "13.0.4",
+    "date": "2026-09-30"
+  },
+  "acmd": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_robot/robot/AttackLw3.txt (WuBoytH dump; tier C text with conversion errors, see acmd/robot_attack_lw3.rs)",
+  "why_live": "dumps/arc/fighter/robot/ and dumps/arc/sound/ hold no robot files; the ARC index lists them. Files: c02attacklw3.nuanmb, motion_list.bin, model.nusktb, vl.prc, se_robot_c00 and vc_robot_c00 banks, robot.sqb.",
+  "hashes": "per-file sha256 in extraction.json; re-verify with tools/fetch_arc_files.py --set robot_attack_lw3 --check",
+  "not_used": "vl.prc and model.nusktb are pinned for reference only; the dtilt hitboxes are inline in the ACMD and the retarget filters against the recipient's built skeleton."
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-30",
+  "installer": "root designated installer",
+  "version": "0.20.13",
+  "card": "F:",
+  "card_detected_by": "install-to-card.sh volume autodetect (atmosphere + ultimate/mods + plugins)",
+  "framework_installation": "OFF (--no-smashline); libsmashline_plugin.nro and friends untouched",
+  "built_nro_sha256": "57128f65b667d574ad6da54fff353e8e200b1b98afbbb4e6b3407b9ba33622ae",
+  "packaged_nro_sha256": "57128f65b667d574ad6da54fff353e8e200b1b98afbbb4e6b3407b9ba33622ae",
+  "card_nro_sha256": "57128f65b667d574ad6da54fff353e8e200b1b98afbbb4e6b3407b9ba33622ae",
+  "mod_tree_sha256_build": "2fcfaa992a62dca741e5bd3dfc5cfcad53b1d24f173bd0939a5aadf051b0f31d",
+  "mod_tree_sha256_card": "2fcfaa992a62dca741e5bd3dfc5cfcad53b1d24f173bd0939a5aadf051b0f31d",
+  "mod_tree_equality": "build == card",
+  "mod_files": 1932,
+  "manifest": "builds/pgwr/0.20.13/MANIFEST.json",
+  "included_queue_sections": [
+    "R.O.B. down tilt (AttackLw3) on G&W c06/c07 - Claude",
+    "Character Naming (c06 Ursula & c07 Wilhelmine) - Antigravity"
+  ],
+  "excluded": [
+    "Hero side-B - root (NOT READY)",
+    "Little Mac forward smash (another agent, unregistered, no NRO/MANIFEST)"
+  ],
+  "delta_vs_0_20_12": {
+    "added": [],
+    "removed": [],
+    "changed": [
+      "info.toml",
+      "ui/message/msg_name.xmsbt",
+      "ui/param/database/ui_chara_db.prc"
+    ]
+  },
+  "backup": "evidence/sd-backups/sd-backup-20260930-235634 (holds installed 0.20.11)",
+  "protected_plugins_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "smashline_good_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "isolation_note": "Plugin NRO compiled from scratch/2026-09-30_installer/plugin (copy of src/pgwr/plugin) with the Little Mac forward-smash module, consts and install call removed; the live source tree and the other agent pgwr-snake-target cache were left as found (cache NRO restored to b73337b7...).",
+  "evidence_tier": "B",
+  "hardware_validated": false
+}

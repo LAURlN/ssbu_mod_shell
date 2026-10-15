@@ -1,0 +1,47 @@
+{
+  "version": "0.16.0",
+  "installed_on": "2026-09-30T02:27+02:00",
+  "installed_by": "agent, on user instruction (\"you can also install it when it's built\")",
+  "card": "<drive>:/ (mounted /f)",
+  "source": "rebuilt c07 light sword effects and trails from scratch using c06 dark effects donor bank (refs/skins/black_and_pink_mythra/mythra skin/effect/fighter/elight/ef_elight.eff). Transformed 409 modified emitters: white/light gold slashes/beams/auras, light pink sparkles/switch, light gold particles. Slashes and trails converted to brilliant white core [255,255,255] and champagne gold edges [248,215,140]. Verified offline with src/pgwr/tools/verify_color_themes.py (0 errors), packaged with src/pgwr/build.py, and installed with src/pgwr/install-to-card.sh.",
+  "reskin_nro_sha256": "25a1c0fba34b1b6d1000d76095ddd3d2b2a7e3bfb18e111bb4e51add69624992",
+  "reskin_nro_bytes": 225280,
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "smashline_note": "untouched, as required by AGENTS rule 22; libarcropolis/libarc_network/libnro_hook also untouched",
+  "mod_file_count": 1369,
+  "previous_card": {
+    "version": "0.16.0",
+    "installed_on": "2026-09-30T02:18+02:00",
+    "mod_file_count": 1369,
+    "note": "Chrom jab + Falchion clone; previous c07 effect was green-shifted gold"
+  },
+  "backup": "evidence/sd-backups/sd-backup-20260930-022727",
+  "verification": "install-to-card.sh passed (cmp on both NROs, diff -r on the tree), then re-checked: 1369 files on the card, diff -r -q clean against the build, card NRO == staged NRO == built NRO == 25a1c0fb..., smashline 5f4091ee... and one_slot_eff e6e5659d... unchanged.",
+  "diff_vs_previous_card": {
+    "method": "untarred pre-install backup (evidence/sd-backups/sd-backup-20260930-022727/card-mod-folder.tar) and compared against sd:/ultimate/mods/pyra_gamewatch_reskin",
+    "added": [],
+    "added_count": 0,
+    "modified": [
+      "effect/fighter/eflame/trail_c07/tex_eflame_sword1.nutexb (1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a)",
+      "effect/fighter/eflame/trail_c07/tex_eflame_sword3.nutexb (15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4)",
+      "effect/fighter/eflame/trail_c07/tex_eflame_sword4.nutexb (1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f)",
+      "effect/fighter/eflame/trail_c07/tex_elight_sword1.nutexb (1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a)",
+      "effect/fighter/eflame/trail_c07/tex_elight_sword3.nutexb (15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4)",
+      "effect/fighter/eflame/trail_c07/tex_elight_sword4.nutexb (1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f)",
+      "effect/fighter/elight/ef_elight_c07.eff (e144aba91a2bd456120f7ed7e3009f20445082d757128181e84d1a6c15bedb0d)",
+      "effect/fighter/elight/trail_c07/tex_elight_sword1.nutexb (1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a)",
+      "effect/fighter/elight/trail_c07/tex_elight_sword3.nutexb (15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4)",
+      "effect/fighter/elight/trail_c07/tex_elight_sword4.nutexb (1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f)"
+    ],
+    "removed": [],
+    "notably_unchanged": [
+      "every Chrom jab clip, Falchion model/motion, and motion_list.bin entry",
+      "every Monkey Flip clip and motion record",
+      "the Aegis esword clips and 1.4x scale",
+      "the Cloud fair clip and landing clip",
+      "normal_weapon and breath"
+    ]
+  },
+  "console_test": "pending"
+}

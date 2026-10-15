@@ -1,0 +1,12 @@
+{
+  "name": "LibHac",
+  "version": "0.19.0",
+  "assemblyVersion": "0.19.0.0",
+  "relativePath": "Ryujinx/build/LibHac.dll",
+  "sha256": "df35642dd8d43472414a58a45fb7c5c22858764abf114ea09bff7bb08bad5b16",
+  "officialPackage": "https://api.nuget.org/v3-flatcontainer/libhac/0.19.0/libhac.0.19.0.nupkg",
+  "packageSha256": "1431267861db5ff68216315b164f10c0edab4df162cedf5429bf8a143b76de19",
+  "declaredSourceCommit": "cd4004af194a51712812c680f0a028ba9152c0f8",
+  "sdk": "8.0.201",
+  "targetFramework": "net8.0"
+}

@@ -1,0 +1,162 @@
+# Fact index. Findings live at the canonical location; do not duplicate them here.
+facts:
+  - id: hero-side-b-native-recipient-link-event
+    tier: B
+    measured: 2026-10-01
+    canonical: refs/brave_special_s/SOURCE_STATUS.md#7-native-recipient-event-dependency-tier-b-2026-10-01
+    tool: tools/audit_hero_side_b_link_events.py
+    evidence: refs/brave_special_s/link_event_native_audit.json
+    input_sha256: f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613
+  - id: hero-side-b-native-status-and-sp-decision
+    tier: B
+    measured: 2026-09-30
+    canonical: refs/brave_special_s/SOURCE_STATUS.md#4-sp-decision-recovered-inside-the-nro-2026-09-30-correction
+    tool: tools/audit_hero_side_b.py
+    evidence: refs/brave_special_s/native_dependency_audit.json
+  - id: hero-side-b-native-acmd-dispatch-and-hitbox-values
+    tier: B
+    measured: 2026-09-30
+    canonical: refs/brave_special_s/SOURCE_STATUS.md#6-native-acmd-measurement-tier-b-2026-09-30
+    tools: [tools/audit_hero_side_b_acmd.py, tools/audit_hero_side_b_hitboxes.py]
+    evidence: [refs/brave_special_s/acmd_native_registrations.json, refs/brave_special_s/hitbox_native_audit.json]
+    input_sha256: dc5edcde314f0c461ba0ab08d9e9deef5ede9d5b4ed324141678b9966d43b7a2
+  - id: hero-side-b-owned-native-relocation-and-param-fields
+    tier: B
+    measured: 2026-09-30
+    canonical: refs/brave_special_s/SOURCE_STATUS.md#5-helpers-and-owned-implementation-progress
+    tool: tools/gen_hero_side_b_native.py
+    evidence: refs/brave_special_s/owned_native_audit.json
+    input_sha256: f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613
+  - id: hero-side-b-package-static-wiring
+    tier: B
+    measured: 2026-10-01
+    canonical: refs/brave_special_s/T-0033/RESEARCH.md
+    tool: tools/audit_hero_side_b_package.py
+    evidence: refs/brave_special_s/T-0033/package_audit.json
+    input_tree: builds/pgwr/0.20.16/ultimate/mods/pyra_gamewatch_reskin
+  - id: hero-sp-cost-and-recharge-untraced
+    tier: D
+    measured: 2026-10-01
+    canonical: refs/brave_special_n/T-0033/MANA_HUD_CONTRACT.md
+    tool: tools/audit_hero_side_b_package.py
+    evidence: refs/brave_special_n/T-0033/MANA_HUD_CONTRACT.md
+    note: six SP debit sites identified (B); prices, ceiling, start value, recovery rate and pause need lua2cpp_brave.nro and main.bin, absent on this disk
+  - id: no-in-plugin-hud-api
+    tier: C
+    measured: 2026-10-01
+    canonical: refs/brave_special_n/T-0033/MANA_HUD_CONTRACT.md
+    tool: null
+    evidence: src/pgwr/plugin/Cargo.toml (skyline 6b52d32), src/mgw_standalone/smashline_1304/src/
+  - id: effect-bank-owned-by-recipient-fighter-dir
+    tier: B
+    measured: 2026-10-01
+    canonical: handbook/10_arcropolis_config_json.md
+    tool: tools/effect_trail_inventory.py
+    evidence: refs/littlemac_attack_s4/T-0033/FIST_TRAIL_FINDING.md
+    input_tree: builds/pgwr/0.20.16/ultimate/mods/pyra_gamewatch_reskin
+    note: only ef_<fighter>.eff / ef_<fighter>_c<slot>.eff in the requesting fighter's own folder is loaded, so a donor bank shipped under effect/fighter/<donor>/ draws nothing
+  - id: one-slot-trail-rename-and-duplicate-names
+    tier: B
+    measured: 2026-10-01
+    canonical: handbook/10_arcropolis_config_json.md
+    tool: tools/effect_trail_inventory.py
+    evidence: refs/cloud_attack_air_f/T-0033/{CLOUD_TRAIL_FINDING.md,trail_inventory.json}
+    input_tree: builds/pgwr/0.20.16/ultimate/mods/pyra_gamewatch_reskin
+    note: trail textures resolve by NUTEXB footer name which the plugin renames to <NAME>_C<slot>; per-slot trail folders currently hold 14 files for 7 names, 4 of them with no engine label. Cause of the c06-with-c07 symptom is still D
+  - id: install-card-autodetect-needs-mount-not-glob
+    tier: B
+    measured: 2026-10-02
+    canonical: evidence/2026-10-02_pgwr_T-0042/INSTALL.md
+    tool: src/pgwr/install-to-card.sh
+    evidence: evidence/install-record-2026-10-02_002850.json
+    note: the volume scan `ls -d /[a-z]` returns nothing in Git Bash on Windows, so card autodetect failed on this machine and the installer refused to run at all; replaced with mount/df enumeration plus an a-z fallback, contents-based identity test unchanged
+  - id: asset-only-variant-installed-by-reused-nro-flag
+    tier: B
+    measured: 2026-10-02
+    canonical: evidence/2026-10-02_pgwr_T-0042/INSTALL.md
+    tool: src/pgwr/install-to-card.sh
+    evidence: evidence/install-record-2026-10-02_002850.json
+    note: builds/.cache had been pruned, so the built-vs-staged NRO check could not run for a variant that reuses the installed NRO; --reused-nro replaces it with staged==card, and refused a one-byte-tampered copy (negative control)
+  - id: pgwr-card-state-2026-10-02-is-robot-dtilt-4
+    tier: B
+    measured: 2026-10-02
+    canonical: CURRENT_INSTALL.md#last-recorded-card-state
+    tool: state/scratch/T-0042/verify_card.py
+    evidence: evidence/install-record-2026-10-02_002850.json
+    input_tree: sd:/ultimate/mods/pyra_gamewatch_reskin
+    note: 1983/1983 card files equal the package and its manifest, NRO 81460e74... unchanged from 0.20.16, protected plugins byte-unchanged; says nothing about behaviour, no console run
+  - id: littlemac-0-20-16-was-already-installed-2026-10-01
+    tier: B
+    measured: 2026-10-02
+    canonical: CURRENT_INSTALL.md#last-recorded-card-state
+    tool: state/scratch/T-0042/verify_card.py
+    evidence: evidence/2026-10-02_pgwr_T-0042/INSTALL.md
+    note: the card already held 0.20.16 while CURRENT_INSTALL.md said "STAGED, not installed"; its angled up/down forward smashes are therefore on the card and still hardware-untested
+  - id: dumps-arc-exists-but-is-empty-so-packaging-needs-skip-donor-checks
+    tier: B
+    measured: 2026-10-02
+    canonical: kb/findings/a-collective-install-of-two-rust-changes-needs-one-combined-build.md
+    tool: tools/package_pgwr_release.py
+    evidence: evidence/2026-10-02_pgwr_T-0056/INSTALL.md
+    input_tree: <ArcExplorer dir>/export
+    note: the ArcExplorer export has the fighter/motion directory tree but 0 files, so package_pgwr_release.py aborted on the two donor motion-entry comparisons; --skip-donor-checks skips exactly those, warns, and records donor_checks in MANIFEST.json instead of the assertion being weakened silently
+  - id: pgwr-card-state-2026-10-02-is-0-20-17
+    tier: B
+    measured: 2026-10-02
+    canonical: CURRENT_INSTALL.md#last-recorded-card-state
+    tool: tools/verify_installed_card.py
+    evidence: evidence/install-record-2026-10-02_022035.json
+    input_tree: sd:/ultimate/mods/pyra_gamewatch_reskin
+    note: 1983/1983 card files equal builds/pgwr/0.20.17 and its manifest, new NRO 22bfbd01..., four protected plugins byte-unchanged, delta vs the previous state exactly the two down-tilt clips plus info.toml; says nothing about behaviour, no console run
+  - id: silent-release-has-no-monkey-flip-log-markers
+    tier: B
+    measured: 2026-10-02
+    canonical: kb/findings/a-collective-install-of-two-rust-changes-needs-one-combined-build.md
+    tool: builds/.cache/pgwr-T0056-target (cargo skyline build --release --features snake-neutral-b,hero-side-b)
+    evidence: evidence/2026-10-02_pgwr_T-0056/INSTALL.md
+    note: with the Cargo logging feature off (the 0.20.10 silent core) the [PGWR-MFLIP] LOCK/BLOCK/REFRESH/SWAPGUARD lines are compiled out, so Monkey Flip must be judged by eye; pgwr_hero_s_log.txt is written independently of the feature and keeps its lines
+  - id: lucas-ness-effect-theme-preserves-unrelated-bank-content
+    tier: B
+    measured: 2026-10-03
+    canonical: handbook/10_arcropolis_config_json.md
+    tool: tools/customize_lucas_ness_effects.py 1.0.0 (--package, --verify-package)
+    evidence: evidence/2026-10-03_pgwr_lucas_ness_effect_theme/RESULT.md
+    input_tree: builds/pgwr/dk_cargo-0.1.1-test (ef_elight_c06 fcdd6caa49b5, ef_elight_c07 1734bb5443e2)
+    note: theming LUCAS_PSI_HOLD / LUCAS_PSI_ATK_LW / NESS_PSI_RUSH changes 122719 (c06) and 124164 (c07) bytes, all inside 20 owned emitter blocks and 2 owned textures; 3543 unrelated decoded entries identical; says nothing about appearance in game,
+  - id: pikachu-airb-retarget-and-two-byte-motion-delta
+    tier: B
+    measured: 2026-10-03
+    canonical: handbook/04_motion_lists_animation.md#retargeting-a-donor-air-clip-onto-the-eflame-pair-pikachu-airb-100-b-2026-10-03
+    tool: tools/audit_pikachu_airb_donor.py 1.0.0, tools/audit_pikachu_airb_delta.py 1.0.0
+    evidence: evidence/2026-10-03_pgwr_pikachu_airb/RESULT.md
+    note: c05attackairb keeps 45 of 55 Transform nodes (dropped EarL1/L2 EarR1/R2 Hat Have Tail1-4) with 0 parent-name mismatches, donor Visibility 38 rebuilt from the recipient's own 98-node idle, all 17 tracked limbs move (ToeL/ToeR by translation only, 0 deg rotation); per slot attack_air_b differs at exactly 2 offsets [16,62] (flags 0x0080->0x0084, cancel 296->300) and landing_air_b at 0, because the recipient landing entry is already byte-identical to the donor's
+  - id: an-unmodified-snapshot-rebuild-reproduces-the-baseline-nro
+    tier: B
+    measured: 2026-10-03
+    canonical: handbook/05_acmd_porting.md#porting-an-air-attack-whose-landing-is-a-second-move-pikachu-airb-100-b-2026-10-03
+    tool: builds/.cache/pikachu-airb/build.cmd (cargo skyline build --release --features snake-neutral-b,hero-side-b,hero-mana-hud -- --offline)
+    evidence: evidence/2026-10-03_pgwr_pikachu_airb/RESULT.md
+    input_sha256: 424914c18e740aea67c37ed399ffe5a22208b76f10dec81e279a8285198b777e
+    note: building a pristine copy of builds/.cache/silent-0.20.23/plugin with the build_command recorded in builds/pgwr/0.20.23/MANIFEST.json reproduced the installed baseline NRO byte for byte, which is what makes the pikachu-airb NRO 9d0ee7ed... attributable to this task alone; building with only hero-side-b instead produced a 487424-byte NRO, so the manifest's build_command is the specification and not the Cargo.toml feature defaults
+  - id: a-build-report-that-outran-its-artefact
+    tier: B
+    measured: 2026-10-03
+    canonical: handbook/05_acmd_porting.md#porting-an-air-attack-whose-landing-is-a-second-move-pikachu-airb-100-b-2026-10-03
+    tool: src/pgwr/tools/build_pikachu_airb.py 1.0.0 (patch_motion_list)
+    evidence: evidence/2026-10-03_pgwr_pikachu_airb/RESULT.md
+    note: patch_motion_list returned the spliced motion_list.bin bytes in its report without writing them, so the build report claimed cancel 296->300 with 2 differing bytes for both slots while the staged file stayed byte-identical to the baseline; only the delta audit re-reading the packaged file from disk caught it, so a builder that returns bytes must assert the read-back and a shipping audit must never take the builder's word for a file
+  - id: a-green-tail-is-not-a-passing-test
+    tier: B
+    measured: 2026-10-03
+    canonical: handbook/05_acmd_porting.md#porting-an-air-attack-whose-landing-is-a-second-move-pikachu-airb-100-b-2026-10-03
+    tool: tools/audit_pikachu_airb_delta.py 1.0.0
+    evidence: evidence/2026-10-03_pgwr_pikachu_airb/RESULT.md
+    note: >-
+      piping every audit run through tail hid the tool's exit status; recaptured,
+      --negative-controls exited 1 on a fully passing run and printed "FAIL: 0
+      control(s) not caught", because the damage controls stored caught=True when
+      the audit rejected them while the positive control stored caught=not ok, so one
+      key held opposite meanings and the exit test read the wrong row; controls now
+      carry ok plus kind=damage|positive, and the failure path was proven live by
+      disabling one damage in the real file and requiring a non-zero exit before
+      restoring the file and re-checking its sha256

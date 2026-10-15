@@ -1,0 +1,20 @@
+{
+  "created_or_updated_workspace_files": {
+    "CURRENT_INSTALL.md": "e2f63a6ccb4e767056a8b778302fdad555711d74fa47ad40f8d39ff327f75077",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.0-test_install/INSTALL.json": "e3aab5d87635010c41077c3d5791fd73830266873f452d59fea9281536c2c7e6",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.0-test_install/INSTALL.md": "41b4b20102e4ecf1405e8ddcb4f40dbc617c31f99c2918e50639463844deffcf",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.0-test_install/INSTALLER.txt": "7a53f9edceae443ce62c76ef7a243e5bba7732c7064ec5b978c3e2f3a8b01cbc",
+    "evidence/2026-10-03_pgwr_dk_cargo-0.1.0-test_install/PRE_INSTALL.json": "b718d6f573bb3b93b57198d50a2997ca0c06ca2a91556e81cb1ca1d22df8d62e",
+    "evidence/sd-backups/sd-backup-20261003-090320/card-mod-folder.tar": "063d81cd5c0eb4ca0f34cd7eaa4a53f58cbffd73b038e927dcdaefb0f3b1470b",
+    "evidence/sd-backups/sd-backup-20261003-090320/plugins/libone_slot_eff.nro": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+    "evidence/sd-backups/sd-backup-20261003-090320/plugins/libpyra_gamewatch_reskin.nro": "5d7d9b8e565d9b38d6a73d804a36f4028e6fcd80ff92f15739ed96f3b783689b",
+    "evidence/sd-backups/sd-backup-20261003-090320/plugins/libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "projects/pgwr/CHANGELOG.md": "87935d3606224aa7d2f85d9818531db12eee53c1dd867d15fea3bfd28fe14fe4",
+    "projects/pgwr/STATUS.md": "375ec240d6df6253aef617929200727018f7c404143ab8e7d183f98d1a208530",
+    "src/pgwr/.last-sd-backup": "9091fe606cd96cb7d86f07fe495377c6644c30c21f2f6740421cb9660bf9571e",
+    "src/pgwr/tools/dk_cargo/install_record.py": "be881a57a828e07337511aa5e365a2a8f4fedfa17deb4092236054243476b41e"
+  },
+  "card_payload_inventory": "INSTALL.json mod_files plus package payload_files",
+  "framework_changes": false,
+  "runtime_verified": false
+}

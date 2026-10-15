@@ -1,0 +1,240 @@
+{
+  "unit": "aerial_back__mario",
+  "task_id": "MV-aerial_back__mario",
+  "entry": "aerial_back",
+  "donor": "mario",
+  "donor_menu_name": "Mario",
+  "recipient": "miigunner",
+  "display_name": "Mario's Back Air",
+  "status": "BUILT_OFFLINE",
+  "status_note": "Built from decoded ACMD scripts (Mario's lua2cpp_mario.nro). Clip retargeted to the Gunner skeleton with the MV-aerial_forward__cloud recipient (2026-10-14, build_assets.py + retarget.py). Offline checks: evidence/moves/aerial_back__mario/check.py. Not run in game (tier D).",
+  "owned_motion": {
+    "kind": "mc_mario_attack_air_b",
+    "kind_hash": "0x1527b3f682",
+    "donor_kind": "attack_air_b",
+    "clip": "c01mcmarioattackairb.nuanmb",
+    "clip_hash": "0x1bf7be74bc",
+    "donor_clip": "c05attackairb.nuanmb",
+    "animation": "Mario's c05attackairb retargeted onto the Gunner skeleton (retarget.py): 46 frames, Gunner bone set, limb rotations and translations from the donor deltas on the Gunner idle, world-space limbs for ClavicleL/R and LegL/R, Rot ground correction.",
+    "flags": "0x0084",
+    "blend": 0,
+    "cancel_frame": 34,
+    "donor_cancel_frame": 34,
+    "scripts": {
+      "game": "game_mcmarioattackairb",
+      "effect": "effect_mcmarioattackairb",
+      "sound": "sound_mcmarioattackairb",
+      "expression": "expression_mcmarioattackairb"
+    }
+  },
+  "statuses_taken_over": [
+    {
+      "kind": "FIGHTER_STATUS_KIND_ATTACK_AIR",
+      "value": "0x338",
+      "start_fn": "start_attack_air",
+      "main_fn": "custom_attack_air_b_main",
+      "notes": "Mario's NRO does not override this status. The Gunner's NRO overrides MAIN (bl 0x30bc); the wrapper must run start_attack_air after that override."
+    }
+  ],
+  "game_script_timing": {
+    "fighter_flag_on": {
+      "frame": 6,
+      "flag_value": 1,
+      "source": "WorkModule__on_flag_impl(1) decoded from ACMD"
+    },
+    "attacks": [
+      {
+        "frame": 6,
+        "id": 0,
+        "part": 0,
+        "bone": "kneer",
+        "damage": 10.5,
+        "angle": 361,
+        "kbg": 106,
+        "fkb": 0,
+        "bkb": 12,
+        "size": 4.5,
+        "offset": [
+          4.8,
+          0.0,
+          0.0
+        ],
+        "hitlag": 1.0,
+        "sdi": 1.0,
+        "collision_situation": "COLLISION_SITUATION_MASK_GA",
+        "collision_attr": "collision_attr_normal",
+        "sound_level": "ATTACK_SOUND_LEVEL_L",
+        "region": "ATTACK_REGION_KICK"
+      },
+      {
+        "frame": 6,
+        "id": 1,
+        "part": 0,
+        "bone": "legr",
+        "damage": 10.5,
+        "angle": 361,
+        "kbg": 106,
+        "fkb": 0,
+        "bkb": 12,
+        "size": 5.9,
+        "offset": [
+          1.6,
+          0.0,
+          0.0
+        ],
+        "hitlag": 1.0,
+        "sdi": 1.0,
+        "collision_situation": "COLLISION_SITUATION_MASK_GA",
+        "collision_attr": "collision_attr_normal",
+        "sound_level": "ATTACK_SOUND_LEVEL_L",
+        "region": "ATTACK_REGION_KICK"
+      },
+      {
+        "frame": 8,
+        "id": 0,
+        "part": 0,
+        "bone": "kneer",
+        "damage": 7.0,
+        "angle": 361,
+        "kbg": 90,
+        "fkb": 0,
+        "bkb": 7,
+        "size": 4.5,
+        "offset": [
+          4.8,
+          0.0,
+          0.0
+        ],
+        "hitlag": 1.0,
+        "sdi": 1.0,
+        "collision_situation": "COLLISION_SITUATION_MASK_GA",
+        "collision_attr": "collision_attr_normal",
+        "sound_level": "ATTACK_SOUND_LEVEL_M",
+        "region": "ATTACK_REGION_KICK"
+      },
+      {
+        "frame": 8,
+        "id": 1,
+        "part": 0,
+        "bone": "legr",
+        "damage": 7.0,
+        "angle": 361,
+        "kbg": 90,
+        "fkb": 0,
+        "bkb": 7,
+        "size": 5.3,
+        "offset": [
+          1.6,
+          0.0,
+          0.0
+        ],
+        "hitlag": 1.0,
+        "sdi": 1.0,
+        "collision_situation": "COLLISION_SITUATION_MASK_GA",
+        "collision_attr": "collision_attr_normal",
+        "sound_level": "ATTACK_SOUND_LEVEL_M",
+        "region": "ATTACK_REGION_KICK"
+      }
+    ],
+    "clear_all_frame": 11,
+    "fighter_flag_off_frame": 19,
+    "script_end_decoded_frame": 19
+  },
+  "effects": [
+    {
+      "frame": 6,
+      "call": "EFFECT_FOLLOW",
+      "name": "sys_attack_speedline",
+      "bone": "top",
+      "args": [
+        3,
+        5.4,
+        5,
+        180,
+        0,
+        0,
+        0.9,
+        true
+      ],
+      "kept": true
+    },
+    {
+      "frame": 6,
+      "call": "LAST_PARTICLE_SET_COLOR",
+      "args": [
+        0.8,
+        0.6,
+        0.3
+      ],
+      "kept": true
+    },
+    {
+      "frame": 7,
+      "call": "EFFECT",
+      "name": "sys_attack_impact",
+      "bone": "top",
+      "args": [
+        -10,
+        7,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        360,
+        false
+      ],
+      "kept": true
+    },
+    {
+      "frame": 7,
+      "call": "LAST_EFFECT_SET_ALPHA",
+      "args": [
+        0.7
+      ],
+      "kept": true
+    }
+  ],
+  "sounds": [
+    {
+      "frame": 6,
+      "donor": "PLAY_SE se_common_punch_kick_swing_s",
+      "owned": "PLAY_SE se_common_punch_kick_swing_s",
+      "kind": "kept (common SE)"
+    },
+    {
+      "frame": 6,
+      "donor": "PLAY_SEQUENCE seq_mario_rnd_attack",
+      "owned": "PLAY_SEQUENCE seq_miigunner_rnd_attack01",
+      "kind": "remapped (Mario voice sequence to Gunner voice sequence)"
+    }
+  ],
+  "expressions": [
+    {
+      "frame": 4,
+      "call": "ControlModule__set_rumble",
+      "kind": "rbkind_nohits",
+      "value": 0,
+      "kept": true
+    },
+    {
+      "frame": 6,
+      "call": "RUMBLE_HIT",
+      "kind": "rbkind_attackm",
+      "value": 0,
+      "kept": true
+    }
+  ],
+  "known_differences": [
+    "Animation: Mario's c05attackairb is retargeted onto the Gunner skeleton (not a byte copy); the retarget drops 16 donor-only nodes (ClavicleC, LegC, face/lip/mustache/hat nodes) and keeps the Gunner's own idle for the rest.",
+    "Sound: Mario's voice sequence seq_mario_rnd_attack remapped to Gunner's seq_miigunner_rnd_attack01.",
+    "All other resources (bones kneer/legr/top, effects sys_attack_speedline/sys_attack_impact, SE se_common_punch_kick_swing_s) are common and available on Gunner without changes.",
+    "Hitbox bones kneer and legr exist in the Gunner skeleton (verified per P12-FTILT-FACTS).",
+    "No articles, weapons, projectiles, or donor-only effects required."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "unit": "tilt_up__snake",
+  "task_id": "MV-tilt_up__snake",
+  "entry": "tilt_up",
+  "donor": "snake",
+  "donor_entry_name": "Snake (snake)",
+  "display_name": "Snake Up Tilt",
+  "recipient": "miigunner",
+  "status": "BUILT OFFLINE (plugin copy builds, stack check and check.py pass); nothing run in game; see research/moves/tilt_up__snake.md",
+  "motions": {
+    "mc_snake_attack_hi3": {
+      "kind_hash": "0x13d5bd50b7",
+      "donor_kind": "attack_hi3 (0xacbfc42e6)",
+      "donor_motion_list_index": 73,
+      "game_script": "game_mcsnakeattackhi3",
+      "game_script_hash": "0x15e326a6e7",
+      "effect_script": "effect_mcsnakeattackhi3",
+      "effect_script_hash": "0x17f81966eb",
+      "sound_script": "sound_mcsnakeattackhi3",
+      "sound_script_hash": "0x161f88fdcb",
+      "expression_script": "expression_mcsnakeattackhi3",
+      "expression_script_hash": "0x1b331ee514",
+      "clip": "c02mcsnakeattackhi3.nuanmb",
+      "clip_hash": "0x1a055bcc10",
+      "flags": "0x0084",
+      "blend": 0,
+      "cancel_frame": 38,
+      "anim_count": 1,
+      "entry_size_field": 28,
+      "donor_clip": "fighter/snake/motion/body/c00/c02attackhi3.nuanmb",
+      "donor_clip_sha256": "f5151e106cbf78764159adf326e36e761d1800dfa189c06cfd77bfd76d9f5f71"
+    }
+  },
+  "statuses_taken_over": [
+    {
+      "status_name": "FIGHTER_STATUS_KIND_ATTACK_HI3",
+      "status_kind": 43,
+      "hook": "start_attack_hi3 (unit.rs, called from moves.rs gunner_attack_hi3_main)"
+    }
+  ],
+  "hitbox_bones": {
+    "top": "not on the Gunner skeleton and not on the Snake skeleton (97 bones); an engine anchor, kept as the donor names it (same as the Brawler tilt, the snake grenade unit and the other mod's up tilt)",
+    "kneel": "Gunner bone KneeL (case-folded match, Smash hashes are case-insensitive); no remap needed",
+    "legl": "Gunner bone LegL (case-folded match); no remap needed"
+  },
+  "effects": {
+    "sys_attack_arc_b": "common bank (sys_*), used as it is",
+    "sys_turn_smoke": "common bank (sys_*), used as it is",
+    "owned_effect_bank_additions": "none (the donor effect script plays only common sys_* effects, so no effect bank is touched)"
+  },
+  "sounds": {
+    "se_snake_attackhard_h01": "Snake-only tone; appended (unchanged sample bytes and tone record) to se_miigunner and se_miigunner_c00",
+    "seq_snake_rnd_attack": "Snake-only sequence record (snake.sqb, exact bytes); appended to miigunner.sqb; it names vc_snake_attack01..04",
+    "vc_snake_attack01..04": "Snake-only voice tones; appended to the 36 vc_mii_* banks that hold the Gunner's own attack voice (vc_mii_attack01..10)"
+  },
+  "differences_from_donor": [
+    "Skeleton: the clip is retargeted to the Gunner skeleton. 23 transform nodes of the donor clip (ClavicleC, DownlipC/L/R, FaceN, Jaw, LegC, Mouth_group, S_BandannaC1-4, S_BandannaL1-5, Tongue, UplipC, UplipL1/L2, UplipR1/R2) are dropped because the Gunner has no such bone; 64 of 87 transform nodes are kept; all 26 Visibility and 2 Material tracks are kept whole (same recipe as the snake grenade unit).",
+    "Gunner bones the clip does not drive (keep the skeleton pose): H_ElbowL, H_ElbowR, H_KneeL, H_KneeR, H_WristL, H_WristR, Miihead.",
+    "Sounds are the donor's own names and tones, appended to the Gunner's banks. This is not a stand-in sound. The voice is the Snake voice, played through whichever Mii voice bank the saved Mii uses (every vc_mii_* bank that holds the Gunner's attack voice receives the four tones).",
+    "Status: FIGHTER_STATUS_KIND_ATTACK_HI3 is taken over in the plugin copy by unit_tilt_up_snake.rs; the Brawler up tilt (unit_tilt_up.rs) is not dispatched while this unit is wired in. The coordinator's donor lookup replaces that wiring.",
+    "Donor cancel frame is 38 (the motion entry's u16 at tail+26). The earlier stub said 0; that was a decode error."
+  ],
+  "shared_files_needing_merge": {
+    "fighter/miigunner/motion/body/c00/motion_list.bin": "one appended entry (mc_snake_attack_hi3); reference = reference/motion_list_vanilla_plus_owned.bin",
+    "sound/bank/fighter/se_miigunner.nus3{audio,bank} + .tonelabel": "one appended tone (se_snake_attackhard_h01); reference under reference/sound/",
+    "sound/bank/fighter/se_miigunner_c00.nus3{audio,bank} + .tonelabel": "one appended tone (se_snake_attackhard_h01); reference under reference/sound/",
+    "sound/bank/fighter_voice/vc_mii_*.nus3{audio,bank} + .tonelabel (36 banks)": "four appended tones (vc_snake_attack01..04); reference under reference/sound/",
+    "sound/sequence/fighter/miigunner.sqb": "one appended record (seq_snake_rnd_attack); reference under reference/sound/"
+  },
+  "files_owned": [
+    "moves/tilt_up__snake/unit.rs",
+    "moves/tilt_up__snake/unit.json",
+    "moves/tilt_up__snake/build_assets.py",
+    "gamedata/mii_customizer/moves/tilt_up__snake/package/fighter/miigunner/motion/body/c00/c02mcsnakeattackhi3.nuanmb",
+    "gamedata/mii_customizer/moves/tilt_up__snake/reference/motion_list_vanilla_plus_owned.bin",
+    "gamedata/mii_customizer/moves/tilt_up__snake/reference/sound/ (merged reference banks)",
+    "gamedata/mii_customizer/moves/tilt_up__snake/manifest.json",
+    "gamedata/mii_customizer/moves/tilt_up__snake/tables/ (decoded donor ACMD calls and registrations)",
+    "gamedata/mii_customizer/moves/tilt_up__snake/extracted/ (data.arc pulls, sha256 pinned in build_assets.py)"
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "SpecialAirSJump.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialAirSJump.txt",
+    "bytes": 2411,
+    "sha256": "1c8b26bf6330ccdb6db9950f8cb4cc6c1e6fa5331b3b0d326050782e566f8120"
+  },
+  {
+    "file": "SpecialAirSKick.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialAirSKick.txt",
+    "bytes": 3843,
+    "sha256": "46d0f30a20c703af5a1b235faea6e1cc4f403627301bbe8238dcca52a2057be4"
+  },
+  {
+    "file": "SpecialSKickLanding.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSKickLanding.txt",
+    "bytes": 810,
+    "sha256": "37062f075316acc07a5a715583f6b1627994d3b6deebd34aa2f3e8c0cb857e55"
+  },
+  {
+    "file": "SpecialSStick.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSStick.txt",
+    "bytes": 6026,
+    "sha256": "9b3003a8565f33bfb22e5da753ce916d98841403cbfea51de49536deabaeba6c"
+  },
+  {
+    "file": "SpecialSStickAttack.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSStickAttack.txt",
+    "bytes": 3620,
+    "sha256": "36e355165a9b7178a42b961c9187ffd938c63a2926bf0ee29f9cadda5ce4bc46"
+  },
+  {
+    "file": "SpecialSStickAttack2.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSStickAttack2.txt",
+    "bytes": 1962,
+    "sha256": "587f9ee697affa9f472c3bb70a0a7269562b64c57b15afb20ae291c5ee7624e5"
+  },
+  {
+    "file": "SpecialSStickJump.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSStickJump.txt",
+    "bytes": 2172,
+    "sha256": "00e4d212778fa58e942eab97b0cabef8d1c78d534b70e907fcbd1b02075a48d4"
+  },
+  {
+    "file": "SpecialSStickJump2.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/SpecialSStickJump2.txt",
+    "bytes": 2274,
+    "sha256": "feb3c9d805b046b105bab7499f7fd62969f14df7722249bc47d3dcb19598a7fd"
+  },
+  {
+    "file": "Catch.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/Catch.txt",
+    "bytes": 1548,
+    "sha256": "c0d005765e8a8a76f624610f5bd66b8990d93a7078cab7ad614a70d98eb362d4"
+  },
+  {
+    "file": "CatchDash.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/CatchDash.txt",
+    "bytes": 2178,
+    "sha256": "a3b2f2a5a75cb17e90667e7f93b57981b958339220565ff092b64c72508f58f8"
+  },
+  {
+    "file": "CatchTurn.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/CatchTurn.txt",
+    "bytes": 1890,
+    "sha256": "35c02bb16b5496f64338d135b2e49a5fa6739961651c338a7f88e481e9a7f434"
+  },
+  {
+    "file": "CatchAttack.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_diddy/diddy/CatchAttack.txt",
+    "bytes": 1344,
+    "sha256": "d9c5a4199f432191106515d92825e5ceacfe966da1f8f048deb73fedbfe25a3a"
+  }
+]

@@ -1,0 +1,29 @@
+[package]
+name = "pmclone_trace"
+version = "0.1.1"
+edition = "2018"
+
+[package.metadata.skyline]
+titleid = "01006A800016E000"
+
+[lib]
+crate-type = ["cdylib"]
+
+# Same dependency lines as mod_files/mythra_gamewatch_swap, whose build is known to
+# work with the smashline plugin on the user's SD card. No `rev =` on purpose (see the
+# long comment in that crate's Cargo.toml); Cargo.lock was copied from it and pins
+# skyline-rs 6b52d32, skyline-smash 315e4e8, smash-script fdc6144, smashline be3ef30.
+# Do not run `cargo update`.
+[dependencies]
+skyline = { git = "https://github.com/ultimate-research/skyline-rs" }
+skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash", features = ["weak_l2cvalue"] }
+smashline = { git = "https://github.com/hdr-development/smashline" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 'z'
+panic = "abort"
+lto = true
+codegen-units = 1

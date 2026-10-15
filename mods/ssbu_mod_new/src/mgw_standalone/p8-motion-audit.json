@@ -1,0 +1,57 @@
+[
+  {
+    "path": "fighter/mgw_pyra/motion/body/c00/motion_list.bin",
+    "unique_animations": 342,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_pyra/motion/esword/c00/motion_list.bin",
+    "unique_animations": 8,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_pyra/motion/windummy/c00/motion_list.bin",
+    "unique_animations": 2,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_pyra/motion/winsword/c00/motion_list.bin",
+    "unique_animations": 8,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/body/c00/motion_list.bin",
+    "unique_animations": 344,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/bunshin/c00/motion_list.bin",
+    "unique_animations": 9,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/esword/c00/motion_list.bin",
+    "unique_animations": 4,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/meteor/c00/motion_list.bin",
+    "unique_animations": 1,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/windummy/c00/motion_list.bin",
+    "unique_animations": 2,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/winsword/c00/motion_list.bin",
+    "unique_animations": 4,
+    "missing": []
+  },
+  {
+    "path": "fighter/kirby/motion/copy_mgw_mythra_fitkirby/c00/motion_list.bin",
+    "unique_animations": 0,
+    "missing": []
+  }
+]

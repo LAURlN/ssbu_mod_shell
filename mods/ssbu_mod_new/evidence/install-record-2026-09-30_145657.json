@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.10",
+  "method": "src/pgwr/install-to-card.sh --no-smashline; automatic backup, .new staging, cmp/diff verification",
+  "authorization": "User requested install of 0.20.10 silent performance build (all diagnostics and logging disabled for feel testing). Snake neutral-B excluded as pending/unready.",
+  "included_queue_sections": [
+    "Silent Performance Build (Diagnostics & Logging Silenced) — Antigravity",
+    "Chrom Jab Custom Cloud Sword Trails (c06 & c07) — Antigravity (retained)",
+    "Cloud Forward Air Custom Sword Trails (c06 & c07) — Antigravity (retained)",
+    "Monkey Flip aerial side-B lock — root (retained)"
+  ],
+  "pending_features_not_registered": [
+    "Snake neutral-B",
+    "Monkey Flip kick/general HI/S/LW restriction"
+  ],
+  "manifest": "builds/pgwr/0.20.10/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-145657",
+  "backup_held_version": "0.20.9",
+  "reskin_nro_sha256": "2ba2d1821cd822401affa5d20dfa7da5c44f5147483a7dfed8e593a68c58f0ee",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1721,
+  "mod_tree_sha256": "ede8c200198ee7faa542f9abe20f5bb98ab6a4b7ccb0ac0b005bab5f10eb167f",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.20.9": [
+    "Disabled runtime disk logging (sd:/ultimate/pgwr_log.txt) via zero-cost no-op implementation in article::log and monkey_flip::log when logging feature is inactive.",
+    "Disabled diddy_probe::install() per-frame observer callback on stock Diddy.",
+    "Disabled gate_trace on_line callbacks in acmd and mythra modules.",
+    "All diagnostics backed up byte-exact in evidence/logging_backup_0.20.9/ for seamless restoration on next install.",
+    "Retains Chrom jab and Cloud fair custom Cloud sword trails, Monkey Flip side-B lock and capture handling, G&W Up-B Fire, and all G&W normals."
+  ],
+  "limitations": [
+    "No file logging is written to sd:/ultimate/pgwr_log.txt in this build; test evaluates gameplay smoothness and character feel.",
+    "Snake neutral-B remains inactive/blocked in queue."
+  ]
+}

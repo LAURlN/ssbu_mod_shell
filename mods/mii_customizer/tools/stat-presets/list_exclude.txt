@@ -1,0 +1,4 @@
+# Not a selectable CSS fighter: ui_chara_db.prc has is_boss=true, can_select=false, disp_order=-1.
+koopag
+# The Mii Gunner is row 0 (the page default), not a selectable preset row.
+miigunner

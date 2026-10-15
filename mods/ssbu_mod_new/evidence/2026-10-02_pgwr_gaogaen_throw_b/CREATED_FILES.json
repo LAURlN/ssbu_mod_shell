@@ -1,0 +1,610 @@
+{
+  "task": "gaogaen_throw_b",
+  "state": "READY_SOURCE_AND_DELTA",
+  "runtime": "unverified",
+  "created_files": [
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/BUILD.json",
+      "sha256": "2f0941cbf3847bb4a4143a9d50773009ac3967f932341ed78b37c1fb611dcdb7",
+      "bytes": 8697
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/CHECK.json",
+      "sha256": "13a1bc3a824e519550a97b45da614c2299f2e7c2dfdf22b0b9ebe67bdbcd9d06",
+      "bytes": 235
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/compile-only/libpyra_gamewatch_reskin.nro",
+      "sha256": "8fc6645ef9958a8d86e84f0c01ff0f2b4d9e5ba0755ff60d0a299e2b17dfdd45",
+      "bytes": 475136
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/config.json",
+      "sha256": "121416d96f448f5dd1398ab3b253669681ab006cd36b8ca5fd163fe7f5de254f",
+      "bytes": 73990
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/fighter/eflame/motion/body/c06/motion_list.bin",
+      "sha256": "a103b87ba0f3b51f1e0ee894e853f749d992931e1886dcd972b85fea39fe07df",
+      "bytes": 50516
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/fighter/eflame/motion/body/c06/pgwrgaogaenthrowb.nuanmb",
+      "sha256": "a27eea3dfcdfeb7f85135230c5c6b4ed5420c76c3505c918c4ef2998af47eece",
+      "bytes": 79320
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/fighter/eflame/motion/body/c07/motion_list.bin",
+      "sha256": "a103b87ba0f3b51f1e0ee894e853f749d992931e1886dcd972b85fea39fe07df",
+      "bytes": 50516
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/fighter/eflame/motion/body/c07/pgwrgaogaenthrowb.nuanmb",
+      "sha256": "a27eea3dfcdfeb7f85135230c5c6b4ed5420c76c3505c918c4ef2998af47eece",
+      "bytes": 79320
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c06.nus3audio",
+      "sha256": "a726431774ceb77e41d733f2b364c17d72d2a16d5dafaae4613258bb2e6261fa",
+      "bytes": 9807552
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c06.nus3bank",
+      "sha256": "095bcb60f71050a4b2266b9b63daa706488730b99f104c9b85b97ffd57b67452",
+      "bytes": 211096
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c06.tonelabel",
+      "sha256": "8468f4f3297b626672c6a2690f81950d51cf27b8bf78b63eba507c964cd187f0",
+      "bytes": 4400
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c07.nus3audio",
+      "sha256": "a726431774ceb77e41d733f2b364c17d72d2a16d5dafaae4613258bb2e6261fa",
+      "bytes": 9807552
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c07.nus3bank",
+      "sha256": "095bcb60f71050a4b2266b9b63daa706488730b99f104c9b85b97ffd57b67452",
+      "bytes": 211096
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter/se_eflame_c07.tonelabel",
+      "sha256": "8468f4f3297b626672c6a2690f81950d51cf27b8bf78b63eba507c964cd187f0",
+      "bytes": 4400
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c06.nus3audio",
+      "sha256": "8228c2aa4053b752fbb7470dfaf4af704df67d7c1ac392f8427c74e480eedc14",
+      "bytes": 5156832
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c06.nus3bank",
+      "sha256": "0306f9ae0c57dd398daee2267ee9ee7c6d5a825946c953b633e1bc61d0761a61",
+      "bytes": 105236
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c06.tonelabel",
+      "sha256": "a7b3d6cd7e3b347a32458d067f9fd0316446466eee414bd8cd734dcddca9cf22",
+      "bytes": 1968
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c07.nus3audio",
+      "sha256": "8228c2aa4053b752fbb7470dfaf4af704df67d7c1ac392f8427c74e480eedc14",
+      "bytes": 5156832
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c07.nus3bank",
+      "sha256": "0306f9ae0c57dd398daee2267ee9ee7c6d5a825946c953b633e1bc61d0761a61",
+      "bytes": 105236
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/delta/sound/bank/fighter_voice/vc_eflame_c07.tonelabel",
+      "sha256": "a7b3d6cd7e3b347a32458d067f9fd0316446466eee414bd8cd734dcddca9cf22",
+      "bytes": 1968
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/integration.patch",
+      "sha256": "5ed4f41451cf86cf1d51040550b0a1eb4a0c64fb9a14d505ab151691e5687335",
+      "bytes": 452
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/MANIFEST.json",
+      "sha256": "52b78a8be13cef55b0df63950d05e38bc4f191967b29541b1ffa72ceeb393f9a",
+      "bytes": 55883
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/merge_deltas.json",
+      "sha256": "9ca00db29a047d47945314dc7a3157adab19af57cd2ae69e3be28cb43a2b104c",
+      "bytes": 1818
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/motion_entry.bin",
+      "sha256": "189b42cbc83286adb3ea9b08586f75d04fc54a5c23bf9178f25aa97eb6c82524",
+      "bytes": 64
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.1.0/SMOKE.json",
+      "sha256": "92b0380bd0299c12efd03223fdf7ca3d49c5765de2c02e27bdf2b5d9d452302b",
+      "bytes": 213
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/ASSET_CHECK.json",
+      "sha256": "13a1bc3a824e519550a97b45da614c2299f2e7c2dfdf22b0b9ebe67bdbcd9d06",
+      "bytes": 235
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/ASSET_MANIFEST.json",
+      "sha256": "52b78a8be13cef55b0df63950d05e38bc4f191967b29541b1ffa72ceeb393f9a",
+      "bytes": 55883
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/ASSET_merge_deltas.json",
+      "sha256": "9ca00db29a047d47945314dc7a3157adab19af57cd2ae69e3be28cb43a2b104c",
+      "bytes": 1818
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/ASSET_SMOKE.json",
+      "sha256": "92b0380bd0299c12efd03223fdf7ca3d49c5765de2c02e27bdf2b5d9d452302b",
+      "bytes": 213
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/BUILD_LOG.txt",
+      "sha256": "4f423672b9477b9acf2bc667ac7fb75f9c7a357db87f8411e2dd8287d003d341",
+      "bytes": 3426
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/compile-only-disabled/libpyra_gamewatch_reskin.nro",
+      "sha256": "bb2eca782b92010f748e606ed841d208f60e8bf3579fdf820f1a985f41e9e3a0",
+      "bytes": 479232
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/config.json",
+      "sha256": "121416d96f448f5dd1398ab3b253669681ab006cd36b8ca5fd163fe7f5de254f",
+      "bytes": 73990
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/fighter/eflame/motion/body/c06/motion_list.bin",
+      "sha256": "a103b87ba0f3b51f1e0ee894e853f749d992931e1886dcd972b85fea39fe07df",
+      "bytes": 50516
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/fighter/eflame/motion/body/c06/pgwrgaogaenthrowb.nuanmb",
+      "sha256": "a27eea3dfcdfeb7f85135230c5c6b4ed5420c76c3505c918c4ef2998af47eece",
+      "bytes": 79320
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/fighter/eflame/motion/body/c07/motion_list.bin",
+      "sha256": "a103b87ba0f3b51f1e0ee894e853f749d992931e1886dcd972b85fea39fe07df",
+      "bytes": 50516
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/fighter/eflame/motion/body/c07/pgwrgaogaenthrowb.nuanmb",
+      "sha256": "a27eea3dfcdfeb7f85135230c5c6b4ed5420c76c3505c918c4ef2998af47eece",
+      "bytes": 79320
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c06.nus3audio",
+      "sha256": "a726431774ceb77e41d733f2b364c17d72d2a16d5dafaae4613258bb2e6261fa",
+      "bytes": 9807552
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c06.nus3bank",
+      "sha256": "095bcb60f71050a4b2266b9b63daa706488730b99f104c9b85b97ffd57b67452",
+      "bytes": 211096
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c06.tonelabel",
+      "sha256": "8468f4f3297b626672c6a2690f81950d51cf27b8bf78b63eba507c964cd187f0",
+      "bytes": 4400
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c07.nus3audio",
+      "sha256": "a726431774ceb77e41d733f2b364c17d72d2a16d5dafaae4613258bb2e6261fa",
+      "bytes": 9807552
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c07.nus3bank",
+      "sha256": "095bcb60f71050a4b2266b9b63daa706488730b99f104c9b85b97ffd57b67452",
+      "bytes": 211096
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter/se_eflame_c07.tonelabel",
+      "sha256": "8468f4f3297b626672c6a2690f81950d51cf27b8bf78b63eba507c964cd187f0",
+      "bytes": 4400
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c06.nus3audio",
+      "sha256": "8228c2aa4053b752fbb7470dfaf4af704df67d7c1ac392f8427c74e480eedc14",
+      "bytes": 5156832
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c06.nus3bank",
+      "sha256": "0306f9ae0c57dd398daee2267ee9ee7c6d5a825946c953b633e1bc61d0761a61",
+      "bytes": 105236
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c06.tonelabel",
+      "sha256": "a7b3d6cd7e3b347a32458d067f9fd0316446466eee414bd8cd734dcddca9cf22",
+      "bytes": 1968
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c07.nus3audio",
+      "sha256": "8228c2aa4053b752fbb7470dfaf4af704df67d7c1ac392f8427c74e480eedc14",
+      "bytes": 5156832
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c07.nus3bank",
+      "sha256": "0306f9ae0c57dd398daee2267ee9ee7c6d5a825946c953b633e1bc61d0761a61",
+      "bytes": 105236
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/delta/sound/bank/fighter_voice/vc_eflame_c07.tonelabel",
+      "sha256": "a7b3d6cd7e3b347a32458d067f9fd0316446466eee414bd8cd734dcddca9cf22",
+      "bytes": 1968
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/integration.patch",
+      "sha256": "fbb7ac52a7dd9bd1c28550aa1a7236bf3878dbf9fd94e8ad519af2ffd936e422",
+      "bytes": 693
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/motion_entry.bin",
+      "sha256": "189b42cbc83286adb3ea9b08586f75d04fc54a5c23bf9178f25aa97eb6c82524",
+      "bytes": 64
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/PACKAGE.json",
+      "sha256": "f57c63887f55407fb17c643be4a4051fc39ec7d607d291ccd0ce9f61ead9b0f9",
+      "bytes": 23716
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/source/acmd/gaogaen_throw_b.rs",
+      "sha256": "38eae4a76b1b203a849aa75c96060be7a2a4dabbc758b4e357ad2a4456be4803",
+      "bytes": 5291
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/source/status/gaogaen_throw_b.rs",
+      "sha256": "08a2c29c74d537bb03dfd3fe2061f47b0c2ad56260671b81c56c56ba5abdb9b8",
+      "bytes": 7978
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.2.0/source/status/gaogaen_throw_b_data.rs",
+      "sha256": "52685f6c0419e71f833ccddc1a150c38b09abcda20daf58a81dc767160722c06",
+      "bytes": 8739
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/ENGINE.json",
+      "sha256": "e3e76cccac460d45e3e6e21b221d9174be477c7d9671e2f04ff92d41889411c4",
+      "bytes": 3921
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/GAOGAEN_STATUS_TABLE.json",
+      "sha256": "3542927727852c9596b74d5b270567e178211e1f40685a3520452c5c994ababd",
+      "bytes": 12675
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xab8a20.asm",
+      "sha256": "042e56bea3a48e1a7226c3c494c5b6fca425aa7b76399437da1024e4c84e7675",
+      "bytes": 9044
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xab8f30.asm",
+      "sha256": "79103be366b0a5214eb9f93b46062466d83aaedc181c9a5bce813a3004082b4a",
+      "bytes": 3595
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xab9140.asm",
+      "sha256": "0b2fd423b11ba849ee1d1a72de47dbda047f2ce43ea41860ea4160cc32a0dd45",
+      "bytes": 14550
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xab9970.asm",
+      "sha256": "ee3d17de0f974e1e6d679c93f2da89a23da528687b763321da42c692583991d4",
+      "bytes": 5056
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xab9c50.asm",
+      "sha256": "3de6f31736d31bcab475d8724c201fa23b5ef4b297f8770c6d04c38a0bab640a",
+      "bytes": 13138
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xaba3e0.asm",
+      "sha256": "55abe6e8e0977749151217f481c51df716b7ff047f90b79afa1aa04de2f9bb8d",
+      "bytes": 21779
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xabb020.asm",
+      "sha256": "de5627515e10f62e1297fd0600c7133e6faae1f6fd62d955d26ddd8237712620",
+      "bytes": 86537
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/0xabdfd0.asm",
+      "sha256": "82f6b6e240f479e3eea67f7b8a9763d68c96fda75b6b51e5141c5ffead449d52",
+      "bytes": 9809
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_1ff58e0.asm",
+      "sha256": "7d12c485db17515c0f801ff46d89b2032786ac1f887ec241f4e80d03a33a169c",
+      "bytes": 416
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_61a8d4.asm",
+      "sha256": "1470679bf50ce43edaec272e25b9afc692374005d87d02eaedb4fcec7bce5e3b",
+      "bytes": 246
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_61b7d4.asm",
+      "sha256": "12714ce25c9cfbfd228f7bf41edf7058421d5f0d5be98e7debb411d590e46c55",
+      "bytes": 232
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_61bf20.asm",
+      "sha256": "0fab6e4019934a903a9b57088931a42cce38681586221eb68edea4ccee9799c7",
+      "bytes": 759
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_61e4ac.asm",
+      "sha256": "f8d884c4ea64239ad1d8f7c58ac55ddabbeb83d9ecb014beca36f9b3e2f40777",
+      "bytes": 463
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/engine_720f90.asm",
+      "sha256": "a277ead1cf7b894c8d6f2718c08353f9934f4630392bafa824a8563a02f5c699",
+      "bytes": 2395
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b5b20.asm",
+      "sha256": "6e22218d8bf0d03e4093f9995c3af2933c654fabb10b79c96f13424feca3e01f",
+      "bytes": 2740
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b5c20.asm",
+      "sha256": "30a0f2ae0734b6af4cb840f73c2c559b87919603b41fd4e01e376a4f1a2bb03c",
+      "bytes": 5463
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b5e10.asm",
+      "sha256": "319580413e59531a56720a4f97bd9a433ac6ace260b3b812ada53085b46d715e",
+      "bytes": 50692
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b70a0.asm",
+      "sha256": "c16183fdd6c35524eb313e803b08c2cc15bcda368319fb45c863a18e9052fee1",
+      "bytes": 1220
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b7140.asm",
+      "sha256": "633f52fbed7229b775b83ff75084d9696a71260b3c7e8aac830d22ba0580ae95",
+      "bytes": 649
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b7180.asm",
+      "sha256": "67eaa57daa408db7f27e2b64961b0da795a156efad9f10dc1b7b9fc57fb2049e",
+      "bytes": 649
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b71c0.asm",
+      "sha256": "00f14eff4303cc8aac0ec18963037953af705f58a7113dc5ee5857b2610ffde1",
+      "bytes": 17389
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b77d0.asm",
+      "sha256": "60f5dfb8e36580250075ad057de8947f23c627b57f3d0cf6b145c992b96515c4",
+      "bytes": 4362
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_b7a40.asm",
+      "sha256": "2c5c766676de412d50c6a9c58f32921ce05fee537164fb38e6f3f40b239a95be",
+      "bytes": 522
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_cb760.asm",
+      "sha256": "4de8dd8c4f08dc613e56d0053e69a741378cc165828d8f9b8167987f2da12ac1",
+      "bytes": 1612
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d3050.asm",
+      "sha256": "a58fef0476eb0a2cd22129ed163dc2b2fd0a646a4cf9c193568064b346581264",
+      "bytes": 11580
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d3460.asm",
+      "sha256": "5794f6f2d8f596ad1196882716930fa0c6509551834b9aef11686bf923460806",
+      "bytes": 6978
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d3af0.asm",
+      "sha256": "7bf02404a9738b8d684445d87160cf6505414250ce3a9e26161b7a62c6ff1797",
+      "bytes": 4108
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d3c70.asm",
+      "sha256": "4ae6d880e0257e7a2952f6dd0c39f618af45a3a424138d4b5716e39fddaff82b",
+      "bytes": 1089
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d3cf0.asm",
+      "sha256": "edba89a18d23e7040f72a6df0f3e2ca11082cc5901b67cbd459caa05cd2e1363",
+      "bytes": 11828
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d4120.asm",
+      "sha256": "8d0f0364fa259e99deb562ce6837ebd5087949358ebb3f2c246c0dcf0e9449c3",
+      "bytes": 114
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d4130.asm",
+      "sha256": "fe30ae7e0ad6d760be24290e11042eb81dd52f72af1fe3c69a6c2dcb22935a9d",
+      "bytes": 16210
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_common_d46b0.asm",
+      "sha256": "04c18a0bcd948db6bd79a537ce7fda6f8a7706e06ff768b4c1ec5112f79169cd",
+      "bytes": 3642
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_gaogaen_10da0.asm",
+      "sha256": "6d19464e94b3f73ac87c30a7111813854089debf6e5eb2c46b6cd981f1a75d1a",
+      "bytes": 9097
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_gaogaen_28a70.asm",
+      "sha256": "025dff6cbfe39a0e9a82e5816af49912e0624224da1a2711d5d7a8f4a2350d9e",
+      "bytes": 312
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_gaogaen_9afb0.asm",
+      "sha256": "650680232e41175a60f1762985b38b4cb8d267f22958f8a9304750b931e54f29",
+      "bytes": 1440
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/native/lua2cpp_gaogaen_ddba0.asm",
+      "sha256": "a72347e91bbab050ca858f3f7e98e1f482488e3c00bd410af832dd6858f7c9fd",
+      "bytes": 44980
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/NATIVE.json",
+      "sha256": "d20c99f09c35107dcb9c135119935d459947d53dc6eedebc05adb7bc9b05de56",
+      "bytes": 7151
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/NATIVE_INPUTS.json",
+      "sha256": "df01075aabe57d3d90def78d9f9575664a0f564c860c3f6aa6c82944ec737a96",
+      "bytes": 581
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/RESULT.md",
+      "sha256": "76630838ed2c6079dc8a87bdb77c85f2ca90b0ac28418aa84ea27c8702b4c541",
+      "bytes": 8029
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/ROUTES.json",
+      "sha256": "f1a9a44c008d125c14e48fbb8b54e30ef3c4b3e59c9ce61ec4448206a50c07ec",
+      "bytes": 217759
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/RUNTIME_SOURCE.json",
+      "sha256": "04b64d13bf7746224950f08085c42885166dd3f649c0d00a0ed8960cc220525f",
+      "bytes": 13967
+    },
+    {
+      "path": "refs/gaogaen_throw_b/donor_acmd/eflame_ThrowB.txt",
+      "sha256": "7e334fca4bfeec1f7d7f88ca4813e19948b50cd293a2efd73c868c6ac31b630f",
+      "bytes": 4477
+    },
+    {
+      "path": "refs/gaogaen_throw_b/donor_acmd/ThrowB.txt",
+      "sha256": "16c2f456b968e59f865c217b8fbb81a30e299c9e46728c9ae2362774853ecb76",
+      "bytes": 4379
+    },
+    {
+      "path": "refs/gaogaen_throw_b/donor_status/pre.c",
+      "sha256": "7dd3ec16278c4e73d9afd147e692bc2e707fbbf1c11cea537e7db0aa1f2056ed",
+      "bytes": 4111
+    },
+    {
+      "path": "refs/gaogaen_throw_b/donor_status/tree.json",
+      "sha256": "bd30e1e49360c2b0821b86ed4c88968c09e6b644232f0bfc2909a81d970331c2",
+      "bytes": 684
+    },
+    {
+      "path": "refs/gaogaen_throw_b/SOURCE.json",
+      "sha256": "e5c1ca6f62b61b66a1b23c47851a5bc444e5d91b2821fd3eeecfb2c6a6ec6ab0",
+      "bytes": 3823
+    },
+    {
+      "path": "src/pgwr/plugin/src/acmd/gaogaen_throw_b.rs",
+      "sha256": "38eae4a76b1b203a849aa75c96060be7a2a4dabbc758b4e357ad2a4456be4803",
+      "bytes": 5291
+    },
+    {
+      "path": "src/pgwr/plugin/src/status/gaogaen_throw_b.rs",
+      "sha256": "08a2c29c74d537bb03dfd3fe2061f47b0c2ad56260671b81c56c56ba5abdb9b8",
+      "bytes": 7978
+    },
+    {
+      "path": "src/pgwr/plugin/src/status/gaogaen_throw_b_data.rs",
+      "sha256": "52685f6c0419e71f833ccddc1a150c38b09abcda20daf58a81dc767160722c06",
+      "bytes": 8739
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/engine_audit.py",
+      "sha256": "164b2f4bc12167e0cf2ca56dd6e1f919fd4d52e603cc253d96fee71cf8d87e71",
+      "bytes": 4646
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/extract_native.py",
+      "sha256": "521a81919d946bc302230828a98a7eb75ec1589eaca5527434034ac00227a7d3",
+      "bytes": 1916
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/handoff.py",
+      "sha256": "dbab49650066ee1634da9b22ca6309f8e0383591792384bf8d233a8ad75b74fa",
+      "bytes": 7063
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/native_audit.py",
+      "sha256": "6824fdc3ce76b1c8ee548ab3c8cd4a6c9dc4a8d16f95fbaf70f71f78e8a4b6ac",
+      "bytes": 4495
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/pipeline.py",
+      "sha256": "0f485e18c265662a619579a9f00fa3d4315246a279f482b8096d366ed07101b3",
+      "bytes": 21460
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/README.md",
+      "sha256": "fa7c7aebfc2d1365f64a1bc46e12edd4a83c14094b8645d4c63226732108105c",
+      "bytes": 3628
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/routes.py",
+      "sha256": "3a066ba63566abe458340641e168945867d9f899cd83c812af8d15e1c717d916",
+      "bytes": 4040
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/runtime_package.py",
+      "sha256": "8148ac9f0a6fcfc4aea9c346d2764b21c6ee989c2a9b1d6ac513f15a979fa8c8",
+      "bytes": 5049
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/collision_audit.py",
+      "sha256": "34f2943af0a34931fe6ed98d88fb9bccf9a6b39d15a7269d262333fd90a9840b",
+      "bytes": 3117
+    },
+    {
+      "path": "evidence/2026-10-02_pgwr_gaogaen_throw_b/COLLISION.json",
+      "sha256": "b5c30abeba2412fea6b4c79b3caa47e9cb514a28171f2abc63ebebd0cfccbfa1",
+      "bytes": 1281
+    }
+  ],
+  "shared_documents_updated_only_own_sections": [
+    "projects/pgwr/STATUS.md",
+    "projects/pgwr/CHANGELOG.md",
+    "CURRENT_INSTALL.md"
+  ],
+  "correction_record": "handbook/graveyard.md: own native-input retraction entry",
+  "package_manifest_sha256": "f57c63887f55407fb17c643be4a4051fc39ec7d607d291ccd0ce9f61ead9b0f9",
+  "cache_scope": "builds/.cache/gaogaen_throw_b",
+  "status_allocation": null,
+  "native_inputs": [
+    {
+      "archive_path": "prebuilt:/nro/release/lua2cpp_gaogaen.nro",
+      "local_path": "gamedata/ssbu-13.0.4/gaogaen_throw_b/native/prebuilt;/nro/release/lua2cpp_gaogaen.nro",
+      "size": 1662976,
+      "sha256": "aafea7766e24b0025b15d336e6e65f99342a4398b31d6c2e03507f3d2ca32809"
+    },
+    {
+      "archive_path": "prebuilt:/nro/release/lua2cpp_common.nro",
+      "local_path": "gamedata/ssbu-13.0.4/gaogaen_throw_b/native/prebuilt;/nro/release/lua2cpp_common.nro",
+      "size": 8466432,
+      "sha256": "43876f961a80e413370629d32c23af9de6e4cc26b448bab88d5433714a566097"
+    }
+  ],
+  "donor_pins": "refs/gaogaen_throw_b/SOURCE.json",
+  "extracted_game_inputs_workspace_relative": "gamedata/ssbu-13.0.4/files and gamedata/ssbu-13.0.4/gaogaen_throw_b/native; read-only after extraction, outside source",
+  "private_cache_roots": [
+    "builds/.cache/gaogaen_throw_b"
+  ]
+}

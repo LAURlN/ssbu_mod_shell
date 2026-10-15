@@ -1,0 +1,284 @@
+[
+  {
+    "file": "acmd/SpecialHi1.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi1.txt",
+    "bytes": 5482,
+    "sha256": "e51434d0dbe33fa3335fd79752900bcc64d7e1fabd9b653f3bc98bba8a08d9de"
+  },
+  {
+    "file": "acmd/SpecialHi1Start.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi1Start.txt",
+    "bytes": 1417,
+    "sha256": "6896a16c51bad02afd59d7430aafea53e424fe67f3579715f8396931577e5b00"
+  },
+  {
+    "file": "acmd/SpecialHi1Loop.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi1Loop.txt",
+    "bytes": 223,
+    "sha256": "65581c7ff98b5ef7f6f2a2e157150b2de465f530210491ed48e1c479df55c2ec"
+  },
+  {
+    "file": "acmd/SpecialHi1End.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi1End.txt",
+    "bytes": 2694,
+    "sha256": "cd85c25220903b240549863972f698cf10b69b4367d452f2a74487275d292ec2"
+  },
+  {
+    "file": "acmd/SpecialAirHi1.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialAirHi1.txt",
+    "bytes": 6135,
+    "sha256": "9ac6b10587eda4a925c24a14510cdde40a12fea17c922e92397a08234f2eedfd"
+  },
+  {
+    "file": "acmd/SpecialAirHi1Start.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialAirHi1Start.txt",
+    "bytes": 1114,
+    "sha256": "feafe000bf84c579de33895c21235015ca1820f44d59a320abfc18e611a995cc"
+  },
+  {
+    "file": "acmd/SpecialAirHi1Loop.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialAirHi1Loop.txt",
+    "bytes": 226,
+    "sha256": "2cb860aa2c06c941b9b4ed221cc2eb637fa728326006522a3b03b54efb25da8e"
+  },
+  {
+    "file": "acmd/SpecialAirHi1End.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialAirHi1End.txt",
+    "bytes": 1808,
+    "sha256": "6adfef806f3b2925119466d7ac6e21c28d46abdf920bf914c0f99a3d50380187"
+  },
+  {
+    "file": "acmd/SpecialHi2.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi2.txt",
+    "bytes": 8531,
+    "sha256": "dd5ec891e64abdd7393fa00a1153b1e6a6ad7872b9090fe0b41cbc16e881947c"
+  },
+  {
+    "file": "acmd/SpecialHi3.txt",
+    "source_path": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_miiswordsman/miiswordsman/SpecialHi3.txt",
+    "bytes": 12542,
+    "sha256": "39b2234bb1b113cd4df6b553e351f85411d5767734dc723179255fddf3180030"
+  },
+  {
+    "file": "status/SpecialHi__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi/end.c",
+    "bytes": 1224,
+    "sha256": "a47aec38338ff71c82fd5af1e85855e16c49bb41c738025d374e1a7b1d417014"
+  },
+  {
+    "file": "status/SpecialHi__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi/main.c",
+    "bytes": 4085,
+    "sha256": "9f9ff0b7ee40b2bb174b5db4921f952e939664bf9a777093696f8924b79ec48e"
+  },
+  {
+    "file": "status/SpecialHi__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi/main_loop.c",
+    "bytes": 3600,
+    "sha256": "005fa3b2b716392d960a5af397e7e020faa9d1c3dd107e417b700eb1d2150ebd"
+  },
+  {
+    "file": "status/SpecialHi__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi/pre.c",
+    "bytes": 4030,
+    "sha256": "3ecea2a2c43a5ea67884aee3e1caf4658d5e9c2313f3d39c986304327d62ff3e"
+  },
+  {
+    "file": "status/SpecialHi1End__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1End/end.c",
+    "bytes": 1424,
+    "sha256": "47e6aac9162c1d20c21ddf8911b8c49d025820a404327471d4298f680d8e47b0"
+  },
+  {
+    "file": "status/SpecialHi1End__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1End/main.c",
+    "bytes": 1582,
+    "sha256": "052e9c6bbcd792b54e2144889bd2a55f954bb62ccde78b2362f8f73b43dbb1ad"
+  },
+  {
+    "file": "status/SpecialHi1End__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1End/main_loop.c",
+    "bytes": 3320,
+    "sha256": "21d1d9a0d389ced2755c0e0485866c38961443592a9db26a2b11756629373eb4"
+  },
+  {
+    "file": "status/SpecialHi1End__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1End/pre.c",
+    "bytes": 4089,
+    "sha256": "1ff08457a90b4e64bdd8755ec2f7ef0e0af5d2b7204055662d9736152f183ee3"
+  },
+  {
+    "file": "status/SpecialHi1Jump__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Jump/end.c",
+    "bytes": 883,
+    "sha256": "5778d72e1c18b6ed88ff1c87ce076f6b8873634863a7be89b2da920422ffe9a7"
+  },
+  {
+    "file": "status/SpecialHi1Jump__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Jump/main.c",
+    "bytes": 1584,
+    "sha256": "197192a32d1b5174eb7fcd3fd7d90adb94f753fd536e62dd76b384cf4cff7c00"
+  },
+  {
+    "file": "status/SpecialHi1Jump__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Jump/main_loop.c",
+    "bytes": 2251,
+    "sha256": "ca21edfc3160afb588bf7436433db3699b5c007d4fea48d93f0a17e5c26e6e27"
+  },
+  {
+    "file": "status/SpecialHi1Jump__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Jump/pre.c",
+    "bytes": 4080,
+    "sha256": "7102f7dfb779b2e21d11acaf96c589acb7f27a52f07ecdcee52b7ccd414abd28"
+  },
+  {
+    "file": "status/SpecialHi1Loop__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Loop/end.c",
+    "bytes": 203,
+    "sha256": "4207f7d4471cbe0ba89ef7c062cb20584da799971087ed5a4de1cdd2d8c7c5fd"
+  },
+  {
+    "file": "status/SpecialHi1Loop__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Loop/main.c",
+    "bytes": 1586,
+    "sha256": "46adb600e5cb0affd4ae33d6b1bd000a58a1d659adebb5b26c178179120e5704"
+  },
+  {
+    "file": "status/SpecialHi1Loop__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Loop/main_loop.c",
+    "bytes": 1278,
+    "sha256": "b3fd55a1918341b53f371ce10894c9d9d03b93f1a8e158d4f2aaa2bf4d219399"
+  },
+  {
+    "file": "status/SpecialHi1Loop__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi1Loop/pre.c",
+    "bytes": 4103,
+    "sha256": "4aefd5a3cc7c2a5c41242b2fac5d302fdf7a1f3fd17a317371b5f442db7ae191"
+  },
+  {
+    "file": "status/SpecialHi2Bound__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Bound/end.c",
+    "bytes": 419,
+    "sha256": "23b84e8beed320d1d691544a549cd6fcb20a66f1e951254be06453f61e654bd2"
+  },
+  {
+    "file": "status/SpecialHi2Bound__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Bound/main.c",
+    "bytes": 1959,
+    "sha256": "2307cbe3667f236ce2603ea7c5ae5f09df81390a87622ae1c1d650a36fa0402f"
+  },
+  {
+    "file": "status/SpecialHi2Bound__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Bound/main_loop.c",
+    "bytes": 5711,
+    "sha256": "045766055bd4a29d29f9d9d5ed9dbe8c0796029fd1ada1d4fd7db273bb82004a"
+  },
+  {
+    "file": "status/SpecialHi2Bound__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Bound/pre.c",
+    "bytes": 3885,
+    "sha256": "937204ac74132374651f1e71c01bfc43fa4a303bcc3c8804532c9606c6cd22cc"
+  },
+  {
+    "file": "status/SpecialHi2Rush__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Rush/end.c",
+    "bytes": 418,
+    "sha256": "8a3e566a6aa7660e2058ff56d045cbbbb008a71cd6aedc6087a887844468c404"
+  },
+  {
+    "file": "status/SpecialHi2Rush__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Rush/main.c",
+    "bytes": 2624,
+    "sha256": "0f0930a18e65f49453e3c16ada2c16b607f78d1c8bcbe3aded3c573527bd99fb"
+  },
+  {
+    "file": "status/SpecialHi2Rush__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Rush/main_loop.c",
+    "bytes": 10248,
+    "sha256": "f74c4312bc221972dc60f50534acb17d6619e3b972da20ad078e3aaf27881da3"
+  },
+  {
+    "file": "status/SpecialHi2Rush__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2Rush/pre.c",
+    "bytes": 3971,
+    "sha256": "fd01884ca02f1b63344d0fb9a6f313bf1d9857675b8568313d4a6de16f18eb2e"
+  },
+  {
+    "file": "status/SpecialHi2RushEnd__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2RushEnd/end.c",
+    "bytes": 421,
+    "sha256": "288cd51443eab668f32de8cacb479722d20a6a4e538a8c9fd0b6e52d53ec300c"
+  },
+  {
+    "file": "status/SpecialHi2RushEnd__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2RushEnd/main.c",
+    "bytes": 4243,
+    "sha256": "a3fc8c8d17133369245f2142eb2d5c87afa8db1bb1aa0657d1afc438753c2357"
+  },
+  {
+    "file": "status/SpecialHi2RushEnd__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2RushEnd/main_loop.c",
+    "bytes": 5860,
+    "sha256": "ab9c5d04851153d2214dec91bc8d9ffc30900feb8981c6a7199f3d08a6c68501"
+  },
+  {
+    "file": "status/SpecialHi2RushEnd__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi2RushEnd/pre.c",
+    "bytes": 4074,
+    "sha256": "aaf4f8f8e88fcd76f8fa5236c44a2b691047e243e2231b9469ae330ace920b50"
+  },
+  {
+    "file": "status/SpecialHi3End__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3End/end.c",
+    "bytes": 202,
+    "sha256": "bbc8978b5242bc1c6a9154ebb09c9c1e96d4d2aa4766ed10f183cc1479b768c9"
+  },
+  {
+    "file": "status/SpecialHi3End__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3End/main.c",
+    "bytes": 961,
+    "sha256": "73dede69dbfde4948d60ee0d2bee738a9e3d0f202acd4c99cfe0cee892cae432"
+  },
+  {
+    "file": "status/SpecialHi3End__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3End/main_loop.c",
+    "bytes": 12453,
+    "sha256": "5ebcadee40d2d9a3b2aa11c44df3c2cd0447189c80cc920d65585a9b5048deda"
+  },
+  {
+    "file": "status/SpecialHi3End__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3End/pre.c",
+    "bytes": 4068,
+    "sha256": "bb79cb31e85c7f8cf4379f1330cf61acab5881a0e17e720391cedac532d341f2"
+  },
+  {
+    "file": "status/SpecialHi3Hold__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3Hold/end.c",
+    "bytes": 203,
+    "sha256": "f7526c3256852dbf1e4daaf1139b877df8c236cc0ddb327bc77c48ad31b4b006"
+  },
+  {
+    "file": "status/SpecialHi3Hold__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3Hold/main.c",
+    "bytes": 1954,
+    "sha256": "2dde773868758829bab0466ced9ef61b9cc44c5d1518431bcfa585c0244cc1d1"
+  },
+  {
+    "file": "status/SpecialHi3Hold__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3Hold/main_loop.c",
+    "bytes": 3970,
+    "sha256": "b7eb43992032ede862c9cb0ad92ca3c696fcdb6eb26a846b663ee1186f2e3b7d"
+  },
+  {
+    "file": "status/SpecialHi3Hold__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_miiswordsman.nro/miiswordsman/miiswordsman/status/SpecialHi3Hold/pre.c",
+    "bytes": 4072,
+    "sha256": "55aeb5989690a6a8f924c092887ba9c4dc91c9cabaf3110a1435770b1e36c17c"
+  },
+  {
+    "file": "motion_list_body_c00.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/miiswordsman/motion/body/c00/motion_list.yml",
+    "bytes": 481673,
+    "sha256": "0a893036d6c715480e2c8af36fd77f0f4188975c6dd8187bba5114037bf13b29"
+  }
+]

@@ -1,0 +1,26 @@
+﻿{
+    "purpose":  "private_module_load_check",
+    "hardware_test_passed":  true,
+    "playable_clone":  false,
+    "date":  "2026-09-28",
+    "source":  "sd:/ultimate/pyra_mythra_clone/loader.log",
+    "files":  [
+                  {
+                      "path":  "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/plugin.nro",
+                      "sha256":  "bdd4eb748dc7b16d8d7efc1de7de9beb38ae95878da17f130a12d6e18b022566"
+                  },
+                  {
+                      "path":  "ultimate/mods/PyraMythraClone/native/modules/lua2cpp_cflame.nro",
+                      "sha256":  "e8ec8dc542b6e7036eb40e8c531ed17aade520f94c7b1d763f1490ff5a730c56"
+                  },
+                  {
+                      "path":  "ultimate/mods/PyraMythraClone/native/modules/lua2cpp_clight.nro",
+                      "sha256":  "e2a322de5263b172cadee4a8e97284faf2b9ae04ce50f0be11f2ac38880642fb"
+                  },
+                  {
+                      "path":  "ultimate/mods/PyraMythraClone/native/modules/lua2cpp_clement.nro",
+                      "sha256":  "83fc24f3be48ed67f5ec87896b4c9e713b34b12bcff09c7bfbc35a37e4707490"
+                  }
+              ],
+    "log_sha256":  "335d5d61613250acc3f45736d5f34cbc49028ef09bb390fbd474e91890d5d402"
+}

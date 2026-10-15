@@ -1,0 +1,43 @@
+# Regression fixture for scratch/summarise_mflip_log.py
+#
+# Every line below reproduces a println! format string from the current sources,
+# so this file fails if the tool's patterns drift from the code. Two attempts:
+#
+#   attempt 1  centre2 == self, rebound false, no capture ever registered
+#   attempt 2  centre2 == self + (0, 2.50, 0), rebound true, forced capture
+#
+# Two values are deliberately chosen so a wrong capture group is visible rather
+# than plausible:
+#   * the CATCHW dist= values differ from the vpos= x values (4.82 vs 16.82 and
+#     34.82), so reading a coordinate as a distance cannot pass unnoticed;
+#   * GRABARM reports rebound before sleep, so transposing those two groups shows
+#     up as rebound=false on a build that set it.
+#
+# The banner names the build this vocabulary belongs to.
+
+[MGW-MFLIP] build 2026-09-18.j: grab module activated with set_rebound, rebound state and box centres reported
+[MGW-MFLIP] OBS entry=1 status=528 (0x210) prev=0x1 ours=true situation=19 catch=false link=0x50000000 motion=0x1a2b frame=0.00
+[MGW-MFLIP] START entry=1 situation=19 motion=0x1a2b frame=0.00 end=40.00 rate=1 is_end=false
+[MGW-MFLIP] MOTION requested_name=special_air_s_jump requested_hash=0x1a2b observed_kind=0x1a2b observed_end=40.00 observed_rate=1
+[MGW-MFLIP] status=0x210 motion=special_air_s_jump end=40 rate=1
+[MGW-MFLIP] CATCH ACMD frame=7 situation=19 motion=0x1a2b
+[MGW-MFLIP] GRABARM acmd7 rebound=false sleep=false size_mul=1.0 check_front=false size2_raw=0x41a3ead300
+[MGW-MFLIP] CATCHBOX acmd7 grab0=false grab1=false grab2=true grab3=false node0=0x0 node1=0x0 node2=0x1 node3=0x0 top=(12.61,13.44,0.00) trans=(12.61,13.44,0.00) waist=(12.61,13.44,0.00) self=(12.61,13.44,0.00)
+[MGW-MFLIP] CATCHGEO acmd7 centre0=(12.61,13.44,0.00) centre1=(12.61,13.44,0.00) centre2=(12.61,13.44,0.00) self=(12.61,13.44,0.00) size2=0x41a3ead300
+[MGW-MFLIP] JUMP tick entry=1 elapsed=7 situation=19 motion=0x1a2b motion_frame=7.00 end=40.00 rate=1 is_end=false ground=false
+[MGW-MFLIP] CATCHW entry=1 elapsed=20 is_catch=false capture=0x50000000 link=0x50000000 grab0=false grab1=false grab2=true grab3=false anchor=(12.61,13.44,0.00) self=(12.61,13.44,0.00) victim=0x20000 vs=0x1 vsit=0 vpos=(16.82,12.60,0.00) dist=4.82 rebound=false
+[MGW-MFLIP] CATCHW entry=1 elapsed=21 is_catch=false capture=0x50000000 link=0x50000000 grab0=false grab1=false grab2=true grab3=false anchor=(12.61,13.44,0.00) self=(12.61,13.44,0.00) victim=0x20000 vs=0x1 vsit=0 vpos=(16.81,12.70,0.00) dist=4.90 rebound=false
+[MGW-MFLIP] NOCATCH elapsed=22 victim=0x20000 dist=5.05 gated_at=7.00 vstatus=0x1 is_catch=false capture=0x50000000 link=0x50000000 grab0=false grab1=false grab2=true grab3=false
+[MGW-MFLIP] NOCATCH FAR elapsed=23 victim=0x20000 dist=9.10 gated_at=7.00
+[MGW-MFLIP] GRABDIS acmd26 rebound=false
+[MGW-MFLIP] JUMP tick entry=1 elapsed=30 situation=19 motion=0x1a2b motion_frame=30.00 end=40.00 rate=1 is_end=false ground=false
+[MGW-MFLIP] START entry=1 situation=19 motion=0x1a2b frame=0.00 end=40.00 rate=1 is_end=false
+[MGW-MFLIP] CATCH ACMD frame=7 situation=19 motion=0x1a2b
+[MGW-MFLIP] GRABARM acmd7 rebound=true sleep=false size_mul=1.0 check_front=false size2_raw=0x41a3ead300
+[MGW-MFLIP] CATCHGEO acmd7 centre0=(0.00,0.00,0.00) centre1=(0.00,0.00,0.00) centre2=(30.00,2.50,0.00) self=(30.00,0.00,0.00) size2=0x41a3ead300
+[MGW-MFLIP] CATCHGEO acmd19 centre0=(0.00,0.00,0.00) centre1=(0.00,0.00,0.00) centre2=(33.00,2.50,0.00) self=(33.00,0.00,0.00) size2=0x41a3ead300
+[MGW-MFLIP] CATCHW entry=1 elapsed=20 is_catch=true capture=0x20000 link=0x20000 grab0=false grab1=false grab2=true grab3=false anchor=(30.00,0.00,0.00) self=(30.00,0.00,0.00) victim=0x20000 vs=0x1 vsit=0 vpos=(34.82,0.00,0.00) dist=4.82 rebound=true
+[MGW-MFLIP] CATCHW entry=1 elapsed=25 is_catch=true capture=0x20000 link=0x20000 grab0=false grab1=false grab2=true grab3=false anchor=(30.00,0.00,0.00) self=(30.00,0.00,0.00) victim=0x20000 vs=0x1 vsit=0 vpos=(34.70,0.00,0.00) dist=4.70 rebound=true
+[MGW-MFLIP] CATCH HANDOFF elapsed=20 capture=0x20000 via=box -> STICK
+[MGW-MFLIP] CLING frame=0.00 motion=0x99aa end=45.00 is_catch=true is_linked=true capture=0x20000 link=0x20000 grab_live=true victim=0x20000 vstatus=0x6 vsit=0 vpos=(34.82,0.00,0.00) self=(30.00,0.00,0.00)
+[MGW-MFLIP] CLING frame=5.00 motion=0x99aa end=45.00 is_catch=true is_linked=true capture=0x20000 link=0x20000 grab_live=true victim=0x20000 vstatus=0x1e6 vsit=0 vpos=(34.80,0.00,0.00) self=(30.00,0.00,0.00)

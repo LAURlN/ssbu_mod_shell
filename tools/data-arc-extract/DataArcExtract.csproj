@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NuGetAudit>false</NuGetAudit>
+    <RestoreAdditionalProjectSources></RestoreAdditionalProjectSources>
+    <RestoreFallbackFolders></RestoreFallbackFolders>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Reference Include="LibHac, Version=0.19.0.0">
+      <HintPath>$(LibHacPath)</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="RequireExplicitBackend" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(LibHacPath)' == '' Or !Exists('$(LibHacPath)')" Text="Run setup.ps1 with an explicit compatible LibHac path; direct builds are unsupported." />
+  </Target>
+</Project>

@@ -1,0 +1,65 @@
+--- a/src/pgwr/plugin/src/status/mod.rs
++++ b/src/pgwr/plugin/src/status/mod.rs
+@@ -61,6 +61,7 @@
+ pub mod special_hi;
+ pub mod snake_grenade;
+ pub mod gaogaen_throw_b;
++pub mod dk_cargo;
+ 
+ /// Incineroar back throw on eflame c06/c07; allocated 2026-10-03.
+ pub const STATUS_GAOGAEN_THROW_B: i32 = 0x208;
+@@ -109,6 +110,7 @@
+     monkey_flip::install();
+     special_hi::install();
+     gaogaen_throw_b::install();
++    dk_cargo::install();
+     #[cfg(feature = "snake-neutral-b")]
+     snake_grenade::install();
+ }
+--- a/src/pgwr/plugin/src/status/monkey_flip_capture.rs
++++ b/src/pgwr/plugin/src/status/monkey_flip_capture.rs
+@@ -45,7 +45,7 @@
+ 
+ /// SVC 0x6 ABI from pinned smashline be3ef308 crates/rtld/src/{nx.rs,svc.s}.
+ /// Validate the entire range in one mapped region before dereferencing it.
+-unsafe fn mapped(address: usize, size: usize, writable: bool) -> bool {
++pub(super) unsafe fn mapped(address: usize, size: usize, writable: bool) -> bool {
+     if address < 0x10000 || address.checked_add(size).is_none() { return false; }
+     let mut info = [0u64; 6];
+     let mut page_info = 0u32;
+@@ -93,12 +93,14 @@
+         return original(this, fighter, event);
+     }
+     let kind = *(event.add(0x10) as *const u64) & 0xffffffffff;
+-    if kind != CAPTURE { return original(this, fighter, event); }
++    if kind != CAPTURE && kind != 0x21ba53a92c && kind != 0xb319a8b44 { return original(this, fighter, event); }
+     let boma = *(fighter.add(0x20) as *const *mut BattleObjectModuleAccessor);
+     if boma as usize % 8 != 0 || !mapped(boma as usize, 0x160, false) {
+         telemetry::log("CAPTURE REFUSED invalid accessor range".into());
+         return original(this, fighter, event);
+     }
++    if super::dk_cargo::on_event(boma, kind) { return 1; }
++    if kind != CAPTURE { return original(this, fighter, event); }
+     if !crate::params::is_target_fighter(boma)
+         || StatusModule::status_kind(boma) != STATUS_MONKEY_FLIP_JUMP {
+         return original(this, fighter, event);
+--- a/src/pgwr/plugin/src/status/special_hi.rs
++++ b/src/pgwr/plugin/src/status/special_hi.rs
+@@ -556,6 +556,7 @@
+     if crate::params::is_target_fighter(boma) {
+         set_used(boma, false, "class event +0x210");
+         super::monkey_flip::refresh_locks(boma, "class event +0x210");
++        super::dk_cargo::on_reset(boma);
+     }
+     1
+ }
+--- a/src/pgwr/plugin/src/status/gaogaen_throw_b.rs
++++ b/src/pgwr/plugin/src/status/gaogaen_throw_b.rs
+@@ -71,6 +71,7 @@
+ 
+ #[skyline::hook(replace = smash::lua2cpp::L2CFighterCommon_sub_is_not_throw_status_kind)]
+ unsafe extern "C" fn is_not_throw(fighter: &mut L2CFighterCommon, kind: L2CValue) -> L2CValue {
++    if super::dk_cargo::owns_throw_kind(fighter, kind.get_i32()) { return false.into(); }
+     if kind.get_i32() == OWN_STATUS.load(Ordering::Relaxed)
+         && (owns_attacker(fighter.module_accessor) || owns_victim(fighter.module_accessor)) {
+         return false.into();

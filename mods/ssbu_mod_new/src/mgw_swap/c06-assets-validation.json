@@ -1,0 +1,90 @@
+{
+  "motions": {
+    "elight": {
+      "changed_or_added_motions": [
+        "0x13e5efd33f",
+        "0xff4037c3f",
+        "0x12eeb17698"
+      ],
+      "unrelated_entries_preserved": 731,
+      "clips": 6,
+      "compatible_rigs": true,
+      "motion_path_preserved": true,
+      "motion_list_sha256": "54ec4fb390344927ce6b31be542ae6284a2618b2e49ad4536464448d88e66002"
+    },
+    "gamewatch": {
+      "changed_or_added_motions": [
+        "0xc3495ada5",
+        "0xd58f78ef7",
+        "0xf3c6351ed",
+        "0x1337fadc39",
+        "0x1243e5e5bb",
+        "0x12fa833ca8",
+        "0x16e10cd0cd",
+        "0x11bf9ca033",
+        "0x121f063ca1",
+        "0xfeca12eb0",
+        "0x1672cea9f8",
+        "0x17a9c10a8a",
+        "0x1480cd2da3",
+        "0x15558a8172"
+      ],
+      "unrelated_entries_preserved": 744,
+      "clips": 13,
+      "compatible_rigs": true,
+      "motion_path_preserved": true,
+      "motion_list_sha256": "2793b96c5ddf8c721a079d00ca525e608c6d466d05dc7edb73211ad6bcd8df77"
+    }
+  },
+  "gamewatch_model": {
+    "additions": {
+      "nusktb": 1,
+      "numshb": 4,
+      "numdlb": 4,
+      "numatb": 4,
+      "numshexb": 1
+    },
+    "original_c06_body_preserved": true,
+    "sword_mesh_material_bone_references_verified": true
+  },
+  "c07_unchanged": true,
+  "c06_files": {
+    "fighter/elight/motion/body/c06/c05attackairhi.nuanmb": "a09b93ce5905f9bff570800cd3e8eb3b5b5803a93d5b9237d268bc4b934c56ac",
+    "fighter/elight/motion/body/c06/d02specialairhi1.nuanmb": "9d81bb35a02d60a7130646f88103acfddc93672532922762184a3a3ffe0681ed",
+    "fighter/elight/motion/body/c06/d02specialairhiend.nuanmb": "06301334690b5ef568b07f8e11dd3bc109966e8226b69707ac57dc1d55de56b0",
+    "fighter/elight/motion/body/c06/d02specialairhijump.nuanmb": "8842736b39267191eba8ca69e5f4cb92e641e4c767294f51db790d35d7992a12",
+    "fighter/elight/motion/body/c06/d02specialhistart.nuanmb": "5ca1319f57fee410427d5f57c3d9675ad03e70246a2b1665bb655c68bc92df51",
+    "fighter/elight/motion/body/c06/e01throwlw.nuanmb": "57bafacc700e8efbcd5493e0eaf57b67a3c124dcac6508493528c0d327050802",
+    "fighter/elight/motion/body/c06/motion_list.bin": "54ec4fb390344927ce6b31be542ae6284a2618b2e49ad4536464448d88e66002",
+    "fighter/gamewatch/model/body/c06/alp_light_002_col.nutexb": "3353a78feb86aea44b9d2d240372177d8b2f9f00f9b0a1667e3d1a5f2f2db3a7",
+    "fighter/gamewatch/model/body/c06/alp_light_002_nor.nutexb": "040d6670886efa2f33e5593326502acd05f290e04a8e87f2c889d271e6f7f3e6",
+    "fighter/gamewatch/model/body/c06/alp_light_002_prm.nutexb": "b7d6656c7535327e26160ac4c3e9429cdc5044b329af407b29bcce74a36b8283",
+    "fighter/gamewatch/model/body/c06/def_light_004_col.nutexb": "0d10ba1c019609372a458e1f1944806845d1db1cbc9cc0700f9cdac347956065",
+    "fighter/gamewatch/model/body/c06/def_light_004_emi.nutexb": "67b5cde32e43223d9001c4811a6f02e08d627190a3d5f1fa5cff19cf21ad4945",
+    "fighter/gamewatch/model/body/c06/def_light_004_nor.nutexb": "24eac2f8dc699987c8554877f4ee1dff90be34b6399453c7611289160ba77f94",
+    "fighter/gamewatch/model/body/c06/def_light_004_prm.nutexb": "4f08c54c38f5ca23d5f43148317e0549acc4f5e10f32ab641249b55d7274d9e1",
+    "fighter/gamewatch/model/body/c06/def_light_005_col.nutexb": "425fac382f17ab6ac8b5c4befaee8b7e40997201605e1ad51cab4f97fe3c1835",
+    "fighter/gamewatch/model/body/c06/def_light_005_emi.nutexb": "7c71bce0506ab8622491709d28b9bbfa9f51dc93fe40bc12d05730b9c404e487",
+    "fighter/gamewatch/model/body/c06/def_light_005_nor.nutexb": "1285480a3543cf847bf3da60dc65a28e30e1256cc2d7ed720a355b7035ff61ab",
+    "fighter/gamewatch/model/body/c06/def_light_005_prm.nutexb": "13e0fb318c922c761afba139ec14bceeca1a3136af06f4dafa94227774946605",
+    "fighter/gamewatch/model/body/c06/model.numatb": "b9d4032a41b6fdb7cbf5753c3f83e58c78e3b54ce2b01a1f3860fd4651ff9aaa",
+    "fighter/gamewatch/model/body/c06/model.numdlb": "cbfc7c6ab9fcaf487c537e5fdd78081097146d3ac18f5eef30dc4cb1c509fd58",
+    "fighter/gamewatch/model/body/c06/model.numshb": "9fe59c0eb13ad19222dabdc8816a112d2ac9b60e910cd0e95d9f33b31190bb77",
+    "fighter/gamewatch/model/body/c06/model.numshexb": "0c9d27930b9a09ca8cf8df358d48e620834e1faf6b2499daf71e0ae54f879371",
+    "fighter/gamewatch/model/body/c06/model.nusktb": "a067f16cd670964dcd57a3de7e400eb100d1377e26fc313261fb4b256c8df15d",
+    "fighter/gamewatch/motion/body/c06/c05attackairf.nuanmb": "067a27e993d01cada0606dda8db959a6f18cd10e04a623907180b15b7b3660a1",
+    "fighter/gamewatch/motion/body/c06/d01specialairs.nuanmb": "db10576673b13a9d1a1ec257f5314c85c38fc26b866dc8f8b382487f65f2c452",
+    "fighter/gamewatch/motion/body/c06/d01specialairsl.nuanmb": "affe78a5e9f53762349d731273564bc730c74529e0d1711543a0c6be4bdb9f9b",
+    "fighter/gamewatch/motion/body/c06/d01specials.nuanmb": "2bcbd186ce4d681433a60788c675fa357d6908059b3120609fd297b05b638136",
+    "fighter/gamewatch/motion/body/c06/d01specialsl.nuanmb": "7964634c174b202b63b9e066eebeb22258bc79ead8441cd15202eb0d10d7ac92",
+    "fighter/gamewatch/motion/body/c06/d03specialairlw.nuanmb": "3349c321191bea03acf91364d16fef2162df7760ef025f6fa1200e5e78ebf7d5",
+    "fighter/gamewatch/motion/body/c06/d03specialairlwend.nuanmb": "ea893a29e09ecdfac94b6c359a815786f9a6832a76b613d8d77c2e4390379ddc",
+    "fighter/gamewatch/motion/body/c06/d03specialairlwshoot.nuanmb": "29c85eacd911b74db633ae9735458a4851ddeb17bf8414b4665a291ab1d7930b",
+    "fighter/gamewatch/motion/body/c06/d03specialairlwstart.nuanmb": "b1c9c8eea82c66ac7f71854f6d9991d2c59cc4a6d61d9480b564175051e5f117",
+    "fighter/gamewatch/motion/body/c06/d03speciallw.nuanmb": "09669e6af4344cab7e592eee5d0558de730144254a34a5c96ec1db17121b5966",
+    "fighter/gamewatch/motion/body/c06/d03speciallwend.nuanmb": "bdf1ab86e8235c88c74c9a846f157c6505703aa49ec21789979b2e3890fbb10a",
+    "fighter/gamewatch/motion/body/c06/d03speciallwshoot.nuanmb": "c3cf3cc331ebf6d0a9ce7275bafa31f1e8e64ced1ef658110e62f59601e7af02",
+    "fighter/gamewatch/motion/body/c06/d03speciallwstart.nuanmb": "950b7b144ac52e2dcc83e3e9d552a3e74fcb392205d092b66e6715b20acc68e6",
+    "fighter/gamewatch/motion/body/c06/motion_list.bin": "2793b96c5ddf8c721a079d00ca525e608c6d466d05dc7edb73211ad6bcd8df77"
+  }
+}

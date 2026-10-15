@@ -1,0 +1,66 @@
+[
+  {
+    "fighter": "elight",
+    "file": "ThrowB.txt",
+    "local": "d/elight__ThrowB.txt_RECIPIENT_CONTROL",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/ThrowB.txt",
+    "bytes": 4478,
+    "sha256": "7ee466dfe7702bdc0d41df06c0d1b69dd0188afb76b5192a9dec4fbe2ad70ec8"
+  },
+  {
+    "fighter": "elight",
+    "file": "ThrowLw.txt",
+    "local": "d/elight__ThrowLw.txt_RECIPIENT_CONTROL",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/ThrowLw.txt",
+    "bytes": 7848,
+    "sha256": "a9a38b63aae977d823edb05b6db340deca43e4e4d55df2a4e78d2143124faaf2"
+  },
+  {
+    "fighter": "luigi",
+    "file": "ThrowLw.txt",
+    "local": "d/luigi__ThrowLw.txt_CONTROL",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_luigi/luigi/ThrowLw.txt",
+    "bytes": 4618,
+    "sha256": "a1eef5ee45a013e88d02c65e5391954d2ddec2b0c5f2f84636913a207c5660aa"
+  },
+  {
+    "fighter": "ness",
+    "file": "ThrowB.txt",
+    "local": "d/ness__ThrowB.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_ness/ness/ThrowB.txt",
+    "bytes": 4345,
+    "sha256": "ce67f672edadf6dd7294ed5da2fe5e335d0264fcbf70b240d11a01aa46298bfb"
+  },
+  {
+    "fighter": "ness",
+    "file": "ThrowF.txt",
+    "local": "d/ness__ThrowF.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_ness/ness/ThrowF.txt",
+    "bytes": 3719,
+    "sha256": "bd05e190517814c33f37b65cd7617a056c7f4f5878f504fdd908f62cc4b5ea99"
+  },
+  {
+    "fighter": "ness",
+    "file": "ThrowHi.txt",
+    "local": "d/ness__ThrowHi.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_ness/ness/ThrowHi.txt",
+    "bytes": 4086,
+    "sha256": "49dd771ae97ea3121e1168e6358cf7f80ab14e132530e6d4542821619650646b"
+  },
+  {
+    "fighter": "ness",
+    "file": "ThrowLw.txt",
+    "local": "d/ness__ThrowLw.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_ness/ness/ThrowLw.txt",
+    "bytes": 5940,
+    "sha256": "cfb643a3c43117d03d0e75bbed92386b956b2a709f0711beeb51760f2c5842aa"
+  },
+  {
+    "fighter": "robot",
+    "file": "AttackLw3.txt",
+    "local": "d/robot__AttackLw3.txt_CONTROL",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_robot/robot/AttackLw3.txt",
+    "bytes": 6629,
+    "sha256": "65b13e7c00a04a1da900de4dc1d82540176d2a1c8d292f520b22c34029e3fa25"
+  }
+]

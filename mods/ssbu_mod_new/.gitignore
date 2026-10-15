@@ -1,0 +1,39 @@
+# Machine-local configuration and workspace-only material
+/paths.toml
+/scratch/
+/toolchains/
+/.freebuff/
+/evidence/sd-backups/
+
+# Keep only explicitly selected release packages in builds/.
+/builds/
+
+# Raw game dumps. Keep the dump index, missing-file list, and derived text.
+/dumps/*
+!/dumps/INDEX.md
+!/dumps/MISSING.md
+!/dumps/decoded/
+!/dumps/decoded/**
+/dumps/decoded/**/*.bin
+!/dumps/scripts/
+/dumps/scripts/**
+!/dumps/scripts/*.csv
+!/dumps/scripts/*.yml
+
+# Extracted game code bytes are dump material; retain the disassembly text.
+/src/pmclone/native/**/*.bin
+
+# Old copies and generated artifacts
+/src/mgw_swap/backups/
+/evidence/build-archives/**
+!/evidence/build-archives/
+!/evidence/build-archives/**/
+!/evidence/build-archives/**/*.json
+!/evidence/build-archives/**/*.md
+
+**/target/
+**/target-*/
+**/__pycache__/
+*.nro
+*.pyc
+sd-backup-*/

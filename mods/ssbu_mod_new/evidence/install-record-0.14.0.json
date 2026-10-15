@@ -1,0 +1,11 @@
+{
+    "version":  "0.14.0",
+    "installed_on":  "2026-09-29T20:30:38.2127546+02:00",
+    "card":  "<drive>:/",
+    "nro_sha256":  "0372cf5be5855e4cb5e1c8c3e36dd4636c82cd64693dc713c6ff2a214f2cfa90",
+    "mod_file_count":  1117,
+    "backup":  "sd-backup-20260929-202833",
+    "verification":  "Installer compared NRO and entire mod tree byte-for-byte",
+    "smashline_sha256_unchanged":  "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "console_test":  "pending"
+}

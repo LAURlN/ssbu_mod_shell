@@ -1,0 +1,1362 @@
+{
+  "evaluation": {
+    "rot_deg": [
+      0.0,
+      0.0,
+      -90.0
+    ],
+    "wanted_axis_in_joint_frame": null,
+    "orders": {
+      "zyx": {
+        "max_direction_error_deg": 19.2783,
+        "max_pitch_error_deg": 17.726,
+        "roll_about_bolt_axis_deg": [
+          113.862,
+          113.862
+        ]
+      },
+      "xyz": {
+        "max_direction_error_deg": 19.2783,
+        "max_pitch_error_deg": 17.726,
+        "roll_about_bolt_axis_deg": [
+          113.862,
+          113.862
+        ]
+      }
+    }
+  },
+  "tool": "tools/measure_hero_side_b_sword.py v1.2.0",
+  "tier": "B",
+  "joint": "Sword1",
+  "offset_z_deg": -90.0,
+  "donor": {
+    "skel": "refs\\brave_special_s\\arc\\fighter\\brave\\model\\body\\c06\\model.nusktb",
+    "skel_sha256": "35795d9bedbcf470bf2e3650fb0fa11e6e9850c96f94345a7561a32f73ce0f43",
+    "clip": "refs\\brave_special_s\\arc\\fighter\\brave\\motion\\body\\c06\\d01specials2.nuanmb",
+    "clip_sha256": "7732338b65a0c157c19cd7fd345615820c89451634f0d7f40776238ad3a6a698",
+    "final_frame": 77.0,
+    "chain": [
+      "Sword1",
+      "HandR",
+      "ArmR",
+      "ShoulderR",
+      "ClavicleR",
+      "ClavicleC",
+      "Bust",
+      "Waist",
+      "Hip",
+      "Rot",
+      "Trans"
+    ],
+    "animated": [
+      "Sword1",
+      "HandR",
+      "ArmR",
+      "ShoulderR",
+      "ClavicleR",
+      "ClavicleC",
+      "Bust",
+      "Waist",
+      "Hip",
+      "Rot",
+      "Trans"
+    ]
+  },
+  "recipient": {
+    "skel": "..\\..\\gamedata\\ssbu-13.0.4\\files\\fighter\\elight\\model\\body\\c06\\model.nusktb",
+    "skel_sha256": "5b6fbbe6f702e5ab9b14b208899799ec99f13c15e88611017b2547ac3de93f03",
+    "clip": "builds\\pgwr\\dk_cargo-0.1.1-test\\ultimate\\mods\\pyra_gamewatch_reskin\\fighter\\elight\\motion\\body\\c06\\pgwrherospecials2.nuanmb",
+    "clip_sha256": "8b78fed0908870f8554a2ae2d56bde004ad1b22cf502e17007edb0c7455472ae",
+    "final_frame": 77.0,
+    "chain": [
+      "Sword1",
+      "HaveR",
+      "HandR",
+      "ArmR",
+      "ShoulderR",
+      "ClavicleR",
+      "ClavicleC",
+      "Bust",
+      "Waist",
+      "Hip",
+      "Rot",
+      "Trans"
+    ],
+    "animated": [
+      "Sword1",
+      "HaveR",
+      "HandR",
+      "ArmR",
+      "ShoulderR",
+      "ClavicleR",
+      "ClavicleC",
+      "Bust",
+      "Waist",
+      "Hip",
+      "Rot",
+      "Trans"
+    ]
+  },
+  "frames": [
+    {
+      "frame": 10,
+      "donor_axes_pitch_deg": [
+        -4.097,
+        -64.187,
+        -84.807
+      ],
+      "recipient_axes_pitch_deg": [
+        11.766,
+        -89.244,
+        56.113
+      ],
+      "pitch_excess_deg": [
+        15.863,
+        -25.057,
+        140.92
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.1176,
+        -0.1291,
+        -0.9846
+      ],
+      "donor_axes": [
+        [
+          0.1049,
+          -0.0711,
+          0.9919
+        ],
+        [
+          -0.9784,
+          -0.1863,
+          0.0901
+        ],
+        [
+          0.1784,
+          -0.9799,
+          -0.0891
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.3005,
+          0.1945,
+          0.9338
+        ],
+        [
+          0.5669,
+          -0.8237,
+          -0.0109
+        ],
+        [
+          0.767,
+          0.5327,
+          -0.3577
+        ]
+      ]
+    },
+    {
+      "frame": 11,
+      "donor_axes_pitch_deg": [
+        -3.286,
+        -65.606,
+        -85.733
+      ],
+      "recipient_axes_pitch_deg": [
+        12.51,
+        -89.54,
+        55.78
+      ],
+      "pitch_excess_deg": [
+        15.796,
+        -23.934,
+        141.513
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.108,
+        -0.143,
+        -0.9838
+      ],
+      "donor_axes": [
+        [
+          0.0948,
+          -0.0571,
+          0.9939
+        ],
+        [
+          -0.9796,
+          -0.1829,
+          0.0829
+        ],
+        [
+          0.177,
+          -0.9815,
+          -0.0732
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2915,
+          0.2072,
+          0.9338
+        ],
+        [
+          0.5651,
+          -0.825,
+          0.0066
+        ],
+        [
+          0.7718,
+          0.5258,
+          -0.3576
+        ]
+      ]
+    },
+    {
+      "frame": 12,
+      "donor_axes_pitch_deg": [
+        -1.852,
+        -69.422,
+        -87.408
+      ],
+      "recipient_axes_pitch_deg": [
+        13.802,
+        -87.249,
+        55.406
+      ],
+      "pitch_excess_deg": [
+        15.655,
+        -17.827,
+        142.814
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0875,
+        -0.1674,
+        -0.982
+      ],
+      "donor_axes": [
+        [
+          0.073,
+          -0.0322,
+          0.9968
+        ],
+        [
+          -0.9821,
+          -0.1764,
+          0.0662
+        ],
+        [
+          0.1737,
+          -0.9838,
+          -0.0445
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2723,
+          0.2296,
+          0.9344
+        ],
+        [
+          0.5608,
+          -0.827,
+          0.0397
+        ],
+        [
+          0.7819,
+          0.5132,
+          -0.3539
+        ]
+      ]
+    },
+    {
+      "frame": 13,
+      "donor_axes_pitch_deg": [
+        -0.29,
+        -74.286,
+        -89.216
+      ],
+      "recipient_axes_pitch_deg": [
+        15.228,
+        -84.789,
+        55.069
+      ],
+      "pitch_excess_deg": [
+        15.518,
+        -10.504,
+        144.285
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0653,
+        -0.1941,
+        -0.9788
+      ],
+      "donor_axes": [
+        [
+          0.0497,
+          -0.0051,
+          0.9987
+        ],
+        [
+          -0.9841,
+          -0.1711,
+          0.0481
+        ],
+        [
+          0.1706,
+          -0.9852,
+          -0.0135
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2515,
+          0.2542,
+          0.9339
+        ],
+        [
+          0.5563,
+          -0.8276,
+          0.0755
+        ],
+        [
+          0.792,
+          0.5005,
+          -0.3496
+        ]
+      ]
+    },
+    {
+      "frame": 14,
+      "donor_axes_pitch_deg": [
+        0.554,
+        -79.326,
+        -89.745
+      ],
+      "recipient_axes_pitch_deg": [
+        15.973,
+        -83.219,
+        55.314
+      ],
+      "pitch_excess_deg": [
+        15.419,
+        -3.893,
+        145.06
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.047,
+        -0.2084,
+        -0.9769
+      ],
+      "donor_axes": [
+        [
+          0.0305,
+          0.0097,
+          0.9995
+        ],
+        [
+          -0.9852,
+          -0.1683,
+          0.0317
+        ],
+        [
+          0.1685,
+          -0.9857,
+          0.0044
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2341,
+          0.2675,
+          0.9347
+        ],
+        [
+          0.5528,
+          -0.8275,
+          0.0984
+        ],
+        [
+          0.7998,
+          0.4936,
+          -0.3416
+        ]
+      ]
+    },
+    {
+      "frame": 15,
+      "donor_axes_pitch_deg": [
+        0.651,
+        -83.827,
+        -89.514
+      ],
+      "recipient_axes_pitch_deg": [
+        16.036,
+        -82.595,
+        56.165
+      ],
+      "pitch_excess_deg": [
+        15.386,
+        1.232,
+        145.679
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0331,
+        -0.2101,
+        -0.9771
+      ],
+      "donor_axes": [
+        [
+          0.0167,
+          0.0114,
+          0.9998
+        ],
+        [
+          -0.9853,
+          -0.1698,
+          0.0184
+        ],
+        [
+          0.17,
+          -0.9854,
+          0.0084
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2208,
+          0.2694,
+          0.9374
+        ],
+        [
+          0.5526,
+          -0.8265,
+          0.1074
+        ],
+        [
+          0.8037,
+          0.4943,
+          -0.3313
+        ]
+      ]
+    },
+    {
+      "frame": 16,
+      "donor_axes_pitch_deg": [
+        0.537,
+        -87.003,
+        -89.539
+      ],
+      "recipient_axes_pitch_deg": [
+        15.933,
+        -82.35,
+        57.025
+      ],
+      "pitch_excess_deg": [
+        15.396,
+        4.653,
+        146.564
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0235,
+        -0.2082,
+        -0.9778
+      ],
+      "donor_axes": [
+        [
+          0.0076,
+          0.0094,
+          0.9999
+        ],
+        [
+          -0.9848,
+          -0.1734,
+          0.0091
+        ],
+        [
+          0.1735,
+          -0.9848,
+          0.0079
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2113,
+          0.2683,
+          0.9399
+        ],
+        [
+          0.5547,
+          -0.8247,
+          0.1108
+        ],
+        [
+          0.8048,
+          0.4979,
+          -0.323
+        ]
+      ]
+    },
+    {
+      "frame": 17,
+      "donor_axes_pitch_deg": [
+        0.326,
+        -88.389,
+        -89.715
+      ],
+      "recipient_axes_pitch_deg": [
+        15.733,
+        -82.417,
+        57.553
+      ],
+      "pitch_excess_deg": [
+        15.407,
+        5.972,
+        147.267
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0196,
+        -0.2047,
+        -0.9786
+      ],
+      "donor_axes": [
+        [
+          0.004,
+          0.0057,
+          1.0
+        ],
+        [
+          -0.9845,
+          -0.1754,
+          0.0049
+        ],
+        [
+          0.1754,
+          -0.9845,
+          0.0049
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2074,
+          0.2653,
+          0.9416
+        ],
+        [
+          0.5559,
+          -0.824,
+          0.1097
+        ],
+        [
+          0.805,
+          0.5007,
+          -0.3183
+        ]
+      ]
+    },
+    {
+      "frame": 18,
+      "donor_axes_pitch_deg": [
+        0.118,
+        -88.732,
+        -89.919
+      ],
+      "recipient_axes_pitch_deg": [
+        15.519,
+        -82.611,
+        57.772
+      ],
+      "pitch_excess_deg": [
+        15.401,
+        6.121,
+        147.69
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0193,
+        -0.2011,
+        -0.9794
+      ],
+      "donor_axes": [
+        [
+          0.0036,
+          0.0021,
+          1.0
+        ],
+        [
+          -0.9846,
+          -0.175,
+          0.0039
+        ],
+        [
+          0.175,
+          -0.9846,
+          0.0014
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2071,
+          0.2618,
+          0.9427
+        ],
+        [
+          0.5555,
+          -0.8246,
+          0.1069
+        ],
+        [
+          0.8053,
+          0.5015,
+          -0.3162
+        ]
+      ]
+    },
+    {
+      "frame": 19,
+      "donor_axes_pitch_deg": [
+        -0.11,
+        -88.849,
+        -89.85
+      ],
+      "recipient_axes_pitch_deg": [
+        15.296,
+        -82.85,
+        57.99
+      ],
+      "pitch_excess_deg": [
+        15.406,
+        5.999,
+        147.84
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0196,
+        -0.1972,
+        -0.9802
+      ],
+      "donor_axes": [
+        [
+          0.0039,
+          -0.0019,
+          1.0
+        ],
+        [
+          -0.9845,
+          -0.1754,
+          0.0035
+        ],
+        [
+          0.1754,
+          -0.9845,
+          -0.0026
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2073,
+          0.2581,
+          0.9436
+        ],
+        [
+          0.5558,
+          -0.8248,
+          0.1035
+        ],
+        [
+          0.805,
+          0.503,
+          -0.3145
+        ]
+      ]
+    },
+    {
+      "frame": 20,
+      "donor_axes_pitch_deg": [
+        -0.306,
+        -89.137,
+        -89.657
+      ],
+      "recipient_axes_pitch_deg": [
+        15.095,
+        -83.037,
+        58.193
+      ],
+      "pitch_excess_deg": [
+        15.401,
+        6.1,
+        147.85
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0193,
+        -0.1939,
+        -0.9808
+      ],
+      "donor_axes": [
+        [
+          0.0036,
+          -0.0053,
+          1.0
+        ],
+        [
+          -0.9846,
+          -0.1751,
+          0.0026
+        ],
+        [
+          0.1751,
+          -0.9845,
+          -0.0059
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2071,
+          0.2548,
+          0.9446
+        ],
+        [
+          0.5556,
+          -0.8253,
+          0.1008
+        ],
+        [
+          0.8053,
+          0.5039,
+          -0.3125
+        ]
+      ]
+    },
+    {
+      "frame": 21,
+      "donor_axes_pitch_deg": [
+        -0.557,
+        -89.353,
+        -89.405
+      ],
+      "recipient_axes_pitch_deg": [
+        14.846,
+        -83.292,
+        58.442
+      ],
+      "pitch_excess_deg": [
+        15.403,
+        6.061,
+        147.847
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0194,
+        -0.1896,
+        -0.9817
+      ],
+      "donor_axes": [
+        [
+          0.0037,
+          -0.0097,
+          0.9999
+        ],
+        [
+          -0.9845,
+          -0.1752,
+          0.002
+        ],
+        [
+          0.1752,
+          -0.9845,
+          -0.0102
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2072,
+          0.2507,
+          0.9456
+        ],
+        [
+          0.5557,
+          -0.8257,
+          0.0971
+        ],
+        [
+          0.8052,
+          0.5053,
+          -0.3104
+        ]
+      ]
+    },
+    {
+      "frame": 22,
+      "donor_axes_pitch_deg": [
+        -0.791,
+        -89.631,
+        -89.173
+      ],
+      "recipient_axes_pitch_deg": [
+        14.61,
+        -83.521,
+        58.679
+      ],
+      "pitch_excess_deg": [
+        15.401,
+        6.111,
+        147.851
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0193,
+        -0.1856,
+        -0.9824
+      ],
+      "donor_axes": [
+        [
+          0.0036,
+          -0.0138,
+          0.9999
+        ],
+        [
+          -0.9846,
+          -0.1751,
+          0.0011
+        ],
+        [
+          0.175,
+          -0.9845,
+          -0.0142
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2071,
+          0.2468,
+          0.9467
+        ],
+        [
+          0.5555,
+          -0.8262,
+          0.0938
+        ],
+        [
+          0.8053,
+          0.5065,
+          -0.3082
+        ]
+      ]
+    },
+    {
+      "frame": 23,
+      "donor_axes_pitch_deg": [
+        -0.988,
+        -89.707,
+        -88.972
+      ],
+      "recipient_axes_pitch_deg": [
+        14.418,
+        -83.731,
+        58.864
+      ],
+      "pitch_excess_deg": [
+        15.406,
+        5.977,
+        147.836
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0196,
+        -0.1822,
+        -0.9831
+      ],
+      "donor_axes": [
+        [
+          0.004,
+          -0.0172,
+          0.9998
+        ],
+        [
+          -0.9845,
+          -0.1754,
+          0.0009
+        ],
+        [
+          0.1754,
+          -0.9843,
+          -0.0177
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2074,
+          0.2436,
+          0.9474
+        ],
+        [
+          0.5558,
+          -0.8263,
+          0.0908
+        ],
+        [
+          0.805,
+          0.5078,
+          -0.3068
+        ]
+      ]
+    },
+    {
+      "frame": 24,
+      "donor_axes_pitch_deg": [
+        -1.133,
+        -89.97,
+        -88.83
+      ],
+      "recipient_axes_pitch_deg": [
+        14.269,
+        -83.863,
+        59.025
+      ],
+      "pitch_excess_deg": [
+        15.402,
+        6.106,
+        147.855
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0193,
+        -0.1797,
+        -0.9835
+      ],
+      "donor_axes": [
+        [
+          0.0036,
+          -0.0198,
+          0.9998
+        ],
+        [
+          -0.9845,
+          -0.1752,
+          0.0001
+        ],
+        [
+          0.1752,
+          -0.9843,
+          -0.0201
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2071,
+          0.2411,
+          0.9481
+        ],
+        [
+          0.5556,
+          -0.8267,
+          0.0889
+        ],
+        [
+          0.8052,
+          0.5084,
+          -0.3052
+        ]
+      ]
+    },
+    {
+      "frame": 25,
+      "donor_axes_pitch_deg": [
+        -1.23,
+        -89.955,
+        -88.732
+      ],
+      "recipient_axes_pitch_deg": [
+        14.177,
+        -83.961,
+        59.135
+      ],
+      "pitch_excess_deg": [
+        15.408,
+        5.994,
+        147.867
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0193,
+        -0.178,
+        -0.9838
+      ],
+      "donor_axes": [
+        [
+          0.0037,
+          -0.0215,
+          0.9998
+        ],
+        [
+          -0.9845,
+          -0.1756,
+          -0.0001
+        ],
+        [
+          0.1756,
+          -0.9842,
+          -0.0218
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2071,
+          0.2396,
+          0.9485
+        ],
+        [
+          0.556,
+          -0.8266,
+          0.0874
+        ],
+        [
+          0.805,
+          0.5093,
+          -0.3044
+        ]
+      ]
+    },
+    {
+      "frame": 26,
+      "donor_axes_pitch_deg": [
+        -1.249,
+        -89.941,
+        -88.713
+      ],
+      "recipient_axes_pitch_deg": [
+        14.153,
+        -83.983,
+        59.134
+      ],
+      "pitch_excess_deg": [
+        15.402,
+        5.958,
+        147.847
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        -0.0194,
+        -0.1777,
+        -0.9839
+      ],
+      "donor_axes": [
+        [
+          0.0037,
+          -0.0218,
+          0.9998
+        ],
+        [
+          -0.9845,
+          -0.1751,
+          -0.0002
+        ],
+        [
+          0.1751,
+          -0.9843,
+          -0.0221
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.2072,
+          0.2392,
+          0.9486
+        ],
+        [
+          0.5556,
+          -0.8269,
+          0.0872
+        ],
+        [
+          0.8052,
+          0.509,
+          -0.3042
+        ]
+      ]
+    },
+    {
+      "frame": 27,
+      "donor_axes_pitch_deg": [
+        0.4,
+        -76.743,
+        -88.906
+      ],
+      "recipient_axes_pitch_deg": [
+        16.133,
+        -79.734,
+        62.961
+      ],
+      "pitch_excess_deg": [
+        15.733,
+        -2.991,
+        151.868
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        0.0461,
+        -0.2064,
+        -0.9774
+      ],
+      "donor_axes": [
+        [
+          -0.0542,
+          0.007,
+          0.9985
+        ],
+        [
+          -0.9746,
+          -0.2182,
+          -0.0514
+        ],
+        [
+          0.2175,
+          -0.9759,
+          0.0186
+        ]
+      ],
+      "recipient_axes": [
+        [
+          0.1407,
+          0.2751,
+          0.9511
+        ],
+        [
+          0.5839,
+          -0.7988,
+          0.1447
+        ],
+        [
+          0.7995,
+          0.535,
+          -0.273
+        ]
+      ]
+    },
+    {
+      "frame": 28,
+      "donor_axes_pitch_deg": [
+        3.659,
+        -64.524,
+        -82.953
+      ],
+      "recipient_axes_pitch_deg": [
+        20.251,
+        -69.351,
+        70.342
+      ],
+      "pitch_excess_deg": [
+        16.592,
+        -4.826,
+        153.296
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        0.1897,
+        -0.2603,
+        -0.9467
+      ],
+      "donor_axes": [
+        [
+          -0.1816,
+          0.0628,
+          0.9814
+        ],
+        [
+          -0.935,
+          -0.3202,
+          -0.1526
+        ],
+        [
+          0.3047,
+          -0.9453,
+          0.1168
+        ]
+      ],
+      "recipient_axes": [
+        [
+          -0.0085,
+          0.3461,
+          0.9381
+        ],
+        [
+          0.6336,
+          -0.724,
+          0.2728
+        ],
+        [
+          0.7736,
+          0.5967,
+          -0.2132
+        ]
+      ]
+    },
+    {
+      "frame": 29,
+      "donor_axes_pitch_deg": [
+        6.799,
+        -62.168,
+        -75.562
+      ],
+      "recipient_axes_pitch_deg": [
+        24.525,
+        -57.268,
+        75.219
+      ],
+      "pitch_excess_deg": [
+        17.726,
+        4.9,
+        150.781
+      ],
+      "residual_angle_deg": 113.939,
+      "residual_axis_effect_frame": [
+        -0.9799,
+        0.0504,
+        0.1933
+      ],
+      "residual_axis_model_space": [
+        0.3285,
+        -0.3051,
+        -0.8938
+      ],
+      "donor_axes": [
+        [
+          -0.3044,
+          0.1128,
+          0.9459
+        ],
+        [
+          -0.8717,
+          -0.4334,
+          -0.2288
+        ],
+        [
+          0.3841,
+          -0.8941,
+          0.2302
+        ]
+      ],
+      "recipient_axes": [
+        [
+          -0.1574,
+          0.4099,
+          0.8984
+        ],
+        [
+          0.6672,
+          -0.6266,
+          0.4028
+        ],
+        [
+          0.728,
+          0.6628,
+          -0.1749
+        ]
+      ]
+    }
+  ]
+}

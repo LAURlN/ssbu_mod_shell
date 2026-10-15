@@ -1,0 +1,17 @@
+{
+  "task": "dk_cargo",
+  "date": "2026-10-02",
+  "game_version": "13.0.4",
+  "local_game_source": "workspace gamedata/ssbu-13.0.4/data.arc; read-only extraction into gamedata/ssbu-13.0.4/dk_cargo",
+  "arc_identity_record": "workspace gamedata/ssbu-13.0.4/data.arc.provenance.json (archive identity inherited from extraction provenance; the full archive was not rehashed by this task)",
+  "file_hashes": "local_inputs.json",
+  "public_sources": "public_sources.json; WuBoytH/SSBU-Dumped-Scripts 59004685238a3f6f93bae905d3a4e079701c40b4 and skyline-smash 315e4e8bebb460ebb9f02f30f07b0f13883ba3d6",
+  "main_image": "workspace gamedata/ssbu-13.0.4/main.bin",
+  "main_sha256": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613",
+  "donkey_nro_sha256": "14030b3cfb605cddf114ba5f140dbd554515b7834209e15067a6dd632c9b555b",
+  "common_nro_sha256": "43876f961a80e413370629d32c23af9de6e4cc26b448bab88d5433714a566097",
+  "evidence_tiers": "B for measured bytes/registrations/asset checks; C for pinned public scripts/bindings; D for unresolved semantics and behavior; no new hardware evidence",
+  "semantic_graph_complete": false,
+  "runtime_implemented": false,
+  "status": "BLOCKED_NOT_READY"
+}

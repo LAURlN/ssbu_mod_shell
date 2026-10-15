@@ -1,0 +1,60 @@
+{
+  "build": "p9",
+  "purpose": "fix attempt: patch the state-5 skip at 0x49748c for calls that would fault, plus a pre-call STATE dump that survives the crash",
+  "game_version": "13.0.4",
+  "sdroot_count": 1244,
+  "copied_donor_count": 1149,
+  "still_missing_sound_files": 18,
+  "motion_lists_audited": 15,
+  "motion_lists_missing_clips": 0,
+  "article_declarations": [
+    "mgw_mythra/esword -> elight/esword",
+    "mgw_mythra/bunshin -> elight/bunshin"
+  ],
+  "pack_lint_exit": 0,
+  "pack_lint_warnings": 1,
+  "zip_count": 0,
+  "clone_engine_sha256": "85eeec01fee8e71283378271d2cfdc12b5d025d00c0461fab79d6d8e292d90a3",
+  "clone_engine_size": 1736704,
+  "clone_engine_features": "default (beta) + diag_article_motion",
+  "engine_markers": [
+    "[motionbind] p9 diagnostics armed: motion bind BEFORE trace, articlescope STATE dump, motion rate guard and change motion trace at 0x497350/0x49dc50/0x6defa0, forced holder path at 0x49748c",
+    "[articlescope] STATE n=... object=... kind=... module=... mkind=... holder=... res=... count=... state_obj=... vt=... method=@... +0x38=... +0x256=... flags=[...]",
+    "[motionbind] FORCE holder path module=...: nop state-5 skip at ... for this call",
+    "[motionbind] FORCE refused module=...: ... holds ..., expected 0x54004e20",
+    "[articlescope] ... - CRASH PRECONDITION: holder null with a bound resource, p9 forces the holder path"
+  ],
+  "fix": {
+    "site": "main + 0x49748c (b.eq 0x497e50, state-5 skip of the 0xa0-byte holder allocation at 0x49749c)",
+    "gate": "motion_bind_probe sees holder == 0 with a bound resource and a nonzero count at [module+0x148]+0x98",
+    "action": "write nop (0xd503201f), flush dcache/icache, call the original, restore 0x54004e20 and flush again",
+    "refusal": "the patch does nothing unless 0x49748c still reads 0x54004e20, and logs FORCE refused",
+    "scope": "one call at a time; the branch is open only while that call runs"
+  },
+  "engine_overlay": {
+    "vendor": "vendor/ssbu_clone_engine",
+    "patch_file": "engine-local-changes.patch",
+    "patch_sha256": "18a485bdf4b298a73f149d75f65a5e40e88c1fc3ae03e18d8a3b8b35213136ad",
+    "manifest_vendor_overlays": "18a485bdf4b298a73f149d75f65a5e40e88c1fc3ae03e18d8a3b8b35213136ad",
+    "note": "the diff also carries cargo's git URL normalisation of Cargo.lock, which this machine's cargo writes on every build"
+  },
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "probe_sha256": "36eb0d20be743bd0dbdbbd25dffe1a6340981a08c8457a9ab372b15b846895e2",
+  "probe_marker": "[MGW-CLONE] build p9: independent clones, clone-owned Mythra articles, forced motion holder path, ...",
+  "mod_display_name": "MGW Standalone - Clone Probe p9 Holders",
+  "motion_diagnostics_enabled": true,
+  "motion_diagnostics_pre_call": [
+    "motion_bind_probe logs the holder/resource state before the hooked call",
+    "weapon_motion_setup_probe logs the owner-scope decision and the new STATE dump before the hooked call"
+  ],
+  "post_package_checks": {
+    "method": "run after tools/package_probe.py, against staging/p8-i5rn_yhv and ../mod_output, 2026-09-27",
+    "engine_markers_in_packaged_nro": "grep -a on mod_output/.../libssbu_clone_engine.nro found one occurrence each of 'p9 diagnostics armed', '[articlescope] STATE', '[motionbind] FORCE holder path', '[motionbind] FORCE refused', 'CRASH PRECONDITION', 'nop state-5 skip'",
+    "probe_marker_in_packaged_nro": "'build p9: independent clones' present in mod_output/ultimate/mods/MGW_Standalone_Probe/plugin.nro",
+    "output_hashes_match_build_and_manifest": "independent sha256 recheck of every manifest entry against ../mod_output: 1244 files, 0 missing, 0 mismatched, 0 extra",
+    "display_name_in_packaged_mod": "info.toml in mod_output reads 'MGW Standalone - Clone Probe p9 Holders', version 0.5.0",
+    "pack_lint": "lint_clone_pack.py exit 0, 1 inheritance warning (bunshin has no own model folder)"
+  },
+  "switch_tested": false,
+  "mythra_crash_fix_confirmed": false
+}

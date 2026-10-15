@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "source": "Smash Ultimate 13.0.4 on the user console, read-only arc-network (libarc_network.nro) extraction, region 2",
+  "tool": "tools/fetch_arc_files.py --set snake_grenade",
+  "paths_from": "dumps/decoded/arc_files.tsv (exact index entries, no guessed names)",
+  "purpose": "Snake neutral-B grenade port to Pyra c06/c07: body motion list, se_snake_c00 bank, fighter grenade (pin) article model c00, item/snakegrenade model/motion/animcmd .lc",
+  "files": 35,
+  "failures": [],
+  "verify": "tools/fetch_arc_files.py --set snake_grenade --check",
+  "extracted_by": "claude"
+}

@@ -1,0 +1,122 @@
+{
+  "donor": "Mii Swordfighter Hero's Spin (Hi3)",
+  "donor_motion_list_sha256": "9692b79ea80dba9abf64da65dbfa2ce064eab912572f06841cf2902a4f41027a",
+  "recipient_skeleton_sha256": "5b6fbbe6f702e5ab9b14b208899799ec99f13c15e88611017b2547ac3de93f03",
+  "recipient_motion_list_sha256": "0b091450a00bdb2b382c59e965997f96d2a387dd2581d7d492183dd69d56c2f7",
+  "motions": [
+    {
+      "donor_slot": "special_hi3_start",
+      "donor_animation": "d02specialhi3start.nuanmb",
+      "donor_sha256": "4351ef1fd837712a244a0ddf53945abbe7321b0ee7842e113ef45c64fad7d24c",
+      "recipient_slot": "special_hi_start",
+      "recipient_animation": "d02specialhistart.nuanmb",
+      "frames": 8,
+      "kept_bones": 64,
+      "dropped_bones": [
+        "FingerL14_eff",
+        "FingerL24_eff",
+        "FingerL34_eff",
+        "FingerL44_eff",
+        "FingerL54_eff",
+        "FingerR14_eff",
+        "FingerR24_eff",
+        "FingerR34_eff",
+        "FingerR44_eff",
+        "FingerR54_eff",
+        "Miihead"
+      ],
+      "output_bytes": 21552,
+      "output_sha256": "5ca1319f57fee410427d5f57c3d9675ad03e70246a2b1665bb655c68bc92df51"
+    },
+    {
+      "donor_slot": "special_hi3_hold",
+      "donor_animation": "d02specialhi3hold.nuanmb",
+      "donor_sha256": "e6049cc8622af5ade38e7a8f0b5d9f05c79b4c8a5502b37d87267cf63ce4b3be",
+      "recipient_slot": "special_air_hi1",
+      "recipient_animation": "d02specialairhi1.nuanmb",
+      "frames": 61,
+      "kept_bones": 64,
+      "dropped_bones": [
+        "FingerL14_eff",
+        "FingerL24_eff",
+        "FingerL34_eff",
+        "FingerL44_eff",
+        "FingerL54_eff",
+        "FingerR14_eff",
+        "FingerR24_eff",
+        "FingerR34_eff",
+        "FingerR44_eff",
+        "FingerR54_eff",
+        "Miihead"
+      ],
+      "output_bytes": 28176,
+      "output_sha256": "9d81bb35a02d60a7130646f88103acfddc93672532922762184a3a3ffe0681ed"
+    },
+    {
+      "donor_slot": "special_hi3",
+      "donor_animation": "d02specialhi3.nuanmb",
+      "donor_sha256": "b6b3c3b7edcae3b3bd8b098cecf216b093d19ca27549b2cb76cbc33711dcee4f",
+      "recipient_slot": "special_air_hi_jump",
+      "recipient_animation": "d02specialairhijump.nuanmb",
+      "frames": 83,
+      "kept_bones": 64,
+      "dropped_bones": [
+        "FingerL14_eff",
+        "FingerL24_eff",
+        "FingerL34_eff",
+        "FingerL44_eff",
+        "FingerL54_eff",
+        "FingerR14_eff",
+        "FingerR24_eff",
+        "FingerR34_eff",
+        "FingerR44_eff",
+        "FingerR54_eff",
+        "Miihead"
+      ],
+      "output_bytes": 49976,
+      "output_sha256": "8842736b39267191eba8ca69e5f4cb92e641e4c767294f51db790d35d7992a12"
+    },
+    {
+      "donor_slot": "special_air_hi3",
+      "donor_animation": "d02specialairhi3.nuanmb",
+      "donor_sha256": "9cc205a67e19e2c9eec38283586fa02a03955d81a55cbba1cc82fa082cf20b88",
+      "recipient_slot": "special_air_hi_end",
+      "recipient_animation": "d02specialairhiend.nuanmb",
+      "frames": 86,
+      "kept_bones": 64,
+      "dropped_bones": [
+        "FingerL14_eff",
+        "FingerL24_eff",
+        "FingerL34_eff",
+        "FingerL44_eff",
+        "FingerL54_eff",
+        "FingerR14_eff",
+        "FingerR24_eff",
+        "FingerR34_eff",
+        "FingerR44_eff",
+        "FingerR54_eff",
+        "Miihead"
+      ],
+      "output_bytes": 57712,
+      "output_sha256": "06301334690b5ef568b07f8e11dd3bc109966e8226b69707ac57dc1d55de56b0"
+    }
+  ],
+  "motion_list": {
+    "output_bytes": 43712,
+    "output_sha256": "54ec4fb390344927ce6b31be542ae6284a2618b2e49ad4536464448d88e66002",
+    "patched_slots": {
+      "special_air_hi1": [
+        130,
+        0
+      ],
+      "special_air_hi_jump": [
+        128,
+        75
+      ],
+      "special_air_hi_end": [
+        128,
+        0
+      ]
+    }
+  }
+}

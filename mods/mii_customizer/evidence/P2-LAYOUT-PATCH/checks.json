@@ -1,0 +1,334 @@
+{
+ "all_pass": true,
+ "checks": [
+  {
+   "check": "builder exits 0 on its documented arguments",
+   "pass": true
+  },
+  {
+   "check": "builder refuses nothing on the happy path",
+   "pass": true
+  },
+  {
+   "check": "builder writes its JSON report to mods/mii_customizer/evidence/P2-LAYOUT-PATCH\\diagnostic.json",
+   "pass": true
+  },
+  {
+   "check": "builder reports all of its own checks passing",
+   "pass": true
+  },
+  {
+   "check": "builder ran 18 internal checks",
+   "pass": true
+  },
+  {
+   "check": "control archive is byte-identical to the pinned input (5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945)",
+   "pass": true
+  },
+  {
+   "check": "patched archive on disk matches the hash in the report (86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877)",
+   "pass": true
+  },
+  {
+   "check": "patched member payload is a same-length 10408-byte file that differs from the original",
+   "pass": true
+  },
+  {
+   "check": "all three archives are the same length",
+   "pass": true
+  },
+  {
+   "check": "patched archive differs at exactly [85570, 85574] (got ['0x14e42', '0x14e46'])",
+   "pass": true
+  },
+  {
+   "check": "archive offset 0x14e42 maps into a scale field (member offset 0x10e2)",
+   "pass": true
+  },
+  {
+   "check": "archive offset 0x14e46 maps into a scale field (member offset 0x10e6)",
+   "pass": true
+  },
+  {
+   "check": "sarc-layout verify accepts the input archive",
+   "pass": true
+  },
+  {
+   "check": "sarc-layout verify accepts the control archive",
+   "pass": true
+  },
+  {
+   "check": "sarc-layout verify accepts the patched archive",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect finds the row at the same offset in the emitted payload",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect reads scale [0.75, 0.75] on the patched payload (got [0.75, 0.75])",
+   "pass": true
+  },
+  {
+   "check": "the same inspector reports scale [1.0, 1.0] on the original layout",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect shows position unchanged by the patch",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect shows extent unchanged by the patch",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect shows child_count unchanged by the patch",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect shows name unchanged by the patch",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect shows size unchanged by the patch",
+   "pass": true
+  },
+  {
+   "check": "bflyt-inspect verifies the original and patched layouts",
+   "pass": true
+  },
+  {
+   "check": "two --dry-run invocations both exit 0",
+   "pass": true
+  },
+  {
+   "check": "two --dry-run invocations produce identical reports",
+   "pass": true
+  },
+  {
+   "check": "the dry run predicts the same hashes that were written",
+   "pass": true
+  },
+  {
+   "check": "ambiguous part name exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "ambiguous part name prints a refusal reason: refused: bflyt-inspect finds 4 prt1 parts matching 'set_special_item' in gamedata/mii_customizer/P1-LAYOUT/unpacked/make_mii_special/blyt/make_mii_special.bflyt; refusing to guess an offset",
+   "pass": true
+  },
+  {
+   "check": "ambiguous part name names the reason 'finds 4 prt1 parts matching'",
+   "pass": true
+  },
+  {
+   "check": "ambiguous part name writes no output file",
+   "pass": true
+  },
+  {
+   "check": "unknown part name exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "unknown part name prints a refusal reason: refused: bflyt-inspect finds 0 prt1 parts matching 'set_special_item_04' in gamedata/mii_customizer/P1-LAYOUT/unpacked/make_mii_special/blyt/make_mii_special.bflyt; refusing to guess an offset",
+   "pass": true
+  },
+  {
+   "check": "unknown part name names the reason 'finds 0 prt1 parts matching'",
+   "pass": true
+  },
+  {
+   "check": "unknown part name writes no output file",
+   "pass": true
+  },
+  {
+   "check": "wrong archive hash exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "wrong archive hash prints a refusal reason: refused: unexpected archive hash: gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc has sha256 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945, pinned 0000000000000000000000000000000000000000000000000000000000000000; refusing to patch an unrecognised input",
+   "pass": true
+  },
+  {
+   "check": "wrong archive hash names the reason 'unexpected archive hash'",
+   "pass": true
+  },
+  {
+   "check": "wrong archive hash writes no output file",
+   "pass": true
+  },
+  {
+   "check": "wrong archive exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "wrong archive prints a refusal reason: refused: unexpected archive hash: gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc has sha256 f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212, pinned 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945; refusing to patch an unrecognised input",
+   "pass": true
+  },
+  {
+   "check": "wrong archive names the reason 'unexpected archive hash'",
+   "pass": true
+  },
+  {
+   "check": "wrong archive writes no output file",
+   "pass": true
+  },
+  {
+   "check": "wrong member hash exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "wrong member hash prints a refusal reason: refused: unexpected member hash: blyt/make_mii_special.bflyt!layout.arc has sha256 a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8, pinned 0000000000000000000000000000000000000000000000000000000000000000",
+   "pass": true
+  },
+  {
+   "check": "wrong member hash names the reason 'unexpected member hash'",
+   "pass": true
+  },
+  {
+   "check": "wrong member hash writes no output file",
+   "pass": true
+  },
+  {
+   "check": "member that is not a BFLYT exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "member that is not a BFLYT prints a refusal reason: refused: member anim/make_mii_special_in.bflan payload starts with b'FLAN', not FLYT; unsupported structure for this diagnostic",
+   "pass": true
+  },
+  {
+   "check": "member that is not a BFLYT names the reason 'not FLYT'",
+   "pass": true
+  },
+  {
+   "check": "member that is not a BFLYT writes no output file",
+   "pass": true
+  },
+  {
+   "check": "zero scale exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "zero scale prints a refusal reason: refused: requested scale_x 0.0 is not positive",
+   "pass": true
+  },
+  {
+   "check": "zero scale names the reason 'not positive'",
+   "pass": true
+  },
+  {
+   "check": "zero scale writes no output file",
+   "pass": true
+  },
+  {
+   "check": "negative scale exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "negative scale prints a refusal reason: refused: requested scale_x -1.0 is not positive",
+   "pass": true
+  },
+  {
+   "check": "negative scale names the reason 'not positive'",
+   "pass": true
+  },
+  {
+   "check": "negative scale writes no output file",
+   "pass": true
+  },
+  {
+   "check": "non-finite scale exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "non-finite scale prints a refusal reason: refused: requested scale_x inf is not finite",
+   "pass": true
+  },
+  {
+   "check": "non-finite scale names the reason 'not finite'",
+   "pass": true
+  },
+  {
+   "check": "non-finite scale writes no output file",
+   "pass": true
+  },
+  {
+   "check": "scale that overflows f32 exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "scale that overflows f32 prints a refusal reason: refused: requested scale_x 1e+39 does not fit in an f32: float too large to pack with f format",
+   "pass": true
+  },
+  {
+   "check": "scale that overflows f32 names the reason 'does not fit in an f32'",
+   "pass": true
+  },
+  {
+   "check": "scale that overflows f32 writes no output file",
+   "pass": true
+  },
+  {
+   "check": "output inside a read-only input tree exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "output inside a read-only input tree prints a refusal reason: refused: refusing to write gamedata\\mii_customizer\\P1-LAYOUT\\unpacked\\p2\\control\\layout_original.arc: supplied inputs live under gamedata\\mii_customizer\\P1-LAYOUT and are read-only",
+   "pass": true
+  },
+  {
+   "check": "output inside a read-only input tree names the reason 'read-only'",
+   "pass": true
+  },
+  {
+   "check": "output inside a read-only input tree writes no output file",
+   "pass": true
+  },
+  {
+   "check": "output equal to the input archive exits nonzero (got 2)",
+   "pass": true
+  },
+  {
+   "check": "output equal to the input archive prints a refusal reason: refused: refusing to write gamedata\\mii_customizer\\P1-UI\\ui\\layout\\menu\\make_mii_special\\make_mii_special\\control\\layout_original.arc: supplied inputs live under gamedata\\mii_customizer\\P1-UI\\ui\\layout\\menu\\make_mii_special\\make_mii_special and are read-only",
+   "pass": true
+  },
+  {
+   "check": "output equal to the input archive names the reason 'read-only'",
+   "pass": true
+  },
+  {
+   "check": "output equal to the input archive writes no output file",
+   "pass": true
+  },
+  {
+   "check": "gamedata/mii_customizer/P1-UI is unchanged (file set and sizes)",
+   "pass": true
+  },
+  {
+   "check": "gamedata/mii_customizer/P1-LAYOUT is unchanged (file set and sizes)",
+   "pass": true
+  },
+  {
+   "check": "input archive still hashes to its pinned value",
+   "pass": true
+  },
+  {
+   "check": "input extracted layout still hashes to its pinned value",
+   "pass": true
+  },
+  {
+   "check": "the patched diagnostic archive is still in place after the refusals",
+   "pass": true
+  }
+ ],
+ "control_archive_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+ "differing_archive_byte_offsets": [
+  "0x14e42",
+  "0x14e46"
+ ],
+ "failed": 0,
+ "patched_archive_sha256": "86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877",
+ "task": "P2-LAYOUT-PATCH",
+ "total": 80
+}

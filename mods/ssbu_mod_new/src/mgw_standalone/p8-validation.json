@@ -1,0 +1,44 @@
+{
+  "build": "p8",
+  "purpose": "instrumentation only: pre-call motion-holder state at main +0x497350; no behavior fix yet",
+  "game_version": "13.0.4",
+  "sdroot_count": 1244,
+  "copied_donor_count": 1149,
+  "still_missing_sound_files": 18,
+  "motion_lists_audited": 15,
+  "motion_lists_missing_clips": 0,
+  "article_declarations": [
+    "mgw_mythra/esword -> elight/esword",
+    "mgw_mythra/bunshin -> elight/bunshin"
+  ],
+  "pack_lint_exit": 0,
+  "pack_lint_warnings": 1,
+  "zip_count": 0,
+  "clone_engine_sha256": "c004f1b4782ebcc671355eb1dc8c2e744b7207911abdb0189012c3e7963124ce",
+  "clone_engine_features": "default (beta) + diag_article_motion",
+  "engine_overlay": {
+    "vendor": "vendor/ssbu_clone_engine",
+    "patch_file": "engine-local-changes.patch",
+    "patch_sha256": "cf3f55ced97290f6e99422d8ebb7485e7884969637540743d053f790bb1e9d24",
+    "manifest_vendor_overlays": "cf3f55ced97290f6e99422d8ebb7485e7884969637540743d053f790bb1e9d24"
+  },
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "probe_sha256": "43bd80af9f0011ff1a7b3f278438f7a7659750025ea263fdbbfc3ab9853de92b",
+  "motion_diagnostics_enabled": true,
+  "motion_diagnostics_pre_call": [
+    "motion_bind_probe logs the holder/resource state before the hooked call",
+    "weapon_motion_setup_probe logs the owner-scope decision before the hooked call"
+  ],
+  "post_package_checks": {
+    "method": "run after tools/package_probe.py, against staging/p8-obpmpseb and ../mod_output, 2026-09-26",
+    "engine_binary_identical_input_and_output": "sha256sum downloads/libssbu_clone_engine.nro == mod_output/.../plugins/libssbu_clone_engine.nro == c004f1b4782ebcc671355eb1dc8c2e744b7207911abdb0189012c3e7963124ce",
+    "engine_p8_markers_in_packaged_nro": "grep -a found one occurrence each of 'p8 diagnostics armed', '[motionbind] BEFORE', '[articlescope] BEFORE', 'NULL HOLDER WITH A BOUND RESOURCE'",
+    "probe_p8_marker_in_packaged_nro": "'[MGW-CLONE] build p8: independent clones, clone-owned Mythra articles, ...' present in mod_output/ultimate/mods/MGW_Standalone_Probe/plugin.nro",
+    "smashline_marker_in_packaged_nro": "'[MGW-SL] p7: verified resource globals, name tables and path hooks' present in mod_output/.../plugins/libsmashline_plugin.nro",
+    "output_hashes_match_build_and_manifest": "independent sha256 recheck of every manifest entry against ../mod_output: 1244 files, 0 missing, 0 mismatched, 0 extra",
+    "probe_binary_newer_than_probe_source": "target/aarch64-skyline-switch/release/libmgw_clone_probe.nro (22:27) is newer than the newest src/ file (22:23), so the packaged probe matches the current source",
+    "nro_magic": "engine, probe and smashline NROs start with nro_header 'NRO0' at 0x10"
+  },
+  "switch_tested": false,
+  "mythra_crash_fix_confirmed": false
+}

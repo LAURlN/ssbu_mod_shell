@@ -1,0 +1,48 @@
+{
+  "version": "0.16.0",
+  "installed_on": "2026-09-30T02:18+02:00",
+  "installed_by": "buff thread, on user instruction (\"build and install it now\")",
+  "card": "<drive>:/ (mounted /f)",
+  "source": "plugin rebuilt and staged at 02:1x (compiled clean, first attempt), then one full build.py run at 02:17, then install-to-card.sh. No concurrent build was running; the other session's Hero neutral-B work is present as files only and is not wired into any module, so it compiles into nothing.",
+  "reskin_nro_sha256": "25a1c0fba34b1b6d1000d76095ddd3d2b2a7e3bfb18e111bb4e51add69624992",
+  "reskin_nro_bytes": 225280,
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "smashline_note": "untouched, as required by AGENTS rule 22; libarcropolis/libarc_network/libnro_hook also untouched",
+  "mod_file_count": 1369,
+  "mod_tree_sha256": "d4da98f07722978ca72d088cfcaae668142f842d84e27747fefc8547eafd90a5",
+  "previous_card": {
+    "version": "0.15.2",
+    "reskin_nro_sha256": "930eb327e1d740eb9be1603bd77c32ff0534f149c99809c5f9baf4676b15fc03",
+    "mod_file_count": 1233,
+    "note": "the Aegis sword drawn at 1.4x on the fair. Was on the card when this install started; the user had not reported on it."
+  },
+  "backup": "evidence/sd-backups/sd-backup-20260930-021808",
+  "verification": "install-to-card.sh passed (cmp on both NROs, diff -r on the tree), then re-checked by hand: 1369 files on the card, `diff -r -q` clean against the build, card NRO == staged NRO == built NRO == `25a1c0fb...`, smashline `5f4091ee...` and one_slot_eff `e6e5659d...` unchanged, `fighter/eflame/model/chrom_sword/` and `motion/chrom_sword/` present for all eight costumes, and `fighter/eflame/motion/body/c06/c00attack11.nuanmb` on the card is `b83e2c5a...`.",
+  "diff_vs_previous_card": {
+    "method": "untarred the pre-install backup (card-mod-folder.tar) and diffed it against the built mod tree",
+    "added": [
+      "fighter/eflame/model/chrom_sword/c00..c07/ (14 files each, 112 total)",
+      "fighter/eflame/motion/chrom_sword/c00..c07/ (3 files each, 24 total)"
+    ],
+    "added_count": 136,
+    "modified": [
+      "fighter/eflame/motion/body/c06/c00attack11.nuanmb (G&W's 1-frame clip -> Chrom's 42-frame retarget)",
+      "fighter/eflame/motion/body/c07/c00attack11.nuanmb (same)",
+      "fighter/eflame/motion/body/c06/motion_list.bin (attack_11 entry -> Chrom's, cancel 16 -> 23)",
+      "fighter/eflame/motion/body/c07/motion_list.bin (same)",
+      "config.json (declares the 17 chrom_sword paths per costume)",
+      "info.toml (0.15.2 -> 0.16.0)"
+    ],
+    "removed": [],
+    "notably_unchanged": [
+      "every Monkey Flip clip and motion record (side-B is untouched by this build)",
+      "the Aegis esword clips, including the 0.15.2 size setting",
+      "the Cloud fair clip and the landing clip",
+      "normal_weapon and breath"
+    ]
+  },
+  "note_on_the_clip_hash": "the clip's sha256 in the package (`b83e2c5a...`) is not the value `build_chrom_jab.py`'s own self-test prints (`3e50c8a4...`) because `complete_visibility()` post-processes every body clip during the build, taking the visibility group from 94 nodes to 98. That is the same treatment the Cloud fair clip gets; the transform half - 80 nodes over 42 frames, including Sword1, Sword2 and HaveR - is identical either way and was read back off the card to prove it.",
+  "single_variable": "Two visible changes, whose failure modes are separable. The jab animation fills a move that was a one-frame pose; the Falchion exists only while the jab is out, so a crash, an invisible sword or a sword that will not leave all point at the sword alone.",
+  "console_test": "pending"
+}

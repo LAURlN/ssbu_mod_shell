@@ -1,0 +1,14 @@
+{
+  "source": "export/fighter/common/param/fighter_param.prc",
+  "sha256": "87fcf45c456d36d3f8a29a5a6d1f847124d55f8fb3db84efdc8f1490edad55c2",
+  "values": {
+    "miiswordsman": {
+      "air_accel_y": 0.10599999874830246,
+      "air_speed_y_stable": 1.5499999523162842
+    },
+    "elight": {
+      "air_accel_y": 0.13699999451637268,
+      "air_speed_y_stable": 1.8700000047683716
+    }
+  }
+}

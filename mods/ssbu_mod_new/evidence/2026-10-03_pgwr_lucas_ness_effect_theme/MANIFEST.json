@@ -1,0 +1,627 @@
+{
+  "task": "lucas_ness_effect_theme",
+  "task_version": "0.1.0",
+  "tool": "tools/customize_lucas_ness_effects.py 1.0.0",
+  "tool_sha256": "11b21eb3dc4f7912533b341109c2e21b50415b8de70896f218c4819abc667547",
+  "date": "2026-10-03",
+  "kind": "asset delta overlay (2 files); no NRO, no config.json, no motion or sound",
+  "readiness": "READY",
+  "installed": false,
+  "runtime_verified": false,
+  "evidence_tier": "B",
+  "baseline": "builds/pgwr/dk_cargo-0.1.1-test",
+  "baseline_mod_tree_sha256": "dae0bff00e20cbe3b5da37215fe82f745ac27c7d8776d180fd08644fc3be6f5e",
+  "recorded_inputs": {
+    "c06": "fcdd6caa49b5d8b7c50a9c44a612acfba757556560b7b79d5561af4b41ecbc17",
+    "c07": "1734bb5443e28b956c5c7bb478aac94030dbaee2b22a319ea13d3f37ef26648b"
+  },
+  "mod_files": {
+    "effect/fighter/elight/ef_elight_c06.eff": "79d1fcc0d4688bd8902d624ac79fbded0f8b2bd1ba0fb9d25f310ab755f19d8f",
+    "effect/fighter/elight/ef_elight_c07.eff": "d7217697ac7e6af58440de6b61d7f5d0c632905a3cc219632fd9d5b38387ab98"
+  },
+  "file_count": 2,
+  "mod_tree_sha256": "c2ca1592e3286d70093b03ed3248b43233e5ad6b9ab72704f91c5dcd581a04fe",
+  "nro": "unchanged - this delta ships no plugin",
+  "texture_pins": {
+    "621195579": {
+      "original": "9f225f7567591639ac503991480a0a3278449a5bc08b793293f8b083df404dc5",
+      "c06": "3b51f3a3936427967d12215f325db6893fd404038846eaef3c4630ac1331cee6",
+      "c07": "e0420d4f746d508ca13a8eff92b3b13771b8499f522b051ccf691b8abef08e6a"
+    },
+    "97457052": {
+      "original": "93cb510298611cc04453eb0d081aaeb144822f7079924b64154ee42a6315e330",
+      "c06": "00f7ac895f02bc0109c4e5694681b2914aa40286fad952d72d48ef9daabdcaeb",
+      "c07": "0be5bbedb9a1af4c0dae83c701753cbb99da09c740ea6b30ddc9fd68ace33c35"
+    }
+  },
+  "slots": {
+    "c06": {
+      "tool": "tools/customize_lucas_ness_effects.py 1.0.0",
+      "date": "2026-10-03",
+      "evidence_tier": "B",
+      "hardware_validated": false,
+      "slot": "c06",
+      "recipient_sha256": "fcdd6caa49b5d8b7c50a9c44a612acfba757556560b7b79d5561af4b41ecbc17",
+      "recipient_is_recorded_input": true,
+      "output_sha256": "79d1fcc0d4688bd8902d624ac79fbded0f8b2bd1ba0fb9d25f310ab755f19d8f",
+      "output_bytes": 14698064,
+      "effect_library_commit": "d5491138d645221ec92189eeff3ded8c43fd0a1a",
+      "converter_sha256": "033ddc923fb3e0282df76fcccb1957bcf4834665c5aa000b9f4947a81d97e5f2",
+      "library_sha256": "ebd94ba49c7898f1287e94abd266f55e4528882e8448e3ad7f0734077b410a94",
+      "converter_roundtrips_recipient_bytes": true,
+      "resources": {
+        "LUCAS_PSI_HOLD": {
+          "emitter_set": "P_LucasPsiHold",
+          "emitter_set_id": 128,
+          "kind": 256
+        },
+        "LUCAS_PSI_ATK_LW": {
+          "emitter_set": "P_LucasPsiAttackLw",
+          "emitter_set_id": 129,
+          "kind": 256
+        },
+        "NESS_PSI_RUSH": {
+          "emitter_set": "P_NessPsiRush",
+          "emitter_set_id": 130,
+          "kind": 256
+        }
+      },
+      "emitters_edited": 17,
+      "changed_fields": {
+        "P_LucasPsiHold/flare2": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_LucasPsiHold/flash1": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_LucasPsiHold/flash2_flare": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flare1": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flash1_f": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flash_atk": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_LucasPsiAttackLw/hex_L": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/hex_L_2": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/hex_S": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G"
+        ],
+        "P_LucasPsiAttackLw/hex_S_2": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G"
+        ],
+        "P_NessPsiRush/flare1": [
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/flare2": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/flash1": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/flash2_flare": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_NessPsiRush/line1": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/ring1": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/ring2": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1R"
+        ]
+      },
+      "textures": [
+        {
+          "texture_id": "621195579",
+          "name": "ef_lucas_flash00",
+          "state": "recoloured",
+          "before_sha256": "9f225f7567591639ac503991480a0a3278449a5bc08b793293f8b083df404dc5",
+          "after_sha256": "3b51f3a3936427967d12215f325db6893fd404038846eaef3c4630ac1331cee6",
+          "used_by": [
+            "P_LucasPsiAttackLw/flash1",
+            "P_LucasPsiHold/flash2"
+          ]
+        },
+        {
+          "texture_id": "97457052",
+          "name": "ef_ness_flash00",
+          "state": "recoloured",
+          "before_sha256": "93cb510298611cc04453eb0d081aaeb144822f7079924b64154ee42a6315e330",
+          "after_sha256": "00f7ac895f02bc0109c4e5694681b2914aa40286fad952d72d48ef9daabdcaeb",
+          "used_by": [
+            "P_NessPsiRush/flash2"
+          ]
+        }
+      ],
+      "decoded_entries_compared": 3619,
+      "unrelated_decoded_entries_identical": 3543,
+      "emitter_sets_total": 130,
+      "byte_scope": {
+        "bank_bytes": 14698064,
+        "changed_bytes": 122719,
+        "changed_bytes_outside_owned_ranges": 0,
+        "emitter_blocks_total": 827,
+        "emitter_blocks_owned": 20,
+        "textures_total": 111,
+        "textures_owned": [
+          "ef_lucas_flash00",
+          "ef_ness_flash00"
+        ]
+      },
+      "reproduced_sha256": "79d1fcc0d4688bd8902d624ac79fbded0f8b2bd1ba0fb9d25f310ab755f19d8f",
+      "idempotent_on_own_output": true,
+      "negative_controls": {
+        "unrelated_emitter_byte": "detected (P_ElightSwordBeamS/center1)",
+        "unrelated_texture_byte": "detected (ef_bayonetta_light01)",
+        "unthemed_input_rejected": "detected"
+      },
+      "loader_resolution": {
+        "bank_path": "effect/fighter/elight/ef_elight_c06.eff",
+        "config_group": "fighter/elight/c06",
+        "declared_only_there": true,
+        "elight_banks_in_package": [
+          "ef_elight_c06.eff",
+          "ef_elight_c07.eff"
+        ],
+        "donor_folders_shipped": false,
+        "one_slot_effects_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+        "plugin_sha256": "214dc3126430598fb5e71093f6d5d584e17e662a593b67acf0eb0b777eb66058",
+        "plugin_requests": {
+          "lucas_psi_hold": 1,
+          "lucas_psi_atk_lw": 1,
+          "ness_psi_rush": 1
+        },
+        "bank_entries": {
+          "LUCAS_PSI_HOLD": {
+            "emitter_set": "P_LucasPsiHold",
+            "emitter_set_id": 128,
+            "kind": 256
+          },
+          "LUCAS_PSI_ATK_LW": {
+            "emitter_set": "P_LucasPsiAttackLw",
+            "emitter_set_id": 129,
+            "kind": 256
+          },
+          "NESS_PSI_RUSH": {
+            "emitter_set": "P_NessPsiRush",
+            "emitter_set_id": 130,
+            "kind": 256
+          }
+        },
+        "config_json_change": "none"
+      }
+    },
+    "c07": {
+      "tool": "tools/customize_lucas_ness_effects.py 1.0.0",
+      "date": "2026-10-03",
+      "evidence_tier": "B",
+      "hardware_validated": false,
+      "slot": "c07",
+      "recipient_sha256": "1734bb5443e28b956c5c7bb478aac94030dbaee2b22a319ea13d3f37ef26648b",
+      "recipient_is_recorded_input": true,
+      "output_sha256": "d7217697ac7e6af58440de6b61d7f5d0c632905a3cc219632fd9d5b38387ab98",
+      "output_bytes": 15402576,
+      "effect_library_commit": "d5491138d645221ec92189eeff3ded8c43fd0a1a",
+      "converter_sha256": "033ddc923fb3e0282df76fcccb1957bcf4834665c5aa000b9f4947a81d97e5f2",
+      "library_sha256": "ebd94ba49c7898f1287e94abd266f55e4528882e8448e3ad7f0734077b410a94",
+      "converter_roundtrips_recipient_bytes": true,
+      "resources": {
+        "LUCAS_PSI_HOLD": {
+          "emitter_set": "P_LucasPsiHold",
+          "emitter_set_id": 128,
+          "kind": 256
+        },
+        "LUCAS_PSI_ATK_LW": {
+          "emitter_set": "P_LucasPsiAttackLw",
+          "emitter_set_id": 129,
+          "kind": 256
+        },
+        "NESS_PSI_RUSH": {
+          "emitter_set": "P_NessPsiRush",
+          "emitter_set_id": 130,
+          "kind": 256
+        }
+      },
+      "emitters_edited": 17,
+      "changed_fields": {
+        "P_LucasPsiHold/flare2": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G"
+        ],
+        "P_LucasPsiHold/flash1": [
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G"
+        ],
+        "P_LucasPsiHold/flash2_flare": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flare1": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flash1_f": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/flash_atk": [
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_LucasPsiAttackLw/hex_L": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/hex_L_2": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_LucasPsiAttackLw/hex_S": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G"
+        ],
+        "P_LucasPsiAttackLw/hex_S_2": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "EmitterStatic/Color0/Keys[2]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G"
+        ],
+        "P_NessPsiRush/flare1": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G"
+        ],
+        "P_NessPsiRush/flare2": [
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/flash1": [
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/flash2_flare": [
+          "EmitterStatic/Color0/Keys[0]/X",
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/Color0/Keys[2]/X",
+          "EmitterStatic/Color0/Keys[2]/Y",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R"
+        ],
+        "P_NessPsiRush/line1": [
+          "EmitterStatic/Color0/Keys[1]/X",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color0R",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/ring1": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ],
+        "P_NessPsiRush/ring2": [
+          "EmitterStatic/Color0/Keys[0]/Y",
+          "EmitterStatic/Color0/Keys[0]/Z",
+          "EmitterStatic/Color0/Keys[1]/Y",
+          "EmitterStatic/Color0/Keys[1]/Z",
+          "EmitterStatic/ColorScale",
+          "ParticleColor/Color0B",
+          "ParticleColor/Color0G",
+          "ParticleColor/Color1B",
+          "ParticleColor/Color1G",
+          "ParticleColor/Color1R"
+        ]
+      },
+      "textures": [
+        {
+          "texture_id": "621195579",
+          "name": "ef_lucas_flash00",
+          "state": "recoloured",
+          "before_sha256": "9f225f7567591639ac503991480a0a3278449a5bc08b793293f8b083df404dc5",
+          "after_sha256": "e0420d4f746d508ca13a8eff92b3b13771b8499f522b051ccf691b8abef08e6a",
+          "used_by": [
+            "P_LucasPsiAttackLw/flash1",
+            "P_LucasPsiHold/flash2"
+          ]
+        },
+        {
+          "texture_id": "97457052",
+          "name": "ef_ness_flash00",
+          "state": "recoloured",
+          "before_sha256": "93cb510298611cc04453eb0d081aaeb144822f7079924b64154ee42a6315e330",
+          "after_sha256": "0be5bbedb9a1af4c0dae83c701753cbb99da09c740ea6b30ddc9fd68ace33c35",
+          "used_by": [
+            "P_NessPsiRush/flash2"
+          ]
+        }
+      ],
+      "decoded_entries_compared": 3619,
+      "unrelated_decoded_entries_identical": 3543,
+      "emitter_sets_total": 130,
+      "byte_scope": {
+        "bank_bytes": 15402576,
+        "changed_bytes": 124164,
+        "changed_bytes_outside_owned_ranges": 0,
+        "emitter_blocks_total": 827,
+        "emitter_blocks_owned": 20,
+        "textures_total": 113,
+        "textures_owned": [
+          "ef_lucas_flash00",
+          "ef_ness_flash00"
+        ]
+      },
+      "reproduced_sha256": "d7217697ac7e6af58440de6b61d7f5d0c632905a3cc219632fd9d5b38387ab98",
+      "idempotent_on_own_output": true,
+      "negative_controls": {
+        "unrelated_emitter_byte": "detected (P_ElightSwordBeamS/center1)",
+        "unrelated_texture_byte": "detected (ef_bayonetta_light01)",
+        "unthemed_input_rejected": "detected"
+      },
+      "loader_resolution": {
+        "bank_path": "effect/fighter/elight/ef_elight_c07.eff",
+        "config_group": "fighter/elight/c07",
+        "declared_only_there": true,
+        "elight_banks_in_package": [
+          "ef_elight_c06.eff",
+          "ef_elight_c07.eff"
+        ],
+        "donor_folders_shipped": false,
+        "one_slot_effects_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+        "plugin_sha256": "214dc3126430598fb5e71093f6d5d584e17e662a593b67acf0eb0b777eb66058",
+        "plugin_requests": {
+          "lucas_psi_hold": 1,
+          "lucas_psi_atk_lw": 1,
+          "ness_psi_rush": 1
+        },
+        "bank_entries": {
+          "LUCAS_PSI_HOLD": {
+            "emitter_set": "P_LucasPsiHold",
+            "emitter_set_id": 128,
+            "kind": 256
+          },
+          "LUCAS_PSI_ATK_LW": {
+            "emitter_set": "P_LucasPsiAttackLw",
+            "emitter_set_id": 129,
+            "kind": 256
+          },
+          "NESS_PSI_RUSH": {
+            "emitter_set": "P_NessPsiRush",
+            "emitter_set_id": 130,
+            "kind": 256
+          }
+        },
+        "config_json_change": "none"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.9",
+  "method": "src/pgwr/install-to-card.sh --no-smashline; automatic backup, .new staging, cmp/diff verification",
+  "authorization": "User requested collective install; installed 0.20.9 incorporating Chrom Jab Custom Cloud Sword Trails (c06 & c07), retaining Cloud forward air trails and Monkey Flip side-B lock. Snake neutral-B excluded as pending/unready.",
+  "included_queue_sections": [
+    "Chrom Jab Custom Cloud Sword Trails (c06 & c07) — Antigravity",
+    "Cloud Forward Air Custom Sword Trails (c06 & c07) — Antigravity (retained)",
+    "Monkey Flip aerial side-B lock — root (retained)"
+  ],
+  "pending_features_not_registered": [
+    "Snake neutral-B",
+    "Monkey Flip kick/general HI/S/LW restriction"
+  ],
+  "manifest": "builds/pgwr/0.20.9/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-142122",
+  "backup_held_version": "0.20.8",
+  "reskin_nro_sha256": "5ab7bdc591c2cfa577e4ea36080df2f57d3f558d08523ed2a000b48162945dc2",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1709,
+  "mod_tree_sha256": "b7b42a95dd8a78a8af83c97f2aa9204c0f4be942db94b7a263d5506f095c0bab",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.20.8": [
+    "Routes custom Cloud sword trails (tex_cloud_sword1/2) for Chrom's jab on Pyra/G&W c06 (Black & Pink) and c07 (White & Champagne Gold), replacing placeholder Mythra trail.",
+    "Scales trail to JAB_TRAIL_TIP (14.5 * 0.9 = 13.05) matching 0.9x Aegis sword blade scale.",
+    "Registers effect_attack12/13, sound_attack12/13, expression_attack12/13 to Chrom jab handlers."
+  ],
+  "limitations": [
+    "Victim T-pose deferred; both grab release paths confirmed working in 0.20.8.",
+    "Snake neutral-B remains inactive/blocked in queue."
+  ]
+}

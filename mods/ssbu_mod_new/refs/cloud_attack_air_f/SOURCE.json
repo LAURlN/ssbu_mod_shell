@@ -1,0 +1,80 @@
+{
+  "move": "AttackAirF",
+  "carrier": "eflame c06, c07 (Mr. Game & Watch)",
+  "donor": "cloud",
+  "tier": 2,
+  "date": "2026-09-29",
+  "provenance": {
+    "live_switch": {
+      "ip": "192.168.2.166",
+      "port": 43022,
+      "method": "smash_arc.dll arc_extract_file_regional (Region 2 US English)",
+      "game_version": "13.0.4"
+    },
+    "local_dumps": {
+      "acmd_repo": "SSBU-Dumped-Scripts-main",
+      "arc_export": "dumps/arc"
+    }
+  },
+  "files": {
+    "fighter/cloud/motion/body/c00/c05attackairf.nuanmb": {
+      "sha256": "4f44fce97c11ba16a97a4ff816a71cbfd800e54341519fe4617f205fda7f40dd",
+      "bytes": 56472
+    },
+    "fighter/cloud/motion/body/c00/c05landingairf.nuanmb": {
+      "sha256": "63a1c10ada488ad0c7581b1548c035901f148fc8e868225672f48c0b87ce603f",
+      "bytes": 39590
+    },
+    "fighter/cloud/motion/body/c00/motion_list.bin": {
+      "sha256": "3e94783c769e4a02f97427f561db1c3ce2b4236ce0ecd6dfaa77697a6dc34623",
+      "bytes": 44672,
+      "attack_air_f_cancel_frame": 54,
+      "landing_air_f_cancel_frame": 20
+    },
+    "fighter/cloud/param/vl.prc": {
+      "sha256": "596bae5a0c7ac2f957d2170a2d3eb5b4766119c304ddf785046289bd0f375db5",
+      "bytes": 7423
+    },
+    "fighter/cloud/model/body/c00/model.nusktb": {
+      "sha256": "064da9170fe890822613cb746069f800bf44fa0776f7162e40598096270971ac",
+      "bytes": 29536
+    },
+    "SSBU-Dumped-Scripts-main/smashline/lua2cpp_cloud/cloud/AttackAirF.txt": {
+      "sha256": "f6e2def8b5fe5b2b20e39a5220cc2151055fc9b0b5f69340fe5e44c708cc7bb5",
+      "bytes": 5420
+    },
+    "SSBU-Dumped-Scripts-main/smashline/lua2cpp_cloud/cloud/LandingAirF.txt": {
+      "sha256": "c8f33fccc0a34f28425b60c3ace4f04b0768a5dbb19f0990d6cafe16b7c48768",
+      "bytes": 860
+    },
+    "fighter/common/param/fighter_param.prc": {
+      "sha256": "4e723528b4c05c48b61c402130ff2cbe09919f1eb17540203f5db999a80e7d5d",
+      "cloud_landing_attack_air_frame_f": 11.0
+    },
+    "effect/fighter/cloud/trail/tex_cloud_sword1.nutexb": {
+      "sha256": "76f888f8ffbe177bfb35b746b2651a5b89d9315f97a4f65330aad309b036c4bb",
+      "bytes": 351408
+    },
+    "effect/fighter/cloud/trail/tex_cloud_sword2.nutexb": {
+      "sha256": "8da2fce9c2b65c11dce8e6e0200b7dd6d61399aeddd564f3a626ff7b29d4d647",
+      "bytes": 351408
+    }
+  },
+  "dependencies": {
+    "bones_kept": [
+      "ArmL", "ArmR", "Bust", "ClavicleC", "ClavicleL", "ClavicleR",
+      "FingerL10", "FingerL11", "FingerL12", "FingerL51",
+      "FingerR10", "FingerR11", "FingerR12", "FingerR51",
+      "FootL", "FootR", "HandL", "HandR", "HaveL", "HaveR",
+      "Head", "Hip", "KneeL", "KneeR", "LegC", "LegL", "LegR",
+      "Neck", "Rot", "ShoulderL", "ShoulderR", "Throw", "ToeL", "ToeR", "Trans", "Waist"
+    ],
+    "bones_dropped_cloud_specific": 46,
+    "article": "FIGHTER_EFLAME_GENERATE_ARTICLE_ESWORD",
+    "sword_trail_c06": "effect/fighter/eflame/trail_c06/tex_cloud_sword1.nutexb (recolored to Black & Pink Mythra scheme)",
+    "sword_trail_c07": "effect/fighter/eflame/trail_c07/tex_cloud_sword1.nutexb (recolored to Champagne Gold Mythra scheme)",
+    "param_override": {
+      "landing_attack_air_frame_f": 11.0
+    }
+  }
+}

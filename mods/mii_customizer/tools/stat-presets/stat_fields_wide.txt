@@ -1,0 +1,65 @@
+# stat_fields_wide.txt - the wide preset field list (task P10-PRESET-WIDE)
+#
+# One field name per line. Blank lines and lines starting with '#' are
+# ignored. Same syntax and same generator checks as stat_fields.txt.
+#
+# The first ten lines are stat_fields.txt, unchanged and in the same
+# order: they are the fields already proven on the console. After them
+# come the fields this task added, ranked by how much they shape how a
+# fighter moves and lands: ground movement, air movement, jumps, gravity
+# and fall, landing, friction, then the rest.
+#
+# Every added field is float, has at least one code site that calls
+# through vtable slot +0x270 with x2 == 0 (the shape plugin 0.3.0
+# overrides), and differs between fighters. That is a static reading of
+# the 13.0.4 image: it shows the engine CAN ask for the field through
+# the hook, not that it does during play.
+#
+# The per-field decision, including every field left out and why, is in
+# stat_fields_wide_decisions.json (same directory) and in
+# research/P10-PRESET-WIDE.md.
+#
+# 41 fields. The plugin's limit is 48 fields per preset and 48 distinct
+# hashes per file.
+
+weight
+walk_speed_max
+run_speed_max
+dash_speed
+air_speed_x_stable
+air_speed_y_stable
+air_accel_y
+air_accel_x_mul
+jump_y
+jump_speed_x
+run_accel_add
+guard_speed_limit
+shoot_dash_speed_b
+air_brake_x
+air_brake_y
+air_ground_speed_brake
+damage_fly_top_air_accel_y
+jump_initial_y
+jump_aerial_y
+jump_speed_x_max
+mini_jump_y
+cliff_jump_y
+cliff_jump_x_speed
+passive_wall_jump_y_speed
+passive_wall_jump_x_speed
+passive_wall_x_speed
+passive_ceil_x_speed
+dive_speed_y
+ground_brake
+item_lift_speed_max
+wind_resistance
+shield_break_y
+charge_final_attack_mul
+charge_final_attack_reaction_mul
+throw_item_speed_mul
+throw_item_power_mul
+tread_range_h
+tread_range_add_h
+tread_range_w
+ladder_range_w
+ladder_range_offset_y

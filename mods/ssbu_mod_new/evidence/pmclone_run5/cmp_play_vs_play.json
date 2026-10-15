@@ -1,0 +1,4571 @@
+{
+  "identical": false,
+  "first_diverging_frame": 0,
+  "difference_count": 652,
+  "differences": [
+    {
+      "frame": 0,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 0 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 0,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 0 slot 0 article:elight_esword#0: pos_x -40.30733 != -39.88379"
+    },
+    {
+      "frame": 0,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 0 slot 0 article:elight_esword#0: pos_y 10.655139 != 9.988407"
+    },
+    {
+      "frame": 0,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 0 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 1,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 1 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 1,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 1 slot 0 article:elight_esword#0: pos_x -40.250217 != -39.860294"
+    },
+    {
+      "frame": 1,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 1 slot 0 article:elight_esword#0: pos_y 10.5880995 != 9.9798765"
+    },
+    {
+      "frame": 1,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 1 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 2,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 2 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 2,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 2 slot 0 article:elight_esword#0: pos_x -40.19081 != -39.844482"
+    },
+    {
+      "frame": 2,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 2 slot 0 article:elight_esword#0: pos_y 10.526669 != 9.984889"
+    },
+    {
+      "frame": 2,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 2 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 3,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 3 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 3,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 3 slot 0 article:elight_esword#0: pos_x -40.130867 != -39.83543"
+    },
+    {
+      "frame": 3,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 3 slot 0 article:elight_esword#0: pos_y 10.47144 != 10.003336"
+    },
+    {
+      "frame": 3,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 3 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 4,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 4 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 4,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 4 slot 0 article:elight_esword#0: pos_x -40.07212 != -39.83313"
+    },
+    {
+      "frame": 4,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 4 slot 0 article:elight_esword#0: pos_y 10.423784 != 10.036421"
+    },
+    {
+      "frame": 4,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 4 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 5,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 5 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 5,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 5 slot 0 article:elight_esword#0: pos_x -40.013123 != -39.832855"
+    },
+    {
+      "frame": 5,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 5 slot 0 article:elight_esword#0: pos_y 10.380986 != 10.080804"
+    },
+    {
+      "frame": 5,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 5 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 6,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 6 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 6,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 6 slot 0 article:elight_esword#0: pos_x -39.955654 != -39.835617"
+    },
+    {
+      "frame": 6,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 6 slot 0 article:elight_esword#0: pos_y 10.3427 != 10.13621"
+    },
+    {
+      "frame": 6,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 6 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 7,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 7 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 7,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_x",
+      "message": "frame 7 slot 0 article:elight_esword#0: pos_x -39.900738 != -39.840984"
+    },
+    {
+      "frame": 7,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "pos_y",
+      "message": "frame 7 slot 0 article:elight_esword#0: pos_y 10.308968 != 10.202545"
+    },
+    {
+      "frame": 7,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 7 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 8,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 8 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 8,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 8 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 9,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 9 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 9,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 9 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 10,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 10 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 10,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 10 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 11,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 11 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 11,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 11 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 12,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 12 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 12,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 12 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 13,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 13 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 13,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 13 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 14,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 14 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 14,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 14 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 15,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 15 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 15,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 15 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 16,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 16 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 16,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 16 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 17,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 17 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 17,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 17 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 18,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 18 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 18,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 18 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 19,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 19 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 19,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 19 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 20,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 20 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 20,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 20 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 21,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 21 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 21,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 21 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 22,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 22 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 22,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 22 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 23,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 23 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 23,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 23 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 24,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 24 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 24,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 24 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 25,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 25 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 25,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 25 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 26,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 26 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 26,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 26 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 27,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 27 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 27,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 27 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 28,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 28 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 28,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 28 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 29,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 29 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 29,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 29 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 30,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 30 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 30,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 30 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 31,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 31 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 31,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 31 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 32,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 32 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 32,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 32 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 33,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 33 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 33,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 33 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 34,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 34 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 34,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 34 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 35,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 35 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 35,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 35 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 36,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 36 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 36,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 36 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 37,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 37 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 37,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 37 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 38,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 38 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 38,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 38 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 39,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 39 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 39,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 39 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 40,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 40 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 40,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 40 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 41,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 41 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 41,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 41 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 42,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 42 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 42,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 42 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 43,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 43 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 43,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 43 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 44,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 44 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 44,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 44 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 45,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 45 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 45,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 45 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 46,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 46 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 46,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 46 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 47,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 47 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 47,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 47 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 48,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 48 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 48,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 48 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 49,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 49 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 49,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 49 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 50,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 50 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 50,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 50 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 51,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 51 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 51,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 51 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 52,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 52 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 52,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 52 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 53,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 53 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 53,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 53 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 54,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 54 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 54,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 54 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 55,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 55 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 55,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 55 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 56,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 56 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 56,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 56 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 57,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 57 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 57,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 57 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 58,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 58 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 58,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 58 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 59,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 59 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 59,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 59 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 60,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 60 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 60,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 60 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 61,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 61 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 61,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 61 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 62,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 62 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 62,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 62 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 63,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 63 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 63,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 63 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 64,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 64 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 64,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 64 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 65,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 65 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 65,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 65 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 66,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 66 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 66,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 66 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 67,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 67 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 67,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 67 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 68,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 68 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 68,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 68 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 69,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 69 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 69,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 69 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 70,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 70 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 70,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 70 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 71,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 71 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 71,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 71 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 72,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 72 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 72,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 72 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 73,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 73 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 73,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 73 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 74,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 74 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 74,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 74 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 75,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 75 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 75,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 75 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 76,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 76 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 76,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 76 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 77,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 77 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 77,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 77 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 78,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 78 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 78,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 78 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 79,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 79 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 79,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 79 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 80,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 80 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 80,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 80 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 81,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 81 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 81,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 81 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 82,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 82 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 82,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 82 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 83,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 83 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 83,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 83 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 84,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 84 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 84,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 84 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 85,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 85 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 85,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 85 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 86,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 86 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 86,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 86 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 87,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 87 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 87,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 87 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 88,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 88 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 88,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 88 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 89,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 89 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 89,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 89 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 90,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 90 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 90,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 90 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 91,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 91 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 91,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 91 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 92,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 92 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 92,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 92 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 93,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 93 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 93,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 93 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 94,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 94 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 94,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 94 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 95,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 95 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 95,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 95 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 96,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 96 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 96,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 96 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 97,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 97 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 97,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 97 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 98,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 98 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 98,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 98 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 99,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 99 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 99,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 99 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 100,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 100 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 100,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 100 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 101,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 101 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 101,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 101 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 102,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 102 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 102,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 102 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 103,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 103 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 103,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 103 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 104,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 104 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 104,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 104 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 105,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 105 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 105,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 105 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 106,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 106 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 106,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 106 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 107,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 107 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 107,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 107 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 108,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 108 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 108,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 108 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 109,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 109 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 109,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 109 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 110,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 110 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 110,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 110 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 111,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 111 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 111,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 111 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 112,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 112 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 112,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 112 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 113,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 113 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 113,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 113 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 114,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 114 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 114,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 114 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 115,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 115 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 115,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 115 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 116,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 116 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 116,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 116 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 117,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 117 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 117,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 117 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 118,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 118 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 118,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 118 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 119,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 119 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 119,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 119 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 120,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 120 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 120,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 120 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 121,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 121 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 121,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 121 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 122,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 122 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 122,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 122 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 123,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 123 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 123,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 123 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 124,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 124 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 124,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 124 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 125,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 125 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 125,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 125 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 126,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 126 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 126,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 126 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 127,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 127 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 127,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 127 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 128,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 128 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 128,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 128 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 129,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 129 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 129,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 129 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 130,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 130 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 130,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 130 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 131,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 131 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 131,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 131 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 3 != 6"
+    },
+    {
+      "frame": 132,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 132 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 132,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 132 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 133,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 133 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 133,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 133 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 134,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 134 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 134,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 134 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 135,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 135 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 135,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 135 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 136,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 136 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 136,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 136 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 137,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 137 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 137,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 137 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 138,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 138 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 138,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 138 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 139,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 139 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 139,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 139 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 140,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 140 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 140,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 140 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 141,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 141 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 141,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 141 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 142,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 142 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 142,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 142 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 143,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 143 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 143,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 143 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 144,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 144 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 144,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 144 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 145,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 145 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 145,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 145 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 146,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 146 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 146,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 146 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 147,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 147 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 147,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 147 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 148,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 148 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 148,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 148 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 149,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 149 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 149,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 149 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 150,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 150 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 150,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 150 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 151,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 151 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 151,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 151 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 4 != 7"
+    },
+    {
+      "frame": 152,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 152 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 152,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 152 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 153,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 153 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 153,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 153 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 154,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 154 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 154,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 154 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 155,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 155 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 155,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 155 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 156,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 156 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 156,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 156 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 157,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 157 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 157,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 157 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 158,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 158 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 158,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 158 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 159,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 159 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 159,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 159 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 160,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 160 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 160,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 160 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 161,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 161 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 161,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 161 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 162,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 162 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 162,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 162 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 163,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 163 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 163,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 163 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 164,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 164 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 164,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 164 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 165,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 165 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 165,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 165 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 5 != 8"
+    },
+    {
+      "frame": 166,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 166 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 166,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 166 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 167,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 167 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 167,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 167 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 168,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 168 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 168,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 168 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 169,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 169 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 169,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 169 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 170,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 170 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 170,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 170 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 171,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 171 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 171,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 171 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 172,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 172 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 172,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 172 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 173,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 173 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 173,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 173 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 174,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 174 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 174,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 174 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 175,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 175 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 175,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 175 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 176,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 176 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 176,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 176 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 177,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 177 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 177,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 177 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 178,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 178 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 178,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 178 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 179,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 179 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 179,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 179 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 180,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 180 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 180,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 180 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 181,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 181 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 181,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 181 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 182,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 182 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 182,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 182 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 183,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 183 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 183,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 183 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 184,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 184 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 184,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 184 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 185,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 185 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 185,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 185 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 186,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 186 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 186,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 186 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 187,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 187 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 187,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 187 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 188,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 188 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 188,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 188 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 189,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 189 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 189,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 189 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 190,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 190 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 190,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 190 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 191,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 191 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 191,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 191 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 192,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 192 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 192,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 192 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 193,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 193 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 193,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 193 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 194,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 194 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 194,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 194 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 195,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 195 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 195,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 195 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 196,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 196 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 196,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 196 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 197,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 197 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 197,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 197 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 198,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 198 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 198,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 198 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 199,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 199 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 199,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 199 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 200,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 200 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 200,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 200 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 201,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 201 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 201,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 201 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 202,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 202 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 202,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 202 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 203,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 203 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 203,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 203 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 204,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 204 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 204,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 204 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 205,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 205 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 205,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 205 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 206,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 206 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 206,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 206 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 207,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 207 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 207,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 207 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 208,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 208 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 208,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 208 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 209,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 209 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 209,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 209 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 210,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 210 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 210,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 210 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 211,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 211 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 211,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 211 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 212,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 212 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 212,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 212 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 213,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 213 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 213,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 213 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 214,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 214 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 214,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 214 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 215,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 215 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 215,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 215 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 216,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 216 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 216,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 216 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 217,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 217 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 217,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 217 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 218,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 218 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 218,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 218 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 219,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 219 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 219,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 219 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 220,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 220 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 220,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 220 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 221,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 221 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 221,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 221 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 222,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 222 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 222,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 222 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 223,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 223 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 223,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 223 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 224,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 224 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 224,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 224 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 225,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 225 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 225,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 225 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 226,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 226 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 226,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 226 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 227,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 227 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 227,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 227 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 228,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 228 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 228,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 228 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 229,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 229 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 229,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 229 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 230,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 230 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 230,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 230 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 231,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 231 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 231,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 231 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 232,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 232 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 232,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 232 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 233,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 233 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 233,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 233 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 234,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 234 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 234,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 234 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 235,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 235 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 235,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 235 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 236,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 236 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 236,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 236 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 237,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 237 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 237,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 237 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 238,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 238 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 238,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 238 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 239,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 239 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 239,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 239 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 240,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 240 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 240,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 240 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 241,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 241 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 241,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 241 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 242,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 242 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 242,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 242 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 243,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 243 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 243,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 243 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 244,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 244 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 244,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 244 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 245,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 245 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 245,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 245 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 246,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 246 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 246,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 246 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 247,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 247 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 247,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 247 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 248,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 248 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 248,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 248 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 249,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 249 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 249,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 249 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 250,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 250 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 250,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 250 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 251,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 251 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 251,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 251 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 252,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 252 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 252,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 252 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 253,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 253 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 253,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 253 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 254,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 254 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 254,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 254 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 255,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 255 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 255,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 255 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 256,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 256 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 256,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 256 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 257,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 257 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 257,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 257 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 258,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 258 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 258,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 258 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 259,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 259 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 259,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 259 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 260,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 260 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 260,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 260 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 261,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 261 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 261,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 261 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 262,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 262 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 262,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 262 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 263,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 263 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 263,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 263 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 264,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 264 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 264,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 264 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 265,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 265 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 265,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 265 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 266,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 266 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 266,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 266 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 267,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 267 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 267,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 267 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 268,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 268 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 268,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 268 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 269,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 269 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 269,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 269 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 270,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 270 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 270,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 270 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 271,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 271 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 271,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 271 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 272,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 272 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 272,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 272 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 273,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 273 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 273,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 273 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 274,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 274 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 274,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 274 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 275,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 275 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 275,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 275 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 276,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 276 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 276,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 276 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 277,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 277 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 277,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 277 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 278,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 278 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 278,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 278 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 279,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 279 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 279,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 279 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 280,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 280 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 280,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 280 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 281,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 281 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 281,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 281 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 282,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 282 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 282,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 282 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 283,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 283 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 283,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 283 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 284,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 284 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 284,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 284 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 285,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 285 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 285,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 285 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 286,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 286 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 286,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 286 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 287,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 287 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 287,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 287 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 288,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 288 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 288,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 288 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 289,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 289 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 289,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 289 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 290,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 290 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 290,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 290 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 291,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 291 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 291,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 291 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 292,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 292 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 292,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 292 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 293,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 293 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 293,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 293 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 294,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 294 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 294,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 294 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 295,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 295 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 295,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 295 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 296,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 296 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 296,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 296 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 297,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 297 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 297,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 297 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 298,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 298 slot 0 article:elight_esword#0: motion_frame 16 != 19"
+    },
+    {
+      "frame": 298,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 298 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 299,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 299 slot 0 article:elight_esword#0: motion_frame 17 != 0"
+    },
+    {
+      "frame": 299,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 299 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 300,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 300 slot 0 article:elight_esword#0: motion_frame 18 != 1"
+    },
+    {
+      "frame": 300,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 300 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 301,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 301 slot 0 article:elight_esword#0: motion_frame 19 != 2"
+    },
+    {
+      "frame": 301,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 301 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 302,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 302 slot 0 article:elight_esword#0: motion_frame 0 != 3"
+    },
+    {
+      "frame": 302,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 302 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 303,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 303 slot 0 article:elight_esword#0: motion_frame 1 != 4"
+    },
+    {
+      "frame": 303,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 303 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 304,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 304 slot 0 article:elight_esword#0: motion_frame 2 != 5"
+    },
+    {
+      "frame": 304,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 304 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 305,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 305 slot 0 article:elight_esword#0: motion_frame 3 != 6"
+    },
+    {
+      "frame": 305,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 305 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 306,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 306 slot 0 article:elight_esword#0: motion_frame 4 != 7"
+    },
+    {
+      "frame": 306,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 306 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 307,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 307 slot 0 article:elight_esword#0: motion_frame 5 != 8"
+    },
+    {
+      "frame": 307,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 307 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 308,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 308 slot 0 article:elight_esword#0: motion_frame 6 != 9"
+    },
+    {
+      "frame": 308,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 308 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 309,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 309 slot 0 article:elight_esword#0: motion_frame 7 != 10"
+    },
+    {
+      "frame": 309,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 309 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 310,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 310 slot 0 article:elight_esword#0: motion_frame 8 != 11"
+    },
+    {
+      "frame": 310,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 310 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 311,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 311 slot 0 article:elight_esword#0: motion_frame 9 != 12"
+    },
+    {
+      "frame": 311,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 311 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 312,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 312 slot 0 article:elight_esword#0: motion_frame 10 != 13"
+    },
+    {
+      "frame": 312,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 312 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 313,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 313 slot 0 article:elight_esword#0: motion_frame 11 != 14"
+    },
+    {
+      "frame": 313,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 313 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 314,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 314 slot 0 article:elight_esword#0: motion_frame 12 != 15"
+    },
+    {
+      "frame": 314,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 314 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 315,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 315 slot 0 article:elight_esword#0: motion_frame 13 != 16"
+    },
+    {
+      "frame": 315,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 315 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 316,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 316 slot 0 article:elight_esword#0: motion_frame 14 != 17"
+    },
+    {
+      "frame": 316,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 316 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    },
+    {
+      "frame": 317,
+      "slot": 0,
+      "object": "article:elight_esword#0",
+      "field": "motion_frame",
+      "message": "frame 317 slot 0 article:elight_esword#0: motion_frame 15 != 18"
+    },
+    {
+      "frame": 317,
+      "slot": 0,
+      "object": "fighter:elight",
+      "field": "work",
+      "message": "frame 317 slot 0 fighter:elight: work 'INT_ATTACK_SERIAL' 6 != 9"
+    }
+  ]
+}

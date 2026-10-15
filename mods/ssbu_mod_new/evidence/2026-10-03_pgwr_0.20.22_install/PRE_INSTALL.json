@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "package": "builds/pgwr/0.20.20+ready-assets.1",
+  "card": "E:",
+  "files": 5099,
+  "tree_sha256": "a38d16c037389f730c842fc70fbda04b033b2dfc1e70ee7f4060520702dbf153",
+  "nro_sha256": "214dc3126430598fb5e71093f6d5d584e17e662a593b67acf0eb0b777eb66058",
+  "plugins": {
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6",
+    "libone_slot_eff.nro": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+    "libpyra_gamewatch_reskin.nro": "214dc3126430598fb5e71093f6d5d584e17e662a593b67acf0eb0b777eb66058",
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7"
+  },
+  "skyline": {
+    "exefs/main.npdm": "09538851176328215eb5fd959fb887511b21b31f3d713f0e14caffc75a95c34a",
+    "exefs/subsdk9": "d3630815ee02f2502d072e382456ed043a4cfa6e642589bc313324cb852bbee1"
+  }
+}

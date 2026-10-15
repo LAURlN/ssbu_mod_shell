@@ -1,0 +1,32 @@
+{
+  "set": "chrom_jab",
+  "what": "Chrom's neutral attack (Attack11) donor material: the Falchion article (model + motion) for all eight costumes, plus the donor body skeleton and params",
+  "why": "Chrom's jab on the G&W-skinned Pyra c06/c07 (see projects/pgwr/PLAN_CHROM_JAB.md). The Falchion is a rigid article with no pose clips, so its blade follows the body bone - the opposite of the Aegis esword, which owns its pose and could not be re-aimed by any body clip (graveyard R-20/R-21).",
+  "source": {
+    "kind": "live console extraction, read-only",
+    "method": "tools/fetch_arc_files.py v1.0.0, arc_extract_file_regional",
+    "plugin": "libarc_network.nro on the SD, Smash running, port 43022",
+    "ip": "192.168.2.166",
+    "region": 2,
+    "game_version": "13.0.4",
+    "date": "2026-09-30"
+  },
+  "arc_paths": {
+    "model": "fighter/chrom/model/sword/c00..c07/ - 14 files each: model.numdlb, model.numshb, model.numshexb, model.nusktb, model.nusrcmdlb, model.nuhlpb, model.numatb, model.xmb, dark_model.numatb, light_model.numatb, metamon_model.numatb, met_chrom_001_col.nutexb, met_chrom_001_nor.nutexb, met_chrom_001_prm.nutexb",
+    "motion": "fighter/chrom/motion/sword/c00..c07/ - 3 files each: motion_list.bin, j00entryl.nuanmb, j00entryr.nuanmb",
+    "extras": "fighter/chrom/model/body/c00/model.nusktb, fighter/chrom/param/vl.prc, fighter/chrom/param/expression_vl.prc"
+  },
+  "files": 139,
+  "failures": 0,
+  "layout": "refs/chrom_jab/arc/<arc path>, mirroring the ARC tree",
+  "hashes": "per-file sha256 and byte counts in refs/chrom_jab/extraction.json; re-verify with toolchains/py312/python.exe tools/fetch_arc_files.py --check",
+  "not_dumped": {
+    "sound": "sound/bank/fighter/se_chrom.* (27 entries in the ARC index, none extracted). The project convention is to play the recipient's own SE (se_eflame_swing_s01), so the donor bank is only needed if Chrom's own swing sound is wanted.",
+    "trail": "not needed - dumps/arc/effect/fighter/chrom/ already holds ef_chrom.eff and trail/tex_chrom_sword{1,2}.nutexb, the pair Chrom's AFTER_IMAGE4_ON_arg29 names."
+  },
+  "notes": [
+    "The article skeleton is 2 bones (HaveR root -> Sword); the single mesh fal_RShape is skinned to Sword.",
+    "Blade runs along +z with the tip at z = 10.908, against the Aegis blade's 11.39.",
+    "Every one of the 20 distinct sword file names is byte-identical across all eight costumes, unlike gamewatch normal_weapon and breath."
+  ]
+}

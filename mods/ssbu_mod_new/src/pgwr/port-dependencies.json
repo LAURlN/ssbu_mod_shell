@@ -1,0 +1,943 @@
+{
+ "Attack11": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_NORMAL_WEAPON"
+  ],
+  "gamewatch_work_ids": [
+   "FIGHTER_GAMEWATCH_INSTANCE_WORK_ID_INT_NORMAL_WEAPON_KIND"
+  ],
+  "gamewatch_statuses": [],
+  "articles": [
+   "NORMAL_WEAPON"
+  ],
+  "effects": [
+   "null"
+  ],
+  "sounds": [
+   "se_gamewatch_wave04_hi",
+   "se_gamewatch_wave04_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [
+   "attack_11"
+  ],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attack11"
+   ],
+   [
+    "expression",
+    "attack11"
+   ],
+   [
+    "game",
+    "attack11"
+   ],
+   [
+    "sound",
+    "attack11"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackDash": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave02_hi",
+   "se_gamewatch_wave02_lo"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attackdash"
+   ],
+   [
+    "expression",
+    "attackdash"
+   ],
+   [
+    "game",
+    "attackdash"
+   ],
+   [
+    "sound",
+    "attackdash"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackHi3": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_run_smoke"
+  ],
+  "sounds": [
+   "se_gamewatch_wave09_hi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attackhi3"
+   ],
+   [
+    "expression",
+    "attackhi3"
+   ],
+   [
+    "game",
+    "attackhi3"
+   ],
+   [
+    "sound",
+    "attackhi3"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackHi4": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash"
+  ],
+  "sounds": [
+   "se_gamewatch_smash_start",
+   "se_gamewatch_wave10_hi",
+   "se_gamewatch_wave10_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attackhi4"
+   ],
+   [
+    "expression",
+    "attackhi4"
+   ],
+   [
+    "game",
+    "attackhi4"
+   ],
+   [
+    "sound",
+    "attackhi4"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackHi4Charge": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_run_smoke",
+   "sys_smash_flash_s"
+  ],
+  "sounds": [],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attackhi4charge"
+   ],
+   [
+    "expression",
+    "attackhi4charge"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackLw3": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_NORMAL_WEAPON"
+  ],
+  "gamewatch_work_ids": [
+   "FIGHTER_GAMEWATCH_INSTANCE_WORK_ID_INT_NORMAL_WEAPON_KIND"
+  ],
+  "gamewatch_statuses": [],
+  "articles": [
+   "NORMAL_WEAPON"
+  ],
+  "effects": [
+   "sys_turn_smoke"
+  ],
+  "sounds": [
+   "se_gamewatch_wave09_lo",
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [
+   "attack_lw3"
+  ],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacklw3"
+   ],
+   [
+    "expression",
+    "attacklw3"
+   ],
+   [
+    "game",
+    "attacklw3"
+   ],
+   [
+    "sound",
+    "attacklw3"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackLw4": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash"
+  ],
+  "sounds": [
+   "se_gamewatch_smash_start",
+   "se_gamewatch_wave01_hi",
+   "se_gamewatch_wave05_mi",
+   "se_gamewatch_wave06_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacklw4"
+   ],
+   [
+    "expression",
+    "attacklw4"
+   ],
+   [
+    "game",
+    "attacklw4"
+   ],
+   [
+    "sound",
+    "attacklw4"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackLw4Charge": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_run_smoke",
+   "sys_smash_flash_s"
+  ],
+  "sounds": [],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacklw4charge"
+   ],
+   [
+    "expression",
+    "attacklw4charge"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackS3": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_NORMAL_WEAPON"
+  ],
+  "gamewatch_work_ids": [
+   "FIGHTER_GAMEWATCH_INSTANCE_WORK_ID_INT_NORMAL_WEAPON_KIND"
+  ],
+  "gamewatch_statuses": [],
+  "articles": [
+   "NORMAL_WEAPON"
+  ],
+  "effects": [
+   "sys_run_smoke"
+  ],
+  "sounds": [
+   "se_gamewatch_wave09_hi",
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [
+   "attack_s3"
+  ],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacks3"
+   ],
+   [
+    "expression",
+    "attacks3"
+   ],
+   [
+    "game",
+    "attacks3"
+   ],
+   [
+    "sound",
+    "attacks3"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackS4": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash"
+  ],
+  "sounds": [
+   "se_gamewatch_smash_s01",
+   "se_gamewatch_smash_start"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacks4"
+   ],
+   [
+    "expression",
+    "attacks4"
+   ],
+   [
+    "game",
+    "attacks4"
+   ],
+   [
+    "sound",
+    "attacks4"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackS4Charge": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_run_smoke",
+   "sys_smash_flash_s"
+  ],
+  "sounds": [],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "attacks4charge"
+   ],
+   [
+    "expression",
+    "attacks4charge"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackAirN": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_NORMAL_WEAPON"
+  ],
+  "gamewatch_work_ids": [
+   "FIGHTER_GAMEWATCH_INSTANCE_WORK_ID_INT_NORMAL_WEAPON_KIND"
+  ],
+  "gamewatch_statuses": [],
+  "articles": [
+   "NORMAL_WEAPON"
+  ],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave01_hi",
+   "se_gamewatch_wave01_lo"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [
+   "attack_air_n"
+  ],
+  "uses_slope": false,
+  "functions": [
+   [
+    "expression",
+    "attackairn"
+   ],
+   [
+    "game",
+    "attackairn"
+   ],
+   [
+    "sound",
+    "attackairn"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackAirB": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_NORMAL_WEAPON"
+  ],
+  "gamewatch_work_ids": [
+   "FIGHTER_GAMEWATCH_INSTANCE_WORK_ID_INT_NORMAL_WEAPON_KIND"
+  ],
+  "gamewatch_statuses": [],
+  "articles": [
+   "NORMAL_WEAPON"
+  ],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave08_hi",
+   "se_gamewatch_wave08_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [
+   "attack_air_b"
+  ],
+  "uses_slope": false,
+  "functions": [
+   [
+    "expression",
+    "attackairb"
+   ],
+   [
+    "game",
+    "attackairb"
+   ],
+   [
+    "sound",
+    "attackairb"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackAirF": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_BOMB"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [
+   "BOMB"
+  ],
+  "effects": [
+   "sys_smash_flash"
+  ],
+  "sounds": [
+   "se_gamewatch_wave08_hi",
+   "se_gamewatch_wave08_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "attackairf"
+   ],
+   [
+    "expression",
+    "attackairf"
+   ],
+   [
+    "game",
+    "attackairf"
+   ],
+   [
+    "sound",
+    "attackairf"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackAirHi": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_GENERATE_ARTICLE_BREATH"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [
+   "BREATH"
+  ],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave08_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "expression",
+    "attackairhi"
+   ],
+   [
+    "game",
+    "attackairhi"
+   ],
+   [
+    "sound",
+    "attackairhi"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "AttackAirLw": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash"
+  ],
+  "sounds": [
+   "se_gamewatch_wave08_hi",
+   "se_gamewatch_wave08_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "attackairlw"
+   ],
+   [
+    "expression",
+    "attackairlw"
+   ],
+   [
+    "game",
+    "attackairlw"
+   ],
+   [
+    "sound",
+    "attackairlw"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "Catch": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "expression",
+    "catch"
+   ],
+   [
+    "game",
+    "catch"
+   ],
+   [
+    "sound",
+    "catch"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "CatchAttack": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "expression",
+    "catchattack"
+   ],
+   [
+    "game",
+    "catchattack"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "CatchDash": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_step_left_m",
+   "se_gamewatch_step_right_m",
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "expression",
+    "catchdash"
+   ],
+   [
+    "game",
+    "catchdash"
+   ],
+   [
+    "sound",
+    "catchdash"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "CatchTurn": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "expression",
+    "catchturn"
+   ],
+   [
+    "game",
+    "catchturn"
+   ],
+   [
+    "sound",
+    "catchturn"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "CatchWait": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [],
+  "sounds": [],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "expression",
+    "catchwait"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "ThrowF": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_STATUS_THROW_FLAG_SET_STOCK_ICON",
+   "FIGHTER_GAMEWATCH_STATUS_THROW_WORK_FLOAT_STOCK_ICON_ROTATE"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash_s"
+  ],
+  "sounds": [
+   "se_common_throw_02",
+   "se_gamewatch_wave02_mi",
+   "se_gamewatch_wave03_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "throwf"
+   ],
+   [
+    "expression",
+    "throwf"
+   ],
+   [
+    "game",
+    "throwf"
+   ],
+   [
+    "sound",
+    "throwf"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "ThrowB": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_STATUS_THROW_FLAG_SET_STOCK_ICON",
+   "FIGHTER_GAMEWATCH_STATUS_THROW_WORK_FLOAT_STOCK_ICON_ROTATE"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash_s"
+  ],
+  "sounds": [
+   "se_common_throw_02",
+   "se_gamewatch_wave02_mi",
+   "se_gamewatch_wave03_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "throwb"
+   ],
+   [
+    "expression",
+    "throwb"
+   ],
+   [
+    "game",
+    "throwb"
+   ],
+   [
+    "sound",
+    "throwb"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "ThrowHi": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_STATUS_THROW_FLAG_SET_STOCK_ICON",
+   "FIGHTER_GAMEWATCH_STATUS_THROW_WORK_FLOAT_STOCK_ICON_ROTATE"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash_s"
+  ],
+  "sounds": [
+   "se_common_throw_02",
+   "se_gamewatch_wave02_mi",
+   "se_gamewatch_wave03_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "throwhi"
+   ],
+   [
+    "expression",
+    "throwhi"
+   ],
+   [
+    "game",
+    "throwhi"
+   ],
+   [
+    "sound",
+    "throwhi"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "ThrowLw": {
+  "gamewatch_constants": [
+   "FIGHTER_GAMEWATCH_STATUS_THROW_FLAG_SET_STOCK_ICON",
+   "FIGHTER_GAMEWATCH_STATUS_THROW_WORK_FLOAT_STOCK_ICON_ROTATE"
+  ],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_smash_flash_s"
+  ],
+  "sounds": [
+   "se_common_throw_03",
+   "se_gamewatch_wave02_mi",
+   "se_gamewatch_wave03_mi"
+  ],
+  "attack_bones": [],
+  "article_motions": [],
+  "uses_slope": false,
+  "functions": [
+   [
+    "effect",
+    "throwlw"
+   ],
+   [
+    "expression",
+    "throwlw"
+   ],
+   [
+    "game",
+    "throwlw"
+   ],
+   [
+    "sound",
+    "throwlw"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "DownAttackU": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_atk_smoke"
+  ],
+  "sounds": [
+   "se_gamewatch_wave09_hi",
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "downattacku"
+   ],
+   [
+    "expression",
+    "downattacku"
+   ],
+   [
+    "game",
+    "downattacku"
+   ],
+   [
+    "sound",
+    "downattacku"
+   ]
+  ],
+  "eflame_has_this_status": true
+ },
+ "DownAttackD": {
+  "gamewatch_constants": [],
+  "gamewatch_work_ids": [],
+  "gamewatch_statuses": [],
+  "articles": [],
+  "effects": [
+   "sys_atk_smoke"
+  ],
+  "sounds": [
+   "se_gamewatch_wave09_hi",
+   "se_gamewatch_wave09_mi"
+  ],
+  "attack_bones": [
+   "top"
+  ],
+  "article_motions": [],
+  "uses_slope": true,
+  "functions": [
+   [
+    "effect",
+    "downattackd"
+   ],
+   [
+    "expression",
+    "downattackd"
+   ],
+   [
+    "game",
+    "downattackd"
+   ],
+   [
+    "sound",
+    "downattackd"
+   ]
+  ],
+  "eflame_has_this_status": true
+ }
+}

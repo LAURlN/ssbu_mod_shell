@@ -1,0 +1,12 @@
+diff --git a/fighter_manifest.py b/fighter_manifest.py
+index 7265c10..f13e905 100644
+--- a/fighter_manifest.py
++++ b/fighter_manifest.py
+@@ -9,6 +9,7 @@ FIGHTER_KEYS = {
+     "series": "str", "disp_order": "int", "save_no": "int", "exhibit_year": "int",
+     "narration": "str", "staffroll": "bool", "jingle": "str",
+     "owns_param_resources": "bool", "effect_namespace": "int", "article_namespace": "int",
++    "css": "bool",
+ }
+ ARTICLE_KEYS = {"name": "str", "from": "str", "base_article": "str", "kirby": "bool"}
+ KIRBY_KEYS = {"statuses": "int", "first": "int", "full_model": "bool", "model": "str"}

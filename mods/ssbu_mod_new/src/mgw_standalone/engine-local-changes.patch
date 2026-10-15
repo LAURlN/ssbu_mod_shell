@@ -1,0 +1,526 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 1d32cd8..9318135 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -303,11 +303,11 @@ dependencies = [
+ [[package]]
+ name = "skyline"
+ version = "0.6.0"
+-source = "git+https://github.com/ultimate-research/skyline-rs.git#6b52d321275639f26c2371d8142550ba0013a5e4"
++source = "git+https://github.com/ultimate-research/skyline-rs#6b52d321275639f26c2371d8142550ba0013a5e4"
+ dependencies = [
+  "libc-nnsdk 0.5.0",
+  "nnsdk 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+- "skyline_macro 0.2.1 (git+https://github.com/ultimate-research/skyline-rs.git)",
++ "skyline_macro 0.2.1 (git+https://github.com/ultimate-research/skyline-rs)",
+ ]
+ 
+ [[package]]
+@@ -336,7 +336,7 @@ dependencies = [
+ [[package]]
+ name = "skyline_macro"
+ version = "0.2.1"
+-source = "git+https://github.com/ultimate-research/skyline-rs.git#6b52d321275639f26c2371d8142550ba0013a5e4"
++source = "git+https://github.com/ultimate-research/skyline-rs#6b52d321275639f26c2371d8142550ba0013a5e4"
+ dependencies = [
+  "lazy_static",
+  "proc-macro2",
+@@ -354,7 +354,7 @@ dependencies = [
+  "libc-nnsdk 0.4.0",
+  "nnsdk 0.6.1 (git+https://github.com/ultimate-research/nnsdk-rs)",
+  "paste",
+- "skyline 0.6.0 (git+https://github.com/ultimate-research/skyline-rs.git)",
++ "skyline 0.6.0 (git+https://github.com/ultimate-research/skyline-rs)",
+ ]
+ 
+ [[package]]
+diff --git a/src/article_bridges.rs b/src/article_bridges.rs
+index 07297fe..7335299 100644
+--- a/src/article_bridges.rs
++++ b/src/article_bridges.rs
+@@ -1596,7 +1596,10 @@ pub(crate) unsafe fn custom_article_data_cache_insert(
+     let copy_kind = crate::kirby_copy::active_kirby_copy_kind();
+     let minted = key < BARE_WEAPON_KIND_CEILING
+         && crate::custom_articles::custom_weapon_name(key as i32).is_some();
+-    let guarded = minted || (key < BARE_WEAPON_KIND_CEILING && definition.is_some());
++    // Guard Kirby copy ability models (copy_kind.is_some()) and minted weapons against missing
++    // model.numdlb assets. Ordinary clone articles need their native cache and motion-holder
++    // setup; the bunshin body lookup is redirected in model_build_probe.
++    let guarded = minted || (key < BARE_WEAPON_KIND_CEILING && copy_kind.is_some());
+     if guarded && index != u32::MAX {
+         let (stop, file_path) = crate::copy_model_probe::model_residency(index);
+         if stop != "resident" {
+diff --git a/src/copy_model_probe.rs b/src/copy_model_probe.rs
+index e08d2ff..60a80e3 100644
+--- a/src/copy_model_probe.rs
++++ b/src/copy_model_probe.rs
+@@ -1,27 +1,35 @@
++// Kirby copy ability model residency probe. A custom clone's copy ability can
++// lack a resident model.numdlb; native 0x35c22e0 faults when dereferencing the
++// unpopulated resource record. This hook inspects the exact data structures the
++// game checks and returns the early-exit path when the record is not resident.
++
+ use core::sync::atomic::{AtomicU32, Ordering};
++use std::sync::Mutex;
++
++#[path = "residency_index.rs"]
++mod residency_index;
+ 
+ const MODEL_BUILD: usize = 0x35c22e0;
+-const FILESYSTEM: usize = 0x5331f20;
+-const NOT_FOUND: u32 = 0xffffff;
+-const LOWEST_PLAUSIBLE_POINTER: usize = 0x1_0000;
++const FILESYSTEM: usize = 0x534be88;
++const NOT_FOUND: u32 = 0x00ffffff;
++const LOWEST_PLAUSIBLE_POINTER: usize = 0x8000_0000;
+ const RECORD_STRIDE: usize = 0x18;
+-const MODEL_NUMDLB: &[u8] = b"model.numdlb\0";
+-
+-const CONTEXT_REPORTS: u32 = 48;
+-const FATAL_REPORTS: u32 = 24;
++const MODEL_NUMDLB: [u8; 13] = *b"model.numdlb\0";
++// Pinned 13.0.4 archive index: fighter/elight/model/body/c00/model.numdlb.
++const ELIGHT_BODY_MODEL_FILE: u32 = 0x34e65;
++const ELIGHT_BODY_SEARCH_PATH: u32 = 0x9686;
++const ROUTE_BREADCRUMB_PATH: &str = "sd:/ultimate/clone_engine/p16-model-route.txt";
++static ROUTE_BREADCRUMB_LOCK: Mutex<()> = Mutex::new(());
+ 
+-static CONTEXT_LOG: AtomicU32 = AtomicU32::new(0);
+ static FATAL_LOG: AtomicU32 = AtomicU32::new(0);
++static CONTEXT_LOG: AtomicU32 = AtomicU32::new(0);
+ static GUARDED: AtomicU32 = AtomicU32::new(0);
++static BODY_ROUTE_LOG: AtomicU32 = AtomicU32::new(0);
++const FATAL_REPORTS: u32 = 8;
++const CONTEXT_REPORTS: u32 = 8;
+ 
+-#[skyline::from_offset(0x35c2040)]
+-fn resolve_relative_path(search_path: u32, relative: *const u8) -> u32;
+-
+-#[skyline::from_offset(0x3540450)]
+-fn add_to_res_service(service: usize, file_path: u32);
+-
++#[derive(Clone, Copy)]
+ struct Residency {
+-    file_path: u32,
+     service: usize,
+     count_a: u32,
+     slot: usize,
+@@ -30,6 +38,7 @@ struct Residency {
+     count_b: u32,
+     record: usize,
+     record_flag: u8,
++    file_path: u32,
+     stop: &'static str,
+ }
+ 
+@@ -94,13 +103,14 @@ unsafe fn inspect(search_path: u32) -> Residency {
+         out.stop = "flag";
+         return out;
+     }
+-    out.entry = core::ptr::read_volatile(slot as *const u32);
+-    if out.entry == NOT_FOUND {
++    let entry = core::ptr::read_volatile(slot as *const u32);
++    out.entry = entry;
++    if entry == NOT_FOUND {
+         out.stop = "entry";
+         return out;
+     }
+     out.count_b = core::ptr::read_volatile((service + 0x1c) as *const u32);
+-    if out.entry >= out.count_b {
++    if !residency_index::record_entry_in_bounds(entry, out.count_b) {
+         out.stop = "count_b";
+         return out;
+     }
+@@ -130,6 +140,21 @@ fn ticket(counter: &AtomicU32, cap: u32) -> Option<u32> {
+     (n < cap).then_some(n)
+ }
+ 
++fn route_breadcrumb(line: &str) -> Result<(), String> {
++    let _lock = ROUTE_BREADCRUMB_LOCK.lock().map_err(|error| error.to_string())?;
++    let mut contents = match std::fs::read_to_string(ROUTE_BREADCRUMB_PATH) {
++        Ok(contents) => contents,
++        Err(error) if error.kind() == std::io::ErrorKind::NotFound => String::new(),
++        Err(error) => return Err(error.to_string()),
++    };
++    if contents.len() > 32 * 1024 {
++        contents.clear();
++    }
++    contents.push_str(line);
++    contents.push('\n');
++    std::fs::write(ROUTE_BREADCRUMB_PATH, contents).map_err(|error| error.to_string())
++}
++
+ #[skyline::hook(offset = MODEL_BUILD)]
+ pub(crate) unsafe fn model_build_probe(
+     out: *mut u64,
+@@ -143,7 +168,56 @@ pub(crate) unsafe fn model_build_probe(
+     };
+     let copy_kind = crate::kirby_copy::active_kirby_copy_kind();
+     let state = inspect(search);
+-    let doomed = state.fatal();
++    let mut redirected_search = search;
++    #[cfg(feature = "css_slot")]
++    if copy_kind.is_none()
++        && (search == ELIGHT_BODY_SEARCH_PATH || state.file_path == ELIGHT_BODY_MODEL_FILE)
++    {
++        if let Some(definition) = crate::active_construction_kind_public()
++            .and_then(crate::clone_definition)
++            .filter(|definition| definition.base_resource_name == "elight")
++        {
++            let clone_path = format!("fighter/{}/model/body/c00", definition.resource_name);
++            let candidate = crate::fighter_modules::search_path_index(&clone_path);
++            let candidate_state = inspect(candidate);
++            let routed = candidate_state.resident();
++            if routed {
++                redirected_search = candidate;
++            }
++            let n = BODY_ROUTE_LOG.fetch_add(1, Ordering::Relaxed);
++            if n < 16 {
++                let line = format!(
++                    "[copymodel] body-route #{n} kind={} original={search:#x} file={:#x} stop={} entry={:#x} record_flag={} clone={candidate:#x} file={:#x} stop={} entry={:#x} record_flag={} routed={routed}",
++                    definition.kind,
++                    state.file_path,
++                    state.stop,
++                    state.entry,
++                    state.record_flag,
++                    candidate_state.file_path,
++                    candidate_state.stop,
++                    candidate_state.entry,
++                    candidate_state.record_flag,
++                );
++                let _ = route_breadcrumb(&line);
++                crate::dbg_log_public(&line);
++            }
++        } else {
++            let n = BODY_ROUTE_LOG.fetch_add(1, Ordering::Relaxed);
++            if n < 16 {
++                let line = format!(
++                    "[copymodel] body-route #{n} NO ELIGHT CLONE CONTEXT original={search:#x} file={:#x} stop={} entry={:#x} record_flag={}",
++                    state.file_path, state.stop, state.entry, state.record_flag
++                );
++                let _ = route_breadcrumb(&line);
++                crate::dbg_log_public(&line);
++            }
++        }
++    }
++    // Guard only Kirby copy ability model builds. An ordinary clone article needs
++    // a resident model record. Zeroing its output would instead leave a null
++    // article-cache entry, which crashes at 0x17defc4. Bunshin's shared body
++    // lookup is corrected here when the clone's body model is resident.
++    let doomed = copy_kind.is_some() && state.fatal();
+     let slip = if doomed {
+         ticket(&FATAL_LOG, FATAL_REPORTS)
+     } else if copy_kind.is_some() {
+@@ -178,7 +252,12 @@ pub(crate) unsafe fn model_build_probe(
+         }
+         return state.file_path as u64;
+     }
+-    let result = call_original!(out, search_path, variant);
++    let effective_path = if redirected_search != search {
++        &redirected_search as *const u32
++    } else {
++        search_path
++    };
++    let result = call_original!(out, effective_path, variant);
+     if let Some(n) = slip {
+         crate::dbg_log_public(&format!(
+             "[copymodel] #{n} exit search={search:#x} result={result:#x} out0={:#x} out1={:#x}",
+@@ -195,13 +274,36 @@ pub(crate) fn guarded() -> u32 {
+ 
+ pub(crate) fn install() {
+     skyline::install_hooks!(model_build_probe);
++    crate::dbg_log_public("[copymodel] p16: model.numdlb resolver 0x35c2040 and record stride 0x18 match native 13.0.4 builder");
++    let breadcrumb = route_breadcrumb("[copymodel] p16 session started");
++    crate::dbg_log_public(&format!(
++        "[copymodel] p16 breadcrumb {}: {ROUTE_BREADCRUMB_PATH}",
++        match breadcrumb { Ok(()) => "WRITE OK".to_string(), Err(error) => format!("WRITE FAILED ({error})") }
++    ));
+     crate::dbg_log_public(
+-        "[copymodel] armed at 0x35c22e0. Its not-found path at 0x35c23a4 sets x8 to zero and the \
++        "[copymodel] Kirby guard armed at 0x35c22e0. Its not-found path at 0x35c23a4 sets x8 to zero and the \
+          very next instruction loads from x8+0x20, so a model.numdlb that resolves to a file path \
+          whose resource record is not resident is an unconditional null dereference with no \
+          recovery. add_to_res_service at 0x3540450 only queues an async load and never populates \
+          the record, so the residency verdict taken here is the one the game itself reaches. A \
+-         resolved but non resident build is guarded: the load is queued, the out struct is zeroed \
++         resolved but non resident Kirby build is guarded: the load is queued, the out struct is zeroed \
+          exactly as 0x35c232c does for an unresolved path, and stop= names the check that failed.",
+     );
+ }
++
++extern "C" {
++    #[link_name = "\u{1}_ZN3nn2oe17GetOperationModeEv"]
++    fn nn_oe_GetOperationMode() -> u8;
++}
++
++unsafe fn resolve_relative_path(search_path: u32, relative_path: *const u8) -> u32 {
++    let func: unsafe extern "C" fn(u32, *const u8) -> u32 =
++        core::mem::transmute(crate::text_base() + 0x35c2040);
++    func(search_path, relative_path)
++}
++
++unsafe fn add_to_res_service(service: usize, file_path: u32) {
++    let func: unsafe extern "C" fn(usize, u32) -> u64 =
++        core::mem::transmute(crate::text_base() + 0x3540450);
++    func(service, file_path);
++}
+diff --git a/src/css_registration.rs b/src/css_registration.rs
+index d2550da..3092510 100644
+--- a/src/css_registration.rs
++++ b/src/css_registration.rs
+@@ -272,6 +272,8 @@ pub(crate) unsafe fn register_one_csk_css_slot(
+     type AllowOnlineFn = unsafe extern "C" fn(u64);
+ 
+     let ui_chara = hash40(definition.ui_chara);
++    let is_element_pair = crate::mgw_element_pair()
++        .is_some_and(|(mythra, _)| definition.kind == mythra);
+     let custom_kind_hash = hash40(definition.fighter_kind_name);
+     let base_ui = hash40(&format!("ui_chara_{}", definition.base_resource_name));
+     let base_characall = match css.narration {
+@@ -336,10 +338,10 @@ pub(crate) unsafe fn register_one_csk_css_slot(
+         clone_from_ui_chara_id: Some(base_ui),
+         name_id: StringType::Overwrite(CStrCSK::new(css.ui_name)),
+         fighter_kind: Hash40Type::Overwrite(custom_kind_hash),
+-        fighter_kind_corps: Hash40Type::Overwrite(custom_kind_hash),
++        fighter_kind_corps: if is_element_pair { Hash40Type::Optional(None) } else { Hash40Type::Overwrite(custom_kind_hash) },
+         ui_series_id: Hash40Type::Overwrite(hash40(css.ui_series)),
+-        fighter_type: Hash40Type::Overwrite(hash40("fighter_type_normal")),
+-        alt_chara_id: Hash40Type::Overwrite(0x2302_d482a),
++        fighter_type: if is_element_pair { Hash40Type::Optional(None) } else { Hash40Type::Overwrite(hash40("fighter_type_normal")) },
++        alt_chara_id: if is_element_pair { Hash40Type::Optional(None) } else { Hash40Type::Overwrite(0x2302_d482a) },
+         exhibit_year: ShortType::Overwrite(css.exhibit_year),
+         ext_skill_page_num: SignedByteType::Overwrite(0),
+         is_img_ext_skill_page0: BoolType::Overwrite(false),
+@@ -348,7 +350,7 @@ pub(crate) unsafe fn register_one_csk_css_slot(
+         disp_order: SignedByteType::Overwrite(css.disp_order),
+         save_no: SignedByteType::Overwrite(css.save_no),
+         skill_list_order: SignedByteType::Overwrite(css.disp_order),
+-        chara_count: SignedByteType::Overwrite(1),
++        chara_count: if is_element_pair { SignedByteType::Optional(None) } else { SignedByteType::Overwrite(1) },
+         can_select: BoolType::Overwrite(true),
+         is_usable_soundtest: BoolType::Overwrite(true),
+         is_called_pokemon: BoolType::Overwrite(false),
+@@ -360,8 +362,8 @@ pub(crate) unsafe fn register_one_csk_css_slot(
+         is_plural_message: BoolType::Overwrite(false),
+         is_plural_narration: BoolType::Overwrite(false),
+         is_article: BoolType::Overwrite(false),
+-        extra_flags: IntType::Overwrite(0),
+-        has_multiple_face: BoolType::Overwrite(false),
++        extra_flags: if is_element_pair { IntType::Optional(None) } else { IntType::Overwrite(0) },
++        has_multiple_face: if is_element_pair { BoolType::Optional(None) } else { BoolType::Overwrite(false) },
+         result_pf0: BoolType::Overwrite(true),
+         result_pf1: BoolType::Overwrite(true),
+         result_pf2: BoolType::Overwrite(true),
+@@ -849,4 +851,3 @@ mod owner_object_tests {
+         assert_eq!(entry_of_owner_object(0x0), None);
+     }
+ }
+-
+diff --git a/src/lib.rs b/src/lib.rs
+index 9668b12..218486e 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -279,6 +279,31 @@ fn clone_definition(kind: i32) -> Option<&'static CloneDefinition> {
+         .find(|definition| definition.kind == kind)
+ }
+ 
++#[cfg(feature = "css_slot")]
++fn mgw_element_pair() -> Option<(i32, i32)> {
++    let mythra = clone_definition_from_name("mgw_mythra")?;
++    let pyra = clone_definition_from_name("mgw_pyra")?;
++    (mythra.base_kind == 91 && pyra.base_kind == 90
++        && mythra.css.is_some() && pyra.css.is_none())
++        .then_some((mythra.kind, pyra.kind))
++}
++
++#[cfg(feature = "css_slot")]
++fn clone_form_for_entry(selected: i32, native_kind: i32) -> Option<i32> {
++    if let Some((mythra, pyra)) = mgw_element_pair() {
++        if selected == mythra {
++            if native_kind == 90 || native_kind == pyra {
++                return Some(pyra);
++            }
++            if native_kind == 91 || native_kind == mythra {
++                return Some(mythra);
++            }
++        }
++    }
++    let definition = clone_definition(selected)?;
++    (definition.base_kind == native_kind || selected == native_kind).then_some(selected)
++}
++
+ #[cfg(feature = "css_slot")]
+ pub(crate) fn clone_definition_from_name(name: &str) -> Option<&'static CloneDefinition> {
+     clone_definitions()
+@@ -1716,9 +1741,8 @@ pub(crate) unsafe fn clone_kind_of_object(object: u64) -> Option<i32> {
+     if !(0..8).contains(&entry_id) {
+         return None;
+     }
+-    let clone_kind = entry_custom_kind(entry_id as u8)?;
+-    let definition = clone_definition(clone_kind)?;
+-    (definition.base_kind == kind).then_some(clone_kind)
++    let selected = entry_custom_kind(entry_id as u8)?;
++    clone_form_for_entry(selected, kind)
+ }
+ 
+ macro_rules! clone_fighter_acmd_hooks {
+@@ -2117,7 +2141,11 @@ unsafe fn param_override_kind(module: u64) -> Option<i32> {
+     if !(0..8).contains(&entry_id) {
+         return None;
+     }
+-    entry_custom_kind(entry_id as u8)
++    let selected = entry_custom_kind(entry_id as u8)?;
++    let native = smash::app::utility::get_kind(
++        &mut *(boma as *mut smash::app::BattleObjectModuleAccessor),
++    );
++    clone_form_for_entry(selected, native)
+ }
+ 
+ #[cfg(feature = "css_slot")]
+@@ -2789,7 +2817,9 @@ unsafe fn fighter_clone_kind(boma: *mut smash::app::BattleObjectModuleAccessor)
+     if !(0..8).contains(&entry_id) {
+         return None;
+     }
+-    entry_custom_kind(entry_id as u8)
++    let selected = entry_custom_kind(entry_id as u8)?;
++    let native = smash::app::utility::get_kind(&mut *boma);
++    clone_form_for_entry(selected, native)
+ }
+ 
+ #[cfg(feature = "css_slot")]
+@@ -2815,7 +2845,7 @@ unsafe fn weapon_owner_clone_kind(
+     }
+     if css_registration::owner_object_table_is_populated() {
+         if let Some(entry) = css_registration::entry_of_owner_object(owner_id) {
+-            return entry_custom_kind(entry);
++            return fighter_clone_kind(owner).or_else(|| entry_custom_kind(entry));
+         }
+     }
+     if let Some(kind) = fighter_clone_kind(owner) {
+@@ -4413,6 +4443,8 @@ pub fn main() {
+             skyline::install_hook!(entry_lifecycle_hook);
+         }
+         skyline::install_hook!(kind_expander_hook);
++        #[cfg(feature = "css_slot")]
++        skyline::install_hook!(load_pipeline::element_pair_classifier_hook);
+         #[cfg(not(feature = "css_slot"))]
+         skyline::println!(
+             "[clone_engine] v33: use one final kind-0 resource registration while retaining construction kind 118 at 0x14ec24c; keep all proven init/auxiliary/boundary base bridges. Expected tags: [loadfinal] single,[initbridge],[auxkind],[boundkind]."
+diff --git a/src/load_pipeline.rs b/src/load_pipeline.rs
+index a1f42d1..dfa4a88 100644
+--- a/src/load_pipeline.rs
++++ b/src/load_pipeline.rs
+@@ -541,6 +541,7 @@ pub(crate) unsafe fn fighter_scoped_resource_path_hook(
+     let entry = entry_for_resource_record(record as usize);
+     let definition = entry
+         .and_then(|entry| entry_custom_kind(entry as u8))
++        .and_then(|selected| crate::clone_form_for_entry(selected, kind))
+         .and_then(clone_definition)
+         .filter(|definition| kind == definition.base_kind);
+ 
+@@ -709,6 +710,11 @@ pub(crate) unsafe fn fighter_init_kind_bridge(
+             Some(_) => entry_kind_slot(entry_id, kind),
+             None => None,
+         };
++        let partner = crate::mgw_element_pair().and_then(|(mythra, pyra)| {
++            let other = if kind == mythra { pyra } else if kind == pyra { mythra } else { return None };
++            let (slot, _, _) = match guard { Some(_) => entry_kind_slot(entry_id, other)?, None => return None };
++            Some((slot, other, clone_base(other)?))
++        });
+         if let Some((slot, idx, count)) = patched {
+             dbg_log!(
+                 "[initbridge] #{n} kind {kind}->{base} name {name_hash:#x}->{spoof_hash:#x} \
+@@ -721,6 +727,10 @@ pub(crate) unsafe fn fighter_init_kind_bridge(
+                  forwarding without array bridge"
+             );
+         }
++        if let Some((slot, other, other_base)) = partner {
++            *slot = other_base;
++            dbg_log!("[elementpair] init entry={entry_id} kind={kind} partner {other}->{other_base}");
++        }
+ 
+         let row = crate::fighter_param_rows::enter(kind, base);
+         let params = crate::fighter_params::enter_clone_window(kind, base, entry_id);
+@@ -733,6 +743,9 @@ pub(crate) unsafe fn fighter_init_kind_bridge(
+         if let Some((slot, _, _)) = patched {
+             *slot = kind;
+         }
++        if let Some((slot, other, _)) = partner {
++            *slot = other;
++        }
+         init_bridge_release(entry_id, guard);
+         dbg_log!("[initbridge] #{n} EXIT restored entry={entry_id} kind={kind}");
+     } else {
+@@ -1012,6 +1025,24 @@ pub(crate) unsafe fn kind_expander_hook(kind: i32, out: *mut i32) -> i32 {
+     let n = ENTRY118_EXPAND_COUNT.fetch_add(1, core::sync::atomic::Ordering::Relaxed);
+     let mut k = kind;
+ 
++    #[cfg(feature = "css_slot")]
++    if let Some((mythra, pyra)) = crate::mgw_element_pair() {
++        if kind == mythra && !out.is_null() {
++            let (first, second) = if caller_off == IN_MATCH_RESOURCE_LOADER_CALLER {
++                (91, 90)
++            } else {
++                (mythra, pyra)
++            };
++            core::ptr::write_volatile(out, first);
++            core::ptr::write_volatile(out.add(1), second);
++            core::ptr::write_volatile(out.add(2), -1);
++            dbg_log!(
++                "[elementpair] expand #{n} caller={caller_off:#x} kind={kind} -> [{first},{second}]"
++            );
++            return 2;
++        }
++    }
++
+     #[cfg(feature = "css_slot")]
+     if let Some(definition) = clone_definition(k) {
+         if caller_off == MATCH_ROSTER_SETUP_CALLER {
+@@ -1073,6 +1104,24 @@ pub(crate) unsafe fn kind_expander_hook(kind: i32, out: *mut i32) -> i32 {
+     count
+ }
+ 
++#[cfg(feature = "css_slot")]
++#[skyline::hook(offset = 0x65dcc0)]
++pub(crate) unsafe fn element_pair_classifier_hook(kinds: *const i32) -> i32 {
++    if !kinds.is_null() {
++        if let Some((mythra, pyra)) = crate::mgw_element_pair() {
++            let first = core::ptr::read_volatile(kinds);
++            let second = core::ptr::read_volatile(kinds.add(1));
++            if (first == mythra && second == pyra)
++                || (first == pyra && second == mythra)
++            {
++                dbg_log!("[elementpair] classifier [{first},{second}] -> 0x74");
++                return 0x74;
++            }
++        }
++    }
++    call_original!(kinds)
++}
++
+ #[cfg(all(feature = "diag_article_initspoof", feature = "true_kind"))]
+ pub(crate) unsafe fn log_entry_installer_vt(n: u32, entry_id: i32) {
+     let tb = text_base();
+diff --git a/src/residency_index.rs b/src/residency_index.rs
+new file mode 100644
+index 0000000..e634001
+--- /dev/null
++++ b/src/residency_index.rs
+@@ -0,0 +1,17 @@
++// Keep the file-table slot index separate from the file-path index. A valid
++// slot must reach the record table instead of being rejected as NOT_FOUND.
++pub(crate) fn record_entry_in_bounds(entry: u32, record_count: u32) -> bool {
++    entry < record_count
++}
++
++#[cfg(test)]
++mod tests {
++    use super::record_entry_in_bounds;
++
++    #[test]
++    fn populated_slot_reaches_its_resource_record() {
++        assert!(record_entry_in_bounds(7, 8));
++        assert!(!record_entry_in_bounds(8, 8));
++        assert!(!record_entry_in_bounds(0x00ff_ffff, 8));
++    }
++}

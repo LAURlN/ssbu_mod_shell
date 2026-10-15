@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-30",
+  "source": "User console, Smash Ultimate 13.0.4, read-only arc-network extraction, region 2",
+  "tool": "tools/fetch_arc_files.py --set brave_special_s_article_motions",
+  "paths_from": "dumps/decoded/arc_files.tsv",
+  "authorization": "User: you can dump now",
+  "files": 16,
+  "failures": [],
+  "hashes": "extraction.json",
+  "verify": "tools/fetch_arc_files.py --set brave_special_s_article_motions --check",
+  "purpose": "Exact spark/lightning motion registrations for all eight costume slots in the owned Hero side-B port; preserves the separate 184-file extraction",
+  "hardware_behavior_claim": false
+}

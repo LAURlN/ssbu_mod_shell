@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "source": "Smash Ultimate 13.0.4 on the user console, read-only arc-network (libarc_network.nro) extraction, region 2",
+  "tool": "tools/fetch_arc_files.py --set brave_special_s",
+  "paths_from": "dumps/decoded/arc_files.tsv (exact index entries, no guessed names)",
+  "purpose": "Hero side-B (SPECIAL_S) port to Mythra c06/c07, dumps/MISSING.md 2026-09-30 Buffy sections A-D",
+  "files": 184,
+  "failures": [],
+  "verify": "tools/fetch_arc_files.py --set brave_special_s --check",
+  "extracted_by": "claude"
+}

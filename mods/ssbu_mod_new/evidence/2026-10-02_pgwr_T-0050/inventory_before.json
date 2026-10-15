@@ -1,0 +1,22 @@
+{
+  "mod_dir": "builds/.cache/fb-1-littlemac-fist-trails/before/ultimate/mods/pyra_gamewatch_reskin",
+  "label_count": 93035,
+  "fighters": {
+    "littlemac": {
+      "bank_loader_fighter": "littlemac",
+      "slots": {},
+      "banks": {
+        "ef_littlemac.eff": {
+          "sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+          "bytes": 13795840,
+          "emitters": 44
+        }
+      },
+      "banks_loaded_by_this_fighter": {
+        "ef_littlemac.eff": true
+      },
+      "banks_not_loaded_by_any_fighter": []
+    }
+  },
+  "cross_slot": {}
+}

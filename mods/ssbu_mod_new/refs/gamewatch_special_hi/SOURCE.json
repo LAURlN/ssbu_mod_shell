@@ -1,0 +1,29 @@
+{
+  "what": "Mr. Game & Watch up special (Fire): status scripts recovered from the game's own lua2cpp NRO, plus the donor ACMD it pairs with",
+  "date": "2026-09-29",
+  "agent": "claude",
+  "game_version": "13.0.4",
+  "method": "tools/nro_decomp (nro_flatten.py -> Ghidra 11.1.2 BinaryLoader base 0 + ghidra_scripts/NroLabels.py, DecompStatus.py -> annotate_c.py); status ids from status_table.py",
+  "inputs": {
+    "dumps/arc/prebuilt/nro/release/lua2cpp_gamewatch.nro": "7929eeaea7b01d0c587ecabb81473ffee64e7c1f4dfd7d94362447175a0eb3ae",
+    "dumps/arc/prebuilt/nro/release/lua2cpp_common.nro": "43876f961a80e413370629d32c23af9de6e4cc26b448bab88d5433714a566097",
+    "dumps/arc/fighter/gamewatch/param/vl.prc": "f8c78283e86d3a43ebdb64301260eb0528cbfff0ec6cd1fea9f38103dd739a6e",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch/SpecialHi.txt": "2b25898ad39c4c054bba8038799683e1397d1904c235938b82492a99712769af",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch/SpecialAirHi.txt": "8ca61f760c23912ad8b1ac2f2953df93e60ae0eba25e18bc2f18bb888c97418e",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch/SpecialHiOpen.txt": "2689f669376e3143944735c239b8244545aa41026682b5208058917d96a4f991",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch/SpecialHiClose.txt": "bee2e094482febe74857cd1e28e4bbd3b448e08f94cbd67a1a6593ef1de07243",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_rescue/SpecialHi.txt": "28199eec7962d5bf8611383d12fe396b19d79b7c10a904f290c925635e5b3ded",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_rescue/SpecialAirHi.txt": "edcf5da86d24be4cb605963b1b6c70afd7f39cd63d8611609741bb6bb1934b7e",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_parachute/SpecialHi.txt": "2d88127ebf8a808568f0d19bff76791013abf16871abbbfb2a7117ab8d3f964a",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_parachute/SpecialAirHi.txt": "8c86fceb4384616a9b08055344b9b7e227b5ff012a968228f00caecfe9333100",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_parachute/SpecialHiOpen.txt": "edfc9bbbaf589ea8c23d72c8112901448b1000a4fff8f4c667d03f62580bc4ca",
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_gamewatch/gamewatch_parachute/SpecialHiClose.txt": "0a3edd78564e5fefd27eef1cccd9b725121b8f89b5da228c7957d2f2d5ae45b5",
+    "dumps/exefs/13.0.4/main.bin": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613"
+  },
+  "outputs": {
+    "special_hi_status.c": "37bd9281a927b3191cf6cddfcba5e48ca5659b66345d9fce6a425ad07ed6e711",
+    "gamewatch_status_table.txt": "982fe7e46ef389886dac035ddea6dd04f254e228aedb2049c82d0cb6835a714a",
+    "event_slots.json": "c069c4109eb95d709d568c688f8c6db1f32479a6146ce560543436d6e3073c01"
+  },
+  "method_event_slots": "tools/audit_event_slots.py (tools/main_image.py relocations; tools/maindesc.py for code regions), 2026-09-30"
+}

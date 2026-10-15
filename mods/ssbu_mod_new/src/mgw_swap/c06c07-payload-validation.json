@@ -1,0 +1,17 @@
+{
+  "version": "2026-09-26.c06c07 (retains Hi3 .g and grenade-disabled .p4)",
+  "description": "Shared c06/c07 gates for all enabled moves, preload, pair selection, dormancy and handoff; c06 original body plus existing sword; grenade feature stays disabled",
+  "nro_bytes": 143360,
+  "nro_sha256": "aadadfbfce1abce1f59aedc9182e76d9c3071bf5b713450deb7cb3f6b4542a29",
+  "nro0_header": true,
+  "declared_size_matches": true,
+  "packaged_matches_build": true,
+  "hi3_motion_manifest": "references/miiswordsman_special_hi3/animation_manifest.json",
+  "hi3_clips_verified": 4,
+  "unrelated_motion_list_entries_unchanged": 731,
+  "c06_files_verified": 37,
+  "c07_assets_unchanged": true,
+  "grenade_feature_enabled": false,
+  "previous_failure": "Other Mythra costumes previously crashed in up-B; preserve existing local vanilla fallbacks. Grenade probe has unresolved crash investigation and remains disabled as in the incoming .p4 workspace.",
+  "switch_runtime_test": "Pending: test both slots separately, both in one match, swaps in both directions, c06 appearance and sword visibility, all replaced moves, respawn/results, c00-c05 vanilla up-B and ordinary G&W Chef"
+}

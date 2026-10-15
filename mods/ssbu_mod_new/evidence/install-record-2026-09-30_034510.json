@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-30",
+  "version": "0.18.0",
+  "method": "src/pgwr/install-to-card.sh; autodetected card, automatic backup, .new staging, cmp/diff verification",
+  "manifest": "builds/pgwr/0.18.0/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-034510",
+  "reskin_nro_sha256": "6fa0071614783f7b04619f5f64398c0a9fa36d3f8ad0abd4705bac28eaf9df14",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1362,
+  "mod_tree_sha256": "83fdc01a79f6a919cd055777b7d333b839c6200583ad7e65880929fd3cc9180a",
+  "protected_plugin_sha256_unchanged": {
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6",
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "user_authorized_combined_017_changes": true
+}

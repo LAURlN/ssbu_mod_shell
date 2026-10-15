@@ -1,0 +1,77 @@
+[
+  {
+    "path": "fighter/mgw_mythra/motion/body/c00/motion_list.bin",
+    "unique_animations": 344,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/bunshin/c00/motion_list.bin",
+    "unique_animations": 9,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/esword/c00/motion_list.bin",
+    "unique_animations": 4,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/meteor/c00/motion_list.bin",
+    "unique_animations": 1,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/windummy/c00/motion_list.bin",
+    "unique_animations": 2,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_mythra/motion/winsword/c00/motion_list.bin",
+    "unique_animations": 4,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/body/c00/motion_list.bin",
+    "unique_animations": 322,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/breath/c00/motion_list.bin",
+    "unique_animations": 1,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/entry/c00/motion_list.bin",
+    "unique_animations": 0,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/normal_weapon/c00/motion_list.bin",
+    "unique_animations": 10,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/octopus/c00/motion_list.bin",
+    "unique_animations": 6,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/oil/c00/motion_list.bin",
+    "unique_animations": 2,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/parachute/c00/motion_list.bin",
+    "unique_animations": 4,
+    "missing": []
+  },
+  {
+    "path": "fighter/mgw_watch/motion/rescue/c00/motion_list.bin",
+    "unique_animations": 2,
+    "missing": []
+  },
+  {
+    "path": "fighter/kirby/motion/copy_mgw_mythra_fitkirby/c00/motion_list.bin",
+    "unique_animations": 0,
+    "missing": []
+  }
+]

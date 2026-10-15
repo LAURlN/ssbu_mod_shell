@@ -1,0 +1,47 @@
+{
+  "nro": "builds\\.cache\\mana_hud\\package-0.1.0\\nro\\libpyra_gamewatch_reskin.angle+hud.nro",
+  "sha256": "64461e1fa4ace4b64bca46dda39080d048ef69bda0aee93c86f84259cf19d528",
+  "values": {
+    "16.3": {
+      "bits": "0x41826666",
+      "literal": 1,
+      "movz": 0
+    },
+    "18.2": {
+      "bits": "0x4191999a",
+      "literal": 1,
+      "movz": 0
+    },
+    "-83.5": {
+      "bits": "0xc2a70000",
+      "literal": 0,
+      "movz": 1
+    }
+  },
+  "baseline": {
+    "nro": "builds\\.cache\\mana_hud\\package-0.1.0\\nro\\libpyra_gamewatch_reskin.baseline-control.nro",
+    "sha256": "abc721ae2fb01bde8428d0363e207b65e6d001a06e00c4fcc274a2a7cbe9ccef",
+    "values": {
+      "16.3": {
+        "bits": "0x41826666",
+        "literal": 0,
+        "movz": 0
+      },
+      "18.2": {
+        "bits": "0x4191999a",
+        "literal": 0,
+        "movz": 0
+      },
+      "-83.5": {
+        "bits": "0xc2a70000",
+        "literal": 0,
+        "movz": 0
+      }
+    }
+  },
+  "absent_from_baseline": [
+    "16.3",
+    "18.2",
+    "-83.5"
+  ]
+}

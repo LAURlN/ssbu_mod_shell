@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.2",
+  "method": "src/pgwr/install-to-card.sh; autodetected card, automatic backup, .new staging, cmp/diff verification",
+  "manifest": "builds/pgwr/0.20.2/ (no MANIFEST.json; the mod tree is byte-identical to 0.20.0's, only the NRO differs)",
+  "backup": "evidence/sd-backups/sd-backup-20260930-055128",
+  "backup_held_version": "0.20.0",
+  "reskin_nro_sha256": "e614f3ded152f9dab9bf5b994bde47bb6276bf27e9a9c74e29f6fe3db87dca92",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1701,
+  "mod_tree_sha256": "5cc3ee90da3649833061cacf2af72c86e6090e5ba41aebe336954108a144a4ab",
+  "tree_hash_definition": "sha256 of sorted '<sha256>  ./<relative path>\\n' records",
+  "mod_tree_note": "Unchanged from 0.20.0. The fix is Rust-only (status/monkey_flip.rs, acmd/monkey_flip.rs), so the 0.20.0 tree was reused rather than regenerated; its hash was recomputed and equals the card's pre-install hash, so no asset differs.",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.20.0": "Monkey Flip diagnostics now reach the card log. All 12 [PGWR-MFLIP] sites used a bare println!, which only reaches the console TCP stream; article::log is the crate's only writer of sd:/ultimate/pgwr_log.txt. A new status::monkey_flip::log mirrors it with the move's prefix. No diagnostic removed, no state-changing call added.",
+  "why": "Two hardware runs of Monkey Flip, on G&W and on Diddy, produced zero [PGWR-MFLIP] lines in the log despite the move firing, so the victim half of the capture has never been measured.",
+  "version_collision_note": "Numbered 0.20.2 because a concurrent session had already claimed 0.20.1 in Cargo.toml/Cargo.lock and was mid-build of it. One shared plugin binary carries both changes.",
+  "supersedes_install_record": "evidence/install-record-2026-09-30_051537.json"
+}

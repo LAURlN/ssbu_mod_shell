@@ -1,0 +1,81 @@
+{
+  "unit": "tilt_down__miifighter",
+  "task_id": "MV-tilt_down__miifighter",
+  "entry": "tilt_down",
+  "donor": "miifighter",
+  "donor_display": "Mii Brawler",
+  "display_name": "Down Tilt: Mii Brawler",
+  "status": "unverified (D) until the user's console run",
+  "owned_motions": [
+    {
+      "kind": "mc_miifighter_attack_lw3",
+      "donor_kind": "attack_lw3",
+      "donor_motion_list_index": 75,
+      "game_script": "game_mcmiifighterattacklw3",
+      "effect_script": "effect_mcmiifighterattacklw3",
+      "sound_script": "sound_mcmiifighterattacklw3",
+      "expression_script": "expression_mcmiifighterattacklw3",
+      "clip": "c01mcmiifighterattacklw3.nuanmb",
+      "donor_clip": "c02attacklw3.nuanmb",
+      "flags": "0x0084",
+      "blend": 0,
+      "cancel_frame": 28,
+      "size": 28,
+      "clip_final_frame_index": 41.0,
+      "clip_frames": 42,
+      "angles": "none: the donor has one motion for this entry"
+    }
+  ],
+  "statuses_taken_over": [
+    {
+      "kind": "FIGHTER_STATUS_KIND_ATTACK_LW3",
+      "value": 44,
+      "hook": "Main",
+      "start_fn": "start_attack_lw3",
+      "order": "after the vanilla Main; only for a Gunner whose saved Mii chose tilt_down=miifighter",
+      "fallback": "returns the vanilla value unchanged when mc_miifighter_attack_lw3 is not loaded",
+      "overrides_in_donor_or_gunner_nro": "none found by the static scan (status_regs.tsv); 37 runtime-kind registrations per NRO unresolved, see research"
+    }
+  ],
+  "hitboxes": [
+    {"id": 0, "frame": 7, "bone": "kneer", "damage": 8.0, "angle": 80, "kbg": 90, "fkb": 0, "bkb": 50, "size": 4.0, "x": 4.8, "y": 0.0, "z": 0.0, "trip": 0.2, "height": "ATTACK_HEIGHT_LOW", "lr_check": "ATTACK_LR_CHECK_POS", "active_frames": "7..8", "clear_frame": 9},
+    {"id": 1, "frame": 7, "bone": "kneer", "damage": 8.0, "angle": 80, "kbg": 90, "fkb": 0, "bkb": 50, "size": 3.5, "x": -2.0, "y": 0.0, "z": 0.0, "trip": 0.2, "height": "ATTACK_HEIGHT_LOW", "lr_check": "ATTACK_LR_CHECK_POS", "active_frames": "7..8", "clear_frame": 9}
+  ],
+  "enable_fix_jostle_area": [
+    {"frame": 2, "args": [0.0, 3.0]},
+    {"frame": 16, "args": [2.0, 3.0]},
+    {"frame": 26, "args": [4.0, 3.0]}
+  ],
+  "effects": [
+    {"script": "effect", "frame": 6, "call": "FOOT_EFFECT", "effect": "sys_turn_smoke", "bone": "top", "kind": "sys_* common, kept"},
+    {"script": "effect", "frame": 6, "call": "EFFECT_FOLLOW_FLIP_ALPHA", "effect": "sys_attack_arc (left and right)", "bone": "top", "kind": "sys_* common, kept"}
+  ],
+  "sounds": [
+    {"script": "sound", "frame": 6, "call": "PLAY_SE", "donor": "se_miifighter_swing_l", "owned": "se_miigunner_attackhard_l01"},
+    {"script": "sound", "frame": 6, "call": "PLAY_SEQUENCE", "donor": "seq_miifighter_rnd_attack01", "owned": "seq_miigunner_rnd_attack02"}
+  ],
+  "expression": [
+    {"frame": "none", "call": "slope", "args": ["MA_MSC_CMD_SLOPE_SLOPE", "SLOPE_STATUS_LR"]},
+    {"frame": 4, "call": "slope", "args": ["MA_MSC_CMD_SLOPE_SLOPE_INTP", "SLOPE_STATUS_TOP", 3]},
+    {"frame": 5, "call": "ControlModule::set_rumble", "args": ["rbkind_nohitm", 0, false, "0x50000000"]},
+    {"frame": 7, "call": "RUMBLE_HIT", "args": ["rbkind_attackm", 0]},
+    {"frame": 10, "call": "slope", "args": ["MA_MSC_CMD_SLOPE_SLOPE_INTP", "SLOPE_STATUS_LR", 8]}
+  ],
+  "dependencies": {
+    "articles": "none",
+    "weapons": "none",
+    "projectiles": "none",
+    "grab_throw_victim_sets": "none",
+    "work_ids_read_by_scripts": "none (the decoded calls are AttackModule, FighterAreaModuleImpl, ControlModule, sv_animcmd only)",
+    "donor_only_sounds": ["se_miifighter_swing_l", "seq_miifighter_rnd_attack01"],
+    "donor_only_effects": "none (both effects are sys_*)",
+    "bones": ["kneer (engine alias of KneeR; the Gunner's own attack_lw3 uses the same alias pattern with armr)", "top (engine origin)"]
+  },
+  "known_differences": [
+    "Sound SE: se_miifighter_swing_l -> se_miigunner_attackhard_l01 (the SE the Gunner's own attack_lw3 plays; present in se_miigunner.tonelabel by crc32).",
+    "Sound sequence: seq_miifighter_rnd_attack01 -> seq_miigunner_rnd_attack02 (the sequence the Gunner's own attack_lw3 plays; hash present in miigunner.sqb). attack01 also exists in miigunner.sqb and is the same index as the donor; attack02 was chosen because the Gunner uses it for this move.",
+    "Effect EFFECT_FOLLOW_FLIP_ALPHA: the donor pushes 16 Lua values; the smash-script macro takes 13. The unit pushes all 16 (the last three are 0, 0, false).",
+    "Size values pushed as float 1.0 where the decoder typed the donor argument as integer 1 (FOOT_EFFECT size, EFFECT_FOLLOW size). Same numeric value.",
+    "Rumble kind rbkind_nohitm and rumble u32 0x50000000 are exact donor values. The P16 forward tilt uses rbkind_nohits (a different hash, see research) and 0 for that u32 (the donor passes 0x50000000)."
+  ]
+}

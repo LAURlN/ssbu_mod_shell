@@ -1,0 +1,61 @@
+{
+  "set": "lucas_attack_lw4",
+  "what": "Lucas down smash (AttackLw4 + AttackLw4Hold) donor material for Mythra c06/c07 (elight), replacing stock Mythra's down smash on those two costumes only",
+  "task": "T-0060 (Freebuff slot 4, 2026-10-02)",
+  "source": {
+    "kind": "offline extraction from the local 13.0.4 data.arc, read-only",
+    "method": "tools/arc-extract (workspace tool) against gamedata/ssbu-13.0.4/data.arc, indexed by dumps/decoded/arc_files.tsv",
+    "why_not_live": "the Snake up-tilt task could pull donor files live over arc-network because the console was on; this task did not assume a reachable console, and did not need one. Every input is in the local archive, so nothing here depends on the console being powered.",
+    "arc_sha256_of_archive": "gamedata/ssbu-13.0.4/data.arc, provenance in gamedata/ssbu-13.0.4/data.arc.provenance.json",
+    "region": "us_en (default)",
+    "game_version": "13.0.4",
+    "date": "2026-10-02"
+  },
+  "donor_files": {
+    "fighter/lucas/motion/body/c00/c04attacklw4.nuanmb": "968d9035e69eecacc427d58bd2403e803511351f65d11064d7c946164f0d5887 (42656 B)",
+    "fighter/lucas/motion/body/c00/c04attacklw4charge.nuanmb": "202e5d020db31b9cf4bcdb310effe845ab8467eb3e4c76bdde5745019528012b (24385 B)",
+    "fighter/lucas/motion/body/c00/motion_list.bin": "ae6086343b1ab2e368b8966996dddd5668d32130653636641655c6c6e0a57d37 (43520 B)",
+    "fighter/lucas/model/body/c00/model.nusktb": "ad7cd39840bd114016351709c032c9b38f8f179696ddf39cb3e6c86a2b1a8ef1 (22696 B)",
+    "effect/fighter/lucas/ef_lucas.eff": "ab46b9eb2addeec621f613f67a581fa66aa5bdd907968feede5614a7047ae2c4 (10576384 B)",
+    "sound/bank/fighter/se_lucas.{nus3audio,nus3bank,tonelabel}": "726e8630.. / 03b8daac.. / 45c0f22a..",
+    "sound/bank/fighter_voice/vc_lucas.{nus3audio,nus3bank,tonelabel}": "f2a15153.. / 90780146.. / a7d200b0.."
+  },
+  "donor_acmd": {
+    "repo": "WuBoytH/SSBU-Dumped-Scripts",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "why": "dumps/scripts/ no longer carries SSBU-Dumped-Scripts-main (only ParamLabels.csv and gamewatch_motion_list.yml remain), and rule 17 forbids approximating a donor script. This is the same commit refs/brave_special_n/acmd_pin.json and tools/fetch_donor_acmd.py already pin, so no new source was introduced.",
+    "files": "donor_acmd/manifest.json (per-file sha256); lucas AttackLw4 (7087 B) and AttackLw4Charge (1618 B), plus elight's own two as the recipient control and robot AttackLw3 as the control for the dump's conversion errors",
+    "tier": "C - third-party decompiled text at a pinned commit"
+  },
+  "recipient_baseline": {
+    "what": "Mythra c06/c07 skeleton, idle and motion lists, pinned so this task measures against a known receiver",
+    "files": "recipient/fighter/elight/{model/body/c06,model/body/c07}/model.nusktb (5b6fbbe6.., byte-identical), motion/body/c06/a00wait1.nuanmb (484e973e..), motion/body/c06+c07/motion_list.bin (0b091450.., byte-identical)",
+    "why_vanilla_skeleton": "measured, not assumed: build_mythra_skin in src/pgwr/build.py copies only *.nutexb body/sword textures into fighter/elight/model/body/c06, and the 0.20.19 package ships no elight model.nusktb at all. So the body skeleton this port retargets onto is the vanilla one, and the audit asserts c06 == c07."
+  },
+  "control": {
+    "file": "control/fighter/gamewatch/motion/body/c00/motion_list.bin (306be009..)",
+    "why": "an independent dump of a *different* fighter's motion list, dumps/scripts/gamewatch_motion_list.yml, is compared field by field against what tools/audit_lucas_lw4_donor.py parses out of the G&W binary: attack_lw4 cancel 34, flags 0x80, game_attacklw4, c04attacklw4.nuanmb, and the hold entry named attack_lw4_hold with game_attacklw4charge. This is what proves the entry parser and the kind name, rather than leaving them to be believed."
+  },
+  "measurements": "inventory.json, produced by tools/audit_lucas_lw4_donor.py (tier B)",
+  "key_findings": {
+    "charge_kind": "attack_lw4_hold (hash40 0xfee188235), NOT attack_lw4_charge. A first pass looking for attack_lw4_charge found nothing and read as a missing donor file. The kind and the script name are not a mechanical pair: kind attack_lw4_hold carries game_script game_attacklw4charge.",
+    "motion_delta_is_two_bytes": "Lucas attack_lw4 cancel 316 vs Mythra 56; the two entry bodies differ at byte offsets [62, 63] and nowhere else, and only the cancel u16. attack_lw4_hold is byte-identical between Lucas and Mythra, so it needs no change.",
+    "bone_fit": "66 of 68 transform nodes survive on the Mythra skeleton, 2 dropped (Bat, BatL - his bat), 0 case-only matches, 0 parent mismatches. All 17 real limb bones present and moving; the donor clip has no Material group.",
+    "havel_is_not_a_bone": "neither Mythra's nor Lucas's model.nusktb has a bone named havel. It is the engine's built-in hand anchor, the same class of name as top, so the donor's effect anchors are used unchanged."
+  },
+  "not_needed": {
+    "config_json": "none. Both clip file names already exist in the base game at the same ARC path, and ef_elight_c06/c07.eff are already declared under new-dir-files in the shipped config.json. The audit asserts both against the vanilla ARC index rather than assuming them.",
+    "status_ids": "attack_lw4 and attack_lw4_hold are vanilla status kinds, so no 0x1EE+ allocation is needed and Mythra's own status table (0x1F1.. for Hero's Spin) is untouched.",
+    "sequence_sqb": "the donor's down smash plays no PLAY_SEQUENCE record - measured by reading both pinned scripts - so nothing is appended to elight.sqb.",
+    "articles": "the only dropped nodes are Lucas's bat, and the donor scripts write no article and no work id, so this move needs no article at all."
+  },
+  "not_established": "Anything about how the move looks, sounds, or hits in game. Every number here is offline measurement (tier B) and a successful compile. The visual, audio and gameplay result is tier D until the user's console run.",
+  "tools": [
+    "tools/audit_lucas_lw4_donor.py",
+    "src/pgwr/tools/build_lucas_downsmash.py",
+    "tools/apply_lucas_downsmash_motion_list.py",
+    "tools/merge_lucas_downsmash_sound.py",
+    "tools/build_lucas_downsmash_effect.py",
+    "tools/audit_lucas_downsmash_delta.py"
+  ]
+}

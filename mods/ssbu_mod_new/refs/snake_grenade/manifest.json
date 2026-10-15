@@ -1,0 +1,772 @@
+[
+  {
+    "file": "status/SpecialN__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialN/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1873,
+    "sha256": "2aa86766a2702d5e3238af594be737d416debc26a7395a2b831e7ec9e6a37702"
+  },
+  {
+    "file": "status/SpecialN__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialN/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3933,
+    "sha256": "e2a739baa507fc442509cff289dc95004e64d1d6b88c8335278c5508ed4370f6"
+  },
+  {
+    "file": "status/SpecialN__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialN/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 2698,
+    "sha256": "b0991d808d695b2b5ff7842578accf7a97249aa57f53f165be042d01fb77fc9d"
+  },
+  {
+    "file": "status/SpecialN__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialN/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3932,
+    "sha256": "816a44db23cb4626ab452ab57575969f08a1df89937915bd46835869af3df4a4"
+  },
+  {
+    "file": "status/SpecialNEarClose__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNEarClose/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 180,
+    "sha256": "2c0e6333a1cac35f3e2a4d905b00393902fa3736d3d02638240593ea37fa5b55"
+  },
+  {
+    "file": "status/SpecialNEarClose__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNEarClose/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1152,
+    "sha256": "c04785919e3812b331af9905f4e33b522c837fbcd6624232730fda0dd51ff1f5"
+  },
+  {
+    "file": "status/SpecialNEarClose__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNEarClose/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 2919,
+    "sha256": "c13a83a5801fe3c8270bd2a4935c802ea3604649898b57c6adae2236a7d027bd"
+  },
+  {
+    "file": "status/SpecialNEarClose__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNEarClose/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3865,
+    "sha256": "f4aa977196f82eae41f86ac18ae07c02a71f3f6627c52b2140257155e23ead9d"
+  },
+  {
+    "file": "status/SpecialNHoldAir__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 199,
+    "sha256": "267d806c03070da63261deff4e0a0561f415c3fe2e5eba163350f808e94ecb4e"
+  },
+  {
+    "file": "status/SpecialNHoldAir__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldAir__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldAir__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldAir__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3129,
+    "sha256": "0ec3632786a32ae56fdbab6304a8c7142fc3f3f80a3143418819458b91422837"
+  },
+  {
+    "file": "status/SpecialNHoldAir__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 808,
+    "sha256": "9b50ac9be2dda3eceeac045a0a1422099b256195151b4abdd02d7becc91423d7"
+  },
+  {
+    "file": "status/SpecialNHoldAir__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldAir/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3860,
+    "sha256": "a3819b60f547e8409201c0e29db8601ca2fc6c7cee1b95dca71030b510ae86dd"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 201,
+    "sha256": "bed0b62873c02eb431b49032868f6cb4b28db81f8c7df5e36996ee54396c5f06"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1606,
+    "sha256": "195e11178ab3c84413d058fbdb2d87b7fc5ff83895a3464b2d30c1943474a379"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 781,
+    "sha256": "ad52b02b2f74bcfb169d0ca48271e87eac5607726d2848c8e2124d4844d2f225"
+  },
+  {
+    "file": "status/SpecialNHoldDashB__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashB/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3888,
+    "sha256": "6552d21dcbebce233f9ba99192e7538d723c1d61f756dfaef4e56b70d01e6c87"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 201,
+    "sha256": "11ab86798f8f4a9fbcf132785891e22f3bff532dad74fb1fb6737bce388a08e2"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1606,
+    "sha256": "504749e4b1c80c33bf9a3a985fd80b716f3a1e096bbbdd28d1f707f73ae3afc7"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 781,
+    "sha256": "85d96eaad5371116830794c0cf311bf9fbf82e577039d1eb9fccd7801340f0eb"
+  },
+  {
+    "file": "status/SpecialNHoldDashF__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldDashF/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3883,
+    "sha256": "85b7a554437ecc17bc6283a447d153d49add15abe7c70c30f6267b35c5e64a41"
+  },
+  {
+    "file": "status/SpecialNHoldJump__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 200,
+    "sha256": "5ea82e55e8709515b30e69064950b7d9d9b12c6ef1f4ff5e0874fbc9e7f1da15"
+  },
+  {
+    "file": "status/SpecialNHoldJump__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldJump__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldJump__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldJump__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1306,
+    "sha256": "6f41e7ccb54447e24723cb35f4e6012e729ca57c94932ec8ec830700809c4085"
+  },
+  {
+    "file": "status/SpecialNHoldJump__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 809,
+    "sha256": "6228fabb40b979b04a80d1138f27bb4f04f025c040d44814e0680398444a8de3"
+  },
+  {
+    "file": "status/SpecialNHoldJump__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJump/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3859,
+    "sha256": "83810e5dd9ed58c0ba3655702c4e9762b7f638fd996cef4291c3db7079509d84"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 206,
+    "sha256": "ebbacf975888982dd869c09665835f3b73b240fb2ff739566f28a2241e2e74f7"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1317,
+    "sha256": "d58557f47569a3638e516a8539acfcf4a80ea4afa342e91d2d34b19872acf6db"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1805,
+    "sha256": "de21e7a44f1c4a6a08e51d064c73477461c049950ad8292e479dc43690f95236"
+  },
+  {
+    "file": "status/SpecialNHoldJumpAerial__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpAerial/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3872,
+    "sha256": "698b2dc945ed23346b6d522ed01f9bd95ea4bcf13ae4c60d7897f3853cf2c237"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 205,
+    "sha256": "4e698608393d9a1e0ceeedf9ef620109a0fd38e8f9a00dd86fa24e1cc3d649ce"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1169,
+    "sha256": "eb319059faee02c5e834b88cf0bf957fadeade730dcfb3fceb940c1ed9bd60ba"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 563,
+    "sha256": "bad9d1e7821e9df5b472e329bf2bd91e3ec6282d7292c37a3e9aac93467c2c8d"
+  },
+  {
+    "file": "status/SpecialNHoldJumpSquat__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldJumpSquat/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3882,
+    "sha256": "8e76b2fd459ff15b3c453a01057b29e3ea0312feb3b2dd68f1a56942832b0cd7"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 203,
+    "sha256": "8eaa20baabe9e19d450e14bf7b4006d061b09af4b8762c2372296cce9d31ec95"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 527,
+    "sha256": "409e59f618b992cf7bdcccd85accc299c2dcba9057089674ddcbd8a9e5580171"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 785,
+    "sha256": "13ba36592b79f729930139fb1868e1bcf7c1a6587dc248c574bc6615fce12253"
+  },
+  {
+    "file": "status/SpecialNHoldLanding__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldLanding/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3880,
+    "sha256": "7c51313f3454f78e0b60b40911c004040033cf157f13fcb79b2aab96527fe4f0"
+  },
+  {
+    "file": "status/SpecialNHoldWait__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 200,
+    "sha256": "848e2a909aaf1318225285045f2c2bf5a60808bd0bcadeaf5eda4c3440cbb2b8"
+  },
+  {
+    "file": "status/SpecialNHoldWait__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldWait__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldWait__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldWait__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1888,
+    "sha256": "22c36dea15c274c90ac6d8364b855c0200b24afc06d852ef6b7cb073d49ec49f"
+  },
+  {
+    "file": "status/SpecialNHoldWait__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 779,
+    "sha256": "095fed3f811aca19f57b2706754d34b6234747357d7d99607f2df1ca8606ee7a"
+  },
+  {
+    "file": "status/SpecialNHoldWait__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWait/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3877,
+    "sha256": "cd99ada4b05b757031338a1d0e185a76af0837b84ddc3da298b7f73d4fbaab28"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 201,
+    "sha256": "c8ce39dc05f4a59a4a3c1d7268e836fe5c9234a9b64f188844c5963dd4759305"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1370,
+    "sha256": "0c7d54ae95a775810613f5e226be669e290b5e1939a70d2ce52decdd3bfe91db"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 781,
+    "sha256": "f670cb2ebece6d02438da8ad1a02fa7ac90dd3c996d47bb0d0f3213d807829b0"
+  },
+  {
+    "file": "status/SpecialNHoldWalkB__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkB/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3875,
+    "sha256": "f9d6ffc6b1d38cabd21608c3806fda8b86781fe19b1704cc251c8edfcc95b175"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 206,
+    "sha256": "7d85e713dc25bee7804995fc7409a1fe4b92a072df55e9078fe8d714a8efb215"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1257,
+    "sha256": "80a26ca33f858dda5b9cd3d113615ec10361ee5c92470e52547c419b40dad844"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 802,
+    "sha256": "77303e2fec6ecca2c1f2f2687520692e29810edfa91dc2c9a393ece6b79609ad"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeB__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeB/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3874,
+    "sha256": "b9c4638110cfb2977255fdb6b801e3cce87ad7ead690afd25783a3f0aed0bffc"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 206,
+    "sha256": "f28c938f8a998bfb1f84c740b06534d8b406fcf8f0c45c148074592291cef778"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1257,
+    "sha256": "181ee00a10d8e08a2a96905beac0635c369aa94a85ebe5dac16bc69a02f9f941"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 802,
+    "sha256": "9201764299a63685f3f623ff4c9cf266074884161843ea47a59f50aafb289a34"
+  },
+  {
+    "file": "status/SpecialNHoldWalkBrakeF__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkBrakeF/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3883,
+    "sha256": "6f91b44f507bf7ee4bf80a564009e92a966929c1486c0e5f42cf04c9f7f6ff24"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 201,
+    "sha256": "f54fb1256849042ff7879af80ee76f0e9ae09fd8471ffeee7802de7294e4b660"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__exec.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/exec.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 266,
+    "sha256": "87e8ae49eb2fb2639773fd15a16ddf024cb6fd0be2dc0ab837af8698521c4f3f"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__exit.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/exit.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 501,
+    "sha256": "62d766e321c2f922368b3d91b619b96944349e04788ee10c54e7506d49d5e8e3"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__init.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/init.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 7473,
+    "sha256": "7cad0b7ec73f531431bdf981a78fd02ada6bfb7678803dd9ae6e5d725649b054"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 1370,
+    "sha256": "24c5f539ab1f0da25680eab3872fcd0d6a26eb7ad598fd9663d88b8873166d7d"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 781,
+    "sha256": "b37320ba1eaf3bcc0b5ce3170f5fac24412b5e797bceee10ecca18881c17e837"
+  },
+  {
+    "file": "status/SpecialNHoldWalkF__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNHoldWalkF/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3913,
+    "sha256": "d760c58c02c03f7642bd23fb313e8040278da75407edd6d49959e7e9ff64659c"
+  },
+  {
+    "file": "status/SpecialNThrow__end.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNThrow/end.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 197,
+    "sha256": "87ba3af3aa34e01f800c0f549665879872629c49adb30e10b21f55de29dbdc24"
+  },
+  {
+    "file": "status/SpecialNThrow__main.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNThrow/main.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 6953,
+    "sha256": "e4d20b54e64f856e13f37bb00c9548f8df3a41f06229103892c48c34beaf8d21"
+  },
+  {
+    "file": "status/SpecialNThrow__main_loop.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNThrow/main_loop.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3033,
+    "sha256": "454b4fbd8d611facfda3d57d1f8cc4bbf70ee114870b1ce727960ec7a4d943ef"
+  },
+  {
+    "file": "status/SpecialNThrow__pre.c",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_snake.nro/snake/snake/status/SpecialNThrow/pre.c",
+    "commit": "b6bb1fecf7a0a3ee872cea73c94acccccadf8133",
+    "bytes": 3926,
+    "sha256": "ea8ebf6e1817f82fc02fe99e6f41d2bf6aa2eb24cfa116d7b9d88a078a2ddf30"
+  },
+  {
+    "file": "motion/fighter__snake__motion__trenchmortarbullet__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/trenchmortarbullet/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 949,
+    "sha256": "09b0cab5da590181863124bb3c9b1de71676b72e2267425d80db3cd59ade06f3"
+  },
+  {
+    "file": "motion/fighter__snake__motion__trenchmortar__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/trenchmortar/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 1533,
+    "sha256": "815e44e696da5d49d3bcc32f95a52571a63c2760a3d542b30a9dacc6dab85604"
+  },
+  {
+    "file": "motion/fighter__snake__motion__rpg7__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/rpg7/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 518,
+    "sha256": "f1c43718b28d9796d223a5b02cc0779a831d49522da28ffc4dbe52a6c829855e"
+  },
+  {
+    "file": "motion/fighter__snake__motion__reticle_cursor__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/reticle_cursor/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 1371,
+    "sha256": "ff7035065f288be1a610352b1a71f4194116716c7bd33d55c9168ce123607e38"
+  },
+  {
+    "file": "motion/fighter__snake__motion__reticle__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/reticle/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 992,
+    "sha256": "947bd73c7ff89698c02a4c20f9636ee6e3669a17aa8286cc271ab972ce1e2052"
+  },
+  {
+    "file": "motion/fighter__snake__motion__nikitamissile__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/nikitamissile/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 2549,
+    "sha256": "d7a2ea0413593776409c402c91cb54fcbf3d86f51e78ba3157bf5f0eaa9c4bd6"
+  },
+  {
+    "file": "motion/fighter__snake__motion__nikita__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/nikita/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 2458,
+    "sha256": "dd9083a47f77cd537dd2fcaf2168358c2e2a3e5cddbd7979fb179b8d103a9a6c"
+  },
+  {
+    "file": "motion/fighter__snake__motion__missile__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/missile/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 949,
+    "sha256": "7271d6149865c415bda62124d1c5fe087804a904b3eb0b3a6f36a4a94cec3466"
+  },
+  {
+    "file": "motion/fighter__snake__motion__grenade__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/grenade/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 1486,
+    "sha256": "9dcea15d8cb50be1e2b7afacaa74964f8d16f6421a55bc3597fc44732944c3c4"
+  },
+  {
+    "file": "motion/fighter__snake__motion__flaregrenades__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/flaregrenades/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 940,
+    "sha256": "dc46aa7af51b6565c4d753da45c844175cecb2ccc3c6092c4e37aa2a9126848a"
+  },
+  {
+    "file": "motion/fighter__snake__motion__cypher__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/cypher/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 1991,
+    "sha256": "5883b7b19ae5019ae5b82c5ef22838582d9259e625b7edfd5245fafded51880f"
+  },
+  {
+    "file": "motion/fighter__snake__motion__c4switch__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/c4switch/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 503,
+    "sha256": "7c7f5d3f5b61c7ddd6b5e10b65907a6af1eadcd0ce057925af7fab0eedaa424a"
+  },
+  {
+    "file": "motion/fighter__snake__motion__c4__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/c4/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 3604,
+    "sha256": "08426ac194d8c9010e0f2d21e17de48d11ddd00599771481880f1372a44498ef"
+  },
+  {
+    "file": "motion/fighter__snake__motion__body__c00__motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/snake/motion/body/c00/motion_list.yml",
+    "commit": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "bytes": 481726,
+    "sha256": "5f41a13a70ffd9725f576983ea890d241dd8520e5bd8382408ee687a1fef1f97"
+  }
+]

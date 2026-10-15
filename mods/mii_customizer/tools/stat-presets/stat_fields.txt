@@ -1,0 +1,20 @@
+# stat_fields.txt - which fighter_param.prc fields go into a preset
+#
+# One field name per line. Blank lines and lines starting with '#' are ignored.
+# The generator fails loudly if a listed field is missing from the table or is
+# not a float. Order here is the order of the field lines in presets.txt.
+#
+# These are the ten float stat candidates of the P1-DATASET catalogue with
+# `scale` left out. `jump_count_max` (i32) is not here: it needs the +0x250
+# integer getter, not the +0x270 float one.
+
+weight
+walk_speed_max
+run_speed_max
+dash_speed
+air_speed_x_stable
+air_speed_y_stable
+air_accel_y
+air_accel_x_mul
+jump_y
+jump_speed_x

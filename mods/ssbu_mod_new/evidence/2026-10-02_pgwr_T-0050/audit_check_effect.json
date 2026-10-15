@@ -1,0 +1,25 @@
+{
+  "misplaced_donor_bank_shipped": false,
+  "slots": {
+    "c06": {
+      "sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+      "emitters": 97,
+      "vanilla_emitters": 95,
+      "gained": [
+        "LITTLEMAC_ATTACK_ARC",
+        "LITTLEMAC_ATTACK_LINE"
+      ],
+      "vanilla_lost": 0
+    },
+    "c07": {
+      "sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+      "emitters": 97,
+      "vanilla_emitters": 95,
+      "gained": [
+        "LITTLEMAC_ATTACK_ARC",
+        "LITTLEMAC_ATTACK_LINE"
+      ],
+      "vanilla_lost": 0
+    }
+  }
+}

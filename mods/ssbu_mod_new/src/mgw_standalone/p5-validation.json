@@ -1,0 +1,44 @@
+{
+  "build": "p5",
+  "game_version": "13.0.4",
+  "hardware_tested": false,
+  "input_crash": "evidence/p4-effects-crash.txt",
+  "skyline_log": "evidence/p4-effects-skyline.txt",
+  "p4_log_contains_probe_marker": true,
+  "p4_log_contains_runtime_marker": false,
+  "diagnosis": {
+    "pc": "smashline+0x34118",
+    "opcode": "d4200020 (brk #1)",
+    "caller": "ssbu_clone_engine+0xa2048 (fighter_init_second_row_bridge+0x64)",
+    "panic": "Option::unwrap on None at src/effects.rs:26:61",
+    "missing": "FilesystemInfo::instance() returned None after the original game load_effects call",
+    "previous_runtime": "p4 runtime startup marker not found in attached Skyline text"
+  },
+  "fix": {
+    "original_effect_loader_preserved": true,
+    "missing_filesystem_info": "skip only optional effect-transplant scan for this load",
+    "invalid_search_index": "skip optional scan; avoid unchecked path-list indexing",
+    "diagnostics": "one-time log for either unavailable state"
+  },
+  "source_validation": {
+    "overlay_generator": "success: 32 references at 31 sites",
+    "smashline_build_exit_code": 0,
+    "probe_build_exit_code": 0,
+    "runtime_marker": true,
+    "filesystem_guard": true,
+    "search_index_guard": true,
+    "probe_marker": true
+  },
+  "packaging": {
+    "clone_pack_lint_exit": 0,
+    "errors": 0,
+    "warnings": 0,
+    "sdroot_files": 92,
+    "zip_files_in_mod_output": 0,
+    "runtime_sha256": "c94e5f50a2957d542806925df8b60a7d4b965266b8912a76471dac77e689714f",
+    "runtime_matches_manifest": true,
+    "probe_sha256": "750386f93172a7d47621be52e4e7936b54e279b5d42892aa840fb3e2707d5564",
+    "probe_matches_manifest": true,
+    "separate_file_discovery_warning": "msg_name.xmsbt reported missing/invalid; not mapped to this crash"
+  }
+}

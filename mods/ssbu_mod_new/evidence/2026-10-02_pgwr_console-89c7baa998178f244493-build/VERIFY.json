@@ -1,0 +1,62 @@
+{
+  "status": "built",
+  "package": "builds/pgwr/0.20.16+robot-dtilt.4",
+  "manifest_sha256": "39aedf1cbaa6a0bfb6a7fc8239b870641696f6c6e4793fb4c3de8effa104a469",
+  "included_tasks": [
+    "T-0036",
+    "T-0042"
+  ],
+  "excluded_tasks": [],
+  "included_sections": [
+    "T-0036 custom R.O.B. down-tilt animation",
+    "Little Mac forward smash family including angled variants",
+    "Retained baseline: Snake neutral-B, Monkey Flip lock, Cloud fair trails, Chrom jab trails, silent core, Hero neutral-B/up-B/side-B, Ursula/Wilhelmine naming"
+  ],
+  "files": 1983,
+  "tree_sha256": "66e3bc5e2c5f174271fd6d14f2dc3c4f6de4b7ca171f73382f3019d59b20b3f0",
+  "reskin_nro_sha256": "81460e74313350aaf569ce832045e8586387ab4ddf10e51bfdb690a8d29ef834",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "delta_vs_baseline": [
+    "fighter/eflame/motion/body/c06/c02attacklw3.nuanmb",
+    "fighter/eflame/motion/body/c07/c02attacklw3.nuanmb"
+  ],
+  "source_real_differences": [
+    "src/pgwr/install-to-card.sh"
+  ],
+  "source_line_ending_differences": 82,
+  "verification_tool": "tools/verify_installed_card.py inventory and sha functions; local packages only, main/card access not invoked",
+  "package_action": "Reused the complete existing versioned package; no rebuild or artifact mutation needed. T-0042 installer changes stay in workspace tooling, not in the console payload. No unfinished runtime or asset source differences detected.",
+  "excluded_artifacts": [
+    {
+      "item": "robot-dtilt.2 and .3",
+      "reason": "Superseded authoring drafts; final .4 selected"
+    },
+    {
+      "item": "T-0033 research refs and documentation",
+      "reason": "Research only, outside requested batch; no runtime/source changes packaged"
+    },
+    {
+      "item": "T-0042 suggested followups",
+      "reason": "Unimplemented, outside this batch; no new feature included"
+    },
+    {
+      "item": "Protected framework plugins",
+      "reason": "Protected; absent from package; installation remains OFF"
+    }
+  ],
+  "build_cache": "Pruned; no fresh Rust compilation/reproducibility claim. NRO byte-equal to baseline and T-0042 historical installation record. Future installer must use --no-smashline --reused-nro and refuse if card NRO differs.",
+  "device_access": "None in this phase. Historical install record only; present card state was not examined.",
+  "hardware_validated": false,
+  "user_tests": [
+    "1. After designated installation, boot normally. Global logging is disabled; absent pgwr_log.txt is expected. Stop on a crash and retain the new sd:/atmosphere/crash_reports/ file.",
+    "2. Vanilla controls: Pyra c00 down tilt, appearance and sounds, standalone G&W, and Mythra c00 side-B must remain vanilla.",
+    "3. On Pyra c06 and c07, whiff and hit grounded down tilt facing both ways on level ground. Judge crouch, articulated body, low palm strike, hand/hitbox alignment, no manhole or unrelated props, and no collapse/T-pose.",
+    "4. Compare stock R.O.B. down tilt as timing control: expected attack at frame 3, clear at frame 4, actionable recovery by frame 15. Record any timing or recovery change.",
+    "5. Repeat down tilt on both costumes, both facings and upward/downward slopes. Watch feet, sliding, floor clipping and recovery snaps.",
+    "6. Listen/watch down tilt for donor swing, impact, landing, one of four voice takes, effects and rumble. Record any missing sound or effect.",
+    "7. Test neutral, up-angled and down-angled Little Mac forward smash on c06/c07 using your normal smash input. Report whether the angled punches differ from neutral; routing remains unverified. Charge and release with your normal smash input; check the established shimmer wind-up.",
+    "8. Spot-check jab, forward tilt, up/down smash, grab, forward air and Cloud sword trails, Snake neutral-B, Monkey Flip and Pyra/Mythra swap. Report any regression.",
+    "9. On Mythra c06/c07 check neutral-B fireball, up-B spin and all side-B charge levels. Prior reported side-B defects (level 2 downward, level 3 failing) remain unfixed; distinguish them from new changes. Send sd:/ultimate/pgwr_hero_s_log.txt from boot if produced.",
+    "10. Fail on a crash, malformed down-tilt body, changed hit/cancel timing, vanilla-control regression, changed up/down smash or missing expected audio. Stop after a crash; send costume/facing/slope details, screenshots/video and crash report. A neutral punch for both angled inputs is a routing finding, not by itself a crash/regression."
+  ]
+}

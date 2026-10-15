@@ -1,0 +1,22 @@
+[
+ {
+  "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+  "container_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+  "data_sha256": "2abbd359bd940b65a67144fa6d032fb545f48bc4f43647a9b92554f37e7a1774",
+  "rebuilt_data_sha256": "2abbd359bd940b65a67144fa6d032fb545f48bc4f43647a9b92554f37e7a1774",
+  "data_equal": true,
+  "container_equal": true,
+  "members": 111,
+  "data_offset": 8192
+ },
+ {
+  "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+  "container_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+  "data_sha256": "06c6287152823f041cb9b639294159b7d4e9389488151e3d1cca8af7759c0367",
+  "rebuilt_data_sha256": "06c6287152823f041cb9b639294159b7d4e9389488151e3d1cca8af7759c0367",
+  "data_equal": true,
+  "container_equal": true,
+  "members": 76,
+  "data_offset": 8192
+ }
+]

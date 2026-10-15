@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.3",
+  "method": "src/pgwr/install-to-card.sh; autodetected card, automatic backup, .new staging, cmp/diff verification",
+  "manifest": "builds/pgwr/0.20.3/ (no MANIFEST.json; the mod tree is byte-identical to 0.20.0's, only the NRO differs)",
+  "backup": "evidence/sd-backups/sd-backup-20260930-061334",
+  "backup_held_version": "0.20.2",
+  "reskin_nro_sha256": "d9ea48fa80b1708a7e8a7e01e26a2689f564b4f8bedbb17e0446ab424d490919",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1701,
+  "mod_tree_sha256": "5cc3ee90da3649833061cacf2af72c86e6090e5ba41aebe336954108a144a4ab",
+  "tree_hash_definition": "sha256 of sorted '<sha256>  ./<relative path>\\n' records",
+  "mod_tree_note": "Unchanged since 0.20.0. Both changes are Rust-only, so the 0.20.0 tree was reused rather than regenerated; its hash was recomputed and equals the card's, so no asset differs.",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "changes": [
+    "New module diddy_probe.rs: read-only observation of STOCK Diddy, the donor, so Monkey Flip has a control for the first time. Installs ONE additive on_line(Main) callback and no status or acmd scripts, so none of Diddy's own scripts, clips, hitboxes, damage or motion are replaced - he stays a valid vanilla control. Logs his own SPECIAL_S Monkey Flip block (0x1E5-0x1EF in his table, never equated with ours per AGENTS.md rule 19) and CLUNG_DIDDY, one line per status change plus a bounded per-frame window.",
+    "Monkey Flip VICTIM lines gained near=/ndtop=: the nearest active fighter found by scanning the battle object id range, independent of whether the engine published a capture. This is the measurement that was missing: in the 0.20.2 run all 26 VICTIM frames read dist=-1.00 dtop=-1.00 because no victim object existed, so the log could not say whether the box contained an opponent."
+  ],
+  "not_a_behaviour_change": "No state is written by either change. The nearest-opponent scan only reads module accessors, guards every id with sv_battle_object::is_active, re-checks the accessor for null and identity, and filters to BATTLE_OBJECT_CATEGORY_FIGHTER so no article or projectile is touched or cast (AGENTS.md rules 19 and 25).",
+  "supersedes_install_record": "evidence/install-record-2026-09-30_055128.json"
+}

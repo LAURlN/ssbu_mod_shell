@@ -1,0 +1,92 @@
+{
+  "task": "gaogaen_throw_b",
+  "date": "2026-10-02",
+  "recipient": "eflame c06/c07 (G&W)",
+  "game_version": "13.0.4",
+  "arc_provenance": "gamedata/ssbu-13.0.4/data.arc.provenance.json (workspace relative)",
+  "arc_root": "gamedata/ssbu-13.0.4/files (workspace relative)",
+  "assets": [
+    {
+      "path": "fighter/gaogaen/motion/body/c00/e01throwb.nuanmb",
+      "sha256": "e2d209987a328c3590df83c805253e5e2188796db75897df1209fc7346ba1df2",
+      "bytes": 109064
+    },
+    {
+      "path": "fighter/gaogaen/motion/body/c00/motion_list.bin",
+      "sha256": "480bfaf2b554c8dc249801882ce0ff4041f55e12a7c3224e432acd921d416cc6",
+      "bytes": 44192
+    },
+    {
+      "path": "fighter/gaogaen/model/body/c00/model.nusktb",
+      "sha256": "bbba4a4c11ab7eb9270de55d4cf86e2235235ca1cc1c53f553a603a35e2a7eaa",
+      "bytes": 40480
+    },
+    {
+      "path": "fighter/gaogaen/param/vl.prc",
+      "sha256": "39e37d338f2cf21cfbdcd75891243c11a12b1a7303a32c2d5046b16996109a36",
+      "bytes": 9061
+    },
+    {
+      "path": "fighter/common/param/fighter_param_thrown.prc",
+      "sha256": "a5661921946cfaa4578d8281710fa56153ca653545316343f8b4ed8df98bbbb2",
+      "bytes": 992055
+    },
+    {
+      "path": "sound/sequence/fighter/gaogaen.sqb",
+      "sha256": "b34337eef723e6bd2c25756abbb8eba767d616d88a591af62cc24ae365ff3172",
+      "bytes": 692
+    },
+    {
+      "path": "sound/bank/fighter/se_gaogaen_c00.nus3audio",
+      "sha256": "b39e087652ae6ee2d8d1b962834bf8c4070b49ac53dc62ebd544a062a886b542",
+      "bytes": 1953744
+    },
+    {
+      "path": "sound/bank/fighter/se_gaogaen_c00.nus3bank",
+      "sha256": "68756b0bd2d3ae749d70c670b2ddc82e400fdcd08013d2b1f34b634200baf9be",
+      "bytes": 61864
+    },
+    {
+      "path": "sound/bank/fighter/se_gaogaen_c00.tonelabel",
+      "sha256": "014b4cdbae8d76bbb5b32d6d8652b16e7f3b3bf064f14e06093c4ca3cd19d79f",
+      "bytes": 888
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_gaogaen_c00.nus3audio",
+      "sha256": "8d0c4aedaf5341e23e25a8a05d568d15e2079527b15487f7e5be2fb6c05cd209",
+      "bytes": 913248
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_gaogaen_c00.nus3bank",
+      "sha256": "0d1e5e83043ed9829d923ef4bb78abc8b83e22ebfe3e177f08a934343c4594a1",
+      "bytes": 40856
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_gaogaen_c00.tonelabel",
+      "sha256": "319226d7e2c008b9116b5261b9102d375ca9bd4422516be95ebbf4a1ef5e3af2",
+      "bytes": 392
+    }
+  ],
+  "acmd": [
+    {
+      "path": "refs/gaogaen_throw_b/donor_acmd/ThrowB.txt",
+      "sha256": "16c2f456b968e59f865c217b8fbb81a30e299c9e46728c9ae2362774853ecb76",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_gaogaen/gaogaen/ThrowB.txt"
+    },
+    {
+      "path": "refs/gaogaen_throw_b/donor_acmd/eflame_ThrowB.txt",
+      "sha256": "7e334fca4bfeec1f7d7f88ca4813e19948b50cd293a2efd73c868c6ac31b630f",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_eflame/eflame/ThrowB.txt"
+    }
+  ],
+  "status": {
+    "path": "refs/gaogaen_throw_b/donor_status/pre.c",
+    "sha256": "7dd3ec16278c4e73d9afd147e692bc2e707fbbf1c11cea537e7db0aa1f2056ed",
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_gaogaen.nro/gaogaen/gaogaen/status/Throw/pre.c"
+  },
+  "native_main": {
+    "path": "gamedata/ssbu-13.0.4/main.bin (workspace relative)",
+    "sha256": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613"
+  },
+  "baseline_manifest_sha256": "5e2fa15cb1425f2589bc9261948305a3f92ea2363dd8e17cd1e32a2c5de4c8c8"
+}

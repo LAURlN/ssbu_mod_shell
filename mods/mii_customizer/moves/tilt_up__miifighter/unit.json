@@ -1,0 +1,35 @@
+{
+  "entry": "tilt_up",
+  "donor": "miifighter",
+  "display_name": "Mii Brawler",
+  "motions": {
+    "mc_miifighter_attack_hi3": {
+      "kind_hash": "0x187f36ba92",
+      "game_script": "game_mcmiifighterattackhi3",
+      "game_script_hash": "0x1a99dad299",
+      "expression_script": "expression_mcmiifighterattackhi3",
+      "expression_script_hash": "0x20b4af7ef0",
+      "sound_script": "sound_mcmiifighterattackhi3",
+      "sound_script_hash": "0x1bea0846e4",
+      "effect_script": "effect_mcmiifighterattackhi3",
+      "effect_script_hash": "0x1cac66b8a9",
+      "clip": "c01mcmiifighterattackhi3.nuanmb",
+      "clip_hash": "0x1f6a741a18",
+      "flags": "0x0080",
+      "cancel_frame": 30
+    }
+  },
+  "statuses_taken_over": [
+    {
+      "status_name": "FIGHTER_STATUS_KIND_ATTACK_HI3",
+      "status_kind": 43,
+      "hook": "start_attack_hi3"
+    }
+  ],
+  "differences_from_donor": [
+    "Sound effect: donor se_miifighter_swing_m remapped to recipient se_miigunner_swing_m",
+    "Voice sequence: donor seq_miifighter_rnd_attack02 remapped to recipient seq_miigunner_rnd_attack02",
+    "Hitbox timing: donor active frames 5..12 on arml with 6.0% damage replacing Gunner vanilla arm thrust",
+    "Cancel frame: donor FAF frame 31 (cancel frame 30, anim length 56) replaces Gunner vanilla frame 39 (cancel frame 38, anim length 55)"
+  ]
+}

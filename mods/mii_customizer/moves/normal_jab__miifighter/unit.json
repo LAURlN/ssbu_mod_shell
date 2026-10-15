@@ -1,0 +1,204 @@
+{
+  "unit": "normal_jab__miifighter",
+  "task": "MV-normal_jab__miifighter",
+  "status": "PARTIAL",
+  "scope": "Whole jab on Mii Gunner: stage 1 (attack_11), stage 2 (attack_12), rapid start, rapid loop and finisher. Sounds, sequences and the rapid effect emitter are merged into the Gunner's own banks (reference/). Open: the rapid effect's loop after frame 12 is not decoded (research note, section 6).",
+  "entry": "normal_jab",
+  "display_name": "Jab",
+  "donor": {
+    "preset": "miifighter",
+    "name": "Mii Brawler",
+    "motion_list_entries": [
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "source": "gamedata/mii_customizer/P11-MOVE-PLAN/fighter/miifighter/motion/body/c00/motion_list.bin"
+  },
+  "recipient": {
+    "preset": "miigunner",
+    "name": "Mii Gunner",
+    "vanilla_motion_list_entries": 774,
+    "reference_motion_list_entries": 779
+  },
+  "owned_motions": [
+    {
+      "kind": "mc_miifighter_attack_11",
+      "kind_hash": "0x175d146682",
+      "donor_kind": "attack_11",
+      "stage": 1,
+      "clip": "c01mcmiifighterattack11.nuanmb",
+      "donor_clip": "c00attack11.nuanmb",
+      "flags": "0x0084",
+      "game_script": "game_mcmiifighterattack11",
+      "effect_script": "effect_mcmiifighterattack11",
+      "sound_script": "sound_mcmiifighterattack11",
+      "expression_script": "expression_mcmiifighterattack11",
+      "scripts_registered": [
+        "game",
+        "effect",
+        "sound",
+        "expression"
+      ]
+    },
+    {
+      "kind": "mc_miifighter_attack_12",
+      "kind_hash": "0x17c41d3738",
+      "donor_kind": "attack_12",
+      "stage": 2,
+      "clip": "c01mcmiifighterattack12.nuanmb",
+      "donor_clip": "c00attack12.nuanmb",
+      "flags": "0x0084",
+      "game_script": "game_mcmiifighterattack12",
+      "effect_script": "effect_mcmiifighterattack12",
+      "sound_script": "sound_mcmiifighterattack12",
+      "expression_script": "expression_mcmiifighterattack12",
+      "scripts_registered": [
+        "game",
+        "effect",
+        "sound",
+        "expression"
+      ]
+    },
+    {
+      "kind": "mc_miifighter_attack_100_start",
+      "kind_hash": "0x1e300593a3",
+      "donor_kind": "attack_100_start",
+      "stage": 3,
+      "clip": "c01mcmiifighterattack100start.nuanmb",
+      "donor_clip": "c00attack100start.nuanmb",
+      "flags": "0x0084",
+      "game_script": "game_mcmiifighterattack100start",
+      "effect_script": "effect_mcmiifighterattack100start",
+      "sound_script": "sound_mcmiifighterattack100start",
+      "expression_script": "expression_mcmiifighterattack100start",
+      "scripts_registered": [
+        "sound",
+        "expression"
+      ]
+    },
+    {
+      "kind": "mc_miifighter_attack_100",
+      "kind_hash": "0x18ee2b180a",
+      "donor_kind": "attack_100",
+      "stage": 4,
+      "clip": "c01mcmiifighterattack100.nuanmb",
+      "donor_clip": "c00attack100.nuanmb",
+      "flags": "0x0006",
+      "game_script": "game_mcmiifighterattack100",
+      "effect_script": "effect_mcmiifighterattack100",
+      "sound_script": "sound_mcmiifighterattack100",
+      "expression_script": "expression_mcmiifighterattack100",
+      "scripts_registered": [
+        "game",
+        "effect",
+        "sound",
+        "expression"
+      ]
+    },
+    {
+      "kind": "mc_miifighter_attack_100_end",
+      "kind_hash": "0x1c01dd0af1",
+      "donor_kind": "attack_100_end",
+      "stage": 5,
+      "clip": "c01mcmiifighterattack100end.nuanmb",
+      "donor_clip": "c00attackend.nuanmb",
+      "flags": "0x0084",
+      "game_script": "game_mcmiifighterattack100end",
+      "effect_script": "effect_mcmiifighterattack100end",
+      "sound_script": "sound_mcmiifighterattack100end",
+      "expression_script": "expression_mcmiifighterattack100end",
+      "scripts_registered": [
+        "game",
+        "effect",
+        "sound",
+        "expression"
+      ]
+    }
+  ],
+  "donor_scripts_not_registered": [
+    "game_attack100start (no registration of its hash in lua2cpp_miifighter.nro; checked by the hash immediates)",
+    "effect_attack100start (not present)"
+  ],
+  "status_taken_over": [
+    {
+      "name": "FIGHTER_STATUS_KIND_ATTACK",
+      "value": 39,
+      "hex": "0x27",
+      "init": "normal_jab_attack_init -> start_attack (stage 1/2 from the motion the common status started)",
+      "main": "gunner_attack_normal_main -> attack_main (vanilla attack_11/attack_12 swapped to the owned motion, once per change)"
+    },
+    {
+      "name": "FIGHTER_STATUS_KIND_ATTACK_100",
+      "value": 40,
+      "hex": "0x28",
+      "init": "normal_jab_attack_100_init -> attack_100_main",
+      "main": "gunner_attack_100_main -> attack_100_main (vanilla attack_100_start / attack_100 / attack_100_end swapped to the owned motions)"
+    }
+  ],
+  "gate": "saved Mii lookup mii_chose(fighter, \"normal_jab\") from plugin moves.rs (only a Gunner whose Mii chose miifighter); else vanilla",
+  "register_function": "register_acmd",
+  "known_differences": [
+    "Stage 2 does not set FIGHTER_STATUS_ATTACK_FLAG_ENABLE_COMBO (donor frame 7): the Gunner attack_13 would chain. ENABLE_100 (donor frame 5) is kept.",
+    "Rapid effect (effect_mcmiifighterattack100): frames 0-12 only, played once. The donor's continuation after frame 12 (bl 0x79e20, then b 0xa090c) is not decoded: 0x79e20 decodes as a different script body (research note, section 6).",
+    "Rapid hit: helper 0x158370 (macros::ATTACK under is_excute, wait 1, clear, 100_CONTINUE_CHECK) is rapid_hit; its ATTACK arguments equal the decoded helper.",
+    "The rapid status transitions (ATTACK -> ATTACK_100 via ENABLE_100, loop continue and exit) are the common status code; the swaps only change the motion kind.",
+    "Stage 1/2 swing sounds call the Brawler's se_miifighter_swing_s / _m, merged into the Gunner's SE banks."
+  ],
+  "missing": [
+    "Rapid effect continuation after frame 12 (bl 0x79e20 / b 0xa090c): not decoded.",
+    "Console-only: whether the common status re-enters ATTACK for stage 2 (Init) or changes motion in place (Main)."
+  ],
+  "files": {
+    "unit_rs": "moves/normal_jab__miifighter/unit.rs",
+    "build_assets": "moves/normal_jab__miifighter/build_assets.py",
+    "check": "evidence/moves/normal_jab__miifighter/check.py",
+    "research": "research/moves/normal_jab__miifighter.md",
+    "package": "gamedata/mii_customizer/moves/normal_jab__miifighter/package",
+    "reference_motion_list": "gamedata/mii_customizer/moves/normal_jab__miifighter/reference/motion_list_vanilla_plus_owned.bin",
+    "manifest": "gamedata/mii_customizer/moves/normal_jab__miifighter/manifest.json",
+    "donor_acmd_tables": "gamedata/mii_customizer/moves/normal_jab__miifighter/tables/acmd_calls.json",
+    "expected_events": "gamedata/mii_customizer/moves/normal_jab__miifighter/tables/expected_calls.json",
+    "helper_rapid_hit": "gamedata/mii_customizer/moves/normal_jab__miifighter/tables/helper_rapid_hit.json",
+    "sound_reference": "gamedata/mii_customizer/moves/normal_jab__miifighter/reference/sound",
+    "effect_reference": "gamedata/mii_customizer/moves/normal_jab__miifighter/reference/effect"
+  },
+  "plugin_copy": "scratch/2026-10-08_MV-normal_jab__miifighter/plugin (base builds/.cache/plugin_base_0.10.0)",
+  "sound_additions": {
+    "banks": [
+      "sound/bank/fighter/se_miigunner",
+      "sound/bank/fighter/se_miigunner_c00"
+    ],
+    "tones_appended": [
+      "se_miifighter_attack100",
+      "se_miifighter_swing_l",
+      "se_miifighter_swing_s",
+      "se_miifighter_swing_m"
+    ],
+    "tones_before_after": [
+      89,
+      93
+    ],
+    "sequence_file": "sound/sequence/fighter/miigunner.sqb",
+    "sequence_records_appended": [
+      "seq_miifighter_rnd_attack100",
+      "seq_miifighter_rnd_attack02"
+    ],
+    "sequence_records_before_after": [
+      19,
+      21
+    ],
+    "voice": "vc_mii_attack04/05/06/100 are in all 36 attack-voice Mii banks (vc_mii_cheer excluded: no attack voice); no voice merge",
+    "method": "codec from tilt_up__snake/build_assets.py (append_tones, sqb_write), copied into build_assets.py"
+  },
+  "effect_addition": {
+    "emitter": "MIIFIGHTER_ATTACK100",
+    "donor": "effect/fighter/miifighter/ef_miifighter.eff (57 emitters)",
+    "recipient": "effect/fighter/miigunner/ef_miigunner.eff (60 emitters, vanilla)",
+    "result": "reference/effect/fighter/miigunner/ef_miigunner.eff (61 emitters; sha256 b97de3dd1d3c6b0c...)",
+    "method": "mods/ssbu_mod_new/tools/merge_hero_neutral_b_effects.py, copied to scratch/2026-10-08_MV-normal_jab__miifighter/effect_merge (root and converter redirected only)",
+    "tier": "B (engine checks; in-game drawing not verified)"
+  }
+}

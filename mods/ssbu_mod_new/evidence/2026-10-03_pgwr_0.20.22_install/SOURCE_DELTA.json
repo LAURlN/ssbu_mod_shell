@@ -1,0 +1,14 @@
+{
+  "Cargo.lock": {
+    "baseline": "d7080466ca7a37c1db7ac518d5dee32a3578e3b3a3be15a5102b8aae34252238",
+    "candidate": "4aae68ebfbd593f03e3c6e45e7b0f3a12fced339fe49dffc897c0a2a54aa2672"
+  },
+  "Cargo.toml": {
+    "baseline": "4a8225a0434c9b26a5f1d7e9435b51fc40e05c65e2cd6d6089bb9f85c3926f64",
+    "candidate": "a48527bcf39ae88ad9840ac4744d97a8b0baa449bbdaf05af6535884aa8d9162"
+  },
+  "src/mythra/hero_spin_params.rs": {
+    "baseline": "b435184703e98fe5bc6342adc47f9c35fe4cd83518af7949bc1e70d3ced8f62d",
+    "candidate": "7bfe44b1b44c29bbb198648af0dcd155742002c45b83fc5f5f7491f3ccb1a186"
+  }
+}

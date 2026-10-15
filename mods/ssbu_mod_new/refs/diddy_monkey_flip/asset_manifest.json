@@ -1,0 +1,104 @@
+{
+  "output": "legacy-output/ultimate/mods/mythra_gamewatch_swap/fighter/gamewatch/motion/body/c07",
+  "motions": [
+    {
+      "motion": "special_s_start",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialsstart.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_air_s_start",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialairsstart.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_air_s_jump",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialairsjump.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_air_s_kick",
+      "cancel_frame": 33,
+      "animations": [
+        "d01specialairskick.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_kick_landing",
+      "cancel_frame": 19,
+      "animations": [
+        "d01specialskicklanding.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_landing",
+      "cancel_frame": 27,
+      "animations": [
+        "d01specialslanding.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_air_s_fall",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialairsfall.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_stick",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialsstick.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_stick_attack",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialsstickattack.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_stick_attack2",
+      "cancel_frame": 17,
+      "animations": [
+        "d01specialsstickattack2.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_stick_jump",
+      "cancel_frame": 0,
+      "animations": [
+        "d01specialsstickjump.nuanmb"
+      ]
+    },
+    {
+      "motion": "special_s_stick_jump2",
+      "cancel_frame": 17,
+      "animations": [
+        "d01specialsstickjump2.nuanmb"
+      ]
+    }
+  ],
+  "files": {
+    "motion_list.bin": "25d4c01ef6b5e29894d8916d4fdd16b6a2b7232f926641af164377869de2b45f",
+    "d01specialsstart.nuanmb": "b0a04d5df0df9ab63f8c4b8c13868a8b3b4799636b8a91bb39a4e772688a0a43",
+    "d01specialairsstart.nuanmb": "352558c0804a7ddce2891bae3924878a7c68cb3070c586f9e3f0868ca0f78fa4",
+    "d01specialairsjump.nuanmb": "c3ba23facb8b84404f4954f98254547f387e90e9f51c062d792b37a0f96d9f90",
+    "d01specialairskick.nuanmb": "ae99a4bddad2a536d6fc743ad6080a9057c224e21fd783255dc697329f139d76",
+    "d01specialskicklanding.nuanmb": "7753be11bb0c37a1815bc334262776e80221f396cbddccf453d9eacc91095068",
+    "d01specialslanding.nuanmb": "f3b98e245193a4e6194017d956e400b32dddd3f6e2ff86bc8e23a05977ff3f29",
+    "d01specialairsfall.nuanmb": "0d79ac168fe316d78d26fab2ccb8a0cd98e84bd22054725a200e29fd91ddb39b",
+    "d01specialsstick.nuanmb": "bd3040009cb9a72ad9ced32254b777f30bea447d24b7e89e5fc2a941cc630ce2",
+    "d01specialsstickattack.nuanmb": "5db3c25b49120406802b20098f9e3c89cd5ea604577adcf30182d7cbdce10b6f",
+    "d01specialsstickattack2.nuanmb": "2cfb6d159a0a888d094bb6a1114230743b00333e9538a0ed562e6b3d2682edc8",
+    "d01specialsstickjump.nuanmb": "78a43c0bee55943aad45b667d30fc59fc3f8b509e705bb5d470b2b3777a9e6ce",
+    "d01specialsstickjump2.nuanmb": "e1b0cce4dbf0b6e0ef87078574d769da1f20078e1f0ca6bf19779aaaad74fd54"
+  }
+}

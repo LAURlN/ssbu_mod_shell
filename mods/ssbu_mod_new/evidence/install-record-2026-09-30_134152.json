@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.8",
+  "method": "src/pgwr/install-to-card.sh --no-smashline; automatic backup, .new staging, cmp/diff verification",
+  "authorization": "User requested installation of Cloud sword trail along with any other potentially pending changes; installed Cloud forward air custom sword trails (c06 Black & Pink, c07 Champagne Gold) and retained 0.20.7 side-B lock. Snake neutral-B remains PENDING/NOT READY per CURRENT_INSTALL.md.",
+  "included_queue_sections": [
+    "Cloud Forward Air Custom Sword Trails (c06 & c07) — Antigravity",
+    "Monkey Flip aerial side-B lock — root (retained from 0.20.7)"
+  ],
+  "pending_features_not_registered": [
+    "Snake neutral-B",
+    "Monkey Flip kick/general HI/S/LW restriction"
+  ],
+  "manifest": "builds/pgwr/0.20.8/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-134152",
+  "backup_held_version": "0.20.7",
+  "reskin_nro_sha256": "389d14259684c1c35ecf0dbe793ce5c2862510c8b214f31303fef5e2fcf0cb17",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1709,
+  "mod_tree_sha256": "c548b3cdf681b7d1128a256d0ed6754367083d88dc4d0fa95f693736343e7922",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.20.7": [
+    "Replaced placeholder Mythra forward air sword trail with custom Cloud sword trails for Pyra/G&W c06 and c07.",
+    "c06 uses Black & Pink theme: dark crimson/black core, radiant magenta-pink edge.",
+    "c07 uses White & Champagne Gold theme: pure white core, radiant champagne gold body, warm gold edge.",
+    "Deployed tex_cloud_sword1.nutexb and tex_cloud_sword2.nutexb to effect/fighter/eflame/trail_c06 and trail_c07.",
+    "Updated ACMD attack_air_f to route tex_cloud_sword1/2.",
+    "Retains 0.20.7 Monkey Flip aerial side-B lockout and capture receiver."
+  ],
+  "limitations": [
+    "Victim T-pose deferred; both grab release paths need explicit confirmation.",
+    "Snake neutral-B remains inactive/blocked in queue."
+  ]
+}

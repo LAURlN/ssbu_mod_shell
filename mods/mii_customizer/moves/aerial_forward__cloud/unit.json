@@ -1,0 +1,53 @@
+{
+  "unit": "aerial_forward__cloud",
+  "task_id": "MV-aerial_forward__cloud",
+  "entry": "aerial_forward",
+  "donor": "cloud",
+  "donor_menu_name": "Cloud",
+  "recipient": "miigunner",
+  "display_name": "Cloud's Forward Air",
+  "status": "BUILT_OFFLINE",
+  "status_note": "Code, clips, sword article, effect and sound additions built from the user's data.arc on 2026-10-11; plugin copy builds (0 errors), stack check OK, evidence check exit 0. Nothing has run in game.",
+  "code": {
+    "unit": "moves/aerial_forward__cloud/unit.rs -> plugin src/unit_aerial_forward_cloud.rs",
+    "shared": "moves/aerial_forward__cloud/mccloud.rs -> plugin src/mccloud.rs (sword article, per-entry state, safe vanilla-status lookup; used by both Cloud units)",
+    "plugin_diff": "scratch/2026-10-08_MV-aerial_forward__cloud/integration.diff (both Cloud units together)"
+  },
+  "owned_motions": {
+    "mc_cloud_attack_air_f": {"clip": "c01mccloudattackairf.nuanmb", "donor_kind": "attack_air_f", "donor_clip": "c05attackairf.nuanmb", "flags": "0x0080", "cancel_field": 54, "frames": 80, "scripts_suffix": "mccloudattackairf"},
+    "mc_cloud_landing_air_f": {"clip": "c01mccloudlandingairf.nuanmb", "donor_kind": "landing_air_f", "donor_clip": "c05landingairf.nuanmb", "cancel_field": 20, "frames": 47, "scripts_suffix": "mccloudlandingairf"}
+  },
+  "scripts": ["game_mccloudattackairf", "effect_mccloudattackairf", "sound_mccloudattackairf", "expression_mccloudattackairf", "game_mccloudlandingairf", "effect_mccloudlandingairf", "sound_mccloudlandingairf", "expression_mccloudlandingairf"],
+  "statuses_wrapped": [
+    {"kind": "FIGHTER_STATUS_KIND_ATTACK_AIR", "line": "Main", "dispatcher": "moves.rs gunner_attack_air_main -> owned_status_main(\"aerial_forward\") -> start_attack_air", "acts_when": "vanilla Main picked attack_air_f, the Mii chose the unit, the sword article is registered and both motions are loaded"},
+    {"kind": "FIGHTER_STATUS_KIND_LANDING_ATTACK_AIR", "line": "Main", "dispatcher": "moves.rs gunner_landing_attack_air_main -> start_landing_attack_air", "acts_when": "the Gunner lands out of mc_cloud_attack_air_f; Cloud's landing clip at rate cancel_frame/11 (sub_get_landing_motion_rate)"}
+  ],
+  "statuses_created": [],
+  "line_callbacks": [{"line": "Main", "fn": "mccloud::sword_guard", "what": "removes the sword when the Gunner no longer plays one of the eight Cloud motions"}],
+  "article": {
+    "name": "mccloudsword",
+    "registration": "smashline::clone_weapon(\"gamewatch\", WEAPON_KIND_GAMEWATCH_NORMAL_WEAPON, \"miigunner\", \"mccloudsword\", false), local id FIGHTER_MIIGUNNER_ARTICLE_TERM + returned index; only when sd:/ultimate/mods/*/fighter/miigunner/model/mccloudsword/c00/model.numshb exists",
+    "attach": "LinkModule link LINK_NO_CONSTRAINT to the owner, set_model_constraint_pos_ort(own joint have, parent joint haver|havel, POSITION|ORIENTATION, true), LINK_ATTRIBUTE_REFERENCE_PARENT_SCALE",
+    "motions": {"mc_cloud_sword_r": "a00mccloudswordr.nuanmb (right blade visible)", "mc_cloud_sword_l": "a00mccloudswordl.nuanmb (left blade visible)"},
+    "shared_with": "MV-special_up__cloud"
+  },
+  "hitboxes": "Cloud's game_attackairf, all 36 arguments of the 5 ATTACK calls equal the decode (check.py): frame 18 ids 0 (spike 270, air only), 1 (ground), 2, 3; frame 20 clear 0-2 and id 3 re-issued; clear_all 26; ENABLE_LANDING frames 3-43 (autocancel outside)",
+  "landing_lag": {"cloud": 11, "gunner_vanilla": 12, "source": "fighter_param.prc landing_attack_air_frame_f"},
+  "effects_added_to_shared_bank": ["MC_CLOUD_SWORD_FLARE", "MC_CLOUD_AIRF_SLASH"],
+  "sounds_added_to_shared_bank": ["se_cloud_attackair_F01", "se_cloud_landing02"],
+  "shared_file_additions": {
+    "fighter/miigunner/motion/body/c00/motion_list.bin": "2 entries; reference gamedata/mii_customizer/moves/aerial_forward__cloud/reference/motion_list_vanilla_plus_owned.bin",
+    "effect/fighter/miigunner/ef_miigunner.eff": "8 handles (both Cloud units) via mccloud_effects.py --base <bank> --output <bank>",
+    "sound/bank/fighter/se_miigunner.*": "6 tones (both Cloud units) via mccloud_sounds.py --base <dir> --output <dir>",
+    "config.json new-dir-files fighter/miigunner/c00": "every package/ file in gamedata/mii_customizer/moves/aerial_forward__cloud/manifest.json (clips, article model+motion, trail textures)",
+    "menu": "allow aerial_forward cloud; IMPLEMENTED_MOVES row (b\"aerial_forward\", b\"cloud\")"
+  },
+  "known_differences": [
+    "Voice: the Mii's own seq_miigunner_rnd_attack01 at Cloud's frame 15 instead of vc_cloud_attack05.",
+    "Effect handles renamed mc_cloud_* (emitter data unchanged). Cloud reads the sword-flare name from his work id EFFECT_KIND_SWORD_FLARE; the Buster Sword's (cloud_sword_flare) is named directly.",
+    "Cloud's forward air has no sword trail (AFTER_IMAGE) in its effect script; none is added.",
+    "Clip retargeted by bone name onto the Gunner skeleton: 18 donor-only nodes (face, mouth, ClavicleC, LegC, ShoulderpadL1) dropped; ClavicleL/R and LegL/R carried in world space; ground-contact correction on Rot.",
+    "The sword is an article tied to the Gunner's HaveR, not a mesh of the body; it sits in the hand that also wears the arm cannon.",
+    "The Gunner's own ATTACK_AIR Main runs first (it logs a shot statistic for attack_air_f); its fair ACMD never runs because the motion is replaced in the same call."
+  ]
+}

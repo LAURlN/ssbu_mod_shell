@@ -1,0 +1,46 @@
+{
+  "state": "READY",
+  "runtime": "unverified",
+  "manifest_sha256": "70fc7e105293d910b97a0c32b40ebf81958fb55985046817e5e0134b3934c7da",
+  "files": [
+    {
+      "path": "src/pgwr/plugin/src/status/gaogaen_throw_b.rs",
+      "sha256": "f5670d2dfe6263c6c506b07bfd04c3823812c3a764862ffa65e008e92dfb7739"
+    },
+    {
+      "path": "src/pgwr/plugin/src/status/mod.rs",
+      "sha256": "1a2045bff851dfcec7b09a265ff785690c7f452c77121a6978d5c928ea72eb83"
+    },
+    {
+      "path": "src/pgwr/plugin/src/acmd/mod.rs",
+      "sha256": "5bdb56ebde477cd321cf21ef0cf3a00a0d3b714fb9fd58ee5a42358774dcbf30"
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/enabled_package.py",
+      "sha256": "c3ea123548e3371b9af2357e8e1ec2de048297598af81dd65314ab302395748a"
+    },
+    {
+      "path": "src/pgwr/tools/gaogaen_throw_b/README.md",
+      "sha256": "ab8d609a30ae164f1fb8a5ad49b3f8c1c5df4d39a3820628c1e77966bada91e9"
+    },
+    {
+      "path": "evidence/2026-10-03_pgwr_gaogaen_throw_b/RESULT.md",
+      "sha256": "ffb14594e27443aba04e172197ae29fce849ef01f96eb05481fb5067ab7e1b90"
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.3.0/MANIFEST.json",
+      "sha256": "70fc7e105293d910b97a0c32b40ebf81958fb55985046817e5e0134b3934c7da"
+    },
+    {
+      "path": "builds/pgwr/gaogaen_throw_b-0.3.0/BUILD.txt",
+      "sha256": "cc4635a6011d786674446b3ff492f1a0f62192f15aa8af2be2717987970c7cc9"
+    }
+  ],
+  "task_sections_updated": [
+    "projects/pgwr/STATUS.md",
+    "projects/pgwr/CHANGELOG.md",
+    "CURRENT_INSTALL.md"
+  ],
+  "package_asset_inventory": "builds/pgwr/gaogaen_throw_b-0.3.0/MANIFEST.json",
+  "unchanged_effect_plugin_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b"
+}

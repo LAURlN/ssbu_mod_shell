@@ -1,0 +1,74 @@
+{
+ "all_pass": true,
+ "archive": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+ "checks": [
+  {
+   "check": "magic",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "header-size",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "byte-order-le",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "size-field-matches-file",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "data-offset-aligned",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "member-count",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "member-names-safe",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "member-names-unique",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "ranges-in-bounds",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "names-hash-matches",
+   "detail": "111/111",
+   "pass": true
+  },
+  {
+   "check": "offsets-ascending",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "hashes-ascending",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "rebuild-byte-identical",
+   "detail": "rebuilt sha256 f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+   "pass": true
+  }
+ ],
+ "members": 111,
+ "sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+ "size": 927100
+}

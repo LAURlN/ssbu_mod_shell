@@ -1,0 +1,19 @@
+{
+  "repo": "WuBoytH/SSBU-Dumped-Scripts",
+  "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+  "layout": "smashline/lua2cpp_pikachu/pikachu/<Script>.txt",
+  "files": [
+    {
+      "file": "AttackAirB.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_pikachu/pikachu/AttackAirB.txt",
+      "bytes": 5342,
+      "sha256": "25e068e37aae8df818e24cc95ab2a08f051b3fcff85c41df2740c7ae15d2f95a"
+    },
+    {
+      "file": "LandingAirB.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_pikachu/pikachu/LandingAirB.txt",
+      "bytes": 1711,
+      "sha256": "b26b33e8d93c4beae0b802d4f8f7f4482e0bf1d66da4d339f163bf8228e23932"
+    }
+  ]
+}

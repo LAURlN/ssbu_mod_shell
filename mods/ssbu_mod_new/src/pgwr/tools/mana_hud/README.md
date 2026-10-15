@@ -1,0 +1,9 @@
+# Isolated Hero HUD/angle packaging — 0.1.1
+
+Purpose: package already-built isolated snapshots; retain ready-assets.1 and check the exact six-file installed-source delta, preserving DK cargo/Incineroar and excluding unrelated live work. Uses tools/package_pgwr_release.py tree hashing. Never builds, accesses a card or installs dependencies.
+
+From the mod root, python src/pgwr/tools/mana_hud/package.py creates builds/pgwr/zapple-mana-hud-0.1.1 only if absent. Requires four built variants and snapshots under builds/.cache/mana_hud_codex/. python src/pgwr/tools/mana_hud/package.py --check is the read-only smoke test: tree hashes, baseline equality, versions, feature markers, NRO hashes and source scope. Verified 2026-10-03 (tier B). This task-specific tool is pinned to that baseline; change inputs/version deliberately for a future task.
+
+Existing analysis tools: tools/audit_hero_mana_native.py --hud-only --check-rust; tools/audit_hero_mana_hud.py --main <decoded image> --plugin <snapshot> --nro <HUD variant> --nro-without <angle-only> --python-path builds/.cache/mana_hud/python; tools/measure_hero_side_b_sword.py --smoke and --check-nro. Their smoke checks were rerun; no scratch helper is needed for package verification. Final patches are LF to apply across the existing mixed-line-ending source snapshot.
+
+Build recipe (from each isolated snapshot): set CARGO_TARGET_DIR to the absolute workspace builds/.cache/mana_hud/target-hud; touch src/lib.rs when switching snapshots to invalidate stale path artifacts; cargo skyline build --release --features snake-neutral-b,hero-side-b[,hero-mana-hud] -- --offline. Copy and hash the NRO immediately after each build. hero-mana-reserved stays disabled. No behavior is established by these checks. Full evidence: evidence/2026-10-03_pgwr_zapple_mana_hud/RESULT.md.

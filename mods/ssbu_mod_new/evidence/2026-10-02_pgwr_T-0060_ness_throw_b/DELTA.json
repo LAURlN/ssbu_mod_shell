@@ -1,0 +1,404 @@
+{
+  "tool": "tools/audit_ness_throw_b.py 1.0.0",
+  "date": "2026-10-02",
+  "move": "vanilla Ness back throw (throw_b) on Mythra (elight) c06/c07",
+  "evidence_tier": "B (offline, byte-checkable)",
+  "hardware_validated": false,
+  "runtime_statement": "No console, no emulator, no in-game observation. All runtime behaviour is unverified (tier D).",
+  "baseline": "mods\\ssbu_mod_new\\builds\\pgwr\\0.20.19\\ultimate\\mods\\pyra_gamewatch_reskin",
+  "candidate": "mods\\ssbu_mod_new\\builds\\pgwr\\ness-throw-b-candidate\\ult_mod",
+  "donor_acmd": {
+    "ness__ThrowB.txt": "ce67f672edadf6dd7294ed5da2fe5e335d0264fcbf70b240d11a01aa46298bfb",
+    "ness__ThrowF.txt": "bd05e190517814c33f37b65cd7617a056c7f4f5878f504fdd908f62cc4b5ea99",
+    "ness__ThrowHi.txt": "49dd771ae97ea3121e1168e6358cf7f80ab14e132530e6d4542821619650646b",
+    "ness__ThrowLw.txt": "cfb643a3c43117d03d0e75bbed92386b956b2a709f0711beeb51760f2c5842aa"
+  },
+  "donor_constants": {
+    "attack_abs_lines_verified": 2,
+    "release_frame": "27.0"
+  },
+  "gating": {
+    "gate": "install-time set_costume([6,7])",
+    "fighter": "elight",
+    "acmd_registered": [
+      "game_throwb",
+      "effect_throwb",
+      "sound_throwb",
+      "expression_throwb"
+    ]
+  },
+  "deliberate_omissions": {
+    "REVERSE_LR": "Ness throw_b omits it; 6 of 11 sampled fighters do too (see SOURCE.json)",
+    "pickup ATTACK box + set_catch_only_all": "Ness catches with the ATTACK_ABS(CATCH) pair alone",
+    "AttackModule::clear_all after ATK_HIT_ABS": "Ness does not clear",
+    "FT_ATTACK_ABS_CAMERA_QUAKE": "not in the donor",
+    "set_throw_finish_zoom_rate / set_throw_finish_offset": "no FighterCutInManager accessor in the pinned skyline-smash 315e4e8; dropped, not guessed"
+  },
+  "motion": {
+    "c06": {
+      "motion_list_sha256_baseline": "0efe5732fe98afa8e1c742e467e1b408dc1fb0be0269b11831bee980d2fb3059",
+      "motion_list_sha256_candidate": "3d1ea0aa4dcd2b3ef1a5eb8bc1523fe1a80fd2e8e0868d572bb589e438a79fae",
+      "entries": 759,
+      "entries_changed": [
+        "throw_b"
+      ],
+      "throw_b_cancel": {
+        "baseline": 36,
+        "candidate": 53
+      },
+      "throw_b_diff_offsets": [
+        62
+      ],
+      "other_throws_byte_identical": {
+        "throw_f": 28,
+        "throw_hi": 30,
+        "throw_lw": 46,
+        "thrown_b": 0,
+        "thrown_f": 0,
+        "thrown_hi": 0,
+        "thrown_lw": 0
+      }
+    },
+    "c07": {
+      "motion_list_sha256_baseline": "0efe5732fe98afa8e1c742e467e1b408dc1fb0be0269b11831bee980d2fb3059",
+      "motion_list_sha256_candidate": "3d1ea0aa4dcd2b3ef1a5eb8bc1523fe1a80fd2e8e0868d572bb589e438a79fae",
+      "entries": 759,
+      "entries_changed": [
+        "throw_b"
+      ],
+      "throw_b_cancel": {
+        "baseline": 36,
+        "candidate": 53
+      },
+      "throw_b_diff_offsets": [
+        62
+      ],
+      "other_throws_byte_identical": {
+        "throw_f": 28,
+        "throw_hi": 30,
+        "throw_lw": 46,
+        "thrown_b": 0,
+        "thrown_f": 0,
+        "thrown_hi": 0,
+        "thrown_lw": 0
+      }
+    }
+  },
+  "clip": {
+    "clip_sha256": "0b7da3fdab095231891808682d9c9795fba5d05c369f89ac77bb87b98e5de6ee",
+    "identical_across_slots": true,
+    "donor_nodes": 68,
+    "kept": 66,
+    "dropped": [
+      "Bat",
+      "BatL"
+    ],
+    "case_only": [],
+    "material_groups_dropped": 1,
+    "frames": [
+      1,
+      68
+    ],
+    "final_frame_index": 67.0,
+    "required_bone_motion": {
+      "ArmL": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 109.95,
+        "max_translation": 0.4894,
+        "moved": true
+      },
+      "ArmR": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 57.97,
+        "max_translation": 0.4894,
+        "moved": true
+      },
+      "Bust": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 42.04,
+        "max_translation": 0.3771,
+        "moved": true
+      },
+      "HandL": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 89.85,
+        "max_translation": 0.8186,
+        "moved": true
+      },
+      "HandR": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 53.6,
+        "max_translation": 0.8188,
+        "moved": true
+      },
+      "Hip": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 25.28,
+        "max_translation": 2.7303,
+        "moved": true
+      },
+      "LegL": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 112.59,
+        "max_translation": 0.2415,
+        "moved": true
+      },
+      "LegR": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 100.72,
+        "max_translation": 0.2415,
+        "moved": true
+      },
+      "ShoulderL": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 103.94,
+        "max_translation": 0.2045,
+        "moved": true
+      },
+      "ShoulderR": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 121.1,
+        "max_translation": 0.2045,
+        "moved": true
+      },
+      "Throw": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 179.32,
+        "max_translation": 30.7988,
+        "moved": true
+      },
+      "Waist": {
+        "present": true,
+        "idle_base": true,
+        "max_rotation_deg": 46.98,
+        "max_translation": 0.6952,
+        "moved": true
+      }
+    }
+  },
+  "effects": {
+    "c06": {
+      "path": "effect/fighter/elight/ef_elight_c06.eff",
+      "sha256": "41d416d6b89ee8a303f801abe50652a6ab6ecdc26aac75be24b963f0cbebb3cf",
+      "merged_from_sha256": "5aab79ed940d085398b45f6b1b39cd593237572998d64b4ef14f4ff817929595",
+      "texture_relocations": 0,
+      "model_relocations": 0
+    },
+    "c07": {
+      "path": "effect/fighter/elight/ef_elight_c07.eff",
+      "sha256": "2c0a8af5a64de42d7ee70f7bae60b30c861446eed6dae1d4da7ab9fe45123983",
+      "merged_from_sha256": "5aab79ed940d085398b45f6b1b39cd593237572998d64b4ef14f4ff817929595",
+      "texture_relocations": 0,
+      "model_relocations": 0
+    }
+  },
+  "sounds": {
+    "sequence": "seq_ness_rnd_attack",
+    "sequence_sha256": "63a05c8068614b7b71a9e64ecdab3555b0a5c5280ab166173fa3c9319fded7ea",
+    "voice_tones": [
+      "vc_ness_attack01",
+      "vc_ness_attack02",
+      "vc_ness_attack03",
+      "vc_ness_attack04"
+    ],
+    "banks": {
+      "se_elight_c06": {
+        "appended": [
+          "se_ness_pk_s",
+          "se_ness_throw_pk01",
+          "se_ness_throw_pk02"
+        ],
+        "sha256": {
+          ".nus3audio": "09f562ef4c1638aa6ccdce35de693deb674754261b005345a84dc82170606e89",
+          ".nus3bank": "ffbbfd01d1bfb6e43943f735b3a79ea39423d207fcee5903c573dd4457933191",
+          ".tonelabel": "ceb98de7b9b0582da24c6f021f1948a5f22c194ce7345ab5f162542983b9f8ed"
+        }
+      },
+      "se_elight_c07": {
+        "appended": [
+          "se_ness_pk_s",
+          "se_ness_throw_pk01",
+          "se_ness_throw_pk02"
+        ],
+        "sha256": {
+          ".nus3audio": "09f562ef4c1638aa6ccdce35de693deb674754261b005345a84dc82170606e89",
+          ".nus3bank": "ffbbfd01d1bfb6e43943f735b3a79ea39423d207fcee5903c573dd4457933191",
+          ".tonelabel": "ceb98de7b9b0582da24c6f021f1948a5f22c194ce7345ab5f162542983b9f8ed"
+        }
+      },
+      "vc_elight_c06": {
+        "appended": [
+          "vc_ness_attack01",
+          "vc_ness_attack02",
+          "vc_ness_attack03",
+          "vc_ness_attack04"
+        ],
+        "sha256": {
+          ".nus3audio": "7caecc1f2f446d01bb28cbbba45b864b79c3678b0f7536481a08829b47c2c568",
+          ".nus3bank": "3252360e48047ee1f271bff97c3942fb0cc15ba7a4035f46445c6f4f018bcd69",
+          ".tonelabel": "e1bfd45807fe1f7067133fef99003ff87a30fef5750e8d9ad0523641cd905146"
+        }
+      },
+      "vc_elight_c07": {
+        "appended": [
+          "vc_ness_attack01",
+          "vc_ness_attack02",
+          "vc_ness_attack03",
+          "vc_ness_attack04"
+        ],
+        "sha256": {
+          ".nus3audio": "7caecc1f2f446d01bb28cbbba45b864b79c3678b0f7536481a08829b47c2c568",
+          ".nus3bank": "3252360e48047ee1f271bff97c3942fb0cc15ba7a4035f46445c6f4f018bcd69",
+          ".tonelabel": "e1bfd45807fe1f7067133fef99003ff87a30fef5750e8d9ad0523641cd905146"
+        }
+      }
+    }
+  },
+  "delta": [
+    {
+      "path": "effect/fighter/elight/ef_elight_c06.eff",
+      "status": "modified",
+      "baseline_sha256": "c7a2b4b0dff6a523a1b311eea52ca29a1c437b600edc9b445aaf810f2461e0e3",
+      "candidate_sha256": "41d416d6b89ee8a303f801abe50652a6ab6ecdc26aac75be24b963f0cbebb3cf",
+      "slot": "c06"
+    },
+    {
+      "path": "effect/fighter/elight/ef_elight_c07.eff",
+      "status": "modified",
+      "baseline_sha256": "d4f06243582516dae66099f24a6a777a1f61cf0d326100dd3c8d59353f3d97bb",
+      "candidate_sha256": "2c0a8af5a64de42d7ee70f7bae60b30c861446eed6dae1d4da7ab9fe45123983",
+      "slot": "c07"
+    },
+    {
+      "path": "fighter/elight/motion/body/c06/e01throwb.nuanmb",
+      "status": "added",
+      "slot": "c06"
+    },
+    {
+      "path": "fighter/elight/motion/body/c06/motion_list.bin",
+      "status": "modified",
+      "baseline_sha256": "0efe5732fe98afa8e1c742e467e1b408dc1fb0be0269b11831bee980d2fb3059",
+      "candidate_sha256": "3d1ea0aa4dcd2b3ef1a5eb8bc1523fe1a80fd2e8e0868d572bb589e438a79fae",
+      "slot": "c06"
+    },
+    {
+      "path": "fighter/elight/motion/body/c07/e01throwb.nuanmb",
+      "status": "added",
+      "slot": "c07"
+    },
+    {
+      "path": "fighter/elight/motion/body/c07/motion_list.bin",
+      "status": "modified",
+      "baseline_sha256": "0efe5732fe98afa8e1c742e467e1b408dc1fb0be0269b11831bee980d2fb3059",
+      "candidate_sha256": "3d1ea0aa4dcd2b3ef1a5eb8bc1523fe1a80fd2e8e0868d572bb589e438a79fae",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c06.nus3audio",
+      "status": "modified",
+      "baseline_sha256": "59d40cca4af71362b34cfccbc7098d41029160f0f4f1810dc4ea79ae255f3c13",
+      "candidate_sha256": "09f562ef4c1638aa6ccdce35de693deb674754261b005345a84dc82170606e89",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c06.nus3bank",
+      "status": "modified",
+      "baseline_sha256": "ac3df61b91c3292a7e899d0144e912edd0fb0fd917b0074e2c694ed302ec6552",
+      "candidate_sha256": "ffbbfd01d1bfb6e43943f735b3a79ea39423d207fcee5903c573dd4457933191",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c06.tonelabel",
+      "status": "modified",
+      "baseline_sha256": "79bdfae0930cf07e5e3ca1902a873bd167daa1b1318ebafa3cfd87bfe089ceec",
+      "candidate_sha256": "ceb98de7b9b0582da24c6f021f1948a5f22c194ce7345ab5f162542983b9f8ed",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c07.nus3audio",
+      "status": "modified",
+      "baseline_sha256": "59d40cca4af71362b34cfccbc7098d41029160f0f4f1810dc4ea79ae255f3c13",
+      "candidate_sha256": "09f562ef4c1638aa6ccdce35de693deb674754261b005345a84dc82170606e89",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c07.nus3bank",
+      "status": "modified",
+      "baseline_sha256": "ac3df61b91c3292a7e899d0144e912edd0fb0fd917b0074e2c694ed302ec6552",
+      "candidate_sha256": "ffbbfd01d1bfb6e43943f735b3a79ea39423d207fcee5903c573dd4457933191",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter/se_elight_c07.tonelabel",
+      "status": "modified",
+      "baseline_sha256": "79bdfae0930cf07e5e3ca1902a873bd167daa1b1318ebafa3cfd87bfe089ceec",
+      "candidate_sha256": "ceb98de7b9b0582da24c6f021f1948a5f22c194ce7345ab5f162542983b9f8ed",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c06.nus3audio",
+      "status": "modified",
+      "baseline_sha256": "ea3bae9230863ed189303905d7c1b7b22cc2ea9710133031706bb7cc359c475a",
+      "candidate_sha256": "7caecc1f2f446d01bb28cbbba45b864b79c3678b0f7536481a08829b47c2c568",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c06.nus3bank",
+      "status": "modified",
+      "baseline_sha256": "007b25183d7fb4580501d9ffae440a08effa8a505a60b0a98a50c9b52486f86f",
+      "candidate_sha256": "3252360e48047ee1f271bff97c3942fb0cc15ba7a4035f46445c6f4f018bcd69",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c06.tonelabel",
+      "status": "modified",
+      "baseline_sha256": "940e2548c07f6fdd1098157fc65943d7a6e1f63ff24eaa0561152ac47b7b57cc",
+      "candidate_sha256": "e1bfd45807fe1f7067133fef99003ff87a30fef5750e8d9ad0523641cd905146",
+      "slot": "c06"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c07.nus3audio",
+      "status": "modified",
+      "baseline_sha256": "ea3bae9230863ed189303905d7c1b7b22cc2ea9710133031706bb7cc359c475a",
+      "candidate_sha256": "7caecc1f2f446d01bb28cbbba45b864b79c3678b0f7536481a08829b47c2c568",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c07.nus3bank",
+      "status": "modified",
+      "baseline_sha256": "007b25183d7fb4580501d9ffae440a08effa8a505a60b0a98a50c9b52486f86f",
+      "candidate_sha256": "3252360e48047ee1f271bff97c3942fb0cc15ba7a4035f46445c6f4f018bcd69",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/bank/fighter_voice/vc_elight_c07.tonelabel",
+      "status": "modified",
+      "baseline_sha256": "940e2548c07f6fdd1098157fc65943d7a6e1f63ff24eaa0561152ac47b7b57cc",
+      "candidate_sha256": "e1bfd45807fe1f7067133fef99003ff87a30fef5750e8d9ad0523641cd905146",
+      "slot": "c07"
+    },
+    {
+      "path": "sound/sequence/fighter/elight.sqb",
+      "status": "modified",
+      "baseline_sha256": "4394ae35e1f51026e775c5e6ca4852b5fa1bf20c2da312bac5add2af9ed1bdff",
+      "candidate_sha256": "63a05c8068614b7b71a9e64ecdab3555b0a5c5280ab166173fa3c9319fded7ea",
+      "slot": null
+    }
+  ],
+  "negative_controls": {
+    "other_throw_entry_touched": true,
+    "donor_effect_folder_shipped": true,
+    "required_tone_missing": true
+  }
+}

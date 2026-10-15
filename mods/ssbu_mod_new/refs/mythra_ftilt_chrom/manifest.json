@@ -1,0 +1,58 @@
+[
+  {
+    "file": "references/mythra_ftilt/elight_AttackS3.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/AttackS3.txt",
+    "sha": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "sha256": "1bbc872d1784a2a565609a48c27bde844074f0ae10f0c95b2b383cec1f5ba2a4",
+    "date": "2026-09-13 02:30:47.793954"
+  },
+  {
+    "file": "references/mythra_ftilt/elight_AttackS3Hi.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/AttackS3Hi.txt",
+    "sha": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "sha256": "0183152a4a7b9e89391842daedf12a308f829eb7da761bb17c24f2cc5d788cf1",
+    "date": "2026-09-13 02:30:48.049478"
+  },
+  {
+    "file": "references/mythra_ftilt/elight_AttackS3Lw.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_elight/elight/AttackS3Lw.txt",
+    "sha": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "sha256": "b91f24d5c6ac6331fba18ab5278e30aaa3bece46552b80b9ed6fd7fe21d8e695",
+    "date": "2026-09-13 02:30:48.291154"
+  },
+  {
+    "file": "references/mythra_ftilt/chrom_AttackS3.txt",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_chrom/chrom/AttackS3.txt",
+    "sha": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "sha256": "8695118b5492660dff9d3ce585f37dbd56949871eefa0a5720e847f0b9b2da00",
+    "date": "2026-09-13 02:30:48.540510"
+  },
+  {
+    "file": "references/mythra_ftilt/chrom_body_motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/chrom/motion/body/c00/motion_list.yml",
+    "sha": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "sha256": "a98e1fdb53dcc8015b5d73bd504c5e3a2dcb6cecf86dd04a730be003a7783a7c",
+    "date": "2026-09-13 02:31:07.067643"
+  },
+  {
+    "file": "references/mythra_ftilt/chrom_sword_motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/chrom/motion/sword/c00/motion_list.yml",
+    "sha": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "sha256": "b7ad49d8540a789a0d8a64ecec54941c3d454dbf4e4604bc6fdda4d52e7b7ac4",
+    "date": "2026-09-13 02:31:07.314214"
+  },
+  {
+    "file": "references/mythra_ftilt/elight_body_motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/elight/motion/body/c00/motion_list.yml",
+    "sha": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "sha256": "509e084fecde7d36158a8b46cbbac3c9a2558a578267da6c0fd62912a0908b17",
+    "date": "2026-09-13 02:31:07.747641"
+  },
+  {
+    "file": "references/mythra_ftilt/elight_esword_motion_list.yml",
+    "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Motion-Lists/3f14a9d46b69eb9e7cd622bddde459192848580e/fighter/elight/motion/esword/c00/motion_list.yml",
+    "sha": "3f14a9d46b69eb9e7cd622bddde459192848580e",
+    "sha256": "0e40741f45f325fd21c092d52991e4e9813fb4682cceb9023df24d8ff2dca23f",
+    "date": "2026-09-13 02:31:08.017923"
+  }
+]

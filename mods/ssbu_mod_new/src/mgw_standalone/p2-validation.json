@@ -1,0 +1,375 @@
+{
+  "output_directory": "legacy-output",
+  "sdroot_files": 92,
+  "files": [
+    {
+      "path": "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libnro_hook.nro",
+      "sha256": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+    },
+    {
+      "path": "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libsmashline_plugin.nro",
+      "sha256": "099543f415adb2560f59399f89df7c3fe2947427ea68633d7d1d82e30ee693ea"
+    },
+    {
+      "path": "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libssbu_clone_engine.nro",
+      "sha256": "ab44baa509f4dafcab600c58c388c6079201b9b7ef2cd61afba42960b26eaa63"
+    },
+    {
+      "path": "atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libthe_csk_collection.nro",
+      "sha256": "4d91c3d771b5c846a58ba31e123ff2aca5847614493235e754930a621c19c892"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/config.json",
+      "sha256": "a19818d952f9140e5eca44307cbc8b0d4315b6ce6bca774bcd2a747905b4251d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_001_col.nutexb",
+      "sha256": "2fa2c99391394dfe81d3c532a584f344a97befa807b304699aaa317ec881142a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_001_nor.nutexb",
+      "sha256": "c0aa4eebedf25eff194ab7cc357829f68e252494c0adf3abc32916eea1edaa87"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_001_prm.nutexb",
+      "sha256": "1b2e695c51d84fd882c41d423da0440e931498ee4ad3c834bc0462e27c6b545d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_002_col.nutexb",
+      "sha256": "3353a78feb86aea44b9d2d240372177d8b2f9f00f9b0a1667e3d1a5f2f2db3a7"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_002_nor.nutexb",
+      "sha256": "040d6670886efa2f33e5593326502acd05f290e04a8e87f2c889d271e6f7f3e6"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/alp_light_002_prm.nutexb",
+      "sha256": "b7d6656c7535327e26160ac4c3e9429cdc5044b329af407b29bcce74a36b8283"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/dark_model.numatb",
+      "sha256": "4dd51c982a36d20b86be6aec328637cd8cb0a50b2456d3c577049f41fe280b1f"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_001_col.nutexb",
+      "sha256": "9a0ae4f822d59b22daea78baef0c1a24bf32bd5ca272f3d96aeb2cddac40b522"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_001_emi.nutexb",
+      "sha256": "3f818b07f8bed1d84cfe5757124a90e55b22745311f4b2b7234d9ba3fbaf9bb7"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_001_nor.nutexb",
+      "sha256": "db07256684c4a13c706056dd2a480938f8705eb3e70b0c777b8de33c0938e9a3"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_001_prm.nutexb",
+      "sha256": "7881ec0f153507875190743dc4644cdf3499d3a279b3ce5d9e770ebeaf28ad32"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_002_col.nutexb",
+      "sha256": "8c13a375c19cb836e23ed604c323c06835bb4577bcb02c06284fcdd5e39dcecf"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_002_nor.nutexb",
+      "sha256": "22961017b68f1c85b4c17508d7a1f53052984d02bb4b70610072db66ded41442"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_002_prm.nutexb",
+      "sha256": "d19542b1f193fdc302da64fdab1d1f82097b422d3c16ca75fb09fefbb37186a8"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_003_col.nutexb",
+      "sha256": "0ba80febcb21cccaa843a42fcec823e78d47c1448cbe0be4b6d0c65d3d901e9d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_003_emi.nutexb",
+      "sha256": "b9689062e9164c9f8565da93757234b9020a409d94da4ec934db482d3c5fa47f"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_003_nor.nutexb",
+      "sha256": "6dfd899538510456299010da76e7c47af9c77e7f32562d62f6d594f63728fe9a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_003_prm.nutexb",
+      "sha256": "063c2cade194c4b5bc10a1f9edde9e2a91fbe042a229ff65e8787f1e56283b0d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_004_col.nutexb",
+      "sha256": "0d10ba1c019609372a458e1f1944806845d1db1cbc9cc0700f9cdac347956065"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_004_emi.nutexb",
+      "sha256": "67b5cde32e43223d9001c4811a6f02e08d627190a3d5f1fa5cff19cf21ad4945"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_004_nor.nutexb",
+      "sha256": "24eac2f8dc699987c8554877f4ee1dff90be34b6399453c7611289160ba77f94"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/def_light_004_prm.nutexb",
+      "sha256": "4f08c54c38f5ca23d5f43148317e0549acc4f5e10f32ab641249b55d7274d9e1"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_b_col.nutexb",
+      "sha256": "cc4ed7c4194580ddc1715aa08c475455bac1edfdf0fa5f92fcc301b2cad4c3bc"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_b_r_col.nutexb",
+      "sha256": "45ee68a80f7008b6a09b5547057a09a6dea7cc5a9cab91bd06f216139fd8ecaf"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_g_col.nutexb",
+      "sha256": "0b2060e1460cc2f1e0be0560fee66a2e216ae896a7a9760e4ecd709f9e5e9b80"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_g_r_col.nutexb",
+      "sha256": "91c2380ee9019e412a6a4353dad394d8721b76638fa34095a838194994e9cd29"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_w_col.nutexb",
+      "sha256": "7110d05a3fe7038b0cdc21ed9d3dfbf426554f90889fb14ece4118a005240bc5"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_w_nor.nutexb",
+      "sha256": "a043be0b88886ef166592be58fa824cea720892fd98c8967ba17d3129d3140b5"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/eye_light_w_prm.nutexb",
+      "sha256": "d9cc985f053b587a47bc13246a2541513a38af162d6eb1dfc8c20df650c85d0e"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/light_model.numatb",
+      "sha256": "81a536c1f4b9104d835c6148ebb5c85d5f0f123451ffe5e1e8f061edb013ac5e"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/lod.xmb",
+      "sha256": "74fbc1e07a8dafb48d496d567f82349f13ed83f95bf2ac18ed478594048a0b55"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/metamon_model.numatb",
+      "sha256": "d45d6f9e17f60ae1b0294ae28a894dec5e20a33c25417df9223296fa090c3c84"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.nuhlpb",
+      "sha256": "0f9980708105bf094b4c04d7db3520e8499d025f345fd58b4adf641c70b6d2cb"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.numatb",
+      "sha256": "ef6303c9ed5bc45b3d6bb4c24909d3595915fbf192b038bcc9fd1c3eb3a671d4"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.numdlb",
+      "sha256": "267f2bcc893c0f8a3766c8b8384a3408666eb5eec65e5cdce9f8f63d29755e2c"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.numshb",
+      "sha256": "66d6cfc2f59999ad034693f11f59f3d685b7796e1217637b541e549ab9bfa1a8"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.numshexb",
+      "sha256": "321c2fd496ccd4661b0bdef79d39708b90bb4b498e86ee35bd3c49c5b748c0a0"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.nusktb",
+      "sha256": "5b6fbbe6f702e5ab9b14b208899799ec99f13c15e88611017b2547ac3de93f03"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.nusrcmdlb",
+      "sha256": "267f2bcc893c0f8a3766c8b8384a3408666eb5eec65e5cdce9f8f63d29755e2c"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/model.xmb",
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_002_col.nutexb",
+      "sha256": "7e6a48174907e1c3f6e06829a66991e2871d57ed2b3138c9cc6030228c88a366"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_002_nor.nutexb",
+      "sha256": "0979a3d70b3fb2957a5496b7086b8b7fb283e058f148b75e0930bbcb65202033"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_002_prm.nutexb",
+      "sha256": "dd3095d9e3f05bb6c25ef8bdc2a326c1cfa8d48497c5f7add48f943813a45b4a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_003_col.nutexb",
+      "sha256": "eba25ecb1f9af8e18aeb0c46cdd6fcbaf9e4c095cd23a048dc255a2082e33300"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_003_nor.nutexb",
+      "sha256": "1ff1436adf682e2d37ba76b3528fb57778902211f0a0567707fae2d1e3f7ec97"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_flame_003_prm.nutexb",
+      "sha256": "b48891715256bac924964d83e604e89e2f6230c706fb7f7e1210814d50e40582"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_light_001_col.nutexb",
+      "sha256": "e034c6324866dddd9ee3bcc0ceba67598342d5ff9fd306a9889e597d25ad6e7f"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_light_001_emi.nutexb",
+      "sha256": "2ee95e70c126adc0cdc73ea6138baed58f97633f10ba03f135bcf85e39b9e3a7"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_light_001_nor.nutexb",
+      "sha256": "c64f8492cc625bd360eaebefe5aa91cd0992d4348f9ed148f59108ed0458e3a3"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_mythra/model/body/c00/skin_light_001_prm.nutexb",
+      "sha256": "5f52c7d56c702cda4c04430b592965be064292b170510adae29f8aa51d4783bd"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/black_ha_col.nutexb",
+      "sha256": "b48c43a27d57bf8fccb4e6e9079c415e07bec2ff1f593483efd615f8fc68435a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/dark_model.numatb",
+      "sha256": "d3f0faa42cc47cb4e7fd5c24828f497925dcf2eaeb4e4885daaf638a44124935"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/gray_ha_col.nutexb",
+      "sha256": "289dc18e23e09b1ce6f33e81f1d709a12bc869cfb580a631a0e01f58246fb784"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/gray_tes_001_col_1.nutexb",
+      "sha256": "b54cb5a89d9b28e9e87bf983642da2934aa8032d7be2a166b460822d15a7ff9c"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/grayb_ha_col.nutexb",
+      "sha256": "8d190abd27d0e0b7c836b2c93bdedaa2980a98690c66c09542690d327d429417"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/gw_nor.nutexb",
+      "sha256": "b8cdb7e72e44f0e7e7666ffcd3a2d4cece1d60b9073eb48d30517bf265af0883"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/light_model.numatb",
+      "sha256": "e06fc33711e3ddca6031c3814d192a7c8dd30d5e60b6068b65a8a14b4feaed1d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/metamon_model.numatb",
+      "sha256": "e4f1312b0ff491ba81d233fbb8ae1a34983e593181715ee6a451f5b98ff06ed9"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.nuanmb",
+      "sha256": "f59c3d663d457006f5a6ce74e470ff9c4763e07073e5dc9d1a1d3e5a2242ae02"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.nuhlpb",
+      "sha256": "43f1bfbb556ea1aceaf85fd6abfbc3125241004ad13fbe0e7d83f4ba6d5e589b"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.numatb",
+      "sha256": "9c3b497b3b8dbeb6671ef1fdac8b747282e5f37a5b7ad8bd01cf4a1bddffb406"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.numdlb",
+      "sha256": "d1565832e2afde4b16e62ba404fe9d8495f0f7d9442ad6a22d67e0dd27fa6aaf"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.numshb",
+      "sha256": "181f4a88d599f5a1b0c4860e3867b88e236c62bdccfdc0c06724b245675ef803"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.numshexb",
+      "sha256": "fe0b8c9411676a8adcd7dd25b89db2c70d054200b12e1b213ca5d92668bac2bb"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.nusktb",
+      "sha256": "bf50a6c154d677fa6fda94bb4554c87441f7b5a99158ef420214f55a0b0a7057"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.nusrcmdlb",
+      "sha256": "d1565832e2afde4b16e62ba404fe9d8495f0f7d9442ad6a22d67e0dd27fa6aaf"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter/mgw_watch/model/body/c00/model.xmb",
+      "sha256": "172edc97793e8fdbf5045479aa570139fd29f18fbb5ad4b5e9672ae945370a9a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/fighter.toml",
+      "sha256": "9e63dcfd255f59f8ae58f82be39ea2714c94fa040d8f956dee6e0d49db1a5a9e"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/info.toml",
+      "sha256": "78c50045c1f1daba05d0f64ba77dd1977f0749d477275af2a1f9cc5a9b51aa6e"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/plugin.nro",
+      "sha256": "896e223e39494250e719d10cdaf5f5e818239dd8345260cbeed8cfac7abb6485"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/message/msg_name.xmsbt",
+      "sha256": "a21604b73827e8b2c4eecbacb5f041e26076cf2b594ddcd673c507c875730afc"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_0/chara_0_mgw_mythra_00.bntx",
+      "sha256": "0f6dd7a382f38718b0b7e4bc5981b9e79affb2fa147bbc87e8ff6608af889cde"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_0/chara_0_mgw_watch_00.bntx",
+      "sha256": "1dce4e0d0cfdb4158e16fca98ef80c670aaae80d750b35233058946a160db55d"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_1/chara_1_mgw_mythra_00.bntx",
+      "sha256": "d5f6a86c3d1c9e94216707460bb632ef5629c3ce027c060b9e63d4219e247118"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_1/chara_1_mgw_watch_00.bntx",
+      "sha256": "9e4b3793e7e31d60eff89ba96c05db0c05b9293d47bc2c6143fd9c1633b480e8"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_10/chara_10_mgw_mythra_00.bntx",
+      "sha256": "3ca8f48bc970feff8b237b57b502eaadfb946a97777e3edfe1b3dd1de9e2b8d1"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_2/chara_2_mgw_mythra_00.bntx",
+      "sha256": "3ad9a455f8c2ed49ec4ed966582c50f81e354f5f5a4fc27ec3347a7050a4b79b"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_2/chara_2_mgw_watch_00.bntx",
+      "sha256": "eba114411b9a82f8b11693a59f19cb4776a77d9228a9e72ca76c1242bfdd1bf8"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_3/chara_3_mgw_mythra_00.bntx",
+      "sha256": "01f048bc9ccaf2ea46a774f9c5408ada0b9bc5af1832970a2c88a0c810541750"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_3/chara_3_mgw_watch_00.bntx",
+      "sha256": "9cc83f98c8bcd788f5af1a7cc7b28acd78daeaada49b9ac1ed75ea92254a05cf"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_4/chara_4_mgw_mythra_00.bntx",
+      "sha256": "5607f0122c4adfc3acf2e64a9e0d29c616d292171dc9b8c02ea097156db7327a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_4/chara_4_mgw_watch_00.bntx",
+      "sha256": "b65a43fd60e8904506a455a3e9ea77fc2f717dc677cbddfc0ae7c3271cfac2b7"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_5/chara_5_mgw_mythra_00.bntx",
+      "sha256": "2100a6a78fd0c1a4b7c8d74a8632636c36a308b766bd36a93209a74830343d24"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_5/chara_5_mgw_watch_00.bntx",
+      "sha256": "391a4ed8f52ffdba4c8a2ed1e2ddc9972b1e730cc13b9c1f6c0d1c92fe1c426a"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_6/chara_6_mgw_mythra_00.bntx",
+      "sha256": "968e6ad2b5e606206df31cdc08daccbc8a34e10554ee835dc0158d1a0b256be1"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_6/chara_6_mgw_watch_00.bntx",
+      "sha256": "65152e63f54ea565900111f97b3c7728b3dbe9907542b0c57443694e67aeb92c"
+    },
+    {
+      "path": "ultimate/mods/MGW_Standalone_Probe/ui/replace/chara/chara_7/chara_7_mgw_watch_00.bntx",
+      "sha256": "cb9223dec4b3b6dfc2d6ff6a241a35054a048febb693631b6e00a14a1cf22835"
+    }
+  ],
+  "hardware_tested": false
+}

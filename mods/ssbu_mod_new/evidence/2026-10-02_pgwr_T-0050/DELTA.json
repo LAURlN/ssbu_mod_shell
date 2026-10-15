@@ -1,0 +1,49 @@
+{
+  "task": "T-0050",
+  "status": "blocked",
+  "date": "2026-10-02",
+  "package_generated": false,
+  "tests_run": false,
+  "emulator_run": false,
+  "installed": false,
+  "donor": {
+    "path": "refs/littlemac_attack_s4/arc/effect/fighter/littlemac/ef_littlemac.eff",
+    "exists": true,
+    "sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228"
+  },
+  "source_hashes": {
+    "tools/build_littlemac_fsmash_effect.py": "f24e4319b6ed1ac808d138bfb07b37b19abd85f0fe50813075b41796aa4ecd34",
+    "tools/merge_hero_neutral_b_effects.py": "840deed7275398e9fcd01c5508961164ae1fc1dbad77e26c7e46b638ad656f3f",
+    "src/pgwr/build.py": "961b24e0501c85cdd435177af22008b3e0ce4777f931ec85cdf3aba2dc40c94f"
+  },
+  "intended_delta": {
+    "add_or_replace": [
+      "effect/fighter/eflame/ef_eflame_c06.eff",
+      "effect/fighter/eflame/ef_eflame_c07.eff"
+    ],
+    "change": [
+      "config.json: declare each bank in its matching fighter/eflame/c06 or c07 group; remove obsolete donor-bank entry"
+    ],
+    "remove": [
+      "effect/fighter/littlemac/ef_littlemac.eff"
+    ],
+    "preserve": "All other assets, NROs, framework plugins, vanilla ef_eflame.eff and ACMD/timing"
+  },
+  "missing": [
+    "Original effect/fighter/eflame/ef_eflame.eff inside lab",
+    "Repaired EffectConverter + EffectLibrary.dll and collision helper; pinned source/tool inputs absent"
+  ],
+  "unverified": [
+    "No merge executed; external-model/variant flags and dependency closure not decoded",
+    "No output bank or package hashes; baseline preservation and converter compatibility unverified",
+    "All runtime appearance, angle selection and cleanup pending console review"
+  ],
+  "user_tests": [
+    "After an installer supplies the completed package, boot fresh and keep sd:/ultimate/pgwr_log.txt from boot plus atmosphere/crash_reports/ on failure.",
+    "Vanilla controls: Pyra and Mythra c00 and c05 forward smashes and unrelated attacks must retain normal effects; real Little Mac is the visual donor control.",
+    "Pyra c06: neutral, up-angled and down-angled forward smash facing both left and right, uncharged and fully charged. Expect donor fist line for neutral and arc for both angles, with unchanged animation, sound, hit and timing.",
+    "Repeat every angle/facing/charge check on Pyra c07, then place c06 and c07 together in one match and repeat; transform to Mythra and back and repeat.",
+    "Check up-arc retirement near frame 18 and down-arc near frame 21; interrupt by hit, landing/state change and transformation. No lingering line/arc after the move or repeated attacks.",
+    "Check held-item hiding and unrelated Pyra/G&W effects (jab, Cloud fair, smash charge, entry, up-B props), plus Mythra Hero effects, before and after repeated forward smashes. Report missing or altered effects."
+  ]
+}

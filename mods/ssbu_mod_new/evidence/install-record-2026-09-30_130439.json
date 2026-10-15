@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.7",
+  "method": "src/pgwr/install-to-card.sh --no-smashline; automatic backup, .new staging, cmp/diff verification",
+  "authorization": "User remounted card and replied ready to installation of 0.20.7; this thread installs the explicitly requested checked package.",
+  "included_queue_sections": [
+    "Monkey Flip aerial side-B lock ? root"
+  ],
+  "pending_features_not_registered": [
+    "Snake neutral-B",
+    "Monkey Flip kick/general HI/S/LW restriction"
+  ],
+  "manifest": "builds/pgwr/0.20.7/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-130439",
+  "backup_held_version": "0.20.6",
+  "reskin_nro_sha256": "8dea58a20e8c06bfa71f8818818bf91649103a2b04d3de33522e70dff1b629f8",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_files": 1701,
+  "mod_tree_sha256": "0a883520e042c06f7a1ccf675e1e183ff63d31d1942e5ab960733035344158d2",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "installed_verified": true,
+  "hardware_validated": false,
+  "change_vs_0.20.6": [
+    "JUMP to FALL side-B instance lock, shared availability callback, native ground/cliff/hit/reset refresh.",
+    "Asset content unchanged except info.toml version."
+  ],
+  "limitations": [
+    "Victim T-pose deferred; both grab release paths need explicit confirmation.",
+    "Kick/general restriction is next separate hardware change."
+  ]
+}

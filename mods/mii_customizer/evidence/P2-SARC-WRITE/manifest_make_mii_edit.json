@@ -1,0 +1,1912 @@
+{
+ "data_length": 918908,
+ "data_offset": 8192,
+ "gaps": [
+  {
+   "end": 3808,
+   "size": 4,
+   "start": 3804
+  },
+  {
+   "end": 4080,
+   "size": 4,
+   "start": 4076
+  },
+  {
+   "end": 4592,
+   "size": 4,
+   "start": 4588
+  },
+  {
+   "end": 4864,
+   "size": 4,
+   "start": 4860
+  },
+  {
+   "end": 5456,
+   "size": 8,
+   "start": 5448
+  },
+  {
+   "end": 5680,
+   "size": 8,
+   "start": 5672
+  },
+  {
+   "end": 5888,
+   "size": 12,
+   "start": 5876
+  },
+  {
+   "end": 6096,
+   "size": 12,
+   "start": 6084
+  },
+  {
+   "end": 6368,
+   "size": 4,
+   "start": 6364
+  },
+  {
+   "end": 14352,
+   "size": 8,
+   "start": 14344
+  },
+  {
+   "end": 15072,
+   "size": 12,
+   "start": 15060
+  },
+  {
+   "end": 15408,
+   "size": 8,
+   "start": 15400
+  },
+  {
+   "end": 15920,
+   "size": 8,
+   "start": 15912
+  },
+  {
+   "end": 16160,
+   "size": 12,
+   "start": 16148
+  },
+  {
+   "end": 17040,
+   "size": 4,
+   "start": 17036
+  },
+  {
+   "end": 17392,
+   "size": 4,
+   "start": 17388
+  },
+  {
+   "end": 17616,
+   "size": 4,
+   "start": 17612
+  },
+  {
+   "end": 24576,
+   "size": 2868,
+   "start": 21708
+  },
+  {
+   "end": 51936,
+   "size": 8,
+   "start": 51928
+  },
+  {
+   "end": 52160,
+   "size": 4,
+   "start": 52156
+  },
+  {
+   "end": 52432,
+   "size": 4,
+   "start": 52428
+  },
+  {
+   "end": 52736,
+   "size": 4,
+   "start": 52732
+  },
+  {
+   "end": 56688,
+   "size": 4,
+   "start": 56684
+  },
+  {
+   "end": 56960,
+   "size": 4,
+   "start": 56956
+  },
+  {
+   "end": 57232,
+   "size": 12,
+   "start": 57220
+  },
+  {
+   "end": 57568,
+   "size": 8,
+   "start": 57560
+  },
+  {
+   "end": 62144,
+   "size": 8,
+   "start": 62136
+  },
+  {
+   "end": 62400,
+   "size": 12,
+   "start": 62388
+  },
+  {
+   "end": 63280,
+   "size": 4,
+   "start": 63276
+  },
+  {
+   "end": 63488,
+   "size": 12,
+   "start": 63476
+  },
+  {
+   "end": 63712,
+   "size": 4,
+   "start": 63708
+  },
+  {
+   "end": 64320,
+   "size": 8,
+   "start": 64312
+  },
+  {
+   "end": 64704,
+   "size": 12,
+   "start": 64692
+  },
+  {
+   "end": 65520,
+   "size": 8,
+   "start": 65512
+  },
+  {
+   "end": 69616,
+   "size": 8,
+   "start": 69608
+  },
+  {
+   "end": 90624,
+   "size": 4,
+   "start": 90620
+  },
+  {
+   "end": 90848,
+   "size": 8,
+   "start": 90840
+  },
+  {
+   "end": 91056,
+   "size": 12,
+   "start": 91044
+  },
+  {
+   "end": 91280,
+   "size": 8,
+   "start": 91272
+  },
+  {
+   "end": 91552,
+   "size": 4,
+   "start": 91548
+  },
+  {
+   "end": 92032,
+   "size": 8,
+   "start": 92024
+  },
+  {
+   "end": 92368,
+   "size": 8,
+   "start": 92360
+  },
+  {
+   "end": 92576,
+   "size": 12,
+   "start": 92564
+  },
+  {
+   "end": 92848,
+   "size": 8,
+   "start": 92840
+  },
+  {
+   "end": 93728,
+   "size": 4,
+   "start": 93724
+  },
+  {
+   "end": 94000,
+   "size": 4,
+   "start": 93996
+  },
+  {
+   "end": 95984,
+   "size": 8,
+   "start": 95976
+  },
+  {
+   "end": 96320,
+   "size": 8,
+   "start": 96312
+  },
+  {
+   "end": 96560,
+   "size": 8,
+   "start": 96552
+  },
+  {
+   "end": 96784,
+   "size": 8,
+   "start": 96776
+  },
+  {
+   "end": 97312,
+   "size": 12,
+   "start": 97300
+  },
+  {
+   "end": 97712,
+   "size": 4,
+   "start": 97708
+  },
+  {
+   "end": 99056,
+   "size": 12,
+   "start": 99044
+  },
+  {
+   "end": 99568,
+   "size": 8,
+   "start": 99560
+  },
+  {
+   "end": 100784,
+   "size": 12,
+   "start": 100772
+  },
+  {
+   "end": 101088,
+   "size": 12,
+   "start": 101076
+  },
+  {
+   "end": 101424,
+   "size": 8,
+   "start": 101416
+  },
+  {
+   "end": 101680,
+   "size": 4,
+   "start": 101676
+  },
+  {
+   "end": 102016,
+   "size": 4,
+   "start": 102012
+  },
+  {
+   "end": 102288,
+   "size": 4,
+   "start": 102284
+  },
+  {
+   "end": 102560,
+   "size": 8,
+   "start": 102552
+  },
+  {
+   "end": 103440,
+   "size": 4,
+   "start": 103436
+  },
+  {
+   "end": 105136,
+   "size": 8,
+   "start": 105128
+  },
+  {
+   "end": 105248,
+   "size": 4,
+   "start": 105244
+  },
+  {
+   "end": 105584,
+   "size": 8,
+   "start": 105576
+  },
+  {
+   "end": 105840,
+   "size": 8,
+   "start": 105832
+  },
+  {
+   "end": 107280,
+   "size": 12,
+   "start": 107268
+  },
+  {
+   "end": 107840,
+   "size": 4,
+   "start": 107836
+  },
+  {
+   "end": 108176,
+   "size": 8,
+   "start": 108168
+  },
+  {
+   "end": 108384,
+   "size": 8,
+   "start": 108376
+  },
+  {
+   "end": 110592,
+   "size": 1800,
+   "start": 108792
+  },
+  {
+   "end": 889232,
+   "size": 4,
+   "start": 889228
+  },
+  {
+   "end": 890112,
+   "size": 4,
+   "start": 890108
+  },
+  {
+   "end": 890624,
+   "size": 4,
+   "start": 890620
+  },
+  {
+   "end": 891136,
+   "size": 4,
+   "start": 891132
+  },
+  {
+   "end": 898608,
+   "size": 8,
+   "start": 898600
+  },
+  {
+   "end": 899344,
+   "size": 12,
+   "start": 899332
+  },
+  {
+   "end": 899696,
+   "size": 4,
+   "start": 899692
+  },
+  {
+   "end": 900080,
+   "size": 12,
+   "start": 900068
+  },
+  {
+   "end": 914896,
+   "size": 4,
+   "start": 914892
+  },
+  {
+   "end": 915104,
+   "size": 12,
+   "start": 915092
+  },
+  {
+   "end": 915616,
+   "size": 8,
+   "start": 915608
+  },
+  {
+   "end": 915952,
+   "size": 8,
+   "start": 915944
+  },
+  {
+   "end": 916288,
+   "size": 8,
+   "start": 916280
+  },
+  {
+   "end": 916640,
+   "size": 8,
+   "start": 916632
+  },
+  {
+   "end": 916992,
+   "size": 4,
+   "start": 916988
+  },
+  {
+   "end": 917760,
+   "size": 4,
+   "start": 917756
+  },
+  {
+   "end": 918032,
+   "size": 4,
+   "start": 918028
+  }
+ ],
+ "header": {
+  "byte_order_be": 65534,
+  "byte_order_raw": 65279,
+  "data_offset": 8192,
+  "field_0x10": 256,
+  "hash_key": 101,
+  "header_size": 20,
+  "magic": "SARC",
+  "member_count": 111,
+  "members_ascending_by_hash": true,
+  "members_ascending_by_offset": true,
+  "name_table_header_field": 8,
+  "name_table_offset": 1808,
+  "name_table_padding_bytes": 1948,
+  "name_table_used_bytes": 4428,
+  "sfat_header_size": 12,
+  "size_field": 927100
+ },
+ "members": [
+  {
+   "data_end": 3120,
+   "data_start": 0,
+   "field0": 22726873,
+   "index": 0,
+   "magic": "FLYT",
+   "name": "blyt/com_csr_lct0_01.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 0,
+   "name_off_field": 16777216,
+   "sha256": "711bea561c22da469a4b553856f800eaa7729898c6bb230dbe95b813494d68b5",
+   "size": 3120
+  },
+  {
+   "data_end": 3392,
+   "data_start": 3120,
+   "field0": 56046613,
+   "index": 1,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_r_Rs_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 28,
+   "name_off_field": 16777223,
+   "sha256": "b549cb5d1d256cb86742a29919565181298de5c0fce963eb655daa0ead17e468",
+   "size": 272
+  },
+  {
+   "data_end": 3584,
+   "data_start": 3392,
+   "field0": 194223719,
+   "index": 2,
+   "magic": "FLAN",
+   "name": "anim/com_btn_keyhelp_00_BlinkOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 68,
+   "name_off_field": 16777233,
+   "sha256": "7983377a46d4a041fdf084bcb6df1b29e1ecae1bb04584ac7262f743d96bfc7b",
+   "size": 192
+  },
+  {
+   "data_end": 3804,
+   "data_start": 3584,
+   "field0": 210923693,
+   "index": 3,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_T_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 108,
+   "name_off_field": 16777243,
+   "sha256": "6df2d29f69ea175d61427624ab367058bcea41eae26266c51fb1bd14762f69a4",
+   "size": 220
+  },
+  {
+   "data_end": 4076,
+   "data_start": 3808,
+   "field0": 263685923,
+   "index": 4,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_R_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 144,
+   "name_off_field": 16777252,
+   "sha256": "7b8dbc83a53f76ae57c1753420aa1b9f1a2e3af73d5bd3e78a8f9319677ba278",
+   "size": 268
+  },
+  {
+   "data_end": 4588,
+   "data_start": 4080,
+   "field0": 279371594,
+   "index": 5,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_joy_l.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 180,
+   "name_off_field": 16777261,
+   "sha256": "3ed471339fbb0723118923b0ab2e58a048eda5ecd9df8382ea94881e16924322",
+   "size": 508
+  },
+  {
+   "data_end": 4860,
+   "data_start": 4592,
+   "field0": 285504802,
+   "index": 6,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_r_R_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 228,
+   "name_off_field": 16777273,
+   "sha256": "e8073a8d5e552a4d08218825ca5c0cb7449d5acfbc0ed44b82c4edf7969ffdb5",
+   "size": 268
+  },
+  {
+   "data_end": 5120,
+   "data_start": 4864,
+   "field0": 312106989,
+   "index": 7,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_Rs_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 268,
+   "name_off_field": 16777283,
+   "sha256": "e69a42253e1c69c56d6bebd908b47e8d525cd6f0a345f3b80ca73fac75413c60",
+   "size": 256
+  },
+  {
+   "data_end": 5448,
+   "data_start": 5120,
+   "field0": 377043109,
+   "index": 8,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_11.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 304,
+   "name_off_field": 16777292,
+   "sha256": "39e30ac2d87155a860be424d318be62e0a1a66b4b037ec824b76f0ca70fdad19",
+   "size": 328
+  },
+  {
+   "data_end": 5672,
+   "data_start": 5456,
+   "field0": 382584244,
+   "index": 9,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_02_special_Disable.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 348,
+   "name_off_field": 16777303,
+   "sha256": "125de05c4aa4e4f3d303b424e64a0c6c1e89d93c9498864dac274f65d3a0b609",
+   "size": 216
+  },
+  {
+   "data_end": 5876,
+   "data_start": 5680,
+   "field0": 418417181,
+   "index": 10,
+   "magic": "FLAN",
+   "name": "anim/com_btn_keyhelp_00_BlinkOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 392,
+   "name_off_field": 16777314,
+   "sha256": "f582763caacf5c744240804d1e69aff71e8510bbfca7e72730575df4a0b9beb8",
+   "size": 196
+  },
+  {
+   "data_end": 6084,
+   "data_start": 5888,
+   "field0": 420627241,
+   "index": 11,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_maker_on.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 432,
+   "name_off_field": 16777324,
+   "sha256": "348961049964e1a3b0d6df8cb88ffed41fe12789af5d4b44a08b8abfbe5fa88d",
+   "size": 196
+  },
+  {
+   "data_end": 6364,
+   "data_start": 6096,
+   "field0": 421972613,
+   "index": 12,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 468,
+   "name_off_field": 16777333,
+   "sha256": "c113546f6a8b10962e56d671d0d616aa633c2f81b7968a262809bcd6f584bb17",
+   "size": 268
+  },
+  {
+   "data_end": 14344,
+   "data_start": 6368,
+   "field0": 441598266,
+   "index": 13,
+   "magic": "FLYT",
+   "name": "blyt/make_mii_btn0_01_item.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 504,
+   "name_off_field": 16777342,
+   "sha256": "3ffd801b9d6a6db9623ee9c086d4f3b25c9d9ba8fe9ae65fc953872e3a95169c",
+   "size": 7976
+  },
+  {
+   "data_end": 15060,
+   "data_start": 14352,
+   "field0": 446316785,
+   "index": 14,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_SelectOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 540,
+   "name_off_field": 16777351,
+   "sha256": "5123da1ecac570f9ca15e4cc41eeeaa3cbefd1a92075df1dc3bcba8b3b6f4d12",
+   "size": 708
+  },
+  {
+   "data_end": 15400,
+   "data_start": 15072,
+   "field0": 468389116,
+   "index": 15,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_05.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 584,
+   "name_off_field": 16777362,
+   "sha256": "347b75c28ed9d18212689148775af16a83fc311fbf67d629b881c811494c563b",
+   "size": 328
+  },
+  {
+   "data_end": 15912,
+   "data_start": 15408,
+   "field0": 483773728,
+   "index": 16,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_off.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 628,
+   "name_off_field": 16777373,
+   "sha256": "29dc758d20dc0424688096cb17122c3a462bda8e503bb2cdb678f767091774db",
+   "size": 504
+  },
+  {
+   "data_end": 16148,
+   "data_start": 15920,
+   "field0": 547057584,
+   "index": 17,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_BlinkOn_105.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 676,
+   "name_off_field": 16777385,
+   "sha256": "59d84669d4cfce7ee66e58ac460ab0886794f00f2280b2c5f5c95aee18ec9c2e",
+   "size": 228
+  },
+  {
+   "data_end": 17036,
+   "data_start": 16160,
+   "field0": 639289283,
+   "index": 18,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 720,
+   "name_off_field": 16777396,
+   "sha256": "4631775e181f713eb1f9883dcd8605f94db0a91a1776593666f14689fff1c4fb",
+   "size": 876
+  },
+  {
+   "data_end": 17388,
+   "data_start": 17040,
+   "field0": 653942725,
+   "index": 19,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_Decide_105.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 768,
+   "name_off_field": 16777408,
+   "sha256": "dc0a49b2dee4af04f2a022180e0abe7bd59ab58fe72f6a792169a4ec8bbf8057",
+   "size": 348
+  },
+  {
+   "data_end": 17612,
+   "data_start": 17392,
+   "field0": 685783763,
+   "index": 20,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_B_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 812,
+   "name_off_field": 16777419,
+   "sha256": "af3ad2c19c63f334b1a3144edfa212d499973a8df038508c3e4a45230d07d3c5",
+   "size": 220
+  },
+  {
+   "data_end": 21708,
+   "data_start": 17616,
+   "field0": 734662703,
+   "index": 21,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_02_special_BlinkOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 848,
+   "name_off_field": 16777428,
+   "sha256": "64b8f915f72558871f8c12547fd40dfbb9d98aa361731a382c5063cc001c6608",
+   "size": 4092
+  },
+  {
+   "data_end": 49872,
+   "data_start": 24576,
+   "field0": 806474031,
+   "index": 22,
+   "magic": "BNSH",
+   "name": "bgsh/__ArchiveShader.bnsh",
+   "name_hash_matches": true,
+   "name_off_bytes": 896,
+   "name_off_field": 16777440,
+   "sha256": "8db00627854d066f6b66e396f8f0ef134bf3ef5e0a27ff31460cf49aa32f51fe",
+   "size": 25296
+  },
+  {
+   "data_end": 51928,
+   "data_start": 49872,
+   "field0": 816699839,
+   "index": 23,
+   "magic": "FLYT",
+   "name": "blyt/com_lct_stick_roll.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 924,
+   "name_off_field": 16777447,
+   "sha256": "a22543e97d39e5346de48fc11e8c9bc7eff8430bace01f64f01aafdfc68869be",
+   "size": 2056
+  },
+  {
+   "data_end": 52156,
+   "data_start": 51936,
+   "field0": 874152182,
+   "index": 24,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_T_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 956,
+   "name_off_field": 16777455,
+   "sha256": "975f521b00ee03d00224efe758f3024c05096b7c97df16d8a8e8ee0088f6b113",
+   "size": 220
+  },
+  {
+   "data_end": 52428,
+   "data_start": 52160,
+   "field0": 885256190,
+   "index": 25,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_Rs_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 992,
+   "name_off_field": 16777464,
+   "sha256": "4cbe577d951d6589b9a0e5561256ba14a4097e503410d8debee3c1ddc7c225e8",
+   "size": 268
+  },
+  {
+   "data_end": 52732,
+   "data_start": 52432,
+   "field0": 898238147,
+   "index": 26,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_POP_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1032,
+   "name_off_field": 16777474,
+   "sha256": "d3731d1e30026574625e944e04a2bc789a86f5650738f2dbdbe6a1626755cd7a",
+   "size": 300
+  },
+  {
+   "data_end": 56416,
+   "data_start": 52736,
+   "field0": 908512604,
+   "index": 27,
+   "magic": "FLYT",
+   "name": "blyt/com_system_anim.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 1072,
+   "name_off_field": 16777484,
+   "sha256": "71664f889657329f2480a9f074f9548d50facd089b33b87c26b8cd565dc397d1",
+   "size": 3680
+  },
+  {
+   "data_end": 56684,
+   "data_start": 56416,
+   "field0": 926914412,
+   "index": 28,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_R_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1100,
+   "name_off_field": 16777491,
+   "sha256": "3a95453daf030f92feebc816212eb822903efd01ce75e3a2a01f6b5edf5bedbb",
+   "size": 268
+  },
+  {
+   "data_end": 56956,
+   "data_start": 56688,
+   "field0": 1085201102,
+   "index": 29,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_L_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1136,
+   "name_off_field": 16777500,
+   "sha256": "60d2123d203569d13895df33ffaa24d2cb1512626aff8781ce3a72bba5226e89",
+   "size": 268
+  },
+  {
+   "data_end": 57220,
+   "data_start": 56960,
+   "field0": 1096988772,
+   "index": 30,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_Rs_Ls_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1172,
+   "name_off_field": 16777509,
+   "sha256": "5de107ca01f45f86bc9e33292eda9d57f73253df47eb806555793b41ce50b04a",
+   "size": 260
+  },
+  {
+   "data_end": 57560,
+   "data_start": 57232,
+   "field0": 1131617605,
+   "index": 31,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_06.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1212,
+   "name_off_field": 16777519,
+   "sha256": "a75e0835bf4d8c16a6752baa9fb99f41da7d3fd77384d30d3e0513f446e20d21",
+   "size": 328
+  },
+  {
+   "data_end": 57776,
+   "data_start": 57568,
+   "field0": 1155084929,
+   "index": 32,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_BG_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1256,
+   "name_off_field": 16777530,
+   "sha256": "be446bb28e159f23475468f6107b3ac40b405447e55d45578386c8f1cf8c7edc",
+   "size": 208
+  },
+  {
+   "data_end": 59200,
+   "data_start": 57776,
+   "field0": 1161075978,
+   "index": 33,
+   "magic": "FLYT",
+   "name": "blyt/com_lct_bg_stripe_03.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 1292,
+   "name_off_field": 16777539,
+   "sha256": "fa7713cf6ba19969caddf6fc79d8c7cb2f3955a2a2457d9e7fc98567e0a343fd",
+   "size": 1424
+  },
+  {
+   "data_end": 61632,
+   "data_start": 59200,
+   "field0": 1186343859,
+   "index": 34,
+   "magic": "FLYT",
+   "name": "blyt/com_btn_keyhelp_00.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 1324,
+   "name_off_field": 16777547,
+   "sha256": "a8d18b6a71b103888c3a2475081237835bb7693ad67ba28959c54141696a5df9",
+   "size": 2432
+  },
+  {
+   "data_end": 62136,
+   "data_start": 61632,
+   "field0": 1238376483,
+   "index": 35,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_gc.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1356,
+   "name_off_field": 16777555,
+   "sha256": "3e865558f581ad59819bddfae01b369879cbb97562c436e3581c7a454b0e4b3d",
+   "size": 504
+  },
+  {
+   "data_end": 62388,
+   "data_start": 62144,
+   "field0": 1262011029,
+   "index": 36,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_OnOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1400,
+   "name_off_field": 16777566,
+   "sha256": "84c0914fe88dde4732524cd058da98f711f83e8a2458e8200306908341c32bef",
+   "size": 244
+  },
+  {
+   "data_end": 63276,
+   "data_start": 62400,
+   "field0": 1302517772,
+   "index": 37,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_02.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1440,
+   "name_off_field": 16777576,
+   "sha256": "ed058438d50024811590f0f1e3720fb52f6c5946ed80e179ca8098f3a2af1562",
+   "size": 876
+  },
+  {
+   "data_end": 63476,
+   "data_start": 63280,
+   "field0": 1333367058,
+   "index": 38,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_unedit_on.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1488,
+   "name_off_field": 16777588,
+   "sha256": "19f1b0ab5f1f70d503b9ad0ad7907b191c401dd2636de73cc3afecb18f1c33d5",
+   "size": 196
+  },
+  {
+   "data_end": 63708,
+   "data_start": 63488,
+   "field0": 1349012252,
+   "index": 39,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_B_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1524,
+   "name_off_field": 16777597,
+   "sha256": "4eb6104bc659d71703e39105885f1fe7ccc59bee1ddb87b0a38faae6c00a4cec",
+   "size": 220
+  },
+  {
+   "data_end": 63984,
+   "data_start": 63712,
+   "field0": 1426917263,
+   "index": 40,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_r_R_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1560,
+   "name_off_field": 16777606,
+   "sha256": "664ecfa71d1667de4b7d7cd18c7d453e87de2d0121f0b1000899efb1d5a069a9",
+   "size": 272
+  },
+  {
+   "data_end": 64312,
+   "data_start": 63984,
+   "field0": 1447213967,
+   "index": 41,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1600,
+   "name_off_field": 16777616,
+   "sha256": "f3f9b73b717f228d38a326a749bae92b1bed8b7b5940696877f0d6d20c12439d",
+   "size": 328
+  },
+  {
+   "data_end": 64692,
+   "data_start": 64320,
+   "field0": 1561466636,
+   "index": 42,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_POP_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1644,
+   "name_off_field": 16777627,
+   "sha256": "d4b1a0c213fa448e173ba28f1c289a221eea7f57919290ebf7bf006dc5501f7a",
+   "size": 372
+  },
+  {
+   "data_end": 65512,
+   "data_start": 64704,
+   "field0": 1591644653,
+   "index": 43,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_BlinkOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1684,
+   "name_off_field": 16777637,
+   "sha256": "b6e841fd3a772cb43d8617063e01728daf6d7b839046192f1fefd293e430fd26",
+   "size": 808
+  },
+  {
+   "data_end": 69608,
+   "data_start": 65520,
+   "field0": 1600661009,
+   "index": 44,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_02_special_BlinkOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1728,
+   "name_off_field": 16777648,
+   "sha256": "4349c63a13a070dfe0d1ca2b4eedba1cd1068754b70b5697a090ddb127545b56",
+   "size": 4088
+  },
+  {
+   "data_end": 90620,
+   "data_start": 69616,
+   "field0": 1651091350,
+   "index": 45,
+   "magic": "FLYT",
+   "name": "blyt/make_mii_edit.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 1772,
+   "name_off_field": 16777659,
+   "sha256": "2668a7ecf146a31e5003df682208d21d3a4cd2d032d4d68e839dfe0853b6dd34",
+   "size": 21004
+  },
+  {
+   "data_end": 90840,
+   "data_start": 90624,
+   "field0": 1666802074,
+   "index": 46,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_Disable.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1800,
+   "name_off_field": 16777666,
+   "sha256": "d0d1784499bf00fa6da01e4272213daab5d2135f5205f3ef49f5d81fb89620a9",
+   "size": 216
+  },
+  {
+   "data_end": 91044,
+   "data_start": 90848,
+   "field0": 1667353017,
+   "index": 47,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_favorite_on.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1840,
+   "name_off_field": 16777676,
+   "sha256": "4edd4ec38069fcc260840b1c278bd65cc9ede8b766e25e026db372cc1a88b7a4",
+   "size": 196
+  },
+  {
+   "data_end": 91272,
+   "data_start": 91056,
+   "field0": 1693603952,
+   "index": 48,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_T_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1880,
+   "name_off_field": 16777686,
+   "sha256": "91d1d6d4a1106bd623f30f27c8cd22fb249f8ccfe1876518174e5cf65d6bc185",
+   "size": 216
+  },
+  {
+   "data_end": 91548,
+   "data_start": 91280,
+   "field0": 1708345051,
+   "index": 49,
+   "magic": "FLAN",
+   "name": "anim/com_csr_lct0_01_width_13px.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1916,
+   "name_off_field": 16777695,
+   "sha256": "8e1820df67d754394985d80f5dc2f120025c271bcf609dcf4319de01f066fb5d",
+   "size": 268
+  },
+  {
+   "data_end": 91760,
+   "data_start": 91552,
+   "field0": 1728234130,
+   "index": 50,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_BG_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1956,
+   "name_off_field": 16777705,
+   "sha256": "fd1eae4ad9a95904bc054c1afea4aa2ada0e6834674d8e913bd5372e1f5082d8",
+   "size": 208
+  },
+  {
+   "data_end": 92024,
+   "data_start": 91760,
+   "field0": 1746366182,
+   "index": 51,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_R_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 1996,
+   "name_off_field": 16777715,
+   "sha256": "da11048add344d6f37bb994aad9727535b123f72f5a697d9dcc745e804c9e2d8",
+   "size": 264
+  },
+  {
+   "data_end": 92360,
+   "data_start": 92032,
+   "field0": 1794846094,
+   "index": 52,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_07.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2032,
+   "name_off_field": 16777724,
+   "sha256": "895fad1065726bbde703765bd7422908e65acd6a935169a85081e586617ba662",
+   "size": 328
+  },
+  {
+   "data_end": 92564,
+   "data_start": 92368,
+   "field0": 1810336423,
+   "index": 53,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_maker_off.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2076,
+   "name_off_field": 16777735,
+   "sha256": "c9c76e6d89e3d92609335fdf2591ebcf0a8ba398571562c9e024ff72f8cd0f40",
+   "size": 196
+  },
+  {
+   "data_end": 92840,
+   "data_start": 92576,
+   "field0": 1904652872,
+   "index": 54,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2112,
+   "name_off_field": 16777744,
+   "sha256": "5aed13ba8f59a1dc1760ee299323013c8d59a00edb897186ef11c4298b6976b9",
+   "size": 264
+  },
+  {
+   "data_end": 93724,
+   "data_start": 92848,
+   "field0": 1965746261,
+   "index": 55,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_03.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2148,
+   "name_off_field": 16777753,
+   "sha256": "4c0e8cdc94d4ee34615c3a074e068f929fe2feb20bcb1373c5b3e36b1c027553",
+   "size": 876
+  },
+  {
+   "data_end": 93996,
+   "data_start": 93728,
+   "field0": 2018451950,
+   "index": 56,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_R_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2196,
+   "name_off_field": 16777765,
+   "sha256": "4321a2fef47b2e4fee2e27761ee681c9149c024d9d5086bd47a398417f5bd2b4",
+   "size": 268
+  },
+  {
+   "data_end": 94256,
+   "data_start": 94000,
+   "field0": 2040507176,
+   "index": 57,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_Rs_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2236,
+   "name_off_field": 16777775,
+   "sha256": "156eb25327c5ba60e28dea59061ae7ff70b206fad03513c195b2d2d416aca382",
+   "size": 256
+  },
+  {
+   "data_end": 95976,
+   "data_start": 94256,
+   "field0": 2108099243,
+   "index": 58,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_SelectOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2276,
+   "name_off_field": 16777785,
+   "sha256": "472c372ab52fbb33944933c515adc2b084db7ae1b9632f3a287fc5f9d4e8a029",
+   "size": 1720
+  },
+  {
+   "data_end": 96312,
+   "data_start": 95984,
+   "field0": 2110442456,
+   "index": 59,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2320,
+   "name_off_field": 16777796,
+   "sha256": "8e8abd517c2c1491e61cdde68d2a837c03be33271c7303c73c76cea4e3ec6a78",
+   "size": 328
+  },
+  {
+   "data_end": 96552,
+   "data_start": 96320,
+   "field0": 2117843142,
+   "index": 60,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_BlinkOff_105.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2364,
+   "name_off_field": 16777807,
+   "sha256": "09004708d4d51c2d98fa3deae0b30e2e532ef42ed81e144d63b10d2a20529ee5",
+   "size": 232
+  },
+  {
+   "data_end": 96776,
+   "data_start": 96560,
+   "field0": 2168464022,
+   "index": 61,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_B_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2408,
+   "name_off_field": 16777818,
+   "sha256": "4b824f9019559364c52b688a2af8264b788a93bedb7675f61d94b8044174b582",
+   "size": 216
+  },
+  {
+   "data_end": 97300,
+   "data_start": 96784,
+   "field0": 2269141728,
+   "index": 62,
+   "magic": "FLAN",
+   "name": "anim/com_csr_lct0_01_width_lock.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2444,
+   "name_off_field": 16777827,
+   "sha256": "9d86f734de2bff7832ec4febc1a8608322a650910611d093b80fb4b24ec989ca",
+   "size": 516
+  },
+  {
+   "data_end": 97708,
+   "data_start": 97312,
+   "field0": 2308625662,
+   "index": 63,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_OnOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2484,
+   "name_off_field": 16777837,
+   "sha256": "26040496b16d23210a8dffc00bffe4105fe2ec7d25bd5928b902074a6d37f02b",
+   "size": 396
+  },
+  {
+   "data_end": 99044,
+   "data_start": 97712,
+   "field0": 2337722248,
+   "index": 64,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_BlinkOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2524,
+   "name_off_field": 16777847,
+   "sha256": "a0f6b88054f0be98759a9e4e33ba180f5c98bf2372b1f86577f34014abcc0827",
+   "size": 1332
+  },
+  {
+   "data_end": 99296,
+   "data_start": 99056,
+   "field0": 2356832441,
+   "index": 65,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_T_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2568,
+   "name_off_field": 16777858,
+   "sha256": "d33bf82f7ee4fb39559320927af906d8c2367b9fb2b5a830c7d4d3761f4d010d",
+   "size": 240
+  },
+  {
+   "data_end": 99560,
+   "data_start": 99296,
+   "field0": 2409594671,
+   "index": 66,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_R_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2604,
+   "name_off_field": 16777867,
+   "sha256": "9c1f86b7c44c1e9abeae6f56172fc9ac332839e5a4e9cb2108b32fd90ba0f7a5",
+   "size": 264
+  },
+  {
+   "data_end": 100772,
+   "data_start": 99568,
+   "field0": 2423720751,
+   "index": 67,
+   "magic": "make",
+   "name": "info/layout.info",
+   "name_hash_matches": true,
+   "name_off_bytes": 2640,
+   "name_off_field": 16777876,
+   "sha256": "cd7f655bd8968c6c65cc516c0d8b342853fbb336d42b2c418612a9f131239607",
+   "size": 1204
+  },
+  {
+   "data_end": 101076,
+   "data_start": 100784,
+   "field0": 2439628697,
+   "index": 68,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_Disable.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2660,
+   "name_off_field": 16777881,
+   "sha256": "c87eb8f98c3950f0872ee6aa0d8d4484d949d26c778d449626c0958198071bcb",
+   "size": 292
+  },
+  {
+   "data_end": 101416,
+   "data_start": 101088,
+   "field0": 2458074583,
+   "index": 69,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_08.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2704,
+   "name_off_field": 16777892,
+   "sha256": "224678dbc066bbb9c45a21cd7d495832a06851f95f30d76b3c15da687afb7e4e",
+   "size": 328
+  },
+  {
+   "data_end": 101676,
+   "data_start": 101424,
+   "field0": 2478573895,
+   "index": 70,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_OnOff_105.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2748,
+   "name_off_field": 16777903,
+   "sha256": "1254398467fc509fae3ccebbdb521afc09036501f88f0e3243ae2cc64a35d4a0",
+   "size": 252
+  },
+  {
+   "data_end": 102012,
+   "data_start": 101680,
+   "field0": 2488939733,
+   "index": 71,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_out.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2792,
+   "name_off_field": 16777914,
+   "sha256": "453b3afe461c8c7f94c08d47de4b3ea95ecbf8a14c8c69b095e40daad31cdf14",
+   "size": 332
+  },
+  {
+   "data_end": 102284,
+   "data_start": 102016,
+   "field0": 2515003200,
+   "index": 72,
+   "magic": "FLAN",
+   "name": "anim/com_csr_lct0_01_width_18px.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2824,
+   "name_off_field": 16777922,
+   "sha256": "13ef1d0a5bd3e412462d17f7ba49b9533beecf09dc3ee09f5d590b1b62b6fee1",
+   "size": 268
+  },
+  {
+   "data_end": 102552,
+   "data_start": 102288,
+   "field0": 2567881361,
+   "index": 73,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_L_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2864,
+   "name_off_field": 16777932,
+   "sha256": "f2d73793270786e9ea5ba4a31db9456ee3c1c122b939cf5f9615d22a7331edc5",
+   "size": 264
+  },
+  {
+   "data_end": 103436,
+   "data_start": 102560,
+   "field0": 2628974750,
+   "index": 74,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_04.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2900,
+   "name_off_field": 16777941,
+   "sha256": "acb4d26be0b8f3d4a02649197827bbe412b7fdb7a17f597c49e6cea7c7c89605",
+   "size": 876
+  },
+  {
+   "data_end": 105128,
+   "data_start": 103440,
+   "field0": 2649012465,
+   "index": 75,
+   "magic": "FLAN",
+   "name": "anim/com_csr_lct0_01_SelectOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 2948,
+   "name_off_field": 16777953,
+   "sha256": "d55a128506e7ab1673d1ad4b2e230be9eaf835162cdef18f6b33eb2043a29a71",
+   "size": 1688
+  },
+  {
+   "data_end": 105244,
+   "data_start": 105136,
+   "field0": 2707653232,
+   "index": 76,
+   "magic": "\u0001\u0000\u0000\u0000",
+   "name": "bgsh/__ArchiveShader.bushvt",
+   "name_hash_matches": true,
+   "name_off_bytes": 2984,
+   "name_off_field": 16777962,
+   "sha256": "0690a86ba190653ba8233fa7be738f06099f87a081b9b4bebd3e0f007bfa93cc",
+   "size": 108
+  },
+  {
+   "data_end": 105576,
+   "data_start": 105248,
+   "field0": 2773670945,
+   "index": 77,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_02.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3012,
+   "name_off_field": 16777969,
+   "sha256": "add55e8bdd3e7ae12370960819f959e4778b04055873cfc6c486eec0afc963de",
+   "size": 328
+  },
+  {
+   "data_end": 105832,
+   "data_start": 105584,
+   "field0": 2808736988,
+   "index": 78,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_Decide.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3056,
+   "name_off_field": 16777980,
+   "sha256": "2dafe82fbf67e89d6765d2cdf08116e0639b68739f984b2fddafe36c9619a8a3",
+   "size": 248
+  },
+  {
+   "data_end": 106080,
+   "data_start": 105840,
+   "field0": 2831692511,
+   "index": 79,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_B_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3096,
+   "name_off_field": 16777990,
+   "sha256": "fd8e76ceaa3cd861b89c8a53e93010255d5e81311e40a640dc5077fb2963a3df",
+   "size": 240
+  },
+  {
+   "data_end": 107268,
+   "data_start": 106080,
+   "field0": 2884878839,
+   "index": 80,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn2_00_try_BlinkOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3132,
+   "name_off_field": 16777999,
+   "sha256": "d69f722b7b0cd15a11d8f027a074016e2b72faf3039d5ee62ee57e987315aef0",
+   "size": 1188
+  },
+  {
+   "data_end": 107536,
+   "data_start": 107280,
+   "field0": 2917179179,
+   "index": 81,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_OnOff_105_10.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3172,
+   "name_off_field": 16778009,
+   "sha256": "d190d2b6eb82638ca538aef66ff61f5a0c58c080d70dc4d2da4be9204f26311c",
+   "size": 256
+  },
+  {
+   "data_end": 107836,
+   "data_start": 107536,
+   "field0": 2951732600,
+   "index": 82,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_POP_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3216,
+   "name_off_field": 16778020,
+   "sha256": "f9e7b1934e393f7eac8be859a624a8264d02f2d77df396bb27cbbf1f02fbeab2",
+   "size": 300
+  },
+  {
+   "data_end": 108168,
+   "data_start": 107840,
+   "field0": 3121303072,
+   "index": 83,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_09.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3256,
+   "name_off_field": 16778030,
+   "sha256": "8bb9825149d112bf6279bffe85ac3377fa6ed86f0afa5a739edeca870c990880",
+   "size": 328
+  },
+  {
+   "data_end": 108376,
+   "data_start": 108176,
+   "field0": 3175588215,
+   "index": 84,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_favorite_off.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3300,
+   "name_off_field": 16778041,
+   "sha256": "f2838a52117cc90a95839d2e97b4386570d84ad25ab1a05ccba57ae3e7d3df97",
+   "size": 200
+  },
+  {
+   "data_end": 108576,
+   "data_start": 108384,
+   "field0": 3267477230,
+   "index": 85,
+   "magic": "FLAN",
+   "name": "anim/com_btn_keyhelp_00_OnOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3340,
+   "name_off_field": 16778051,
+   "sha256": "3004ec3fdfdb720cf1473a4f359cc78b43290db183dd8e88c25ff2145bc0b620",
+   "size": 192
+  },
+  {
+   "data_end": 108792,
+   "data_start": 108576,
+   "field0": 3271114250,
+   "index": 86,
+   "magic": "FLAN",
+   "name": "anim/com_btn_keyhelp_00_Disable.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3376,
+   "name_off_field": 16778060,
+   "sha256": "75332301e8b7594ef91346866b67021eb796761a2a29f354aa4e7ba65281bafa",
+   "size": 216
+  },
+  {
+   "data_end": 888960,
+   "data_start": 110592,
+   "field0": 3276954889,
+   "index": 87,
+   "magic": "BNTX",
+   "name": "timg/__Combined.bntx",
+   "name_hash_matches": true,
+   "name_off_bytes": 3416,
+   "name_off_field": 16778070,
+   "sha256": "60dac2a5900c1528d034ca0bfae5b2ae61f139b96b421096e45e10bd0cc7f8cd",
+   "size": 778368
+  },
+  {
+   "data_end": 889228,
+   "data_start": 888960,
+   "field0": 3285016721,
+   "index": 88,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_Rs_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3440,
+   "name_off_field": 16778076,
+   "sha256": "434f88664df9baffda663359da1ad489cc4022dba3fc9e8116aa4af2e1fe025e",
+   "size": 268
+  },
+  {
+   "data_end": 890108,
+   "data_start": 889232,
+   "field0": 3292203239,
+   "index": 89,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_05.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3480,
+   "name_off_field": 16778086,
+   "sha256": "e478e8cd3bffc473143adc2bd5cf4ee5184f95bc64f2701c934f659d63484f3e",
+   "size": 876
+  },
+  {
+   "data_end": 890620,
+   "data_start": 890112,
+   "field0": 3372610492,
+   "index": 90,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_joy_dual.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3528,
+   "name_off_field": 16778098,
+   "sha256": "9fd704413f8af8bb4a1531f5fe1a6c0a6d862cf0e6fc582d5b32911fd1839b5f",
+   "size": 508
+  },
+  {
+   "data_end": 891132,
+   "data_start": 890624,
+   "field0": 3393978797,
+   "index": 91,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_handheld.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3580,
+   "name_off_field": 16778111,
+   "sha256": "9caa6dc9b42c29823d53720d472438a1b39a0a6c3a97e33c14f20223c0c88c27",
+   "size": 508
+  },
+  {
+   "data_end": 898272,
+   "data_start": 891136,
+   "field0": 3436076467,
+   "index": 92,
+   "magic": "FLYT",
+   "name": "blyt/make_mii_btn2_00_try.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 3632,
+   "name_off_field": 16778124,
+   "sha256": "25c067f6c9d5a35094ddb42c4f690dc693d85cfffe8775849d1e93b40b0381a3",
+   "size": 7136
+  },
+  {
+   "data_end": 898600,
+   "data_start": 898272,
+   "field0": 3436899434,
+   "index": 93,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_03.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3664,
+   "name_off_field": 16778132,
+   "sha256": "dd1418735c7b4a615661803c72fdf93d0a581e64510f65588733964e11c8b394",
+   "size": 328
+  },
+  {
+   "data_end": 899088,
+   "data_start": 898608,
+   "field0": 3538944655,
+   "index": 94,
+   "magic": "FLAN",
+   "name": "anim/com_csr_lct0_01_SelectOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3708,
+   "name_off_field": 16778143,
+   "sha256": "07689fb1ee445a469ebe1d29e41faee31c33ff5d5142401ab33c54a5953f9d74",
+   "size": 480
+  },
+  {
+   "data_end": 899332,
+   "data_start": 899088,
+   "field0": 3542971304,
+   "index": 95,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_02_special_OnOff.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3748,
+   "name_off_field": 16778153,
+   "sha256": "da0a3018e87d26216d71daf995a914de79c7f4cba29667498f279a902b5f3766",
+   "size": 244
+  },
+  {
+   "data_end": 899692,
+   "data_start": 899344,
+   "field0": 3557691532,
+   "index": 96,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_value_color.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3792,
+   "name_off_field": 16778164,
+   "sha256": "33d5c8d3bc6e9332843e87bfbd65935f3d38730d11feb9bac73d7a6cfca12019",
+   "size": 348
+  },
+  {
+   "data_end": 900068,
+   "data_start": 899696,
+   "field0": 3614961089,
+   "index": 97,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_out_POP_01.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3840,
+   "name_off_field": 16778176,
+   "sha256": "2559b24894356bbd6e3e2f816f5177a5ed7a2ba6675370854d6e3653c555810a",
+   "size": 372
+  },
+  {
+   "data_end": 901408,
+   "data_start": 900080,
+   "field0": 3657705462,
+   "index": 98,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_BlinkOn.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3880,
+   "name_off_field": 16778186,
+   "sha256": "c24cb2b575c8fe529ac2b6f6f4488260a2c365e0813622ee5ad1065a436b0dba",
+   "size": 1328
+  },
+  {
+   "data_end": 901760,
+   "data_start": 901408,
+   "field0": 3668458097,
+   "index": 99,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_btn_Decide_105_10.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 3924,
+   "name_off_field": 16778197,
+   "sha256": "ce7725dd46fcdd320a70582788fff96fa7f7dcbb8c9235a38c792ea72310345e",
+   "size": 352
+  },
+  {
+   "data_end": 914892,
+   "data_start": 901760,
+   "field0": 3679640429,
+   "index": 100,
+   "magic": "FLYT",
+   "name": "blyt/make_mii_btn0_02_special.bflyt",
+   "name_hash_matches": true,
+   "name_off_bytes": 3972,
+   "name_off_field": 16778209,
+   "sha256": "96d5fd5d1dc15875bfe8ca557020e9d9cdff4b7aed599baf6b57177847e25ca7",
+   "size": 13132
+  },
+  {
+   "data_end": 915092,
+   "data_start": 914896,
+   "field0": 3802744724,
+   "index": 101,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_unedit_off.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4008,
+   "name_off_field": 16778218,
+   "sha256": "cc14d258507813f0861badf6c1c6a47f660008dc7782d70a94a8839c5810b06d",
+   "size": 196
+  },
+  {
+   "data_end": 915608,
+   "data_start": 915104,
+   "field0": 3852232238,
+   "index": 102,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_pro.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4044,
+   "name_off_field": 16778227,
+   "sha256": "ac0d304a9212ec5a5259bb3c41168f51be77fa592c02be2b15441e45dd7a091a",
+   "size": 504
+  },
+  {
+   "data_end": 915944,
+   "data_start": 915616,
+   "field0": 4008781916,
+   "index": 103,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_10.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4092,
+   "name_off_field": 16778239,
+   "sha256": "458ee719fb5ccdbb11b77ef50f1ca70d6d533dde1a64342ea001f4d36476f957",
+   "size": 328
+  },
+  {
+   "data_end": 916280,
+   "data_start": 915952,
+   "field0": 4100127923,
+   "index": 104,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_color_04.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4136,
+   "name_off_field": 16778250,
+   "sha256": "1baa1a9be3230306ea3d2124aeb39fda8b6321de930605234a6407fa485549bd",
+   "size": 328
+  },
+  {
+   "data_end": 916632,
+   "data_start": 916288,
+   "field0": 4146812036,
+   "index": 105,
+   "magic": "FLAN",
+   "name": "anim/make_mii_edit_in.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4180,
+   "name_off_field": 16778261,
+   "sha256": "34127134a0060411cf614f88c3dd26ac156e901f451c1309262686e9151a7c7c",
+   "size": 344
+  },
+  {
+   "data_end": 916988,
+   "data_start": 916640,
+   "field0": 4238197989,
+   "index": 106,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_value_txt.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4208,
+   "name_off_field": 16778268,
+   "sha256": "f85926d8db7ccc1e645ac84b3ebe91e4604d00ad7b86c993d75f15ce49eed294",
+   "size": 348
+  },
+  {
+   "data_end": 917248,
+   "data_start": 916992,
+   "field0": 4250543607,
+   "index": 107,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_Rs_Ls_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4252,
+   "name_off_field": 16778279,
+   "sha256": "3f9eef8c65935e14ddb8bd41539ad4a1d2e177346e25e742b505d5ca2b09f678",
+   "size": 256
+  },
+  {
+   "data_end": 917756,
+   "data_start": 917248,
+   "field0": 4258742528,
+   "index": 108,
+   "magic": "FLAN",
+   "name": "anim/com_lct_stick_roll_controller_joy_r.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4292,
+   "name_off_field": 16778289,
+   "sha256": "2e7c0de628eb11aa83eac180769fcfca693b7f36c0534fcf78922e6bbab5d9c0",
+   "size": 508
+  },
+  {
+   "data_end": 918028,
+   "data_start": 917760,
+   "field0": 4259924793,
+   "index": 109,
+   "magic": "FLAN",
+   "name": "anim/com_system_anim_in_R_L_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4340,
+   "name_off_field": 16778301,
+   "sha256": "a200a048b250aa9d89d22d67039b06021b08b0dab6401bdfb327935d1efecd38",
+   "size": 268
+  },
+  {
+   "data_end": 918908,
+   "data_start": 918032,
+   "field0": 4271028090,
+   "index": 110,
+   "magic": "FLAN",
+   "name": "anim/make_mii_btn0_01_item_category_00.bflan",
+   "name_hash_matches": true,
+   "name_off_bytes": 4380,
+   "name_off_field": 16778311,
+   "sha256": "47855b9c0f7f8018b16adec892b614c38844cf4524de0cf73e4bb49963bb217f",
+   "size": 876
+  }
+ ],
+ "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_edit/make_mii_edit/layout.arc",
+ "sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+ "size": 927100
+}

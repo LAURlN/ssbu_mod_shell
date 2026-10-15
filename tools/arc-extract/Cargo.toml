@@ -1,0 +1,8 @@
+[package]
+name = "arc-extract"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+smash-arc = { version = "=0.6.0", default-features = false, features = ["rust-zstd", "dir-listing"] }
+sha2 = "0.10"

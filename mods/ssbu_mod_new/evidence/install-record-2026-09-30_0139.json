@@ -1,0 +1,39 @@
+{
+  "version": "0.15.2",
+  "installed_on": "2026-09-30T01:39+02:00",
+  "installed_by": "buff thread, on user instruction",
+  "card": "<drive>:/ (mounted /f)",
+  "source": "one full build.py run at 01:39 plus the plugin rebuilt for the version string at 01:38. One build failed first (WinError 145 during the package wipe, see build_script_fix in the 0.15.2 manifest) and was re-run after safe_rmtree was fixed.",
+  "reskin_nro_sha256": "930eb327e1d740eb9be1603bd77c32ff0534f149c99809c5f9baf4676b15fc03",
+  "reskin_nro_bytes": 225280,
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "smashline_sha256": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+  "smashline_note": "untouched, as required by AGENTS rule 22; libarcropolis/libarc_network/libnro_hook also untouched",
+  "mod_file_count": 1233,
+  "mod_tree_sha256": "f56922a25e943c373f3eb3f7398d0f7c4088cccd2682e0af0cb746cd0009321a",
+  "previous_card": {
+    "version": "0.15.1",
+    "reskin_nro_sha256": "8cbbab40f6c038bbad8f7e9b8e226167d77457b783ff6af7d03baf857795df5d",
+    "mod_file_count": 1233,
+    "note": "the user tested this: the sword appeared and disappeared correctly, which is the 0.15.1 visibility fix confirmed on hardware. The blade then read as too small."
+  },
+  "backup": "evidence/sd-backups/sd-backup-20260930-013943",
+  "verification": "install-to-card.sh passed (cmp on both NROs, diff -r on the tree), then re-checked by hand: 1233 files on the card, `diff -r -q` clean, NRO and smashline hashes as above. The sword clips were also read back off the card: only `z00open` and `z00toopen` have `flamesword` drawn, and those two carry `Sword1` scale 1.4; the other six clips are undrawn at scale 1.0.",
+  "diff_vs_previous_card": {
+    "method": "diffed the pre-install backup against the 0.15.2 mod tree",
+    "modified": [
+      "fighter/eflame/motion/esword/c06|c07/z00open.nuanmb (Sword1 scale 1.0 -> 1.4)",
+      "fighter/eflame/motion/esword/c06|c07/z00toopen.nuanmb (Sword1 scale 1.0 -> 1.4)",
+      "info.toml (0.15.1 -> 0.15.2)"
+    ],
+    "added": [],
+    "removed": [],
+    "notably_unchanged": [
+      "the six undrawn sword clips",
+      "every Monkey Flip clip and motion record",
+      "config.json"
+    ]
+  },
+  "one_variable": "This build changes exactly one thing the user can see: the drawn sword is 1.4x its vanilla size. The visibility states are the same as 0.15.1 and the angle is untouched, so a size verdict is clean.",
+  "console_test": "pending"
+}

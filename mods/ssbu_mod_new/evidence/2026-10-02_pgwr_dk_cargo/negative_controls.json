@@ -1,0 +1,11 @@
+[
+  {
+    "case": "stale baseline hash",
+    "result": "REJECTED",
+    "error": "Baseline drift: fighter/eflame/model/body/c06/model.nusktb"
+  },
+  {
+    "case": "raw motion kind mismatches owned kind",
+    "result": "REJECTED"
+  }
+]

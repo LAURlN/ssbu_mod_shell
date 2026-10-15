@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "version": "0.20.11",
+  "authorization": "User: install now; designated collective installer in this thread",
+  "method": "src/pgwr/install-to-card.sh --no-smashline; automatic backup, .new staging, cmp/diff; independent manifest hash verification",
+  "included_queue_sections": [
+    "Snake neutral-B \u2014 Codex continuation",
+    "0.20.10 baseline retained: Cloud jab/fair trails, Monkey Flip, global logging disabled"
+  ],
+  "pending_features_not_registered": [
+    "Hero side-B",
+    "Monkey Flip kick/general HI/S/LW restriction"
+  ],
+  "manifest": "builds/pgwr/0.20.11/MANIFEST.json",
+  "backup": "evidence/sd-backups/sd-backup-20260930-222459",
+  "backup_held_version": "0.20.10",
+  "reskin_nro_sha256": "00a6c76555cfaa8bacb38322dad5096ae42c53a600d75c2efe0f9eec1fc33206",
+  "mod_files": 1932,
+  "mod_tree_sha256": "e2c6ebf75e2cb1211a4dcaa37556541302afcb685e162acf2a5957140b023c7c",
+  "protected_plugin_sha256_unchanged": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "installed_verified": true,
+  "hardware_validated": false
+}

@@ -1,0 +1,50 @@
+{
+  "set": "snake_attack_hi3",
+  "what": "Snake up tilt (AttackHi3) donor material for Pyra c06/c07 (G&W replacing Pyra), replacing G&W's own up tilt",
+  "source": {
+    "kind": "live console extraction, read-only",
+    "method": "tools/fetch_arc_files.py --set snake_attack_hi3 (arc_extract_file_regional)",
+    "plugin": "libarc_network.nro on the SD, Smash running, port 43022",
+    "ip": "192.168.2.166",
+    "region": 2,
+    "game_version": "13.0.4",
+    "date": "2026-10-01",
+    "note": "The console was on and reachable (ping OK, 43022 open) when this ran, so these came off the live game rather than waiting for the next dump."
+  },
+  "fetched": [
+    "fighter/snake/motion/body/c00/c02attackhi3.nuanmb",
+    "fighter/snake/motion/body/c00/motion_list.bin",
+    "fighter/snake/model/body/c00/model.nusktb",
+    "fighter/snake/ai/param/attack_data_param.prc",
+    "fighter/snake/ai/param/attack_list_param.prc",
+    "sound/bank/fighter_voice/vc_snake_c00.nus3audio",
+    "sound/bank/fighter_voice/vc_snake_c00.nus3bank",
+    "sound/bank/fighter_voice/vc_snake_c00.tonelabel"
+  ],
+  "why_live": "dumps/arc holds only the thirteen grenade special_n clips under fighter/snake/motion/body/c00 (not c02attackhi3), no snake body skeleton and no snake voice bank; the ARC index lists all of them.",
+  "not_fetched_because_already_pinned": {
+    "acmd_text": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_snake/snake/AttackHi3.txt (game/effect/sound/expression AttackHi3; tier C text, conversion errors possible). CORRECTED 2026-10-02: that path no longer exists in this workspace - see `corrections` below and `handbook/graveyard.md` R-SNAKE-UPTILT-1. The text now lives in `donor_acmd/`.",
+    "se_snake_c00_bank": "refs/snake_grenade/arc/sound/bank/fighter/se_snake_c00.* (ninth tones already merged into the eflame banks for neutral-B)",
+    "snake_sqb": "refs/snake_grenade/sequence/arc/sound/sequence/fighter/snake.sqb",
+    "params": "dumps/arc/fighter/snake/param/vl.prc and expression_vl.prc - measured to contain no attack_hi3 entry, so the move is inline + motion-list only"
+  },
+  "not_needed": {
+    "effects": "AttackHi3 spawns only sys_attack_arc_b and sys_turn_smoke, which are common-bank effects; effect/fighter/snake/ef_snake.eff was therefore not pulled",
+    "articles": "no article and no work id is written by the move",
+    "custom_status": "AttackHi3 is a vanilla status kind; no new status id is allocated (contrast Snake neutral-B, which owns 0x1FB..0x207)",
+    "donor_hitbox_bones": "the script writes top/kneel/legl; eflame's built skeleton names LegL/KneeL and has no top bone. G&W's own up tilt, which runs on c06/c07 today, also writes top, so this is the working convention, not a defect to remap"
+  },
+  "measurements": "refs/snake_attack_hi3/inventory.json, produced by tools/audit_snake_hi3_donor.py (tier B): raw attack_hi3 entry (cancel 38, flags 0x84, blend 0, game_script 0xef3bca119, anim 0x138caf3e29 = c02attackhi3), clip groups Transform 87 / Visibility 26 / Material 2, 77 of 87 transform nodes present on the built recipient with no case-only matches, 10 dropped (FaceN and the nine S_Bandanna nodes), both donor sound names resolving in pinned material and neither yet merged into the eflame banks in builds/pgwr/0.20.15.",
+  "hashes": "per-file sha256 in extraction.json; re-verify with tools/fetch_arc_files.py --set snake_attack_hi3 --check",
+  "not_established": "Anything about how the move looks or feels on G&W's body. Node coverage and name resolution are offline; that is tier D until a console run.",
+  "corrections": [
+    {
+      "date": "2026-10-02",
+      "by": "Freebuff slot 2 (Snake up tilt implementation)",
+      "corrects": "`not_fetched_because_already_pinned.acmd_text` claimed the AttackHi3 text was already in this workspace under `dumps/scripts/SSBU-Dumped-Scripts-main/`.",
+      "what_is_true_now": "That tree is gone; `dumps/scripts/` holds only `ParamLabels.csv` and `gamewatch_motion_list.yml`, and the export named by `paths.toml [dumps] arc` is nearly empty. The pinned donor set listed above was clip / motion list / skeleton / AI params / voice bank - it never contained the script text.",
+      "action": "The text was re-pinned from WuBoytH/SSBU-Dumped-Scripts at commit 59004685238a3f6f93bae905d3a4e079701c40b4 (the commit `refs/brave_special_n/acmd_pin.json` and `tools/fetch_donor_acmd.py` already use) into `donor_acmd/`, with per-file sha256 in `donor_acmd/manifest.json`. R.O.B.'s `AttackLw3.txt` was pinned at the same commit as a control for the dump's conversion errors. Graveyard `R-SNAKE-UPTILT-1`.",
+      "unaffected": "Every other entry in this file, including the measurements that `inventory.json` holds (cancel 38, flags 0x84, 77 of 87 nodes, 0 case-only matches), was re-measured on 2026-10-02 against the built recipient and still holds."
+    }
+  ]
+}

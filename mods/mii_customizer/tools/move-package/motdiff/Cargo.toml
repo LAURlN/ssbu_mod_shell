@@ -1,0 +1,10 @@
+[package]
+name = "motdiff"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+motion_list_rs = "=1.5.0"
+# 0.8.26 on purpose: the version the ARCropolis build on the card links (strings in its NRO).
+# 0.9 writes enum variants as YAML tags (`!Inserted`), which 0.8 does not read on mappings.
+serde_yaml = "=0.8.26"

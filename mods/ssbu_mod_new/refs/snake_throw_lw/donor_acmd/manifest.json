@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-02",
+  "by": "Freebuff slot 4 (Snake down throw)",
+  "repo": "WuBoytH/SSBU-Dumped-Scripts",
+  "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+  "why": "dumps/scripts/SSBU-Dumped-Scripts-main is not in this workspace any more (dumps/scripts holds only ParamLabels.csv and gamewatch_motion_list.yml), and handbook/04 records that the export named by paths.toml [dumps] arc is nearly empty. This is the same pinned commit refs/brave_special_n/acmd_pin.json and tools/fetch_donor_acmd.py already use, and the same one refs/snake_attack_hi3/donor_acmd used the day before, so the donor text is re-pinned here rather than approximated.",
+  "tier": "C - third-party decompiled text at a pinned commit, not verified on hardware",
+  "control": "AttackLw4.txt / AttackLw4Charge.txt are pinned at the same commit because they are the DOWN SMASH, one word away from the down throw, and they carry the damage-bearing shape (two ATTACK calls per window, clear_all, RUMBLE_HIT) that plugin/src/acmd/robot_attack_lw3.rs was written from. Reading ThrowLw.txt beside them is what establishes that no line of ThrowLw was lost to the dump's conversion errors, and that ThrowLw has no effect script by design rather than by truncation.",
+  "identity_finding": "Snake's DOWN THROW is the motion kind `throw_lw` (game script `game_throwlw`, clip e01throwlw.nuanmb). `attack_lw4` is the DOWN SMASH. See inventory.json for the measurements.",
+  "files": [
+    {
+      "role": "the move being ported",
+      "fighter": "snake",
+      "file": "ThrowLw.txt",
+      "local": "refs/snake_throw_lw/donor_acmd/snake__ThrowLw.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_snake/snake/ThrowLw.txt",
+      "bytes": 2458,
+      "sha256": "cf23be92187d9a97520be6b8804335b498c93f28da1ac19711fd04881fbc3614",
+      "defines": ["game_throwlw", "sound_throwlw", "expression_throwlw"],
+      "does_not_define": ["effect_throwlw"]
+    },
+    {
+      "role": "control - establishes the down smash is a different move",
+      "fighter": "snake",
+      "file": "AttackLw4.txt",
+      "local": "refs/snake_throw_lw/donor_acmd/snake__AttackLw4.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_snake/snake/AttackLw4.txt",
+      "bytes": 6380,
+      "sha256": "ff0b3c3ad6bb4cecba06e27261d3930129bb89a94a725d3301d929c2ddb7bf8a",
+      "defines": ["game_attacklw4", "effect_attacklw4", "sound_attacklw4", "expression_attacklw4"]
+    },
+    {
+      "role": "control - the down smash's charge hold",
+      "fighter": "snake",
+      "file": "AttackLw4Charge.txt",
+      "local": "refs/snake_throw_lw/donor_acmd/snake__AttackLw4Charge.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_snake/snake/AttackLw4Charge.txt",
+      "bytes": 1313,
+      "sha256": "aad31f5d8a2f2b7014ab160e78c545e7bcf4cbce367f237a1bd74fcff73b3eb4",
+      "defines": ["effect_attacklw4charge", "sound_attacklw4charge", "expression_attacklw4charge"]
+    }
+  ],
+  "missing": []
+}

@@ -1,0 +1,235 @@
+"""Give copied NRO factories unique ELF names without changing instructions.
+
+Rebuild both ELF lookup tables. Merely replacing .dynstr bytes leaves those
+tables invalid. Native character imports intentionally remain unresolved work:
+the generated modules must not be used for gameplay until these are rebound.
+"""
+import hashlib
+import struct
+from pathlib import Path
+from prepare import ROOT, NAMES, write_json
+from audit_native import parse_nro
+
+
+def elf_hash(name):
+    value = 0
+    for byte in name:
+        value = ((value << 4) + byte) & 0xffffffff
+        high = value & 0xf0000000
+        if high:
+            value ^= high >> 24
+        value &= ~high
+    return value
+
+
+def gnu_hash(name):
+    value = 5381
+    for byte in name:
+        value = (value * 33 + byte) & 0xffffffff
+    return value
+
+
+def dynamic(data):
+    mod = struct.unpack_from('<I', data, 4)[0]
+    at = mod + struct.unpack_from('<i', data, mod + 4)[0]
+    tags = {}
+    while True:
+        tag, value = struct.unpack_from('<QQ', data, at)
+        if not tag:
+            return tags
+        tags[tag] = value
+        at += 16
+
+
+def symbol_names(data, tags):
+    count = struct.unpack_from('<I', data, tags[4] + 4)[0]
+    result = []
+    for index in range(count):
+        off, info, other, section, value, size = struct.unpack_from('<IBBHQQ', data, tags[6] + index * 24)
+        start = tags[5] + off
+        end = data.index(0, start, tags[5] + tags[10])
+        result.append((bytes(data[start:end]), start, section, value))
+    return result
+
+
+def rebuild_hashes(data, tags, symbols):
+    at = tags[4]
+    buckets_count, chains_count = struct.unpack_from('<II', data, at)
+    if chains_count != len(symbols):
+        raise ValueError('Invalid SysV symbol count')
+    buckets, chains = [0] * buckets_count, [0] * chains_count
+    for index, (name, _, _, _) in enumerate(symbols):
+        if not index or not name:
+            continue
+        bucket = elf_hash(name) % buckets_count
+        chains[index] = buckets[bucket]
+        buckets[bucket] = index
+    struct.pack_into('<{}I'.format(buckets_count + chains_count), data, at + 8, *(buckets + chains))
+    at = tags[0x6ffffef5]
+    old_buckets, first, bloom_count, shift = struct.unpack_from('<IIII', data, at)
+    if not old_buckets or not bloom_count or first > len(symbols):
+        raise ValueError('Invalid GNU hash header')
+    # One bucket permits retaining original symbol indexes (and every RELA).
+    # Its chain is contiguous and never larger than the original allocation.
+    blooms, chains = [0] * bloom_count, []
+    for index in range(first, len(symbols)):
+        h = gnu_hash(symbols[index][0])
+        blooms[(h // 64) % bloom_count] |= (1 << (h % 64)) | (1 << ((h >> shift) % 64))
+        chains.append((h & ~1) | int(index == len(symbols) - 1))
+    size = 16 + bloom_count * 8 + old_buckets * 4 + len(chains) * 4
+    data[at:at + size] = bytes(size)
+    struct.pack_into('<IIII', data, at, 1, first, bloom_count, shift)
+    struct.pack_into('<{}Q'.format(bloom_count), data, at + 16, *blooms)
+    cursor = at + 16 + bloom_count * 8
+    struct.pack_into('<I', data, cursor, first if chains else 0)
+    if chains:
+        struct.pack_into('<{}I'.format(len(chains)), data, cursor + 4, *chains)
+
+
+def lookup(data, tags, name, gnu=False):
+    symbols = symbol_names(data, tags)
+    if not gnu:
+        at = tags[4]
+        count, n = struct.unpack_from('<II', data, at)
+        index = struct.unpack_from('<I', data, at + 8 + elf_hash(name) % count * 4)[0]
+        seen = set()
+        while index:
+            if index in seen or index >= n:
+                raise ValueError('Bad SysV chain')
+            seen.add(index)
+            if symbols[index][0] == name and symbols[index][2]:
+                return index
+            index = struct.unpack_from('<I', data, at + 8 + count * 4 + index * 4)[0]
+        return None
+    at = tags[0x6ffffef5]
+    count, first, blooms, shift = struct.unpack_from('<IIII', data, at)
+    h = gnu_hash(name)
+    bloom = struct.unpack_from('<Q', data, at + 16 + (h // 64) % blooms * 8)[0]
+    mask = (1 << (h % 64)) | (1 << ((h >> shift) % 64))
+    if bloom & mask != mask:
+        return None
+    bucket_at = at + 16 + blooms * 8
+    index = struct.unpack_from('<I', data, bucket_at + h % count * 4)[0]
+    if index < first:
+        return None
+    while index < len(symbols):
+        chain = struct.unpack_from('<I', data, bucket_at + count * 4 + (index - first) * 4)[0]
+        if chain | 1 == h | 1 and symbols[index][0] == name and symbols[index][2]:
+            return index
+        if chain & 1:
+            return None
+        index += 1
+    raise ValueError('Unterminated GNU chain')
+
+
+def namespace(source, original, clone):
+    raw = source.read_bytes()
+    data = bytearray(raw)
+    tags = dynamic(data)
+    old_symbols = symbol_names(data, tags)
+    # Validate the independent lookup implementation against the game's tables
+    # before using it to validate tables generated by this script.
+    for index, (name, _, section, _) in enumerate(old_symbols):
+        if section and name:
+            for use_gnu in (False, True):
+                if lookup(raw, tags, name, use_gnu) != index:
+                    raise ValueError('Original ELF hash-table lookup failed')
+    renamed = []
+    for index, (name, offset, section, value) in enumerate(old_symbols):
+        if not section or not name:
+            continue
+        old = ('_' + original + 'E').encode()
+        new = ('_' + clone + 'E').encode()
+        if old not in name or len(old) != len(new):
+            raise ValueError('Unexpected exported symbol: ' + name.decode())
+        replacement = name.replace(old, new)
+        data[offset:offset + len(name)] = replacement
+        renamed.append({'index': index, 'original': name.decode(), 'clone': replacement.decode(), 'value': value})
+    old = ('lua2cpp_' + original).encode()
+    new = ('lua2cpp_' + clone).encode()
+    if raw.count(old) != 1 or len(old) != len(new):
+        raise ValueError('Unexpected embedded module name')
+    offset = raw.index(old)
+    data[offset:offset + len(old)] = new
+    data[0x40:0x60] = hashlib.sha256(raw + clone.encode()).digest()
+    symbols = symbol_names(data, tags)
+    rebuild_hashes(data, tags, symbols)
+    for row in renamed:
+        for gnu in (False, True):
+            if lookup(data, tags, row['clone'].encode(), gnu) != row['index']:
+                raise ValueError('Clone export not discoverable in ELF hash table')
+            if lookup(data, tags, row['original'].encode(), gnu) is not None:
+                raise ValueError('Original export still discoverable')
+    # Header build ID changes, but the executable instruction body does not.
+    start, size = struct.unpack_from('<II', raw, 0x20)
+    if data[max(start, 0x80):start + size] != raw[max(start, 0x80):start + size]:
+        raise ValueError('Executable instructions changed')
+    for i, symbol in enumerate(old_symbols):
+        if symbol[2] == 0 and symbols[i] != symbol:
+            raise ValueError('Import changed unexpectedly')
+    for off_tag, size_tag in ((7, 8), (23, 2)):
+        start, size = tags[off_tag], tags[size_tag]
+        if raw[start:start + size] != data[start:start + size]:
+            raise ValueError('Relocations changed')
+    return bytes(data), renamed
+
+
+def main():
+    rows = []
+    folder = ROOT / 'native/modules'
+    folder.mkdir(parents=True, exist_ok=True)
+    for original, clone in NAMES.items():
+        source = ROOT / 'editable/prebuilt/nro/release' / ('lua2cpp_' + clone + '.nro')
+        data, exports = namespace(source, original, clone)
+        destination = folder / ('lua2cpp_' + clone + '.nro')
+        if destination.exists() and destination.read_bytes() != data:
+            raise ValueError('Refusing to overwrite an edited generated module: ' + str(destination))
+        destination.write_bytes(data)
+        if destination.read_bytes() != data:
+            raise ValueError('Module readback mismatch')
+        audit = parse_nro(destination)
+        text_size = struct.unpack_from('<I', data, 0x24)[0]
+        data_start, data_size = struct.unpack_from('<II', data, 0x30)
+        rows.append({'original': original, 'clone': clone, 'bytes': len(data),
+                     'text_size': text_size, 'data_start': data_start, 'data_size': data_size,
+                     'sha256': hashlib.sha256(data).hexdigest(), 'exports': exports,
+                     'lookup_tables_verified': ['SysV', 'GNU'],
+                     'instruction_body_unchanged': True,
+                     'character_imports_rebound': False,
+                     'character_imports': audit['character_specific_imports'],
+                     'required_imports': [s['name'] for s in audit['imports'] if s['binding'] != 2],
+                     'character_relocations': [r for r in audit['relocations'] if r['name'] in
+                                               {s['name'] for s in audit['character_specific_imports']}],
+                     'tested_on_console': False})
+    write_json('namespaced-modules.json', rows)
+    rust = ['// Generated by tools/namespace_modules.py. Do not edit.',
+            'use crate::loader::{ImportSpec, ModuleSpec};',
+            'pub static MODULES: &[ModuleSpec] = &[']
+    for row in rows:
+        rust += ['    ModuleSpec {', '        name: "' + row['clone'] + '",',
+                 '        path: "sd:/ultimate/mods/PyraMythraClone/native/modules/lua2cpp_' + row['clone'] + '.nro",',
+                 '        sha256: [' + ', '.join('0x' + row['sha256'][i:i+2] for i in range(0, 64, 2)) + '],',
+                 '        size: {}, text_size: {}, data_start: {}, data_size: {},'.format(
+                     row['bytes'], row['text_size'], row['data_start'], row['data_size']),
+                 '        required_imports: &[']
+        rust += ['            b"' + name + '\\0",' for name in row['required_imports']]
+        rust += ['        ],', '        exports: &[']
+        rust += ['            b"' + e['clone'] + '\\0",' for e in row['exports']]
+        rust += ['        ],', '        imports: &[']
+        for imported in row['character_imports']:
+            relocs = [r for r in row['character_relocations'] if r['name'] == imported['name']]
+            if not relocs:
+                raise ValueError('Character import has no binding slot')
+            for r in relocs:
+                if r['type'] not in (257, 1025, 1026) or not row['data_start'] <= r['offset'] <= row['data_start'] + row['data_size'] - 8:
+                    raise ValueError('Unsupported character import relocation')
+            rust.append('            ImportSpec { name: b"' + imported['name'] + '\\0", offsets: &[' +
+                        ', '.join('({}, {})'.format(r['offset'], r['addend']) for r in relocs) + '] },')
+        rust += ['        ],', '    },']
+    rust += ['];', '']
+    (ROOT / 'runtime/src/modules.rs').write_text('\n'.join(rust), encoding='utf8')
+    print('Namespaced and verified', sum(len(r['exports']) for r in rows), 'factories across', len(rows), 'modules')
+
+
+if __name__ == '__main__':
+    main()

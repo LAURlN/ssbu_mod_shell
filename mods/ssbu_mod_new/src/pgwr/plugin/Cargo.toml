@@ -1,0 +1,71 @@
+[package]
+name = "pyra_gamewatch_reskin"
+version = "0.20.20"
+authors = ["Space Bunny Alpha"]
+edition = "2018"
+
+[package.metadata.skyline]
+titleid = "01006A800016E000"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = []
+logging = []
+# Enable only together with the checked Snake assets/sound package.
+snake-neutral-b = []
+# Enable only together with the Hero side-B assets (PGWR_HERO_SIDE_B=1 build.py).
+hero-side-b = []
+# T-0057: OFF BY DEFAULT, and it must stay off until the user approves the
+# interception it would add. Since 2026-10-03 it gates only the donor's
+# hit/shield recovery, which needs a raw-offset hook this mod does not own
+# (mod rule 17). The playable meter itself is NOT behind this feature; it is
+# always in `hero_mana`.
+hero-mana-reserved = []
+# The pair's MP on the real fighter HUD (user request 2026-10-03). Independent
+# of hero-mana-reserved on purpose: it installs no hook, it calls the game's own
+# panel part selector and HUD SP setters after checking 25 function signatures
+# on 13.0.4 (tools/audit_hero_mana_native.py --hud-only). A mismatch leaves the
+# gauge off and nothing else changed.
+hero-mana-hud = []
+
+[dependencies]
+# Copied verbatim from mod_files/mythra_gamewatch_swap/Cargo.toml, including the
+# reasoning, because that reasoning was learned the hard way and still holds.
+#
+# These used to be path dependencies into another machine's ~/.cargo/git/checkouts.
+# They are now ordinary git dependencies, deliberately *without* a `rev`.
+#
+# Why no `rev`: cargo allows a patch only if it replaces a source with a different
+# source, and it compares git sources by URL alone. `rev` does not make them
+# different and neither does a `.git` suffix, so a `rev` here cannot be reinforced
+# by a patch and actively breaks the build: skyline_smash, smash_script and
+# smashline each depend on skyline through the bare URL, so asking for the same
+# repository with a `rev` puts two copies in the graph, and two copies means two
+# distinct `smash::app::FighterEntry` types. Measured on 2026-09-17 that was 327
+# E0308 type errors plus "`FighterEntry` is ambiguous".
+#
+# Why no `[patch]`: cargo rejects a patch whose replacement is the same git URL
+# with "patches must point to different sources", and both the `.git`-suffix and
+# `rev` variants were rejected for that same reason.
+#
+# The exact revisions are honoured by Cargo.lock, copied unchanged from the parked
+# crate. Do not run `cargo update`:
+#   skyline 0.6.0        skyline-rs    6b52d321275639f26c2371d8142550ba0013a5e4
+#   skyline_smash 0.1.0  skyline-smash 315e4e8bebb460ebb9f02f30f07b0f13883ba3d6
+#   smash_script 0.1.0   smash-script  fdc6144a0a429ce37b304733531edcb76c8f2578
+#   smashline 0.1.0      smashline     be3ef308ed8e479922da192a391e0684184af2af
+skyline = { git = "https://github.com/ultimate-research/skyline-rs" }
+skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash", features = ["weak_l2cvalue"] }
+smash_script = { git = "https://github.com/WuBoytH/smash-script" }
+smashline = { git = "https://github.com/hdr-development/smashline" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 'z'
+panic = "abort"
+lto = true
+codegen-units = 1

@@ -1,0 +1,41 @@
+{
+  "tier": "B",
+  "verified_offline": true,
+  "runtime_verified": false,
+  "nro_sha256": "270bc6723393767b7ae0dd639faae821fe0ffde6357938a552bed41a7faa7795",
+  "elf_sha256": "7eb16564aa23d6b0d65310c61db2203bbdcc267d9520e38af509303aaaf91236",
+  "simd_result_outline": [
+    {
+      "name": "OUTLINED_FUNCTION_1170",
+      "address": "0x4fb44",
+      "instructions": [
+        [
+          "ldr",
+          "s0, [x8]"
+        ],
+        [
+          "add",
+          "x9, x8, #4"
+        ],
+        [
+          "add",
+          "x8, x8, #8"
+        ],
+        [
+          "ld1",
+          "{v0.s}[1], [x9]"
+        ],
+        [
+          "ld1",
+          "{v0.s}[2], [x8]"
+        ],
+        [
+          "ret",
+          ""
+        ]
+      ]
+    }
+  ],
+  "supported_return": "s0 then v0.s[1] and v0.s[2], followed by epilogue without result mutation",
+  "limitation": "Rust unspecified-layout warning remains; this exact compiled artifact was inspected. Console behavior unverified."
+}

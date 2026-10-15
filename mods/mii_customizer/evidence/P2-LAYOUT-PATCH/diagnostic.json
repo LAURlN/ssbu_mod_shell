@@ -1,0 +1,180 @@
+{
+ "all_checks_pass": true,
+ "dry_run": false,
+ "factor": 0.75,
+ "inputs": {
+  "archive": {
+   "data_offset": 8192,
+   "member_count": 76,
+   "path": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+   "sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "size": 723436
+  },
+  "extracted_layout": {
+   "path": "gamedata/mii_customizer/P1-LAYOUT/unpacked/make_mii_special/blyt/make_mii_special.bflyt",
+   "sha256": "a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+   "size": 10408
+  },
+  "member": {
+   "data_end": 83464,
+   "data_start": 73056,
+   "name": "blyt/make_mii_special.bflyt",
+   "sha256": "a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+   "size": 10408
+  }
+ },
+ "located_part": {
+  "block_offset": 4252,
+  "block_size": 772,
+  "child_count": 3,
+  "matches": 1,
+  "name": "set_special_item_00",
+  "node_type": 3,
+  "payload_offset": 4260,
+  "payload_size": 764
+ },
+ "not_changed": [
+  "row names and counts",
+  "positions",
+  "selector group membership",
+  "child references",
+  "animations",
+  "text keys",
+  "Lua",
+  "native behaviour"
+ ],
+ "not_established": [
+  "Whether the game, the emulator or the console accepts a modified layout.arc.",
+  "Whether the smaller row is visible at all: an animation may overwrite the scale at runtime.",
+  "That the two floats are the row's rendered scale rather than some other transform; the offsets are measured, the meaning is inferred."
+ ],
+ "outputs": {
+  "changed_member_payload": "gamedata/mii_customizer/P2-LAYOUT-PATCH\\member\\make_mii_special.scale075.bflyt",
+  "changed_member_payload_sha256": "ea4f8c4fcf9af521ab1faf1459efb6ada081be93da201f83cc39dc22e9c5b106",
+  "control_archive": "gamedata/mii_customizer/P2-LAYOUT-PATCH\\control\\layout_original.arc",
+  "control_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+  "patched_archive": "gamedata/mii_customizer/P2-LAYOUT-PATCH\\patched\\layout_row00_scale075.arc",
+  "patched_sha256": "86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877",
+  "written": {
+   "control": true,
+   "patched": true,
+   "payload": true
+  }
+ },
+ "scale_fields": [
+  {
+   "archive_offset": 85568,
+   "component": "scale_x",
+   "member_offset": 4320,
+   "new_bytes": "0000403f",
+   "new_value": 0.75,
+   "original_bytes": "0000803f",
+   "original_value": 1.0,
+   "payload_relative_offset": 60
+  },
+  {
+   "archive_offset": 85572,
+   "component": "scale_y",
+   "member_offset": 4324,
+   "new_bytes": "0000403f",
+   "new_value": 0.75,
+   "original_bytes": "0000803f",
+   "original_value": 1.0,
+   "payload_relative_offset": 64
+  }
+ ],
+ "task": "P2-LAYOUT-PATCH",
+ "tier": "B (offline measurement; no console, emulator or runtime observation)",
+ "verification": [
+  {
+   "check": "control-byte-identical",
+   "detail": "sha256 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "pass": true
+  },
+  {
+   "check": "written-control-matches-prediction",
+   "detail": "predicted 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945, written 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "pass": true
+  },
+  {
+   "check": "written-patched-matches-prediction",
+   "detail": "predicted 86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877, written 86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877",
+   "pass": true
+  },
+  {
+   "check": "size-unchanged",
+   "detail": "723436 vs 723436 bytes",
+   "pass": true
+  },
+  {
+   "check": "member-count-unchanged",
+   "detail": "76 members",
+   "pass": true
+  },
+  {
+   "check": "membership-unchanged",
+   "detail": "identical name sets",
+   "pass": true
+  },
+  {
+   "check": "header-metadata-unchanged",
+   "detail": "all header fields except the archive's own size and hash",
+   "pass": true
+  },
+  {
+   "check": "member-offsets-unchanged",
+   "detail": "76 members compared",
+   "pass": true
+  },
+  {
+   "check": "exactly-one-member-changed",
+   "detail": "changed: ['blyt/make_mii_special.bflyt']",
+   "pass": true
+  },
+  {
+   "check": "diffs-inside-the-two-scale-fields",
+   "detail": "2 differing bytes at ['0x14e42', '0x14e46']; allowed spans at ['0x14e40', '0x14e41', '0x14e42', '0x14e43', '0x14e44', '0x14e45', '0x14e46', '0x14e47']",
+   "pass": true
+  },
+  {
+   "check": "diffs-are-exactly-the-changed-scale-bytes",
+   "detail": "archive differs at ['0x14e42', '0x14e46']; the two floats account for ['0x14e42', '0x14e46']",
+   "pass": true
+  },
+  {
+   "check": "member-diffs-inside-scale-fields",
+   "detail": "2 differing bytes, all inside the two floats",
+   "pass": true
+  },
+  {
+   "check": "part-located-again",
+   "detail": "0x109c",
+   "pass": true
+  },
+  {
+   "check": "all-other-parsed-fields-identical",
+   "detail": "43 blocks, name/position/extent/children/marker unchanged",
+   "pass": true
+  },
+  {
+   "check": "field-scale_x-scaled",
+   "detail": "0x10e0: 1.0 -> 0.75 (x0.75)",
+   "pass": true
+  },
+  {
+   "check": "field-scale_y-scaled",
+   "detail": "0x10e4: 1.0 -> 0.75 (x0.75)",
+   "pass": true
+  },
+  {
+   "check": "input-archive-unchanged",
+   "detail": "sha256 5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "pass": true
+  },
+  {
+   "check": "input-extracted-layout-unchanged",
+   "detail": "sha256 a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+   "pass": true
+  }
+ ]
+}

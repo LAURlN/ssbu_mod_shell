@@ -1,0 +1,61 @@
+[package]
+name = "mythra_gamewatch_swap"
+version = "0.1.0"
+authors = ["Antigravity"]
+edition = "2018"
+
+[package.metadata.skyline]
+titleid = "01006A800016E000"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+swap-diagnostics = []
+
+[dependencies]
+# These used to be path dependencies into machine-local Cargo checkout cache,
+# which only existed on the machine this mod was written on. On any other machine
+# every one of them is a path to nowhere, so the crate cannot even be resolved.
+# They are now ordinary git dependencies, deliberately *without* a `rev`.
+#
+# Why no `rev`, which is the opposite of what this file said when it was first
+# converted. cargo allows a patch only if it replaces a source with a different
+# source, and it compares git sources by URL alone: `rev` does not make them
+# different and neither does a `.git` suffix. So a `rev` here cannot be reinforced
+# by a patch, and it actively breaks the build. skyline_smash, smash_script and
+# smashline each depend on skyline and skyline_smash through the bare URL; asking
+# for the same repository with a `rev` from this crate puts two copies of it in the
+# graph, and two copies means two distinct `smash::app::FighterEntry` types. The
+# symptom is a wall of E0308 type errors - measured on 2026-09-17 it was 327 of them,
+# alongside "`FighterEntry` is ambiguous ... multiple glob imports". Omitting `rev`
+# makes every use of each repository resolve to one source id, which is what the old
+# path dependencies achieved by pointing at one checkout.
+#
+# The exact revisions are still honoured, but by Cargo.lock, which records the commit
+# for each of these sources. Do not run `cargo update` on them. What the lock holds,
+# read off the old checkout folder names rather than guessed:
+#   skyline 0.6.0        skyline-rs    6b52d321275639f26c2371d8142550ba0013a5e4
+#   skyline_smash 0.1.0  skyline-smash 315e4e8bebb460ebb9f02f30f07b0f13883ba3d6
+#   smash_script 0.1.0   smash-script  fdc6144a0a429ce37b304733531edcb76c8f2578
+#   smashline 0.1.0      smashline     be3ef308ed8e479922da192a391e0684184af2af
+skyline = { git = "https://github.com/ultimate-research/skyline-rs" }
+skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash", features = ["weak_l2cvalue"] }
+smash_script = { git = "https://github.com/WuBoytH/smash-script" }
+smashline = { git = "https://github.com/hdr-development/smashline" }
+
+# No [patch] sections, for the reason given above: cargo rejects any patch whose
+# replacement is the same git URL, with "patches must point to different sources",
+# and both variations that were tried here were rejected for that same reason - one
+# because cargo normalises the `.git` suffix, one because a `rev` does not change
+# the URL. The original file only ever got away with it because its replacements
+# were local paths.
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 'z'
+panic = "abort"
+lto = true
+codegen-units = 1

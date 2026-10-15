@@ -1,0 +1,20 @@
+| hash | site | enclosing fn (fstart) | call / vtable | callers of fn |
+|---|---|---|---|---|
+| 0x0ee2ec2860 | 0x006d42c0 | 0x6d4060 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0x6d42bc) | 0 |
+| 0x0ee2ec2860 | 0x006d86d4 | 0x6d8560 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0x6d86cc) | 0 |
+| 0x0ee2ec2860 | 0x006f3f14 | 0x6f37b0 | none within completing+0x400 | 0 |
+| 0x0ee2ec2860 | 0x006f82f4 | 0x6f7b20 | none within completing+0x400 | 0 |
+| 0x0ee2ec2860 | 0x006f830c | 0x6f7b20 | none within completing+0x400 | 0 |
+| 0x0ee2ec2860 | 0x0085b26c | 0x85a9d0 | `bl` -> 0x75d8f0 | 1 |
+| 0x0ee2ec2860 | 0x009132f8 | 0x9130b0 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0x9132f0) | 0 |
+| 0x0ee2ec2860 | 0x009138e0 | 0x913710 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0x9138dc) | 0 |
+| 0x0ee2ec2860 | 0x00993818 | 0x993750 | `bl` -> 0x392e590 | 0 |
+| 0x0ee2ec2860 | 0x009deccc | 0x9dea20 | `bl` -> 0x392dce0 | 3 |
+| 0x0ee2ec2860 | 0x00a8f070 | 0xa8e7ec | `bl` -> 0x39c0d80 | 0 |
+| 0x0ee2ec2860 | 0x00aa22cc | none | none within completing+0x400 | - |
+| 0x0ee2ec2860 | 0x00adade0 | 0xadac40 | `bl` -> 0x1c0 | 0 |
+| 0x0ee2ec2860 | 0x00be3e8c | 0xbe3d20 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0xbe3e84) | 0 |
+| 0x0ee2ec2860 | 0x0105fec8 | 0x105fc90 | `blr x8` (producer ldr x8, [x8, #0x270] @ 0x105fec4) | 0 |
+| 0x0ee2ec2860 | 0x0116c814 | 0x116b880 | `bl` -> 0x75d8f0 | 2 |
+| 0x0ee2ec2860 | 0x0116cd34 | 0x116b880 | `bl` -> 0x75d8f0 | 2 |
+| 0x0ee2ec2860 | 0x0131611c | 0x1315e20 | `bl` -> 0x75d8f0 | 3 |

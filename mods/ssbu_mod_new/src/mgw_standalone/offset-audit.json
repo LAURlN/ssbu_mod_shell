@@ -1,0 +1,1052 @@
+{
+  "source_archive_sha256": "ad18cd502979a256cbcb67a3c04dadae6c7888263158fe6895631063f62a1bc2",
+  "main_dump_sha256": "f70c97d2bdcd00c2e81559f5abd0871e3c550b240d2005ab2e6085957a9d7613",
+  "edits": [
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 265,
+      "upstream": "0x33b6bd8",
+      "corrected": "0x33b6628",
+      "corrected_bytes": "df0a007197ce00f9c0000054d6010035",
+      "corrected_instructions": [
+        "0x33b6628: cmp w22, #2",
+        "0x33b662c: str x23, [x20, #0x198]",
+        "0x33b6630: b.eq #0x33b6648",
+        "0x33b6634: cbnz w22, #0x33b666c"
+      ],
+      "upstream_instructions": [
+        "0x33b6bd8: mov v4.16b, v1.16b",
+        "0x33b6bdc: mov v4.s[1], v0.s[0]",
+        "0x33b6be0: mov v0.16b, v1.16b",
+        "0x33b6be4: mov v0.s[0], v2.s[0]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 266,
+      "upstream": "0x33ad528",
+      "corrected": "0x33acf78",
+      "corrected_bytes": "1fd50171e8fcff54e803082ae98b00f0",
+      "corrected_instructions": [
+        "0x33acf78: cmp w8, #0x75",
+        "0x33acf7c: b.hi #0x33acf18",
+        "0x33acf80: mov w8, w8",
+        "0x33acf84: adrp x9, #0x452b000"
+      ],
+      "upstream_instructions": [
+        "0x33ad528: ldp x22, x21, [sp, #0x60]",
+        "0x33ad52c: ldp x24, x23, [sp, #0x50]",
+        "0x33ad530: add sp, sp, #0x90",
+        "0x33ad534: b #0x39c2c60"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 267,
+      "upstream": "0x33af3e8",
+      "corrected": "0x33aee38",
+      "corrected_bytes": "1fd50171e8fcff54e803082ae98b00b0",
+      "corrected_instructions": [
+        "0x33aee38: cmp w8, #0x75",
+        "0x33aee3c: b.hi #0x33aedd8",
+        "0x33aee40: mov w8, w8",
+        "0x33aee44: adrp x9, #0x452b000"
+      ],
+      "upstream_instructions": [
+        "0x33af3e8: ldp x22, x21, [sp, #0x60]",
+        "0x33af3ec: ldp x24, x23, [sp, #0x50]",
+        "0x33af3f0: add sp, sp, #0x90",
+        "0x33af3f4: b #0x39c3e00"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 268,
+      "upstream": "0x33ae488",
+      "corrected": "0x33aded8",
+      "corrected_bytes": "1fd50171e8fcff54e803082ae98b00d0",
+      "corrected_instructions": [
+        "0x33aded8: cmp w8, #0x75",
+        "0x33adedc: b.hi #0x33ade78",
+        "0x33adee0: mov w8, w8",
+        "0x33adee4: adrp x9, #0x452b000"
+      ],
+      "upstream_instructions": [
+        "0x33ae488: ldp x22, x21, [sp, #0x60]",
+        "0x33ae48c: ldp x24, x23, [sp, #0x50]",
+        "0x33ae490: add sp, sp, #0x90",
+        "0x33ae494: b #0x39c3240"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 269,
+      "upstream": "0x33ac5f0",
+      "corrected": "0x33ac040",
+      "corrected_bytes": "1fd50171a8fcff54e803082ae98b00f0",
+      "corrected_instructions": [
+        "0x33ac040: cmp w8, #0x75",
+        "0x33ac044: b.hi #0x33abfd8",
+        "0x33ac048: mov w8, w8",
+        "0x33ac04c: adrp x9, #0x452b000"
+      ],
+      "upstream_instructions": [
+        "0x33ac5f0: ldp x22, x21, [sp, #0x60]",
+        "0x33ac5f4: ldp x24, x23, [sp, #0x50]",
+        "0x33ac5f8: add sp, sp, #0x90",
+        "0x33ac5fc: b #0x39c2670"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 275,
+      "upstream": "0x33ad42c",
+      "corrected": "0x33ace7c",
+      "corrected_bytes": "c9ee00b029412f91ff430039236968f8",
+      "corrected_instructions": [
+        "0x33ace7c: adrp x9, #0x5185000",
+        "0x33ace80: add x9, x9, #0xbd0",
+        "0x33ace84: strb wzr, [sp, #0x10]",
+        "0x33ace88: ldr x3, [x9, x8]"
+      ],
+      "upstream_instructions": [
+        "0x33ad42c: ldp x22, x21, [sp, #0x60]",
+        "0x33ad430: ldp x24, x23, [sp, #0x50]",
+        "0x33ad434: add sp, sp, #0x90",
+        "0x33ad438: b #0x39c2bf0"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 276,
+      "upstream": "0x33af2ec",
+      "corrected": "0x33aed3c",
+      "corrected_bytes": "a9ee00f029412f91ff430039236968f8",
+      "corrected_instructions": [
+        "0x33aed3c: adrp x9, #0x5185000",
+        "0x33aed40: add x9, x9, #0xbd0",
+        "0x33aed44: strb wzr, [sp, #0x10]",
+        "0x33aed48: ldr x3, [x9, x8]"
+      ],
+      "upstream_instructions": [
+        "0x33af2ec: ldp x22, x21, [sp, #0x60]",
+        "0x33af2f0: ldp x24, x23, [sp, #0x50]",
+        "0x33af2f4: add sp, sp, #0x90",
+        "0x33af2f8: b #0x39c3d90"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 277,
+      "upstream": "0x33ae38c",
+      "corrected": "0x33adddc",
+      "corrected_bytes": "c9ee009029412f91ff430039236968f8",
+      "corrected_instructions": [
+        "0x33adddc: adrp x9, #0x5185000",
+        "0x33adde0: add x9, x9, #0xbd0",
+        "0x33adde4: strb wzr, [sp, #0x10]",
+        "0x33adde8: ldr x3, [x9, x8]"
+      ],
+      "upstream_instructions": [
+        "0x33ae38c: ldp x22, x21, [sp, #0x60]",
+        "0x33ae390: ldp x24, x23, [sp, #0x50]",
+        "0x33ae394: add sp, sp, #0x90",
+        "0x33ae398: b #0x39c31d0"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 278,
+      "upstream": "0x33ac504",
+      "corrected": "0x33abf54",
+      "corrected_bytes": "c9ee00d029412f91e0230091236968f8",
+      "corrected_instructions": [
+        "0x33abf54: adrp x9, #0x5185000",
+        "0x33abf58: add x9, x9, #0xbd0",
+        "0x33abf5c: add x0, sp, #8",
+        "0x33abf60: ldr x3, [x9, x8]"
+      ],
+      "upstream_instructions": [
+        "0x33ac504: mov x1, x21",
+        "0x33ac508: mov x2, x20",
+        "0x33ac50c: mov x3, x19",
+        "0x33ac510: ldp x29, x30, [sp, #0x80]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 284,
+      "upstream": "0x33b6de0",
+      "corrected": "0x33b6830",
+      "corrected_bytes": "817c00b021942b91a0c302d1e2031baa",
+      "corrected_instructions": [
+        "0x33b6830: adrp x1, #0x4347000",
+        "0x33b6834: add x1, x1, #0xae5",
+        "0x33b6838: sub x0, x29, #0xb0",
+        "0x33b683c: mov x2, x27"
+      ],
+      "upstream_instructions": [
+        "0x33b6de0: add x8, x8, #0x980",
+        "0x33b6de4: ldarb w8, [x8]",
+        "0x33b6de8: tbz w8, #0, #0x33b7058",
+        "0x33b6dec: adrp x8, #0x532e000"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 285,
+      "upstream": "0x33b6fa0",
+      "corrected": "0x33b69f0",
+      "corrected_bytes": "a0c302d1bf831538bf0315f8b8c302d1",
+      "corrected_instructions": [
+        "0x33b69f0: sub x0, x29, #0xb0",
+        "0x33b69f4: sturb wzr, [x29, #-0xa8]",
+        "0x33b69f8: stur xzr, [x29, #-0xb0]",
+        "0x33b69fc: sub x24, x29, #0xb0"
+      ],
+      "upstream_instructions": [
+        "0x33b6fa0: adrp x8, #0x532e000",
+        "0x33b6fa4: add x8, x8, #0x998",
+        "0x33b6fa8: ldarb w8, [x8]",
+        "0x33b6fac: tbz w8, #0, #0x33b7158"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 286,
+      "upstream": "0x33b72c4",
+      "corrected": "0x33b6d14",
+      "corrected_bytes": "a17e009021600e91a0c302d1bf831538",
+      "corrected_instructions": [
+        "0x33b6d14: adrp x1, #0x438a000",
+        "0x33b6d18: add x1, x1, #0x398",
+        "0x33b6d1c: sub x0, x29, #0xb0",
+        "0x33b6d20: sturb wzr, [x29, #-0xa8]"
+      ],
+      "upstream_instructions": [
+        "0x33b72c4: cbz w0, #0x33b5d10",
+        "0x33b72c8: adrp x8, #0x4f63000",
+        "0x33b72cc: add x8, x8, #0xdc8",
+        "0x33b72d0: adrp x0, #0x52b7000"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 287,
+      "upstream": "0x33ad43c",
+      "corrected": "0x33ace8c",
+      "corrected_bytes": "018300f021f43e91e0230091ff0700f9",
+      "corrected_instructions": [
+        "0x33ace8c: adrp x1, #0x440f000",
+        "0x33ace90: add x1, x1, #0xfbd",
+        "0x33ace94: add x0, sp, #8",
+        "0x33ace98: str xzr, [sp, #8]"
+      ],
+      "upstream_instructions": [
+        "0x33ad43c: mov x1, x21",
+        "0x33ad440: mov x2, x20",
+        "0x33ad444: mov x3, x19",
+        "0x33ad448: ldp x29, x30, [sp, #0x80]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 288,
+      "upstream": "0x33af2fc",
+      "corrected": "0x33aed4c",
+      "corrected_bytes": "018300b021f43e91e0230091ff0700f9",
+      "corrected_instructions": [
+        "0x33aed4c: adrp x1, #0x440f000",
+        "0x33aed50: add x1, x1, #0xfbd",
+        "0x33aed54: add x0, sp, #8",
+        "0x33aed58: str xzr, [sp, #8]"
+      ],
+      "upstream_instructions": [
+        "0x33af2fc: mov x1, x21",
+        "0x33af300: mov x2, x20",
+        "0x33af304: mov x3, x19",
+        "0x33af308: ldp x29, x30, [sp, #0x80]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 289,
+      "upstream": "0x33ae39c",
+      "corrected": "0x33addec",
+      "corrected_bytes": "018300d021f43e91e0230091ff0700f9",
+      "corrected_instructions": [
+        "0x33addec: adrp x1, #0x440f000",
+        "0x33addf0: add x1, x1, #0xfbd",
+        "0x33addf4: add x0, sp, #8",
+        "0x33addf8: str xzr, [sp, #8]"
+      ],
+      "upstream_instructions": [
+        "0x33ae39c: mov x1, x21",
+        "0x33ae3a0: mov x2, x20",
+        "0x33ae3a4: mov x3, x19",
+        "0x33ae3a8: ldp x29, x30, [sp, #0x80]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "line": 290,
+      "upstream": "0x33ac514",
+      "corrected": "0x33abf64",
+      "corrected_bytes": "ff4300392e074a97ec434039ec020034",
+      "corrected_instructions": [
+        "0x33abf64: strb wzr, [sp, #0x10]",
+        "0x33abf68: bl #0x62dc20",
+        "0x33abf6c: ldrb w12, [sp, #0x10]",
+        "0x33abf70: cbz w12, #0x33abfcc"
+      ],
+      "upstream_instructions": [
+        "0x33ac514: ldp x20, x19, [sp, #0x70]",
+        "0x33ac518: ldp x22, x21, [sp, #0x60]",
+        "0x33ac51c: ldp x24, x23, [sp, #0x50]",
+        "0x33ac520: add sp, sp, #0x90"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1062,
+      "upstream": "0x33ac490",
+      "corrected": "0x33abee0",
+      "corrected_bytes": "ff4302d1f85f05a9f65706a9f44f07a9",
+      "corrected_instructions": [
+        "0x33abee0: sub sp, sp, #0x90",
+        "0x33abee4: stp x24, x23, [sp, #0x50]",
+        "0x33abee8: stp x22, x21, [sp, #0x60]",
+        "0x33abeec: stp x20, x19, [sp, #0x70]"
+      ],
+      "upstream_instructions": [
+        "0x33ac490: add sp, sp, #0x90",
+        "0x33ac494: b #0x39c25d0",
+        "0x33ac498: mov x1, x21",
+        "0x33ac49c: mov x2, x20"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1185,
+      "upstream": "0x33b6b60",
+      "corrected": "0x33b65b0",
+      "corrected_bytes": "00013fd6f70300aa80261df9e00000b5",
+      "corrected_instructions": [
+        "0x33b65b0: blr x8",
+        "0x33b65b4: mov x23, x0",
+        "0x33b65b8: str x0, [x20, #0x3a48]",
+        "0x33b65bc: cbnz x0, #0x33b65d8"
+      ],
+      "upstream_instructions": [
+        "0x33b6b60: ldur x8, [x29, #-0xb0]",
+        "0x33b6b64: ldr x8, [x8, #0x50]",
+        "0x33b6b68: mov x1, #0xee70",
+        "0x33b6b6c: movk x1, #0x4394, lsl #16"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1187,
+      "upstream": "0x33b93f0",
+      "corrected": "0x33b8e40",
+      "corrected_bytes": "ffc300d1f44f01a9fd7b02a9fd830091",
+      "corrected_instructions": [
+        "0x33b8e40: sub sp, sp, #0x30",
+        "0x33b8e44: stp x20, x19, [sp, #0x10]",
+        "0x33b8e48: stp x29, x30, [sp, #0x20]",
+        "0x33b8e4c: add x29, sp, #0x20"
+      ],
+      "upstream_instructions": [
+        "0x33b93f0: sub sp, sp, #0x30",
+        "0x33b93f4: str x19, [sp, #0x10]",
+        "0x33b93f8: stp x29, x30, [sp, #0x20]",
+        "0x33b93fc: add x29, sp, #0x20"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1203,
+      "upstream": "0x33ad390",
+      "corrected": "0x33acde0",
+      "corrected_bytes": "ff4302d1f85f05a9f65706a9f44f07a9",
+      "corrected_instructions": [
+        "0x33acde0: sub sp, sp, #0x90",
+        "0x33acde4: stp x24, x23, [sp, #0x50]",
+        "0x33acde8: stp x22, x21, [sp, #0x60]",
+        "0x33acdec: stp x20, x19, [sp, #0x70]"
+      ],
+      "upstream_instructions": [
+        "0x33ad390: mov x3, x19",
+        "0x33ad394: ldp x29, x30, [sp, #0x80]",
+        "0x33ad398: ldp x20, x19, [sp, #0x70]",
+        "0x33ad39c: ldp x22, x21, [sp, #0x60]"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1204,
+      "upstream": "0x33ae2f0",
+      "corrected": "0x33add40",
+      "corrected_bytes": "ff4302d1f85f05a9f65706a9f44f07a9",
+      "corrected_instructions": [
+        "0x33add40: sub sp, sp, #0x90",
+        "0x33add44: stp x24, x23, [sp, #0x50]",
+        "0x33add48: stp x22, x21, [sp, #0x60]",
+        "0x33add4c: stp x20, x19, [sp, #0x70]"
+      ],
+      "upstream_instructions": [
+        "0x33ae2f0: mov x3, x19",
+        "0x33ae2f4: ldp x29, x30, [sp, #0x80]",
+        "0x33ae2f8: ldp x20, x19, [sp, #0x70]",
+        "0x33ae2fc: ldp x22, x21, [sp, #0x60]"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "line": 1205,
+      "upstream": "0x33af250",
+      "corrected": "0x33aeca0",
+      "corrected_bytes": "ff4302d1f85f05a9f65706a9f44f07a9",
+      "corrected_instructions": [
+        "0x33aeca0: sub sp, sp, #0x90",
+        "0x33aeca4: stp x24, x23, [sp, #0x50]",
+        "0x33aeca8: stp x22, x21, [sp, #0x60]",
+        "0x33aecac: stp x20, x19, [sp, #0x70]"
+      ],
+      "upstream_instructions": [
+        "0x33af250: mov x3, x19",
+        "0x33af254: ldp x29, x30, [sp, #0x80]",
+        "0x33af258: ldp x20, x19, [sp, #0x70]",
+        "0x33af25c: ldp x22, x21, [sp, #0x60]"
+      ]
+    },
+    {
+      "file": "src/effects.rs",
+      "line": 11,
+      "upstream": "0x3563cd0",
+      "corrected": "0x3563720",
+      "corrected_bytes": "f50f1df8f44f01a9fd7b02a9fd830091",
+      "corrected_instructions": [
+        "0x3563720: str x21, [sp, #-0x30]!",
+        "0x3563724: stp x20, x19, [sp, #0x10]",
+        "0x3563728: stp x29, x30, [sp, #0x20]",
+        "0x356372c: add x29, sp, #0x20"
+      ],
+      "upstream_instructions": [
+        "0x3563cd0: mov w10, #0x300",
+        "0x3563cd4: umaddl x10, w9, w10, x8",
+        "0x3563cd8: ldr w11, [x10, #4]",
+        "0x3563cdc: cmp x10, #0"
+      ]
+    },
+    {
+      "file": "src/effects.rs",
+      "line": 14,
+      "upstream": "0x355fea0",
+      "corrected": "0x355f8f0",
+      "corrected_bytes": "fc6fbaa9fa6701a9f85f02a9f65703a9",
+      "corrected_instructions": [
+        "0x355f8f0: stp x28, x27, [sp, #-0x60]!",
+        "0x355f8f4: stp x26, x25, [sp, #0x10]",
+        "0x355f8f8: stp x24, x23, [sp, #0x20]",
+        "0x355f8fc: stp x22, x21, [sp, #0x30]"
+      ],
+      "upstream_instructions": [
+        "0x355fea0: ldr w8, [x8]",
+        "0x355fea4: cmn w8, #1",
+        "0x355fea8: b.eq #0x35629d4",
+        "0x355feac: ldr w8, [x9, #0xa8]!"
+      ]
+    },
+    {
+      "file": "src/interpreter.rs",
+      "line": 242,
+      "upstream": "0x372e100",
+      "corrected": "0x372db50",
+      "corrected_bytes": "ff8304d1fc5f0ea9f6570fa9f44f10a9",
+      "corrected_instructions": [
+        "0x372db50: sub sp, sp, #0x120",
+        "0x372db54: stp x28, x23, [sp, #0xe0]",
+        "0x372db58: stp x22, x21, [sp, #0xf0]",
+        "0x372db5c: stp x20, x19, [sp, #0x100]"
+      ],
+      "upstream_instructions": [
+        "0x372e100: mov x9, xzr",
+        "0x372e104: sub x11, x20, x8",
+        "0x372e108: ldr x12, [x19]",
+        "0x372e10c: lsl x13, x9, #3"
+      ]
+    },
+    {
+      "file": "src/interpreter.rs",
+      "line": 247,
+      "upstream": "0x372e284",
+      "corrected": "0x372dcd4",
+      "corrected_bytes": "00013fd6e8a241f9080140f900c10191",
+      "corrected_instructions": [
+        "0x372dcd4: blr x8",
+        "0x372dcd8: ldr x8, [x23, #0x340]",
+        "0x372dcdc: ldr x8, [x8]",
+        "0x372dce0: add x0, x8, #0x70"
+      ],
+      "upstream_instructions": [
+        "0x372e284: str x14, [x8]",
+        "0x372e288: ldr x14, [x19]",
+        "0x372e28c: lsl x12, x12, #3",
+        "0x372e290: ldr x14, [x14, x12]"
+      ]
+    },
+    {
+      "file": "src/params.rs",
+      "line": 313,
+      "upstream": "0x3720f64",
+      "corrected": "0x37209b4",
+      "corrected_bytes": "00013fd6f3030032e11340b9f45f0032",
+      "corrected_instructions": [
+        "0x37209b4: blr x8",
+        "0x37209b8: mov w19, #1",
+        "0x37209bc: ldr w1, [sp, #0x10]",
+        "0x37209c0: mov w20, #0xffffff"
+      ],
+      "upstream_instructions": [
+        "0x3720f64: cbz w19, #0x3720f94",
+        "0x3720f68: and x0, x19, #0xffffffff",
+        "0x3720f6c: bl #0x39c2100",
+        "0x3720f70: and w8, w19, #0x1ff"
+      ]
+    },
+    {
+      "file": "src/params.rs",
+      "line": 397,
+      "upstream": "0x3720f64",
+      "corrected": "0x37209b4",
+      "corrected_bytes": "00013fd6f3030032e11340b9f45f0032",
+      "corrected_instructions": [
+        "0x37209b4: blr x8",
+        "0x37209b8: mov w19, #1",
+        "0x37209bc: ldr w1, [sp, #0x10]",
+        "0x37209c0: mov w20, #0xffffff"
+      ],
+      "upstream_instructions": [
+        "0x3720f64: cbz w19, #0x3720f94",
+        "0x3720f68: and x0, x19, #0xffffffff",
+        "0x3720f6c: bl #0x39c2100",
+        "0x3720f70: and w8, w19, #0x1ff"
+      ]
+    },
+    {
+      "file": "src/runtime_reload.rs",
+      "line": 224,
+      "upstream": "0x36674c0",
+      "corrected": "0x3666f10",
+      "corrected_bytes": "fd7bbfa9fd0300914400221e68700090",
+      "corrected_instructions": [
+        "0x3666f10: stp x29, x30, [sp, #-0x10]!",
+        "0x3666f14: mov x29, sp",
+        "0x3666f18: scvtf s4, w2",
+        "0x3666f1c: adrp x8, #0x4472000"
+      ],
+      "upstream_instructions": [
+        "0x36674c0: adrp x20, #0x5338000",
+        "0x36674c4: ldr x0, [x20, #0x870]",
+        "0x36674c8: cmp x0, x19",
+        "0x36674cc: b.eq #0x36674e4"
+      ]
+    },
+    {
+      "file": "src/utils.rs",
+      "line": 227,
+      "upstream": "0x353e8e0",
+      "corrected": "0x353e330",
+      "corrected_bytes": "ffc304d1fc5710a9f44f11a9fd7b12a9",
+      "corrected_instructions": [
+        "0x353e330: sub sp, sp, #0x130",
+        "0x353e334: stp x28, x21, [sp, #0x100]",
+        "0x353e338: stp x20, x19, [sp, #0x110]",
+        "0x353e33c: stp x29, x30, [sp, #0x120]"
+      ],
+      "upstream_instructions": [
+        "0x353e8e0: cbz x9, #0x353e920",
+        "0x353e8e4: ldr x9, [x8, #0x130]",
+        "0x353e8e8: cbz x9, #0x353e920",
+        "0x353e8ec: add x10, x8, #0x130"
+      ]
+    },
+    {
+      "file": "src/utils.rs",
+      "line": 230,
+      "upstream": "0x353ea90",
+      "corrected": "0x353e4e0",
+      "corrected_bytes": "e85f00321f00086b0007005488ef00f0",
+      "corrected_instructions": [
+        "0x353e4e0: mov w8, #0xffffff",
+        "0x353e4e4: cmp w0, w8",
+        "0x353e4e8: b.eq #0x353e5c8",
+        "0x353e4ec: adrp x8, #0x5331000"
+      ],
+      "upstream_instructions": [
+        "0x353ea90: mov x0, x19",
+        "0x353ea94: ldp x29, x30, [sp, #0x30]",
+        "0x353ea98: ldp x20, x19, [sp, #0x20]",
+        "0x353ea9c: ldp x22, x21, [sp, #0x10]"
+      ]
+    },
+    {
+      "file": "src/utils.rs",
+      "line": 233,
+      "upstream": "0x3540a00",
+      "corrected": "0x3540450",
+      "corrected_bytes": "f657bda9f44f01a9fd7b02a9fd830091",
+      "corrected_instructions": [
+        "0x3540450: stp x22, x21, [sp, #-0x30]!",
+        "0x3540454: stp x20, x19, [sp, #0x10]",
+        "0x3540458: stp x29, x30, [sp, #0x20]",
+        "0x354045c: add x29, sp, #0x20"
+      ],
+      "upstream_instructions": [
+        "0x3540a00: bl #0x392e590",
+        "0x3540a04: mov x0, x22",
+        "0x3540a08: mov x1, x23",
+        "0x3540a0c: bl #0x3541080"
+      ]
+    }
+  ],
+  "resource_support_edits": [
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df468",
+      "corrected": "0x17df4a8",
+      "context": [
+        "0x17df4a0: cmp w1, #0x72",
+        "0x17df4a4: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df4a8: b.ne #0x17df4f0",
+        "0x17df4ac: tbz w4, #0, #0x17df4f0"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df788",
+      "corrected": "0x17df7c8",
+      "context": [
+        "0x17df7c0: add x8, x8, #0x1d0",
+        "0x17df7c4: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df7c8: b #0x17df95c",
+        "0x17df7cc: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df654",
+      "corrected": "0x17df694",
+      "context": [
+        "0x17df68c: add x8, x8, #0xe20",
+        "0x17df690: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df694: b #0x17df888",
+        "0x17df698: adrp x1, #0x439b000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17dfcb0",
+      "corrected": "0x17dfcf0",
+      "context": [
+        "0x17dfce8: add x8, x8, #0xe20",
+        "0x17dfcec: ldr x2, [x8, w20, sxtw #3]",
+        "0x17dfcf0: b #0x17dfcfc",
+        "0x17dfcf4: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e02f4",
+      "corrected": "0x17e0334",
+      "context": [
+        "0x17e032c: add x8, x8, #0xe20",
+        "0x17e0330: ldr x2, [x8, w21, sxtw #3]",
+        "0x17e0334: b #0x17e0340",
+        "0x17e0338: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e03b8",
+      "corrected": "0x17e03f8",
+      "context": [
+        "0x17e03f0: add x1, x1, #0x98d",
+        "0x17e03f4: ldr x2, [x8, w21, sxtw #3]",
+        "0x17e03f8: b #0x17e040c",
+        "0x17e03fc: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e7498",
+      "corrected": "0x17e74d8",
+      "context": [
+        "0x17e74d0: cmp w19, #0x72",
+        "0x17e74d4: ldr x2, [x8, w19, sxtw #3]",
+        "0x17e74d8: b.ne #0x17e7558",
+        "0x17e74dc: ldr w8, [sp, #8]"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8bb0",
+      "corrected": "0x17e8bf0",
+      "context": [
+        "0x17e8be8: add x8, x8, #0xe20",
+        "0x17e8bec: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8bf0: b #0x17e9094",
+        "0x17e8bf4: cmp w20, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8bd0",
+      "corrected": "0x17e8c10",
+      "context": [
+        "0x17e8c08: add x8, x8, #0xe20",
+        "0x17e8c0c: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8c10: b #0x17e9118",
+        "0x17e8c14: add x0, sp, #0x108"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8cf8",
+      "corrected": "0x17e8d38",
+      "context": [
+        "0x17e8d30: add x8, x8, #0xe20",
+        "0x17e8d34: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8d38: b #0x17e91b8",
+        "0x17e8d3c: cmp w20, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8d18",
+      "corrected": "0x17e8d58",
+      "context": [
+        "0x17e8d50: add x8, x8, #0xe20",
+        "0x17e8d54: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8d58: b #0x17e9238",
+        "0x17e8d5c: sub w8, w20, #0x48"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8da4",
+      "corrected": "0x17e8de4",
+      "context": [
+        "0x17e8ddc: add x8, x8, #0xe20",
+        "0x17e8de0: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8de4: b #0x17e9348",
+        "0x17e8de8: cmp w20, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8dc4",
+      "corrected": "0x17e8e04",
+      "context": [
+        "0x17e8dfc: add x8, x8, #0xe20",
+        "0x17e8e00: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8e04: b #0x17e936c",
+        "0x17e8e08: add x0, sp, #0x108"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e8fa8",
+      "corrected": "0x17e8fe8",
+      "context": [
+        "0x17e8fe0: add x8, x8, #0xe20",
+        "0x17e8fe4: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e8fe8: b #0x17e9494",
+        "0x17e8fec: add x0, sp, #0x108"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e916c",
+      "corrected": "0x17e91ac",
+      "context": [
+        "0x17e91a4: add x8, x8, #0xe20",
+        "0x17e91a8: ldr x2, [x8, w20, sxtw #3]",
+        "0x17e91ac: b #0x17e9600",
+        "0x17e91b0: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e9d0c",
+      "corrected": "0x17e9d4c",
+      "context": [
+        "0x17e9d44: add x8, x8, #0xe20",
+        "0x17e9d48: ldr x2, [x8, w21, sxtw #3]",
+        "0x17e9d4c: b #0x17e9d58",
+        "0x17e9d50: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17f0008",
+      "corrected": "0x17f004c",
+      "context": [
+        "0x17f0044: add x8, x8, #0xe20",
+        "0x17f0048: ldr x2, [x8, w20, sxtw #3]",
+        "0x17f004c: b #0x17f0058",
+        "0x17f0050: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df740",
+      "corrected": "0x17df780",
+      "context": [
+        "0x17df778: add x8, x8, #0x1d0",
+        "0x17df77c: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df780: b #0x17df920",
+        "0x17df784: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df754",
+      "corrected": "0x17df798",
+      "context": [
+        "0x17df790: add x8, x8, #0x1d0",
+        "0x17df794: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df798: b #0x17df934",
+        "0x17df79c: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df678",
+      "corrected": "0x17df6b8",
+      "context": [
+        "0x17df6b0: add x8, x8, #0x1d0",
+        "0x17df6b4: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df6b8: b #0x17df8a8",
+        "0x17df6bc: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df770",
+      "corrected": "0x17df7b0",
+      "context": [
+        "0x17df7a8: add x8, x8, #0x1d0",
+        "0x17df7ac: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df7b0: b #0x17df948",
+        "0x17df7b4: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df79c",
+      "corrected": "0x17df7e0",
+      "context": [
+        "0x17df7d8: add x8, x8, #0x1d0",
+        "0x17df7dc: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df7e0: b #0x17df970",
+        "0x17df7e4: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df7b8",
+      "corrected": "0x17df7f8",
+      "context": [
+        "0x17df7f0: add x8, x8, #0x1d0",
+        "0x17df7f4: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df7f8: b #0x17df984",
+        "0x17df7fc: cmp w4, #1"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df690",
+      "corrected": "0x17df6d0",
+      "context": [
+        "0x17df6c8: add x8, x8, #0x1d0",
+        "0x17df6cc: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df6d0: b #0x17df8bc",
+        "0x17df6d4: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df6a8",
+      "corrected": "0x17df6e8",
+      "context": [
+        "0x17df6e0: add x8, x8, #0x1d0",
+        "0x17df6e4: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df6e8: b #0x17df8d0",
+        "0x17df6ec: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df6c0",
+      "corrected": "0x17df700",
+      "context": [
+        "0x17df6f8: add x8, x8, #0x1d0",
+        "0x17df6fc: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df700: b #0x17df8e4",
+        "0x17df704: adrp x1, #0x42b2000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df7f4",
+      "corrected": "0x17df834",
+      "context": [
+        "0x17df82c: add x8, x8, #0x1d0",
+        "0x17df830: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df834: b #0x17df998",
+        "0x17df838: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df80c",
+      "corrected": "0x17df84c",
+      "context": [
+        "0x17df844: add x8, x8, #0x1d0",
+        "0x17df848: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df84c: b #0x17df9ac",
+        "0x17df850: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df820",
+      "corrected": "0x17df864",
+      "context": [
+        "0x17df85c: add x8, x8, #0x1d0",
+        "0x17df860: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df864: b #0x17df9c0",
+        "0x17df868: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df6e4",
+      "corrected": "0x17df724",
+      "context": [
+        "0x17df71c: add x8, x8, #0x1d0",
+        "0x17df720: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df724: b #0x17df8f8",
+        "0x17df728: cmp w1, #0x75"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df6fc",
+      "corrected": "0x17df73c",
+      "context": [
+        "0x17df734: add x8, x8, #0x1d0",
+        "0x17df738: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df73c: b #0x17df90c",
+        "0x17df740: adrp x1, #0x42c3000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17df83c",
+      "corrected": "0x17df87c",
+      "context": [
+        "0x17df874: add x8, x8, #0x1d0",
+        "0x17df878: ldr x2, [x8, w1, sxtw #3]",
+        "0x17df87c: b #0x17df9d4",
+        "0x17df880: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e9a20",
+      "corrected": "0x17e9a60",
+      "context": [
+        "0x17e9a58: add x8, x8, #0xe20",
+        "0x17e9a5c: ldr x2, [x8, w2, sxtw #3]",
+        "0x17e9a60: b #0x17e9aa4",
+        "0x17e9a64: cmp w8, #0x2d"
+      ]
+    },
+    {
+      "file": "src/cloning/fighters.rs",
+      "upstream": "0x17e9b48",
+      "corrected": "0x17e9b88",
+      "context": [
+        "0x17e9b80: add x8, x8, #0xe20",
+        "0x17e9b84: ldr x2, [x8, w2, sxtw #3]",
+        "0x17e9b88: b #0x17e9b94",
+        "0x17e9b8c: adrp x2, #0x42b1000"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "upstream": "0x17e0a0c",
+      "corrected": "0x17e0a4c",
+      "context": [
+        "0x17e0a44: add x8, x8, #0x240",
+        "0x17e0a48: ldr x25, [x8, x26, lsl #3]",
+        "0x17e0a4c: mov x0, x25",
+        "0x17e0a50: strb wzr, [sp, #0x230]"
+      ]
+    },
+    {
+      "file": "src/cloning/weapons.rs",
+      "upstream": "0x17e094c",
+      "corrected": "0x17e098c",
+      "context": [
+        "0x17e0984: b.ls #0x17e098c",
+        "0x17e0988: ldr x22, [x9, w25, uxtw #3]",
+        "0x17e098c: ldarb w8, [x8]",
+        "0x17e0990: sxtw x26, w23"
+      ]
+    },
+    {
+      "file": "src/create_agent.rs",
+      "upstream": "0x4f81e20",
+      "corrected": "0x4f80e20"
+    },
+    {
+      "file": "src/create_agent.rs",
+      "upstream": "0x5186bd0",
+      "corrected": "0x5185bd0"
+    },
+    {
+      "file": "src/create_agent.rs",
+      "upstream": "0x5189240",
+      "corrected": "0x5188240"
+    },
+    {
+      "file": "src/utils.rs",
+      "upstream": "0x5327cd0",
+      "corrected": "0x5326cd0"
+    },
+    {
+      "file": "src/utils.rs",
+      "upstream": "0x5332f20",
+      "corrected": "0x5331f20"
+    },
+    {
+      "file": "src/effects.rs",
+      "upstream": "0x5334920",
+      "corrected": "0x5333920"
+    },
+    {
+      "file": "crates/resources/src/types.rs",
+      "upstream": "0x5332f20",
+      "corrected": "0x5331f20"
+    },
+    {
+      "file": "crates/resources/src/types.rs",
+      "upstream": "0x5332f28",
+      "corrected": "0x5331f28"
+    }
+  ]
+}

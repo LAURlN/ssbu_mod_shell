@@ -1,0 +1,910 @@
+{
+  "date": "2026-09-30",
+  "tool": "tools/audit_hero_neutral_b.py",
+  "tool_version": "1.0.0",
+  "tool_sha256": "68d76b9935d4485596182bc84c32c5f9f1fbeccb4c0d70070d5fba11af0da8d0",
+  "game_version": "13.0.4",
+  "donor": "brave",
+  "recipient": "elight c06/c07",
+  "scope": "Hero neutral-B mechanics, animations, fireball and effects; omit mana",
+  "classification": [
+    2,
+    3,
+    5,
+    6
+  ],
+  "evidence_tier": "B (offline inventory only)",
+  "acmd_upstream": {
+    "url": "https://github.com/WuBoytH/SSBU-Dumped-Scripts",
+    "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+    "verification": "refs/brave_special_n/acmd_pin.json",
+    "sha256": "3820922748992db89a2ebe72a42d08246280ae741e05b8c97cbb29d8f72105dd"
+  },
+  "inputs": {
+    "dumps/arc/effect/fighter/brave/ef_brave.eff": {
+      "sha256": "bd843f6d2f24e917472d4be04a20bcdd8d01fc81de50a97117473cf52ba4dee1",
+      "bytes": 16372904
+    },
+    "dumps/arc/fighter/brave/model/body/c00/model.nusktb": {
+      "sha256": "1842a984acc4ba8e5cba2c0b25114621f559e8f15f54d289c7f084e6c025ca04",
+      "bytes": 42680
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c00/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c01/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c02/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c03/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c04/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c05/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c06/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/dark_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/light_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/metamon_model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.nuhlpb": {
+      "sha256": "64079aba3b227a998680900c62acb2fbbf5e5475b1291dc0cbbe31ed86e797f5",
+      "bytes": 88
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.numatb": {
+      "sha256": "7c6693dd436ac9234057d9f9f314838db5752d9cfa88438b9dd07a99c5eafd10",
+      "bytes": 40
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.numdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.nusktb": {
+      "sha256": "cb28fd55d02d436bc793ac4e9e50ae978ea1464195b2e1dd93ce5297c8ce020f",
+      "bytes": 1232
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.nusrcmdlb": {
+      "sha256": "4e9611e2e171d78816bfe69c67c7e636512339b3c970b0cd5c92cf02c25731bb",
+      "bytes": 144
+    },
+    "dumps/arc/fighter/brave/model/fireball/c07/model.xmb": {
+      "sha256": "062872aab48848c9bd8522ddf5a100b3830734d72b99fa0b20f6db8d3b9eb2ab",
+      "bytes": 1312
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairn1.nuanmb": {
+      "sha256": "f829b15ab1ab82546348485e3c89e11df591c27d1dbbcf8bc3acc56a63c06dcf",
+      "bytes": 68792
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairn2.nuanmb": {
+      "sha256": "59860ebef925381bc2065c77b9cd5927c034e5db09983b747f511fc9191185aa",
+      "bytes": 73024
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairn3.nuanmb": {
+      "sha256": "b35353b1477c564168800a1febf12d6358f2949f8ea414f4456623ced4ba9a6f",
+      "bytes": 78672
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairncancel.nuanmb": {
+      "sha256": "42faf506e78959a59a837e0eab74d2f48da4a3f5e32a84577478346fe2fe31cf",
+      "bytes": 55336
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairnhold.nuanmb": {
+      "sha256": "105685443e6ceb18ec4eb502c4f38cb57d7f97e54fd04be18b63b9146cef8e8d",
+      "bytes": 73808
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialairnstart.nuanmb": {
+      "sha256": "a545e18212f8e875f014fb4a417eefdf5aff17319fdaa1af6a6cae60a2e553ba",
+      "bytes": 46072
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialn1.nuanmb": {
+      "sha256": "bddb9054165ecb3d5e64aa24e3af1205cd46a00e287c7b6bffff8cbb3fd5b16e",
+      "bytes": 70080
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialn2.nuanmb": {
+      "sha256": "ceb5b1b8ec130aa36fe46fa786900a0e52c88ede68df6fe3721706ef694bae59",
+      "bytes": 71216
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialn3.nuanmb": {
+      "sha256": "1c3ceefb84bc641ba66a791cb656d5c4fc49bc807366f0cd8cf591530b226e8e",
+      "bytes": 83864
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialncancel.nuanmb": {
+      "sha256": "cfea05a952f28a55dc869d477c19957f73858ec1501cc0fb2aef6b0f4352d9da",
+      "bytes": 43632
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialnhold.nuanmb": {
+      "sha256": "8218ccc8186f7dfc4671c398f46fc2c0aa196d2ee5abfc35c3826db491124f7d",
+      "bytes": 72584
+    },
+    "dumps/arc/fighter/brave/motion/body/c00/d00specialnstart.nuanmb": {
+      "sha256": "170a321a81c6b69ec24ad4f4f6b79c1cf804c88e7f2ee6fdff84eaa547542851",
+      "bytes": 37272
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c00/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c00/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c01/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c01/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c02/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c02/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c03/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c03/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c04/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c04/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c05/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c05/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c06/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c06/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c07/d00specialn2.nuanmb": {
+      "sha256": "d2a7eb5062c99540e051e337af0cca65b30d3d8588007ed6b1020e571f3f0353",
+      "bytes": 1208
+    },
+    "dumps/arc/fighter/brave/motion/fireball/c07/motion_list.bin": {
+      "sha256": "cf04d9aa6ea879a360d42d461e02c79ced90a0acdb771c4f642cec351c9a0dae",
+      "bytes": 276
+    },
+    "dumps/arc/fighter/brave/param/vl.prc": {
+      "sha256": "dafa43c632c8562e8f6835f6162a5a04ecb817eb5dec7b3ed75755c5d9dd4d76",
+      "bytes": 18685
+    },
+    "dumps/arc/fighter/common/param/fighter_param.prc": {
+      "sha256": "87fcf45c456d36d3f8a29a5a6d1f847124d55f8fb3db84efdc8f1490edad55c2",
+      "bytes": 176604
+    },
+    "dumps/arc/fighter/elight/model/body/c06/model.nusktb": {
+      "sha256": "5b6fbbe6f702e5ab9b14b208899799ec99f13c15e88611017b2547ac3de93f03",
+      "bytes": 48136
+    },
+    "dumps/arc/fighter/elight/motion/body/c00/motion_list.bin": {
+      "sha256": "0b091450a00bdb2b382c59e965997f96d2a387dd2581d7d492183dd69d56c2f7",
+      "bytes": 43712
+    },
+    "dumps/arc/prebuilt/nro/release/lua2cpp_brave.nro": {
+      "sha256": "dc5edcde314f0c461ba0ab08d9e9deef5ede9d5b4ed324141678b9966d43b7a2",
+      "bytes": 2985984
+    },
+    "dumps/arc/prebuilt/nro/release/lua2cpp_common.nro": {
+      "sha256": "43876f961a80e413370629d32c23af9de6e4cc26b448bab88d5433714a566097",
+      "bytes": 8466432
+    },
+    "dumps/arc/sound/bank/fighter/se_brave.nus3audio": {
+      "sha256": "0e66f7883e99c4bd8683425fc33fa66ae91ff8473655f9d8423f6bfaf7aae7ac",
+      "bytes": 4359440
+    },
+    "dumps/arc/sound/bank/fighter/se_brave.nus3bank": {
+      "sha256": "337999c6b4baa2b6d27f787187afe5ea291a91d840f6214aaf339dec8f63281d",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c00.nus3audio": {
+      "sha256": "0e66f7883e99c4bd8683425fc33fa66ae91ff8473655f9d8423f6bfaf7aae7ac",
+      "bytes": 4359440
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c00.nus3bank": {
+      "sha256": "337999c6b4baa2b6d27f787187afe5ea291a91d840f6214aaf339dec8f63281d",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c00.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c01.nus3audio": {
+      "sha256": "e5b53644bc0069a7aa1bc5cb3865ac5966d78de9d44a7755833265ecf67eef5e",
+      "bytes": 4353568
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c01.nus3bank": {
+      "sha256": "1f588f5e5beb1963b8cff5b2a00793777d359df4335fcc79007716def5ae5ab0",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c01.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c02.nus3audio": {
+      "sha256": "e0791d49b8b395f2e51eb8d5e0c54d3d53c3f0d0477870d6a11cedb7e383debd",
+      "bytes": 4353456
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c02.nus3bank": {
+      "sha256": "341ef2d79973172281b322ce03f0f1989b103e52a04e0530f8177294cfb203af",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c02.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c03.nus3audio": {
+      "sha256": "97ca2ac930fabf05957f3cb398b5fe09c4b0cb533b1571e6b59b1dbb55ac498e",
+      "bytes": 4312272
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c03.nus3bank": {
+      "sha256": "d0c9a71cbdcc766d89a81aecfea2885c724b39965ff62f446199d4590555b040",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c03.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c04.nus3audio": {
+      "sha256": "0e66f7883e99c4bd8683425fc33fa66ae91ff8473655f9d8423f6bfaf7aae7ac",
+      "bytes": 4359440
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c04.nus3bank": {
+      "sha256": "337999c6b4baa2b6d27f787187afe5ea291a91d840f6214aaf339dec8f63281d",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c04.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c05.nus3audio": {
+      "sha256": "e5b53644bc0069a7aa1bc5cb3865ac5966d78de9d44a7755833265ecf67eef5e",
+      "bytes": 4353568
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c05.nus3bank": {
+      "sha256": "1f588f5e5beb1963b8cff5b2a00793777d359df4335fcc79007716def5ae5ab0",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c05.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c06.nus3audio": {
+      "sha256": "e0791d49b8b395f2e51eb8d5e0c54d3d53c3f0d0477870d6a11cedb7e383debd",
+      "bytes": 4353456
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c06.nus3bank": {
+      "sha256": "341ef2d79973172281b322ce03f0f1989b103e52a04e0530f8177294cfb203af",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c06.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c07.nus3audio": {
+      "sha256": "97ca2ac930fabf05957f3cb398b5fe09c4b0cb533b1571e6b59b1dbb55ac498e",
+      "bytes": 4312272
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c07.nus3bank": {
+      "sha256": "d0c9a71cbdcc766d89a81aecfea2885c724b39965ff62f446199d4590555b040",
+      "bytes": 82776
+    },
+    "dumps/arc/sound/bank/fighter/se_brave_c07.tonelabel": {
+      "sha256": "9b2cdfd37a1a4c8132a41f6f0234840626194f82bb3758666b57bc4f53e4028b",
+      "bytes": 1408
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave.nus3audio": {
+      "sha256": "6bc7af8fbbad90ae5d25eca363961a5d1d25e11f84c700f8e75b5d6785647556",
+      "bytes": 865152
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave.nus3bank": {
+      "sha256": "e7d6e45c8100e981ca6574f9818181c3d00577a2f64b2e91203be4ba06a6dea1",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave.tonelabel": {
+      "sha256": "2d8704eebcf53348fb7421ea6b3a913c735b902e1c7decfd104096227a282a50",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c00.nus3audio": {
+      "sha256": "6bc7af8fbbad90ae5d25eca363961a5d1d25e11f84c700f8e75b5d6785647556",
+      "bytes": 865152
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c00.nus3bank": {
+      "sha256": "e7d6e45c8100e981ca6574f9818181c3d00577a2f64b2e91203be4ba06a6dea1",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c00.tonelabel": {
+      "sha256": "2d8704eebcf53348fb7421ea6b3a913c735b902e1c7decfd104096227a282a50",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c01.nus3audio": {
+      "sha256": "f15c4006384c21e043892f16b697dfd13e41dc98bed38a71d17bceb918a0d5f2",
+      "bytes": 914752
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c01.nus3bank": {
+      "sha256": "e5a4f8d4f6fce8cb240ae448bb079a4e0290bc1930b0c8b3632ccb24537d8a51",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c01.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c02.nus3audio": {
+      "sha256": "6a2f754e7d4f7f3e3931940091a553cd3456a93bff1f4e90812a0cb4ed531561",
+      "bytes": 881408
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c02.nus3bank": {
+      "sha256": "0cd8dd24dcaec90d010ab1c8f8ca936a888d8f5c54572e1db794e6ff0a75965a",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c02.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c03.nus3audio": {
+      "sha256": "a1e87250371383741bcaf40e5346b7241f90d9d0714f847bbdb761df2be3293d",
+      "bytes": 1001904
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c03.nus3bank": {
+      "sha256": "9ce5f5bd53421a16f4c16a60b242443514405b291bd7eada62333f382cfc1740",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c03.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c04.nus3audio": {
+      "sha256": "6bc7af8fbbad90ae5d25eca363961a5d1d25e11f84c700f8e75b5d6785647556",
+      "bytes": 865152
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c04.nus3bank": {
+      "sha256": "e7d6e45c8100e981ca6574f9818181c3d00577a2f64b2e91203be4ba06a6dea1",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c04.tonelabel": {
+      "sha256": "2d8704eebcf53348fb7421ea6b3a913c735b902e1c7decfd104096227a282a50",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c05.nus3audio": {
+      "sha256": "f15c4006384c21e043892f16b697dfd13e41dc98bed38a71d17bceb918a0d5f2",
+      "bytes": 914752
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c05.nus3bank": {
+      "sha256": "e5a4f8d4f6fce8cb240ae448bb079a4e0290bc1930b0c8b3632ccb24537d8a51",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c05.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c06.nus3audio": {
+      "sha256": "6a2f754e7d4f7f3e3931940091a553cd3456a93bff1f4e90812a0cb4ed531561",
+      "bytes": 881408
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c06.nus3bank": {
+      "sha256": "0cd8dd24dcaec90d010ab1c8f8ca936a888d8f5c54572e1db794e6ff0a75965a",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c06.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c07.nus3audio": {
+      "sha256": "a1e87250371383741bcaf40e5346b7241f90d9d0714f847bbdb761df2be3293d",
+      "bytes": 1001904
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c07.nus3bank": {
+      "sha256": "9ce5f5bd53421a16f4c16a60b242443514405b291bd7eada62333f382cfc1740",
+      "bytes": 49912
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_c07.tonelabel": {
+      "sha256": "5d13ed16937443429e58ecf6072d12c922235eeb56a9673ba7c1c217eb34c799",
+      "bytes": 648
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c00.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c00.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c00.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c01.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c01.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c01.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c02.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c02.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c02.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c03.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c03.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c03.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c04.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c04.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c04.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c05.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c05.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c05.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c06.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c06.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c06.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c07.nus3audio": {
+      "sha256": "246443dee0e2e14fb25cde185c766b3158faeb0c9bf2c9cc74173db60fcaf61e",
+      "bytes": 221104
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c07.nus3bank": {
+      "sha256": "9588bcda6253d23ad0e3769d5873607100ae961a8bf0815c54999480ef76a6da",
+      "bytes": 24872
+    },
+    "dumps/arc/sound/bank/fighter_voice/vc_brave_cheer_c07.tonelabel": {
+      "sha256": "02fe8e53e9857f75e3c3356c960bf0cc004ccb31253ce6b4a931d28b8e4acb49",
+      "bytes": 16
+    },
+    "dumps/scripts/ParamLabels.csv": {
+      "sha256": "6ae7f792609612370e6b9244e1d6986ebd8ced9bbb77fad49de8c568919344f4",
+      "bytes": 3099694
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirN1.txt": {
+      "sha256": "c1a62be5593b17902e61570dbd5bb176d5954da06bd0ce8d2b0e7d70a3e10253",
+      "bytes": 13862
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirN2.txt": {
+      "sha256": "5edcf87223f6bbfb6e1913d1e2cfac6f852ebb7b8dcad0fa8c3b0a64cd0d2c4c",
+      "bytes": 14252
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirN3.txt": {
+      "sha256": "65e4f07baa3705dc6e968c601a2b5b644c5c695ecc3b1428d33da390b09f09e8",
+      "bytes": 15612
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirNCancel.txt": {
+      "sha256": "43378fee51841fa6928f90128aa0158f28cc2daf72713bbecdaed6e2d3838647",
+      "bytes": 686
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirNHold.txt": {
+      "sha256": "6aef56f724e21969d962d0a14a8ec49a2f7ed07a9759de785366a7ddbaee7137",
+      "bytes": 1625
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialAirNStart.txt": {
+      "sha256": "695b82b68d5762ae1ce078a2251e9f1f7392e4488e3729281d68a9c11c4a4961",
+      "bytes": 263
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN1.txt": {
+      "sha256": "b264b61f64acc20186df5a959506c897d9113c2b2f63701329767c191e6e310a",
+      "bytes": 14054
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN1Default.txt": {
+      "sha256": "d0fa11d30452843f1e3dc48e10bf55b24c54bef660d8d77337933ffb61a1714d",
+      "bytes": 880
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN1usen.txt": {
+      "sha256": "54131e8bf8f1c4f371901d7f0f7eb04d140407be24a5c7e57e09a0c38819eab2",
+      "bytes": 878
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN2.txt": {
+      "sha256": "cc6aedc3a3d07aef1a8023aa89010486c5e3ee129042783ee47930cdc8067c09",
+      "bytes": 14401
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN2Default.txt": {
+      "sha256": "e02d0e94a8cc9d97d2d654d913993e664456dec821962f33a4dc5eeb9e0e347d",
+      "bytes": 881
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN2usen.txt": {
+      "sha256": "9cc2615477b2df9aea87102730d561753f1b6a3898cfadd0a159fcb72284d231",
+      "bytes": 879
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN3.txt": {
+      "sha256": "b6e3cd626819d5f08882ce44416c3f3b3ccd6fc806ff8290d9923715e83eaf68",
+      "bytes": 15663
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN3Default.txt": {
+      "sha256": "64b7a0291bcc1b918df48b0a1f5ba02617fbc7ef548a54193e5f59824b4b6a87",
+      "bytes": 954
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialN3usen.txt": {
+      "sha256": "0f6915246ceccecda9213fa17eaaf150c806f24e81f5f409d12e4b7ca5a88246",
+      "bytes": 952
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialNCancel.txt": {
+      "sha256": "3b9f0436b8885180d7fb07103cd97fc23afb7b0d9b8985d021684d812de8d3be",
+      "bytes": 683
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialNHold.txt": {
+      "sha256": "47e27ddb9bf1af365181a2c921bba7373e1220da5ea6fd20e1c2efcf5f7bb288",
+      "bytes": 2024
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialNHoldM.txt": {
+      "sha256": "13304e0963418b52cd4c222d5b8d0172ac50facb3df7f147d1a14efd23b5e099",
+      "bytes": 444
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialNHoldMax.txt": {
+      "sha256": "d93d3c5a6164fef2ad9cdd37c03c2e25e09fe202cc1188017b0bb4bf89619549",
+      "bytes": 373
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave/SpecialNStart.txt": {
+      "sha256": "5cd060d5cbf6988f1155d8066e7efe80bb668d72382e3975dadad04ff420b61e",
+      "bytes": 260
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/BurstL.txt": {
+      "sha256": "0b4180ff8168e0175078fc50cb211b7a00ae00fed8e5993002c4e7d8edbc7444",
+      "bytes": 2852
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/BurstM.txt": {
+      "sha256": "6645509c0f324caaff8b040e22b2665b1836d3cbbb1427953d676f6fa74346b6",
+      "bytes": 670
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/BurstS.txt": {
+      "sha256": "fbd2ce64c803179d02352e65fe2928a6e8c197e7561b98783332c56d27080752",
+      "bytes": 620
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/SpecialN1.txt": {
+      "sha256": "f1dfebe7be11251b5711d1148d9798b3064158a48abb419fc92a1bc3969a107b",
+      "bytes": 1326
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/SpecialN2.txt": {
+      "sha256": "509e42f8157d1f1a689cad387aa1a0a9f80fd143c10c4012056ef9cfd170cfc4",
+      "bytes": 2072
+    },
+    "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_brave/brave_fireball/SpecialN3.txt": {
+      "sha256": "eb1600726016d902cc9d4d3da4c917cec9a6ed26be0ab5ee1e5f6464139c9a18",
+      "bytes": 1286
+    },
+    "refs/brave_special_n/motion_list.bin": {
+      "sha256": "300bb59a9ff9a5cec74f6f315a93ca5673f96a14ebbe871e932f2dc37579888f",
+      "bytes": 48448
+    },
+    "refs/brave_special_n/sound/arc/sound/sequence/fighter/brave.sqb": {
+      "sha256": "46167a0cec8c8452d527b25dd5afafa49fe8162341fc437e53a9c0041fafc3fa",
+      "bytes": 1392
+    }
+  },
+  "missing_arc_paths": [],
+  "derived_evidence": {
+    "neutral_b_status.c": "24582edff4116411114d68866bc1764a0f1da9c83bcd0a77c65d5e520d6a24ac",
+    "shoot_control.c": "4e4b7458ffdb7ab5640de8ddb461acb28cd61daa62f2f6401ba72f1566c0927a",
+    "fireball_native.json": "9f9dad358eb5db06a099d4e617ac303331efcac368ee7675c8774f735538650e",
+    "fireball_init.asm": "15252dc14ca37c82f789c24dfb2ecd2cdec30db1da61e31681cd2fc820363d5c"
+  },
+  "native_recovery": {
+    "method": "tools/nro_decomp/run_ghidra.sh; Ghidra 11.1.2; BinaryLoader base 0; annotate_c.py",
+    "selection": "status_table.txt callbacks, then referenced FUN_/LAB_ and void-pointer callbacks from the first pass",
+    "output": "refs/brave_special_n/neutral_b_status.c",
+    "limitations": "Decompiler loses Lua-stack arguments and some hash40 length bytes; cross-check disassembly before porting. Further helper tracing may still be needed."
+  }
+}

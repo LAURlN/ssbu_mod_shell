@@ -1,0 +1,17 @@
+{
+  "sdroot_count": 1235,
+  "copied_donor_count": 1143,
+  "still_missing": 18,
+  "complete_source": false,
+  "motion_lists_retargeted": 15,
+  "motion_lists_missing_clips": 0,
+  "linter_exit": 0,
+  "zip_count": 0,
+  "runtime_sha256": "32b111573bfbe76348115f3975e33b03cedf01bef14b4914ec8f25d17cdb0c3e",
+  "probe_sha256": "65a9c026e7fa4efe1063316ceb13dd5491b67a7a9beee83bf9e8ccaad8020029",
+  "manifest_runtime_sha256": "32b111573bfbe76348115f3975e33b03cedf01bef14b4914ec8f25d17cdb0c3e",
+  "manifest_probe_sha256": "65a9c026e7fa4efe1063316ceb13dd5491b67a7a9beee83bf9e8ccaad8020029",
+  "output_hash_matches_manifest": true,
+  "p6_runtime_marker": true,
+  "p6_probe_marker": true
+}

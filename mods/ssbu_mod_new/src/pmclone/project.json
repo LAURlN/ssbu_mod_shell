@@ -1,0 +1,16 @@
+{
+  "name": "Pyra & Mythra Independent Clone",
+  "namespaces": {
+    "eflame": "cflame",
+    "elight": "clight",
+    "element": "clement"
+  },
+  "costumes": 8,
+  "roster_entries": 1,
+  "require_separate_fighter_code": true,
+  "require_separate_assets": true,
+  "status": "private_loader_console_test_passed_not_playable",
+  "shared_engine_scope": "General Smash engine APIs remain shared. Character-specific functions, assets, parameters, articles and transformation state require independent ownership.",
+  "notes": "This is a new project. No prior experimental plugins or runtime patches are included. Namespace names are proposed, not registered game kinds.",
+  "handoff": "HANDOFF.md"
+}

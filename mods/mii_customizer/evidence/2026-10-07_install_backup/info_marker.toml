@@ -1,0 +1,3 @@
+display_name = "Mii Customizer: edit menu entry + boot marker (0.4.0)"
+version = "0.4.0"
+description = "Diagnostic variant. Same entry block as variant_entry (Favorite on Headgear row -> exit value 7), plus one unconditional marker: the Try button (parts btn_other_try) is hidden when the script initialises, the same statement the shipped FROM_AMIIBO branch runs. With this chunk loaded the edit menu opens without its Try button; with the stock chunk the button is there - so a console boot tells 'loaded' from 'not loaded' without pressing anything. Replaces ui/script_patch/chara_make/make_mii_edit_actor.lc (generated from make_mii_edit_actor_entry_marker.lua). Staged only; not installed, not run, not tested on hardware."

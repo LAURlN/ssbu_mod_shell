@@ -1,0 +1,204 @@
+{
+ "ground": {
+  "file": "ground.rs",
+  "sha256": "9bc1350afd61d042731f563fdecaba674e042b5298dfa10b89c070e2baa05492",
+  "statuses": [
+   "Attack11",
+   "Attack12",
+   "Attack13",
+   "AttackDash",
+   "AttackHi3",
+   "AttackHi4",
+   "AttackHi4Charge",
+   "AttackLw3",
+   "AttackLw4",
+   "AttackLw4Charge",
+   "AttackS3",
+   "AttackS3Hi",
+   "AttackS3Lw",
+   "AttackS4",
+   "AttackS4Charge",
+   "DownAttackU",
+   "DownAttackD"
+  ],
+  "donors": {
+   "Attack11": [
+    "Attack11",
+    "Attack12",
+    "Attack13"
+   ],
+   "AttackDash": [
+    "AttackDash"
+   ],
+   "AttackHi3": [
+    "AttackHi3"
+   ],
+   "AttackHi4": [
+    "AttackHi4"
+   ],
+   "AttackHi4Charge": [
+    "AttackHi4Charge"
+   ],
+   "AttackLw3": [
+    "AttackLw3"
+   ],
+   "AttackLw4": [
+    "AttackLw4"
+   ],
+   "AttackLw4Charge": [
+    "AttackLw4Charge"
+   ],
+   "AttackS3": [
+    "AttackS3",
+    "AttackS3Hi",
+    "AttackS3Lw"
+   ],
+   "AttackS4": [
+    "AttackS4"
+   ],
+   "AttackS4Charge": [
+    "AttackS4Charge"
+   ],
+   "DownAttackD": [
+    "DownAttackD"
+   ],
+   "DownAttackU": [
+    "DownAttackU"
+   ]
+  }
+ },
+ "aerial": {
+  "file": "aerial.rs",
+  "sha256": "6c4a9589625f066b555d81001dacdce92b30d9da5468056cbef95cdccb47f7a9",
+  "statuses": [
+   "AttackAirN",
+   "AttackAirB",
+   "AttackAirF",
+   "AttackAirHi",
+   "AttackAirLw"
+  ],
+  "donors": {
+   "AttackAirB": [
+    "AttackAirB"
+   ],
+   "AttackAirF": [
+    "AttackAirF"
+   ],
+   "AttackAirHi": [
+    "AttackAirHi"
+   ],
+   "AttackAirLw": [
+    "AttackAirLw"
+   ],
+   "AttackAirN": [
+    "AttackAirN"
+   ]
+  }
+ },
+ "rapid": {
+  "file": "rapid.rs",
+  "sha256": "942f2f10ad107e5b3f4fb7f463b9e2925f1c4c98bc1a1f02232f84e62778dd3d",
+  "statuses": [
+   "Attack100",
+   "Attack100Sub",
+   "Attack100End"
+  ],
+  "donors": {
+   "Attack100": [
+    "Attack100"
+   ],
+   "Attack100End": [
+    "Attack100End"
+   ],
+   "Attack100Sub": [
+    "Attack100Sub"
+   ]
+  }
+ },
+ "grab": {
+  "file": "grab.rs",
+  "sha256": "ae75f797bb3ea19fd9d4b49d9efc9c7646b0d38ef3f71f825caf3b92e2bffa30",
+  "statuses": [
+   "Catch",
+   "CatchAttack",
+   "CatchDash",
+   "CatchTurn",
+   "CatchWait",
+   "ThrowF",
+   "ThrowB",
+   "ThrowHi",
+   "ThrowLw"
+  ],
+  "donors": {
+   "Catch": [
+    "Catch"
+   ],
+   "CatchAttack": [
+    "CatchAttack"
+   ],
+   "CatchDash": [
+    "CatchDash"
+   ],
+   "CatchTurn": [
+    "CatchTurn"
+   ],
+   "CatchWait": [
+    "CatchWait"
+   ],
+   "ThrowB": [
+    "ThrowB"
+   ],
+   "ThrowF": [
+    "ThrowF"
+   ],
+   "ThrowHi": [
+    "ThrowHi"
+   ],
+   "ThrowLw": [
+    "ThrowLw"
+   ]
+  }
+ },
+ "special": {
+  "file": "special.rs",
+  "sha256": "77107211b8e4f2897277d665cd6ef593e40b320bf68de4b8221501ddd513e947",
+  "statuses": [
+   "SpecialHi",
+   "SpecialAirHi",
+   "SpecialHiOpen",
+   "SpecialHiClose"
+  ],
+  "donors": {
+   "SpecialAirHi": [
+    "SpecialAirHi"
+   ],
+   "SpecialHi": [
+    "SpecialHi"
+   ],
+   "SpecialHiClose": [
+    "SpecialHiClose"
+   ],
+   "SpecialHiOpen": [
+    "SpecialHiOpen"
+   ],
+   "gamewatch_parachute/SpecialAirHi": [
+    "eflame_parachute"
+   ],
+   "gamewatch_parachute/SpecialHi": [
+    "eflame_parachute"
+   ],
+   "gamewatch_parachute/SpecialHiClose": [
+    "eflame_parachute"
+   ],
+   "gamewatch_parachute/SpecialHiOpen": [
+    "eflame_parachute"
+   ],
+   "gamewatch_rescue/SpecialAirHi": [
+    "eflame_rescue"
+   ],
+   "gamewatch_rescue/SpecialHi": [
+    "eflame_rescue"
+   ]
+  }
+ }
+}

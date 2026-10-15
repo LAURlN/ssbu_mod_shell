@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02",
+  "repo": "https://github.com/KillzXGaming/EffectLibrary",
+  "commit": "d5491138d645221ec92189eeff3ded8c43fd0a1a",
+  "license": "MIT",
+  "path": "refs/brave_special_n/effect_library",
+  "source_tree_sha256": "fcba90ba8938515b50e303eaedf930a909d22a2c2a1a446b910ae2d9acbe66f2",
+  "built_by": "tools/build_hero_effect_converter.py --from-source",
+  "hardware_validated": false
+}

@@ -1,0 +1,14 @@
+{
+  "decoded_nutexb": 75,
+  "decoded_portraits": 43,
+  "particle_emitters": 594,
+  "decoded_particle_rgb_textures": 18,
+  "vanilla_c00_c05_effects": "no shared overrides; vanilla bank and trails used",
+  "c06_effects": "bank and trails byte-identical to original purple donor",
+  "c07_effects": "rebuilt from scratch using c06 dark effects: white/light gold slashes and light pink sparkles/switch",
+  "recoloured_emitters": {
+    "c07": 409
+  },
+  "particle_alpha_and_timing": "byte-identical to donor and vanilla",
+  "plugin_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b"
+}

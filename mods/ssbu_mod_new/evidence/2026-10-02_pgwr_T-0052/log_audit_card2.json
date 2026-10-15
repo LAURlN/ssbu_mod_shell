@@ -1,0 +1,63 @@
+{
+  "file": "evidence/2026-10-02_pgwr_T-0052/pgwr_hero_s_log_card2_2026-10-02.txt",
+  "sha256": "ff7afc8cdef4dacd692c050eba6064967023078210c3acb2c61e5f853d94e48f",
+  "lines": 3066,
+  "counts": {
+    "boot": 8,
+    "registered": 8,
+    "entry": 196,
+    "to_kazap": 15,
+    "activate": 2,
+    "spawn_begin": 30,
+    "spawn_complete": 30,
+    "bolt_main": 30,
+    "bolt_sample": 32,
+    "lightning_event": 30,
+    "arrival_raised": 0,
+    "arrival_suppressed": 0,
+    "map": 900,
+    "arrived": 0,
+    "arrived_no_state": 0,
+    "append": 0,
+    "end_of_clip": 5,
+    "fail": 0
+  },
+  "boots": [
+    "0.20.15",
+    "0.20.16",
+    "0.20.16",
+    "0.20.16",
+    "0.20.16",
+    "0.20.16",
+    "0.20.16",
+    "0.20.17"
+  ],
+  "bolt_lives": [
+    "0",
+    "1",
+    "10",
+    "15",
+    "2",
+    "20",
+    "25",
+    "30",
+    "5"
+  ],
+  "thresholds": [
+    "300.0"
+  ],
+  "owner_ok_values": [
+    "true"
+  ],
+  "head_range": null,
+  "tail_range": null,
+  "dir_values": [],
+  "max_move_dist": 0.0,
+  "min_move_dist": 0.0,
+  "move_dist_samples": 32,
+  "max_spawn_count": 2,
+  "arrived_distances": [],
+  "fail_lines": [],
+  "tool": "audit_hero_side_b_log.py",
+  "version": "1.1.0"
+}

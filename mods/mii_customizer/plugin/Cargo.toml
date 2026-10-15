@@ -1,0 +1,37 @@
+[package]
+name = "mii_customizer"
+version = "0.10.0"
+authors = ["Space Bunny Alpha", "Claude Opus 5.5"]
+edition = "2018"
+
+# Super Smash Bros. Ultimate title ID. cargo-skyline reads this to name the
+# build target; it is metadata only and does not pull in a dependency.
+[package.metadata.skyline]
+titleid = "01006A800016E000"
+
+[lib]
+name = "mii_customizer"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Four git dependencies, deliberately WITHOUT a `rev`, exactly as the reference plugin
+# documents (mods/ssbu_mod_new/src/pgwr/plugin/Cargo.toml):
+# The exact revisions are held by Cargo.lock (derived from the reference plugin's lock).
+# Do not run `cargo update`:
+#   skyline 0.6.0        skyline-rs    6b52d321275639f26c2371d8142550ba0013a5e4
+#   skyline_smash 0.1.0  skyline-smash 315e4e8bebb460ebb9f02f30f07b0f13883ba3d6
+#   smash_script 0.1.0   smash-script  fdc6144a0a429ce37b304733531edcb76c8f2578
+#   smashline 0.1.0      smashline     be3ef308ed8e479922da192a391e0684184af2af
+skyline = { git = "https://github.com/ultimate-research/skyline-rs" }
+skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash", features = ["weak_l2cvalue"] }
+smash_script = { git = "https://github.com/WuBoytH/smash-script" }
+smashline = { git = "https://github.com/hdr-development/smashline" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = "z"
+panic = "abort"
+lto = true
+codegen-units = 1

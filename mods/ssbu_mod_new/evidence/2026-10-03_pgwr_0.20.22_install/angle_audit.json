@@ -1,0 +1,47 @@
+{
+  "nro": "builds\\pgwr\\0.20.22\\atmosphere\\contents\\01006A800016E000\\romfs\\skyline\\plugins\\libpyra_gamewatch_reskin.nro",
+  "sha256": "3ab31bd34dceda31659f337867fdf67330afa691c50d565b514cd66124dd6772",
+  "values": {
+    "16.3": {
+      "bits": "0x41826666",
+      "literal": 1,
+      "movz": 0
+    },
+    "18.2": {
+      "bits": "0x4191999a",
+      "literal": 1,
+      "movz": 0
+    },
+    "-83.5": {
+      "bits": "0xc2a70000",
+      "literal": 0,
+      "movz": 1
+    }
+  },
+  "baseline": {
+    "nro": "builds\\pgwr\\zapple-mana-hud-0.1.1\\controls\\libpyra_gamewatch_reskin.hud-only.nro",
+    "sha256": "8af1619d2ab2f0c4e335dd8375b9709be3b0d76836d139bd42965fd58479e241",
+    "values": {
+      "16.3": {
+        "bits": "0x41826666",
+        "literal": 0,
+        "movz": 0
+      },
+      "18.2": {
+        "bits": "0x4191999a",
+        "literal": 0,
+        "movz": 0
+      },
+      "-83.5": {
+        "bits": "0xc2a70000",
+        "literal": 0,
+        "movz": 0
+      }
+    }
+  },
+  "absent_from_baseline": [
+    "16.3",
+    "18.2",
+    "-83.5"
+  ]
+}

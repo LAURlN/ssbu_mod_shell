@@ -1,0 +1,35 @@
+{
+  "mod_dir": "builds/.cache/fb-1-littlemac-fist-trails/stage/ultimate/mods/pyra_gamewatch_reskin",
+  "label_count": 93035,
+  "fighters": {
+    "eflame": {
+      "bank_loader_fighter": "eflame",
+      "slots": {},
+      "banks": {
+        "ef_eflame_c06.eff": {
+          "sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+          "bytes": 12239872,
+          "emitters": 97
+        },
+        "ef_eflame_c07.eff": {
+          "sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+          "bytes": 12239872,
+          "emitters": 97
+        }
+      },
+      "banks_loaded_by_this_fighter": {
+        "ef_eflame_c06.eff": true,
+        "ef_eflame_c07.eff": true
+      },
+      "banks_not_loaded_by_any_fighter": []
+    },
+    "littlemac": {
+      "bank_loader_fighter": "littlemac",
+      "slots": {},
+      "banks": {},
+      "banks_loaded_by_this_fighter": {},
+      "banks_not_loaded_by_any_fighter": []
+    }
+  },
+  "cross_slot": {}
+}

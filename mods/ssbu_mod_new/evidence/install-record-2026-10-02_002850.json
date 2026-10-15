@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-02",
+  "project": "pgwr",
+  "task": "T-0042",
+  "installed_by": "Freebuff agent (designated installer for this run), on the user's instruction: build and install all pending changes onto the switch in E: and tell me what to test",
+  "card": "E: (detected as /e by install-to-card.sh; the script does not trust a remembered letter, it identifies the volume by contents)",
+  "package": "builds/pgwr/0.20.16+robot-dtilt.4",
+  "package_nature": "asset-only variant of core 0.20.16; exactly two files differ from 0.20.16 (both c02attacklw3.nuanmb)",
+  "baseline_on_card_before": "0.20.16 (all 1983 mod files and the NRO verified equal to builds/pgwr/0.20.16)",
+  "reskin_nro_sha256": "81460e74313350aaf569ce832045e8586387ab4ddf10e51bfdb690a8d29ef834",
+  "reskin_nro_bytes": 462848,
+  "reskin_nro_changed_this_run": false,
+  "reskin_nro_note": "unchanged from the binary already on the card; no Rust recompiled, no new plugin binary introduced",
+  "one_slot_eff_sha256": "e6e5659de3c95a3ff8484f87bd8ef1c129f6c563290903f9f8b8e95177dda70b",
+  "mod_tree_files": 1983,
+  "mod_tree_sha256": "66e3bc5e2c5f174271fd6d14f2dc3c4f6de4b7ca171f73382f3019d59b20b3f0",
+  "mod_tree_all_byte_identical_to_package": true,
+  "mod_tree_matches_package_manifest_mod_file_hashes": true,
+  "changed_files_vs_installed_baseline": [
+    "fighter/eflame/motion/body/c06/c02attacklw3.nuanmb",
+    "fighter/eflame/motion/body/c07/c02attacklw3.nuanmb"
+  ],
+  "changed_files_sha256": "d30722b5763f7b6e4f9e4d834cf57b91b69befccd5eb4321f8fbf3bdc81f6d19",
+  "protected_plugins": {
+    "libsmashline_plugin.nro": "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7",
+    "libarcropolis.nro": "49b6f634039f0b2f9bd9e28cf0d04bfda16ad5fbef67b3994032cc43d80441a7",
+    "libarc_network.nro": "c7644991dec05224de7c4792e0c8a7b33acd1f1c0711a630df9e1f5ec1a5294e",
+    "libnro_hook.nro": "ca7aec03aee49fea539dcb92569fea5bc5389f77377ba2a30e4d0b7ebd0255e6"
+  },
+  "framework_installation": "OFF (--no-smashline)",
+  "automatic_backup": "evidence/sd-backups/sd-backup-20261002-002850 (261 MB; holds the previous 0.20.16 tree, whose c02attacklw3 clips are f328174c727b7ba77bb47db6db76b4ad4588d8b88ed205e88b2da4d14199d4ab)",
+  "installer_changes_this_run": [
+    "src/pgwr/install-to-card.sh: replaced the `ls -d /[a-z]` volume scan, which returns nothing in Git Bash on Windows and made autodetect fail on this machine, with a mount/df enumeration plus an a-z fallback; the contents-based identity test is unchanged",
+    "src/pgwr/install-to-card.sh: added --reused-nro for asset-only variants that reuse an installed NRO verbatim; it replaces the built-vs-staged check with 'staged NRO must equal the NRO already on the card', and refuses otherwise"
+  ],
+  "installer_negative_control": "A throwaway copy of the package with one byte flipped in the NRO was refused by --reused-nro ('the staged NRO is NOT the one already on the card') and also refused without the flag (no built NRO in the pruned cache). The tampered copy was deleted.",
+  "verification": "Independent re-hash after install, not a re-read of the installer's own output. Card mod tree vs package: 1983/1983 equal, 0 differing, 0 only-card, 0 only-package. Card vs the package MANIFEST's 1983 mod_file_hashes: 0 mismatches. Forward-smash regression control: all four motion kinds decode identically in the candidate and in the installed 0.20.16 tree (cancel 44/0/44/44, flags 0x84, four distinct non-empty game_script words, recipient's stale cancel-43/0x80 readings gone), and the packaged NRO carries all 15 required handler names and all 4 forward-smash sound names.",
+  "source_hash_recheck": "137 manifest source_hashes re-checked: 82 differ only by CRLF/LF normalisation (git checkout artefact on Windows); the single genuine difference is src/pgwr/install-to-card.sh, edited by this run.",
+  "hardware_tested": false,
+  "logging": "Cargo feature 'logging' is off, so this build writes no game log. Absence of pgwr_log.txt output is expected, not a fault.",
+  "unverified": "All behaviour. Mesh deformation, hand-to-hitbox alignment, slope and facing behaviour, recovery feel, and whether the engine routes the Little Mac angled forward smashes (attack_s4_hi/_lw) on this fighter. No console run, no emulator, no test suite - all benched for this task.",
+  "report": "evidence/2026-10-02_pgwr_T-0042/INSTALL.md"
+}

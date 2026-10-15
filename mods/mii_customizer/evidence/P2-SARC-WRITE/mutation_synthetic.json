@@ -1,0 +1,16 @@
+{
+ "archive": "gamedata/mii_customizer/P2-SARC-WRITE/synthetic/synthetic.arc",
+ "changed_members": [
+  "dir/beta.bin"
+ ],
+ "gaps_identical": true,
+ "input_sha256": "6b74214a6c52543d8f821b027a18a244213c34b3998032b0a199949709aa98c7",
+ "member": "dir/beta.bin",
+ "member_size": 512,
+ "metadata_identical": true,
+ "output": "gamedata/mii_customizer/P2-SARC-WRITE/mutated/synthetic.arc",
+ "output_sha256": "55b894f4fd996c560252f7904a58202ec241b27a652603f62577ba1c6cda8fcd",
+ "payload": "gamedata/mii_customizer/P2-SARC-WRITE/synthetic/payload_same.bin",
+ "size_unchanged": true,
+ "unchanged_member_count": 4
+}

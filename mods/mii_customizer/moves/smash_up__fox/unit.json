@@ -1,0 +1,57 @@
+{
+  "entry": "smash_up",
+  "donor": "fox",
+  "display_name": "Fox",
+  "motions": {
+    "mc_fox_attack_hi4": {
+      "kind_hash": "0x1140a2b154",
+      "game_script": "game_mcfoxattackhi4",
+      "game_script_hash": "0x133bc5e305",
+      "expression_script": "expression_mcfoxattackhi4",
+      "expression_script_hash": "0x19068d1738",
+      "sound_script": "sound_mcfoxattackhi4",
+      "sound_script_hash": "0x145f2bfb9b",
+      "effect_script": "effect_mcfoxattackhi4",
+      "effect_script_hash": "0x1530c56de2",
+      "clip": "c01mcfoxattackhi4.nuanmb",
+      "clip_hash": "0x1832844ba4",
+      "flags": "0x0080",
+      "cancel_frame": 56
+    },
+    "mc_fox_attack_hi4_hold": {
+      "kind_hash": "0x160037fbe3",
+      "game_script": "game_mcfoxattackhi4charge",
+      "game_script_hash": "0x19037f9ccd",
+      "expression_script": "expression_mcfoxattackhi4charge",
+      "expression_script_hash": "0x1f743c7832",
+      "sound_script": "sound_mcfoxattackhi4charge",
+      "sound_script_hash": "0x1a0dfd624a",
+      "effect_script": "effect_mcfoxattackhi4charge",
+      "effect_script_hash": "0x1b0abd56e5",
+      "clip": "c01mcfoxattackhi4charge.nuanmb",
+      "clip_hash": "0x1ed38f82a2",
+      "flags": "0x0080",
+      "cancel_frame": 0
+    }
+  },
+  "statuses_taken_over": [
+    {
+      "status_name": "FIGHTER_STATUS_KIND_ATTACK_HI4",
+      "status_kind": 53,
+      "hook": "start_attack_hi4"
+    },
+    {
+      "status_name": "FIGHTER_STATUS_KIND_ATTACK_HI4_HOLD",
+      "status_kind": 52,
+      "hook": "start_attack_hi4_hold"
+    }
+  ],
+  "differences_from_donor": [
+    "Animation: Fox's c04attackhi4 and c04attackhi4charge are retargeted onto the Gunner skeleton (not byte copies); donor-only nodes Face/Jaw/Nose/Reflector/Tail1-3 dropped.",
+    "Sound effect: donor vc_fox_attack06 remapped to recipient seq_miigunner_rnd_attack03",
+    "Sound effect: donor se_fox_smash_h01 remapped to recipient se_miigunner_smash_h01",
+    "Sound effect: donor se_fox_landing01 remapped to recipient se_miigunner_landing01",
+    "Visual effect: donor-only fox_smash_arc omitted per rules (recipient lacks ef_fox.eff bank)",
+    "Timing and hitboxes: donor active frames 8..9 clean hit (16.0%) and 10..11 late hit (11.0%) with FAF 57 replace Gunner vanilla multi-hit up smash"
+  ]
+}

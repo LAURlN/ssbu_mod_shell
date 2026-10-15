@@ -1,0 +1,26 @@
+[
+ {
+  "tag": "make_mii_edit",
+  "member_align": 4,
+  "original_sha256": "f4bf2ef0db472eb341d76c70f3ec770ae58598fff3f53d2aced7170fb4ebf212",
+  "repacked_sha256": "9dce536ee3a4f205ffe857493ea74d439691a0f25bbd295faf79dea2f8dc7eff",
+  "original_size": 927100,
+  "repacked_size": 921812,
+  "byte_equal": false,
+  "membership_equal": true,
+  "member_hashes_equal": true,
+  "repacked_path": "gamedata/mii_customizer/P1-LAYOUT/repacked\\make_mii_edit\\layout.arc"
+ },
+ {
+  "tag": "make_mii_special",
+  "member_align": 4,
+  "original_sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+  "repacked_sha256": "03d528aa9c69662cca6210ef94c54b58a310b36c11bcc371773701e4a3a6b728",
+  "original_size": 723436,
+  "repacked_size": 716700,
+  "byte_equal": false,
+  "membership_equal": true,
+  "member_hashes_equal": true,
+  "repacked_path": "gamedata/mii_customizer/P1-LAYOUT/repacked\\make_mii_special\\layout.arc"
+ }
+]

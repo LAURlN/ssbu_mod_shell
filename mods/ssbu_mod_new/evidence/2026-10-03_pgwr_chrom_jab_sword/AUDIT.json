@@ -1,0 +1,52 @@
+{
+ "baseline": "builds\\pgwr\\dk_cargo-0.1.1-test\\ultimate\\mods\\pyra_gamewatch_reskin",
+ "baseline_files": {
+  "fighter/eflame/motion/esword/c06/motion_list.bin": "8b7be43a2435c97121904c6b6bfaf6f79e80c9fb1bd4b8f8c57afe0cad81cde4",
+  "fighter/eflame/motion/esword/c07/motion_list.bin": "8b7be43a2435c97121904c6b6bfaf6f79e80c9fb1bd4b8f8c57afe0cad81cde4"
+ },
+ "candidate": "scratch\\2026-10-03_jab_sword\\verify\\tree",
+ "checks": 96,
+ "failures": [],
+ "files": {
+  "fighter/eflame/motion/esword/c06/motion_list.bin": "1816a2913b77843312f7d8c19a2497677736721e68fa778b8106341f51f62b2f",
+  "fighter/eflame/motion/esword/c07/motion_list.bin": "1816a2913b77843312f7d8c19a2497677736721e68fa778b8106341f51f62b2f"
+ },
+ "ok": true,
+ "scope": {
+  "added": [],
+  "changed": [
+   "fighter/eflame/motion/esword/c06/motion_list.bin",
+   "fighter/eflame/motion/esword/c07/motion_list.bin"
+  ]
+ },
+ "slots": {
+  "c06": {
+   "entries": 17,
+   "jab_open": {
+    "anim": "0xe50df6cbb",
+    "blend": 6,
+    "flags": 0
+   },
+   "jab_to_open": {
+    "anim": "0x105f36fd98",
+    "blend": 6,
+    "flags": 0
+   },
+   "slot": "c06"
+  },
+  "c07": {
+   "entries": 17,
+   "jab_open": {
+    "anim": "0xe50df6cbb",
+    "blend": 6,
+    "flags": 0
+   },
+   "jab_to_open": {
+    "anim": "0x105f36fd98",
+    "blend": 6,
+    "flags": 0
+   },
+   "slot": "c07"
+  }
+ }
+}

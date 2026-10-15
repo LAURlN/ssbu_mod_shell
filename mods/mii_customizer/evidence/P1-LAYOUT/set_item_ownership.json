@@ -1,0 +1,118 @@
+{
+ "make_mii_edit": {
+  "scanned_members": 111,
+  "matching_members": {
+   "blyt/make_mii_edit.bflyt": {
+    "size": 21004,
+    "sha256": "2668a7ecf146a31e5003df682208d21d3a4cd2d032d4d68e839dfe0853b6dd34",
+    "occurrences": [
+     {
+      "offset": 5148,
+      "name": "set_item_00"
+     },
+     {
+      "offset": 6324,
+      "name": "set_item_01"
+     },
+     {
+      "offset": 7468,
+      "name": "set_item_02"
+     },
+     {
+      "offset": 8628,
+      "name": "set_item_03"
+     },
+     {
+      "offset": 9380,
+      "name": "set_item_04"
+     },
+     {
+      "offset": 13632,
+      "name": "set_item_05"
+     },
+     {
+      "offset": 20508,
+      "name": "set_item_00"
+     },
+     {
+      "offset": 20532,
+      "name": "set_item_01"
+     },
+     {
+      "offset": 20556,
+      "name": "set_item_02"
+     },
+     {
+      "offset": 20580,
+      "name": "set_item_03"
+     },
+     {
+      "offset": 20604,
+      "name": "set_item_04"
+     },
+     {
+      "offset": 20628,
+      "name": "set_item_05"
+     }
+    ],
+    "distinct_offsets_deltas": [
+     24,
+     752,
+     1144,
+     1160,
+     1176,
+     4252,
+     6876
+    ]
+   }
+  }
+ },
+ "make_mii_special": {
+  "scanned_members": 76,
+  "matching_members": {
+   "blyt/make_mii_special.bflyt": {
+    "size": 10408,
+    "sha256": "a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+    "occurrences": [
+     {
+      "offset": 4264,
+      "name": "set_special_item_00"
+     },
+     {
+      "offset": 5036,
+      "name": "set_special_item_01"
+     },
+     {
+      "offset": 5808,
+      "name": "set_special_item_02"
+     },
+     {
+      "offset": 6580,
+      "name": "set_special_item_03"
+     },
+     {
+      "offset": 10140,
+      "name": "set_special_item_00"
+     },
+     {
+      "offset": 10164,
+      "name": "set_special_item_01"
+     },
+     {
+      "offset": 10188,
+      "name": "set_special_item_02"
+     },
+     {
+      "offset": 10212,
+      "name": "set_special_item_03"
+     }
+    ],
+    "distinct_offsets_deltas": [
+     24,
+     772,
+     3560
+    ]
+   }
+  }
+ }
+}

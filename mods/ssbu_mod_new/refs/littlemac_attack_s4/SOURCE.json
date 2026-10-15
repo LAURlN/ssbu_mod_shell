@@ -1,0 +1,112 @@
+{
+  "project": "pgwr",
+  "move": "Little Mac forward smash family (neutral, charge hold, up/down angled) on Pyra c06/c07 reskinned to Mr. Game & Watch",
+  "date": "2026-09-30 (neutral) / 2026-10-01 (angled variants added)",
+  "agent": "Buffy",
+  "recipient": "Pyra c06/c07 (`eflame`) wearing the G&W reskin, on the built grafted skeleton",
+  "provenance": {
+    "donor": "Little Mac, live-extracted from the console 2026-09-30 because `dumps/arc/fighter/littlemac` is empty on disk (0 of its 4290 indexed files)",
+    "fetch": "tools/fetch_arc_files.py --set littlemac_attack_s4",
+    "archive": "atmosphere-arc-13.0.4.zip on the SD card",
+    "rule": "every byte below is the donor's own; nothing is authored, approximated or stand-in (AGENTS.md rule 17)"
+  },
+  "donor_inputs": {
+    "motion_list": "arc/fighter/littlemac/motion/body/c00/motion_list.bin",
+    "clips": [
+      "c03attacks4s.nuanmb",
+      "c03attacks4charge.nuanmb",
+      "c03attacks4hi.nuanmb",
+      "c03attacks4lw.nuanmb"
+    ],
+    "skeleton": "arc/fighter/littlemac/model/body/c00/model.nusktb",
+    "effect_bank": "arc/effect/fighter/littlemac/ef_littlemac.eff",
+    "banks": ["se_littlemac_c00", "vc_littlemac_c00"],
+    "all_hashes": "pinned in src/pgwr/tools/build_littlemac_fsmash.py::PINS and tools/merge_donor_sound.py"
+  },
+  "acmd_sources": {
+    "neutral": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_littlemac/littlemac/AttackS4.txt, AttackS4Charge.txt",
+    "angled": "dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_littlemac/littlemac/AttackS4Hi.txt, AttackS4Lw.txt",
+    "transcribed_to": "src/pgwr/plugin/src/acmd/littlemac_attack_s4.rs",
+    "registered": "15 handlers: game/effect/sound/expression_attacks4, ..._attacks4charge, and all four of ..._attacks4hi and ..._attacks4lw, each at Priority::High over the generated G&W handlers"
+  },
+  "motion_entries_taken": {
+    "note": "each donor entry is copied whole - kind, game_script, flags, blend, animation name, cancel frame - so the donor's own cancel window travels with the clip. Measured readings, all tier B:",
+    "attack_s4_s": {"cancel": 44, "flags": "0x84", "game_script": "0xdb656c7d4 (game_attacks4)", "clip": "c03attacks4s.nuanmb"},
+    "attack_s4_hold": {"cancel": 0, "flags": "0x84", "game_script": "0x13a8441c1a (game_attacks4charge)", "clip": "c03attacks4charge.nuanmb"},
+    "attack_s4_hi": {"cancel": 44, "flags": "0x84", "game_script": "0xf38c7cbf2 (game_attacks4hi)", "clip": "c03attacks4hi.nuanmb"},
+    "attack_s4_lw": {"cancel": 44, "flags": "0x84", "game_script": "0xfa6a43395 (game_attacks4lw)", "clip": "c03attacks4lw.nuanmb"},
+    "recipient_before": {
+      "attack_s4_s": {"cancel": 43, "flags": "0x84"},
+      "attack_s4_hold": {"cancel": 0, "flags": "0x80"},
+      "attack_s4_hi": "absent from the base game",
+      "attack_s4_lw": "absent from the base game"
+    }
+  },
+  "retarget": {
+    "method": "same as build_chrom_jab.py and build_robot_dtilt.py: keep only transform nodes that exist on the BUILT recipient skeleton, take G&W's idle mesh-visibility group, drop the donor's own Material group",
+    "why_built_skeleton": "Pyra's bones are grafted onto G&W's; filtering against the built skeleton is what keeps the finger and elbow helpers the graft contributed",
+    "measured_on_c06": {
+      "donor_bones": 50,
+      "kept": 46,
+      "dropped": ["H_ClavicleR", "H_ClavicleL", "H_SholderR", "H_SholderL"],
+      "parent_mismatches": 0,
+      "arm_chain_ok": true,
+      "armr_present": true
+    },
+    "note": "the 4 dropped bones are helpers off the arm, not part of Bust->ClavicleC->ClavicleR->ShoulderR->ArmR->HandR->HaveR, and every hitbox in all four kinds is parented to `armr`, which is kept"
+  },
+  "sounds": {
+    "method": "tools/merge_donor_sound.py merges the donor banks into Pyra's c06/c07 banks by whole-bank transplant; lookup is crc32(name.lower()), measured",
+    "names_played": ["se_littlemac_smash_s02", "se_littlemac_smash_s03", "se_littlemac_smash_s04", "vc_littlemac_attack05"],
+    "all_resolve": true,
+    "verified_by": "tools/audit_littlemac_fsmash.py check_sounds, both slots"
+  },
+  "effects": {
+    "bank": "effect/fighter/littlemac/ef_littlemac.eff",
+    "shipped": "whole donor bank, byte-exact",
+    "emitters": 44,
+    "required_by_this_move": ["LITTLEMAC_ATTACK_LINE", "LITTLEMAC_ATTACK_ARC"],
+    "note": "the line is the neutral punch, the arc is used by both angled variants"
+  },
+  "angled_variants": {
+    "status": "SHIPPED as of 0.20.16, on the reasoning below. Whether the engine routes to them on this recipient is the open question and is what the console run tests.",
+    "superseded_verdict": "An earlier revision of this file recorded these as NOT SHIPPED, blocked behind a native hook, on the grounds that no name or hash for them exists anywhere in the shipped binaries. That inference was wrong.",
+    "why_the_inference_was_wrong": [
+      "Measured (tier B): 'attack_s4_hi', 'attack_s4_lw', 'SMASH_S', 'SMASH_HI' and 'SMASH_LW' have 0 ASCII hits and 0 u64 hash40 hits in dumps/exefs/13.0.4/main.bin (86,672,752 B). So the engine does not name them there. That part was right.",
+      "Also measured (tier B): 65 of the 72 fighters with a c00 motion list on disk DO carry attack_s4_hi and attack_s4_lw, with their own c03attacks4hi/c03attacks4lw clips and the same game_script split (game_attacks4 / game_attacks4hi / game_attacks4lw / game_attacks4charge). The 7 that lack the pair are chrom diddy eflame elight gamewatch miiswordsman younglink.",
+      "A convention 65 shipped fighters follow and 7 do not is missing content, not a missing engine route. If the engine could not reach the angled kinds, those 65 entries would be dead weight in their own files - and Little Mac's angled forward smash is a real, working, played move in the base game, which is direct counter-evidence to 'unreachable'.",
+      "The absence of FIGHTER_STATUS_KIND_ATTACK_S4_HI is likewise not evidence: the angled variants need no separate status. The motion list entry carries its own `game_script` field, and a motion with no script registered for it is exactly a move that animates and hits nothing - which is why the plugin registers all four handler sets here rather than relying on the entry alone."
+    ],
+    "no_native_hook_needed": "all three parts of the mechanism are inside the mod: the motion entries come from the pinned donor list, the clips from the retarget, and the scripts from the plugin. Nothing hooks the game's input-to-status decision (AGENTS.md rule 17 is not engaged).",
+    "open_question_tier": "D",
+    "open_question": "Does the engine ask for the angled motion kinds on eflame at all? Only a console run answers this. The build is staged so that a 'no' costs nothing - an unrouted entry is inert - and a 'yes' gives Little Mac's real angled f-smash."
+  },
+  "offline_checks": {
+    "tool": "tools/audit_littlemac_fsmash.py (v1.1.0)",
+    "report": "refs/littlemac_attack_s4/audit_0_20_16.json",
+    "passes": [
+      "donor inputs re-hash to the pins (motion_list + 4 clips)",
+      "the base game really lacks attack_s4_hi/attack_s4_lw, so the new-file declarations rest on a measurement",
+      "all four donor motion entries are byte-for-byte in both slots",
+      "8 retargeted clips (4 per slot) carry the arm chain and a Visibility group",
+      "all 4 sound names resolve by crc32(lower) in both slots",
+      "the effect bank is byte-exact with both required emitters",
+      "the packaged NRO carries all 15 handler names and all 4 sound names",
+      "baseline intact: 4 added, 4 intended overrides, 0 unexpected, 0 removed"
+    ]
+  },
+  "build": {
+    "package": "builds/pgwr/0.20.16",
+    "baseline": "builds/pgwr/0.20.15 (the installed card state, Hero side-B on Mythra)",
+    "features": ["snake-neutral-b", "hero-side-b"],
+    "cargo_target": "pgwr-lm-target",
+    "cargo_target_note": "isolated cache, recorded in MANIFEST.json and honoured by src/pgwr/install-to-card.sh; a packaging run on 2026-10-01 shipped another agent's stale NRO because the packager hardcoded the cache by feature, so the cache is now explicit and checked",
+    "nro_sha256": "81460e74313350aaf569ce832045e8586387ab4ddf10e51bfdb690a8d29ef834",
+    "mod_tree_sha256": "06bacd78dc28833d172374745bb6ae6763c39999f084bff8204b392d6b322686",
+    "mod_files": 1983
+  },
+  "hardware": {
+    "0.20.14": "TIER A. The user reported the forward smash works great, animation included. G&W's prop correctly no longer appears.",
+    "0.20.16": "PENDING. Tests only the two angled variants; the neutral punch is unchanged from the already-validated 0.20.14 code path."
+  }
+}

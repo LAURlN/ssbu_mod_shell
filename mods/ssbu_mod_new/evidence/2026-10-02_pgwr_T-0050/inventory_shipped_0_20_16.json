@@ -1,0 +1,521 @@
+{
+  "mod_dir": "builds/pgwr/0.20.16/ultimate/mods/pyra_gamewatch_reskin",
+  "label_count": 93035,
+  "fighters": {
+    "eflame": {
+      "bank_loader_fighter": "eflame",
+      "slots": {
+        "06": {
+          "files": [
+            {
+              "file": "tex_cloud_sword1.nutexb",
+              "sha256": "46a28ff16702c856d36660d7e9c082653c21b66a30ab533b76166a0d9da3b9e9",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_cloud_sword2.nutexb",
+              "sha256": "8da2fce9c2b65c11dce8e6e0200b7dd6d61399aeddd564f3a626ff7b29d4d647",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_cloud_sword1.nutexb",
+              "sha256": "46a28ff16702c856d36660d7e9c082653c21b66a30ab533b76166a0d9da3b9e9",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_cloud_sword2.nutexb",
+              "sha256": "8da2fce9c2b65c11dce8e6e0200b7dd6d61399aeddd564f3a626ff7b29d4d647",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_sword1.nutexb",
+              "sha256": "2e171e4ded6cbd660678dbe43c89b71e714665e6861e562046c6e05956b24878",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword3.nutexb",
+              "sha256": "b17f6088ea2ced4b96f764082c77f243052caa65b8d8e64dee9680ee5dbb84e4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword4.nutexb",
+              "sha256": "344ba4c9d0f63afd7b50354b602179c8eec978dcd647c84ded617b0da9f8340d",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_elight_sword1.nutexb",
+              "sha256": "2e171e4ded6cbd660678dbe43c89b71e714665e6861e562046c6e05956b24878",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword3.nutexb",
+              "sha256": "b17f6088ea2ced4b96f764082c77f243052caa65b8d8e64dee9680ee5dbb84e4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword4.nutexb",
+              "sha256": "344ba4c9d0f63afd7b50354b602179c8eec978dcd647c84ded617b0da9f8340d",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            }
+          ],
+          "duplicate_internal_names": {
+            "TEX_CLOUD_SWORD1": [
+              "tex_cloud_sword1.nutexb",
+              "tex_eflame_cloud_sword1.nutexb"
+            ],
+            "TEX_CLOUD_SWORD2": [
+              "tex_cloud_sword2.nutexb",
+              "tex_eflame_cloud_sword2.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD1": [
+              "tex_eflame_sword1.nutexb",
+              "tex_elight_sword1.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD2": [
+              "tex_eflame_sword2.nutexb",
+              "tex_elight_sword2.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD3": [
+              "tex_eflame_sword3.nutexb",
+              "tex_elight_sword3.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD4": [
+              "tex_eflame_sword4.nutexb",
+              "tex_elight_sword4.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD5": [
+              "tex_eflame_sword5.nutexb",
+              "tex_elight_sword5.nutexb"
+            ]
+          },
+          "unrequestable_files": []
+        },
+        "07": {
+          "files": [
+            {
+              "file": "tex_cloud_sword1.nutexb",
+              "sha256": "c5b6adf679102d05f37c9c3ff5cc65d209d8b3637aaefe7b7a816da12aba28e4",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_cloud_sword2.nutexb",
+              "sha256": "8da2fce9c2b65c11dce8e6e0200b7dd6d61399aeddd564f3a626ff7b29d4d647",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_cloud_sword1.nutexb",
+              "sha256": "c5b6adf679102d05f37c9c3ff5cc65d209d8b3637aaefe7b7a816da12aba28e4",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_cloud_sword2.nutexb",
+              "sha256": "8da2fce9c2b65c11dce8e6e0200b7dd6d61399aeddd564f3a626ff7b29d4d647",
+              "bytes": 351408,
+              "internal_name": "TEX_CLOUD_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_sword1.nutexb",
+              "sha256": "1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword3.nutexb",
+              "sha256": "15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_eflame_sword4.nutexb",
+              "sha256": "1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_eflame_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": false
+            },
+            {
+              "file": "tex_elight_sword1.nutexb",
+              "sha256": "1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword3.nutexb",
+              "sha256": "15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword4.nutexb",
+              "sha256": "1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            }
+          ],
+          "duplicate_internal_names": {
+            "TEX_CLOUD_SWORD1": [
+              "tex_cloud_sword1.nutexb",
+              "tex_eflame_cloud_sword1.nutexb"
+            ],
+            "TEX_CLOUD_SWORD2": [
+              "tex_cloud_sword2.nutexb",
+              "tex_eflame_cloud_sword2.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD1": [
+              "tex_eflame_sword1.nutexb",
+              "tex_elight_sword1.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD2": [
+              "tex_eflame_sword2.nutexb",
+              "tex_elight_sword2.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD3": [
+              "tex_eflame_sword3.nutexb",
+              "tex_elight_sword3.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD4": [
+              "tex_eflame_sword4.nutexb",
+              "tex_elight_sword4.nutexb"
+            ],
+            "TEX_ELIGHT_SWORD5": [
+              "tex_eflame_sword5.nutexb",
+              "tex_elight_sword5.nutexb"
+            ]
+          },
+          "unrequestable_files": []
+        }
+      },
+      "banks": {},
+      "banks_loaded_by_this_fighter": {},
+      "banks_not_loaded_by_any_fighter": []
+    },
+    "elight": {
+      "bank_loader_fighter": "elight",
+      "slots": {
+        "06": {
+          "files": [
+            {
+              "file": "tex_brave_lightningsword1.nutexb",
+              "sha256": "6d0d35ce495d865749642280878af1ff42dafba44f1b015a9dda4dc00995d46f",
+              "bytes": 177328,
+              "internal_name": "TEX_BRAVE_LIGHTNINGSWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_brave_sword1.nutexb",
+              "sha256": "7388928648a71c2d1ea537c0b142ff15c0abf2178fb37fab8dbbc22f2ccda7b9",
+              "bytes": 177328,
+              "internal_name": "TEX_BRAVE_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_brave_sword2.nutexb",
+              "sha256": "14b31f03de3f1f760d5382a1a6781ef37219719ea08c3902ab7be79d221dba06",
+              "bytes": 351408,
+              "internal_name": "TEX_BRAVE_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword1.nutexb",
+              "sha256": "2e171e4ded6cbd660678dbe43c89b71e714665e6861e562046c6e05956b24878",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword3.nutexb",
+              "sha256": "b17f6088ea2ced4b96f764082c77f243052caa65b8d8e64dee9680ee5dbb84e4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword4.nutexb",
+              "sha256": "344ba4c9d0f63afd7b50354b602179c8eec978dcd647c84ded617b0da9f8340d",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            }
+          ],
+          "duplicate_internal_names": {},
+          "unrequestable_files": []
+        },
+        "07": {
+          "files": [
+            {
+              "file": "tex_brave_lightningsword1.nutexb",
+              "sha256": "6d0d35ce495d865749642280878af1ff42dafba44f1b015a9dda4dc00995d46f",
+              "bytes": 177328,
+              "internal_name": "TEX_BRAVE_LIGHTNINGSWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_brave_sword1.nutexb",
+              "sha256": "7388928648a71c2d1ea537c0b142ff15c0abf2178fb37fab8dbbc22f2ccda7b9",
+              "bytes": 177328,
+              "internal_name": "TEX_BRAVE_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_brave_sword2.nutexb",
+              "sha256": "14b31f03de3f1f760d5382a1a6781ef37219719ea08c3902ab7be79d221dba06",
+              "bytes": 351408,
+              "internal_name": "TEX_BRAVE_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword1.nutexb",
+              "sha256": "1f917ba9f37a771aeff5ff0808a98a023463989481b61d43de9ec422e33fd89a",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD1",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword2.nutexb",
+              "sha256": "55a089ac280844c335e23253e750f716410a3c236e83227d33e1f94f12cc1e75",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD2",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword3.nutexb",
+              "sha256": "15251862cd32c5c6039b6e5380014ec275229c0c2c36e0cec8a629b4ebb80fe4",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD3",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword4.nutexb",
+              "sha256": "1f5cf94b77adc527c3a062619a3ded433f05e22986a6497fb58212cee2f83d9f",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD4",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            },
+            {
+              "file": "tex_elight_sword5.nutexb",
+              "sha256": "4d8eeb1f1bfc167ec2b8c9d6709be309eecce4c6bb3ba3bb95e5a6ce04d85bdc",
+              "bytes": 89264,
+              "internal_name": "TEX_ELIGHT_SWORD5",
+              "internal_name_is_engine_label": true,
+              "file_stem_is_engine_label": true
+            }
+          ],
+          "duplicate_internal_names": {},
+          "unrequestable_files": []
+        }
+      },
+      "banks": {
+        "ef_elight_c06.eff": {
+          "sha256": "c7a2b4b0dff6a523a1b311eea52ca29a1c437b600edc9b445aaf810f2461e0e3",
+          "bytes": 13690448,
+          "emitters": 128
+        },
+        "ef_elight_c07.eff": {
+          "sha256": "d4f06243582516dae66099f24a6a777a1f61cf0d326100dd3c8d59353f3d97bb",
+          "bytes": 14394960,
+          "emitters": 128
+        }
+      },
+      "banks_loaded_by_this_fighter": {
+        "ef_elight_c06.eff": true,
+        "ef_elight_c07.eff": true
+      },
+      "banks_not_loaded_by_any_fighter": []
+    },
+    "littlemac": {
+      "bank_loader_fighter": "littlemac",
+      "slots": {},
+      "banks": {
+        "ef_littlemac.eff": {
+          "sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+          "bytes": 13795840,
+          "emitters": 44
+        }
+      },
+      "banks_loaded_by_this_fighter": {
+        "ef_littlemac.eff": true
+      },
+      "banks_not_loaded_by_any_fighter": []
+    }
+  },
+  "cross_slot": {
+    "eflame": {
+      "c06_vs_c07_identical_bytes": [
+        "tex_cloud_sword2.nutexb",
+        "tex_eflame_cloud_sword2.nutexb",
+        "tex_eflame_sword2.nutexb",
+        "tex_eflame_sword5.nutexb",
+        "tex_elight_sword2.nutexb",
+        "tex_elight_sword5.nutexb"
+      ],
+      "c07_vs_c06_identical_bytes": [
+        "tex_cloud_sword2.nutexb",
+        "tex_eflame_cloud_sword2.nutexb",
+        "tex_eflame_sword2.nutexb",
+        "tex_eflame_sword5.nutexb",
+        "tex_elight_sword2.nutexb",
+        "tex_elight_sword5.nutexb"
+      ]
+    },
+    "elight": {
+      "c06_vs_c07_identical_bytes": [
+        "tex_brave_lightningsword1.nutexb",
+        "tex_brave_sword1.nutexb",
+        "tex_brave_sword2.nutexb",
+        "tex_elight_sword2.nutexb",
+        "tex_elight_sword5.nutexb"
+      ],
+      "c07_vs_c06_identical_bytes": [
+        "tex_brave_lightningsword1.nutexb",
+        "tex_brave_sword1.nutexb",
+        "tex_brave_sword2.nutexb",
+        "tex_elight_sword2.nutexb",
+        "tex_elight_sword5.nutexb"
+      ]
+    }
+  }
+}

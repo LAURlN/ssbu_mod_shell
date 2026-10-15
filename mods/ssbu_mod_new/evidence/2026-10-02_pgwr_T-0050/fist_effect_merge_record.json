@@ -1,0 +1,95 @@
+Merged and re-export checked 2 donor effects; 0 texture and 2 model ids relocated
+Merged and re-export checked 2 donor effects; 0 texture and 2 model ids relocated
+{
+  "tool_version": "2.1.0",
+  "donor_sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+  "vanilla_recipient": "effect/fighter/eflame/ef_eflame.eff",
+  "vanilla_recipient_sha256": "24512f9a020f3a1b989bebb614314381a142d769570618fd71a786356c6682e3",
+  "required_emitters": [
+    "LITTLEMAC_ATTACK_LINE",
+    "LITTLEMAC_ATTACK_ARC"
+  ],
+  "slots": {
+    "c06": {
+      "date": "2026-10-02",
+      "tool_version": "1.2.0",
+      "evidence_tier": "B",
+      "effect_library_commit": "d5491138d645221ec92189eeff3ded8c43fd0a1a",
+      "converter_sha256": "033ddc923fb3e0282df76fcccb1957bcf4834665c5aa000b9f4947a81d97e5f2",
+      "library_sha256": "ebd94ba49c7898f1287e94abd266f55e4528882e8448e3ad7f0734077b410a94",
+      "recipient_sha256": "24512f9a020f3a1b989bebb614314381a142d769570618fd71a786356c6682e3",
+      "donor_sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+      "output_sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+      "resource_names": [
+        "LITTLEMAC_ATTACK_ARC",
+        "LITTLEMAC_ATTACK_LINE"
+      ],
+      "texture_id_relocations": [],
+      "model_id_relocations": [
+        {
+          "old_id": 1347192488,
+          "new_id": 95091467,
+          "original_sha256": "4cffcdae5989eb0184ec6658ba211ec11280ad95262c8ba2d6962f75d0f5a1c8",
+          "renamed_sha256": "a508a6aa35714e0f3ad7a39ee774c7a744bc22a4fa2edfed7839e33b5d3cfb66",
+          "model_name": "pgwr_hero_95091467",
+          "every_other_model_field_identical": true
+        },
+        {
+          "old_id": 1347192488,
+          "new_id": 95091467,
+          "original_sha256": "4cffcdae5989eb0184ec6658ba211ec11280ad95262c8ba2d6962f75d0f5a1c8",
+          "renamed_sha256": "a508a6aa35714e0f3ad7a39ee774c7a744bc22a4fa2edfed7839e33b5d3cfb66",
+          "model_name": "pgwr_hero_95091467",
+          "every_other_model_field_identical": true
+        }
+      ],
+      "geometry_texture_shader_payloads_checked": true,
+      "decoded_emitter_fields_preserved": true,
+      "hardware_validated": false,
+      "output": "effect/fighter/eflame/ef_eflame_c06.eff",
+      "chained_onto_owned_bank": false
+    },
+    "c07": {
+      "date": "2026-10-02",
+      "tool_version": "1.2.0",
+      "evidence_tier": "B",
+      "effect_library_commit": "d5491138d645221ec92189eeff3ded8c43fd0a1a",
+      "converter_sha256": "033ddc923fb3e0282df76fcccb1957bcf4834665c5aa000b9f4947a81d97e5f2",
+      "library_sha256": "ebd94ba49c7898f1287e94abd266f55e4528882e8448e3ad7f0734077b410a94",
+      "recipient_sha256": "24512f9a020f3a1b989bebb614314381a142d769570618fd71a786356c6682e3",
+      "donor_sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+      "output_sha256": "6ab84bb729d89e25a0a513a3036e9748049642d56c9317c785344521fc373abc",
+      "resource_names": [
+        "LITTLEMAC_ATTACK_ARC",
+        "LITTLEMAC_ATTACK_LINE"
+      ],
+      "texture_id_relocations": [],
+      "model_id_relocations": [
+        {
+          "old_id": 1347192488,
+          "new_id": 95091467,
+          "original_sha256": "4cffcdae5989eb0184ec6658ba211ec11280ad95262c8ba2d6962f75d0f5a1c8",
+          "renamed_sha256": "a508a6aa35714e0f3ad7a39ee774c7a744bc22a4fa2edfed7839e33b5d3cfb66",
+          "model_name": "pgwr_hero_95091467",
+          "every_other_model_field_identical": true
+        },
+        {
+          "old_id": 1347192488,
+          "new_id": 95091467,
+          "original_sha256": "4cffcdae5989eb0184ec6658ba211ec11280ad95262c8ba2d6962f75d0f5a1c8",
+          "renamed_sha256": "a508a6aa35714e0f3ad7a39ee774c7a744bc22a4fa2edfed7839e33b5d3cfb66",
+          "model_name": "pgwr_hero_95091467",
+          "every_other_model_field_identical": true
+        }
+      ],
+      "geometry_texture_shader_payloads_checked": true,
+      "decoded_emitter_fields_preserved": true,
+      "hardware_validated": false,
+      "output": "effect/fighter/eflame/ef_eflame_c07.eff",
+      "chained_onto_owned_bank": false
+    }
+  },
+  "retired_donor_folder_bank_sha256": "c2f33cdb2157be04d80940182aced6ae762c004f9b08ea4ec3929749ea2b2228",
+  "donor_folder_bank_shipped": false,
+  "hardware_validated": false
+}

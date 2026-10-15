@@ -1,0 +1,32 @@
+# Copy this file to paths.toml and set values for your device.
+# Keep paths.toml private/local; it is ignored by Git.
+
+[workspace]
+root = "."
+old_root = ""
+
+[dumps]
+arc = "dumps/arc"
+exefs = "dumps/exefs/13.0.4"
+scripts = "dumps/scripts/SSBU-Dumped-Scripts-main"
+
+[toolchain]
+python312 = "python"
+msys2_mingw = ""
+cargo_skyline = "3.5.0"
+ghidra = "11.1.2"
+ghidra_home = ""
+arc_network_dll = ""
+effect_converter = ""
+roslyn_csc = ""
+dotnet_runtime = ""
+hero_effect_converter = "builds/.cache/hero_effect_converter/bin/EffectConverter.exe"
+
+[switch]
+sd_drive = ""
+arc_network_ip = ""
+game_version = "13.0.4"
+
+[card_do_not_touch]
+plugins = ["libarcropolis.nro", "libarc_network.nro", "libnro_hook.nro", "libsmashline_plugin.nro"]
+smashline_good_sha256 = "5f4091eed89c5854c2bfccb9f25b6e8da8c03ebedcaa5ab36eadebfc078bc8f7"

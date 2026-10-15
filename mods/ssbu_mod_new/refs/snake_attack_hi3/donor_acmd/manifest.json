@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-02",
+  "repo": "WuBoytH/SSBU-Dumped-Scripts",
+  "commit": "59004685238a3f6f93bae905d3a4e079701c40b4",
+  "why": "projects/pgwr/TODO.md cites dumps/scripts/SSBU-Dumped-Scripts-main/smashline/lua2cpp_snake/snake/AttackHi3.txt, but that tree is not in this workspace any more (dumps/scripts holds only ParamLabels.csv and gamewatch_motion_list.yml). The same pinned commit is the one refs/brave_special_n/acmd_pin.json and tools/fetch_donor_acmd.py already use, so the donor text is re-pinned here rather than approximated.",
+  "tier": "C - third-party decompiled text at a pinned commit, not verified on hardware",
+  "control": "robot__AttackLw3.txt is pinned at the same commit because plugin/src/acmd/robot_attack_lw3.rs was written from it; comparing the two shows what the dump loses.",
+  "files": [
+    {
+      "fighter": "snake",
+      "file": "AttackHi3.txt",
+      "local": "refs/snake_attack_hi3/donor_acmd/snake__AttackHi3.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_snake/snake/AttackHi3.txt",
+      "bytes": 7070,
+      "sha256": "99cc3499cfa39bfcd6aa3a03fb207947810618ce2d30d642adc4f3636a61ad43"
+    },
+    {
+      "fighter": "robot",
+      "file": "AttackLw3.txt",
+      "local": "refs/snake_attack_hi3/donor_acmd/robot__AttackLw3.txt",
+      "url": "https://raw.githubusercontent.com/WuBoytH/SSBU-Dumped-Scripts/59004685238a3f6f93bae905d3a4e079701c40b4/smashline/lua2cpp_robot/robot/AttackLw3.txt",
+      "bytes": 6629,
+      "sha256": "65b13e7c00a04a1da900de4dc1d82540176d2a1c8d292f520b22c34029e3fa25"
+    }
+  ],
+  "missing": []
+}

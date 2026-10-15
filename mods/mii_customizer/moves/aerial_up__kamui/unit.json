@@ -1,0 +1,96 @@
+{
+  "unit": "aerial_up__kamui",
+  "task_id": "MV-aerial_up__kamui",
+  "entry": "aerial_up",
+  "donor": "kamui",
+  "donor_menu_name": "Corrin",
+  "recipient": "miigunner",
+  "display_name": "Corrin's Up Air",
+  "status": "BUILT_OFFLINE_SECOND_PASS",
+  "status_note": "Built offline 2026-10-14: clips, motion entries, sword article (mckamuisword), sound tone append, trail textures, plugin copy and stack check pass; evidence/moves/aerial_up__kamui/check.py exit 0. Missing: effect kamui_sword_flare, landing ACMD scripts (not decoded). Trail loader placement unverified. Nothing run in game.",
+  "motions": {
+    "attack": {
+      "kind": "mc_kamui_attack_air_hi",
+      "clip": "c01mckamuiattackairhi.nuanmb",
+      "donor_clip": "c05attackairhi.nuanmb",
+      "flags": "0x0080",
+      "cancel_field": 38,
+      "frames": 58,
+      "scripts": [
+        "game_mckamuiattackairhi",
+        "effect_mckamuiattackairhi",
+        "sound_mckamuiattackairhi",
+        "expression_mckamuiattackairhi"
+      ]
+    },
+    "landing": {
+      "kind": "mc_kamui_landing_air_hi",
+      "clip": "c01mckamuilandingairhi.nuanmb",
+      "donor_clip": "c05landingairhi.nuanmb",
+      "flags": "0x0080",
+      "cancel_field": 20,
+      "frames": 30,
+      "scripts": "not registered (not decoded)"
+    }
+  },
+  "statuses": [
+    {
+      "kind": "FIGHTER_STATUS_KIND_ATTACK_AIR",
+      "value": "0x338",
+      "dispatch_row": "(aerial_up, kamui, start_attack_air) in gunner_attack_air_main",
+      "start_fn": "start_attack_air",
+      "main_fn": "custom_attack_air_hi_main"
+    },
+    {
+      "kind": "FIGHTER_STATUS_KIND_LANDING_ATTACK_AIR",
+      "value": "0x4d8",
+      "hook": "start_landing_attack_air(fighter, was_kamui_up) in gunner_landing_attack_air_main",
+      "landing_frame_hi": 9.0,
+      "gunner_landing_frame_hi": 13.0
+    }
+  ],
+  "corrin_statuses_decoded": {
+    "attack_air_end": "0x117a0: removes own article(s), body visibility, then common status_end_AttackAir; reproduced as sword removal on owner motion end",
+    "landing_attack_air_main": "0x120c0: off_flag on Corrin table id 0xa7b4, then common status_LandingAttackAir; not copied (Corrin state)"
+  },
+  "sword": {
+    "article": "mckamuisword",
+    "article_kind_source": "clone_weapon gamewatch normal_weapon -> miigunner",
+    "model": "fighter/miigunner/model/mckamuisword/c00",
+    "motion_kind": "mc_kamui_sword",
+    "clip": "a00mckamuisword.nuanmb",
+    "visibility_node": "mckamui_sword",
+    "objects": 3,
+    "root": "Have",
+    "hand_joint": "haver",
+    "registered_only_if_files_on_sd": true
+  },
+  "sounds": {
+    "appended": [
+      "se_kamui_attackair_H01"
+    ],
+    "base_tones": 89,
+    "output_tones": 90,
+    "script": "mckamui_sounds.py",
+    "sequence": "seq_kamui_rnd_attack_air replaced by Gunner seq_miigunner_rnd_attack02 (voice rule)"
+  },
+  "effects": {
+    "trail_textures": [
+      "tex_mc_kamui_sword1",
+      "tex_mc_kamui_sword2"
+    ],
+    "trail_placement": "effect/fighter/miigunner/trail (unverified)",
+    "flare": "kamui_sword_flare NOT ported (missing)"
+  },
+  "expressions": {
+    "rumble_hit": "rbkind_slashm 0 at 7",
+    "set_rumble_frame5": "not decoded, left out"
+  },
+  "coordinator_merges": [
+    "motion list reference (vanilla + 2)",
+    "se_miigunner reference (vanilla + 1 tone)",
+    "new-dir-files from manifest config",
+    "menu entry aerial_up kamui",
+    "moves.rs row + landing hook + sword install and guard"
+  ]
+}

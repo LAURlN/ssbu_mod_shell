@@ -1,0 +1,98 @@
+{
+  "tool_version": "1.0.0",
+  "date": "2026-10-02",
+  "evidence_tier": "B",
+  "hardware_validated": false,
+  "move": "Snake AttackHi3 on Pyra c06/c07",
+  "banks": [
+    {
+      "recipient": "se_eflame_c06",
+      "retained_tones": 543,
+      "retained_tones_byte_equal": true,
+      "retained_labels_byte_equal": true,
+      "appended_names": [
+        "se_snake_attackhard_H01"
+      ],
+      "output_hashes": {
+        ".nus3audio": "e3f49b889704ef1b025579a3731067aec02f90824e8505a0487928ff02b097ce",
+        ".tonelabel": "56b5ae23e547605c2a9994f9644f68b4e93c0edec2f6379b81620ddafcdd4813",
+        ".nus3bank": "5d60aabd1cf887d90e5ac43613334e05b9c94b15a07bfb2c73abff7f76000c67"
+      },
+      "folder": "fighter",
+      "slot": "c06",
+      "recipient_was_chained": true
+    },
+    {
+      "recipient": "vc_eflame_c06",
+      "retained_tones": 240,
+      "retained_tones_byte_equal": true,
+      "retained_labels_byte_equal": true,
+      "appended_names": [
+        "vc_snake_attack01",
+        "vc_snake_attack02",
+        "vc_snake_attack03",
+        "vc_snake_attack04"
+      ],
+      "output_hashes": {
+        ".nus3audio": "8876bba8d6806dd5878fbca926fbc780fb00fe3d6528207bb45f8ef53d266e0e",
+        ".tonelabel": "9623088dc4f7801676c9c46e2c38f767f1395b5f3b1ab18c066c965dd4ad1f34",
+        ".nus3bank": "8838d6bd8d1fa9cd0eb5cc3e774f5628b72ed88f02825a92baf401d9b48f3a31"
+      },
+      "folder": "fighter_voice",
+      "slot": "c06",
+      "recipient_was_chained": true
+    },
+    {
+      "recipient": "se_eflame_c07",
+      "retained_tones": 543,
+      "retained_tones_byte_equal": true,
+      "retained_labels_byte_equal": true,
+      "appended_names": [
+        "se_snake_attackhard_H01"
+      ],
+      "output_hashes": {
+        ".nus3audio": "e3f49b889704ef1b025579a3731067aec02f90824e8505a0487928ff02b097ce",
+        ".tonelabel": "56b5ae23e547605c2a9994f9644f68b4e93c0edec2f6379b81620ddafcdd4813",
+        ".nus3bank": "5d60aabd1cf887d90e5ac43613334e05b9c94b15a07bfb2c73abff7f76000c67"
+      },
+      "folder": "fighter",
+      "slot": "c07",
+      "recipient_was_chained": true
+    },
+    {
+      "recipient": "vc_eflame_c07",
+      "retained_tones": 240,
+      "retained_tones_byte_equal": true,
+      "retained_labels_byte_equal": true,
+      "appended_names": [
+        "vc_snake_attack01",
+        "vc_snake_attack02",
+        "vc_snake_attack03",
+        "vc_snake_attack04"
+      ],
+      "output_hashes": {
+        ".nus3audio": "8876bba8d6806dd5878fbca926fbc780fb00fe3d6528207bb45f8ef53d266e0e",
+        ".tonelabel": "9623088dc4f7801676c9c46e2c38f767f1395b5f3b1ab18c066c965dd4ad1f34",
+        ".nus3bank": "8838d6bd8d1fa9cd0eb5cc3e774f5628b72ed88f02825a92baf401d9b48f3a31"
+      },
+      "folder": "fighter_voice",
+      "slot": "c07",
+      "recipient_was_chained": true
+    }
+  ],
+  "sequence": "seq_snake_rnd_attack",
+  "sequence_key": "0x147b88a03d",
+  "sequence_voice_tones": [
+    "vc_snake_attack01",
+    "vc_snake_attack02",
+    "vc_snake_attack03",
+    "vc_snake_attack04"
+  ],
+  "sequence_appended": true,
+  "sqb_records_before": 13,
+  "sqb_records_after": 14,
+  "sqb_sha256": "b2b2d0d6ac2899924e42cf249d2e47afafc56e8682ce1449c98f00f492e0eff6",
+  "recipient_sqb_sha256": "cd69fa8d36de89137cd3c88a26b26e88f7ec5cfddae542094a7a22f2e8d20f7a",
+  "donor_sqb_sha256": "90370dcfeaed1e27498c1eaf4dc6e2a64d03d79e6a2df8ac1daa7f45df44ce0b",
+  "note": "No offline check establishes that a sound plays in game."
+}

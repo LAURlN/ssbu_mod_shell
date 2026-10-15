@@ -1,0 +1,2187 @@
+{
+ "archive_byte_diffs": [
+  {
+   "archive_offset": 85570,
+   "archive_offset_hex": "0x14e42",
+   "field": "scale_x",
+   "inside_member": "blyt/make_mii_special.bflyt",
+   "member_relative_offset": 4322,
+   "original_byte": "0x80",
+   "patched_byte": "0x40"
+  },
+  {
+   "archive_offset": 85574,
+   "archive_offset_hex": "0x14e46",
+   "field": "scale_y",
+   "inside_member": "blyt/make_mii_special.bflyt",
+   "member_relative_offset": 4326,
+   "original_byte": "0x80",
+   "patched_byte": "0x40"
+  }
+ ],
+ "archive_size_unchanged": true,
+ "comparison": {
+  "control": {
+   "byte_identical_to_original": true,
+   "changed_members": [],
+   "gaps_identical": true,
+   "header_identical": true,
+   "member_count": [
+    76,
+    76
+   ],
+   "membership_identical": true,
+   "moved_or_renamed_members": []
+  },
+  "patched": {
+   "byte_identical_to_original": false,
+   "changed_members": [
+    "blyt/make_mii_special.bflyt"
+   ],
+   "gaps_identical": true,
+   "header_identical": true,
+   "member_count": [
+    76,
+    76
+   ],
+   "membership_identical": true,
+   "moved_or_renamed_members": []
+  }
+ },
+ "files": {
+  "control": "gamedata/mii_customizer/P2-LAYOUT-PATCH/control/layout_original.arc",
+  "original": "gamedata/mii_customizer/P1-UI/ui/layout/menu/make_mii_special/make_mii_special/layout.arc",
+  "patched": "gamedata/mii_customizer/P2-LAYOUT-PATCH/patched/layout_row00_scale075.arc"
+ },
+ "manifests": {
+  "control": {
+   "header": {
+    "byte_order_be": 65534,
+    "byte_order_raw": 65279,
+    "data_offset": 8192,
+    "field_0x10": 256,
+    "hash_key": 101,
+    "header_size": 20,
+    "magic": "SARC",
+    "member_count": 76,
+    "members_ascending_by_hash": true,
+    "members_ascending_by_offset": true,
+    "name_table_header_field": 8,
+    "name_table_offset": 1248,
+    "name_table_padding_bytes": 3980,
+    "name_table_used_bytes": 2956,
+    "sfat_header_size": 12,
+    "size_field": 723436
+   },
+   "members": [
+    {
+     "data_end": 3120,
+     "data_start": 0,
+     "index": 0,
+     "name": "blyt/com_csr_lct0_01.bflyt",
+     "name_off_field": 16777216,
+     "sha256": "711bea561c22da469a4b553856f800eaa7729898c6bb230dbe95b813494d68b5",
+     "size": 3120
+    },
+    {
+     "data_end": 3392,
+     "data_start": 3120,
+     "index": 1,
+     "name": "anim/com_system_anim_in_r_Rs_L_00.bflan",
+     "name_off_field": 16777223,
+     "sha256": "b549cb5d1d256cb86742a29919565181298de5c0fce963eb655daa0ead17e468",
+     "size": 272
+    },
+    {
+     "data_end": 3612,
+     "data_start": 3392,
+     "index": 2,
+     "name": "anim/com_system_anim_out_T_00.bflan",
+     "name_off_field": 16777233,
+     "sha256": "6df2d29f69ea175d61427624ab367058bcea41eae26266c51fb1bd14762f69a4",
+     "size": 220
+    },
+    {
+     "data_end": 4060,
+     "data_start": 3616,
+     "index": 3,
+     "name": "anim/com_btn0_00_m_decide_BlinkOn.bflan",
+     "name_off_field": 16777242,
+     "sha256": "22a101383d8faa0101c5f704cb950031e78827cc9382afc2376a3caec151d5e4",
+     "size": 444
+    },
+    {
+     "data_end": 4332,
+     "data_start": 4064,
+     "index": 4,
+     "name": "anim/com_system_anim_out_R_00.bflan",
+     "name_off_field": 16777252,
+     "sha256": "7b8dbc83a53f76ae57c1753420aa1b9f1a2e3af73d5bd3e78a8f9319677ba278",
+     "size": 268
+    },
+    {
+     "data_end": 4604,
+     "data_start": 4336,
+     "index": 5,
+     "name": "anim/com_system_anim_in_r_R_L_00.bflan",
+     "name_off_field": 16777261,
+     "sha256": "e8073a8d5e552a4d08218825ca5c0cb7449d5acfbc0ed44b82c4edf7969ffdb5",
+     "size": 268
+    },
+    {
+     "data_end": 4864,
+     "data_start": 4608,
+     "index": 6,
+     "name": "anim/com_system_anim_in_Rs_00.bflan",
+     "name_off_field": 16777271,
+     "sha256": "e69a42253e1c69c56d6bebd908b47e8d525cd6f0a345f3b80ca73fac75413c60",
+     "size": 256
+    },
+    {
+     "data_end": 5116,
+     "data_start": 4864,
+     "index": 7,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_gc.bflan",
+     "name_off_field": 16777280,
+     "sha256": "8e14832514769e393cb257b679e7d490879e7c48abb60a35736d36d9a13bed57",
+     "size": 252
+    },
+    {
+     "data_end": 6424,
+     "data_start": 5120,
+     "index": 8,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOff.bflan",
+     "name_off_field": 16777291,
+     "sha256": "e8051ef68ece9ffbbf68d366023cbfbc9ae53d6ab615c8b9134da281610dce75",
+     "size": 1304
+    },
+    {
+     "data_end": 6700,
+     "data_start": 6432,
+     "index": 9,
+     "name": "anim/com_system_anim_out_L_00.bflan",
+     "name_off_field": 16777303,
+     "sha256": "c113546f6a8b10962e56d671d0d616aa633c2f81b7968a262809bcd6f584bb17",
+     "size": 268
+    },
+    {
+     "data_end": 6932,
+     "data_start": 6704,
+     "index": 10,
+     "name": "anim/com_system_anim_btn_BlinkOn_105.bflan",
+     "name_off_field": 16777312,
+     "sha256": "59d84669d4cfce7ee66e58ac460ab0886794f00f2280b2c5f5c95aee18ec9c2e",
+     "size": 228
+    },
+    {
+     "data_end": 7488,
+     "data_start": 6944,
+     "index": 11,
+     "name": "anim/make_mii_btn0_04_spselect_category_01.bflan",
+     "name_off_field": 16777323,
+     "sha256": "1639913d09d06986805abab51fddea794f5d714ac7831457adbb11a23fe443d5",
+     "size": 544
+    },
+    {
+     "data_end": 7836,
+     "data_start": 7488,
+     "index": 12,
+     "name": "anim/com_system_anim_btn_Decide_105.bflan",
+     "name_off_field": 16777336,
+     "sha256": "dc0a49b2dee4af04f2a022180e0abe7bd59ab58fe72f6a792169a4ec8bbf8057",
+     "size": 348
+    },
+    {
+     "data_end": 8548,
+     "data_start": 7840,
+     "index": 13,
+     "name": "anim/com_btn0_00_m_decide_SelectOff.bflan",
+     "name_off_field": 16777347,
+     "sha256": "5123da1ecac570f9ca15e4cc41eeeaa3cbefd1a92075df1dc3bcba8b3b6f4d12",
+     "size": 708
+    },
+    {
+     "data_end": 8780,
+     "data_start": 8560,
+     "index": 14,
+     "name": "anim/com_system_anim_out_B_00.bflan",
+     "name_off_field": 16777358,
+     "sha256": "af3ad2c19c63f334b1a3144edfa212d499973a8df038508c3e4a45230d07d3c5",
+     "size": 220
+    },
+    {
+     "data_end": 58400,
+     "data_start": 12288,
+     "index": 15,
+     "name": "bgsh/__ArchiveShader.bnsh",
+     "name_off_field": 16777367,
+     "sha256": "297ef53a7d4ec9f7735b41c3e016ef382ae234a0b7051d19dbda4946ff1015cc",
+     "size": 46112
+    },
+    {
+     "data_end": 58656,
+     "data_start": 58400,
+     "index": 16,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_normal.bflan",
+     "name_off_field": 16777374,
+     "sha256": "481c221023d4e8c9b41901bda20509f9dd71d501f9aa8543a4fcdbb75d0513a6",
+     "size": 256
+    },
+    {
+     "data_end": 58904,
+     "data_start": 58656,
+     "index": 17,
+     "name": "anim/com_btn0_00_m_decide_OnOff.bflan",
+     "name_off_field": 16777386,
+     "sha256": "1048eb05a12573ac05d4428d76e4fa26bd6ea9c7a8a82644170f6cad1f02a131",
+     "size": 248
+    },
+    {
+     "data_end": 59132,
+     "data_start": 58912,
+     "index": 18,
+     "name": "anim/com_system_anim_out_T_01.bflan",
+     "name_off_field": 16777396,
+     "sha256": "975f521b00ee03d00224efe758f3024c05096b7c97df16d8a8e8ee0088f6b113",
+     "size": 220
+    },
+    {
+     "data_end": 59404,
+     "data_start": 59136,
+     "index": 19,
+     "name": "anim/com_system_anim_out_Rs_00.bflan",
+     "name_off_field": 16777405,
+     "sha256": "4cbe577d951d6589b9a0e5561256ba14a4097e503410d8debee3c1ddc7c225e8",
+     "size": 268
+    },
+    {
+     "data_end": 59708,
+     "data_start": 59408,
+     "index": 20,
+     "name": "anim/com_system_anim_in_POP_00.bflan",
+     "name_off_field": 16777415,
+     "sha256": "d3731d1e30026574625e944e04a2bc789a86f5650738f2dbdbe6a1626755cd7a",
+     "size": 300
+    },
+    {
+     "data_end": 63392,
+     "data_start": 59712,
+     "index": 21,
+     "name": "blyt/com_system_anim.bflyt",
+     "name_off_field": 16777425,
+     "sha256": "71664f889657329f2480a9f074f9548d50facd089b33b87c26b8cd565dc397d1",
+     "size": 3680
+    },
+    {
+     "data_end": 63660,
+     "data_start": 63392,
+     "index": 22,
+     "name": "anim/com_system_anim_out_R_01.bflan",
+     "name_off_field": 16777432,
+     "sha256": "3a95453daf030f92feebc816212eb822903efd01ce75e3a2a01f6b5edf5bedbb",
+     "size": 268
+    },
+    {
+     "data_end": 63972,
+     "data_start": 63664,
+     "index": 23,
+     "name": "anim/com_btn0_00_m_decide_Decide.bflan",
+     "name_off_field": 16777441,
+     "sha256": "50d552e9c6d4656d879fd4ca2182271ed42f8dab5ae03d31cbb9976498224696",
+     "size": 308
+    },
+    {
+     "data_end": 64252,
+     "data_start": 63984,
+     "index": 24,
+     "name": "anim/com_system_anim_out_L_01.bflan",
+     "name_off_field": 16777451,
+     "sha256": "60d2123d203569d13895df33ffaa24d2cb1512626aff8781ce3a72bba5226e89",
+     "size": 268
+    },
+    {
+     "data_end": 64516,
+     "data_start": 64256,
+     "index": 25,
+     "name": "anim/com_system_anim_out_Rs_Ls_00.bflan",
+     "name_off_field": 16777460,
+     "sha256": "5de107ca01f45f86bc9e33292eda9d57f73253df47eb806555793b41ce50b04a",
+     "size": 260
+    },
+    {
+     "data_end": 64736,
+     "data_start": 64528,
+     "index": 26,
+     "name": "anim/com_system_anim_in_BG_00.bflan",
+     "name_off_field": 16777470,
+     "sha256": "be446bb28e159f23475468f6107b3ac40b405447e55d45578386c8f1cf8c7edc",
+     "size": 208
+    },
+    {
+     "data_end": 66160,
+     "data_start": 64736,
+     "index": 27,
+     "name": "blyt/com_lct_bg_stripe_03.bflyt",
+     "name_off_field": 16777479,
+     "sha256": "fa7713cf6ba19969caddf6fc79d8c7cb2f3955a2a2457d9e7fc98567e0a343fd",
+     "size": 1424
+    },
+    {
+     "data_end": 66704,
+     "data_start": 66160,
+     "index": 28,
+     "name": "anim/make_mii_btn0_04_spselect_category_02.bflan",
+     "name_off_field": 16777487,
+     "sha256": "b4c5fc2db51d0b892eb9fe51d175dea50cf9dfba770db6f00a3a56fbe5bbcb78",
+     "size": 544
+    },
+    {
+     "data_end": 66940,
+     "data_start": 66704,
+     "index": 29,
+     "name": "anim/make_mii_special_out.bflan",
+     "name_off_field": 16777500,
+     "sha256": "23a30d3c72bf4ebfe89e3e16ce1c295d08be8e4de71d9681e042b0b2ad28ee17",
+     "size": 236
+    },
+    {
+     "data_end": 67164,
+     "data_start": 66944,
+     "index": 30,
+     "name": "anim/com_system_anim_out_B_01.bflan",
+     "name_off_field": 16777508,
+     "sha256": "4eb6104bc659d71703e39105885f1fe7ccc59bee1ddb87b0a38faae6c00a4cec",
+     "size": 220
+    },
+    {
+     "data_end": 67440,
+     "data_start": 67168,
+     "index": 31,
+     "name": "anim/com_system_anim_out_r_R_L_00.bflan",
+     "name_off_field": 16777517,
+     "sha256": "664ecfa71d1667de4b7d7cd18c7d453e87de2d0121f0b1000899efb1d5a069a9",
+     "size": 272
+    },
+    {
+     "data_end": 67812,
+     "data_start": 67440,
+     "index": 32,
+     "name": "anim/com_system_anim_in_POP_01.bflan",
+     "name_off_field": 16777527,
+     "sha256": "d4b1a0c213fa448e173ba28f1c289a221eea7f57919290ebf7bf006dc5501f7a",
+     "size": 372
+    },
+    {
+     "data_end": 68040,
+     "data_start": 67824,
+     "index": 33,
+     "name": "anim/com_system_anim_in_T_00.bflan",
+     "name_off_field": 16777537,
+     "sha256": "91d1d6d4a1106bd623f30f27c8cd22fb249f8ccfe1876518174e5cf65d6bc185",
+     "size": 216
+    },
+    {
+     "data_end": 68316,
+     "data_start": 68048,
+     "index": 34,
+     "name": "anim/com_csr_lct0_01_width_13px.bflan",
+     "name_off_field": 16777546,
+     "sha256": "8e1820df67d754394985d80f5dc2f120025c271bcf609dcf4319de01f066fb5d",
+     "size": 268
+    },
+    {
+     "data_end": 68528,
+     "data_start": 68320,
+     "index": 35,
+     "name": "anim/com_system_anim_out_BG_00.bflan",
+     "name_off_field": 16777556,
+     "sha256": "fd1eae4ad9a95904bc054c1afea4aa2ada0e6834674d8e913bd5372e1f5082d8",
+     "size": 208
+    },
+    {
+     "data_end": 68792,
+     "data_start": 68528,
+     "index": 36,
+     "name": "anim/com_system_anim_in_R_00.bflan",
+     "name_off_field": 16777566,
+     "sha256": "da11048add344d6f37bb994aad9727535b123f72f5a697d9dcc745e804c9e2d8",
+     "size": 264
+    },
+    {
+     "data_end": 69344,
+     "data_start": 68800,
+     "index": 37,
+     "name": "anim/make_mii_btn0_04_spselect_category_03.bflan",
+     "name_off_field": 16777575,
+     "sha256": "521cd9298d1d44fbc9e40a92f210718fce6f7a2b2476a362c099373c8125ce97",
+     "size": 544
+    },
+    {
+     "data_end": 69608,
+     "data_start": 69344,
+     "index": 38,
+     "name": "anim/com_system_anim_in_L_00.bflan",
+     "name_off_field": 16777588,
+     "sha256": "5aed13ba8f59a1dc1760ee299323013c8d59a00edb897186ef11c4298b6976b9",
+     "size": 264
+    },
+    {
+     "data_end": 70916,
+     "data_start": 69616,
+     "index": 39,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOn.bflan",
+     "name_off_field": 16777597,
+     "sha256": "83c1585d96b0d73e1f3d78b4687e826d947bd6e04da325a884fefc76b3a6e591",
+     "size": 1300
+    },
+    {
+     "data_end": 71196,
+     "data_start": 70928,
+     "index": 40,
+     "name": "anim/com_system_anim_out_R_L_00.bflan",
+     "name_off_field": 16777609,
+     "sha256": "4321a2fef47b2e4fee2e27761ee681c9149c024d9d5086bd47a398417f5bd2b4",
+     "size": 268
+    },
+    {
+     "data_end": 71456,
+     "data_start": 71200,
+     "index": 41,
+     "name": "anim/com_system_anim_in_Rs_L_00.bflan",
+     "name_off_field": 16777619,
+     "sha256": "156eb25327c5ba60e28dea59061ae7ff70b206fad03513c195b2d2d416aca382",
+     "size": 256
+    },
+    {
+     "data_end": 71688,
+     "data_start": 71456,
+     "index": 42,
+     "name": "anim/com_system_anim_btn_BlinkOff_105.bflan",
+     "name_off_field": 16777629,
+     "sha256": "09004708d4d51c2d98fa3deae0b30e2e532ef42ed81e144d63b10d2a20529ee5",
+     "size": 232
+    },
+    {
+     "data_end": 72052,
+     "data_start": 71696,
+     "index": 43,
+     "name": "anim/make_mii_special_category_00.bflan",
+     "name_off_field": 16777640,
+     "sha256": "aa624005c26f164e8a89f89bd3dd3754224b4a3110124b55b87a46c373444fb8",
+     "size": 356
+    },
+    {
+     "data_end": 72280,
+     "data_start": 72064,
+     "index": 44,
+     "name": "anim/com_system_anim_in_B_00.bflan",
+     "name_off_field": 16777650,
+     "sha256": "4b824f9019559364c52b688a2af8264b788a93bedb7675f61d94b8044174b582",
+     "size": 216
+    },
+    {
+     "data_end": 72804,
+     "data_start": 72288,
+     "index": 45,
+     "name": "anim/com_csr_lct0_01_width_lock.bflan",
+     "name_off_field": 16777659,
+     "sha256": "9d86f734de2bff7832ec4febc1a8608322a650910611d093b80fb4b24ec989ca",
+     "size": 516
+    },
+    {
+     "data_end": 73056,
+     "data_start": 72816,
+     "index": 46,
+     "name": "anim/com_system_anim_in_T_01.bflan",
+     "name_off_field": 16777669,
+     "sha256": "d33bf82f7ee4fb39559320927af906d8c2367b9fb2b5a830c7d4d3761f4d010d",
+     "size": 240
+    },
+    {
+     "data_end": 83464,
+     "data_start": 73056,
+     "index": 47,
+     "name": "blyt/make_mii_special.bflyt",
+     "name_off_field": 16777678,
+     "sha256": "a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+     "size": 10408
+    },
+    {
+     "data_end": 83736,
+     "data_start": 83472,
+     "index": 48,
+     "name": "anim/com_system_anim_in_R_01.bflan",
+     "name_off_field": 16777685,
+     "sha256": "9c1f86b7c44c1e9abeae6f56172fc9ac332839e5a4e9cb2108b32fd90ba0f7a5",
+     "size": 264
+    },
+    {
+     "data_end": 90132,
+     "data_start": 83744,
+     "index": 49,
+     "name": "blyt/com_btn0_00_m_decide.bflyt",
+     "name_off_field": 16777694,
+     "sha256": "e7d42ec697f683563f3c4438e20b4a4084cdc73ab6ecc36757249e1de610ebc8",
+     "size": 6388
+    },
+    {
+     "data_end": 90956,
+     "data_start": 90144,
+     "index": 50,
+     "name": "info/layout.info",
+     "name_off_field": 16777702,
+     "sha256": "a24f7f3ccf16eaffde9259732faea9412f1d36ced18ef0d68b0f1d9e29f1eb49",
+     "size": 812
+    },
+    {
+     "data_end": 91196,
+     "data_start": 90960,
+     "index": 51,
+     "name": "anim/make_mii_special_in.bflan",
+     "name_off_field": 16777707,
+     "sha256": "d97db701eef02a560bffe3a1adf0291831654b4938116d00a509575e7f8cb563",
+     "size": 236
+    },
+    {
+     "data_end": 91452,
+     "data_start": 91200,
+     "index": 52,
+     "name": "anim/com_system_anim_btn_OnOff_105.bflan",
+     "name_off_field": 16777715,
+     "sha256": "1254398467fc509fae3ccebbdb521afc09036501f88f0e3243ae2cc64a35d4a0",
+     "size": 252
+    },
+    {
+     "data_end": 91724,
+     "data_start": 91456,
+     "index": 53,
+     "name": "anim/com_csr_lct0_01_width_18px.bflan",
+     "name_off_field": 16777726,
+     "sha256": "13ef1d0a5bd3e412462d17f7ba49b9533beecf09dc3ee09f5d590b1b62b6fee1",
+     "size": 268
+    },
+    {
+     "data_end": 91992,
+     "data_start": 91728,
+     "index": 54,
+     "name": "anim/com_system_anim_in_L_01.bflan",
+     "name_off_field": 16777736,
+     "sha256": "f2d73793270786e9ea5ba4a31db9456ee3c1c122b939cf5f9615d22a7331edc5",
+     "size": 264
+    },
+    {
+     "data_end": 93688,
+     "data_start": 92000,
+     "index": 55,
+     "name": "anim/com_csr_lct0_01_SelectOn.bflan",
+     "name_off_field": 16777745,
+     "sha256": "d55a128506e7ab1673d1ad4b2e230be9eaf835162cdef18f6b33eb2043a29a71",
+     "size": 1688
+    },
+    {
+     "data_end": 93820,
+     "data_start": 93696,
+     "index": 56,
+     "name": "bgsh/__ArchiveShader.bushvt",
+     "name_off_field": 16777754,
+     "sha256": "e58e32eb66be89c1b44e52b8f9452036f47d6497c62873179b0c5377dafc9179",
+     "size": 124
+    },
+    {
+     "data_end": 94180,
+     "data_start": 93824,
+     "index": 57,
+     "name": "anim/make_mii_special_category_01.bflan",
+     "name_off_field": 16777761,
+     "sha256": "7a11a98932f77cc0b79142f83f11a73784984205a5972f6a12dadaebe0c5aac4",
+     "size": 356
+    },
+    {
+     "data_end": 94432,
+     "data_start": 94192,
+     "index": 58,
+     "name": "anim/com_system_anim_in_B_01.bflan",
+     "name_off_field": 16777771,
+     "sha256": "fd8e76ceaa3cd861b89c8a53e93010255d5e81311e40a640dc5077fb2963a3df",
+     "size": 240
+    },
+    {
+     "data_end": 94688,
+     "data_start": 94432,
+     "index": 59,
+     "name": "anim/com_system_anim_btn_OnOff_105_10.bflan",
+     "name_off_field": 16777780,
+     "sha256": "d190d2b6eb82638ca538aef66ff61f5a0c58c080d70dc4d2da4be9204f26311c",
+     "size": 256
+    },
+    {
+     "data_end": 94988,
+     "data_start": 94688,
+     "index": 60,
+     "name": "anim/com_system_anim_out_POP_00.bflan",
+     "name_off_field": 16777791,
+     "sha256": "f9e7b1934e393f7eac8be859a624a8264d02f2d77df396bb27cbbf1f02fbeab2",
+     "size": 300
+    },
+    {
+     "data_end": 95440,
+     "data_start": 94992,
+     "index": 61,
+     "name": "anim/com_btn0_00_m_decide_BlinkOff.bflan",
+     "name_off_field": 16777801,
+     "sha256": "d305f9cc05b9aed5b4687dacbfbd71f025bfc7e972eb53e9dedad7acabd68f31",
+     "size": 448
+    },
+    {
+     "data_end": 704640,
+     "data_start": 98304,
+     "index": 62,
+     "name": "timg/__Combined.bntx",
+     "name_off_field": 16777812,
+     "sha256": "cce81d32c1a3fbdf4ad57a8a261d1ef7bbd7f9c14870ff372a597d3cf1df9d83",
+     "size": 606336
+    },
+    {
+     "data_end": 704908,
+     "data_start": 704640,
+     "index": 63,
+     "name": "anim/com_system_anim_out_Rs_L_00.bflan",
+     "name_off_field": 16777818,
+     "sha256": "434f88664df9baffda663359da1ad489cc4022dba3fc9e8116aa4af2e1fe025e",
+     "size": 268
+    },
+    {
+     "data_end": 705116,
+     "data_start": 704912,
+     "index": 64,
+     "name": "anim/com_btn0_00_m_decide_Disable.bflan",
+     "name_off_field": 16777828,
+     "sha256": "3b7fbd1c63dda7bfa1bfce836fc84d7f1ece2b7639d92291890127e5b7c75c09",
+     "size": 204
+    },
+    {
+     "data_end": 705364,
+     "data_start": 705120,
+     "index": 65,
+     "name": "anim/make_mii_btn0_04_spselect_OnOff.bflan",
+     "name_off_field": 16777838,
+     "sha256": "da0a3018e87d26216d71daf995a914de79c7f4cba29667498f279a902b5f3766",
+     "size": 244
+    },
+    {
+     "data_end": 705732,
+     "data_start": 705376,
+     "index": 66,
+     "name": "anim/make_mii_special_category_02.bflan",
+     "name_off_field": 16777849,
+     "sha256": "bcffa865855a0dd283f2dc19cada65c7cb0db22688515dc6dda65f714ae53512",
+     "size": 356
+    },
+    {
+     "data_end": 706224,
+     "data_start": 705744,
+     "index": 67,
+     "name": "anim/com_csr_lct0_01_SelectOff.bflan",
+     "name_off_field": 16777859,
+     "sha256": "07689fb1ee445a469ebe1d29e41faee31c33ff5d5142401ab33c54a5953f9d74",
+     "size": 480
+    },
+    {
+     "data_end": 706596,
+     "data_start": 706224,
+     "index": 68,
+     "name": "anim/com_system_anim_out_POP_01.bflan",
+     "name_off_field": 16777869,
+     "sha256": "2559b24894356bbd6e3e2f816f5177a5ed7a2ba6675370854d6e3653c555810a",
+     "size": 372
+    },
+    {
+     "data_end": 706960,
+     "data_start": 706608,
+     "index": 69,
+     "name": "anim/com_system_anim_btn_Decide_105_10.bflan",
+     "name_off_field": 16777879,
+     "sha256": "ce7725dd46fcdd320a70582788fff96fa7f7dcbb8c9235a38c792ea72310345e",
+     "size": 352
+    },
+    {
+     "data_end": 708680,
+     "data_start": 706960,
+     "index": 70,
+     "name": "anim/com_btn0_00_m_decide_SelectOn.bflan",
+     "name_off_field": 16777891,
+     "sha256": "472c372ab52fbb33944933c515adc2b084db7ae1b9632f3a287fc5f9d4e8a029",
+     "size": 1720
+    },
+    {
+     "data_end": 709044,
+     "data_start": 708688,
+     "index": 71,
+     "name": "anim/make_mii_special_category_03.bflan",
+     "name_off_field": 16777902,
+     "sha256": "36f64373ea284c0e0460c679ec2af5c1b63ff4d24c6d4025d6292a656e7734cd",
+     "size": 356
+    },
+    {
+     "data_end": 709600,
+     "data_start": 709056,
+     "index": 72,
+     "name": "anim/make_mii_btn0_04_spselect_category_00.bflan",
+     "name_off_field": 16777912,
+     "sha256": "a291bfcd5ee7e2e15d26d2d84b3e54f57cd8d535206b34aa042c5f86bda2e469",
+     "size": 544
+    },
+    {
+     "data_end": 714716,
+     "data_start": 709600,
+     "index": 73,
+     "name": "blyt/make_mii_btn0_04_spselect.bflyt",
+     "name_off_field": 16777925,
+     "sha256": "e8118b5733f255fc571e4d51a0b9938599d989cf1f391eef356746410d1f2e2b",
+     "size": 5116
+    },
+    {
+     "data_end": 714976,
+     "data_start": 714720,
+     "index": 74,
+     "name": "anim/com_system_anim_in_Rs_Ls_00.bflan",
+     "name_off_field": 16777935,
+     "sha256": "3f9eef8c65935e14ddb8bd41539ad4a1d2e177346e25e742b505d5ca2b09f678",
+     "size": 256
+    },
+    {
+     "data_end": 715244,
+     "data_start": 714976,
+     "index": 75,
+     "name": "anim/com_system_anim_in_R_L_00.bflan",
+     "name_off_field": 16777945,
+     "sha256": "a200a048b250aa9d89d22d67039b06021b08b0dab6401bdfb327935d1efecd38",
+     "size": 268
+    }
+   ],
+   "sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "size": 723436
+  },
+  "original": {
+   "header": {
+    "byte_order_be": 65534,
+    "byte_order_raw": 65279,
+    "data_offset": 8192,
+    "field_0x10": 256,
+    "hash_key": 101,
+    "header_size": 20,
+    "magic": "SARC",
+    "member_count": 76,
+    "members_ascending_by_hash": true,
+    "members_ascending_by_offset": true,
+    "name_table_header_field": 8,
+    "name_table_offset": 1248,
+    "name_table_padding_bytes": 3980,
+    "name_table_used_bytes": 2956,
+    "sfat_header_size": 12,
+    "size_field": 723436
+   },
+   "members": [
+    {
+     "data_end": 3120,
+     "data_start": 0,
+     "index": 0,
+     "name": "blyt/com_csr_lct0_01.bflyt",
+     "name_off_field": 16777216,
+     "sha256": "711bea561c22da469a4b553856f800eaa7729898c6bb230dbe95b813494d68b5",
+     "size": 3120
+    },
+    {
+     "data_end": 3392,
+     "data_start": 3120,
+     "index": 1,
+     "name": "anim/com_system_anim_in_r_Rs_L_00.bflan",
+     "name_off_field": 16777223,
+     "sha256": "b549cb5d1d256cb86742a29919565181298de5c0fce963eb655daa0ead17e468",
+     "size": 272
+    },
+    {
+     "data_end": 3612,
+     "data_start": 3392,
+     "index": 2,
+     "name": "anim/com_system_anim_out_T_00.bflan",
+     "name_off_field": 16777233,
+     "sha256": "6df2d29f69ea175d61427624ab367058bcea41eae26266c51fb1bd14762f69a4",
+     "size": 220
+    },
+    {
+     "data_end": 4060,
+     "data_start": 3616,
+     "index": 3,
+     "name": "anim/com_btn0_00_m_decide_BlinkOn.bflan",
+     "name_off_field": 16777242,
+     "sha256": "22a101383d8faa0101c5f704cb950031e78827cc9382afc2376a3caec151d5e4",
+     "size": 444
+    },
+    {
+     "data_end": 4332,
+     "data_start": 4064,
+     "index": 4,
+     "name": "anim/com_system_anim_out_R_00.bflan",
+     "name_off_field": 16777252,
+     "sha256": "7b8dbc83a53f76ae57c1753420aa1b9f1a2e3af73d5bd3e78a8f9319677ba278",
+     "size": 268
+    },
+    {
+     "data_end": 4604,
+     "data_start": 4336,
+     "index": 5,
+     "name": "anim/com_system_anim_in_r_R_L_00.bflan",
+     "name_off_field": 16777261,
+     "sha256": "e8073a8d5e552a4d08218825ca5c0cb7449d5acfbc0ed44b82c4edf7969ffdb5",
+     "size": 268
+    },
+    {
+     "data_end": 4864,
+     "data_start": 4608,
+     "index": 6,
+     "name": "anim/com_system_anim_in_Rs_00.bflan",
+     "name_off_field": 16777271,
+     "sha256": "e69a42253e1c69c56d6bebd908b47e8d525cd6f0a345f3b80ca73fac75413c60",
+     "size": 256
+    },
+    {
+     "data_end": 5116,
+     "data_start": 4864,
+     "index": 7,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_gc.bflan",
+     "name_off_field": 16777280,
+     "sha256": "8e14832514769e393cb257b679e7d490879e7c48abb60a35736d36d9a13bed57",
+     "size": 252
+    },
+    {
+     "data_end": 6424,
+     "data_start": 5120,
+     "index": 8,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOff.bflan",
+     "name_off_field": 16777291,
+     "sha256": "e8051ef68ece9ffbbf68d366023cbfbc9ae53d6ab615c8b9134da281610dce75",
+     "size": 1304
+    },
+    {
+     "data_end": 6700,
+     "data_start": 6432,
+     "index": 9,
+     "name": "anim/com_system_anim_out_L_00.bflan",
+     "name_off_field": 16777303,
+     "sha256": "c113546f6a8b10962e56d671d0d616aa633c2f81b7968a262809bcd6f584bb17",
+     "size": 268
+    },
+    {
+     "data_end": 6932,
+     "data_start": 6704,
+     "index": 10,
+     "name": "anim/com_system_anim_btn_BlinkOn_105.bflan",
+     "name_off_field": 16777312,
+     "sha256": "59d84669d4cfce7ee66e58ac460ab0886794f00f2280b2c5f5c95aee18ec9c2e",
+     "size": 228
+    },
+    {
+     "data_end": 7488,
+     "data_start": 6944,
+     "index": 11,
+     "name": "anim/make_mii_btn0_04_spselect_category_01.bflan",
+     "name_off_field": 16777323,
+     "sha256": "1639913d09d06986805abab51fddea794f5d714ac7831457adbb11a23fe443d5",
+     "size": 544
+    },
+    {
+     "data_end": 7836,
+     "data_start": 7488,
+     "index": 12,
+     "name": "anim/com_system_anim_btn_Decide_105.bflan",
+     "name_off_field": 16777336,
+     "sha256": "dc0a49b2dee4af04f2a022180e0abe7bd59ab58fe72f6a792169a4ec8bbf8057",
+     "size": 348
+    },
+    {
+     "data_end": 8548,
+     "data_start": 7840,
+     "index": 13,
+     "name": "anim/com_btn0_00_m_decide_SelectOff.bflan",
+     "name_off_field": 16777347,
+     "sha256": "5123da1ecac570f9ca15e4cc41eeeaa3cbefd1a92075df1dc3bcba8b3b6f4d12",
+     "size": 708
+    },
+    {
+     "data_end": 8780,
+     "data_start": 8560,
+     "index": 14,
+     "name": "anim/com_system_anim_out_B_00.bflan",
+     "name_off_field": 16777358,
+     "sha256": "af3ad2c19c63f334b1a3144edfa212d499973a8df038508c3e4a45230d07d3c5",
+     "size": 220
+    },
+    {
+     "data_end": 58400,
+     "data_start": 12288,
+     "index": 15,
+     "name": "bgsh/__ArchiveShader.bnsh",
+     "name_off_field": 16777367,
+     "sha256": "297ef53a7d4ec9f7735b41c3e016ef382ae234a0b7051d19dbda4946ff1015cc",
+     "size": 46112
+    },
+    {
+     "data_end": 58656,
+     "data_start": 58400,
+     "index": 16,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_normal.bflan",
+     "name_off_field": 16777374,
+     "sha256": "481c221023d4e8c9b41901bda20509f9dd71d501f9aa8543a4fcdbb75d0513a6",
+     "size": 256
+    },
+    {
+     "data_end": 58904,
+     "data_start": 58656,
+     "index": 17,
+     "name": "anim/com_btn0_00_m_decide_OnOff.bflan",
+     "name_off_field": 16777386,
+     "sha256": "1048eb05a12573ac05d4428d76e4fa26bd6ea9c7a8a82644170f6cad1f02a131",
+     "size": 248
+    },
+    {
+     "data_end": 59132,
+     "data_start": 58912,
+     "index": 18,
+     "name": "anim/com_system_anim_out_T_01.bflan",
+     "name_off_field": 16777396,
+     "sha256": "975f521b00ee03d00224efe758f3024c05096b7c97df16d8a8e8ee0088f6b113",
+     "size": 220
+    },
+    {
+     "data_end": 59404,
+     "data_start": 59136,
+     "index": 19,
+     "name": "anim/com_system_anim_out_Rs_00.bflan",
+     "name_off_field": 16777405,
+     "sha256": "4cbe577d951d6589b9a0e5561256ba14a4097e503410d8debee3c1ddc7c225e8",
+     "size": 268
+    },
+    {
+     "data_end": 59708,
+     "data_start": 59408,
+     "index": 20,
+     "name": "anim/com_system_anim_in_POP_00.bflan",
+     "name_off_field": 16777415,
+     "sha256": "d3731d1e30026574625e944e04a2bc789a86f5650738f2dbdbe6a1626755cd7a",
+     "size": 300
+    },
+    {
+     "data_end": 63392,
+     "data_start": 59712,
+     "index": 21,
+     "name": "blyt/com_system_anim.bflyt",
+     "name_off_field": 16777425,
+     "sha256": "71664f889657329f2480a9f074f9548d50facd089b33b87c26b8cd565dc397d1",
+     "size": 3680
+    },
+    {
+     "data_end": 63660,
+     "data_start": 63392,
+     "index": 22,
+     "name": "anim/com_system_anim_out_R_01.bflan",
+     "name_off_field": 16777432,
+     "sha256": "3a95453daf030f92feebc816212eb822903efd01ce75e3a2a01f6b5edf5bedbb",
+     "size": 268
+    },
+    {
+     "data_end": 63972,
+     "data_start": 63664,
+     "index": 23,
+     "name": "anim/com_btn0_00_m_decide_Decide.bflan",
+     "name_off_field": 16777441,
+     "sha256": "50d552e9c6d4656d879fd4ca2182271ed42f8dab5ae03d31cbb9976498224696",
+     "size": 308
+    },
+    {
+     "data_end": 64252,
+     "data_start": 63984,
+     "index": 24,
+     "name": "anim/com_system_anim_out_L_01.bflan",
+     "name_off_field": 16777451,
+     "sha256": "60d2123d203569d13895df33ffaa24d2cb1512626aff8781ce3a72bba5226e89",
+     "size": 268
+    },
+    {
+     "data_end": 64516,
+     "data_start": 64256,
+     "index": 25,
+     "name": "anim/com_system_anim_out_Rs_Ls_00.bflan",
+     "name_off_field": 16777460,
+     "sha256": "5de107ca01f45f86bc9e33292eda9d57f73253df47eb806555793b41ce50b04a",
+     "size": 260
+    },
+    {
+     "data_end": 64736,
+     "data_start": 64528,
+     "index": 26,
+     "name": "anim/com_system_anim_in_BG_00.bflan",
+     "name_off_field": 16777470,
+     "sha256": "be446bb28e159f23475468f6107b3ac40b405447e55d45578386c8f1cf8c7edc",
+     "size": 208
+    },
+    {
+     "data_end": 66160,
+     "data_start": 64736,
+     "index": 27,
+     "name": "blyt/com_lct_bg_stripe_03.bflyt",
+     "name_off_field": 16777479,
+     "sha256": "fa7713cf6ba19969caddf6fc79d8c7cb2f3955a2a2457d9e7fc98567e0a343fd",
+     "size": 1424
+    },
+    {
+     "data_end": 66704,
+     "data_start": 66160,
+     "index": 28,
+     "name": "anim/make_mii_btn0_04_spselect_category_02.bflan",
+     "name_off_field": 16777487,
+     "sha256": "b4c5fc2db51d0b892eb9fe51d175dea50cf9dfba770db6f00a3a56fbe5bbcb78",
+     "size": 544
+    },
+    {
+     "data_end": 66940,
+     "data_start": 66704,
+     "index": 29,
+     "name": "anim/make_mii_special_out.bflan",
+     "name_off_field": 16777500,
+     "sha256": "23a30d3c72bf4ebfe89e3e16ce1c295d08be8e4de71d9681e042b0b2ad28ee17",
+     "size": 236
+    },
+    {
+     "data_end": 67164,
+     "data_start": 66944,
+     "index": 30,
+     "name": "anim/com_system_anim_out_B_01.bflan",
+     "name_off_field": 16777508,
+     "sha256": "4eb6104bc659d71703e39105885f1fe7ccc59bee1ddb87b0a38faae6c00a4cec",
+     "size": 220
+    },
+    {
+     "data_end": 67440,
+     "data_start": 67168,
+     "index": 31,
+     "name": "anim/com_system_anim_out_r_R_L_00.bflan",
+     "name_off_field": 16777517,
+     "sha256": "664ecfa71d1667de4b7d7cd18c7d453e87de2d0121f0b1000899efb1d5a069a9",
+     "size": 272
+    },
+    {
+     "data_end": 67812,
+     "data_start": 67440,
+     "index": 32,
+     "name": "anim/com_system_anim_in_POP_01.bflan",
+     "name_off_field": 16777527,
+     "sha256": "d4b1a0c213fa448e173ba28f1c289a221eea7f57919290ebf7bf006dc5501f7a",
+     "size": 372
+    },
+    {
+     "data_end": 68040,
+     "data_start": 67824,
+     "index": 33,
+     "name": "anim/com_system_anim_in_T_00.bflan",
+     "name_off_field": 16777537,
+     "sha256": "91d1d6d4a1106bd623f30f27c8cd22fb249f8ccfe1876518174e5cf65d6bc185",
+     "size": 216
+    },
+    {
+     "data_end": 68316,
+     "data_start": 68048,
+     "index": 34,
+     "name": "anim/com_csr_lct0_01_width_13px.bflan",
+     "name_off_field": 16777546,
+     "sha256": "8e1820df67d754394985d80f5dc2f120025c271bcf609dcf4319de01f066fb5d",
+     "size": 268
+    },
+    {
+     "data_end": 68528,
+     "data_start": 68320,
+     "index": 35,
+     "name": "anim/com_system_anim_out_BG_00.bflan",
+     "name_off_field": 16777556,
+     "sha256": "fd1eae4ad9a95904bc054c1afea4aa2ada0e6834674d8e913bd5372e1f5082d8",
+     "size": 208
+    },
+    {
+     "data_end": 68792,
+     "data_start": 68528,
+     "index": 36,
+     "name": "anim/com_system_anim_in_R_00.bflan",
+     "name_off_field": 16777566,
+     "sha256": "da11048add344d6f37bb994aad9727535b123f72f5a697d9dcc745e804c9e2d8",
+     "size": 264
+    },
+    {
+     "data_end": 69344,
+     "data_start": 68800,
+     "index": 37,
+     "name": "anim/make_mii_btn0_04_spselect_category_03.bflan",
+     "name_off_field": 16777575,
+     "sha256": "521cd9298d1d44fbc9e40a92f210718fce6f7a2b2476a362c099373c8125ce97",
+     "size": 544
+    },
+    {
+     "data_end": 69608,
+     "data_start": 69344,
+     "index": 38,
+     "name": "anim/com_system_anim_in_L_00.bflan",
+     "name_off_field": 16777588,
+     "sha256": "5aed13ba8f59a1dc1760ee299323013c8d59a00edb897186ef11c4298b6976b9",
+     "size": 264
+    },
+    {
+     "data_end": 70916,
+     "data_start": 69616,
+     "index": 39,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOn.bflan",
+     "name_off_field": 16777597,
+     "sha256": "83c1585d96b0d73e1f3d78b4687e826d947bd6e04da325a884fefc76b3a6e591",
+     "size": 1300
+    },
+    {
+     "data_end": 71196,
+     "data_start": 70928,
+     "index": 40,
+     "name": "anim/com_system_anim_out_R_L_00.bflan",
+     "name_off_field": 16777609,
+     "sha256": "4321a2fef47b2e4fee2e27761ee681c9149c024d9d5086bd47a398417f5bd2b4",
+     "size": 268
+    },
+    {
+     "data_end": 71456,
+     "data_start": 71200,
+     "index": 41,
+     "name": "anim/com_system_anim_in_Rs_L_00.bflan",
+     "name_off_field": 16777619,
+     "sha256": "156eb25327c5ba60e28dea59061ae7ff70b206fad03513c195b2d2d416aca382",
+     "size": 256
+    },
+    {
+     "data_end": 71688,
+     "data_start": 71456,
+     "index": 42,
+     "name": "anim/com_system_anim_btn_BlinkOff_105.bflan",
+     "name_off_field": 16777629,
+     "sha256": "09004708d4d51c2d98fa3deae0b30e2e532ef42ed81e144d63b10d2a20529ee5",
+     "size": 232
+    },
+    {
+     "data_end": 72052,
+     "data_start": 71696,
+     "index": 43,
+     "name": "anim/make_mii_special_category_00.bflan",
+     "name_off_field": 16777640,
+     "sha256": "aa624005c26f164e8a89f89bd3dd3754224b4a3110124b55b87a46c373444fb8",
+     "size": 356
+    },
+    {
+     "data_end": 72280,
+     "data_start": 72064,
+     "index": 44,
+     "name": "anim/com_system_anim_in_B_00.bflan",
+     "name_off_field": 16777650,
+     "sha256": "4b824f9019559364c52b688a2af8264b788a93bedb7675f61d94b8044174b582",
+     "size": 216
+    },
+    {
+     "data_end": 72804,
+     "data_start": 72288,
+     "index": 45,
+     "name": "anim/com_csr_lct0_01_width_lock.bflan",
+     "name_off_field": 16777659,
+     "sha256": "9d86f734de2bff7832ec4febc1a8608322a650910611d093b80fb4b24ec989ca",
+     "size": 516
+    },
+    {
+     "data_end": 73056,
+     "data_start": 72816,
+     "index": 46,
+     "name": "anim/com_system_anim_in_T_01.bflan",
+     "name_off_field": 16777669,
+     "sha256": "d33bf82f7ee4fb39559320927af906d8c2367b9fb2b5a830c7d4d3761f4d010d",
+     "size": 240
+    },
+    {
+     "data_end": 83464,
+     "data_start": 73056,
+     "index": 47,
+     "name": "blyt/make_mii_special.bflyt",
+     "name_off_field": 16777678,
+     "sha256": "a63cbacc09a9264ff07ac83c1b765dd0caeeaa1afd92bdb58297f774a3c0b3e8",
+     "size": 10408
+    },
+    {
+     "data_end": 83736,
+     "data_start": 83472,
+     "index": 48,
+     "name": "anim/com_system_anim_in_R_01.bflan",
+     "name_off_field": 16777685,
+     "sha256": "9c1f86b7c44c1e9abeae6f56172fc9ac332839e5a4e9cb2108b32fd90ba0f7a5",
+     "size": 264
+    },
+    {
+     "data_end": 90132,
+     "data_start": 83744,
+     "index": 49,
+     "name": "blyt/com_btn0_00_m_decide.bflyt",
+     "name_off_field": 16777694,
+     "sha256": "e7d42ec697f683563f3c4438e20b4a4084cdc73ab6ecc36757249e1de610ebc8",
+     "size": 6388
+    },
+    {
+     "data_end": 90956,
+     "data_start": 90144,
+     "index": 50,
+     "name": "info/layout.info",
+     "name_off_field": 16777702,
+     "sha256": "a24f7f3ccf16eaffde9259732faea9412f1d36ced18ef0d68b0f1d9e29f1eb49",
+     "size": 812
+    },
+    {
+     "data_end": 91196,
+     "data_start": 90960,
+     "index": 51,
+     "name": "anim/make_mii_special_in.bflan",
+     "name_off_field": 16777707,
+     "sha256": "d97db701eef02a560bffe3a1adf0291831654b4938116d00a509575e7f8cb563",
+     "size": 236
+    },
+    {
+     "data_end": 91452,
+     "data_start": 91200,
+     "index": 52,
+     "name": "anim/com_system_anim_btn_OnOff_105.bflan",
+     "name_off_field": 16777715,
+     "sha256": "1254398467fc509fae3ccebbdb521afc09036501f88f0e3243ae2cc64a35d4a0",
+     "size": 252
+    },
+    {
+     "data_end": 91724,
+     "data_start": 91456,
+     "index": 53,
+     "name": "anim/com_csr_lct0_01_width_18px.bflan",
+     "name_off_field": 16777726,
+     "sha256": "13ef1d0a5bd3e412462d17f7ba49b9533beecf09dc3ee09f5d590b1b62b6fee1",
+     "size": 268
+    },
+    {
+     "data_end": 91992,
+     "data_start": 91728,
+     "index": 54,
+     "name": "anim/com_system_anim_in_L_01.bflan",
+     "name_off_field": 16777736,
+     "sha256": "f2d73793270786e9ea5ba4a31db9456ee3c1c122b939cf5f9615d22a7331edc5",
+     "size": 264
+    },
+    {
+     "data_end": 93688,
+     "data_start": 92000,
+     "index": 55,
+     "name": "anim/com_csr_lct0_01_SelectOn.bflan",
+     "name_off_field": 16777745,
+     "sha256": "d55a128506e7ab1673d1ad4b2e230be9eaf835162cdef18f6b33eb2043a29a71",
+     "size": 1688
+    },
+    {
+     "data_end": 93820,
+     "data_start": 93696,
+     "index": 56,
+     "name": "bgsh/__ArchiveShader.bushvt",
+     "name_off_field": 16777754,
+     "sha256": "e58e32eb66be89c1b44e52b8f9452036f47d6497c62873179b0c5377dafc9179",
+     "size": 124
+    },
+    {
+     "data_end": 94180,
+     "data_start": 93824,
+     "index": 57,
+     "name": "anim/make_mii_special_category_01.bflan",
+     "name_off_field": 16777761,
+     "sha256": "7a11a98932f77cc0b79142f83f11a73784984205a5972f6a12dadaebe0c5aac4",
+     "size": 356
+    },
+    {
+     "data_end": 94432,
+     "data_start": 94192,
+     "index": 58,
+     "name": "anim/com_system_anim_in_B_01.bflan",
+     "name_off_field": 16777771,
+     "sha256": "fd8e76ceaa3cd861b89c8a53e93010255d5e81311e40a640dc5077fb2963a3df",
+     "size": 240
+    },
+    {
+     "data_end": 94688,
+     "data_start": 94432,
+     "index": 59,
+     "name": "anim/com_system_anim_btn_OnOff_105_10.bflan",
+     "name_off_field": 16777780,
+     "sha256": "d190d2b6eb82638ca538aef66ff61f5a0c58c080d70dc4d2da4be9204f26311c",
+     "size": 256
+    },
+    {
+     "data_end": 94988,
+     "data_start": 94688,
+     "index": 60,
+     "name": "anim/com_system_anim_out_POP_00.bflan",
+     "name_off_field": 16777791,
+     "sha256": "f9e7b1934e393f7eac8be859a624a8264d02f2d77df396bb27cbbf1f02fbeab2",
+     "size": 300
+    },
+    {
+     "data_end": 95440,
+     "data_start": 94992,
+     "index": 61,
+     "name": "anim/com_btn0_00_m_decide_BlinkOff.bflan",
+     "name_off_field": 16777801,
+     "sha256": "d305f9cc05b9aed5b4687dacbfbd71f025bfc7e972eb53e9dedad7acabd68f31",
+     "size": 448
+    },
+    {
+     "data_end": 704640,
+     "data_start": 98304,
+     "index": 62,
+     "name": "timg/__Combined.bntx",
+     "name_off_field": 16777812,
+     "sha256": "cce81d32c1a3fbdf4ad57a8a261d1ef7bbd7f9c14870ff372a597d3cf1df9d83",
+     "size": 606336
+    },
+    {
+     "data_end": 704908,
+     "data_start": 704640,
+     "index": 63,
+     "name": "anim/com_system_anim_out_Rs_L_00.bflan",
+     "name_off_field": 16777818,
+     "sha256": "434f88664df9baffda663359da1ad489cc4022dba3fc9e8116aa4af2e1fe025e",
+     "size": 268
+    },
+    {
+     "data_end": 705116,
+     "data_start": 704912,
+     "index": 64,
+     "name": "anim/com_btn0_00_m_decide_Disable.bflan",
+     "name_off_field": 16777828,
+     "sha256": "3b7fbd1c63dda7bfa1bfce836fc84d7f1ece2b7639d92291890127e5b7c75c09",
+     "size": 204
+    },
+    {
+     "data_end": 705364,
+     "data_start": 705120,
+     "index": 65,
+     "name": "anim/make_mii_btn0_04_spselect_OnOff.bflan",
+     "name_off_field": 16777838,
+     "sha256": "da0a3018e87d26216d71daf995a914de79c7f4cba29667498f279a902b5f3766",
+     "size": 244
+    },
+    {
+     "data_end": 705732,
+     "data_start": 705376,
+     "index": 66,
+     "name": "anim/make_mii_special_category_02.bflan",
+     "name_off_field": 16777849,
+     "sha256": "bcffa865855a0dd283f2dc19cada65c7cb0db22688515dc6dda65f714ae53512",
+     "size": 356
+    },
+    {
+     "data_end": 706224,
+     "data_start": 705744,
+     "index": 67,
+     "name": "anim/com_csr_lct0_01_SelectOff.bflan",
+     "name_off_field": 16777859,
+     "sha256": "07689fb1ee445a469ebe1d29e41faee31c33ff5d5142401ab33c54a5953f9d74",
+     "size": 480
+    },
+    {
+     "data_end": 706596,
+     "data_start": 706224,
+     "index": 68,
+     "name": "anim/com_system_anim_out_POP_01.bflan",
+     "name_off_field": 16777869,
+     "sha256": "2559b24894356bbd6e3e2f816f5177a5ed7a2ba6675370854d6e3653c555810a",
+     "size": 372
+    },
+    {
+     "data_end": 706960,
+     "data_start": 706608,
+     "index": 69,
+     "name": "anim/com_system_anim_btn_Decide_105_10.bflan",
+     "name_off_field": 16777879,
+     "sha256": "ce7725dd46fcdd320a70582788fff96fa7f7dcbb8c9235a38c792ea72310345e",
+     "size": 352
+    },
+    {
+     "data_end": 708680,
+     "data_start": 706960,
+     "index": 70,
+     "name": "anim/com_btn0_00_m_decide_SelectOn.bflan",
+     "name_off_field": 16777891,
+     "sha256": "472c372ab52fbb33944933c515adc2b084db7ae1b9632f3a287fc5f9d4e8a029",
+     "size": 1720
+    },
+    {
+     "data_end": 709044,
+     "data_start": 708688,
+     "index": 71,
+     "name": "anim/make_mii_special_category_03.bflan",
+     "name_off_field": 16777902,
+     "sha256": "36f64373ea284c0e0460c679ec2af5c1b63ff4d24c6d4025d6292a656e7734cd",
+     "size": 356
+    },
+    {
+     "data_end": 709600,
+     "data_start": 709056,
+     "index": 72,
+     "name": "anim/make_mii_btn0_04_spselect_category_00.bflan",
+     "name_off_field": 16777912,
+     "sha256": "a291bfcd5ee7e2e15d26d2d84b3e54f57cd8d535206b34aa042c5f86bda2e469",
+     "size": 544
+    },
+    {
+     "data_end": 714716,
+     "data_start": 709600,
+     "index": 73,
+     "name": "blyt/make_mii_btn0_04_spselect.bflyt",
+     "name_off_field": 16777925,
+     "sha256": "e8118b5733f255fc571e4d51a0b9938599d989cf1f391eef356746410d1f2e2b",
+     "size": 5116
+    },
+    {
+     "data_end": 714976,
+     "data_start": 714720,
+     "index": 74,
+     "name": "anim/com_system_anim_in_Rs_Ls_00.bflan",
+     "name_off_field": 16777935,
+     "sha256": "3f9eef8c65935e14ddb8bd41539ad4a1d2e177346e25e742b505d5ca2b09f678",
+     "size": 256
+    },
+    {
+     "data_end": 715244,
+     "data_start": 714976,
+     "index": 75,
+     "name": "anim/com_system_anim_in_R_L_00.bflan",
+     "name_off_field": 16777945,
+     "sha256": "a200a048b250aa9d89d22d67039b06021b08b0dab6401bdfb327935d1efecd38",
+     "size": 268
+    }
+   ],
+   "sha256": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+   "size": 723436
+  },
+  "patched": {
+   "header": {
+    "byte_order_be": 65534,
+    "byte_order_raw": 65279,
+    "data_offset": 8192,
+    "field_0x10": 256,
+    "hash_key": 101,
+    "header_size": 20,
+    "magic": "SARC",
+    "member_count": 76,
+    "members_ascending_by_hash": true,
+    "members_ascending_by_offset": true,
+    "name_table_header_field": 8,
+    "name_table_offset": 1248,
+    "name_table_padding_bytes": 3980,
+    "name_table_used_bytes": 2956,
+    "sfat_header_size": 12,
+    "size_field": 723436
+   },
+   "members": [
+    {
+     "data_end": 3120,
+     "data_start": 0,
+     "index": 0,
+     "name": "blyt/com_csr_lct0_01.bflyt",
+     "name_off_field": 16777216,
+     "sha256": "711bea561c22da469a4b553856f800eaa7729898c6bb230dbe95b813494d68b5",
+     "size": 3120
+    },
+    {
+     "data_end": 3392,
+     "data_start": 3120,
+     "index": 1,
+     "name": "anim/com_system_anim_in_r_Rs_L_00.bflan",
+     "name_off_field": 16777223,
+     "sha256": "b549cb5d1d256cb86742a29919565181298de5c0fce963eb655daa0ead17e468",
+     "size": 272
+    },
+    {
+     "data_end": 3612,
+     "data_start": 3392,
+     "index": 2,
+     "name": "anim/com_system_anim_out_T_00.bflan",
+     "name_off_field": 16777233,
+     "sha256": "6df2d29f69ea175d61427624ab367058bcea41eae26266c51fb1bd14762f69a4",
+     "size": 220
+    },
+    {
+     "data_end": 4060,
+     "data_start": 3616,
+     "index": 3,
+     "name": "anim/com_btn0_00_m_decide_BlinkOn.bflan",
+     "name_off_field": 16777242,
+     "sha256": "22a101383d8faa0101c5f704cb950031e78827cc9382afc2376a3caec151d5e4",
+     "size": 444
+    },
+    {
+     "data_end": 4332,
+     "data_start": 4064,
+     "index": 4,
+     "name": "anim/com_system_anim_out_R_00.bflan",
+     "name_off_field": 16777252,
+     "sha256": "7b8dbc83a53f76ae57c1753420aa1b9f1a2e3af73d5bd3e78a8f9319677ba278",
+     "size": 268
+    },
+    {
+     "data_end": 4604,
+     "data_start": 4336,
+     "index": 5,
+     "name": "anim/com_system_anim_in_r_R_L_00.bflan",
+     "name_off_field": 16777261,
+     "sha256": "e8073a8d5e552a4d08218825ca5c0cb7449d5acfbc0ed44b82c4edf7969ffdb5",
+     "size": 268
+    },
+    {
+     "data_end": 4864,
+     "data_start": 4608,
+     "index": 6,
+     "name": "anim/com_system_anim_in_Rs_00.bflan",
+     "name_off_field": 16777271,
+     "sha256": "e69a42253e1c69c56d6bebd908b47e8d525cd6f0a345f3b80ca73fac75413c60",
+     "size": 256
+    },
+    {
+     "data_end": 5116,
+     "data_start": 4864,
+     "index": 7,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_gc.bflan",
+     "name_off_field": 16777280,
+     "sha256": "8e14832514769e393cb257b679e7d490879e7c48abb60a35736d36d9a13bed57",
+     "size": 252
+    },
+    {
+     "data_end": 6424,
+     "data_start": 5120,
+     "index": 8,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOff.bflan",
+     "name_off_field": 16777291,
+     "sha256": "e8051ef68ece9ffbbf68d366023cbfbc9ae53d6ab615c8b9134da281610dce75",
+     "size": 1304
+    },
+    {
+     "data_end": 6700,
+     "data_start": 6432,
+     "index": 9,
+     "name": "anim/com_system_anim_out_L_00.bflan",
+     "name_off_field": 16777303,
+     "sha256": "c113546f6a8b10962e56d671d0d616aa633c2f81b7968a262809bcd6f584bb17",
+     "size": 268
+    },
+    {
+     "data_end": 6932,
+     "data_start": 6704,
+     "index": 10,
+     "name": "anim/com_system_anim_btn_BlinkOn_105.bflan",
+     "name_off_field": 16777312,
+     "sha256": "59d84669d4cfce7ee66e58ac460ab0886794f00f2280b2c5f5c95aee18ec9c2e",
+     "size": 228
+    },
+    {
+     "data_end": 7488,
+     "data_start": 6944,
+     "index": 11,
+     "name": "anim/make_mii_btn0_04_spselect_category_01.bflan",
+     "name_off_field": 16777323,
+     "sha256": "1639913d09d06986805abab51fddea794f5d714ac7831457adbb11a23fe443d5",
+     "size": 544
+    },
+    {
+     "data_end": 7836,
+     "data_start": 7488,
+     "index": 12,
+     "name": "anim/com_system_anim_btn_Decide_105.bflan",
+     "name_off_field": 16777336,
+     "sha256": "dc0a49b2dee4af04f2a022180e0abe7bd59ab58fe72f6a792169a4ec8bbf8057",
+     "size": 348
+    },
+    {
+     "data_end": 8548,
+     "data_start": 7840,
+     "index": 13,
+     "name": "anim/com_btn0_00_m_decide_SelectOff.bflan",
+     "name_off_field": 16777347,
+     "sha256": "5123da1ecac570f9ca15e4cc41eeeaa3cbefd1a92075df1dc3bcba8b3b6f4d12",
+     "size": 708
+    },
+    {
+     "data_end": 8780,
+     "data_start": 8560,
+     "index": 14,
+     "name": "anim/com_system_anim_out_B_00.bflan",
+     "name_off_field": 16777358,
+     "sha256": "af3ad2c19c63f334b1a3144edfa212d499973a8df038508c3e4a45230d07d3c5",
+     "size": 220
+    },
+    {
+     "data_end": 58400,
+     "data_start": 12288,
+     "index": 15,
+     "name": "bgsh/__ArchiveShader.bnsh",
+     "name_off_field": 16777367,
+     "sha256": "297ef53a7d4ec9f7735b41c3e016ef382ae234a0b7051d19dbda4946ff1015cc",
+     "size": 46112
+    },
+    {
+     "data_end": 58656,
+     "data_start": 58400,
+     "index": 16,
+     "name": "anim/com_btn0_00_m_decide_keyhelp_normal.bflan",
+     "name_off_field": 16777374,
+     "sha256": "481c221023d4e8c9b41901bda20509f9dd71d501f9aa8543a4fcdbb75d0513a6",
+     "size": 256
+    },
+    {
+     "data_end": 58904,
+     "data_start": 58656,
+     "index": 17,
+     "name": "anim/com_btn0_00_m_decide_OnOff.bflan",
+     "name_off_field": 16777386,
+     "sha256": "1048eb05a12573ac05d4428d76e4fa26bd6ea9c7a8a82644170f6cad1f02a131",
+     "size": 248
+    },
+    {
+     "data_end": 59132,
+     "data_start": 58912,
+     "index": 18,
+     "name": "anim/com_system_anim_out_T_01.bflan",
+     "name_off_field": 16777396,
+     "sha256": "975f521b00ee03d00224efe758f3024c05096b7c97df16d8a8e8ee0088f6b113",
+     "size": 220
+    },
+    {
+     "data_end": 59404,
+     "data_start": 59136,
+     "index": 19,
+     "name": "anim/com_system_anim_out_Rs_00.bflan",
+     "name_off_field": 16777405,
+     "sha256": "4cbe577d951d6589b9a0e5561256ba14a4097e503410d8debee3c1ddc7c225e8",
+     "size": 268
+    },
+    {
+     "data_end": 59708,
+     "data_start": 59408,
+     "index": 20,
+     "name": "anim/com_system_anim_in_POP_00.bflan",
+     "name_off_field": 16777415,
+     "sha256": "d3731d1e30026574625e944e04a2bc789a86f5650738f2dbdbe6a1626755cd7a",
+     "size": 300
+    },
+    {
+     "data_end": 63392,
+     "data_start": 59712,
+     "index": 21,
+     "name": "blyt/com_system_anim.bflyt",
+     "name_off_field": 16777425,
+     "sha256": "71664f889657329f2480a9f074f9548d50facd089b33b87c26b8cd565dc397d1",
+     "size": 3680
+    },
+    {
+     "data_end": 63660,
+     "data_start": 63392,
+     "index": 22,
+     "name": "anim/com_system_anim_out_R_01.bflan",
+     "name_off_field": 16777432,
+     "sha256": "3a95453daf030f92feebc816212eb822903efd01ce75e3a2a01f6b5edf5bedbb",
+     "size": 268
+    },
+    {
+     "data_end": 63972,
+     "data_start": 63664,
+     "index": 23,
+     "name": "anim/com_btn0_00_m_decide_Decide.bflan",
+     "name_off_field": 16777441,
+     "sha256": "50d552e9c6d4656d879fd4ca2182271ed42f8dab5ae03d31cbb9976498224696",
+     "size": 308
+    },
+    {
+     "data_end": 64252,
+     "data_start": 63984,
+     "index": 24,
+     "name": "anim/com_system_anim_out_L_01.bflan",
+     "name_off_field": 16777451,
+     "sha256": "60d2123d203569d13895df33ffaa24d2cb1512626aff8781ce3a72bba5226e89",
+     "size": 268
+    },
+    {
+     "data_end": 64516,
+     "data_start": 64256,
+     "index": 25,
+     "name": "anim/com_system_anim_out_Rs_Ls_00.bflan",
+     "name_off_field": 16777460,
+     "sha256": "5de107ca01f45f86bc9e33292eda9d57f73253df47eb806555793b41ce50b04a",
+     "size": 260
+    },
+    {
+     "data_end": 64736,
+     "data_start": 64528,
+     "index": 26,
+     "name": "anim/com_system_anim_in_BG_00.bflan",
+     "name_off_field": 16777470,
+     "sha256": "be446bb28e159f23475468f6107b3ac40b405447e55d45578386c8f1cf8c7edc",
+     "size": 208
+    },
+    {
+     "data_end": 66160,
+     "data_start": 64736,
+     "index": 27,
+     "name": "blyt/com_lct_bg_stripe_03.bflyt",
+     "name_off_field": 16777479,
+     "sha256": "fa7713cf6ba19969caddf6fc79d8c7cb2f3955a2a2457d9e7fc98567e0a343fd",
+     "size": 1424
+    },
+    {
+     "data_end": 66704,
+     "data_start": 66160,
+     "index": 28,
+     "name": "anim/make_mii_btn0_04_spselect_category_02.bflan",
+     "name_off_field": 16777487,
+     "sha256": "b4c5fc2db51d0b892eb9fe51d175dea50cf9dfba770db6f00a3a56fbe5bbcb78",
+     "size": 544
+    },
+    {
+     "data_end": 66940,
+     "data_start": 66704,
+     "index": 29,
+     "name": "anim/make_mii_special_out.bflan",
+     "name_off_field": 16777500,
+     "sha256": "23a30d3c72bf4ebfe89e3e16ce1c295d08be8e4de71d9681e042b0b2ad28ee17",
+     "size": 236
+    },
+    {
+     "data_end": 67164,
+     "data_start": 66944,
+     "index": 30,
+     "name": "anim/com_system_anim_out_B_01.bflan",
+     "name_off_field": 16777508,
+     "sha256": "4eb6104bc659d71703e39105885f1fe7ccc59bee1ddb87b0a38faae6c00a4cec",
+     "size": 220
+    },
+    {
+     "data_end": 67440,
+     "data_start": 67168,
+     "index": 31,
+     "name": "anim/com_system_anim_out_r_R_L_00.bflan",
+     "name_off_field": 16777517,
+     "sha256": "664ecfa71d1667de4b7d7cd18c7d453e87de2d0121f0b1000899efb1d5a069a9",
+     "size": 272
+    },
+    {
+     "data_end": 67812,
+     "data_start": 67440,
+     "index": 32,
+     "name": "anim/com_system_anim_in_POP_01.bflan",
+     "name_off_field": 16777527,
+     "sha256": "d4b1a0c213fa448e173ba28f1c289a221eea7f57919290ebf7bf006dc5501f7a",
+     "size": 372
+    },
+    {
+     "data_end": 68040,
+     "data_start": 67824,
+     "index": 33,
+     "name": "anim/com_system_anim_in_T_00.bflan",
+     "name_off_field": 16777537,
+     "sha256": "91d1d6d4a1106bd623f30f27c8cd22fb249f8ccfe1876518174e5cf65d6bc185",
+     "size": 216
+    },
+    {
+     "data_end": 68316,
+     "data_start": 68048,
+     "index": 34,
+     "name": "anim/com_csr_lct0_01_width_13px.bflan",
+     "name_off_field": 16777546,
+     "sha256": "8e1820df67d754394985d80f5dc2f120025c271bcf609dcf4319de01f066fb5d",
+     "size": 268
+    },
+    {
+     "data_end": 68528,
+     "data_start": 68320,
+     "index": 35,
+     "name": "anim/com_system_anim_out_BG_00.bflan",
+     "name_off_field": 16777556,
+     "sha256": "fd1eae4ad9a95904bc054c1afea4aa2ada0e6834674d8e913bd5372e1f5082d8",
+     "size": 208
+    },
+    {
+     "data_end": 68792,
+     "data_start": 68528,
+     "index": 36,
+     "name": "anim/com_system_anim_in_R_00.bflan",
+     "name_off_field": 16777566,
+     "sha256": "da11048add344d6f37bb994aad9727535b123f72f5a697d9dcc745e804c9e2d8",
+     "size": 264
+    },
+    {
+     "data_end": 69344,
+     "data_start": 68800,
+     "index": 37,
+     "name": "anim/make_mii_btn0_04_spselect_category_03.bflan",
+     "name_off_field": 16777575,
+     "sha256": "521cd9298d1d44fbc9e40a92f210718fce6f7a2b2476a362c099373c8125ce97",
+     "size": 544
+    },
+    {
+     "data_end": 69608,
+     "data_start": 69344,
+     "index": 38,
+     "name": "anim/com_system_anim_in_L_00.bflan",
+     "name_off_field": 16777588,
+     "sha256": "5aed13ba8f59a1dc1760ee299323013c8d59a00edb897186ef11c4298b6976b9",
+     "size": 264
+    },
+    {
+     "data_end": 70916,
+     "data_start": 69616,
+     "index": 39,
+     "name": "anim/make_mii_btn0_04_spselect_BlinkOn.bflan",
+     "name_off_field": 16777597,
+     "sha256": "83c1585d96b0d73e1f3d78b4687e826d947bd6e04da325a884fefc76b3a6e591",
+     "size": 1300
+    },
+    {
+     "data_end": 71196,
+     "data_start": 70928,
+     "index": 40,
+     "name": "anim/com_system_anim_out_R_L_00.bflan",
+     "name_off_field": 16777609,
+     "sha256": "4321a2fef47b2e4fee2e27761ee681c9149c024d9d5086bd47a398417f5bd2b4",
+     "size": 268
+    },
+    {
+     "data_end": 71456,
+     "data_start": 71200,
+     "index": 41,
+     "name": "anim/com_system_anim_in_Rs_L_00.bflan",
+     "name_off_field": 16777619,
+     "sha256": "156eb25327c5ba60e28dea59061ae7ff70b206fad03513c195b2d2d416aca382",
+     "size": 256
+    },
+    {
+     "data_end": 71688,
+     "data_start": 71456,
+     "index": 42,
+     "name": "anim/com_system_anim_btn_BlinkOff_105.bflan",
+     "name_off_field": 16777629,
+     "sha256": "09004708d4d51c2d98fa3deae0b30e2e532ef42ed81e144d63b10d2a20529ee5",
+     "size": 232
+    },
+    {
+     "data_end": 72052,
+     "data_start": 71696,
+     "index": 43,
+     "name": "anim/make_mii_special_category_00.bflan",
+     "name_off_field": 16777640,
+     "sha256": "aa624005c26f164e8a89f89bd3dd3754224b4a3110124b55b87a46c373444fb8",
+     "size": 356
+    },
+    {
+     "data_end": 72280,
+     "data_start": 72064,
+     "index": 44,
+     "name": "anim/com_system_anim_in_B_00.bflan",
+     "name_off_field": 16777650,
+     "sha256": "4b824f9019559364c52b688a2af8264b788a93bedb7675f61d94b8044174b582",
+     "size": 216
+    },
+    {
+     "data_end": 72804,
+     "data_start": 72288,
+     "index": 45,
+     "name": "anim/com_csr_lct0_01_width_lock.bflan",
+     "name_off_field": 16777659,
+     "sha256": "9d86f734de2bff7832ec4febc1a8608322a650910611d093b80fb4b24ec989ca",
+     "size": 516
+    },
+    {
+     "data_end": 73056,
+     "data_start": 72816,
+     "index": 46,
+     "name": "anim/com_system_anim_in_T_01.bflan",
+     "name_off_field": 16777669,
+     "sha256": "d33bf82f7ee4fb39559320927af906d8c2367b9fb2b5a830c7d4d3761f4d010d",
+     "size": 240
+    },
+    {
+     "data_end": 83464,
+     "data_start": 73056,
+     "index": 47,
+     "name": "blyt/make_mii_special.bflyt",
+     "name_off_field": 16777678,
+     "sha256": "ea4f8c4fcf9af521ab1faf1459efb6ada081be93da201f83cc39dc22e9c5b106",
+     "size": 10408
+    },
+    {
+     "data_end": 83736,
+     "data_start": 83472,
+     "index": 48,
+     "name": "anim/com_system_anim_in_R_01.bflan",
+     "name_off_field": 16777685,
+     "sha256": "9c1f86b7c44c1e9abeae6f56172fc9ac332839e5a4e9cb2108b32fd90ba0f7a5",
+     "size": 264
+    },
+    {
+     "data_end": 90132,
+     "data_start": 83744,
+     "index": 49,
+     "name": "blyt/com_btn0_00_m_decide.bflyt",
+     "name_off_field": 16777694,
+     "sha256": "e7d42ec697f683563f3c4438e20b4a4084cdc73ab6ecc36757249e1de610ebc8",
+     "size": 6388
+    },
+    {
+     "data_end": 90956,
+     "data_start": 90144,
+     "index": 50,
+     "name": "info/layout.info",
+     "name_off_field": 16777702,
+     "sha256": "a24f7f3ccf16eaffde9259732faea9412f1d36ced18ef0d68b0f1d9e29f1eb49",
+     "size": 812
+    },
+    {
+     "data_end": 91196,
+     "data_start": 90960,
+     "index": 51,
+     "name": "anim/make_mii_special_in.bflan",
+     "name_off_field": 16777707,
+     "sha256": "d97db701eef02a560bffe3a1adf0291831654b4938116d00a509575e7f8cb563",
+     "size": 236
+    },
+    {
+     "data_end": 91452,
+     "data_start": 91200,
+     "index": 52,
+     "name": "anim/com_system_anim_btn_OnOff_105.bflan",
+     "name_off_field": 16777715,
+     "sha256": "1254398467fc509fae3ccebbdb521afc09036501f88f0e3243ae2cc64a35d4a0",
+     "size": 252
+    },
+    {
+     "data_end": 91724,
+     "data_start": 91456,
+     "index": 53,
+     "name": "anim/com_csr_lct0_01_width_18px.bflan",
+     "name_off_field": 16777726,
+     "sha256": "13ef1d0a5bd3e412462d17f7ba49b9533beecf09dc3ee09f5d590b1b62b6fee1",
+     "size": 268
+    },
+    {
+     "data_end": 91992,
+     "data_start": 91728,
+     "index": 54,
+     "name": "anim/com_system_anim_in_L_01.bflan",
+     "name_off_field": 16777736,
+     "sha256": "f2d73793270786e9ea5ba4a31db9456ee3c1c122b939cf5f9615d22a7331edc5",
+     "size": 264
+    },
+    {
+     "data_end": 93688,
+     "data_start": 92000,
+     "index": 55,
+     "name": "anim/com_csr_lct0_01_SelectOn.bflan",
+     "name_off_field": 16777745,
+     "sha256": "d55a128506e7ab1673d1ad4b2e230be9eaf835162cdef18f6b33eb2043a29a71",
+     "size": 1688
+    },
+    {
+     "data_end": 93820,
+     "data_start": 93696,
+     "index": 56,
+     "name": "bgsh/__ArchiveShader.bushvt",
+     "name_off_field": 16777754,
+     "sha256": "e58e32eb66be89c1b44e52b8f9452036f47d6497c62873179b0c5377dafc9179",
+     "size": 124
+    },
+    {
+     "data_end": 94180,
+     "data_start": 93824,
+     "index": 57,
+     "name": "anim/make_mii_special_category_01.bflan",
+     "name_off_field": 16777761,
+     "sha256": "7a11a98932f77cc0b79142f83f11a73784984205a5972f6a12dadaebe0c5aac4",
+     "size": 356
+    },
+    {
+     "data_end": 94432,
+     "data_start": 94192,
+     "index": 58,
+     "name": "anim/com_system_anim_in_B_01.bflan",
+     "name_off_field": 16777771,
+     "sha256": "fd8e76ceaa3cd861b89c8a53e93010255d5e81311e40a640dc5077fb2963a3df",
+     "size": 240
+    },
+    {
+     "data_end": 94688,
+     "data_start": 94432,
+     "index": 59,
+     "name": "anim/com_system_anim_btn_OnOff_105_10.bflan",
+     "name_off_field": 16777780,
+     "sha256": "d190d2b6eb82638ca538aef66ff61f5a0c58c080d70dc4d2da4be9204f26311c",
+     "size": 256
+    },
+    {
+     "data_end": 94988,
+     "data_start": 94688,
+     "index": 60,
+     "name": "anim/com_system_anim_out_POP_00.bflan",
+     "name_off_field": 16777791,
+     "sha256": "f9e7b1934e393f7eac8be859a624a8264d02f2d77df396bb27cbbf1f02fbeab2",
+     "size": 300
+    },
+    {
+     "data_end": 95440,
+     "data_start": 94992,
+     "index": 61,
+     "name": "anim/com_btn0_00_m_decide_BlinkOff.bflan",
+     "name_off_field": 16777801,
+     "sha256": "d305f9cc05b9aed5b4687dacbfbd71f025bfc7e972eb53e9dedad7acabd68f31",
+     "size": 448
+    },
+    {
+     "data_end": 704640,
+     "data_start": 98304,
+     "index": 62,
+     "name": "timg/__Combined.bntx",
+     "name_off_field": 16777812,
+     "sha256": "cce81d32c1a3fbdf4ad57a8a261d1ef7bbd7f9c14870ff372a597d3cf1df9d83",
+     "size": 606336
+    },
+    {
+     "data_end": 704908,
+     "data_start": 704640,
+     "index": 63,
+     "name": "anim/com_system_anim_out_Rs_L_00.bflan",
+     "name_off_field": 16777818,
+     "sha256": "434f88664df9baffda663359da1ad489cc4022dba3fc9e8116aa4af2e1fe025e",
+     "size": 268
+    },
+    {
+     "data_end": 705116,
+     "data_start": 704912,
+     "index": 64,
+     "name": "anim/com_btn0_00_m_decide_Disable.bflan",
+     "name_off_field": 16777828,
+     "sha256": "3b7fbd1c63dda7bfa1bfce836fc84d7f1ece2b7639d92291890127e5b7c75c09",
+     "size": 204
+    },
+    {
+     "data_end": 705364,
+     "data_start": 705120,
+     "index": 65,
+     "name": "anim/make_mii_btn0_04_spselect_OnOff.bflan",
+     "name_off_field": 16777838,
+     "sha256": "da0a3018e87d26216d71daf995a914de79c7f4cba29667498f279a902b5f3766",
+     "size": 244
+    },
+    {
+     "data_end": 705732,
+     "data_start": 705376,
+     "index": 66,
+     "name": "anim/make_mii_special_category_02.bflan",
+     "name_off_field": 16777849,
+     "sha256": "bcffa865855a0dd283f2dc19cada65c7cb0db22688515dc6dda65f714ae53512",
+     "size": 356
+    },
+    {
+     "data_end": 706224,
+     "data_start": 705744,
+     "index": 67,
+     "name": "anim/com_csr_lct0_01_SelectOff.bflan",
+     "name_off_field": 16777859,
+     "sha256": "07689fb1ee445a469ebe1d29e41faee31c33ff5d5142401ab33c54a5953f9d74",
+     "size": 480
+    },
+    {
+     "data_end": 706596,
+     "data_start": 706224,
+     "index": 68,
+     "name": "anim/com_system_anim_out_POP_01.bflan",
+     "name_off_field": 16777869,
+     "sha256": "2559b24894356bbd6e3e2f816f5177a5ed7a2ba6675370854d6e3653c555810a",
+     "size": 372
+    },
+    {
+     "data_end": 706960,
+     "data_start": 706608,
+     "index": 69,
+     "name": "anim/com_system_anim_btn_Decide_105_10.bflan",
+     "name_off_field": 16777879,
+     "sha256": "ce7725dd46fcdd320a70582788fff96fa7f7dcbb8c9235a38c792ea72310345e",
+     "size": 352
+    },
+    {
+     "data_end": 708680,
+     "data_start": 706960,
+     "index": 70,
+     "name": "anim/com_btn0_00_m_decide_SelectOn.bflan",
+     "name_off_field": 16777891,
+     "sha256": "472c372ab52fbb33944933c515adc2b084db7ae1b9632f3a287fc5f9d4e8a029",
+     "size": 1720
+    },
+    {
+     "data_end": 709044,
+     "data_start": 708688,
+     "index": 71,
+     "name": "anim/make_mii_special_category_03.bflan",
+     "name_off_field": 16777902,
+     "sha256": "36f64373ea284c0e0460c679ec2af5c1b63ff4d24c6d4025d6292a656e7734cd",
+     "size": 356
+    },
+    {
+     "data_end": 709600,
+     "data_start": 709056,
+     "index": 72,
+     "name": "anim/make_mii_btn0_04_spselect_category_00.bflan",
+     "name_off_field": 16777912,
+     "sha256": "a291bfcd5ee7e2e15d26d2d84b3e54f57cd8d535206b34aa042c5f86bda2e469",
+     "size": 544
+    },
+    {
+     "data_end": 714716,
+     "data_start": 709600,
+     "index": 73,
+     "name": "blyt/make_mii_btn0_04_spselect.bflyt",
+     "name_off_field": 16777925,
+     "sha256": "e8118b5733f255fc571e4d51a0b9938599d989cf1f391eef356746410d1f2e2b",
+     "size": 5116
+    },
+    {
+     "data_end": 714976,
+     "data_start": 714720,
+     "index": 74,
+     "name": "anim/com_system_anim_in_Rs_Ls_00.bflan",
+     "name_off_field": 16777935,
+     "sha256": "3f9eef8c65935e14ddb8bd41539ad4a1d2e177346e25e742b505d5ca2b09f678",
+     "size": 256
+    },
+    {
+     "data_end": 715244,
+     "data_start": 714976,
+     "index": 75,
+     "name": "anim/com_system_anim_in_R_L_00.bflan",
+     "name_off_field": 16777945,
+     "sha256": "a200a048b250aa9d89d22d67039b06021b08b0dab6401bdfb327935d1efecd38",
+     "size": 268
+    }
+   ],
+   "sha256": "86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877",
+   "size": 723436
+  }
+ },
+ "sha256": {
+  "control": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+  "original": "5ba29f4448686d89d478b17b1d5028dda2374c3e1b66cc3ac7c0f7a6abaad945",
+  "patched": "86044f63d4bb4456d906c8d896a4c53ed80c20a298f97bb528fffc3708f55877"
+ }
+}

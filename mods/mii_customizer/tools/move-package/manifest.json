@@ -1,0 +1,45 @@
+{
+  "package_name": "mii_customizer_moves",
+  "files": {
+    "config.json": {
+      "size": 376,
+      "sha256": "bd773e2107865681abe63da5759184b41af25b82b8e1cc9280b7c1eea0ac4435"
+    },
+    "fighter/miigunner/motion/body/c00/c01mcattacks3hi.nuanmb": {
+      "size": 39800,
+      "sha256": "1771910ca79fbd0003224c35ee89062069b2a284c778fec7abbe2278c011e233"
+    },
+    "fighter/miigunner/motion/body/c00/c01mcattacks3lw.nuanmb": {
+      "size": 40056,
+      "sha256": "e835ac586a9924b80766cc0a6eeb31594663daeea5af007efae24671fe294d41"
+    },
+    "fighter/miigunner/motion/body/c00/c01mcattacks3s.nuanmb": {
+      "size": 40184,
+      "sha256": "8321c7b73c7ea667342480cec5b05a7ed0e1135b88ecb6171d5eb1c7efc4ecbb"
+    },
+    "fighter/miigunner/motion/body/c00/motion_list.motdiff": {
+      "size": 2188,
+      "sha256": "37fd45810853fe79062b4c41ef0ad0ad9382b6d15af528a10911a5e97b30846b"
+    }
+  },
+  "added_motions": {
+    "mc_attacks3_s": {
+      "kind_hash": "0x0daf9a401a",
+      "game_script": "0x10f5aa5bc8",
+      "clip": "c01mcattacks3s.nuanmb",
+      "clip_hash": "0x1564cb55b9"
+    },
+    "mc_attacks3_hi": {
+      "kind_hash": "0x0eb2979ed1",
+      "game_script": "0x11da101d32",
+      "clip": "c01mcattacks3hi.nuanmb",
+      "clip_hash": "0x16ab6d3c7f"
+    },
+    "mc_attacks3_lw": {
+      "kind_hash": "0x0e2cf466b6",
+      "game_script": "0x114473e555",
+      "clip": "c01mcattacks3lw.nuanmb",
+      "clip_hash": "0x169fb04e6a"
+    }
+  }
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialS/end.c",
+    "file": "SpecialS_end.c",
+    "sha256": "9bc54f687f62f64bb03470920e6dfb078157d3bbc16164c69641130966c170f2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialS/main.c",
+    "file": "SpecialS_main.c",
+    "sha256": "062330717afc2efc0c11accbd5076542697b0e43738e11dab62cc705089d6154"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialS/main_loop.c",
+    "file": "SpecialS_main_loop.c",
+    "sha256": "424c23a76d71bff6742fc47910413502afa337ce59597c045edc194a19910dd6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialS/pre.c",
+    "file": "SpecialS_pre.c",
+    "sha256": "e332e505c830b7e2b0f3fc1791134eab0209355cd64c89fc5b3ae36a9bef0d47"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSDamageFall/end.c",
+    "file": "SpecialSDamageFall_end.c",
+    "sha256": "b6b5b750788d9a5fe78b4ac2e8fad02098a034f8bf341247944d7abf1d95518c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSDamageFall/main.c",
+    "file": "SpecialSDamageFall_main.c",
+    "sha256": "7ff1b1969ad5a80680348b2c0e16a66de2604f010f0c2f8b8f9a00c56bba133c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSDamageFall/main_loop.c",
+    "file": "SpecialSDamageFall_main_loop.c",
+    "sha256": "8144a1035e7f688fd0ca21f5baceb0c162c58752a3122ca0b13f92d055a31a36"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSDamageFall/pre.c",
+    "file": "SpecialSDamageFall_pre.c",
+    "sha256": "c2ee4ec0d7b2518e1e771a59412faf9b650f763428616c3cd402dc8ec7597486"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipFall/end.c",
+    "file": "SpecialSFlipFall_end.c",
+    "sha256": "5235e1c3c11061e52f638064065c5eeb19f1e6a4d3a23b7b02e2f13288647f67"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipFall/main.c",
+    "file": "SpecialSFlipFall_main.c",
+    "sha256": "a9e49e64a05d43d1f020589408307bcbb1001b0180bf3824527439e3463a4315"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipFall/main_loop.c",
+    "file": "SpecialSFlipFall_main_loop.c",
+    "sha256": "1a2a92ffa41fd8ccd6dc33bd3695492ae11d30eefa7b641af3d3f66c2ce774f8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipFall/pre.c",
+    "file": "SpecialSFlipFall_pre.c",
+    "sha256": "4df5751b29d3a460961696f240d56b36929e5a9a25249eb12d437fc75c42f01e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipLanding/end.c",
+    "file": "SpecialSFlipLanding_end.c",
+    "sha256": "6e1a6d75e7bf166f5cbcc0510809deeeb0c6a10f0009403f1ee6a7beaa088573"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipLanding/main.c",
+    "file": "SpecialSFlipLanding_main.c",
+    "sha256": "60a1572b8f42da5d115afd50cf0cb70e94043f8639311ace045ae0a82d5926a7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipLanding/main_loop.c",
+    "file": "SpecialSFlipLanding_main_loop.c",
+    "sha256": "013ce7b24f0561c2ab7e9d83456dda76cb468b88eed10c58fac817b498b4ba67"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSFlipLanding/pre.c",
+    "file": "SpecialSFlipLanding_pre.c",
+    "sha256": "b4a8fc99d586b93c0d94d8e316c8010818a5e01a3bfbc025043ab81fd9b9c36e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSJump/end.c",
+    "file": "SpecialSJump_end.c",
+    "sha256": "8a1e751d04ff9dfa0ecfc5afd2b037bc0cdb5c4f0e4c999cd81e0faef3356d9f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSJump/main.c",
+    "file": "SpecialSJump_main.c",
+    "sha256": "ad527c36d3ba800409d83b77a8e5dc8bc397742385dd35a5aa0fc9ff8fa49341"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSJump/main_loop.c",
+    "file": "SpecialSJump_main_loop.c",
+    "sha256": "ece333405bf6cae12e81ecd628a82510000479d62e3777ce52fdfc1ac6778a60"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSJump/pre.c",
+    "file": "SpecialSJump_pre.c",
+    "sha256": "e1c4637316b830d700b47317fe638e42853a517d31724ebdb92d2ef97a805283"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKick/end.c",
+    "file": "SpecialSKick_end.c",
+    "sha256": "a291287a3f8b8682811d76558663b0c1ac1bb69478a88350c9d79b40694bf15c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKick/main.c",
+    "file": "SpecialSKick_main.c",
+    "sha256": "775ea4e53287fc5b86bccdb16bd41028c2506ca0b56c62415f4f00b9c800ec44"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKick/main_loop.c",
+    "file": "SpecialSKick_main_loop.c",
+    "sha256": "f55816d49a7a1af4883adc1dd0e770765015920dc3f09257e6bb2bbb2d9dfa8f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKick/pre.c",
+    "file": "SpecialSKick_pre.c",
+    "sha256": "889bcb37362c322a5857046302d96595932cf3e90c7228b51f74e0abd289713f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKickLanding/end.c",
+    "file": "SpecialSKickLanding_end.c",
+    "sha256": "eb63a259848e9f24d7882153d236ba95f3f08e27e222c46c7f1eb0238a77b04e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKickLanding/main.c",
+    "file": "SpecialSKickLanding_main.c",
+    "sha256": "adc0c49b6438550417479e710de4364d8a0e27ff5e8f50facfa2db98e7a649d6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKickLanding/main_loop.c",
+    "file": "SpecialSKickLanding_main_loop.c",
+    "sha256": "b2da0e7a21f0297ca4d4c411c4270f0366ec13a08d3fa349a62ea3c1524ec501"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSKickLanding/pre.c",
+    "file": "SpecialSKickLanding_pre.c",
+    "sha256": "67dc6cadf283c9fc34c83eeae8d32a1ef503966ac20ec422752627d95689fdf5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStick/check_dmg.c",
+    "file": "SpecialSStick_check_dmg.c",
+    "sha256": "7f81ef7fbf60764e62d7e23e8dd91558ccbab271b8173e5f7b72127b6e19b168"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStick/end.c",
+    "file": "SpecialSStick_end.c",
+    "sha256": "f6ab795ca38e73354e528f61c79d9063fee106783d6a33b0c1c3ac315fabef6e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStick/main.c",
+    "file": "SpecialSStick_main.c",
+    "sha256": "ad0cc992817f56ba25a8fbc21e31b38e8299e2b9cd4ec8a3947d8c86d795ea5a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStick/main_loop.c",
+    "file": "SpecialSStick_main_loop.c",
+    "sha256": "5ecac58cc655e0bf04ce3b20534cd383bd04dd43d2b22d015c6909b3ada7847f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStick/pre.c",
+    "file": "SpecialSStick_pre.c",
+    "sha256": "cb40c40a2b2518bd00b5ee0ee70d945b94fa27a399996f873b902fca0861b298"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack/end.c",
+    "file": "SpecialSStickAttack_end.c",
+    "sha256": "b9201106aed0cfb72be8c07a0fbfe2a555eed92ed4fd2718e13a37aad503e22b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack/main.c",
+    "file": "SpecialSStickAttack_main.c",
+    "sha256": "9a5d254ee143d5847ffb27b9a1d4cbb0044e2e0028069f2e8df2f8902603b8a6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack/main_loop.c",
+    "file": "SpecialSStickAttack_main_loop.c",
+    "sha256": "8e9979d514d22208260695667cd7a20e480a60e2df68fec5963bb8ff2123ff63"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack/pre.c",
+    "file": "SpecialSStickAttack_pre.c",
+    "sha256": "09357dbdc033b7017df3160d4174763b6127299bcc53409da5f0b956190ceeb9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack2/end.c",
+    "file": "SpecialSStickAttack2_end.c",
+    "sha256": "db7e3eb7b488dd7ef08864f305c175e1ba8e58b87e575e0addbcfa9d6f7eb9bc"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack2/main.c",
+    "file": "SpecialSStickAttack2_main.c",
+    "sha256": "e748987029f23bc6c2a53aad3a5ebd09835371c04f64bcf1b8189b855f0f2c48"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack2/main_loop.c",
+    "file": "SpecialSStickAttack2_main_loop.c",
+    "sha256": "2e81af6da2ffbe111415c7e1766bad2d2d6b45ab88da403bbf07d37e070564cb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickAttack2/pre.c",
+    "file": "SpecialSStickAttack2_pre.c",
+    "sha256": "c3972bb1069b1501b7d8f27bf3333e8fa64307ae46a00ce1a8c838c9978baa12"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump/end.c",
+    "file": "SpecialSStickJump_end.c",
+    "sha256": "f71f67d30b6975416554d10528fe4febe790edf07b8172b5311372f98a4f8300"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump/main.c",
+    "file": "SpecialSStickJump_main.c",
+    "sha256": "8ffefc8ad3ed3d0ced7dd52f6d00698190b37c0d5111db86d2ec6f80d854042e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump/main_loop.c",
+    "file": "SpecialSStickJump_main_loop.c",
+    "sha256": "b4bf767c1f0e2e722286c131f6b6532cf6d783d8412c4b4cc0c5883eb9990a74"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump/pre.c",
+    "file": "SpecialSStickJump_pre.c",
+    "sha256": "b65ecf0ef1e80bac72642357474b3c1c6607d5d3f0bade958b1fc7df20126f0b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump2/end.c",
+    "file": "SpecialSStickJump2_end.c",
+    "sha256": "2b21dac7d0327cab933222aa2b15280fa4cadd023da5ec467107f7d73f7c7836"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump2/main.c",
+    "file": "SpecialSStickJump2_main.c",
+    "sha256": "7b518966c7b694586ae157c796693255b9bb32e68672114d132459d32d6108c4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump2/main_loop.c",
+    "file": "SpecialSStickJump2_main_loop.c",
+    "sha256": "6a4e4336ca61177449866361556dd3fd9f77369432596714a5f63f08987036ff"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Coolsonickirby/SSBU-Dumped-Status-Scripts/b6bb1fecf7a0a3ee872cea73c94acccccadf8133/ghidra_scripts/lua2cpp_diddy.nro/diddy/diddy/status/SpecialSStickJump2/pre.c",
+    "file": "SpecialSStickJump2_pre.c",
+    "sha256": "ec39be66372ac3d01dd80b9648ec663386088e63d647b554d87b20fe1e32c5a5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ultimate-research/motion_lib/25dc4f94cb4f0587785820dc5d22318688f5b2df/src/asm.rs",
+    "file": "motion_lib_asm.rs",
+    "sha256": "9fb9c5abd629dadfbed173300012e4615bb06b099124320c06f3c162980e9961"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ultimate-research/motion_lib/25dc4f94cb4f0587785820dc5d22318688f5b2df/src/disasm.rs",
+    "file": "motion_lib_disasm.rs",
+    "sha256": "bfd925eeb4f371484c0cbbd7d50878dfb4b8c7485a2bf7a09496b854294795bf"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ultimate-research/motion_lib/25dc4f94cb4f0587785820dc5d22318688f5b2df/src/mlist.rs",
+    "file": "motion_lib_mlist.rs",
+    "sha256": "165a623c673ec70b9b3e52915f4b5b56b201b53f418c2c6fdc3d489b7cd1a1fd"
+  }
+]
